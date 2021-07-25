@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# get list of all users
+_USERS="$(awk -F':' '{ if ( $3 >= 500 ) print $1 }' /etc/passwd)"
+for u in $_USERS
+do
+    sudo killall --user $u
+done

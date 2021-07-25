@@ -1,0 +1,20 @@
+#!/bin/bash
+
+
+listIP="192.168.7.106"
+listIP+=" 192.168.7.93"
+listIP+=" 192.168.7.83"
+listIP+=" 192.168.7.126"
+listIP+=" 192.168.7.127"
+listIP+=" 192.168.7.95"
+listIP+=" 192.168.7.128"
+listIP+=" 192.168.7.163"
+listIP+=" 192.168.7.98"
+listIP+=" 192.168.7.99"
+listIP+=" 192.168.7.70"
+listIP+=" 192.168.7.68"
+
+
+for ip in $listIP; do
+    sshpass -p "GenCyberUML2021" scp -P 2022 -r $1 kali@$ip:~/.
+done

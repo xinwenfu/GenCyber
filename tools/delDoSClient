@@ -1,0 +1,13 @@
+#!/bin/bash
+UHOME="/home"
+# get list of all users
+_USERS="$(awk -F':' '{ if ( $3 >= 1002 ) print $1 }' /etc/passwd)"
+for u in $_USERS
+do
+   _dir="${UHOME}/${u}"
+   if [ -d "$_dir" ]
+   then
+       cd "${_dir}/GenCyber/attack/" && rm *DoS*
+       rm -rf "${_dir}/GenCyber/chatClient"
+   fi
+done

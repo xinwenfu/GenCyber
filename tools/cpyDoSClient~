@@ -1,0 +1,15 @@
+#!/bin/bash
+UHOME="/home"
+FILE="/home/kali/crypto"
+FILENAME="crypto"
+# get list of all users
+_USERS="$(awk -F':' '{ if ( $3 >= 500 ) print $1 }' /etc/passwd)"
+for u in $_USERS
+do
+   _dir="${UHOME}/${u}"
+   if [ -d "$_dir" ]
+   then
+       cp -r "$FILE" "$_dir"
+       chown -R $(id -un $u):$(id -gn $u) "$_dir/${FILENAME}"
+   fi
+done
