@@ -1,6 +1,6 @@
 This doc instroduces the installation and use of the Remote Desktop Protocol (RDP) app on Windows and MacOS.
 
-# Installl RDP
+# Install RDP
 
 ## Windows
 
