@@ -1,3 +1,4 @@
+This doc introduces how to install and then use OpenVPN.
 
 # Install OpenVPN
 OpenVPN is required to connect to the Cyber Range VPN server and use the virtual machines (VMs) in Cyber Range of UMass Lowell.
