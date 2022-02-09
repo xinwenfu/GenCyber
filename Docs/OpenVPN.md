@@ -5,7 +5,7 @@ OpenVPN is required to connect to the Cyber Range VPN server and use the virtual
 
 ## Windows
 
-Watch the video at https://youtu.be/zu_w6ZwfIeY.
+Watch the video at https://youtu.be/zu_w6ZwfIeY if needed
 
 1. Open the browser Chrome and Google “Windows OpenVPN” 
 2. Click the website “OpenVPN Client Connect For Windows | OpenVPN https://openvpn.net/client-connect-vpn-for-windows/”.
@@ -14,7 +14,7 @@ Note: OpenVPN automatically runs after installation.
 
 ## MacOS
 
-Watch this [YouTube video](https://youtu.be/6_bjBZ8LgM4)
+Watch this [YouTube video](https://youtu.be/6_bjBZ8LgM4) if needed
 
 1. Open the browser Chrome and Google “Mac OpenVPN” 
 2. Click the website “OpenVPN Client Connect For Mac OS | OpenVPN”.
