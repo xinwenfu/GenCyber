@@ -13,7 +13,7 @@ Download and install “Microsoft Remote Desktop” from the Apple App Store
 
 # Use RDP
 
-1. Open Microsoft Remote Desktop Connection
+1. Open the RDP app
 2. Click on the + icon in the top panel to “Add PC”
 3. Enter the IP address for the VM you want to connect to in the “PC name” box
 4. Click “Add”
