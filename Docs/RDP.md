@@ -25,3 +25,7 @@ If the connection is very slow, you may need to change the resolution of the rem
 3. Click the “Display” tab
 4. Under “Resolution”, move the bar so that it says “1280 by 1024” and click “Save”
 5. Now connect to the VM again, following the steps from earlier
+
+# References
+
+[How to Setup Xrdp over Xorg in Linux with Multi Sessions](https://c-nergy.be/blog/?p=16698)
