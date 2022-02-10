@@ -29,3 +29,4 @@ If the connection is very slow, you may need to change the resolution of the rem
 # References
 
 [How to Setup Xrdp over Xorg in Linux with Multi Sessions](https://c-nergy.be/blog/?p=16698)
+[xRDP – Allow multiple sessions (local and remote) for the same user – HowTo]()
