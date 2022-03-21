@@ -1,3 +1,14 @@
+## Overview of penetration testing
+
+In penetration testing, an ehtical hacker (or security consultant) performs hacks of computers per the request of the owner of the computers. Penetration testing has three phases
+- Information collecting. Find the information of the target computers, e.g., IP addresses of those computers.
+- Exploitation. Exploit the computers and find real vulnerabilities
+- Post exploitation. Perform post exploitation of the compromised computers, e.g. collecting passwords, to show evidences of vulnerabilities.
+
+In this field trip, students will use a tool called *Armitage* to perform the three phases of penetration testing.
+
+## Information collecting
+
 1. Log into a Cyber Range PC with the username *cyberadmin* and provided password
 2. Click Application Launcher 
 
@@ -53,6 +64,8 @@ Armitage shows what services (programs that can accept messages from the Interne
 
 <img src="imgs/KubuntuKali-ArmitageFoundServices.PNG">
 
+## Exploitation
+
 12. Click *Attacks* and then *Find Attacks*. Wait for the dialog window *Progress...* to disappear. A dialog Window *Message* shows up then and click *Ok*.
 
 <img src="imgs/KubuntuKali-ArmitageFindAttacks.PNG">
@@ -69,6 +82,8 @@ If thigns go well, a lighting icon shows on the found computer icon
 
 <img src="imgs/KubuntuKali-Armitage-IRCResult.PNG">
 
+## Post exploitation
+
 15. Right click the found computer icon, then *Shell 1* -> *Interact*
 
 <img src="imgs/KubuntuKali-Armitage-IRC-Shell.PNG"> 
@@ -77,7 +92,7 @@ A *Shell 1* console appears
 
 <img src="imgs/KubuntuKali-Armitage-IRC-Shell1-Console.PNG"> 
 
-16. Within the *Shell 1* console, type the following command
+16. Within the *Shell 1* console, type the following command. The purpose is to show we can list the content of a folder in the compromised computer.
 ```
 ls /home/msfadmin
 
