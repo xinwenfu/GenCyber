@@ -92,7 +92,7 @@ If thigns go well, a lighting icon shows on the found computer icon and it means
 <img src="imgs/KubuntuKali-Armitage-IRCResult.PNG">
 
 ## Post exploitation
-Metasploitable is compromised. We can log into Metasploitable and do a lot of things. FOr example, we can list what contents the computer has. Even worse, we can fetch the password file.
+Metasploitable is compromised. We can log into Metasploitable and do a lot of things. For example, we can list what contents the computer has. Even worse, we can fetch the password file.
 
 15. Right click the found computer icon, then *Shell 1* -> *Interact*
 
