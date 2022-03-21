@@ -7,6 +7,8 @@ Penetration testing has three phases
 - Exploitation. Exploit the computers and find real vulnerabilities
 - Post exploitation. Perform post exploitation of the compromised computers, e.g. collecting passwords to show evidences of vulnerabilities.
 
+# Field Trip Goal
+
 In this field trip, students will use a tool called *Armitage* to perform the three phases of penetration testing. Our lab is set up as follows. 
 - We use two virtual machines (VMs), Kali-Fu (Kali Linux) and Metasploitable (Linux full of vulnerabilities), managed by *Oracle VM VirtualBox Manager*.
 - Kali-Fu will be the attacking computer and Metasploitable will be the target.
