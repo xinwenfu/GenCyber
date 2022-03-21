@@ -13,14 +13,16 @@
 
 <img src="imgs/KubuntuVirtualBox.PNG">
 
-5. Log into the Kali Linux with the following credentials
+5. Log into the Kali Linux with the following credentials. 
    - Username: kali
    - Password: kali
+   - Note: Click Kali on the taskbar if you cannot find it
 
 <img src="imgs/KubuntuKali.PNG">
 
 6. Log into the Metasploitable Linux with the following credentials
    - Username: msfadmin
    - Password: msfadmin
+   - Note: Click Metasploitable on the taskbar if you cannot find it
 
 <img src="imgs/KubuntuMetasploitable.PNG">
