@@ -17,7 +17,7 @@ In this field trip, students will use a tool called *Armitage* to perform the th
 ## Lab Setup: Start Kali-Fu and Metasploitable on Host Computer
 The host computer runs the [operating system](https://en.wikipedia.org/wiki/Operating_system) called [Kubuntu](https://en.wikipedia.org/wiki/Kubuntu). Kali-Fu runs [Kali Linux](https://en.wikipedia.org/wiki/Kali_Linux). [Metasploitable](https://docs.rapid7.com/metasploit/metasploitable-2-exploitability-guide/) is a version of Ubuntu Linux and intentionally made vulnerable.
 
-1. Log into a Cyber Range PC with the provided username and password.
+1. Log into a Cyber Range PC with the **provided username and password**.
 
 2. Click *Application Launcher*.
 
