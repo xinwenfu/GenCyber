@@ -30,3 +30,7 @@
 7. Within the Metasploitable console, enter the command *ifconfig" and *Enter* to find the IP address of the Metasploitable VM
 
 <img src="imgs/KubuntuMetasploitable-ifconfig.PNG">
+
+8. Within the Kali GUI (Graphical User Interface), click *Applications*, then *08 - Exploitation Tools*, and then *Armitage* to start the software *Armitage*
+
+<img src="imgs/KubuntuKali-StartArmitage.PNG">
