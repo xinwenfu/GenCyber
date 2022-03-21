@@ -3,9 +3,9 @@
 In penetration testing, an ehtical hacker (or security consultant) hacks computers per the request of the owner of the computers. The goal is to find vulnerabilities of the target computers so that the owner can perform remedies, for example, patching the software of interest and enhancing network security.
 
 Penetration testing has three phases
-- Information collecting. Find the information of the target computers, e.g., IP addresses of those computers.
-- Exploitation. Exploit the computers and find real vulnerabilities
-- Post exploitation. Perform post exploitation of the compromised computers, e.g. collecting passwords to show evidences of vulnerabilities.
+- **Information collecting**. Find the information of the target computers, e.g., IP addresses of those computers.
+- **Exploitation**. Exploit the computers and find real vulnerabilities
+- **Post exploitation**. Perform post exploitation of the compromised computers, e.g. collecting passwords to show evidences of vulnerabilities.
 
 Below is a video demo. I did this demo remotely. Except the computer login process, other operations are exactly the same.
 
