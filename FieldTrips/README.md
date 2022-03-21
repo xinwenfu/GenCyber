@@ -105,4 +105,6 @@ A *Shell 1* console appears
 16. Within the *Shell 1* console, type the following command. The purpose is to show we can list the content of a folder in the compromised computer.
 ```
 ls /home/msfadmin
+```
 
+What is the output of this command?
