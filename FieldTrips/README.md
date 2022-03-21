@@ -12,3 +12,15 @@
    - Click to select the virtual machine *Metasploitable* and then click "Start" to start the Metasploitable Linux virtual machine.
 
 <img src="imgs/KubuntuVirtualBox.PNG">
+
+5. Log into the Kali Linux with the following credentials
+   - Username: kali
+   - Password: kali
+
+<img src="imgs/KubuntuKali.PNG">
+
+6. Log into the Metasploitable Linux with the following credentials
+   - Username: msfadmin
+   - Password: msfadmin
+
+<img src="imgs/KubuntuMetasploitable.PNG">
