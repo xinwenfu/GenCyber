@@ -82,7 +82,7 @@ Armitage shows the found computer icon (with the IP address of Metasploitable) a
 
 ## Exploitation
 
-Metasploitable has a vulnerability called *UnrealIRCD 3.2.8.1 Backdoor*. We will exploit it so as to log into Metasploitable later.
+Metasploitable has a vulnerability called *UnrealIRCD 3.2.8.1 Backdoor*. We will exploit it so as to log into Metasploitable.
 
 12. Click *Attacks* and then *Find Attacks*. Wait for the dialog window *Progress...* to disappear. A dialog Window *Message* shows up then. Click *Ok*.
 
