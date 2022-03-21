@@ -10,7 +10,7 @@ Penetration testing has three phases
 # Field Trip
 
 In this field trip, students will use a tool called *Armitage* to perform the three phases of penetration testing. Our lab is set up as follows. 
-- We use two virtual machines (VMs), Kali-Fu (Kali Linux) and Metasploitable (Linux full of vulnerabilities), managed by *Oracle VM VirtualBox Manager*. 
+- We use two virtual machines (VMs), Kali-Fu (Kali Linux) and Metasploitable (Linux full of vulnerabilities), managed by *Oracle VM VirtualBox Manager*. Virutal machines work like real computers, but they are not physical computers and run on a real physical computer. For example, in our setup, a computer running the Kubuntu Linux actually hosts and runs Kali-Fu and Metasploitable.
 - Kali-Fu will be the attacking computer and Metasploitable will be the target.
 - Armitage is launched from Kali-Fu and exploits a vulnerability in Metasploitable.
 
