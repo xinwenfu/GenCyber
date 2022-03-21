@@ -1,20 +1,26 @@
-## Overview of penetration testing
+# Penetration testing
 
-In penetration testing, an ehtical hacker (or security consultant) performs hacks of computers per the request of the owner of the computers. Penetration testing has three phases
+In penetration testing, an ehtical hacker (or security consultant) hacks computers per the request of the owner of the computers. 
+
+Penetration testing has three phases
 - Information collecting. Find the information of the target computers, e.g., IP addresses of those computers.
 - Exploitation. Exploit the computers and find real vulnerabilities
-- Post exploitation. Perform post exploitation of the compromised computers, e.g. collecting passwords, to show evidences of vulnerabilities.
+- Post exploitation. Perform post exploitation of the compromised computers, e.g. collecting passwords to show evidences of vulnerabilities.
 
-In this field trip, students will use a tool called *Armitage* to perform the three phases of penetration testing.
+In this field trip, students will use a tool called *Armitage* to perform the three phases of penetration testing. Our experiment is set up as follows. 
+- We use two virtual machines (VMs), Kali-Fu (Kali Linux) and Metasploitable (Linux full of vulnerabilities), managed by *Oracle VM VirtualBox Manager*.
+- Kali-Fu will be the attacking computer and Metasploitable will be the target.
+- Armitage is launched from Kali-Fu and exploits a vulnerability in Metasploitable.
 
-## Information collecting
+## Lab setup: start Kali-Fu and Metasploitable
 
-1. Log into a Cyber Range PC with the username *cyberadmin* and provided password
-2. Click Application Launcher 
+1. Log into a Cyber Range PC with the provided username and password.
+
+2. Click *Application Launcher*.
 
 <img src="imgs/KubuntuScreen.PNG">
 
-3. Click *Search...*, type "Virtual" and Click "VirtualBox" in the search results
+3. Click *Search...*, type "Virtual" and Click "VirtualBox" in the search results to launch *Oracle VM VirtualBox Manager*.
 
 <img src="imgs/KubuntuSearch.PNG">
 
@@ -31,22 +37,24 @@ In this field trip, students will use a tool called *Armitage* to perform the th
 
 <img src="imgs/KubuntuKali.PNG">
 
-6. Log into the Metasploitable Linux with the following credentials
+## Information collecting about Metasploitable
+
+6. Log into the Metasploitable Linux with the following credentials. In real world, we can use a variety of tools such as *nmap* to find the IP address of Metasploitable. For simplicity, we will just log into Metasploitable and use a command to find its IP address.
    - Username: msfadmin
    - Password: msfadmin
    - Note: Click Metasploitable on the taskbar if you cannot find it
 
 <img src="imgs/KubuntuMetasploitable.PNG">
 
-7. Within the Metasploitable console, enter the command *ifconfig" and *Enter* to find the IP address of the Metasploitable VM
+7. Within the Metasploitable console, enter the command *ifconfig* and then press the *Enter* key to find the IP address of Metasploitable
 
 <img src="imgs/KubuntuMetasploitable-ifconfig.PNG">
 
-8. Within the Kali GUI (Graphical User Interface), click *Applications*, then *08 - Exploitation Tools*, and then *Armitage* to start the software *Armitage*
+8. Within the Kali GUI (Graphical User Interface), click *Applications*, then *08 - Exploitation Tools*, and then *Armitage* to start the software *Armitage*. We are going to use Armitage to find what networking services/applications are running on Metasploitable.
 
 <img src="imgs/KubuntuKali-StartArmitage.PNG">
 
-9. A few dialog windows show up
+9. A few dialog windows show up one by one
    - In the dialog window *Authentication is needed ...*, enter the password *kali*
    - In the dialog window "Connect...", click the "Connect" button
    - In the dialog window "Start Metasploit?", click the "Yes" button
@@ -60,17 +68,18 @@ In this field trip, students will use a tool called *Armitage* to perform the th
 
 <img src="imgs/KubuntuKali-ArmitageInput.PNG">
 
-Armitage shows what services (programs that can accept messages from the Internet/network) are running.
+Armitage shows the found computer icon (with the IP address of Metasploitable) and what network applications/services (programs that can accept messages from the Internet/network) are running.
 
 <img src="imgs/KubuntuKali-ArmitageFoundServices.PNG">
 
-## Exploitation
+## Exploitation. 
+Metasploitable has a vulnerability called *UnrealIRCD 3.2.8.1 Backdoor*. We will exploit it so as to log into Metasploitable later.
 
-12. Click *Attacks* and then *Find Attacks*. Wait for the dialog window *Progress...* to disappear. A dialog Window *Message* shows up then and click *Ok*.
+12. Click *Attacks* and then *Find Attacks*. Wait for the dialog window *Progress...* to disappear. A dialog Window *Message* shows up then. Click *Ok*.
 
 <img src="imgs/KubuntuKali-ArmitageFindAttacks.PNG">
 
-13. Right click the computer icon, Click *Attack* -> *irc* -> *unreal_ircd_3281_backdoor*
+13. Right click the found computer icon, Click *Attack* -> *irc* -> *unreal_ircd_3281_backdoor*
 
 <img src="imgs/KubuntuKali-ArmitageIRC.PNG">
 
@@ -78,11 +87,12 @@ Armitage shows what services (programs that can accept messages from the Interne
 
 <img src="imgs/KubuntuKali-Armitage-IRCConfig.PNG">
 
-If thigns go well, a lighting icon shows on the found computer icon
+If thigns go well, a lighting icon shows on the found computer icon and it means the found computer is compromsied.
 
 <img src="imgs/KubuntuKali-Armitage-IRCResult.PNG">
 
 ## Post exploitation
+Metasploitable is compromised. We can log into Metasploitable and do a lot of things. FOr example, we can list what contents the computer has. Even worse, we can fetch the password file.
 
 15. Right click the found computer icon, then *Shell 1* -> *Interact*
 
