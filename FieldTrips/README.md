@@ -15,7 +15,7 @@ In this field trip, students will use a tool called *Armitage* to perform the th
 - Armitage is launched from Kali-Fu and exploits a vulnerability in Metasploitable.
 
 ## Lab setup: start Kali-Fu and Metasploitable on Host Computer
-The host computer runs the operating system [Kubuntu](https://en.wikipedia.org/wiki/Kubuntu).
+The host computer runs the operating system called [Kubuntu](https://en.wikipedia.org/wiki/Kubuntu). Kali-Fu runs [Kali Linux](https://en.wikipedia.org/wiki/Kali_Linux). [Metasploitable](https://docs.rapid7.com/metasploit/metasploitable-2-exploitability-guide/) is a version of Ubuntu Linux and intentionally made vulnerable.
 
 1. Log into a Cyber Range PC with the provided username and password.
 
