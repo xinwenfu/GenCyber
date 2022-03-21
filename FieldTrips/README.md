@@ -75,7 +75,8 @@ Armitage shows the found computer icon (with the IP address of Metasploitable) a
 
 <img src="imgs/KubuntuKali-ArmitageFoundServices.PNG">
 
-## Exploitation. 
+## Exploitation
+
 Metasploitable has a vulnerability called *UnrealIRCD 3.2.8.1 Backdoor*. We will exploit it so as to log into Metasploitable later.
 
 12. Click *Attacks* and then *Find Attacks*. Wait for the dialog window *Progress...* to disappear. A dialog Window *Message* shows up then. Click *Ok*.
@@ -94,7 +95,8 @@ If thigns go well, a lighting icon shows on the found computer icon and it means
 
 <img src="imgs/KubuntuKali-Armitage-IRCResult.PNG">
 
-## Post exploitation
+## Post Exploitation
+
 Metasploitable is compromised. We can log into Metasploitable and do a lot of things. For example, we can list what contents the computer has. Even worse, we can fetch the password file.
 
 15. Right click the found computer icon, then click *Shell 1* -> *Interact*
