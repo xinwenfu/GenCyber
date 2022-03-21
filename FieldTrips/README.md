@@ -1,6 +1,6 @@
 # Penetration testing
 
-In penetration testing, an ehtical hacker (or security consultant) hacks computers per the request of the owner of the computers. 
+In penetration testing, an ehtical hacker (or security consultant) hacks computers per the request of the owner of the computers. The goal is to find vulnerabilities of the target computers so that the owner can perform some remedies, for example, patching the software of interest and enhancing network security.+
 
 Penetration testing has three phases
 - Information collecting. Find the information of the target computers, e.g., IP addresses of those computers.
