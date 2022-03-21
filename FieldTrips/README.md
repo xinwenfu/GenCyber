@@ -26,3 +26,7 @@
    - Note: Click Metasploitable on the taskbar if you cannot find it
 
 <img src="imgs/KubuntuMetasploitable.PNG">
+
+7. Within the Metasploitable console, enter the command *ifconfig" and *Enter* to find the IP address of the Metasploitable VM
+
+<img src="imgs/KubuntuMetasploitable-ifconfig.PNG">
