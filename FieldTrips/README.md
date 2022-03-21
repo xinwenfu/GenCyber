@@ -40,7 +40,7 @@ The host computer runs the [operating system](https://en.wikipedia.org/wiki/Oper
 
 <img src="imgs/KubuntuKali.PNG">
 
-## Information collecting about Metasploitable
+## Collecting Information about Metasploitable
 
 6. Log into the Metasploitable Linux with the following credentials. In real world, we can use a variety of tools such as *nmap* to find the IP address of Metasploitable. For simplicity, we will just log into Metasploitable and use a command to find its IP address.
    - Username: msfadmin
