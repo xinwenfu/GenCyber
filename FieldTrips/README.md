@@ -102,7 +102,7 @@ If things go well, a lighting icon shows on the found computer icon and it means
 
 ## Post Exploitation
 
-The Metasploitable VM is now compromised. We can log into Metasploitable and do a lot of things. For example, we can list what contents the computer has. Even worse, we can fetch the password file.
+The Metasploitable VM is now compromised. We can log into Metasploitable and do a lot of things. For example, we can list what contents the computer has. Even worse, we can fetch the password file although we do not do it in this hands-on exercise.
 
 15. Right click the found computer icon, then click *Shell 1* -> *Interact*
 
