@@ -96,7 +96,7 @@ Metasploitable has a vulnerability called *UnrealIRCD 3.2.8.1 Backdoor*. We will
 
 <img src="imgs/KubuntuKali-Armitage-IRCConfig.PNG">
 
-If thigns go well, a lighting icon shows on the found computer icon and it means the found computer is compromsied.
+If things go well, a lighting icon shows on the found computer icon and it means the found computer is compromsied.
 
 <img src="imgs/KubuntuKali-Armitage-IRCResult.PNG">
 
