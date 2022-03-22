@@ -7,7 +7,7 @@ Penetration testing has three phases
 - **Exploitation**. Exploit the computers and find real vulnerabilities
 - **Post exploitation**. Perform post exploitation of the compromised computers, e.g. collecting passwords to show evidences of vulnerabilities.
 
-Below is a video demo. I did this demo by remotely loggng into computers. Except the computer login process, other operations are exactly the same.
+Below is a video demo. I did this demo by remotely loggng into computers. Except the computer login process, other operations are exactly the same as working at a physical computer.
 
 [![Armitage](https://img.youtube.com/vi/flM_0TKfIIc/0.jpg)](https://youtu.be/flM_0TKfIIc)
 
