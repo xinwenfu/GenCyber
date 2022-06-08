@@ -1,34 +1,18 @@
 # Introduction to Python
+This is a brief introduction to the Python programming language. We still have a lot of things to cover. We will have an overview, how to run python, how you can do debugging, naming of variables, functions and other things, assignment statement, loop statement, data structures such as tuples and the strings, how you define a function, exception and class.
 
-This is an introduction to the Python programming language. We still have a lot of things here. We have give an overview, how to run python, how you can do debugging, naming of variables, functions and other things, assignment statement, loop statement, data structures such as tuples and the strings, how you define a function, exception and class.
-the hands-on lab will be given to you guys so you guys will design so i want a
-simple interesting and a fun one okay because they said that this is a summer
-camp so the purpose is for fun not for hybrid learning but they are going to learn a lot of things
-so this is kind of a brief history of python and uh this guy
-gudo van rossing he actually invented a python in early
-90s and google actually chose python it's
-as its own primary programming languages
-from the beginning okay that means so when google was founded
-and that they actually chose python as one of their
-primary programming languages so i'm kind of surprised
-so then again here so what is a programming language that's a good question right
-and uh so what is the purpose of a language and so you can see here right so we have
-hardware so for example our computer has a lot of accessories
-a preference like a printer and a display and uh
-many other things so basically the purpose of a
-programming languages is a we want to control those hardware for example we want to draw beautiful
-pictures on the display we want to print something okay and so the purpose of the programming
-language is to control the hardware so that we can do what we want right
-and then what is the programming language so
-basically uh the hardware can only understand the zero and the
-ones and uh so we call the zero and the one programming language as a machine
-language and they'll actually so you guys took my analysis class then we know
-right so when we actually try to use the cpu to run code the cpu can only
-understand the machine language that's a sequence of material ones but apparently machine language is too
-hard for everybody and that's why people invented a same language so assembling
-language is much simpler because now you don't need to remember zero ones you just need to remember some names okay
-and uh so assembly language is much more friendly
-however a same language is super hard for general person and that's why people
+Here is brief history of Python. Guido van Rossum invented Python in early 90s. Google actually chose Python as one of its primary programming languages
+from when Google was founded. 
+
+## Overview
+
+What is a programming language? Why do we need it? A computer has accessaries such as printers and monitors. One purpose of a programming languages is to control those hardware. For example we want to draw beautiful pictures on a display. We want to print something on a printer. The code in a program can do those things. We may want to perform complex computing and a program can be written so that the a core chip called CPU (central processing unit) can be instructed to perform the computation and the program can also show the results on the display. So programs can control the hardware and perform computing. 
+
+Because of its construction principles, the hardware and CPU can only accept binary commands and data in zeros and ones. Therefore, the very low level programming language is a machine language. Apparently machine language is too hard for everybody because it is hard to remember commands in zeros and ones. 
+
+That's why people invented the assembly language, which is much simpler. In assembly language, meaningful names are given to commands so that they are easy to remember. Since the hardware and CPU can only understand machine lanauage, a program in assembly language has to be translated into machine language by software called assembler before they are actually run. 
+
+However, assembly language is still super hard for general person since you need to understand a lot of hardware details to really use it. But if your goal is to perform computation, why should you understand hardware so as to compute? Our goal is computing not understanding computer hardware. and that's why people
 invented the other languages like a c and a pascal and today we also have c
 plus plus and the python so we are here so python is a very kind of a top-level
 programming language designed for general people and um so you will see
