@@ -57,17 +57,19 @@ You can actually run the code within IDLE. You just just click a few buttons.
 IDLE also has an integrated debugger. So what is a debugger and why do we need a debugger? We often make errors when we program. How can you find logical errors of your code? Reading the whole code is one way. But it is boring and can be very challenging if the code is a lot. With a debugger, we can run the code statement by statement and see what is going on over there and if the program runs as expected. A debugger helps you understand the code and pinpoint the error.
 
 IDLE is installed on our Kali virtual machine. Click the dragon like *Application* icon and search IDLE. You just click IDLE there and open the IDLE shell window.
+
 <img src="../Imgs/KaliApplications.png" width=400>
 
- Once the  then you can see
-basically you know we are already running the python interpreter and you
-can see the python3.10.4 so basically idle
-integrates python into itself it runs python automatically when you actually start it
-okay so once you do that you can actually uh
-open a file and so here's how you how you open a file you can use a
-file so this is here and open then you navigate to the file within the
-file dialog then you click the file and you open so once you open it so it's in
-another window then you can just click uh the menu called run then you run module and you can write okay
+In the IDLE shell window,  you can see the python interpreter is running. So basically IDLE
+integrates Python into itself. It runs Python automatically when you start IDLE. Within the Python shell, you can enter code and run it.
+
+<img src="../Imgs/IDLEShell.png">
+
+We want to use IDLE to open a Python file. Here is how we do this. With the IDLE shell window, click the memu *File* then *Open*. Within the opened file dialog window, navigate to the file, click the file to and then *Open*. 
+
+Once you open the file, it's in another window. You can just click uh the menu called *Run* then you *Run Module* to run the Python program in the file.
+
+and you can write okay
 and so this is a basically you can see the editor uh window
 and this is the the code we call the basics dot py and this is the run here
 so once you enter everything here then you can actually click run here then you run module you can then you can run so
