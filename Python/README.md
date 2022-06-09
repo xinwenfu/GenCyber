@@ -192,7 +192,14 @@ Find it within *Applications*. Click to start a terminal within which various Li
 
 <img src="../Imgs/Terminal.png" width=640>
 
-it will show you something like this
+To run basics.py, we first use the Linux *cd* to change the directory to where basics.py is saved.
+Then the following command can be used to run basics.py.
+
+```
+python basics.py
+```
+
+theit will show you something like this
 okay and uh so then you're gonna go to uh the place where you see
 these uh basics on the py here now you can just do buy some basic dollar py but uh
 really i don't recommend that you guys do it in this because you are high school students of course you guys are not high school students
