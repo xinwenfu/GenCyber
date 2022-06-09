@@ -60,20 +60,19 @@ IDLE is installed on our Kali virtual machine. Click the dragon like *Applicatio
 
 <img src="../Imgs/KaliApplications.png" width=400>
 
-In the IDLE shell window,  you can see the python interpreter is running. So basically IDLE
-integrates Python into itself. It runs Python automatically when you start IDLE. Within the Python shell, you can enter code and run it.
+In the IDLE shell window,  you can see the Python interpreter is running. So basically IDLE
+integrates Python into itself. It runs the Python interpreter automatically when you start IDLE. Within the Python shell, you can enter code and run it.
 
 <img src="../Imgs/IDLEShell.png"  width=640>
 
 We want to use IDLE to open a Python file. Here is how we do this. With the IDLE shell window, click the memu *File* then *Open*. Within the opened file dialog window, navigate to the file, click the file to and then *Open*. 
-Once you open the file, it's in another window. You can just click uh the menu called *Run* then you *Run Module* to run the Python program in the file.
+Once you open the file, it's in another window. The figure below is a basically you can see the editor window. 
 
 <img src="../Imgs/IDLEEditor.png" width=640>
 
-and you can write okay
-and so this is a basically you can see the editor uh window
-and this is the the code we call the basics dot py and this is the run here
-so once you enter everything here then you can actually click run here then you run module you can then you can run so
+You can just click the menu called *Run* then you *Run Module* within the editor window to run the Python program in the file. Below shows the running results.
+<img src="../Imgs/IDLERunningResults.png" width=640>
+
 here is the results okay so let's have a look at this simple python code so i give a lot
 of comments here and normally this uh hash sign here
 starts a comment okay so everything here is a comment
