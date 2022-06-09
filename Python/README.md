@@ -97,28 +97,23 @@ You can just click the menu called *Run* then you *Run Module* within the editor
 
 ###  Simple Code Explanation
 
-```
+Now we plain *basics.py* above. I give a lot of comments here.
+Normally this hash sign *#* starts a comment.
+The first line is very special and is called the shibang line.
+When we try to run this program, we are going to use the Python interpreter. But where is the Python interpreter? 
+The shebang line specifies the location, i.e., */usr/bin/python*. 
 
-```
-here is the results okay so let's have a look at this simple python code so i give a lot
-of comments here and normally this uh hash sign here
-starts a comment okay so everything here is a comment
-and uh so the first line is very special it's called the shibang line here so we
-will talk about why we need this later but basically it tells you
-okay and when we try to run this program we are going to use the python interpreter
-which is located and slash user slash being slasher python okay so that's basically what
-this is shebong line does okay and uh
-so now let's look at the first line of the coding so this is called assignment so
-basically we assign the expression of 34 minus 23 to x
-okay so x here is an integer right then here on the second line here
-line pin here and we assign a string a string is just a sequence of characters
-hello to y okay and also y is a string variable
-and then here at line 11 we assign 3.45 to z
-so this is called a float number and uh so you can see here you know
-in computers those integer uh string
-and float numbers they are saved in the memory
-in a computer in a different way that's why we differentiate the different variables okay with different xyz
-because you know they are saved in computers in different way okay so the at the line 12 is if
+Let's look at the first line of the code at , *x = 34 - 23*.
+This is called assignment statement. Here we assign the expression of 34 minus 23 to x, which is an integer.
+
+On the second line, we assign a string *'Hello'*, which is just a sequence of characters,  to y. y is a string variable.
+
+At line 11 we assign 3.45 to z, which is called a float number.
+
+Why do we have different variable types such as integers, strings and floats? In computers, different types of variables are saved in the memory
+in a different way. That's why we differentiate different types of variables.
+
+At the line 12 is if
 statement and uh so here it says if this condition is met
 then we are going to run the next block of code so here it means if z
 is equal to 3.45 or y is equal to hello
