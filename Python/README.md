@@ -185,7 +185,7 @@ In many other programming lanuages, the is a *main* function, which is the entry
 That is, every time when we run the program, the function called main runs first.
 Python does not have the main function. Code with least indentation runs first.
 
-###  Running Python Program at Command Line
+###  Running Python Program via Python Interpreter at Command Line
 Here you have to actually use the application called *Terminal*.
 In Kali VM, the program *Terminal Emulator* can be used as *Terminal*.
 Find it within *Applications*. Click to start a terminal within which various Linux commands can be entered.
@@ -199,21 +199,26 @@ Then the following command can be used to run basics.py.
 python basics.py
 ```
 
-theit will show you something like this
-okay and uh so then you're gonna go to uh the place where you see
-these uh basics on the py here now you can just do buy some basic dollar py but uh
-really i don't recommend that you guys do it in this because you are high school students of course you guys are not high school students
-but i think during the camp we are going to just use uh uh
-the idol here because uh you know many of those people those students they don't know terminal
-and they are not familiar with command line okay and uh so but this is how you use it and
-uh so you can see here so you go to the folder which contains basically the poi
-then you use python to write and you can see we got the similar results
-so the third way is that you can run the python script the file
-directly at the command line okay so now if you want to do that
-you need to make sure the first line of your python file must
-have this okay so this will indicate which python interpreter you want to use to
-run the file okay so this first thing you have to do the second thing you will do is uh
-you need to make the program your call your file executable
+###  Running Python Program Directly at Command Line
+The third way is to run the Python script, i.e., the file, directly at the command line.
+Sometimes, we want this method since we may run a Python script very often and entering *python* every time is cumbersome.
+
+- We need to make sure the first line of the Python file must have the shebang line
+```
+#!/usr/bin/python
+```
+- We need to make the Python file executable using the following command
+```
+chmod u+x basics.py
+```
+- Now we can run the file from command line directly
+```
+./basics.py
+```
+where *./* refers to the current folder. That is, the path of the script has to be specified to run the script directly. A full path name can also be used.
+
+<img src="../Imgs/PythonDirectRunning.png" width=640>
+
 and that means you have to change the permission this is how you do it do it so this is called changing mode means
 user owner and plus x means uh we want to write so x is a
 excludable permission so once you then we put a file here so this will make a
