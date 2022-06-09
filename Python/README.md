@@ -6,6 +6,7 @@ from when Google was founded.
 
 ## Overview
 
+### Levels of programming languages
 What is a programming language? Why do we need it? A computer has accessaries such as printers and monitors. One purpose of a programming languages is to control those hardware. For example we want to draw beautiful pictures on a display. We want to print something on a printer. The code in a program can do those things. We may want to perform complex computing and a program can be written so that the a core chip called CPU (central processing unit) can be instructed to perform the computation and the program can also show the results on the display. So programs can control the hardware and perform computing. 
 
 <img src="../Imgs/LanguageLevel.png" width=400>
@@ -15,19 +16,30 @@ Because of its construction principles, the hardware and CPU can only accept bin
 That's why people invented the assembly language, which is much simpler than machinen code. In assembly language, meaningful names called mnemonics are given to commands so that they are easy to remember. Since the hardware and CPU can only understand machine lanauage, a program in assembly language has to be translated into machine language by software called assembler before they are actually run. 
 However, assembly language is still super hard for general person since you need to understand a lot of hardware details to really use it. But if our goal of programming is to process data and do computation, why should you understand hardware so as to compute? 
 
-That's why people invented high level programming languages like C, C++, C#, Java and Python. High level programming laanguages are more like natural languages we speak so that they are more intuitive. High lelvel programming languages often hide hardware details so that you can focus on your tasks. Of course, C and C++ still involve some details like pointers, which refer to memory locations where data are saved. Language like Python and Java remove all such concepts. Although languages like Python and Java cannot be used to write programs controlling hardware directly, they are easy to learn and can deal with a lot of things like data processing. One statement or instruction in a high level programming langauge is often equivalent to many statements or instructions in a low level programming language. Because they are easy to learn, many people learn them and develop a lot of code libraroies, which contain code that can do various tasks. For example, you can use the code to draw a circle at a particular location on the display.
+That's why people invented high level programming languages like C, C++, C#, Java and Python. High level programming laanguages are more like natural languages we speak so that they are more intuitive. High lelvel programming languages often hide hardware details so that you can focus on your tasks. Of course, C and C++ still involve some details like pointers, which refer to memory locations where data are saved. Language like Python and Java remove all such concepts. Although languages like Python and Java cannot be used to write programs controlling hardware directly, they are easy to learn and can deal with a lot of things like data processing. One statement or instruction in a high level programming langauge is often equivalent to many statements or instructions in a low level programming language. Because they are easy to learn, many people learn them and develop a lot of code libraroies, which contain code that can do various tasks. For example, you can use the code to draw a circle at a particular location on the display. 
 
-a pascal and today we also have c
-plus plus and the python so we are here so python is a very kind of a top-level
-programming language designed for general people and um so you will see
-actually you can use one sentiment to do a lot of things however if you you want
-to use assembly language or machine language to implement that one statement
-in person okay that's a lot of instructions so python is designed for
-general audience okay and uh so
-so what is a a play sound language program and uh so basically a python program is
-just a some kind of a code in a file and normally you know we ended the file with
-uh the file extension.py right and sometimes we also call python program as
-a script okay now how do you run python so actually when you run python then you
+### Python
+A python program is Python code in a file with the file extension .py, for example, basics.py below. 
+```
+#! /usr/bin/python
+# Pythin script file name: basics.py
+# How to run: 
+# 1. Open a terminal within Linux like Kali
+# 2. Type: python basics.py
+    
+# Use the keyword "def" to define a function
+def circleArea(r):
+    PI = 3.14
+    area = PI * r * r
+    return area
+
+radius=5
+area=circleArea(radius)
+# String modulo operator (%) to format outputs of print
+print("Circle radius=%.2f, Area=%.2f" %(radius, area))
+```
+
+ right and sometimes we also call python program as a script okay now how do you run python so actually when you run python then you
 whatever ways you want to use you are actually using this python
 software and we also call this as a python interpreter so you actually run
 use the python then your file name and you can write so here i show you how to
@@ -35,6 +47,8 @@ run here so you can see you run python basically py assuming this file is
 called basics.py so this is how you actually run it okay
 and then now let's look at different ways because you know some sometimes you know people don't
 want to actually uh enter python space basically the py but
+
+
 it's hard too hard right i mean it's still very hard because you you know you have to know where to enter the commands
 so people invented different ways to do that so so here we talk about the three ways
 running python program one is we using a software called uh idle
