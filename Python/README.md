@@ -56,11 +56,10 @@ You can actually run the code within IDLE. You just just click a few buttons.
 
 IDLE also has an integrated debugger. So what is a debugger and why do we need a debugger? We often make errors when we program. How can you find logical errors of your code? Reading the whole code is one way. But it is boring and can be very challenging if the code is a lot. With a debugger, we can run the code statement by statement and see what is going on over there and if the program runs as expected. A debugger helps you understand the code and pinpoint the error.
 
+IDLE is installed on our Kali virtual machine. Click the dragon like *Application* icon and search IDLE. You just click IDLE there and open the IDLE shell window.
 <img src="../Imgs/KaliApplications.png" width=400>
 
-how do you find the idle here so this is how you find idle so this is our caddy virtual machine and so this part is
-called applications so the dragon icon here so you click it and you can search
-addo and you just click idle here and you will open this uh idle shell okay then you can see
+ Once the  then you can see
 basically you know we are already running the python interpreter and you
 can see the python3.10.4 so basically idle
 integrates python into itself it runs python automatically when you actually start it
