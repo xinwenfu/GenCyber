@@ -95,7 +95,7 @@ You can just click the menu called *Run* then you *Run Module* within the editor
 
 <img src="../Imgs/IDLERunningResults.png" width=640>
 
-####  Simple Code Explanation
+####  Sample Code Explanation
 
 Now we plain *basics.py* above. I give a lot of comments here.
 Normally this hash sign *#* starts a comment.
@@ -156,30 +156,30 @@ After we get returned *area*, at *print("Circle radius=%.2f, Area=%.2f" %(radius
 We use the *%* operator to format the output.
 *%.2f* means when we print a number, we want 2 digit precision and print only two decimal places.
 
-We still have one problem left. When we run the given program, 
-where does the code start to run? What is the first piece of code to run?
+### Which code runs first?
+We still have one problem left. When we run the given program, what is the first piece of code to run?
 To answer this question, we have to understand indentation.
-Indentation refers to the spaces at the start of a code line.
+Indentation refers to the spaces at the start of a code line. 
 Python uses indentation to make blocks of code.
 The code block with least indentation runs first.
+Wherever a new block of code starts, four spaces are recommended.
 The first line of a Python program can't have indentation.
 The Python interpreter checks each line and decides what to do, e.g. running the line of code.
 
 In the example basics.py, the Python interpreter cehck the code line by line.
-It ignores the comments at the start of the program and run the three assignments since they have zero indentation.
+It ignores the comments at the start of the program and runs the three assignments since they have zero indentation.
 When it runs the *if* statement, it checks the condition. If the condition is met, the body of the *if* statement at more indentation runs, and then execution moves forward after the *if* statement.
 If the condition is not met, the body of the *if* statement is ignored and execution moves directly after the *if* statement.
-The following two statements for printing with zero indentation run.
+The two statements for printing with zero indentation run then.
 
-Now the function is defined in the code. When you define a function, we will not run code, but the Python interpreter remembers the defined
-function. A function has to be defined first before it is used. That's why we can come back to the function when we use it to calcualte the area of the circle.
+Now the function is defined in the programn. When a function is defined, the Python interpreseter will not run the code, but it remembers the defined
+function. A function has to be first defined before it is used. 
 
-This is how the code is run. So basically we run the code based on the
+So basically we run the code based on the
 blocks logically. The grammar is similar to human languages.
-Let's ahve a look at some printout from the code. You can see the printout of 12 in the IDLE shell window.
-It is because we print x here. Originally x is assigned 11. Then we assign x+1 to x to get 12.
-The output "Hello World" is showed because we concatenated "Hello" and " World" together and then we
-print y.
+Let's ahve a look at some printout from the code. We can see the printout of 12 in the IDLE shell window.
+That is the output of *print(x)*. Originally x is assigned 11. Then we assign x+1 to x to get 12.
+The output "Hello World" is the result of *print(y)* because we concatenat "Hello" and " World" together and assign the concatenated strings to y.
 
 it's a when you do the annotation four spaces are recommended so don't use tab
 because that will cause confusion and uh but you can just try to make sure
