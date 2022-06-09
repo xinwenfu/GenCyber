@@ -103,71 +103,64 @@ The first line is very special and is called the shibang line.
 When we try to run this program, we are going to use the Python interpreter. But where is the Python interpreter? 
 The shebang line specifies the location, i.e., */usr/bin/python*. 
 
-Let's look at the first line of the code at , *x = 34 - 23*.
+At line *x = 34 - 23* , *x = 34 - 23*.
 This is called assignment statement. Here we assign the expression of 34 minus 23 to x, which is an integer.
 
-On the second line, we assign a string *'Hello'*, which is just a sequence of characters,  to y. y is a string variable.
+At line *y = 'Hello'*, we assign a string *'Hello'*, which is just a sequence of characters,  to y. y is a string variable.
 
-At line 11 we assign 3.45 to z, which is called a float number.
+At line *z = 3.45*, we assign 3.45 to z, which is called a float number.
 
 Why do we have different variable types such as integers, strings and floats? In computers, different types of variables are saved in the memory
 in a different way. That's why we differentiate different types of variables.
 
-At the line 12 is if
-statement and uh so here it says if this condition is met
-then we are going to run the next block of code so here it means if z
-is equal to 3.45 or y is equal to hello
-and here is a column indicates a new block means if
-the conditions here are met we are going to run the new block so how do we actually tell this is a block we use
-indentation here so you can see here x and y they have same indentation
-basically they belong to the same block okay so basically when we
-run this if statement right and so if the conditions are met we're going to
-run line 13 first and i'm folding next okay
-and you can see here basically at line 13 we assign x plus 1 to x so basically the
-original value of x will be overwritten but uh so the new value is a the old value plus
-one here at the line 40 here is the
-kind of a concatenation of strings so basically again we concatenate the original hello
-with the word and assign it to y okay
-and uh so this is basically what is going on here okay finally we print x with printer y
-okay and uh so this is a basic uh kind of a piece of code here
-i have something called a func uh about a function so you can see here this function
-uh is called a circle area we are computing the area of a circle and you
-can see here why do we need a function here sometimes you know we want to calculate like a
-the area of the circle repeatedly within the program and um so you don't want to write the data piece
-of code everywhere every time you want you want it so we define something called a function so every time when you
-want to use it you just actually call down the function name given the
-parameter this parameter is the radius okay and so then you can just use it you
-don't need to put the code everywhere you write right so let's look at the code here so i'm defining the function
-called the circle array and it accepts one parameter which is the radius
-again here calling starts the block okay as we mentioned we use indentation to
-indicate uh what is the block so here we first put
-the pi is assigned with the 3.14 then we calculated the array which is pi times r
-times r finally we return area so so let's look at how we use this uh
-function so at the line 28 okay and uh so first we assign file to
-readers then we call this is circle area and uh given
-the parameter radius so then basically when we do this right we are
-evoking circle array with a parameter radius and so basically
-the function will be used to do the computation given now r here will be
-equal to the radius so once we have the result
-the result will be ascended to area okay so finally we do the print okay and
-then here i added something called the formatting to to the release printing statement and
-it's basically you know i'm telling i just want uh two numbers uh after the
-decimal point that's a precision right and um so now for the radius i want just
-two decimal point and uh for the area i also just i want the two different point numbers or
-precision here okay so this is the whole code now you may wonder
-okay so now you give me the code so
-where does the code start so when i try to use the python right you said you click run you run module and the code
-will run so what is the first piece of code it will run so which piece of code will
-run first so basically the code and the nine will actually run
-first and because it has a indentation of zero so basically
-the first level of the code at the first level of indentation will run first now because x
-doesn't have any indentation so basically and one python
-interpreter it prints the line by line so what the python interpreter does is
-it will check each line here okay and the cd indication so when we
-check this based sign here is one out these comments so i don't need to do anything so then the the python interpreter that
-moved to line nine expands oh this is the indentation zero okay good i'm going
-to write so basically all the independent zero here will be one okay
-so when we run it here it will check so if the condition method it will go ahead and run
+Next line is an *if* statement. It says if the listed condition *z == 3.45 or y == "Hello"* is met,
+then we are going to run the next block of code. The condition means if z
+is equal to 3.45 or y is equal to 'Hello'.
+The colon *:* indicates a new block pursues.
+We use indentation to specify a new block.
+The three assignments above and the *if* statement have the same indentation.
+They belong to the same block. The two assignments *x = x + 1* and *y = y + " World"* in the body of the *if* statement have the same identation. 
+When we run this *if* statement and the condition is met, we're going to
+run the body of the *if* statement. If the condition is not met, we move on without running the body of the *if* statement.
+
+In the body of the *if* statement, the original value of x plus 1 is assigned to x in *x = x + 1*.
+x has the old value plus one. *y = y + " World"* concatenates the original string referred to by *y* with *" World"* and assign the new string to *y* back.
+
+We then use the function *print* provided by Python to print x and y.
+
+We just mentioned function and can actually define our own function.
+In the code, we use the keyword *def* to define our own function called *circleArea* to compute the area of circike with the radius denoted as *r*.
+Why do we need a function?
+When we want to calculate a the area of the circle repeatedly within a program, we don't want to write thepiece
+of code every time and everywhere we want to perform the calculaton. We define a function to this end so that every time when you
+want to use it you just actually call the function name providing the radius parameter.
+In the example, we use indentation to indicate the function bodi, i.e. the code block that calculates the area of a circle.
+In the function body, we first assign 3.14 to variable *PI* and then calculate the arrea, which is PI times r
+times r. Finally we return the calcualted *area*.
+
+Let's look at how we use this function.
+At line *radius=5*, we assign 5 to the variable radius. 
+
+At line *area=circleArea(radius)*, we call the defined function *circleArea* and passes *radius* as the function's parameter. The function's variable *r* now has the value of *radius*. The function code uses this *r* to calcualte the area of the circle.
+So basically the function is used to do the computation given *r*.
+The calculation result is returned and assigned to *area*.
+
+After we get *area*, at *print("Circle radius=%.2f, Area=%.2f" %(radius, area))*, we do the print.
+We use the % operator to format the output.
+*%.2f* means when we print a number, we want 2 digit precision and print only two decimal places.
+
+We still have one problem left. When we run the given program, 
+where does the code start to run? What is the first piece of code to run?
+To answer this question, we have to understand indentation.
+Indentation refers to the spaces at the start of a code line.
+Python uses indentation to make blocks of code.
+The code block with least indentation runs first.
+The first line of a Python program can't have indentation.
+The Python interpreter checks each line and decides what to do, e.g. running the line of code.
+
+In the example basics.py, the Python interpreter cehck the code line by line.
+It ignores the comments at the start of the program and run the three assignments since they have zero indentation.
+When it runs the *if* statement, it checks the condition. If the condition is met, the body of the *if* statement runs and then execution moves forward after the *if* statement.   method it will go ahead and run
 uh the level two right uh
 code here at the indication at the for the indentation here right so now once
 it's done now we're going to print x for the y down here we define the function so
