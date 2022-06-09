@@ -39,33 +39,24 @@ area=circleArea(radius)
 print("Circle radius=%.2f, Area=%.2f" %(radius, area))
 ```
 
- right and sometimes we also call python program as a script okay now how do you run python so actually when you run python then you
-whatever ways you want to use you are actually using this python
-software and we also call this as a python interpreter so you actually run
-use the python then your file name and you can write so here i show you how to
-run here so you can see you run python basically py assuming this file is
-called basics.py so this is how you actually run it okay
-and then now let's look at different ways because you know some sometimes you know people don't
-want to actually uh enter python space basically the py but
+Sometimes we also call python program as a script. How do you run a Python program? Whatever ways you choose to run a Python program, it is the *python*
+software, also called Python interpreter, which shall be installed on your computer and = actually runs the python code line by line. For example, within a Linux terminal, you can run the basics.py below
+```
+python basics.py
+```
+## Running Python
+People invented different ways to run Python programs so that you can choose the one you like. We talk about the three ways running a Python program
+- Using software called *IDLE* (integrated developer environment)
+- Using *python* at the command line
+- Running the Python program directly at the command line so you don't need to enter the python command in the second approach
+ 
+###  Using IDLE
+When we write a Python program, the first thing you have to do is to write the code and put the code in a file and save it in a folder on a computer. IDLE is a software program, which provides you all the things you need. It has a text editor so that you can enter your code into a file.
+You can actually run the code within IDLE. You just just click a few buttons. 
+
+IDLE also has an integrated debugger. So why do we need a debugger? We often make errors when we program. How can you find logical errors? Reading the whole code is one way. But it is boring and can be very challenging. With a debugger, we can run the code statement by statement and see what is going on over there and if the program runs as expected. 
 
 
-it's hard too hard right i mean it's still very hard because you you know you have to know where to enter the commands
-so people invented different ways to do that so so here we talk about the three ways
-running python program one is we using a software called uh idle
-okay so idle here is something called the integrated developer environment and we'll see what
-it looks like and then we can also use the python at the command line what is command line so
-i'll show you later and then so then the throttle is running directly at the command line so you don't need to enter
-the python not a command you just need to run the file directly how can we do that
-so let's first look at the idle so you know when you want to
-write a python program the first thing you have to do is you have to write the code and put the code in a file and save
-it then you can write so this idle is a such kind of
-software which provides you all the things you need it is a text editor so that you can
-enter your code into a file and save it now you can actually
-uh run the code within idle so there's a manual over
-there you just click it and you can grind and also android has an integrated
-debugger and so why do we need debugger because we want to know if the program is right you want to run the code
-stiff statement by statement and see what is going on over there right so we'll see
-what is what is that looks like so
 how do you find the idle here so this is how you find idle so this is our caddy virtual machine and so this part is
 called applications so the dragon icon here so you click it and you can search
 addo and you just click idle here and you will open this uh idle shell okay then you can see
