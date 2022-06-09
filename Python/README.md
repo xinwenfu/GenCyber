@@ -23,11 +23,32 @@ A python program is Python code in a file with the file extension .py, for examp
 ```
 #! /usr/bin/python
 # Pythin script file name: basics.py
-# How to run: 
+# Normally, "#" indicates a single line comment
+# Method 1 running basics.py: 
 # 1. Open a terminal within Linux like Kali
 # 2. Type: python basics.py
+
+# "#!" on the first line starts a so-called shebang (hashbang) line and
+# specifies which command should be used to run the scrip
+# when the script has execution permission and runs at the command line
+# Method 2 running basics.py: 
+# 1. Add execution permission to basics.py: chmod u+x basics.py
+# 2. Type: ./basics.py
     
+x = 34 - 23             # Assign 34-23 to x   
+y = 'Hello'             # Assign 'Hello' to y  
+z = 3.45                # Assign 3.45 to z
+if z == 3.45 or y == "Hello":   # if statement
+    x = x + 1           # Block structure indicated by indentation
+    y = y + " World"    # y + " World" is string concatenation
+print(x)                # print x
+print(y)                # print y
+
 # Use the keyword "def" to define a function
+# A function (e.g., circleArea) is a block of code
+# It runs when it is explicitly called (e.g., circleArea(5))
+# Data as parameters (e.g., r) can be passed into a function
+# Use the return statement (e.g., return area) to return a value
 def circleArea(r):
     PI = 3.14
     area = PI * r * r
@@ -71,8 +92,14 @@ Once you open the file, it's in another window. The figure below is a basically 
 <img src="../Imgs/IDLEEditor.png" width=640>
 
 You can just click the menu called *Run* then you *Run Module* within the editor window to run the Python program in the file. Below shows the running results.
+
 <img src="../Imgs/IDLERunningResults.png" width=640>
 
+###  Simple Code Explanation
+
+```
+
+```
 here is the results okay so let's have a look at this simple python code so i give a lot
 of comments here and normally this uh hash sign here
 starts a comment okay so everything here is a comment
