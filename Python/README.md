@@ -66,8 +66,9 @@ integrates Python into itself. It runs Python automatically when you start IDLE.
 <img src="../Imgs/IDLEShell.png"  width=640>
 
 We want to use IDLE to open a Python file. Here is how we do this. With the IDLE shell window, click the memu *File* then *Open*. Within the opened file dialog window, navigate to the file, click the file to and then *Open*. 
-
 Once you open the file, it's in another window. You can just click uh the menu called *Run* then you *Run Module* to run the Python program in the file.
+
+<img src="../Imgs/IDLEEditor.png" width=640>
 
 and you can write okay
 and so this is a basically you can see the editor uh window
