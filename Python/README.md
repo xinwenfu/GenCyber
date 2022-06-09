@@ -95,7 +95,7 @@ You can just click the menu called *Run* then you *Run Module* within the editor
 
 <img src="../Imgs/IDLERunningResults.png" width=640>
 
-###  Simple Code Explanation
+####  Simple Code Explanation
 
 Now we plain *basics.py* above. I give a lot of comments here.
 Normally this hash sign *#* starts a comment.
@@ -103,16 +103,19 @@ The first line is very special and is called the shibang line.
 When we try to run this program, we are going to use the Python interpreter. But where is the Python interpreter? 
 The shebang line specifies the location, i.e., */usr/bin/python*. 
 
-#### *x = 34 - 23* , *x = 34 - 23*.
+##### x = 34 - 23
 This is called assignment statement. Here we assign the expression of 34 minus 23 to x, which is an integer.
 
-At line *y = 'Hello'*, we assign a string *'Hello'*, which is just a sequence of characters,  to y. y is a string variable.
+##### y = 'Hello'
+We assign a string *'Hello'*, which is just a sequence of characters,  to y. y is a string variable.
 
-At line *z = 3.45*, we assign 3.45 to z, which is called a float number.
+##### z = 3.45
+We assign 3.45 to z, which is a float number.
 
 Why do we have different variable types such as integers, strings and floats? In computers, different types of variables are saved in the memory
 in a different way. That's why we differentiate different types of variables.
 
+##### *if* statement
 Next line is an *if* statement. It says if the listed condition *z == 3.45 or y == "Hello"* is met,
 then we are going to run the next block of code. The condition means if z
 is equal to 3.45 or y is equal to 'Hello'.
@@ -126,27 +129,31 @@ run the body of the *if* statement. If the condition is not met, we move on with
 In the body of the *if* statement, the original value of x plus 1 is assigned to x in *x = x + 1*.
 x has the old value plus one. *y = y + " World"* concatenates the original string referred to by *y* with *" World"* and assign the new string to *y* back.
 
+##### print(x) 
+##### print(y)
 We then use the function *print* provided by Python to print x and y.
 
-We just mentioned function. We can actually define our own function.
-In the code, we use the keyword *def* to define our own function called *circleArea* to compute the area of circike with the radius denoted as *r*.
+##### def circleArea(r):
+We just mentioned *print* is a function. We can actually define our own function.
+In basics.py, we use the keyword *def* to define our own function called *circleArea* to compute the area of a circle with the parameter denoted as *r*, i.e., radius.
 Why do we need a function?
-When we want to calculate a the area of the circle repeatedly within a program, we don't want to write thepiece
-of code every time and everywhere we want to perform the calculaton. We define a function to this end so that every time when you
-want to use it you just actually call the function name providing the radius parameter.
-In the example, we use indentation to indicate the function bodi, i.e. the code block that calculates the area of a circle.
-In the function body, we first assign 3.14 to variable *PI* and then calculate the arrea, which is PI times r
-times r. Finally we return the calcualted *area*.
+When we want to calculate the area of a circle repeatedly within a program, we don't want to write the piece
+of code every time and everywhere we want to perform the calculaton. We define a function to this end so that every time you
+want to use it we just actually call the function providing the radius parameter.
+In the example, we use indentation to indicate the function body, i.e. the code block that calculates the area of a circle.
+In the function code blck, we first assign 3.14 to variable *PI* and then calculate the arrea, PI times r
+times r. Finally the function returns the calcualted *area*.
 
+##### area=circleArea(radius)
 Let's look at how we use this function.
 At line *radius=5*, we assign 5 to the variable radius. 
-
-At line *area=circleArea(radius)*, we call the defined function *circleArea* and passes *radius* as the function's parameter. The function's variable *r* now has the value of *radius*. The function code uses this *r* to calcualte the area of the circle.
+At line *area=circleArea(radius)*, we call the defined function *circleArea* and pass *radius* as the function's parameter. The function's variable *r* now has the value of *radius*. The function code uses this *r* to calcualte the area of the circle.
 So basically the function is used to do the computation given *r*.
 The calculation result is returned and assigned to *area*.
 
-After we get *area*, at *print("Circle radius=%.2f, Area=%.2f" %(radius, area))*, we do the print.
-We use the % operator to format the output.
+##### print("Circle radius=%.2f, Area=%.2f" %(radius, area))
+After we get returned *area*, at *print("Circle radius=%.2f, Area=%.2f" %(radius, area))*, we print out the result.
+We use the *%* operator to format the output.
 *%.2f* means when we print a number, we want 2 digit precision and print only two decimal places.
 
 We still have one problem left. When we run the given program, 
