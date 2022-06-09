@@ -71,7 +71,7 @@ People invented different ways to run Python programs so that you can choose the
 - Using *python* at the command line
 - Running the Python program directly at the command line so you don't need to enter the python command in the second approach
  
-###  Using IDLE
+###  Running Python Program with IDLE
 When we write a Python program, the first thing you have to do is to write the code and put the code in a file and save it in a folder on a computer. IDLE is a software program, which provides you all the things you need. It has a text editor so that you can enter your code into a file.
 You can actually run the code within IDLE. You just just click a few buttons. 
 
@@ -181,25 +181,18 @@ Let's ahve a look at some printout from the code. We can see the printout of 12 
 That is the output of *print(x)*. Originally x is assigned 11. Then we assign x+1 to x to get 12.
 The output "Hello World" is the result of *print(y)* because we concatenat "Hello" and " World" together and assign the concatenated strings to y.
 
-it's a when you do the annotation four spaces are recommended so don't use tab
-because that will cause confusion and uh but you can just try to make sure
-if you use tab you want to be consistent but the recommended indentation
-is a full space okay every time you want the indentation
-and uh so we also talked uh definitely talked about this right okay and uh i also discussed uh what code runs first
-we know that okay and if you learn other programming languages you know
-okay most functions i mean most programming languages uh how
-something called the main function which is the entry point of your code means
-every time when you run the program okay the function called main will run first
-and uh so here in python basically the main function is
-implicitly all the code at the top level in python
-for example in our case for the basics.py
-the autocode and the indentation zero
-compose the main function okay so that's the first approach so we
-use a uh add-on yeah right so we use i know here to run uh
-uh the code and we do all the editing around all the code with the handle i think this is a nice way
-and uh so here are more the ones the ways doing python running python at the command
-line so here you have to actually use the application here and you will see actually there's something called
-the terminal then you click on the terminal it will show you something like this
+In many other programming lanuages, the is a *main* function, which is the entry point of the program.
+That is, every time when we run the program, the function called main runs first.
+Python does not have the main function. Code with least indentation runs first.
+
+###  Running Python Program at Command Line
+Here you have to actually use the application called *Terminal*.
+In Kali VM, the program *Terminal Emulator* can be used as *Terminal*.
+Find it within *Applications*. Click to start a terminal within which various Linux commands can be entered.
+
+<img src="../Imgs/Terminal.png" width=640>
+
+it will show you something like this
 okay and uh so then you're gonna go to uh the place where you see
 these uh basics on the py here now you can just do buy some basic dollar py but uh
 really i don't recommend that you guys do it in this because you are high school students of course you guys are not high school students
