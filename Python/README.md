@@ -54,8 +54,9 @@ People invented different ways to run Python programs so that you can choose the
 When we write a Python program, the first thing you have to do is to write the code and put the code in a file and save it in a folder on a computer. IDLE is a software program, which provides you all the things you need. It has a text editor so that you can enter your code into a file.
 You can actually run the code within IDLE. You just just click a few buttons. 
 
-IDLE also has an integrated debugger. So why do we need a debugger? We often make errors when we program. How can you find logical errors? Reading the whole code is one way. But it is boring and can be very challenging. With a debugger, we can run the code statement by statement and see what is going on over there and if the program runs as expected. 
+IDLE also has an integrated debugger. So what is a debugger and why do we need a debugger? We often make errors when we program. How can you find logical errors of your code? Reading the whole code is one way. But it is boring and can be very challenging if the code is a lot. With a debugger, we can run the code statement by statement and see what is going on over there and if the program runs as expected. A debugger helps you understand the code and pinpoint the error.
 
+<img src="../Imgs/KaliApplications.png" width=400>
 
 how do you find the idle here so this is how you find idle so this is our caddy virtual machine and so this part is
 called applications so the dragon icon here so you click it and you can search
