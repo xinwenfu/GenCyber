@@ -128,7 +128,7 @@ x has the old value plus one. *y = y + " World"* concatenates the original strin
 
 We then use the function *print* provided by Python to print x and y.
 
-We just mentioned function and can actually define our own function.
+We just mentioned function. We can actually define our own function.
 In the code, we use the keyword *def* to define our own function called *circleArea* to compute the area of circike with the radius denoted as *r*.
 Why do we need a function?
 When we want to calculate a the area of the circle repeatedly within a program, we don't want to write thepiece
@@ -160,17 +160,15 @@ The Python interpreter checks each line and decides what to do, e.g. running the
 
 In the example basics.py, the Python interpreter cehck the code line by line.
 It ignores the comments at the start of the program and run the three assignments since they have zero indentation.
-When it runs the *if* statement, it checks the condition. If the condition is met, the body of the *if* statement runs and then execution moves forward after the *if* statement.   method it will go ahead and run
-uh the level two right uh
-code here at the indication at the for the indentation here right so now once
-it's done now we're going to print x for the y down here we define the function so
-when you define a function we will not do anything but the python interpreter remembers you
-defined the function here okay so you need to define the function first before you use it okay good so pencil now
-remembers oh you defined it this function good you can use it later
-that's why we come back here and then we again we run the code at the independent zero and so finally we put everything
-right and so this is how the code is run so basically we run the code based on the
-blocks and uh the block of code which is at the indentation of zero
-it's a the code that will be run first
+When it runs the *if* statement, it checks the condition. If the condition is met, the body of the *if* statement at more indentation runs, and then execution moves forward after the *if* statement.
+If the condition is not met, the body of the *if* statement is ignored and execution moves directly after the *if* statement.
+The following two statements for printing with zero indentation run.
+
+Now the function is defined in the code. When you define a function, we will not run code, but the Python interpreter remembers the defined
+function. A function has to be defined first before it is used. That's why we can come back to the function when we use it to calcualte the area of the circle.
+
+This is how the code is run. So basically we run the code based on the
+blocks. The block of code with zero indentation runs first
 okay so this is the result right and you can see 12 why we have 12 here because we here we do print x here
 and uh so this is 11 right plus 1 so this is 12
 okay so that's how you do it and why this is uh uh oh sorry
