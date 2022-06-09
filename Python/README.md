@@ -103,7 +103,7 @@ The first line is very special and is called the shibang line.
 When we try to run this program, we are going to use the Python interpreter. But where is the Python interpreter? 
 The shebang line specifies the location, i.e., */usr/bin/python*. 
 
-At line *x = 34 - 23* , *x = 34 - 23*.
+#### *x = 34 - 23* , *x = 34 - 23*.
 This is called assignment statement. Here we assign the expression of 34 minus 23 to x, which is an integer.
 
 At line *y = 'Hello'*, we assign a string *'Hello'*, which is just a sequence of characters,  to y. y is a string variable.
@@ -168,15 +168,12 @@ Now the function is defined in the code. When you define a function, we will not
 function. A function has to be defined first before it is used. That's why we can come back to the function when we use it to calcualte the area of the circle.
 
 This is how the code is run. So basically we run the code based on the
-blocks. The block of code with zero indentation runs first
-okay so this is the result right and you can see 12 why we have 12 here because we here we do print x here
-and uh so this is 11 right plus 1 so this is 12
-okay so that's how you do it and why this is uh uh oh sorry
-hello world because that's what we did we concatenate hello and the word together then we
-print y right and then we do is calculate the circle area
-and then we we get that right okay
-and uh so i already explained everything over there and uh so you can actually look at
-these slides if you want and uh to check here so one node here
+blocks logically. The grammar is similar to human languages.
+Let's ahve a look at some printout from the code. You can see the printout of 12 in the IDLE shell window.
+It is because we print x here. Originally x is assigned 11. Then we assign x+1 to x to get 12.
+The output "Hello World" is showed because we concatenated "Hello" and " World" together and then we
+print y.
+
 it's a when you do the annotation four spaces are recommended so don't use tab
 because that will cause confusion and uh but you can just try to make sure
 if you use tab you want to be consistent but the recommended indentation
