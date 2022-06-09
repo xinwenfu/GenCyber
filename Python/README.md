@@ -63,7 +63,7 @@ IDLE is installed on our Kali virtual machine. Click the dragon like *Applicatio
 In the IDLE shell window,  you can see the python interpreter is running. So basically IDLE
 integrates Python into itself. It runs Python automatically when you start IDLE. Within the Python shell, you can enter code and run it.
 
-<img src="../Imgs/IDLEShell.png">
+<img src="../Imgs/IDLEShell.png"  width=640>
 
 We want to use IDLE to open a Python file. Here is how we do this. With the IDLE shell window, click the memu *File* then *Open*. Within the opened file dialog window, navigate to the file, click the file to and then *Open*. 
 
