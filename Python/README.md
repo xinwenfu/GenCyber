@@ -12,10 +12,12 @@ What is a programming language? Why do we need it? A computer has accessaries su
 
 Because of its construction principles, the hardware and CPU can only accept binary commands and data in zeros and ones. Therefore, the very low level programming language is a machine language. Apparently machine language is too hard for everybody because it is hard to remember commands in zeros and ones. 
 
-That's why people invented the assembly language, which is much simpler. In assembly language, meaningful names are given to commands so that they are easy to remember. Since the hardware and CPU can only understand machine lanauage, a program in assembly language has to be translated into machine language by software called assembler before they are actually run. 
+That's why people invented the assembly language, which is much simpler than machinen code. In assembly language, meaningful names called mnemonics are given to commands so that they are easy to remember. Since the hardware and CPU can only understand machine lanauage, a program in assembly language has to be translated into machine language by software called assembler before they are actually run. 
+However, assembly language is still super hard for general person since you need to understand a lot of hardware details to really use it. But if our goal of programming is to process data and do computation, why should you understand hardware so as to compute? 
 
-However, assembly language is still super hard for general person since you need to understand a lot of hardware details to really use it. But if your goal is to perform computation, why should you understand hardware so as to compute? Our goal is computing not understanding computer hardware. and that's why people
-invented the other languages like a c and a pascal and today we also have c
+That's why people invented high level programming languages like C, C++, C#, Java and Python. High level programming laanguages are more like natural languages we speak so that they are more intuitive. High lelvel programming languages often hide hardware details so that you can focus on your tasks. Of course, C and C++ still involve some details like pointers, which refer to memory locations where data are saved. Language like Python and Java remove all such concepts. Although languages like Python and Java cannot be used to write programs controlling hardware directly, they are easy to learn and can deal with a lot of things like data processing. One statement or instruction in a high level programming langauge is often equivalent to many statements or instructions in a low level programming language. Because they are easy to learn, many people learn them and develop a lot of code libraroies, which contain code that can do various tasks. For example, you can use the code to draw a circle at a particular location on the display.
+
+a pascal and today we also have c
 plus plus and the python so we are here so python is a very kind of a top-level
 programming language designed for general people and um so you will see
 actually you can use one sentiment to do a lot of things however if you you want
