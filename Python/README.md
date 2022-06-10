@@ -202,18 +202,19 @@ python basics.py
 We can actually various <a href="https://www.pcwdld.com/linux-commands-cheat-sheet">Linux commands</a> within a terminal. 
 
 ###  Running Python Program Directly at Command Line
-The third way is to run the Python script, i.e., the file, directly at the command line.
+The third way is to run the Python script directly at the command line.
 Sometimes, we want this method since we may run a Python script very often and entering *python* every time is cumbersome.
 
-- We need to make sure the first line of the Python file must have the shebang line
+There are a few things to do before we use this method.
+1. We need to make sure the first line of the Python file must have the shebang line specifying which Python interpreter shall be used.
 ```
 #!/usr/bin/python
 ```
-- We need to go into the folder where the script file is saved and make the Python file executable using the following command
+2. We need to go into the folder where the script file is saved and make the Python file executable using the following command
 ```
 chmod u+x basics.py
 ```
-- Now we can run the file from command line directly
+3. Now we can run the file from command line directly
 ```
 ./basics.py
 ```
@@ -222,22 +223,24 @@ where *./* refers to the current folder. That is, the path of the script has to 
 <img src="../Imgs/PythonDirectRunning.png" width=640>
 
 ## Debugging
-Why do we need debugging a program?
+Why do we need to debug a program?
 When you write a long program and run it, you find there are errors, but you don't know where the errors are.
 Of course, you can read the source code. But it's very hard if the code is long.
-In debugging, you can actually run the code instruction by instruction or statement by statement and 
+In debugging, you can actually run the code statement by statement (or instruction by instruction) and 
 see if the code works as expected.
-In this way you can find the errors of your code okay.
-That's basically uh why we need debugging.
+In this way you can find the errors of the code.
+That's basically why we need debugging. We may use debugging to understand the code particularly if the code is written by others.
 
 ### Enabling Debugging
 To enable debugging, we need to do two things
-- First within the IDLE shell window, we need to click the menu *Debug* then
+1. Within the IDLE shell window, we need to click the menu *Debug* then
 check the *Debugger* option. The *Debug Control* window shows up.
-- Now within the code editor window, *Run Module* and debugging starts. The code stops at the first line of code of the program.
+2. Now within the code editor window, *Run Module* and debugging starts. The code stops at the first line (not comment) of the program.
+
+<img src="../Imgs/Debugging.png" width=640>
 
 ### Debug Control
-Now we check the *Debug Control* window.
+Let's check the *Debug Control* window.
 - **Step**. The step button runs the code step by step, that is, statement by statement.
 - **Source**. If we check the *Source* option, IDLE shows which line of source code you are trying to run when you do step debugging. 
 - **Go**. When the button *Go* is pushed, the program runs. If there is no breakpoint, the programs runs to the end.
