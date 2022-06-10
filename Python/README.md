@@ -207,7 +207,7 @@ Sometimes, we want this method since we may run a Python script very often and e
 ```
 #!/usr/bin/python
 ```
-- We need to make the Python file executable using the following command
+- We need to go into the folder where the script file is saved and make the Python file executable using the following command
 ```
 chmod u+x basics.py
 ```
@@ -215,103 +215,49 @@ chmod u+x basics.py
 ```
 ./basics.py
 ```
-where *./* refers to the current folder. That is, the path of the script has to be specified to run the script directly. A full path name can also be used.
+where *./* refers to the current folder. That is, the path of the script has to be specified to run the script directly. A full path name can also be used to run the script.
 
 <img src="../Imgs/PythonDirectRunning.png" width=640>
 
-and that means you have to change the permission this is how you do it do it so this is called changing mode means
-user owner and plus x means uh we want to write so x is a
-excludable permission so once you then we put a file here so this will make a
-basic standard py as executable so once you
-finish these two things okay then you can actually run the file from command line so you
-need to first go to the folder where your code is saved then you can just use a
-dot slash basics dot py to run the file so what is the dot slash
-this means uh the kernel folder right so we need to specify the path of the file
-to actually write so in this way uh the we can run basic dot py directly
-without using python in front of basics.py okay so that's the third way
-so here is example here right so first you have to start the terminal um you can see here i already
-into my folder and uh so i put all my code here so they
-can see right you remember my basics.py already has
-that ship online so i don't need it to edit but i have to change this uh
-permission to executable so once i do that you can see the color of
-the file name changes and this indicates now the file is
-executable so now you know you can see if now i don't use this dot slash
-basics.py i just use the basics dot py it says command another font because you
-have to specify the path okay and um so here i use a dot slash to indicate
-i want to use the path of the kernel folder then i just do dot slash basic dot py then we got the
-results right okay so this is basically uh the idea i can also use the full path
-name so where the file is saved right okay and uh
-so you can see we have the same results so now let's look at the debugging so
-the first thing is uh why do we need a debugging so you know sometimes
-when you write a long program and you don't know what happens you find that oh there are errors over there
-and you have to you know sometimes if you just read the source code it's very hard to see the logic you don't
-understand if the logic is right or not right so you want to actually run the code
-instruction by instruction or statement by statement and see if uh
-everything is uh doing as expanded so
-that's called the stanford debugging so you want to actually check the results of each line
-and um and so that's why we want to debug it and in this way
-you can find the errors of your code okay so that's basically uh why we need
-the debugging okay and uh so here is how you do the debugging so you need to do two things
-first within this python shell window you need to click debug then you
-check debugger here so once you do that then you can go ahead uh
-get into your code window here you do run run module then so actually when you
-do this uh basically when you run run run module and then this window debugger
-control here will show up okay and uh so here uh there are a few things here so you
-can see here uh the the basic thing here is something called a stamp here so this step
-button here will allow you to run the code step by step means statement by statement
-okay here there's a source here so if you check the source here so when you do the step
-and it will show you where you are which line
-you are trying to run when you do the step when you're trying to debug the code
-okay so let's go over uh all the options here so go here means okay you just want
-to run the code and you push go and the code will run so if you don't do anything basically the code will be done
-okay and uh so staff means you want to run the code
-instruction by instruction all in terms of python statement by
-statement okay and uh so then you may wonder right so
-when i run a function i mean what does that mean of course when you
-run a function basically you know if you click here step you know
-so for example here at the line 29 here right you actually
-call this function and then so at this point right if you
-click step basically you will get into this function code and
-so the last line you will see will be 924 okay when you use a this is def
-debugging okay so that's what we mean by step however sometimes you know
-you know this one is very simple right i don't see the need of debugging this function because
-everything is so simple right so you know when you run this you just want to see the results you don't want to get
-into this function then how do you do that you can just do this over it's been stepped over
-so being said you just treated the whole line of 29 as one statement so you don't
-want to actually get into the function so that's why i called it over so we we
-are going to get over the function and run to the next statement okay
-and out here means for example when you use a function you push out to
-basically the debugger knows you want to get out of the function it will just get out of function run to the next instruction quiz it's
-quite okay and so here
-there are a few options here stack so stack means what stack means it will
-show you within this window here stack window here show you
-what other functions you have called so it will show you where you are in terms
-of the functions so they call this as a function frames but really just tells you you can see in this case we are in a
-main function right as we mentioned so the implicit uh main function is a auto code
-enter indentation zero okay and also it tells you which line your iue now you can see it's a 9
-9 9 okay so that means oh this means uh i just start the
-debugging okay and uh so that's called that's called a stack
-the locals means that okay for a function if you have some variable pi array so we call those as a
-local variables so those variables basically when they are
-used within a function so yeah good okay so those are called the local
-variables and the global variables are those uh variables enter like uh here okay x y z
-they are global variables okay and uh the source is a source code right when you as i mentioned that if you
-do not click this source here you will not actually see
-uh which line you are uh you you are trying
-to debug it will show you here but but when you actually select the source
-here and uh idle will show you here so i can give a demo but i don't think i'm going to get demo today
-so so those are the different options here okay and uh so
-so one thing is uh you know it's something called a breakpoint okay so for example here so i actually center
-a breakpoint at the line trial you just right click and it will show you something like a
-set of breakpoint now when you set a breakpoint this line will be highlighted
-telling you okay this is a breakpoint so what does breakpoint so for example sometimes you
-don't want to actually do the step-by-step right so at the line line i don't want to actually look at the yz
-because they are just assignments so actually i want to look at trial i want to see if the condition will be bad
-so how can i just get to here so you set a breakpoint and line trial then you just
-press go then basically the program will run until it reaches
-the first breakpoint here we have only one so it will stop here right so in this way it's very
-convenient to ignore some part of the code which you are not interest and so
-that will be faster for debugging okay and uh so we have other things i already
+## Debugging
+Why do we need debugging a program?
+When you write a long program and run it, you find there are errors, but you don't know where the errors are.
+Of course, you can read the source code. But it's very hard if the code is long.
+In debugging, you can actually run the code instruction by instruction or statement by statement and 
+see if the code works as expected.
+In this way you can find the errors of your code okay.
+That's basically uh why we need debugging.
+
+### Enabling Debugging
+To enable debugging, we need to do two things
+- First within the IDLE shell window, we need to click the menu *Debug* then
+check the *Debugger* option. The *Debug Control* window shows up.
+- Now within the code editor window, *Run Module* and debugging starts. The code stops at the first line of code of the program.
+
+### Debug Control
+Now we check the *Debug Control* window.
+- *Step*. The step button runs the code step by step, that is, statement by statement.
+- *Source*. If we check the *Source* option, IDLE shows which line of source code you are trying to run when you do step debugging. 
+- *Go*. When the button *Go* is pushed, the program runs. If there is no breakpoint, the programs runs to the end.
+- *Over*. When we perform *step* debugging to the line *print(x)*, if we click *Step* again, which statement runs next? Actually the code of the *print* function runs. However, sometimes we do not really to debug the function code. When we run to the line *print(x)* and push the *Over* button, we run the function as one statement, basically stepping over the function. Of course, if we want to debug the function, we use *Step*.
+- *Out*. During debugging, let's say you are in a function and want to get out of the function.  *Out* will get you out of function and run to the next instruction.
+- *Stack*. The *Stack* option shows you what other functions you have called to get where you are in terms
+of the functions
+- *Locals*. A function may have its own variable such as PI in the function *CircleArea*. We call those variables local variables. When local variables are
+used within a function, they are only valid in the function.
+- *Globals*. Globals variables are different. We can access global variables anywhere in the program, even within functions. 
+
+### Breakpoint
+Breakpoint is a very important technique. At a line in source code, right click and it will show you a popup memu.
+When you choose *Set Breakpoint*, this line will be highlighted.
+What does a breakpoint do? For example sometimes you
+don't want to actually do the step-by-step debugging.
+We want the program to run to a line and stop so that we can check the program status at that line.
+We can just set a breakpoint at that line, press *Go* in *Debug Control* to achieve this functionality.
+Breakpoints are convenient for us to ignore some part of the code which we are not interested in
+so that it will be faster for debugging.
+
+okay and uh so we have other things i already
 mentioned those are different things called brick uh debugging technologies okay
 so here actually i think that you already know what to do and you also have a basic idea of
 the basics right the the python program and so let's look at some details and uh
