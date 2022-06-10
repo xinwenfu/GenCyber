@@ -12,13 +12,13 @@ What is a programming language? Why do we need it? A computer has accessaries su
 
 The hardware and CPU can only accept binary commands and data in zeros and ones. Therefore, the very low level programming language is machine language. Apparently machine language is too hard for everybody because it is hard to remember commands in zeros and ones. 
 
-That's why people invented the assembly language, which is much simpler than machinen code. In assembly language, meaningful names called mnemonics are given to commands so that they are easy to remember. Since the hardware and CPU can only understand machine lanauage, a program in assembly language has to be translated into machine language by software called assembler before they are actually run. 
-However, assembly language is still super hard for general person since you need to understand a lot of hardware details to really use it. But if our goal of programming is to process data and do computation, why should you understand hardware so as to compute? 
+That's why people invented assembly language, which is much simpler than machinen language. In assembly language, meaningful names called mnemonics are given to commands so that they are easy to remember. Since the hardware and CPU can only understand machine lanauage, a program in assembly language has to be translated into machine language by software called *assembler* before they are actually run. 
+However, assembly language is still super hard for general people since you need to understand a lot of hardware details to really use it. But if our goal of programming is to process data and do computation, why should we understand hardware? 
 
-That's why people invented high level programming languages like C, C++, C#, Java and Python. High level programming laanguages are more like natural languages we speak so that they are more intuitive. High lelvel programming languages often hide hardware details so that you can focus on your tasks. Of course, C and C++ still involve some details like pointers, which refer to memory locations where data are saved. Language like Python and Java remove all such concepts. Although languages like Python and Java cannot be used to write programs controlling hardware directly, they are easy to learn and can deal with a lot of things like data processing. One statement or instruction in a high level programming langauge is often equivalent to many statements or instructions in a low level programming language. Because they are easy to learn, many people learn them and develop a lot of code libraroies, which contain code that can do various tasks. For example, you can use the code to draw a circle at a particular location on the display. 
+That's why people invented high level programming languages like C, C++, C#, Java and Python. High level programming laanguages are more like natural languages we speak so that they are more intuitive. High lelvel programming languages often hide hardware details so that we can focus on the tasks. Of course, C and C++ still involve some details like pointers, which refer to memory locations where data are saved. Languages like Python and Java remove all such concepts. Although languages like Python and Java cannot be used to write programs controlling hardware directly, they are easy to learn and can deal with a lot of things like data processing. One statement/instruction in a high level programming langauge is often equivalent to many statements/instructions in a low level programming language. Because they are easy to learn, people learn them and develop a lot of code libraroies, which contain code that can do various tasks. For example, you can use the code to draw a circle at a particular location on the display. 
 
 ### Python
-A python program is Python code in a file with the file extension .py, for example, basics.py below. 
+A python program is Python code in a file with the file extension .py, for example, basics.py below. Sometimes we also call python program as a script. 
 ```
 #! /usr/bin/python
 # Pythin script file name: basics.py
@@ -59,51 +59,53 @@ area=circleArea(radius)
 print("Circle radius=%.2f, Area=%.2f" %(radius, area))
 ```
 
-Sometimes we also call python program as a script. How do you run a Python program? Whatever ways you choose to run a Python program, it is the *python*
-software, also called Python interpreter, which shall be installed on your computer and = actually runs the python code line by line. For example, within a Linux terminal, you can run the basics.py below
+How do you run a Python program? Whatever ways you choose to run a Python program, it is the *python*
+software, also called Python interpreter installed on your computer,  which actually runs the python code line by line. For example, within a Linux terminal, you can run basics.py as follows
 ```
 python basics.py
 ```
+
 ## Running Python
-People invented different ways to run Python programs so that you can choose the one you like. We talk about the three ways running a Python program
+People invented different ways to run Python programs so that you can choose the one you like. We talk about three ways
 - Using software called *IDLE* (integrated developer environment)
-- Using *python* at the command line
-- Running the Python program directly at the command line so you don't need to enter the python command in the second approach
+- Using *python* the interpreter at the command line
+- Running the Python program directly at the command line so you don't need to enter the *python* command in the second approach
  
 ###  Running Python Program with IDLE
-When we write a Python program, the first thing you have to do is to write the code and put the code in a file and save it in a folder on a computer. IDLE is a software program, which provides you all the things you need. It has a text editor so that you can enter your code into a file.
-You can actually run the code within IDLE. You just just click a few buttons. 
+When we write a Python program, the first thing we have to do is to write the code, put the code in a file and save it in a folder on a computer. IDLE is a software program, which provides all the tools we need. It has a text editor so that we can enter code into a file.
+We can run the code within IDLE by just clicking a few buttons. 
 
-IDLE also has an integrated debugger. So what is a debugger and why do we need a debugger? We often make errors when we program. How can you find logical errors of your code? Reading the whole code is one way. But it is boring and can be very challenging if the code is a lot. With a debugger, we can run the code statement by statement and see what is going on over there and if the program runs as expected. A debugger helps you understand the code and pinpoint the error.
+IDLE also has an integrated debugger. What is a debugger and why do we need a debugger? We often make errors when we program. How can we find logical errors of the code? Reading the whole code is one way. But it is boring and can be very challenging if the code is long. With a debugger, we can run the code statement by statement, and see what is going on at particular lines and if the program runs as expected. A debugger helps understand the code and pinpoint the error.
 
-IDLE is installed on our Kali virtual machine. Click the dragon like *Application* icon and search IDLE. You just click IDLE there and open the IDLE shell window.
+IDLE is installed on our Kali virtual machine. Click the dragon like *Application* icon and search IDLE. You can always use this way to find software you need on Kali. You just click IDLE there and open the IDLE shell window.
 
 <img src="../Imgs/KaliApplications.png" width=400>
 
-In the IDLE shell window,  you can see the Python interpreter is running. So basically IDLE
+In the IDLE shell window, you can see the Python interpreter is running. So basically IDLE
 integrates Python into itself. It runs the Python interpreter automatically when you start IDLE. Within the Python shell, you can enter code and run it.
 
 <img src="../Imgs/IDLEShell.png"  width=640>
 
-We want to use IDLE to open a Python file. Here is how we do this. With the IDLE shell window, click the memu *File* then *Open*. Within the opened file dialog window, navigate to the file, click the file to and then *Open*. 
-Once you open the file, it's in another window. The figure below is a basically you can see the editor window. 
+We want to use IDLE to open a Python file. With the IDLE shell window, click the memu *File* then *Open*. Within the file dialog window, navigate to the program file, click the file to and then *Open*. 
+Once you open the file, it's in another window, i.e., the editor window. 
 
 <img src="../Imgs/IDLEEditor.png" width=640>
 
-You can just click the menu called *Run* then you *Run Module* within the editor window to run the Python program in the file. Below shows the running results.
+You can just click the menu called *Run* then you *Run Module* within the editor window to run the Python program in the file.
+The running results are shown below.
 
 <img src="../Imgs/IDLERunningResults.png" width=640>
 
-####  Sample Code Explanation
+####  Explanation of Sample Code
 
-Now we plain *basics.py* above. I give a lot of comments here.
-Normally this hash sign *#* starts a comment.
-The first line is very special and is called the shibang line.
-When we try to run this program, we are going to use the Python interpreter. But where is the Python interpreter? 
-The shebang line specifies the location, i.e., */usr/bin/python*. 
+Now we explain *basics.py* above. I give a lot of comments to the code.
+Normally the hash sign *#* starts a comment.
+The first line with *#* is very special and is called the shibang line.
+When we try to run this program, we are going to need the Python interpreter. But where is the Python interpreter? 
+The shebang line specifies its location, i.e., */usr/bin/python*. 
 
 ##### x = 34 - 23
-This is called assignment statement. Here we assign the expression of 34 minus 23 to x, which is an integer.
+This is called assignment statement. We assign the expression of 34 minus 23 to x, which is an integer.
 
 ##### y = 'Hello'
 We assign a string *'Hello'*, which is just a sequence of characters,  to y. y is a string variable.
@@ -111,21 +113,20 @@ We assign a string *'Hello'*, which is just a sequence of characters,  to y. y i
 ##### z = 3.45
 We assign 3.45 to z, which is a float number.
 
-Why do we have different variable types such as integers, strings and floats? In computers, different types of variables are saved in the memory
-in a different way. That's why we differentiate different types of variables.
+Why do we differentiate different types of variables such as integers, strings and floats? In computers, different types of variables are saved in the memory in a different way. That's why we differentiate them.
 
 ##### *if* statement
 Next line is an *if* statement. It says if the listed condition *z == 3.45 or y == "Hello"* is met,
 then we are going to run the next block of code. The condition means if z
 is equal to 3.45 or y is equal to 'Hello'.
-The colon *:* indicates a new block pursues.
+The colon *:* indicates a new block.
 We use indentation to specify a new block.
 The three assignments above and the *if* statement have the same indentation.
-They belong to the same block. The two assignments *x = x + 1* and *y = y + " World"* in the body of the *if* statement have the same identation. 
+They belong to the same block. The two assignments *x = x + 1* and *y = y + " World"* in the body of the *if* statement have the same identation and are a new block. 
 When we run this *if* statement and the condition is met, we're going to
 run the body of the *if* statement. If the condition is not met, we move on without running the body of the *if* statement.
 
-In the body of the *if* statement, the original value of x plus 1 is assigned to x in *x = x + 1*.
+In the body of the *if* statement, the original value of x plus 1 is assigned to x again in *x = x + 1*.
 x has the old value plus one. *y = y + " World"* concatenates the original string referred to by *y* with *" World"* and assign the new string to *y* back.
 
 ##### print(x) 
@@ -134,17 +135,17 @@ We then use the function *print* provided by Python to print x and y.
 
 ##### def circleArea(r):
 We just mentioned *print* is a function. We can actually define our own function.
-In basics.py, we use the keyword *def* to define our own function called *circleArea* to compute the area of a circle with the parameter denoted as *r*, i.e., radius.
+In basics.py, we use the keyword *def* to define our own function called *circleArea* to compute the area of a circle with a parameter denoted as *r*, i.e., radius.
 Why do we need a function?
 When we want to calculate the area of a circle repeatedly within a program, we don't want to write the piece
-of code every time and everywhere we want to perform the calculaton. We define a function to this end so that every time you
+of code every time and everywhere we want to perform the calculaton. We define a function to this end so that every time we
 want to use it we just actually call the function providing the radius parameter.
-In the example, we use indentation to indicate the function body, i.e. the code block that calculates the area of a circle.
-In the function code blck, we first assign 3.14 to variable *PI* and then calculate the arrea, PI times r
+In basics.py, we use indentation to indicate the function body, i.e. the code block that calculates the area of a circle.
+In the function body, we first assign 3.14 to variable *PI* and then calculate the area, PI times r
 times r. Finally the function returns the calcualted *area*.
 
 ##### area=circleArea(radius)
-Let's look at how we use this function.
+Let's look at how we use this function *circleArea*.
 At line *radius=5*, we assign 5 to the variable radius. 
 At line *area=circleArea(radius)*, we call the defined function *circleArea* and pass *radius* as the function's parameter. The function's variable *r* now has the value of *radius*. The function code uses this *r* to calcualte the area of the circle.
 So basically the function is used to do the computation given *r*.
