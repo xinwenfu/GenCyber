@@ -290,17 +290,11 @@ An example float assignment x = 3.456.
 Strings are be specified with double quotes "" or single quotes ''. For example, "abc" == 'abc‘ are the same string.
 Unmatched quote can occur within the string, e.g., "matt's".
 
-okay so so this is integer right this integer division this means that we want to get
-the quotient uh yes we want to get a quotient and this flows right means that we have the
-decimal point here we have strings right and the strings can be uh
-can you can use either this double quotes or single quote to indicate you have a string and so the uh
-the same thing and the white space and as we mentioned white space is a
-meaningful in python we use what spaces to indicate the indentation
-and so it indicates the starting point of the block so it's very
-important and so
-so when we enter the code right we we so you enter uh the code online that you can use the
-enter key to start a new line and if you have a very long kind of a line and um so you
-can use this uh backslash here to indicate you you're you you are not done yet you so
+
+White space is meaningful in Python.
+We use white spaces to indicate the indentation and a new block.
+We use a newline to end a line of code with “Enter” key. 
+If we have a very long kind of a line and can use the backslash *\\* to indicate you you're you you are not done yet you so
 i mean the next line actually should be combined with the the previous line okay
 and uh so so that's about that and so when you actually uh talk about when we talk
 about the indentation so uh when we talk about the function of block of code you want to use a consistent
