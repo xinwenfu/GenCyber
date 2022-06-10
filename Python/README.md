@@ -629,7 +629,7 @@ Class ClassName:
 *self* must be the first parameter of any function in a class and is used to refer to class attributes (i.e. variables).
 p1 is an instance of MyClass and stores information about "Alice".
 Data attributes can be created dynamically for a class instance. 
-__init__ is a special method accepting parameters and initializing an ojects. 
+\_\_\_init\_\_\_ is a special method accepting parameters and initializing an ojects. 
 
 
 Programs must import the classes they use
