@@ -249,7 +249,7 @@ used within a function, they are only valid in the function.
 
 ### Breakpoint
 Breakpoint is a very important technique. At a line in source code, right click and it will show you a popup memu.
-When you choose *Set Breakpoint*, this line will be highlighted.
+On the popup memu, choose *Set Breakpoint*, this line will be highlighted.
 What does a breakpoint do? For example sometimes you
 don't want to actually do the step-by-step debugging.
 We want the program to run to a line and stop so that we can check the program status at that line.
@@ -290,213 +290,264 @@ An example float assignment x = 3.456.
 Strings are be specified with double quotes "" or single quotes ''. For example, "abc" == 'abc‘ are the same string.
 Unmatched quote can occur within the string, e.g., "matt's".
 
-### Basics
+### Some Basics
 White space is meaningful in Python.
-We use white spaces to indicate the indentation and a new block.
+We use white spaces (4 as recommended) to indicate the indentation and a new block.
+Use consistent indentation to indicate the blocks of code. The tab is not recommended. Even if you use it, do not mix tabs and white spaces together.
 
 We use a newline to end a line of code with “Enter” key. 
 
-If we have a very long kind of a line, we can use the backslash *\\* at the end of a premature line to indicate we are not done yet,
-and the next line actually should be combined with the the previous line.
+If we have a very long kind of a line, we can use the backslash *\\* symbol at the end of a premature line to indicate we are not done yet,
+and the next line shall be combined with the the previous line.
+
+A single line comment is indicated by the hashtag *#*.
+If you have multiple lines of comments in yoir file, you can use triple quotes *"""Comment""""*.
+We can use triple quotes to mark multi-line comments to describe what a function does as the first line of the function.
+
+### Assignment
+An assignment statement sets a name, i.e. variable, to hold a reference to some object.
+When we create a name the first time, it appears on the left side of an assignment expression, e.g., *x = 3*.
+Accessing a name before it’s been properly created raises an error.
+
+We can assign to multiple names at the same time 
+```
+x,y=2,3
+x,y=y,x # swap value
+```
+
+Assignments can be chained
+```
+a=b=x=2
+```
+
+### for loop
+Python's *for* statement iterates over the items of any sequence (a list or a string)
+in the order that they appear in the sequence. For example,
+```
+words=['cat', 'dog', 'fish']
+for w in words:
+    print(w, len(w))
+```
+
+## Sequences types: Lists, Tuples, and Strings
+
+### Access, Slicing
+Tuple is a simple immutable (cannot be changed) ordered sequence of items, e.g., ('john', 32). Items of a tuple can be of mixed types. Define tuples using parentheses and commas. 
+
+A string is a sequence of characters and is immutable, e.g., "John Smith". Define lists using square brackets and commas.
+
+A list is a mutable ordered sequence of items of mixed types, e.g., [1, 2, 'john', ('up', 'down')]. Define strings using quotes (", ', or """).
+
+We access individual members of a tuple, list, or string using the square bracket "array" notation. The index is 0 based. 
+```
+>>> tu = (23, 'abc', 4.56, (2,3), 'def')
+>>> tu[1]     # Second item in the tuple.
+ 'abc'
+>>> li = ["abc", 34, 4.34, 23] 
+>>> li[1]      # Second item in the list.
+ 34
+>>> st = "Hello World"
+>>> st[1]   # Second character in string.
+'e'
+```
+
+Indices can be positive and negative. A positive index counts from the left, starting with 0. A negative index counts from right, starting with –1.
+```
+>>> t = (23, 'abc', 4.56, (2,3), 'def')
+>>> t[1] 
+'abc'
+>>> t[-3] 
+4.56
+```
+
+We can slice lists, tuples, and strings to return a copy of the container with a subset of the original members. We can start copy at the first index, and stop copying before second as follows. Note: Index starts at 0
+```
+>>> t = (23, 'abc', 4.56, (2,3), 'def')
+>>> t[1:4]	# Ends at 4th element, not including it
+('abc', 4.56, (2,3))
+>>> t[1:-1] # Negative indices count from end
+('abc', 4.56, (2,3))
+>>> t[:2] # Omit first index to make copy starting from beginning of the container
+	(23, ‘abc’)
+>>> t[2:] # Omit second index to make copy starting at first index and going to end
+	(4.56, (2,3), ‘def’)
+>>> t[:] # [ : ] makes a copy of an entire sequence
+	(23, ‘abc’, 4.56, (2,3), ‘def’)
+>>> l2 = l1 # Both refer to 1 ref, changing one affects both
+>>> l2 = l1[:] # Independent copies, two refs
+```
+
+### The 'in' operator
+The 'in' operator is a boolean test on whether a value is inside a container. Be careful: the in keyword is also used in the syntax of for loops and list comprehensions.
+
+```
+>>> t = [1, 2, 4, 5]
+>>> 3 in t
+False
+>>> 4 in t
+True
+>>> 4 not in t
+False
+
+>>> a = 'abcde'
+>>> 'c' in a
+True
+>>> 'cd' in a
+True
+>>> 'ac' in a
+False
+```
+
+### The + operator
+The + operator produces a new tuple, list, or string whose value is the concatenation of its arguments.
+```
+>>> (1, 2, 3) + (4, 5, 6)
+ (1, 2, 3, 4, 5, 6)
+>>> [1, 2, 3] + [4, 5, 6]
+ [1, 2, 3, 4, 5, 6]
+>>> "Hello" + " " + "World"
+ 'Hello World'
+```
+
+### The * operator
+The * operator produces a new tuple, list, or string that “repeats” the original content
+```
+>>> (1, 2, 3) * 3
+(1, 2, 3, 1, 2, 3, 1, 2, 3)
+
+>>> [1, 2, 3] * 3
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
+
+>>> "Hello" * 3
+‘HelloHelloHello’
+```
+
+### Mutability
+
+We can change lists in place.
+```
+>>> li = ['abc', 23, 4.34, 23]
+>>> li[1] = 45 
+>>> li
+['abc', 45, 4.34, 23]
+```
+Name *li* still points to the same memory reference when we're done.
+Here are operations on lists only.
+```
+>>> li = [1, 11, 3, 4, 5]
+>>> li.append('a')	# Note the method syntax
+>>> li
+[1, 11, 3, 4, 5, 'a']
+>>> li.insert(2, 'i')
+>>>li
+[1, 11, 'i', 3, 4, 5, 'a']
+>>> li = ['a', 'b', 'c', 'b']
+>>> li.index('b')  # index of 1st occurrence
+1
+>>> li.count('b')  # number of occurrences
+2
+>>> li.remove('b') # remove 1st occurrence
+>>> li
+  ['a', 'c', 'b']
+>>> li = [5, 2, 6, 8]
+
+>>> li.reverse()    # reverse the list *in place*
+>>> li
+  [8, 6, 2, 5]
+
+>>> li.sort()       # sort the list *in place*
+>>> li
+  [2, 5, 6, 8]
+
+>>> li.sort(some_function)  # sort in place using user-defined comparison
+```
 
 
-and uh so so that's about that and so when you actually uh talk about when we talk
-about the indentation so uh when we talk about the function of block of code you want to use a consistent
-indentation to indicate the blocks of code okay and so that's about the workspace
-comments as i mentioned normally we use a the hashmark to
-indicate one line of comment but if you have multiple lines you can use these uh
-triple quotes to indicate this is a the comments normally we use uh
-the triple quotes multiple marker multi-line comments
-to describe what a function does
-so okay and so this is a one way to introduce what
-the function is about okay so assignment where we're needed so basically you will you can just give a
-number of whatever you want to give to a variable right and and then and
-sometimes we call this a reference and you don't need to see x is actually an integer or
-string so when you do this so python will know x is an integer okay
-so you can see there are different ways to do the assignment you can do you can actually put
-multiple names and the same line you then you assign
-multiple numbers to those different variables and you can see here in this way we can
-you can use this trick to exchange the values of x y
-and uh so also assignment can be chained means okay you when you try to ascend 2
-to a b x you can use this approach okay and uh so why do i put a here so when uh
-within the python shell right and uh so uh the present shell basically you can
-you can do some kind of interactive programming so for example here's a the first line right that i
-just assigned 2 to x to b to a and the second line here i just put a here then i enter
-so python shall the python within the idle then you'll see the press on shell window right it will show
-you the value of a
-okay and uh so if you use a name which is not actually defined
-okay then there will be an error okay and for example we're using c but c is
-never actually assigned or defined or whatever and so you can see there's an error
-so now let's look at a a a for loop something like a caller fold what's the loop
-so let's see here we have a list right we have a list of words words chat window defense
-what the first i think i read this one demonstrate whatever it is i don't know
-and uh so so this is called a list okay
-and we want to actually print all the words one by one how do we do
-that you can use a loop okay so here is a
-the format of a for loop and you can see four w in words so this
-means for each word in words right in this list
-okay we call that as w then we can with them okay we call that w and then for
-each one we do the print okay w and then learn
-length w so we first print out uh the word
-then we print out the lens so in this way right you can see and then you can do
-something repeatedly right and then this is the one case that's this usable for loop
-okay so now actually i think pretty much you already know uh what what what to do
-with the python and but uh let's quickly go over a few data types because uh kind of data structure here these tuples
-strings so what is so here are the this couple so tuple
-is defined by these uh parentheses okay and uh you can see here
-and a tuple can have evidence of mixed tabs it can
-be a string can be integer okay and the one thing is that once you define this
-tuple you cannot change it okay okay and then also this is a second kind of a
-date tab we want to introduce the stream so again when you actually
-already defined this junk me this string you could now change it and you will see i want to change it
-okay so then you need to use this so the list
-is a uh done by with a this is a square
-bracket right and so you can see it's very similar to a tuple but you know
-again you cannot change trouble you can change the list so we'll see and uh so
-the key difference between these three tabs is a couple strings are not changeable but these can be changed
-okay and so let's look at some auto operations okay and uh so here right so this is how we
-define the tempo this is how we define the list this is how we define the string
-and you can see here you can even use the triple quotes
-to define a multi-line string here okay you can see i'm using backslash here to tell
-i want to actually write a other things at a new line okay so
-that's okay and now you can see if i want to see what is the save the answer st
-and you can see this is basically what uh it looks like right
-although it's a murder line but it's the same kind of a string here and so here
-you can see this is how you access uh uh this uh different
-data so for this uh tuple right if you want to access
-abc you should use tu1 because the index starts with zero so this is a
-zero position zero position one present two percent three prong four also tu1 right
-and down here so this is a list so same thing right this is a string same thing so
-in terms of string we print out the second character in string if you're trying to
-find out what is the value for st1 right
-and uh so also presents a positive positive and negative indexes
-right and we know this right this is a this is a tuple and but you can also do this a
-negative index and so in this case this is a minus one minus two minus three so this t minus
-three means okay we counted from the end minus one minus two minus ministry so that's why we print out for data 56
-and uh so string has some special kind of uh operation
-sometimes you want to get a subset of the strings right and uh
-oh i'm sorry this is not string uh slicing okay if you want to get a copy of the subset of a double
-other things so this is let's see this is a tuple so okay
-and uh so basically when you use uh those uh tricks right
-to get a a new kind of uh
-data okay and this is new data okay it's different from t here okay for example
-here uh we use t the index is one two four
-and so because you know index starts at zero one is abc
-and uh so so you can see here so these are one
-right two three and uh
-stop copy before second so it says so we copy at the first index but we stop
-copying before second before the second index here so we are not going to copy
-df although we put one two four here right it's a one two three but uh we stopped
-problem before the second index here okay and then so the negative one here again
-same thing right and the next thing that indexes count from end so one again
-from here and uh so then second one here same way because
-again we stop copy before second so minus one is this one so we don't
-actually include this one in the result of this
-format here so this is a
-some other examples uh so some other tricks
-and uh you can see here again we have the tuple here and here we
-made the first index here to make a copy starting from beginning of the container means okay and uh we are going to copy
-what from first one we stop before the second index so we just
-copied this one and this one okay that's why it results like this so we made the second index to make copy
-starting at the first index going to the end so this time we are going to go into the end
-so we start at 2 2 is here that's why we have this result right we copy this one
-this one this one and that because you know if you omit the second index and uh
-now we are going to actually go into the end and uh then you can also copy the whole
-whole sequence using this trick okay and uh so that's about it how you do it
-so here is something called a yin operator so we want to test if
-three this number is in this tuple okay you can use this trick
-okay and so you can see when we do three in t here the result is false and it
-means we wanna we found a threes not in actually t here so it's a good this is a good way to
-find numbers and uh so we can do the same thing for strings right you can see either c is in
-a to something like that okay
-so the plus sometimes can be used as a concatenation so you can see here when you have this
-tuple this tempo you can continue them together if you put a plus over there same thing for the
-list same thing for the string okay and then here this is a
-uh star operator and uh
-it's different from the plus so we this means you want to repeat
-the add-ins within this kind of container right this is a
-in this case it's tuple you can see right if we do one two three repeat three times we got this seems
-like this same thing as this okay so now let's talk about the
-mutability and so basically these are mutable means you can change
-the adding within the list okay and uh so you can see when you
-change the first one that's this one then when you when you print li
-you still get the change the list okay
-and uh so this is this these are mutable but uh tuples are not
-changeable if you want to change it it will tell you there's an error okay and uh
-so that's about uh that's about uh uh immutable and uh so here at the operation on this
-only here you can append uh some add-ins to an existing list right
-when you append a to this one you get this you can also insert at the second position so we put so down the same
-presence i okay insert function
-and uh then we also have this trick it's called extended method and and that's when you look at what is extended method
-here so you can see here when we do uh extend right we extend the list
-and so basically we kind of put a pendant 987 to the original list
-okay and uh however you know this is called extend right
-here there's another configure function called append so append is different from extend
-so when we do extend you can see right we put those elements right 987
-as a part of the original original list when you use expand
-it put the whole 10 11 12
-this is a tree this is a is treated as a single thing as a one
-data adder so it's the new list it actually adds this new list
-into this uh original list
-right so these two are different and uh so those are different operations
-right you can do uh so we want to find the index of b and that's we want to count the number
-for b we want to remove b from the original list and
-the reverse you can reverse the order you can sort okay
-that's nice so anyway so you know compose versus list you cannot change sample but
-you can change this okay so function we already actually talked
-about a function so this is how you defined right and how you define the function so you use df to define a function don't forget the
-column here and use indentation to indicate the block of code you can see here right so within this function we
-have answer uh it's a center one then we have this a four
-loop remember okay because of here you have a lot of calling to
-indicate okay this is a blog for code for the for loop so you need a more
-indentation here to indicate this is a new block for code so they are not at
-the same indentation level of answer ends and the return right and uh
-so because of this problem code uh depends on the condition here so you
-must indeed in the time you must have put the indent before this block of code okay
-and uh so this is another function right and uh so here
-and uh so here for example here uh i give you some kind of uh so
-uh example here so i call this function as a ex dot py
-the pay attention you can see this this is actually uh quote is different from the other one
-and uh it's because uh you know the slides added this one and then so these are
-microsoft and this is wrong actually you have to use this one and the mix of actually they have their own kind of way
-of uh code so that but that's not what i want so if you do copy and paste the code
-will be wrong okay but anyway i'm going to call this a piece of code
-uh and save the this piece of code into a file called the expy
-and uh so then here is a
-something i'm going to actually i want to actually use these two
-functions within the python shell window so what i have to do here is i have to
-actually change the folder to uh where the data file exploit is saved
-okay so basically i have to import os i how to use some
-os functions so i'm going to use os.get.c to show what is the current folder but you can see we are not in the
-folder where i save yes.py so i have to change the folder using
-os i mean using the python's code called this function called the change dir so
-once i change the code and i can import ex so i don't need to put the import.py
-here just to import ex so yes is what i already put into the
-file right so so then once you import then you can use actually
-those functions you can see now within the python shell right now i can use a
-function1 and function2 okay and uh so that's about
-you can see here so when you actually write a code you can use it in another
-file and actually also you can use it and there is a python shell here
-okay and uh so you can see here so you must define the function before you
-use right that's for sure and uh so that's something you have to remember
-so those are actually a functions so now let's look at the exceptions
-so exceptions what are exceptions so let's look at example here so in this example we have a something
-called a while loop so while true means this will run forever okay
-so here let's look at the x is ascend int input something like this so what the input does is
-so this will open some kind of interactive window so you have to enter a number
-but what if the user enters a character
-right so when you when you enter a character now it's not integer here then this
-nt function here cannot change that uh character into
-an integer so there will be errors okay when errors happen what do you do
-right you have to process the error right that's why we use this try class try except class
-so those are called exceptions because normally you expect people to enter a
-number but you know some people are weird that they enter a character so there are some kind of exceptions here
-so how do you process that exception so you use try use exception accept so when
-people actually enter like a letter here okay then basically the python will find
-oh there's an exception here so it will check this except uh line here if
-if it defined order some kind of error here the value is error right it will print something okay so that's called
-example let's give you a way to how to process errors
-so this is about uh how how exceptions are handled and but anyway so i already told you how to do it
+You can’t change a tuple or string.
+```
+>>> t = (23, 'abc', 4.56, (2,3), 'abc')
+>>> t[2] = 3.14
+
+Traceback (most recent call last):
+  File "<pyshell#75>", line 1, in -toplevel-
+    tu[2] = 3.14
+TypeError: object doesn't support item assignment
+```
+You can make a fresh tuple and assign its reference to a previously used name.
+```
+>>> t = (23, ‘abc’, 3.14, (2,3), 'def')
+```
+
+The *+* oeprator creates a fresh list with a new memory reference. 
+T*extend* operates on list in place.
+```
+>>> li.extend([9, 8, 7])           
+>>> li
+[1, 2, 'i', 3, 4, 5, 'a', 9, 8, 7]
+>>> li.append([10, 11, 12]) # append takes a singleton as an argument
+>>> li
+[1, 2, 'i', 3, 4, 5, 'a', 9, 8, 7, [10, 11, 12]]
+```
+
+## Function
+All functions must be defined before use.
+However, the functions can be defined in any order, as long as all are defined before any executable code uses a function.
+
+```
+"""ex.py: factorial done recursively and iteratively"""
+
+def fact1(n):
+    ans = 1
+    for i in range(2,n):
+        ans = ans * n
+    return ans
+
+def fact2(n):
+    if n < 1:
+        return 1
+    else:
+        return n * fact2(n - 1)
+```
+
+Let's see how we use functions in ex.py. Basically we need to import ex.py into our code and then we can use the two defined functions.
+```
+>>> import os # import the class os 
+>>> os.getcwd() # use the function getcwd() of os to get the current work folder
+'/home/kali'
+>>> os.chdir("/home/kali/GenCyber/PythonExampleCode") # ex.py is not in '/home/kali'. Change to its folder
+>>> import ex # import ex.py
+>>> ex.fact1(6)
+```
+
+## Exceptions
+
+Exceptions are errors udring execution. 
+```
+>>> while True:
+...     try:
+...         x = int(input("Please enter a number: "))
+...         break
+...     except ValueError:
+...         print("Oops!  That was no valid number.  Try again...")
+...
+...         
+Please enter a number: a
+Oops!  That was no valid number.  Try again...
+Please enter a number: 1
+>>> x
+1
+```
+In the code, let's look at the x. The code asks the user to enter a number.
+If the user enters a character, there is an error. The *int* function here cannot change that the character into
+an integer. So there will be errors okay.
+When errors happen what do you do?
+You have to process the error.
+That's why we use this *try* *except* statement.
+We put the action that may incur errors in the *try* block of code.
+Error processing code is put in the *except* block.
+We can put the error type such as *ValueError* after *except* to process a particular type of error.
+
+
 so finally let's look at the classes so i think you all you guys actually
 play the games right and we also introduced a few data tabs
 like a integer string and other things so we also talked about these right
