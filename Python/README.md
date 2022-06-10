@@ -614,40 +614,23 @@ Class ClassName:
 ```
 
 ```
->>> class MyClass:
-...   """ A simple example class"""
-...   i = 123
-...   def f(self): # Object is passed as first argument of function 'self'
-...     return 'hello world'
+>>> class Person:
+...  def __init__(self, name, age, sex): # special method for initialization of object
+...    self.name = name
+...    self.age = age
+...    self.sex = sex
 
->>> MyClass.i # i is integer object of MyClass
-123
->>> MyClass.f
-<function MyClass.f at 0x7fcfbca1a170>
-```
-
-Class instantiation: x is an instance of MyClass. For example, MyClass can be a template for classes students register. x is an actual class.
-```
->>> x = MyClass()
->>> x.f()
-```
-\_\_\_init\_\_\_() is a special method for initialization of object
-```
-def __init__(self,realpart,imagpart):
-	self.r = realpart
-	self.i = imagpart
-```
-
-Data attributes can be created dynamically for a class instance. 
-```
->>> x.counter=1
->>> while x.counter < 10:
-...     x.counter = x.counter*2
+...  def print_info(self):
+...    print("name: " + self.name +"; age: "+str(self.age)+"; sex:"+ self.sex)
 ...
->>> print(x.counter)
->>> x.f()
->>> del x.counter
+>>> p1 = Person("Alice", 36, "Female")
+>>> p1.print_info()
 ```
+*self* must be the first parameter of any function in a class and is used to refer to class attributes (i.e. variables).
+p1 is an instance of MyClass and stores information about "Alice".
+Data attributes can be created dynamically for a class instance. 
+__init__ is a special method accepting parameters and initializing an ojects. 
+
 
 Programs must import the classes they use
 ```
