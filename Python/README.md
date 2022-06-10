@@ -236,16 +236,16 @@ check the *Debugger* option. The *Debug Control* window shows up.
 
 ### Debug Control
 Now we check the *Debug Control* window.
-- *Step*. The step button runs the code step by step, that is, statement by statement.
-- *Source*. If we check the *Source* option, IDLE shows which line of source code you are trying to run when you do step debugging. 
-- *Go*. When the button *Go* is pushed, the program runs. If there is no breakpoint, the programs runs to the end.
-- *Over*. When we perform *step* debugging to the line *print(x)*, if we click *Step* again, which statement runs next? Actually the code of the *print* function runs. However, sometimes we do not really to debug the function code. When we run to the line *print(x)* and push the *Over* button, we run the function as one statement, basically stepping over the function. Of course, if we want to debug the function, we use *Step*.
-- *Out*. During debugging, let's say you are in a function and want to get out of the function.  *Out* will get you out of function and run to the next instruction.
-- *Stack*. The *Stack* option shows you what other functions you have called to get where you are in terms
+- **Step**. The step button runs the code step by step, that is, statement by statement.
+- **Source**. If we check the *Source* option, IDLE shows which line of source code you are trying to run when you do step debugging. 
+- **Go**. When the button *Go* is pushed, the program runs. If there is no breakpoint, the programs runs to the end.
+- **Over**. When we perform *step* debugging to the line *print(x)*, if we click *Step* again, which statement runs next? Actually the code of the *print* function runs. However, sometimes we do not really to debug the function code. When we run to the line *print(x)* and push the *Over* button, we run the function as one statement, basically stepping over the function. Of course, if we want to debug the function, we use *Step*.
+- **Out**. During debugging, let's say you are in a function and want to get out of the function.  *Out* will get you out of function and run to the next instruction.
+- **Stack**. The *Stack* option shows you what other functions you have called to get where you are in terms
 of the functions
-- *Locals*. A function may have its own variable such as PI in the function *CircleArea*. We call those variables local variables. When local variables are
+- **Locals**. A function may have its own variable such as PI in the function *CircleArea*. We call those variables local variables. When local variables are
 used within a function, they are only valid in the function.
-- *Globals*. Globals variables are different. We can access global variables anywhere in the program, even within functions. 
+- **Globals**. Globals variables are different. We can access global variables anywhere in the program, even within functions. 
 
 ### Breakpoint
 Breakpoint is a very important technique. At a line in source code, right click and it will show you a popup memu.
