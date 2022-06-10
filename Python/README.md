@@ -237,34 +237,32 @@ To enable debugging, we need to do two things
 check the *Debugger* option. The *Debug Control* window shows up.
 2. Now within the code editor window, *Run Module* and debugging starts. The code stops at the first line (not comment) of the program.
 
-<img src="../Imgs/Debugging.png" width=640>
+<img src="../Imgs/Debugging.png" width=720>
 
 ### Debug Control
 Let's check the *Debug Control* window.
-- **Step**. The step button runs the code step by step, that is, statement by statement.
+- **Step**. The *step* button runs the code step by step, that is, statement by statement.
 - **Source**. If we check the *Source* option, IDLE shows which line of source code you are trying to run when you do step debugging. 
 - **Go**. When the button *Go* is pushed, the program runs. If there is no breakpoint, the programs runs to the end.
-- **Over**. When we perform *step* debugging to the line *print(x)*, if we click *Step* again, which statement runs next? Actually the code of the *print* function runs. However, sometimes we do not really to debug the function code. When we run to the line *print(x)* and push the *Over* button, we run the function as one statement, basically stepping over the function. Of course, if we want to debug the function, we use *Step*.
-- **Out**. During debugging, let's say you are in a function and want to get out of the function.  *Out* will get you out of function and run to the next instruction.
-- **Stack**. The *Stack* option shows you what other functions you have called to get where you are in terms
-of the functions
-- **Locals**. A function may have its own variable such as PI in the function *CircleArea*. We call those variables local variables. When local variables are
-used within a function, they are only valid in the function.
-- **Globals**. Globals variables are different. We can access global variables anywhere in the program, even within functions. 
+- **Over**. When we perform step debugging to the line *print(x)*, if we click *Step*, which statement runs next? Actually the first line of the *print* function runs. However, sometimes we do not really want to debug the function code. When we run to the line *print(x)* and push the *Over* button, we run the function as one statement, basically stepping over the function. Of course, if we want to debug our own function, use *Step*.
+- **Out**. During debugging, let's say you are in a function and want to get out of the function. *Out* will get you out of function and run to the next instruction.
+- **Stack**. The *Stack* option shows you what other functions you have called to get where you are in terms of the functions
+- **Locals**. A function may have its own variables such as PI in the function *CircleArea*. We call those variables local variables. When local variables are used within a function, they are only valid in the function. This option shows the values of all local variables when you are in a function.
+- **Globals**. Globals variables are different. We can access global variables anywhere in the program, even within functions. This option shows values of all global variables.
 
 ### Breakpoint
 Breakpoint is a very important technique. At a line in source code, right click and it will show you a popup memu.
-On the popup memu, choose *Set Breakpoint*, this line will be highlighted.
+On the popup memu, choose *Set Breakpoint*, this line will be highlighted serving as a breakpopint.
 What does a breakpoint do? For example sometimes you
 don't want to actually do the step-by-step debugging.
 We want the program to run to a line and stop so that we can check the program status at that line.
-We can just set a breakpoint at that line, press *Go* in *Debug Control* to achieve this functionality.
-Breakpoints are convenient for us to ignore some part of the code which we are not interested in
+We can just set a breakpoint at that line, press *Go* in *Debug Control* to achieve this.
+Breakpoints are convenient for us to ignore part of the code which we are not interested in
 so that it will be faster for debugging.
 
 ## Basics & Names & Assignment & Loop
 We now know a basic idea of Python.
-Let's look at some details about the python programs.
+Let's look at some details about elements of a Python programs.
 
 ### Naming rules
 Naming rules are used to have consistent styles of naming things in Python.
@@ -272,15 +270,15 @@ Names are case sensitive and cannot start with a number.
 
 Names can contain letters, numbers, and underscores, for examples, *bob*, *Bob*, *_bob*, *_2_bob_*, *bob_2*, *BoB*.
 
-There are reserved words designating special language functionalities, for example, 
+There are reserved words for special language functionalities, for example, 
 *and*, *assert*, *break*, *class*, *continue*, *def*, *del*, *elif*, *else*, *except*, *exec*, *finally*, *for*, *from*, *global*, *if*, *import*, *in*, *is*, *lambda*, *not*, *or*, *pass*, *print*, *raise*, *return*, *try*, *while*.
-Let's see an example why you should not use the reversed words as variables. In our basics.py, we have the *if* statement and *of* is a reserved word.
-If you name a variable as *if*, then you can see here the python interpreter will be confused about the word *if*.
 IDLE tells you if a word is reserved using colors.
+Let's see an example why you should not use reversed words for other purposes. In our basics.py, we have the *if* statement and *if* is a reserved word.
+If you name a variable as *if*, then you can see the Python interpreter will be confused about the word *if*.
 
 When we name functions, variables, classes (which will be discussed later) and other things, we want to be consistent.
 This is called naming convention.
-- *joined_lower* for functions, methods and, attributes
+- *joined_lower* for functions, methods (of a class) and, attributes (of a class)
 - *joined_lower* or *ALL_CAPS* for constants
 - *StudlyCaps* for classes, e.g., BackColor
 - *camelCase* is only used to conform to pre-existing conventions for backward compatibility. For example, if *backColor* is used in an existing library, we just use it in its own format.
@@ -288,25 +286,25 @@ This is called naming convention.
 ### Basic datatypes
 You know in computers different types of data are stored in a different way. That's why we have different data types like integers, strings and floats.
 
-Integers are default types for numbers. For example, z = 5 / 2, where 6 and 2 are integers. / refers to integer division, in which the fractional part (remainder) is discarded. So the answer is 2.
+Integers are default types for numbers. For example, in *z = 5 / 2*, 5 and 2 are integers. / refers to integer division, in which the fractional part (remainder) is discarded. So the answer is 2.
 
-An example float assignment x = 3.456.
+An example float assignment *x = 3.456*.
 
-Strings are be specified with double quotes "" or single quotes ''. For example, "abc" == 'abc‘ are the same string.
+Strings are specified with double quotes "" or single quotes ''. For example, "abc" == 'abc‘ are the same string.
 Unmatched quote can occur within the string, e.g., "matt's".
 
 ### Some Basics
 White space is meaningful in Python.
 We use white spaces (4 as recommended) to indicate the indentation and a new block.
-Use consistent indentation to indicate the blocks of code. The tab is not recommended. Even if you use it, do not mix tabs and white spaces together.
+Use consistent indentation to indicate the blocks of code. The tab is not recommended. Even if you use it, do not mix tabs and white spaces.
 
 We use a newline to end a line of code with “Enter” key. 
 
-If we have a very long kind of a line, we can use the backslash *\\* symbol at the end of a premature line to indicate we are not done yet,
-and the next line shall be combined with the the previous line.
+If we have a very long line, we can use the backslash *\\* symbol at the end of a premature line to indicate we are not done yet,
+and the next line shall be combined with the previous line.
 
 A single line comment is indicated by the hashtag *#*.
-If you have multiple lines of comments in yoir file, you can use triple quotes *"""Comment""""*.
+If you have multiple lines of comments in a file, you can use triple quotes *"""Comment""""*.
 We can use triple quotes to mark multi-line comments to describe what a function does as the first line of the function.
 
 ### Assignment
@@ -317,7 +315,7 @@ Accessing a name before it’s been properly created raises an error.
 We can assign to multiple names at the same time 
 ```
 x,y=2,3
-x,y=y,x # swap value
+x,y=y,x # swap values
 ```
 
 Assignments can be chained
@@ -337,13 +335,13 @@ for w in words:
 ## Sequences types: Lists, Tuples, and Strings
 
 ### Access, Slicing
-Tuple is a simple immutable (cannot be changed) ordered sequence of items, e.g., ('john', 32). Items of a tuple can be of mixed types. Define tuples using parentheses and commas. 
+Tuple is a simple immutable (unchangeable) ordered sequence of items, e.g., ('john', 32). Items of a tuple can be of mixed types. Define tuples using parentheses and commas. 
 
-A string is a sequence of characters and is immutable, e.g., "John Smith". Define lists using square brackets and commas.
+A string is a sequence of characters and is immutable, e.g., "John Smith". Define strings using quotes (", ', or """).
 
-A list is a mutable ordered sequence of items of mixed types, e.g., [1, 2, 'john', ('up', 'down')]. Define strings using quotes (", ', or """).
+A list is a mutable (changeable) ordered sequence of items of mixed types, e.g., [1, 2, 'john', ('up', 'down')]. Define lists using square brackets and commas.
 
-We access individual members of a tuple, list, or string using the square bracket "array" notation. The index is 0 based. 
+We access individual members of a tuple, list, or string using the square bracket "array" notation. The index is 0 based. Note ">>>" and "..." are the prompts in the Python interpreter.
 ```
 >>> tu = (23, 'abc', 4.56, (2,3), 'def')
 >>> tu[1]     # Second item in the tuple.
@@ -365,7 +363,7 @@ Indices can be positive and negative. A positive index counts from the left, sta
 4.56
 ```
 
-We can slice lists, tuples, and strings to return a copy of the container with a subset of the original members. We can start copy at the first index, and stop copying before second as follows. Note: Index starts at 0
+We can slice lists, tuples, and strings to return a copy of the container with a subset of the original members. We can start copy at the first index, and stop copying before second as follows. Note: Index starts at 0.
 ```
 >>> t = (23, 'abc', 4.56, (2,3), 'def')
 >>> t[1:4]	# Ends at 4th element, not including it
@@ -383,7 +381,7 @@ We can slice lists, tuples, and strings to return a copy of the container with a
 ```
 
 ### The 'in' operator
-The 'in' operator is a boolean test on whether a value is inside a container. Be careful: the in keyword is also used in the syntax of for loops and list comprehensions.
+The *in* operator is a boolean test on whether a value is inside a container. Be careful: the *in* keyword is also used in the syntax of for loops and list comprehensions.
 
 ```
 >>> t = [1, 2, 4, 5]
@@ -415,7 +413,7 @@ The + operator produces a new tuple, list, or string whose value is the concaten
 ```
 
 ### The * operator
-The * operator produces a new tuple, list, or string that “repeats” the original content
+The * operator produces a new tuple, list, or string that repeats the original content
 ```
 >>> (1, 2, 3) * 3
 (1, 2, 3, 1, 2, 3, 1, 2, 3)
@@ -467,8 +465,7 @@ Here are operations on lists only.
 >>> li.sort(some_function)  # sort in place using user-defined comparison
 ```
 
-
-You can’t change a tuple or string.
+You can't change a tuple or string.
 ```
 >>> t = (23, 'abc', 4.56, (2,3), 'abc')
 >>> t[2] = 3.14
@@ -484,7 +481,7 @@ You can make a fresh tuple and assign its reference to a previously used name.
 ```
 
 The *+* oeprator creates a fresh list with a new memory reference. 
-T*extend* operates on list in place.
+*extend* operates on list in place.
 ```
 >>> li.extend([9, 8, 7])           
 >>> li
@@ -514,7 +511,7 @@ def fact2(n):
         return n * fact2(n - 1)
 ```
 
-Let's see how we use functions in ex.py. Basically we need to import ex.py into our code and then we can use the two defined functions.
+Let's see how we use functions in ex.py. Basically we need to import ex.py first and then we can use the two defined functions.
 ```
 >>> import os # import the class os 
 >>> os.getcwd() # use the function getcwd() of os to get the current work folder
@@ -542,22 +539,22 @@ Please enter a number: 1
 >>> x
 1
 ```
-In the code, let's look at the x. The code asks the user to enter a number.
-If the user enters a character, there is an error. The *int* function here cannot change that the character into
-an integer. So there will be errors okay.
-When errors happen what do you do?
+In the code, let's look at the assignment statement for x. The code asks the user to enter a number.
+If the user enters a character, there is an error. The *int* function here cannot change the character into
+an integer. So there will be errors.
+When errors happen, what do you do?
 You have to process the error.
-That's why we use this *try* *except* statement.
-We put the action that may incur errors in the *try* block of code.
-Error processing code is put in the *except* block.
-We can put the error type such as *ValueError* after *except* to process a particular type of error.
+That's why we use the *try* *except* statement.
+We put the action that may incur errors in the *try* clause (the statement(s) between the try and except keywords) .
+Error processing code is put in the *except* clause.
+We can use the error type such as *ValueError* after *except* to process a particular type of error.
 
-So basically this is how exceptions are handled.
-First, the try clause (the statement(s) between the try and except keywords) is executed.
-If no exception occurs, the except clause is skipped and execution of the try statement is finished.
+This is how exceptions are handled.
+First, the *try* clause is executed.
+If no exception occurs, the *except* clause is skipped and execution of the try statement is finished.
 If an exception occurs during execution of the try clause, the rest of the clause is skipped.
-Then if its type matches the exception named after the except keyword, the except clause is executed, and then execution continues after the try statement.
-If an exception occurs which does not match the exception named in the except clause, it is passed on to outer try statements.
+Then if its type matches the exception named after the *except* keyword, the *except* clause is executed, and then execution continues after the *try* statement.
+If an exception occurs which does not match the exception named in the *except* clause, it is passed on to outer try statements.
 if no handler is found, it is an unhandled exception and execution stops with a message.
 
 
@@ -566,9 +563,9 @@ if no handler is found, it is an unhandled exception and execution stops with a 
 Classes provide a means of bundling data and functionality together.
 Creating a new class creates a new type of object, allowing new instances of that type to be made.
 Each class/instance can have attributes for maintaining its state.
-Class/instances can also have methods (i.e. functions) for modifying its state and performing operations.
+Each class/instance can also have methods (i.e. functions) for modifying its state and performing activties.
 
-A class must be defined first the following format so that it can be used later. A class creates new namespace, where all names within a class are only valid within the scope of the class. Therefore, even if twe classes have methods or attributes of the same names, there are no conflicts.
+A class must be defined first in the following format so that it can be used later. A class creates new namespace, where all names within a class are only valid within the scope of the class. Therefore, even if twe classes have methods or attributes of the same names, there are no conflicts.
 ```
 Class ClassName:
   <statement-1>
