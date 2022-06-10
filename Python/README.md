@@ -1,6 +1,6 @@
 # Table of Content
 
-- [Introduction to Python](#introduction-to-python)
+ [Introduction to Python](#introduction-to-python)
   * [Overview](#overview)
     + [Levels of programming languages](#levels-of-programming-languages)
     + [Python](#python)
