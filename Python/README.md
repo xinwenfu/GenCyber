@@ -146,7 +146,7 @@ times r. Finally the function returns the calcualted *area*.
 
 ##### area=circleArea(radius)
 Let's look at how we use this function *circleArea*.
-At line *radius=5*, we assign 5 to the variable radius. 
+At line *radius=5*, we assign 5 to the variable *radius*. 
 At line *area=circleArea(radius)*, we call the defined function *circleArea* and pass *radius* as the function's parameter. The function's variable *r* now has the value of *radius*. The function code uses this *r* to calcualte the area of the circle.
 So basically the function is used to do the computation given *r*.
 The calculation result is returned and assigned to *area*.
@@ -155,6 +155,8 @@ The calculation result is returned and assigned to *area*.
 After we get returned *area*, at *print("Circle radius=%.2f, Area=%.2f" %(radius, area))*, we print out the result.
 We use the *%* operator to format the output.
 *%.2f* means when we print a number, we want 2 digit precision and print only two decimal places.
+
+We may have noticed there are two *area* in the code with one in the function *circleArea*. *area* in *circleArea* is only valid within *circleArea* and does not affect the one outside of *circleArea*.
 
 ### Which code runs first?
 We still have one problem left. When we run the given program, what is the first piece of code to run?
