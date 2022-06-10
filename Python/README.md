@@ -257,24 +257,23 @@ We can just set a breakpoint at that line, press *Go* in *Debug Control* to achi
 Breakpoints are convenient for us to ignore some part of the code which we are not interested in
 so that it will be faster for debugging.
 
-okay and uh so we have other things i already
-mentioned those are different things called brick uh debugging technologies okay
-so here actually i think that you already know what to do and you also have a basic idea of
-the basics right the the python program and so let's look at some details and uh
-about the python programs and uh okay
-and uh so this is here uh we're gonna talk about a few things here and uh so names right and so when you
-give names to the variables okay you need to make sure you know names are keys ascended to you
-but the names cannot start with a number so you cannot have like a two foo as a
-a variable okay so name cannot start with number but the name can start with underscore
-okay and uh so you can see here names can contain letters numbers and squares okay
-so those are different names and then here there are reserved words like a and a third break if right so why
-are those words reserved because those words are reserved for
-the statement language statement right so for example if uh see
-here in our basics.py program if you give
-a variable like here called if then you can see here we have f here so you know
-you know the python interpreter will be confused so that's why we reserve if you can see
-the idle tells you if or is reserved
-they use the color to tell you that so you cannot use those reserved words for
+## Basics & Names & Assignment & Loop
+We now know a basic idea of Python.
+Let's look at some details about the python programs.
+
+### Naming rules
+Naming rules are used to have consistent styles of naming things in Python.
+Names are case sensitive and cannot start with a number.
+
+Names can contain letters, numbers, and underscores, for examples, bob, Bob, _bob, _2_bob_, bob_2, BoB.
+
+There are reserved words designating special language functionalities, for example, 
+and, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from, global, if, import, in, is, lambda, not, or, pass, print, raise, return, try, while.
+Let's see an example why you should not use the reversed words as variables. In our basics.py, we have the *if* statement and *of* is a reserved word.
+If you name a variable as *if*, then you can see here the python interpreter will be confused about the word *if*.
+IDLE tells you if a word is reserved using colors.
+
+to tell you that so you cannot use those reserved words for
 names because that will cause python interpreter to be confused
 okay
 and uh so also you know when you give names to
