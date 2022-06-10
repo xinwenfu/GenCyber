@@ -1,3 +1,46 @@
+- [Introduction to Python](#introduction-to-python)
+  * [Overview](#overview)
+    + [Levels of programming languages](#levels-of-programming-languages)
+    + [Python](#python)
+  * [Running Python](#running-python)
+    + [Running Python Program with IDLE](#running-python-program-with-idle)
+      - [Explanation of Sample Code](#explanation-of-sample-code)
+        * [x = 34 - 23](#x---34---23)
+        * [y = 'Hello'](#y----hello-)
+        * [z = 3.45](#z---345)
+        * [*if* statement](#-if--statement)
+        * [print(x)](#print-x-)
+        * [print(y)](#print-y-)
+        * [def circleArea(r):](#def-circlearea-r--)
+        * [area=circleArea(radius)](#area-circlearea-radius-)
+        * [print("Circle radius=%.2f, Area=%.2f" %(radius, area))](#print--circle-radius--2f--area--2f----radius--area--)
+    + [Which code runs first?](#which-code-runs-first-)
+    + [Running Python Program via Python Interpreter at Command Line](#running-python-program-via-python-interpreter-at-command-line)
+    + [Running Python Program Directly at Command Line](#running-python-program-directly-at-command-line)
+  * [Debugging](#debugging)
+    + [Enabling Debugging](#enabling-debugging)
+    + [Debug Control](#debug-control)
+    + [Breakpoint](#breakpoint)
+  * [Basics & Names & Assignment & Loop](#basics---names---assignment---loop)
+    + [Naming rules](#naming-rules)
+    + [Basic datatypes](#basic-datatypes)
+    + [Some Basics](#some-basics)
+    + [Assignment](#assignment)
+    + [for loop](#for-loop)
+  * [Sequences types: Lists, Tuples, and Strings](#sequences-types--lists--tuples--and-strings)
+    + [Access, Slicing](#access--slicing)
+    + [The 'in' operator](#the--in--operator)
+    + [The + operator](#the---operator)
+    + [The * operator](#the---operator)
+    + [Mutability](#mutability)
+  * [Function](#function)
+  * [Exceptions](#exceptions)
+  * [Class](#class)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
+
 # Introduction to Python
 Guido van Rossum invented Python in early 90s. Google chose Python as one of its primary programming languages when Google was founded. 
 
