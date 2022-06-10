@@ -159,33 +159,32 @@ We use the *%* operator to format the output.
 We may have noticed there are two *area* in the code with one in the function *circleArea*. *area* in *circleArea* is only valid within *circleArea* and does not affect the one outside of *circleArea*.
 
 ### Which code runs first?
-We still have one problem left. When we run the given program, what is the first piece of code to run?
+We still have one critical question to answer. When we run the given program, what is the first piece of code to run?
 To answer this question, we have to understand indentation.
 Indentation refers to the spaces at the start of a code line. 
-Python uses indentation to make blocks of code.
+Python uses indentation to mark blocks of code.
 The code block with least indentation runs first.
 Wherever a new block of code starts, four spaces are recommended.
 The first line of a Python program can't have indentation.
 The Python interpreter checks each line and decides what to do, e.g. running the line of code.
 
-In the example basics.py, the Python interpreter cehck the code line by line.
+In the example basics.py, the Python interpreter checks the code line by line.
 It ignores the comments at the start of the program and runs the three assignments since they have zero indentation.
-When it runs the *if* statement, it checks the condition. If the condition is met, the body of the *if* statement at more indentation runs, and then execution moves forward after the *if* statement.
+When it runs the *if* statement, it checks the condition. If the condition is met, the body of the *if* statement with more indentation runs, and then execution moves forward after the *if* statement.
 If the condition is not met, the body of the *if* statement is ignored and execution moves directly after the *if* statement.
 The two statements for printing with zero indentation run then.
-
 Now the function is defined in the programn. When a function is defined, the Python interpreseter will not run the code, but it remembers the defined
 function. A function has to be first defined before it is used. 
-
 So basically we run the code based on the
-blocks logically. The grammar is similar to human languages.
-Let's ahve a look at some printout from the code. We can see the printout of 12 in the IDLE shell window.
-That is the output of *print(x)*. Originally x is assigned 11. Then we assign x+1 to x to get 12.
-The output "Hello World" is the result of *print(y)* because we concatenat "Hello" and " World" together and assign the concatenated strings to y.
+blocks marked by indentation logically.
 
-In many other programming lanuages, the is a *main* function, which is the entry point of the program.
-That is, every time when we run the program, the function called main runs first.
-Python does not have the main function. Code with least indentation runs first.
+Let's have a look at some printout from the code and see if we understand the code right. We can see the printout of 12 in the IDLE shell window.
+That is the output of *print(x)*. Originally x is assigned 11. Then we assign x+1 to x to get 12.
+The output "Hello World" is the result of *print(y)* because we concatenate "Hello" and " World" together and assign the concatenated strings to y.
+
+In many other programming lanuages, there is a *main* function serving as the entry point of the program.
+That is, every time when we run the program, the code in the function called *main* runs first.
+Python does not have the main function. Code with least indentation (e.g., zero indentation) runs first.
 
 ###  Running Python Program via Python Interpreter at Command Line
 Here you have to actually use the application called *Terminal*.
@@ -194,12 +193,13 @@ Find it within *Applications*. Click to start a terminal within which various Li
 
 <img src="../Imgs/Terminal.png" width=640>
 
-To run basics.py, we first use the Linux *cd* to change the directory to where basics.py is saved.
+To run basics.py, we first use the Linux *cd* command to change the directory to where basics.py is saved.
 Then the following command can be used to run basics.py.
 
 ```
 python basics.py
 ```
+We can actually various <a href="https://www.pcwdld.com/linux-commands-cheat-sheet">Linux commands</a> within a terminal. 
 
 ###  Running Python Program Directly at Command Line
 The third way is to run the Python script, i.e., the file, directly at the command line.
