@@ -634,5 +634,5 @@ Data attributes can be created dynamically for a class instance.
 
 Programs must import the classes they use
 ```
-import MyClass
+import Person
 ```
