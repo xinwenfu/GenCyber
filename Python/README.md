@@ -589,7 +589,7 @@ Class instantiation: x is an instance of MyClass. For example, MyClass can be a 
 >>> x = MyClass()
 >>> x.f()
 ```
-\__init\__() special method for initialization of object
+\_\_\_init\_\_\_() special method for initialization of object
 ```
 def __init__(self,realpart,imagpart):
 	self.r = realpart
