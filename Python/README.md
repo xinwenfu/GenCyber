@@ -575,7 +575,7 @@ Class ClassName:
 >>> class MyClass:
 ...   """ A simple example class"""
 ...   i = 123
-...   def f(self):
+...   def f(self): # Object is passed as first argument of function 'self'
 ...     return 'hello world'
 
 >>> MyClass.i # i is integer object of MyClass
@@ -589,9 +589,25 @@ Class instantiation: x is an instance of MyClass. For example, MyClass can be a 
 >>> x = MyClass()
 >>> x.f()
 ```
-\_\_\_init\_\_\_() special method for initialization of object
+\_\_\_init\_\_\_() is a special method for initialization of object
 ```
 def __init__(self,realpart,imagpart):
 	self.r = realpart
 	self.i = imagpart
+```
+
+Data attributes can be created dynamically for a class instance. 
+```
+>>> x.counter=1
+>>> while x.counter < 10:
+...     x.counter = x.counter*2
+...
+>>> print(x.counter)
+>>> x.f()
+>>> del x.counter
+```
+
+Programs must import the classes they use
+```
+import MyClass
 ```
