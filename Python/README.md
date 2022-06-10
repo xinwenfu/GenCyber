@@ -6,11 +6,11 @@ We will give a brief introduction to the Python programming language, covering o
 ## Overview
 
 ### Levels of programming languages
-What is a programming language? Why do we need it? A computer has accessaries such as printers and monitors. One purpose of a programming languages is to control those hardware. For example we want to draw beautiful pictures on a display. We want to print something on a printer. The code in a program can do those things. We may want to perform complex computing and a program can be written so that the a core chip called CPU (central processing unit) can be instructed to perform the computation and the program can also show the results on the display. So programs can control the hardware and perform computing. 
+What is a programming language? Why do we need it? A computer has accessaries such as printers and monitors. One purpose of a programming languages is to control those hardware. For example we may want to draw on a display or print something on a printer. A program can do those things. We may also want to perform complex computing. A program can instruct the computer's CPU (central processing unit) to perform the computation. The program can also show the results on the display. So programs can control the hardware and perform computing. 
 
 <img src="../Imgs/LanguageLevel.png" width=400>
 
-Because of its construction principles, the hardware and CPU can only accept binary commands and data in zeros and ones. Therefore, the very low level programming language is a machine language. Apparently machine language is too hard for everybody because it is hard to remember commands in zeros and ones. 
+The hardware and CPU can only accept binary commands and data in zeros and ones. Therefore, the very low level programming language is machine language. Apparently machine language is too hard for everybody because it is hard to remember commands in zeros and ones. 
 
 That's why people invented the assembly language, which is much simpler than machinen code. In assembly language, meaningful names called mnemonics are given to commands so that they are easy to remember. Since the hardware and CPU can only understand machine lanauage, a program in assembly language has to be translated into machine language by software called assembler before they are actually run. 
 However, assembly language is still super hard for general person since you need to understand a lot of hardware details to really use it. But if our goal of programming is to process data and do computation, why should you understand hardware so as to compute? 
