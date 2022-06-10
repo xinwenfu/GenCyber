@@ -547,102 +547,51 @@ We put the action that may incur errors in the *try* block of code.
 Error processing code is put in the *except* block.
 We can put the error type such as *ValueError* after *except* to process a particular type of error.
 
+So basically this is how exceptions are handled.
+First, the try clause (the statement(s) between the try and except keywords) is executed.
+If no exception occurs, the except clause is skipped and execution of the try statement is finished.
+If an exception occurs during execution of the try clause, the rest of the clause is skipped.
+Then if its type matches the exception named after the except keyword, the except clause is executed, and then execution continues after the try statement.
+If an exception occurs which does not match the exception named in the except clause, it is passed on to outer try statements.
+if no handler is found, it is an unhandled exception and execution stops with a message.
 
-so finally let's look at the classes so i think you all you guys actually
-play the games right and we also introduced a few data tabs
-like a integer string and other things so we also talked about these right
-those are classes and uh so when we talk about the list so when you how for example you give
-a few numbers right to the list and you can see you have the data and you can also call the function
-to change the data so let's look at the list
-so you can see here right so here when we assign a b c b here to li here
-we create a list so basically at this point this list
-has a attributes a b c b and it has this data
-right however when you have the data you also want to process data because
-when you cover this basically arbitrary uh you can you can see intuitively
-so you have data you also want to process the data right
-and uh so basically a class allows you to put the data
-and the functions that we use to process the data together as one entity so that's
-what we mean by class so it's kind of a class a new class object for example
-when you create a list right it's a new class of object which is called a dist
-and you can actually assign new kind of data to the list and you can use the uh functions within a
-list to actually process the data right in this way everything together is very clear much
-better okay and also i guess all you guys play the games and um
-and you can see here games you can see different people right so basically you can see
-one kind of a person is a class and
-the class has data for example what the person looks like
-the class has actually functions for example the person can read weapons
-for example if the peasant right and if he doesn't have weapons it can only be get killed and uh so the person can walk
-so when you walk again you have to indicate you must have data to tell
-where the person is located within the map so you can see right so we use a class
-to describe a person right and the class has data which can
-indicate the location of the person which can also indicate the appearance of a person and it can we can also have
-functions for example the guy can walk can build weapons right so basically when you drag
-one person onto the map when you create a person on the map right and you create a new instance of another
-person so you can see here we have a few instances here and so the blue guy here
-it has a few instances right those they belong to the same class of
-people maybe present i don't know and maybe this lady here beautiful lady right and
-this is a kind of a person right so but you can have multiple instances right so a class defines
-okay i want a present okay right so that's called a class it's
-a new class of object however when you play the game you want a
-multiple patterns on the map we call each uh we call each person over there has one
-instance of another class right so that's called class okay
-and uh so you can see here each class instance right they can have attributes they have methods to measure the for
-example build a weapon or something like that and how strong you are right you all know
-that very well and this is how you define the class okay so use this class class name right
-and then you can put the attributes functions so all other things are similar like you define a function okay
-and uh but remember here we we put the data and uh methods together so we call
-actually functions within the class called a method right so it means uh what uh for this person what measures
-this person has right this particular wheeled weapon this person can walk something like that and we also have the
-data right okay and uh so again when we define class you
-must define the first before you use it okay and also
-when you create the variables here those variables can only be used by measures within this class they cannot be used by
-other people by other deca classes sometimes you can you can do it
-okay but normally we call that a new namespace means okay so for example you if you have i here
-right define the for this class and outside of class if you use ir game
-you need to remember the i within the class is different from i outside of the class so basically you can use the same
-i as a different uh kind of a level right and inside the class so
-there will be no conflicts okay so that's called the name space right when you create a class you create a new name
-space all the names all the variables functions
-they have their own scope within this class okay
-and uh so in this way we can avoid conflicts in case you know what if other
-class has the same kind of names right variables and the same methods
-because they are within different classes so they will not cause conflicts because they are in their own new name
-space so here so this is python concepts so you define
-a function right you define a class right this is your attribute this is your function for this my class and you
-can actually invoke this class attribute okay
-you can also invoke this class method sometimes we call this object i don't like it but you can call this object you
-can call this kind of object i'm okay and uh so this is how you use it right
-so you can if you want to use a classic function that's okay so that's uh
-normally we do that a lot and uh so of course as i mentioned
-so let's say this is a new person on my class right but uh for your class you might have class name
-you have other uh you have a like a class homework many other things so we want to
-you may have a multiple classes so for your first class you may want to call the x that's why you do this my class
-parentheses ascend to x so this is your first class then you can create another
-uh instance called y as we showed uh for the game right and you for each
-kind of a patent right and that's a kind of called class instant instantiate
-instantiation means that you created another patent which belongs to the same class
-and also within a class you can use this function to initialize some of the variables okay
-and uh some of the since you want to do for example you want uh how tall your patent
-right so you can use this in need something to do that okay
-and uh so so this is called so you remember we
-mentioned uh uh so let's see within this uh uh we already created this instance and
-it has a object called counter so we call this as attribute
-object okay so we give this as one right and then we can write something like this okay so
-this is called the instant object that's called class object right and uh here
-so because now you are using the instance of the data
-class so we call this attribute right data as a
-instant object okay and we also have measured object right
-that's the instance method object that's how you you can use that function right and uh
-okay and uh so here are some notes which are not so
-important and uh so uh one thing here is a
-okay and uh you will find out the first argument of the method is usually called the self
-self has no special meaning it refers to the instance itself
-okay and uh so when you want to use a class for example you remember we used the os
-right and uh in our previous example here and you can see we import os so lois is
-a class it contains many functions for example gets the current folder that's a
-function of the os means operating system okay and anyway so it's just kind of a class so if it defines such kind of
-uh uh functions or methods you can actually use the os dot get cwd to get to the
-folder and you can use this one to change the change of a kernel folder and then so in this way you can use
-all the scenes within this os okay this class
-okay i think basically that's all for this simple
-did i stop and then i can stop this
+
+## Class
+
+Classes provide a means of bundling data and functionality together.
+Creating a new class creates a new type of object, allowing new instances of that type to be made.
+Each class/instance can have attributes for maintaining its state.
+Class/instances can also have methods (i.e. functions) for modifying its state and performing operations.
+
+A class must be defined first the following format so that it can be used later. A class creates new namespace, where all names within a class are only valid within the scope of the class. Therefore, even if twe classes have methods or attributes of the same names, there are no conflicts.
+```
+Class ClassName:
+  <statement-1>
+  ...
+  <statement-N>
+```
+
+```
+>>> class MyClass:
+...   """ A simple example class"""
+...   i = 123
+...   def f(self):
+...     return 'hello world'
+
+>>> MyClass.i # i is integer object of MyClass
+123
+>>> MyClass.f
+<function MyClass.f at 0x7fcfbca1a170>
+```
+
+Class instantiation: x is an instance of MyClass. For example, MyClass can be a template for classes students register. x is an actual class.
+```
+>>> x = MyClass()
+>>> x.f()
+```
+__init__() special method for initialization of object
+```
+def __init__(self,realpart,imagpart):
+	self.r = realpart
+	self.i = imagpart
+```
