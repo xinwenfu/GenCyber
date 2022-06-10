@@ -265,33 +265,31 @@ Let's look at some details about the python programs.
 Naming rules are used to have consistent styles of naming things in Python.
 Names are case sensitive and cannot start with a number.
 
-Names can contain letters, numbers, and underscores, for examples, bob, Bob, _bob, _2_bob_, bob_2, BoB.
+Names can contain letters, numbers, and underscores, for examples, *bob*, *Bob*, *_bob*, *_2_bob_*, *bob_2*, *BoB*.
 
 There are reserved words designating special language functionalities, for example, 
-and, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from, global, if, import, in, is, lambda, not, or, pass, print, raise, return, try, while.
+*and*, *assert*, *break*, *class*, *continue*, *def*, *del*, *elif*, *else*, *except*, *exec*, *finally*, *for*, *from*, *global*, *if*, *import*, *in*, *is*, *lambda*, *not*, *or*, *pass*, *print*, *raise*, *return*, *try*, *while*.
 Let's see an example why you should not use the reversed words as variables. In our basics.py, we have the *if* statement and *of* is a reserved word.
 If you name a variable as *if*, then you can see here the python interpreter will be confused about the word *if*.
 IDLE tells you if a word is reserved using colors.
 
-to tell you that so you cannot use those reserved words for
-names because that will cause python interpreter to be confused
-okay
-and uh so also you know when you give names to
-functions to variables uh some later we'll talk about classes so you want to be consistent right and
-that's what we call the naming conventions so you can see here we use a gender n square lower for function
-methods attributes so we'll talk about measures is a functions right it's it's a
-it's a something a message attributes are related to classes we'll talk about that later
-and we also have john lower and for constants or all caps for
-constants okay and we use these studly caps for classes so like a better
-color okay and uh some of the conventions use something called a
-camel case like this back color b is a lowercase c is a
-capital case and uh so python doesn't use that convention if
-you see it it's because of a backward compatibility because the person wants to be consistent with other old
-convention okay so the the reason we do this is just we want
-to have kind of a uh convention we want the naming
-to become consistent and so that's about the naming okay now
-here we have a basic did tabs as i mentioned white we have different data because you know in computers
-different data tabs are stored in a different way so that's why we have integers we have flows we have strings
+When we name functions, variables, classes (which will be discussed later) and other things, we want to be consistent.
+This is called naming convention.
+- *joined_lower* for functions, methods and, attributes
+- *joined_lower* or *ALL_CAPS* for constants
+- *StudlyCaps* for classes, e.g., BackColor
+- *camelCase* is only used to conform to pre-existing conventions for backward compatibility. For example, if *backColor* is used in an existing library, we just use it in its own format.
+
+### Basic datatypes
+You know in computers different types of data are stored in a different way. That's why we have different data types like integers, strings and floats.
+
+Integers are default types for numbers. For example, z = 5 / 2, where 6 and 2 are integers. / refers to integer division, in which the fractional part (remainder) is discarded. So the answer is 2.
+
+An example float assignment x = 3.456.
+
+Strings are be specified with double quotes "" or single quotes ''. For example, "abc" == 'abc‘ are the same string.
+Unmatched quote can occur within the string, e.g., "matt's".
+
 okay so so this is integer right this integer division this means that we want to get
 the quotient uh yes we want to get a quotient and this flows right means that we have the
 decimal point here we have strings right and the strings can be uh
