@@ -1,8 +1,6 @@
 # Introduction to Python
-This is a brief introduction to the Python programming language. We still have a lot of things to cover. We will have an overview, how to run python, how you can do debugging, naming of variables, functions and other things, assignment statement, loop statement, data structures such as tuples and the strings, how you define a function, exception and class.
-
-Here is brief history of Python. Guido van Rossum invented Python in early 90s. Google actually chose Python as one of its primary programming languages
-from when Google was founded. 
+Guido van Rossum invented Python in early 90s. Google chose Python as one of its primary programming languages when Google was founded. 
+We will give a brief introduction to the Python programming language, covering overview of the language, how to run Python programs, debugging, naming, assignment statement, loop statement, data types such as tuples, lists and the strings, function, exception and class.
 
 ## Overview
 
