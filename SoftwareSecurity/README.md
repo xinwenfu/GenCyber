@@ -23,8 +23,14 @@ hacker's world and how they do everything. What is that their procedure to do ev
 Basically a cyber attack can have three phases.
 The first phase is the information connection.
 When the attackers attack you, they need to understand you. Or maybe they just want to find random targets.
-For example, they need to get some IP addresses of victim computers. 
-One popular way of uh information collecting is port scanning.
+For example, they want to get some IP addresses of computers. 
+One popular way of information collecting is port scanning.
+A computer may run multiple servers such as web server and email server.
+We use port numbers to differentiate different servers so that when a message (with a particular port) arrives at the computer,
+the computer knows where to forward the message, e.g., web server or email server.
+In port scanning, we send messages to possible ports at a computer and see which port reponds. Then we know there is a service running at that port.
+A particular port often runs a specific server, for example, port 80 corresponds to the http web server.
+
 put all such equipment together then basically you want to see what is going on here right and what how the targets
 are available to available to you so that's the first stage called the information connection so once you got
 all the information then you have the targets maybe you want to try all of them one by one but whatever so you are
