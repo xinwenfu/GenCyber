@@ -23,7 +23,6 @@ hacker's world and how they do everything. What is that their procedure to do ev
 Basically a cyber attack can have three phases.
 The first phase is the information connection.
 When the attackers attack you, they need to understand you. Or maybe they just want to find random targets.
-For example, they want to get some IP addresses of computers. 
 One popular way of information collecting is port scanning.
 A computer may run multiple servers such as web server and email server.
 We use port numbers to differentiate different servers so that when a message (with a particular port) arrives at the computer,
