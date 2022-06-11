@@ -36,9 +36,6 @@ In port scanning, carefully crafted messages are sent to possible ports at a com
 If the software using a port reponds, there is a service running at that port.
 A particular port often runs a specific server, for example, port 80 corresponds to the http web server.
 
-
-In a phishing attack, the attacker just send emails to a victim, maybe with malware as the attachment.
-
 Once you got all the information, then you have the targets.
 Maybe you want to try all of them one by one.
 Now you enter the second stage called exploitation.
@@ -51,14 +48,15 @@ When an attacker tries to log into your web account, the attacker may try all po
 see which one works. You may think this will not work let me. The truth is this is a popular way of doing the attack.
 It often succeeeds since people choose easy passwords such as abc123.
 
-We have another exploit called client-side attack.
+We have another type of exploit called client-side attack.
 One example client-side attack is the attacker sends you an
 email with attachment.
 When you click the attachment. it is malware.
 What is malare? Programs which malicious. For example, the malware may be written to delete files on a computer.
 But really malware can be written to do anything.
 For example, the malware can be a backdoor, which is basically a server and allows the attacker to log into the victim computer later.
-so the attachment is malware, which is clicked by the victim and runs on the victim computer.
+so the attachment is malware, which is clicked by the victim and runs on the victim computer. The attacker does not interact with the victim remotely.
+This is why we call this client side attack.
 In this case, the user interacts with the attachment on their own computer.
 the link and so the mail
 actually runs on the targeted computer directly right so this other exploit
