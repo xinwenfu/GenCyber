@@ -20,12 +20,11 @@ hacker's world and how they do everything. What is that their procedure to do ev
 
 <img src="../Imgs/CyberAttackCycle.png" width=480>
 
-Basically we have
-three parts here and uh so the first part is the information
-connection of course when the attacker will attack you they won't understand
-you or maybe they just want to find running targets so to that end we won't
-actually perform information collection and as we know one popular way of uh information
-collecting is uh you do post scanning so that's just one way of course you may have other ways so you
+Basically a cyber attack can have three phases.
+The first phase is the information connection.
+When the attackers attack you, they need to understand you. Or maybe they just want to find random targets.
+For example, they need to get some IP addresses of victim computers. 
+One popular way of uh information collecting is port scanning.
 put all such equipment together then basically you want to see what is going on here right and what how the targets
 are available to available to you so that's the first stage called the information connection so once you got
 all the information then you have the targets maybe you want to try all of them one by one but whatever so you are
