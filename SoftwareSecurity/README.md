@@ -20,41 +20,47 @@ hacker's world and how they do everything. What is that their procedure to do ev
 
 <img src="../Imgs/CyberAttackCycle.png" width=480>
 
-Basically a cyber attack can have three phases.
+A cyber attack can have three phases.
 The first phase is the information connection.
-When the attackers attack you, they need to understand you. Or maybe they just want to find random targets.
-One popular way of information collecting is port scanning.
+When an attacker attacks you, they need to know you, for example, your email address or the IP address of your computer.
+An IP address has the format of x.x.x.x, where x is an integer from 0 to 255.
+So you can see that the attacker may randomly pick up some IP addresses to attack.
+The IP address alone may not be enough.
+The attacker may also want to know what servers (which are software) are running at an IP. 
+One popular way of finds servers running at an IP is port scanning.
+What is a port?
 A computer may run multiple servers such as web server and email server.
 We use port numbers to differentiate different servers so that when a message (with a particular port) arrives at the computer,
 the computer knows where to forward the message, e.g., web server or email server.
-In port scanning, we send messages to possible ports at a computer and see which port reponds. Then we know there is a service running at that port.
+In port scanning, carefully crafted messages are sent to possible ports at a computer.
+If the software using a port reponds, there is a service running at that port.
 A particular port often runs a specific server, for example, port 80 corresponds to the http web server.
 
-put all such equipment together then basically you want to see what is going on here right and what how the targets
-are available to available to you so that's the first stage called the information connection so once you got
-all the information then you have the targets maybe you want to try all of them one by one but whatever so you are
-going to enter the second stage called exploitation so in this stage there are
-so many different ways of exploits so i'm showing here kind of three examples here and uh the first one
-is called remote export so what is remote slot so in remote spot so basically the
-attacker attack you from the internet they are not going to attack you actually on your
-own computer of course right we are talking about the remote attack and um so the attacker will attack it remotely
-and um so that's a called remote attack and sometimes you know
-the attacker won't get into your computer for example your computer has the
-sql shell ssh installed or telnet or ftp installed so you may want to do some
-simple attack like a this kind of a credential attack you just try all possible credentials one by one and
-see which one works you may think this will not work let me tell you this is a popular way of doing the attack so this
-happened even to my students quite a few times and there's another thing similar to
-using credentials called a plus hash so sometimes i mean the hacker they got
-the password hashes and some of the services on computers
-may actually accept the password hash or credential hash for authentication so
-that's why we have something called the pass the hash so then we have another example here
-it's called client-side attack so in this case the concept attack means okay
-so the attacker use you to click a link for example they can also send you the link
-by email send you the link by actually uh messages and also leave me send you
-email with attachment when you click right so basically the link and also the
-attachment contains the mirror and then the mirror actually runs on the target
-like a client computer so in this case right so the attacker doesn't send you the mailer remotely but you actually i
-mean the user interacts with the attachment the link and so the mail
+
+In a phishing attack, the attacker just send emails to a victim, maybe with malware as the attachment.
+
+Once you got all the information, then you have the targets.
+Maybe you want to try all of them one by one.
+Now you enter the second stage called exploitation.
+In this stage there are so many different ways of exploits.
+In the picture, I show only three examples.
+The first one is called remote exploit, in which the
+attacker attack a victim from the internet.
+A simple remote attack is the brute force password guessing attack.
+When an attacker tries to log into your web account, the attacker may try all possible credentials one by one and
+see which one works. You may think this will not work let me. The truth is this is a popular way of doing the attack.
+It often succeeeds since people choose easy passwords such as abc123.
+
+We have another exploit called client-side attack.
+One example client-side attack is the attacker sends you an
+email with attachment.
+When you click the attachment. it is malware.
+What is malare? Programs which malicious. For example, the malware may be written to delete files on a computer.
+But really malware can be written to do anything.
+For example, the malware can be a backdoor, which is basically a server and allows the attacker to log into the victim computer later.
+so the attachment is malware, which is clicked by the victim and runs on the victim computer.
+In this case, the user interacts with the attachment on their own computer.
+the link and so the mail
 actually runs on the targeted computer directly right so this other exploit
 that of course there are many ways of uh remote explorers there are many ways for client cellular attacks that's why our
 world is so colorful right and so this is a the stage of exploitation
