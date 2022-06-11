@@ -633,3 +633,7 @@ Data attributes can be created dynamically for a class instance.
 
 Programs must import the module (.py files) that contains the classes before they use the classes
 
+The *from* operator imports items from a module.
+```
+from modulename import itemname
+```
