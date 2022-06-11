@@ -1,25 +1,26 @@
+# Penetration Testing and Software Security
 
-yeah first happy new year and um i'm very happy to present the topic about
-armitage and the men's approach for nutrition testing so today we are going
-to cover everything from information collecting and exploitation and the post
-exploitation so i want to see here all contents most of the contents
-present today are from the internet so i thank the internet for everything and then so here
-is a the outline of the visa talk so let's first look at the
-cyber attack cycle here so we all know now separate attacks now
-are very serious and as we can see here so basically fighting cybercrimes is
-among fbi's top three priorities and uh
-so basically we want think like an adversary
-so that we can understand several attacks and uh why do we want to understand the
-several attacks because you have to understand several attacks so that you can actually design your defense to
-counter those attacks right and uh of course
-when you are heard as a penetration tester you actually also need to
-understand the several attack and knowledge and so that's why so i think that we
-should actually understand a separate attack cycle and we have a bigger picture and um so today
-my purpose is so i will give you a very easy tool here so
-that you can present it to your students and show them the big picture because i
-often find that it's very hard to explain to beginners and what is going on within the
-hacker's world and how they do everything what is that their procedure to do everything
-so here i show the cyber attack cycle here so you can see here basically we have
+We are going to cover everything from information collecting and exploitation and the post
+exploitation.
+
+## Cyber Attack Cycle
+We first look at the cyber attack cycle. We all know now cyber attacks now
+are very serious.
+Fighting cybercrimes is among FBI's top three priorities.
+We want think like an adversary so that we can understand several attacks.
+Why do we want to understand the attacks?
+Because you have to understand cyber attacks so that you can actually design your defense to
+counter those attacks.
+When you are hired as penetration tester to test if computers are vulnerable, you actually also need to
+understand attacks. Otherwise, how can you tell a computer is vulnerable to attacks?
+
+We shall understand a cyber attack cycle to have a big picture of how attacks are performed.
+We will talk about what is going on within the
+hacker's world and how they do everything. What is that their procedure to do everything?
+
+<img src="../Imgs/CyberAttackCycle.png" width=640>
+
+Basically we have
 three parts here and uh so the first part is the information
 connection of course when the attacker will attack you they won't understand
 you or maybe they just want to find running targets so to that end we won't
