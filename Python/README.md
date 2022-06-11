@@ -2,7 +2,7 @@
 Guido van Rossum invented Python in early 90s. Google chose Python as one of its primary programming languages when Google was founded. 
 We will give a brief introduction to the Python programming language, covering overview of the language, how to run Python programs, debugging, naming, assignment statement, loop statement, data types such as tuples, lists and the strings, function, exception and class.
 
-# Table of Content
+## Table of Content
   * [Overview](#overview)
     + [Levels of programming languages](#levels-of-programming-languages)
     + [Python](#python)
