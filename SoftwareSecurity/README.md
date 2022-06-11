@@ -18,7 +18,7 @@ We shall understand a cyber attack cycle to have a big picture of how attacks ar
 We will talk about what is going on within the
 hacker's world and how they do everything. What is that their procedure to do everything?
 
-<img src="../Imgs/CyberAttackCycle.png" width=640>
+<img src="../Imgs/CyberAttackCycle.png" width=400>
 
 Basically we have
 three parts here and uh so the first part is the information
