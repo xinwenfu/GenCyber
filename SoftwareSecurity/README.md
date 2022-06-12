@@ -61,6 +61,9 @@ Now when the function is done and returns, the malicious code in the malicious m
 
 <img src="../Imgs/BufferOverflow.png" width=480>
 
+The buffer overflow vulnerability often occurs in software written in C or C++. Python is designed to avoid the buffer overflow vulnerability although Python can be used to perform the buffer overflow attack.
+
+
 We have another type of exploit called client-side attack.
 One example client-side attack is the attacker sends you an
 email with attachment.
