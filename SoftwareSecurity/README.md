@@ -65,44 +65,32 @@ Now when the function is done and returns, the malicious code in the malicious m
 
 The buffer overflow vulnerability often occurs in software written in C or C++. Python is designed to avoid the buffer overflow vulnerability although Python can be used to perform the buffer overflow attack.
 
+### Phase  3: Post Exploitation
+Once the attacker gets inside the victim computer, what else can they do?
+The attackers wants profit from the exploitation.
+That's why actually post exploitation is very important to the hackers.
 
-We have another type of exploit called client-side attack.
-One example client-side attack is the attacker sends you an
-email with attachment.
-When you click the attachment. it is malware.
-What is malare? Programs which malicious. For example, the malware may be written to delete files on a computer.
-But really malware can be written to do anything.
-For example, the malware can be a backdoor, which is basically a server and allows the attacker to log into the victim computer later.
-so the attachment is malware, which is clicked by the victim and runs on the victim computer. The attacker does not interact with the victim remotely.
-This is why we call this client side attack.
-In this case, the user interacts with the attachment on their own computer.
-the link and so the mail
-actually runs on the targeted computer directly right so this other exploit
-that of course there are many ways of uh remote explorers there are many ways for client cellular attacks that's why our
-world is so colorful right and so this is a the stage of exploitation
-but uh you know here we often find when we teach our
-security classes and we ignore the last part called the post exportation and so
-basically once the attacker gets inside your computer what else can they do of
-course we want a kind of a profit from the exploits from
-the exploitation so that's why actually post exploitation is very
-important to the hackers to the attackers so here at least a few things here you can see
-first thing is called escalade privileges so sometimes the attacker may be able to just compromise
-a normal user which doesn't have any kind of root privilege so in this case then the
-attacker will think about other ways to escalate their privileges so that they
-can do more damages right let me explore system and they must steal your data and
-and just cooking around and see what is happening if they got enough actually kind of privileges for example root
-privilege you may actually dump your hash and they may use jana reaper to crack those password hashes so that they
-get all different users right they can log into different assistants so the last step in post
-exploration is called a setup of puberty so what does that mean you know sometimes
-the attacker may just be able to actually hack one computer within
-this network or within this enterprise or within this school right and they
-actually want a taco problem inside because you know when the computer is inside if it is
-compromised i mean normally the school or the enterprise
-and do not have actually enough defense
-if the attack is from inside most of the defense is set up at the the edge of the
-campus either the firewall right once the attacker is inside the campus network then
-actually you can do more damage that's why so basically they are going to use the compromised computer as stepping
-stone to attack other computers or networks from inside so you can see now once you
+The post exploitation can be escalating privileges.
+Sometimes the attacker may be able to just compromise a normal user's account,
+which doesn't have any kind of admin privilege.
+The attacker will think about other ways to escalate their privileges so that they
+can do more damages. 
+
+The attacker may explore your computer, steal your data, and look around.
+If they got enough privileges for example root/admin privilege
+they may actually dump password hash and use John the Reaper to crack those password hashes so that they
+get all the passwords.
+
+The post exploitation can be setup of pivoting. What does that mean?
+Sometimes the attacker may just be able to actually hack one computer within within an enterprise or within a school.
+They want to utilize this compromised computer to hack into other computers. This is called pivoting.
+Normally the school or the enterprise may not have enough funds to deploy defense systems inside of their campus.
+Most of the defense such as firewall is set up at the the edge of the campus either the firewall.
+Once the attacker is inside the campus network, they can do more damage.
+They can use the compromised computer as stepping
+stone to attack other computers or networks from inside.
+
+so you can see now once you
 set up a paper team everything will just kind of go in from the beginning again
 so this is the three important uh stages of uh several attack cycle then we will
 see actually armature and metasploit can do all three stages of activities okay so here
