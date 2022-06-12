@@ -101,6 +101,8 @@ Meterpreter provides the attacker an interactive shell exploring the target mach
 For example, within meterpreter, *hashdump* can list all the usernames and the passwords.
 Then use John the ripper to crack password hashes.
 
+<img src="../Imgs/interact.png" width=640>
+
 The attacker may also want to maintaining access to the compromsied computer
 so that even if the compromised computer restarts, the attacker can still get in.
 If access is not maintained, the attacker will have to exploit it from the beginning in case the hacked system is closed or patched
@@ -159,6 +161,8 @@ msf6 exploit(windows/vulnserver/knock) > exploit -j
 [*] Sending stage (175174 bytes) to 192.168.1.19
 ```
 ### Meterpreter commands
+
+
 - help
 - getuid
 - getsystem
