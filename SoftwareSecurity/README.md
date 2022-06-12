@@ -5,6 +5,8 @@ exploitation. In penetration testing, a pentester is basically an ethical hacker
 The pentester pretty much does similar things to attacks done by the real hackers, but for good reasons.
 For simplicity of explaining, in this tutorial we oftem take the role of hackers trying to attack the targets. 
 
+<img src="../Imgs/EthicalHack.png" width=640>
+
 ## Cyber Attack Cycle
 We first look at the cyber attack cycle. We all know now cyber attacks are very serious.
 Fighting cybercrimes is among FBI's top three priorities.
