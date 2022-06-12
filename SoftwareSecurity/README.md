@@ -1,48 +1,48 @@
 # Penetration Testing and Software Security
 
 We are going to cover everything from information collecting and exploitation and the post
-exploitation.
+exploitation. In penetration testing, a pentester is basically an ethical hacker, testing if the client networks and computers have vulnerabilities and can be hacked.
+The pentester pretty much does similar things to attacks done by the real hackers, but for good reasons.
+For simplicity of explaining, in this tutorial we oftem take the role of hackers trying to attack the targets. 
 
 ## Cyber Attack Cycle
-We first look at the cyber attack cycle. We all know now cyber attacks now
-are very serious.
+We first look at the cyber attack cycle. We all know now cyber attacks are very serious.
 Fighting cybercrimes is among FBI's top three priorities.
-We want think like an adversary so that we can understand several attacks.
+We want to think like an adversary so that we can understand attacks.
 Why do we want to understand the attacks?
-Because you have to understand cyber attacks so that you can actually design your defense to
-counter those attacks.
-When you are hired as penetration tester to test if computers are vulnerable, you actually also need to
-understand attacks. Otherwise, how can you tell a computer is vulnerable to attacks?
+Because we have to understand cyber attacks so that we can actually design our defense to
+counter those attacks. If you do not the attacks, how can you design the defense?
+As a penetration tester,  you actually also need to
+understand attacks so as to test if computers and networks are vulnerable.
 
-We shall understand a cyber attack cycle to have a big picture of how attacks are performed.
+Now let's have a look at the cyber attack cycle to see a big picture of how attacks are performed.
 We will talk about what is going on within the
-hacker's world and how they do everything. What is that their procedure to do everything?
+hacker's world and how they do everything. 
 
 <img src="../Imgs/CyberAttackCycle.png" width=480>
 
 A cyber attack can have three phases.
-The first phase is the information connection.
-When an attacker attacks you, they need to know you, for example, your email address or the IP address of your computer.
+The first phase is the information connecting.
+When an attacker attacks you, they need to know you to some extent, for example, your email address or the IP address of your computer.
 An IP address has the format of x.x.x.x, where x is an integer from 0 to 255.
 So you can see that the attacker may randomly pick up some IP addresses to attack.
 The IP address alone may not be enough.
 The attacker may also want to know what servers (which are software) are running at an IP. 
-One popular way of finds servers running at an IP is port scanning.
+One popular way to find servers running at an IP is port scanning.
 What is a port?
 A computer may run multiple servers such as web server and email server.
-We use port numbers to differentiate different servers so that when a message (with a particular port) arrives at the computer,
+Port numbers are used to differentiate different servers so that when a message arrives at the computer,
 the computer knows where to forward the message, e.g., web server or email server.
+Of course, the message (actually called packet) shall contain the IP address of the computer and port number indicating the server.
 In port scanning, carefully crafted messages are sent to possible ports at a computer.
-If the software using a port reponds, there is a service running at that port.
-A particular port often runs a specific server, for example, port 80 corresponds to the http web server.
+If the server software running at a port reponds, there is a service running at that port.
+A particular port is often allocated to a specific server, for example, port 80 corresponds to the http web server.
 
-Once you got all the information, then you have the targets.
-Maybe you want to try all of them one by one.
-Now you enter the second stage called exploitation.
-In this stage there are so many different ways of exploits.
+Once the attaker gets the information and determines the target, it now can perform the exploitation.
+In this stage there are many different exploits.
 In the picture, I show only three examples.
 The first one is called remote exploit, in which the
-attacker attack a victim from the internet.
+attacker attacks a victim from the internet remotely.
 A simple remote attack is the brute force password guessing attack.
 When an attacker tries to log into your web account, the attacker may try all possible credentials one by one and
 see which one works. You may think this will not work let me. The truth is this is a popular way of doing the attack.
