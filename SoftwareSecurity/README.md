@@ -90,6 +90,9 @@ Once the attacker is inside the campus network, they can do more damage.
 They can use the compromised computer as stepping
 stone to attack other computers or networks from inside.
 
+## Introduction to Metasploit and Armitage
+Please check this <a href="../FieldTrips">tutorial</a> on an introduction to Metasploit and Armitage.
+
 
 <!---
 so you can see now once you
