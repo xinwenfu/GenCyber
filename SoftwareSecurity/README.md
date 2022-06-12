@@ -46,9 +46,9 @@ A particular port is often allocated to a specific server, for example, port 80 
 Once the attaker gets the information and determines the target, it now can perform the exploitation.
 In this stage there are many different exploits.
 In the picture, three examples are shown.
-The first one is phishing attack, in which emails are sent to potential victims soliciting critical information such as passwords from the victims.
-The attacker may use social engineering tricks and present to be authorities so as to trick the victims to willingly surrender information.
-Whenever someone asks you for money or credentials, think twice and double check! Do not easily click an attachment of an email since the attachment may be malware, which could erase files on your disk or perform the cryptoLocker ransomware attack, which encrypts user files and asks the victim for ransom if the victim wants their files back decrypted. The malware can be a backdoor, which is basically a server and allows the attacker to log into the victim computer later.
+The first one is phishing attack, in which emails are sent to potential victims asking victims to click links or attachments so as to solicit critical information such as passwords from the victims.
+The attacker may use social engineering tricks and pretend to be authorities or friends so as to trick the victims to willingly surrender information via fake websites or other means.
+Whenever someone asks you for money or credentials, think twice and double check! Do not easily click an attachment of an email since the attachment may be malware, which could erase files on your disk or perform the cryptoLocker ransomware attack. In a cryptoLocker ransomware attack, the attacker encrypts user files and asks the victim for ransom if the victim wants their files back decrypted. The malware can also be a backdoor, which is basically a server to be installed on the victim computer and allows the attacker to log into the victim computer later.
 
 Another example is the brute force password guessing attack.
 When an attacker tries to log into your web account, the attacker may try all possible credentials one by one and
@@ -89,6 +89,7 @@ Most of the defense such as firewall is set up at the the edge of the campus eit
 Once the attacker is inside the campus network, they can do more damage.
 They can use the compromised computer as stepping
 stone to attack other computers or networks from inside.
+
 
 <!---
 so you can see now once you
