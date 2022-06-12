@@ -179,7 +179,7 @@ Please a more complete list of Meterpreter commands <a href="https://www.offensi
 - keyscan_stop
 - shell
 - Installing service Persistence and opening a persistent backdoor
-
+  - Need system priviledge since it installs a service. Does not work since Windows 10/11 kills the malicious service automatically.
 
 <!---
 so you can see now once you
