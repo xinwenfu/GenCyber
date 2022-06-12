@@ -48,7 +48,7 @@ In this stage there are many different exploits.
 In the picture, three examples are shown.
 The first one is phishing attack, in which emails are sent to potential victims soliciting critical information such as passwords from the victims.
 The attacker may use social engineering tricks and present to be authorities so as to trick the victims to willingly surrender information.
-Whenever someone asks you for money or credentials, think twice and double check! Do not easily click an attachment of an email since the attachment may be malware, which could erase files on your disk or perform the cryptoLocker ransomware attack.
+Whenever someone asks you for money or credentials, think twice and double check! Do not easily click an attachment of an email since the attachment may be malware, which could erase files on your disk or perform the cryptoLocker ransomware attack, which encrypts user files and asks the victim for ransom if the victim wants their files back decrypted. The malware can be a backdoor, which is basically a server and allows the attacker to log into the victim computer later.
 
 Another example is the brute force password guessing attack.
 When an attacker tries to log into your web account, the attacker may try all possible credentials one by one and
