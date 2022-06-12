@@ -90,6 +90,7 @@ Once the attacker is inside the campus network, they can do more damage.
 They can use the compromised computer as stepping
 stone to attack other computers or networks from inside.
 
+<!---
 so you can see now once you
 set up a paper team everything will just kind of go in from the beginning again
 so this is the three important uh stages of uh several attack cycle then we will
@@ -519,4 +520,4 @@ for beginners i found it very confused at least i remember like 20 years ago whe
 so convenient i don't know what the commands is for which one but what the purpose right
 and uh so i don't have the bigger kind of a picture of what is going on over there so
 i think it is good to teach beginners before
-
+-->
