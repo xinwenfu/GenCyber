@@ -53,10 +53,12 @@ When an attacker tries to log into your web account, the attacker may try all po
 see which one works. You may think this will not work. The truth is this is a popular way of doing the attack.
 It often succeeeds since people choose easy passwords such as *abc123*. Make your password complicated so that it is hard to guess.
 
-The buffer overflow attack is an advanced attack. The server software may have a buffer overflow vulnerability. When the attacker sends a message embedded with malicious code to the server, the server may save the malicious message into a buffer. However, if the malicious message is long and the buffer is small, the malcious message may overflow the buffer and overwrite the computer memory.
-If the malicious message is carefully crafted, the buffer overflow attack may allow the malicious code in the message to run. 
+The buffer overflow attack is an advanced attack. The server software may have a specific vulnerability called buffer overflow vulnerability. When the attacker sends a message embedded with malicious code to the server, the server code may save the malicious message into a buffer within a function for further processing.
+As we know, when the function is done, it returns to next instruction after the function call.
+The return address of the function is often stored in the computer memory. 
+If the malicious message is long and the buffer is small, the malcious message may overflow the buffer and overwrite the function's return address so that the ovrwritten return address now points to the malcious code in the malicious message.
+Now when the function is done and returns, the malicious code in the malicious message gets running.
 
-overwrite some function's return address  so that when the function returns, 
 
 We have another type of exploit called client-side attack.
 One example client-side attack is the attacker sends you an
