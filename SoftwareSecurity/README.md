@@ -17,11 +17,12 @@ understand attacks so as to test if computers and networks are vulnerable.
 
 Now let's have a look at the cyber attack cycle to see a big picture of how attacks are performed.
 We will talk about what is going on within the
-hacker's world and how they do everything. 
+hacker's world and how they do everything.
+A cyber attack can have three phases: information collecting, exploitation and post-exploitation.
 
 <img src="../Imgs/CyberAttackCycle.png" width=480>
 
-A cyber attack can have three phases.
+### Phase 1: Information collecting
 The first phase is the information connecting.
 When an attacker attacks you, they need to know you to some extent, for example, your email address or the IP address of your computer.
 An IP address has the format of x.x.x.x, where x is an integer from 0 to 255.
