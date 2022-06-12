@@ -29,6 +29,7 @@ An IP address has the format of x.x.x.x, where x is an integer from 0 to 255.
 So you can see that the attacker may randomly pick up some IP addresses to attack.
 The IP address alone may not be enough.
 The attacker may also want to know what servers (which are software) are running at an IP. 
+
 One popular way to find servers running at an IP is port scanning.
 What is a port?
 A computer may run multiple servers such as web server and email server.
@@ -39,7 +40,7 @@ In port scanning, carefully crafted messages are sent to possible ports at a com
 If the server software running at a port reponds, there is a service running at that port.
 A particular port is often allocated to a specific server, for example, port 80 corresponds to the http web server.
 
-### Exploitation
+### Phase 2: Exploitation
 Once the attaker gets the information and determines the target, it now can perform the exploitation.
 In this stage there are many different exploits.
 In the picture, three examples are shown.
