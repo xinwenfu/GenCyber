@@ -40,13 +40,20 @@ A particular port is often allocated to a specific server, for example, port 80 
 
 Once the attaker gets the information and determines the target, it now can perform the exploitation.
 In this stage there are many different exploits.
-In the picture, I show only three examples.
-The first one is called remote exploit, in which the
-attacker attacks a victim from the internet remotely.
-A simple remote attack is the brute force password guessing attack.
+In the picture, three examples are shown.
+The first one is phishing attack, in which emails are sent to potential victims soliciting critical information such as passwords from the victims.
+The attacker may use social engineering tricks and present to be authorities so as to trick the victims to willingly surrender information.
+Whenever someone asks you for money or credentials, think twice and double check! Do not easily click an attachment of an email since the attachment may be malware, which could erase files on your disk or perform the cryptoLocker ransomware attack.
+
+Another example is the brute force password guessing attack.
 When an attacker tries to log into your web account, the attacker may try all possible credentials one by one and
-see which one works. You may think this will not work let me. The truth is this is a popular way of doing the attack.
-It often succeeeds since people choose easy passwords such as abc123.
+see which one works. You may think this will not work. The truth is this is a popular way of doing the attack.
+It often succeeeds since people choose easy passwords such as *abc123*. Make your password complicated so that it is hard to guess.
+
+The buffer overflow attack is an advanced attack. The server software may have a buffer overflow vulnerability. When the attacker sends a message embedded with malicious code to the server, the server may save the malicious message into a buffer. However, if the malicious message is long and the buffer is small, the malcious message may overflow the buffer and overwrite the computer memory.
+If the malicious message is carefully crafted, the buffer overflow attack may allow the malicious code in the message to run. 
+
+overwrite some function's return address  so that when the function returns, 
 
 We have another type of exploit called client-side attack.
 One example client-side attack is the attacker sends you an
