@@ -59,6 +59,7 @@ The return address of the function is often stored in the computer memory.
 If the malicious message is long and the buffer is small, the malcious message may overflow the buffer and overwrite the function's return address so that the ovrwritten return address now points to the malcious code in the malicious message.
 Now when the function is done and returns, the malicious code in the malicious message gets running.
 
+<img src="../Imgs/BufferOverflow.png" width=640>
 
 We have another type of exploit called client-side attack.
 One example client-side attack is the attacker sends you an
