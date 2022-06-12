@@ -162,6 +162,7 @@ msf6 exploit(windows/vulnserver/knock) > exploit -j
 ```
 ### Meterpreter commands
 
+Please a more complete list of Meterpreter commands <a href="https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/">here</a>.
 
 - help
 - getuid
