@@ -101,7 +101,7 @@ Meterpreter provides the attacker an interactive shell exploring the target mach
 For example, within meterpreter, *hashdump* can list all the usernames and the passwords.
 Then use John the ripper to crack password hashes.
 
-<img src="../Imgs/Interact.png" width=640>
+<img src="../Imgs/Interact.png" width=720>
 
 The attacker may also want to maintaining access to the compromsied computer
 so that even if the compromised computer restarts, the attacker can still get in.
