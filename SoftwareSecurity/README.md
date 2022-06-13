@@ -612,3 +612,6 @@ so convenient i don't know what the commands is for which one but what the purpo
 and uh so i don't have the bigger kind of a picture of what is going on over there so
 i think it is good to teach beginners before
 -->
+
+# References
+- v4L, <a href="https://www.hacking-tutorial.com/tips-and-trick/13-metasploit-meterpreter-file-system-command-you-should-know/#sthash.R7VFJW1l.dpbs">13 Metasploit Meterpreter File System Command You Should Know</a>
