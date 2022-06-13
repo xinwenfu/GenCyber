@@ -615,3 +615,4 @@ i think it is good to teach beginners before
 
 # References
 - v4L, <a href="https://www.hacking-tutorial.com/tips-and-trick/13-metasploit-meterpreter-file-system-command-you-should-know/#sthash.R7VFJW1l.dpbs">13 Metasploit Meterpreter File System Command You Should Know</a>
+- <a href="https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/">METERPRETER BASIC COMMANDS</a>
