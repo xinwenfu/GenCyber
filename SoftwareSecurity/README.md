@@ -176,7 +176,7 @@ Please a more complete list of Meterpreter commands <a href="https://www.offensi
 - record_mic
 - keyscan_start
 - keyscan_dump
-  - Not automatic. Needs to run keyscan_dump after keys are typed 
+  - Not automatic. Needs to run keyscan_dump again after keys are typed 
 - keyscan_stop
 - shell
 - Installing service Persistence and opening a persistent backdoor
