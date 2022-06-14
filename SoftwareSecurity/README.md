@@ -6,7 +6,7 @@ testing if customer networks and computers have vulnerabilities and can be hacke
 The pentester pretty much does similar things to what is done by hackers, but for a good cause.
 For simplicity of explaining, in this tutorial we oftem take the role of hackers trying to attack the targets. 
 
-<img src="../Imgs/EthicalHack.png" width=480>
+<img src="../Imgs/EthicalHack.png" width=320>
 
 ## Cyber Attack Cycle
 We first look at the cyber attack cycle. We all know now cyber attacks are very serious and cause tremendous damages.
