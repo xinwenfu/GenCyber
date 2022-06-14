@@ -193,7 +193,7 @@ Please check this <a href="../FieldTrips">tutorial</a>.
 ## Hands-on 3: Capturing sreenshot
 1. The attacker hacks into the target and opens a Meterpreter shell.
 
-2. Use the meterpreter command *keyscan_start*, *keyscan_dump*, and *keyscan_stop* tom capture a screenshot of the Windows VM.
+2. Use the meterpreter command *keyscan_start*, *keyscan_dump*, and *keyscan_stop* to dump keystrokes.
 
 
 ## Hands-on 4: Deploying persistent backdoor
