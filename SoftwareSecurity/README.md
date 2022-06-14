@@ -128,7 +128,7 @@ The best way of maintaining access is to install a backdoor.
 
 ### knock module against vchat
 
-Here is what happens (armitage shows in the exploit window) when using the *knock* module without selecting *Use a reverse connection*
+Here is what happens (in this case what armitage shows in the exploit window) when using the *knock* module without selecting *Use a reverse connection*
 ```
 msf6 > use exploit/windows/vulnserver/knock
 [*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
