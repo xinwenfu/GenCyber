@@ -69,7 +69,7 @@ When the attacker sends a message to the server,
 the server code may save the message into a buffer (computer memeory) in a function for further processing.
 As we know, when the function is done, it returns to next instruction after the function call as the picture below shows.
 
-<img src="../Imgs/fcall.png" width=200>
+<img src="../Imgs/fcall.png" width=160>
 
 The return address of the function, e.g., *the address of next instruction* in the picture, is often stored in a special region of computer memory called stack. 
 If the attack message is long and the buffer used by the function holding the message is relatively small, the message may overflow the buffer and overwrite the function's return address on the stack so that the ovrwritten return address now points to the malcious code embedded in the malicious message.
