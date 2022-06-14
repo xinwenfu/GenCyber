@@ -69,7 +69,7 @@ When the attacker sends a message to the server,
 the server code may save the message into a buffer (computer memeory) in a function for further processing.
 As we know, when the function is done, it returns to next instruction after the function call.
 
-<img src="../Imgs/fcall.png" width=320>
+<img src="../Imgs/fcall.png" width=200>
 
 The return address of the function is often stored in the computer memory. 
 If the malicious message is long and the buffer is small, the malcious message may overflow the buffer and overwrite the function's return address so that the ovrwritten return address now points to the malcious code in the malicious message.
