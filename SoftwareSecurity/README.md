@@ -109,6 +109,9 @@ They can use the compromised computer as stepping stone to attack other computer
 Post exploitation also includes installation of a backdoor. It is often necessary since if the system is patched, the attacker will not be able to log into the target computer again after the system reboots. A backdoor is a piece of software the attacker installs on the target computer and allows the attacker to log into the target computer later.
 
 ## Introduction to Metasploit and Armitage
+Metasploit is a great hacking tool. But it is very hard to use with advanced knowledge.
+Armitage is a GUI interface for Metasploit so that all attacks and other functionalities are just a few clicks away
+although some functionalities require inputs.
 Please check this <a href="../FieldTrips">tutorial</a> on an introduction to Metasploit and Armitage.
 
 ## Post exploitation and Meterpreter
