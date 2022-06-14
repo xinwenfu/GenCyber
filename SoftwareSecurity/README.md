@@ -45,20 +45,32 @@ Please note: it is particular software that runs a particular service.
 For example, the Apache web server software runs a web service.
 
 ### Phase 2: Exploitation
-Once the attaker gets the information and determines the target, it now can perform the exploitation.
-In this stage there are many different exploits.
-In the picture, three examples are shown.
-The first one is phishing attack, in which emails are sent to potential victims asking victims to click links or attachments so as to solicit critical information such as passwords from the victims.
+Once the attaker gets the information and determines the target, he now can perform the exploitation.
+In this stage there are many different exploits and tricks.
+In the picture of the cyber attack cycle, three examples are shown.
+The first one is phishing attack, in which emails are sent to victims asking them to click links or attachments so as to solicit critical information such as passwords.
 The attacker may use social engineering tricks and pretend to be authorities or friends so as to trick the victims to willingly surrender information via fake websites or other means.
-Whenever someone asks you for money or credentials, think twice and double check! Do not easily click an attachment of an email since the attachment may be malware, which could erase files on your disk or perform the cryptoLocker ransomware attack. In a cryptoLocker ransomware attack, the attacker encrypts user files and asks the victim for ransom if the victim wants their files back decrypted. The malware can also be a backdoor, which is basically a server to be installed on the victim computer and allows the attacker to log into the victim computer later.
+Here is a tip to avoid such attacks: whenever someone asks you for money or credentials, think twice and double check!
+Do not easily click an attachment of an email since the attachment may be malware,
+which could erase files on your disk or perform the cryptoLocker ransomware attack.
+In a cryptoLocker ransomware attack, the attacker encrypts user files and asks the victim for ransom if the victim wants their files back decrypted.
+The malware can also be a backdoor, which is basically a server to be installed on the victim computer and allows the attacker to log into the victim computer later.
 
 Another example is the brute force password guessing attack.
-When an attacker tries to log into your web account, the attacker may try all possible credentials one by one and
-see which one works. You may think this will not work. The truth is this is a popular way of doing the attack.
-It often succeeeds since people choose easy passwords such as *abc123*. Make your password complicated so that it is hard to guess.
+When an attacker tries to log into your web account,
+the attacker may try all possible credentials one by one and see which one works.
+You may think this will not work. The truth is this is a popular way of hacking.
+It often succeeeds since people choose easy passwords such as *abc123*.
+Make your password complicated so that it is hard to guess.
 
-The buffer overflow attack is an advanced attack. The server software may have a specific vulnerability called buffer overflow vulnerability. When the attacker sends a message embedded with malicious code to the server, the server code may save the malicious message into a buffer within a function for further processing.
+The buffer overflow attack is an advanced attack.
+The server software may have a specific vulnerability called buffer overflow vulnerability.
+When the attacker sends a message to the server,
+the server code may save the message into a buffer (computer memeory) in a function for further processing.
 As we know, when the function is done, it returns to next instruction after the function call.
+
+<img src="../Imgs/fcall.png" width=480>
+
 The return address of the function is often stored in the computer memory. 
 If the malicious message is long and the buffer is small, the malcious message may overflow the buffer and overwrite the function's return address so that the ovrwritten return address now points to the malcious code in the malicious message.
 Now when the function is done and returns, the malicious code in the malicious message gets running.
