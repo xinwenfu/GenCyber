@@ -4,7 +4,7 @@ We are going to cover everything from information collecting, exploitation and p
 In penetration testing, a pentester (who is hired to do penetration testing on demand) is basically an ethical hacker,
 testing if customer networks and computers have vulnerabilities and can be hacked.
 The pentester pretty much does similar things to what is done by hackers, but for a good cause.
-For simplicity of explaining, in this tutorial we oftem take the role of hackers trying to attack the targets. 
+For simplicity of explaining, in this tutorial we often take the role of hackers trying to attack the targets. 
 
 <img src="../Imgs/EthicalHack.png" width=480>
 
