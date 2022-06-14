@@ -67,17 +67,19 @@ The buffer overflow attack is an advanced attack.
 The server software may have a specific vulnerability called buffer overflow vulnerability.
 When the attacker sends a message to the server,
 the server code may save the message into a buffer (computer memeory) in a function for further processing.
-As we know, when the function is done, it returns to next instruction after the function call.
+As we know, when the function is done, it returns to next instruction after the function call as the picture below shows.
 
 <img src="../Imgs/fcall.png" width=200>
 
-The return address of the function is often stored in the computer memory. 
-If the malicious message is long and the buffer is small, the malcious message may overflow the buffer and overwrite the function's return address so that the ovrwritten return address now points to the malcious code in the malicious message.
+The return address of the function, e.g., *the address of next instruction* in the picture, is often stored in a special region of computer memory called stack. 
+If the attack message is long and the buffer used by the function holding the message is relatively small, the message may overflow the buffer and overwrite the function's return address on the stack so that the ovrwritten return address now points to the malcious code embedded in the malicious message.
 Now when the function is done and returns, the malicious code in the malicious message gets running.
+The picture below shows how a malicious message may be constructed to overwrite the buffer and return address.
 
 <img src="../Imgs/BufferOverflow.png" width=480>
 
-The buffer overflow vulnerability often occurs in software written in C or C++. Python is designed to avoid the buffer overflow vulnerability although Python can be used to perform the buffer overflow attack.
+The buffer overflow vulnerability often occurs in software written in C or C++.
+Python is designed to avoid the buffer overflow vulnerability although Python can be used to perform the buffer overflow attack.
 
 ### Phase  3: Post Exploitation
 Once the attacker gets inside the victim computer, what else can they do?
