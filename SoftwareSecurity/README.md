@@ -65,20 +65,22 @@ Make your password complicated so that it is hard to guess.
 
 The buffer overflow attack is an advanced attack.
 The server software may have a specific vulnerability called buffer overflow vulnerability.
-As we know, when the function is done, it returns (often with a *ret* instruction, which means return) to next instruction after the function call as the picture below shows.
+Recall when a function is done, it returns (often with a *ret* instruction, which means return) to next instruction after the function call as the picture below shows.
 
 <img src="../Imgs/fcall.png" width=160>
 
 The return address of the function, e.g., *the address of next instruction* in the picture, is stored in particular computer memory. 
-When the attacker sends a message to the server,
-a function of the server code may save the message into a buffer (computer memeory) for later processing.
-If the attack message is long and the buffer is relatively small, the message may overflow the buffer and overwrite the function's return address so that the ovrwritten return address now points to the malcious code embedded in the malicious message.
+When the attacker sends a malicious message to the server,
+a function of the server code may save the message into a buffer (in computer memeory) for later processing.
+If the attack message is long and the buffer is relatively small,
+the message may overflow the buffer and overwrite the function's return address
+so that the ovrwritten return address now points to the malcious code embedded in the malicious message.
 Now when the function is done and returns, the malicious code in the malicious message gets running.
 The picture below shows how a malicious message may be constructed to overwrite the buffer and return address.
 
 <img src="../Imgs/BufferOverflow.png" width=480>
 
-The buffer overflow vulnerability often occurs in software written in C or C++.
+The buffer overflow vulnerability often occurs in software written in C or C++ because of some unsafe mechanisms.
 Python is designed to avoid the buffer overflow vulnerability although Python can be used to perform the buffer overflow attack.
 
 ### Phase  3: Post Exploitation
