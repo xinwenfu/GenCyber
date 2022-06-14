@@ -1,34 +1,33 @@
 # Penetration Testing and Software Security
 
-We are going to cover everything from information collecting and exploitation and the post
-exploitation. In penetration testing, a pentester is basically an ethical hacker, testing if the client networks and computers have vulnerabilities and can be hacked.
-The pentester pretty much does similar things to attacks done by the real hackers, but for good reasons.
+We are going to cover everything from information collecting, exploitation and post exploitation.
+In penetration testing, a pentester (who is hired to do penetration testing on demand) is basically an ethical hacker,
+testing if customer networks and computers have vulnerabilities and can be hacked.
+The pentester pretty much does similar things to what is done by hackers, but for a good cause.
 For simplicity of explaining, in this tutorial we oftem take the role of hackers trying to attack the targets. 
 
 <img src="../Imgs/EthicalHack.png" width=480>
 
 ## Cyber Attack Cycle
-We first look at the cyber attack cycle. We all know now cyber attacks are very serious.
+We first look at the cyber attack cycle. We all know now cyber attacks are very serious and cause tremendous damages.
 Fighting cybercrimes is among FBI's top three priorities.
 We want to think like an adversary so that we can understand attacks.
 Why do we want to understand the attacks?
 Because we have to understand cyber attacks so that we can actually design our defense to
-counter those attacks. If you do not the attacks, how can you design the defense?
+counter those attacks. If you do not know the attacks, how can you design the defense?
 As a penetration tester,  you actually also need to
 understand attacks so as to test if computers and networks are vulnerable.
 
 Now let's have a look at the cyber attack cycle to see a big picture of how attacks are performed.
-We will talk about what is going on within the
-hacker's world and how they do everything.
 A cyber attack can have three phases: information collecting, exploitation and post-exploitation.
 
 <img src="../Imgs/CyberAttackCycle.png" width=480>
 
 ### Phase 1: Information collecting
-The first phase is the information connecting.
+The first phase is information connecting.
 When an attacker attacks you, they need to know you to some extent, for example, your email address or the IP address of your computer.
 An IP address has the format of x.x.x.x, where x is an integer from 0 to 255.
-So you can see that the attacker may randomly pick up some IP addresses to attack.
+So you can see that the attacker may also randomly pick up some IP addresses to attack.
 The IP address alone may not be enough.
 The attacker may also want to know what servers (which are software) are running at an IP. 
 
@@ -37,10 +36,11 @@ What is a port?
 A computer may run multiple servers such as web server and email server.
 Port numbers are used to differentiate different servers so that when a message arrives at the computer,
 the computer knows where to forward the message, e.g., web server or email server.
-Of course, the message (actually called packet) shall contain the IP address of the computer and port number indicating the server.
+Of course, the message (called packet too or other names) shall contain the IP address of the computer and port number indicating the server.
 In port scanning, carefully crafted messages are sent to possible ports at a computer.
-If the server software running at a port reponds, there is a service running at that port.
 A particular port is often allocated to a specific server, for example, port 80 corresponds to the http web server.
+If there is response from a port, then we know maybe a particular service runs at that port.
+There are advanced techniqnues to further identify and verify what service/software runs at a live port.
 
 ### Phase 2: Exploitation
 Once the attaker gets the information and determines the target, it now can perform the exploitation.
