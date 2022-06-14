@@ -41,6 +41,8 @@ In port scanning, carefully crafted messages are sent to possible ports at a com
 A particular port is often allocated to a specific server, for example, port 80 corresponds to the http web server.
 If there is response from a port, then we know maybe a particular service runs at that port.
 There are advanced techniqnues to further identify and verify what service/software runs at a live port.
+Please note: it is particular software that runs a particular service.
+For example, the Apache web server software runs a web service.
 
 ### Phase 2: Exploitation
 Once the attaker gets the information and determines the target, it now can perform the exploitation.
