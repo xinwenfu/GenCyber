@@ -71,8 +71,8 @@ As we know, when the function is done, it returns to next instruction after the 
 
 <img src="../Imgs/fcall.png" width=160>
 
-The return address of the function, e.g., *the address of next instruction* in the picture, is often stored in a special region of computer memory called stack. 
-If the attack message is long and the buffer used by the function holding the message is relatively small, the message may overflow the buffer and overwrite the function's return address on the stack so that the ovrwritten return address now points to the malcious code embedded in the malicious message.
+The return address of the function, e.g., *the address of next instruction* in the picture, is often stored in a special region of computer memory. 
+If the attack message is long and the buffer used by the function holding the message is relatively small, the message may overflow the buffer and overwrite the function's return address so that the ovrwritten return address now points to the malcious code embedded in the malicious message.
 Now when the function is done and returns, the malicious code in the malicious message gets running.
 The picture below shows how a malicious message may be constructed to overwrite the buffer and return address.
 
