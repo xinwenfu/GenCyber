@@ -65,7 +65,7 @@ Make your password complicated so that it is hard to guess.
 
 The buffer overflow attack is an advanced attack.
 The server software may have a specific vulnerability called buffer overflow vulnerability.
-As we know, when the function is done, it returns to next instruction after the function call as the picture below shows.
+As we know, when the function is done, it returns (often with a *ret* instruction, which means return) to next instruction after the function call as the picture below shows.
 
 <img src="../Imgs/fcall.png" width=160>
 
