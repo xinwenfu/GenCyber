@@ -211,6 +211,7 @@ Please check this <a href="../FieldTrips">tutorial</a>.
 
 
 ## Hands-on 4: Deploying persistent backdoor
+A backdoor will be moved to the Windows startup folder so that even if Windows restarts, the attacker can still use the backdoor to log into the target computer.
 
 1. The attacker hacks into the target and opens a Meterpreter shell.
 
