@@ -104,6 +104,8 @@ Most of the defense such as firewall is set up at the edge of the campus.
 Once the attacker is inside of the campus network, they will be able to do more damages.
 They can use the compromised computer as stepping stone to attack other computers or networks from inside.
 
+Post exploitation also includes installation of a backdoor. It is often necessary since if the system is patched, the attacker will not be able to log into the target computer again after the system reboots. A backdoor is a piece of software the attacker installs on the target computer and allows the attacker to log into the target computer later.
+
 ## Introduction to Metasploit and Armitage
 Please check this <a href="../FieldTrips">tutorial</a> on an introduction to Metasploit and Armitage.
 
