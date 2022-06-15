@@ -132,6 +132,9 @@ The best way of maintaining access is to install a backdoor.
 
 ### knock module against vchat
 
+We created a <a href="https://github.com/xinwenfu/Malware-Analysis/tree/main/MetasploitNewModule">knock</a> module to exploit our vchat server. At Kali VM, the knmock module is located at /usr/share/metasploit-framework/modules/exploits/windows/vchat/.
+This module exploits a buffer overflow vulnerability of the vchat server and allows the attacker to hack into the computer running the vchat server.
+
 Here is what happens (in this case what armitage shows in the exploit window) when using the *knock* module without selecting *Use a reverse connection*
 ```
 msf6 > use exploit/windows/vulnserver/knock
