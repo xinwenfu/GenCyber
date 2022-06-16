@@ -215,7 +215,7 @@ Please check this <a href="../FieldTrips">tutorial</a>.
 
 2. Use the meterpreter command *screenshot* to capture a screenshot of the Windows VM.
 
-## Hands-on 3: Capturing sreenshot
+## Hands-on 3: Keystroke logging
 1. The attacker hacks into the target and opens a Meterpreter shell.
 
 2. Use the meterpreter command *keyscan_start*, *keyscan_dump*, and *keyscan_stop* to dump keystrokes.
