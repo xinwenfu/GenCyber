@@ -115,21 +115,6 @@ Armitage is a GUI interface for Metasploit so that all attacks and other functio
 although some functionalities require inputs.
 Please check this <a href="../FieldTrips">tutorial</a> on an introduction to Metasploit and Armitage.
 
-## Post exploitation and Meterpreter
-
-Once into a computer, the attacker may collect sensitive information e.g., usernames and passwords.
-How? One way is to use Meterpreter, a Metasploit attack payload, which is the malcious code the attacker sends to the victim server and gets running.
-Meterpreter provides the attacker an interactive shell (emulated console) exploring the target machine and executing code.
-For example, within Meterpreter, *hashdump* can list all the usernames and the passwords.
-Then use *John the Ripper* to crack password hashes.
-
-<img src="../Imgs/Interact.png" width=720>
-
-The attacker may also want to maintain access to the compromsied computer
-so that even if the compromised computer restarts, the attacker can still get in.
-If access is not maintained, the attacker will have to exploit it from the beginning in case the hacked system is closed or patched
-The best way of maintaining access is to install a backdoor.
-
 ### knock module against vchat
 
 We created a <a href="https://github.com/xinwenfu/Malware-Analysis/tree/main/MetasploitNewModule">knock</a> module to exploit our vchat server. At Kali VM, the knock module is located at /usr/share/metasploit-framework/modules/exploits/windows/vchat/.
@@ -186,6 +171,23 @@ msf6 exploit(windows/vulnserver/knock) > exploit -j
 [*] Sending stage (175174 bytes) to 192.168.1.19
 [*] Meterpreter session 1 opened (192.168.1.4:9387 -> 192.168.1.19:49775 ) at 2022-06-12 18:53:35 -0400
 ```
+
+## Post exploitation and Meterpreter
+
+Once into a computer, the attacker may collect sensitive information e.g., usernames and passwords.
+How? One way is to use Meterpreter, a Metasploit attack payload, which is the malcious code the attacker sends to the victim server and gets running.
+Meterpreter provides the attacker an interactive shell (emulated console) exploring the target machine and executing code.
+For example, within Meterpreter, *hashdump* can list all the usernames and the passwords.
+Then use *John the Ripper* to crack password hashes.
+
+<img src="../Imgs/Interact.png" width=720>
+
+The attacker may also want to maintain access to the compromsied computer
+so that even if the compromised computer restarts, the attacker can still get in.
+If access is not maintained, the attacker will have to exploit it from the beginning in case the hacked system is closed or patched
+The best way of maintaining access is to install a backdoor.
+
+
 ### Meterpreter commands
 
 Please see a more complete list of Meterpreter commands <a href="https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/">here</a>.
