@@ -46,7 +46,7 @@ We will give a brief introduction to the Python programming language, covering o
 ## Overview
 
 ### Levels of programming languages
-What is a programming language? Why do we need it? A computer has accessaries such as printers and monitors. One purpose of a programming languages is to control those hardware. For example we may want to draw on a display or print something on a printer. A program can do those things. We may also want to perform complex computing. A program can instruct the computer's CPU (central processing unit) to perform the computation. The program can also show the results on the display. So programs can control the hardware and perform computing. 
+What is a programming language? Why do we need it? A computer has accessaries such as printers and monitors. One purpose of a programming languages is to control such hardware. For example we may want to draw on a display or print something on a printer. A program can do those things. We may also want to perform complex computing with addition, subtraction, multilication and division. A program can instruct the computer's CPU (central processing unit) to perform the computation. The program can also show the results on the display. So programs can control the hardware and perform computing. 
 
 <img src="../Imgs/LanguageLevel.png" width=400>
 
