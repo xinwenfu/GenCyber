@@ -1,13 +1,12 @@
-okay yes i'm recording
-okay so if you guys have no questions so let's introduce this part of uh the teen server
-camp so for this lecture we are going to introduce the five walls and uh so here is a the outline and we
-first look at okay what is the cyber space why do we need the firewalls
-and we are also going to talk about the difference in depth what that means
-okay so after that once we understand the the five walls and we will introduce
-the firewall rules but we are going to focus on the windows okay so you can see here that uh we are
-going to introduce a windows file later and uh so we will talk about how to
-define rules to block up like a an ip and also like a team right and uh at
-last i'm going to introduce uh these lectures hands-on labs
+# Introduction to Firewalls
+We are going to introduce the firewalls.
+We first look at the concept of defense in depth and why do we need the firewalls.
+Once we understand the the firewalls, we will introduce the firewall rules, which are used to block and allow certain network traffic, which refers to network packets or messages.
+As a concrete exampleof firewall, we are going to introduce the Windows firewall.
+We will talk about how to define rules to block up an IP address and block and allow ping, which is a network applciation. 
+At last we are going to introduce the hands-on labs for this lecture.
+
+## Overview
 so let's first look at this big picture about how
 cyber defense works so you can see in this picture on the left we have the
 internet right so the internet is a the wild west there are attackers there are
