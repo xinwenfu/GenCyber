@@ -15,7 +15,7 @@ You can see we have also the external firewall, something called the dmz, intern
 Those things often belong to one entity, for example a school or a company.
 So normally a school or company has this kind of setup to protect their network.
 
-<img src="../Imgs/DefenseInDepth.png" width=480>
+<img src="../Imgs/DefenseInDepth.png" width=640>
 
 To understand the architecture the defense in depth we
 have to first look at a few terms so the first term is about the internet right we know internet uh contains networks of
