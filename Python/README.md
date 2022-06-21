@@ -60,7 +60,7 @@ That's why people invented high level programming languages like C, C++, C#, Jav
 Before execution, programs in high level programming languages have to be translated into machine language so that the computer can understand.
 
 ### Python
-A python program is Python code in a file with the file extension .py, for example, basics.py below. Sometimes we also call python program as a script. 
+A python program is Python code in a file with the file extension .py, for example, *basics.py* below. Sometimes we also call python program as a script. 
 ```
 #! /usr/bin/python
 # Pythin script file name: basics.py
