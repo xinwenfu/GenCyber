@@ -7,14 +7,17 @@ We will talk about how to define rules to block up an IP address and block and a
 At last we are going to introduce the hands-on labs for this lecture.
 
 ## Overview
-so let's first look at this big picture about how
-cyber defense works so you can see in this picture on the left we have the
-internet right so the internet is a the wild west there are attackers there are
-hackers there are all kinds of weird things going on on the internet
-and then so then you can see we have also the external firewall then
-we have something called the dmz then we have internal firewall finally we have lab so those things belong to one entity
-for example a school or a company so normally school has this kind of a setup to protect
-their network to understand the architecture the defense in depth we
+Let's first look at this big picture about how cyber defense works.
+You can see in this picture on the left we have the
+Internet. The internet is the wild west. There are attackers and hackers.
+There are all kinds of weird things going on on the internet.
+You can see we have also the external firewall, something called the dmz, internal firewall and LAN.
+Those things often belong to one entity, for example a school or a company.
+So normally a school or company has this kind of setup to protect their network.
+
+<img src="../Imgs/DefenseInDepth.png" width=640>
+
+To understand the architecture the defense in depth we
 have to first look at a few terms so the first term is about the internet right we know internet uh contains networks of
 computers so basically internet is a networks of a network
 right and uh so you can see here so you know for example um slow right it's a
