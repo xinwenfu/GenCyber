@@ -134,7 +134,7 @@ Once you open the file, it's in another window, i.e., the editor window.
 <img src="../Imgs/IDLEEditor.png" width=640>
 
 You can just click the menu called *Run* then you *Run Module* within the editor window to run the Python program in the file.
-The running results are shown below.
+The running results are shown in the IDLE shell window.
 
 <img src="../Imgs/IDLERunningResults.png" width=640>
 
