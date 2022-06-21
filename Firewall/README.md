@@ -17,40 +17,34 @@ So normally a school or company has this kind of setup to protect their network.
 
 <img src="../Imgs/DefenseInDepth.png" width=640>
 
-To understand the architecture the defense in depth we
-have to first look at a few terms so the first term is about the internet right we know internet uh contains networks of
-computers so basically internet is a networks of a network
-right and uh so you can see here so you know for example um slow right it's a
-big kind of uh enterprise as you can see it's a big school and we have a lot of computers
-so most of the time for such a large network we are going to divide
-the network into smaller network segments smaller kind of
-networks and we call such a small network as a subnet so why do we need a
-subnet the reason is that you know we want to to control
-different department and different uh you know institutions within the school easily
-and uh sometimes you know we need a subnet to actually deploy battery
-security okay so let me give you one example here the dmz so dmz means
-de-miniaturize the zoom here so here basically dmzing refers to one subnet
-and uh what is in this subnet so often within the dm zone subnet we have
-the web we have the email and we have many other kind of servers so you can see what is the
-common property of those servers so those servers can be reached from the internet strategy now you can imagine
-because they can be reached from the internet directly you know the attackers may attack those
-computers directly right that's why we put them together right and then you can
-see we have the external firewall to which is used to protect this
-dmz okay and uh so that's uh the purpose of external firewall now what is the
-purpose of the internal firewall here you know we
-want protect our properties and uh we actually don't want the
-attackers to reach most of our computers directly so that's why we have with
-internal firewalls so most of the computers behind the internal firewalls right there's maybe
-one firewall there may be a few firewalls but anyway we call them internal firewall and so
-the computers behind internet firewall cannot be reached by the bad guys directly you can
-see so that's another lyric defense okay so this is basically
-normally how an entity how a company our school
-defines their systems right they use layers of defense
-here you see another system called ids so ids refers to intrusion detection
-system we'll talk about that in another lecture the purpose of the ideas is a
-interclass network package messages we call that as network
-traffic and uh so that the system has some kind of software analyzing the network
-traffic for the nominees okay so that's called intrusion detection
+To understand the defense in depth, we have to first look at a few terms.
+The first term is the internet. We know internet contains networks of computers.
+The Internet is a network of networks.
+A school like UMass Lowell has a big networkof computers.
+For such a large network, we are going to divide it into smaller network segments, called subnets.
+Why do we need subnets?
+The reason is that UMass Lowell has many departments.
+We can put different departments into different subnets so that it is easier to manage them, sometimes for the sake of security.
+Another benefit is with diffrent departments in different subnets, messages generated with one department will stay in that department, not going through the networking devices of other departments. This will reduce network traffic congestion.
+
+The DMZ means the demilitarized zone. It is one subnet. What is in this subnet>
+Often within the DMZ subnet, we have the web, email and other servers.
+What is the common property of those servers?
+Those servers can be reached from the Internet directly.
+For example, an attacker can send a web request to a web server and gets a web page.
+You can imagine because they can be reached from the Internet directly, the attackers may attack those computers directly.
+That's why we put them together in one subnet and use the external firewall to protect them.
+That's the purpose of external firewall.
+
+The purpose of the internal firewall is protect other parts of the campus nerworks and computers.
+We want protect our assetts and don't want the attackers to reach most of our computers directly.
+That's why we have with the Internal firewall.
+Most of the computers behind the internal firewall cannot be reached by the bad guys directly.
+
+You see another defense component called IDS, which refers to intrusion detection system.
+The purpose of the IDS is collect network packets and messages, denoted network
+traffic. The IDS analyzes the network traffic for the abnormalities.
+okay so that's called intrusion detection
 so what is the benefit of this kind of uh defines in depth this
 kind of a layered defines the benefit is you can see here right so even let's see
 the external firewall is not strong enough and even now i see here the dmz i
