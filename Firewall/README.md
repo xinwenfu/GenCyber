@@ -64,46 +64,45 @@ Tts purpose is to inspect and the filter netwrok traffic.
 Let's look at at different firewalls so we have a better
 understanding of what firewalls are doing.
 We can classify them into three categories based on
-you know how firewall works internally and uh so the first type of firewall is
-called the packet filters you know on the internet when you send the messages
-your messages are put into something called a package basically a packet is packed off of messages and
-there's some data over there right and your messages are put into one packet or a few package and they will be sent from
-a one sender to another receiver right and uh so we also discussed uh you know
-the internet professor new actually introduced the internet right how everything works
-and we know that we have routers and we know you know when you want to send a message to
-the receiver you need to specify the ip address and also you need to specify the portal
-number for example if it's for the web the port number will be 80 or 443 right if it is https now also in the package
-and the packet will contain your ip address okay so basically the packet filters filters
-will do this so it will check actually the packet
-header which contains the ports mp addresses and other kind of
-flag information and for example let's see we want to block up
-traffic from the internet from like russia from china from africa from
-everywhere europe right so you know those regions they have particular ip
-addresses and you can actually block the traffic coming into the campers based on their
-ip addresses that's why it's called the package filters so it's based on the package header information
-okay so then the second type of proxy is more kind of advanced so we call this as
-a session layer and we didn't actually introduce this around you know when you
-create a collection from your computer to a lot of computer sending messages so
-you need a something called a collection so this will actually uh
-order your messages otherwise you know when you send the messages right and how can we know the order right i mean the
-receiver must receive the message in order right so you know so to
-actually make sure the messages are in order then the package
-i'm sorry the package actually has sequence numbers so we call such kind of information right
-and as a part of the collection okay so that's called the collection otherwise
-we need a collection to make sure everything is in order and you can see here so the collection is a kind of a
-more advanced concepts than package so some of the firewalls they use collections
-to check if i mean the traffic or the message are normal or not
-right because sometimes the bad guys may cut in
-between of your collection and they they may do something okay so that's called a session layer proxy
-so the application uh proxies is another advanced kind of a
-feature here so basically for this kind of firewalls
-you know they will check if your application data is normal or
-not so if the attacker actually changes something
-in your message so sometimes you know based on such kind of change you may
-find that actually since are not normal so you can see here so we have these three type of
-fibers based on how the fibers will actually inspect
-your data your messages right they will just you actually will decide how you
-want to actually filter them for example you drop the messages because you think they are bad
+how firewall works internally.
+
+#### Packet filters
+
+The first type of firewall is called packet filters.
+On the internet when you send the messages,
+your messages are put into packets, which are formatted data based on the Internet standard and protocol.
+Packets will be sent from a sender to a receiver.
+As we learned in computer networking, when you want to send a message to
+the receiver, you need to specify the destination IP address in a packet. You may also need to specify the port at which a server works on.
+For example if it's for the web, the port number will be 80 or 443.
+A packet also contains your IP address as the source IP address.
+A packet filter checks the packet header which contains the IPs, ports, and other information like flags.
+
+Let's see we want to block traffic from known bad actors on the Internet.
+There are known bad actors and we know their IP addresses and want to block them.
+A packet filter can do it based on the packet header information.
+
+#### Session-Layer Proxies 
+
+The second type of firewall is related with a concept called session layer.
+What is a session? When you browse a webpage, it is a session.
+In a web browsing session, the network protocol such as the TCP protcol makes sure the web content is sent to the browser in order and reliably.
+Session-layer proxies check a session follows the specific protocol.
+Sometimes a bad guy may try to manipualte the session and do something bad. One such attack is the <a href="https://owasp.org/www-community/attacks/Session_hijacking_attack">session hijacking attack</a>. 
+
+#### Application Proxies
+The application proxies are another kind of firewalls.
+Here are example network applications, FTP (File Transfer Protocol), SMTP (Simple Mail Transfer Protocol) and SSH (Secure Shell Protocol).
+They check if your application data is normal or not.
+If the attacker actually changes something,
+an application proxy checks if the application protocol is followed and may find such abnormalities. 
+
+So we have introdcued three type of firewalls based on how the firewalls actually inspect
+network traffic and data.
+After the inspection, the firewalls decide what to do, for example dropping (discarding) the messages or letting them pass.
+
+### Categorizing Firewalls based on Users 
+
 so of course there are other ways of categorizing firewalls so let's look at
 you know the categories of firewalls be some who are the users of the firewalls so
 again we have three kind of uh you know type of firewalls we have enterprise
