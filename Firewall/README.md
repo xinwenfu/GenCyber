@@ -232,23 +232,30 @@ You want to test if the network is set up right or now.
 In such a scenarion, people often use a program called ping to test if that computer in trouble is in the network or not.
 *ping* is available on Linux, Windows and other operating systems.
 ping is used to test if an IP address is active. If the computer does not have an active IP address, we say it is offline.
-Otherwise, it is online.
+Otherwise, it is online. Here is a ping example: we ping the Windows VM from Kali VM.
+```
+ping 192.168.1.19
+```
+<img src="../Imgs/ping.png" width=640>
 
 Here is a simple description of the ping process .
 ping uses an Internet protocol called ICMP.
 It sends out *echo request* message (just a message with particular format) to an IP.
 This is analogous to the shout "Are you there?"
-If the ip is active, the computer with the ip sends the *echo reply* message. 
+If the IP is active, the computer with the ip sends the *echo reply* message. 
 This is analogous to the shout back "Yes, I'm here."
-If the ip is not active, error messages are displayed by ping.
+If the IP is not active, error messages are displayed by ping.
 
-team program telling you i cannot reachable cannot
-reach the uh the ip something like that so here we have a question here shall we
-block the pin messages okay and uh you know ping is a very useful
-kind of application why should we actually sometimes block the pin messages of course i'm gonna stop here
-ask the high school students but the answer is we should sometimes because we
-want to hide ourselves from the attackers we don't want them to fund ourselves right fund our computer using
-ping okay that's why sometimes we block the pin messages okay
+We have a question here. Shall we block the pin messages fromsent by other computers to our computer?
+You know ping is a very useful.
+Why should we sometimes block the ping messages?
+It is because we want to hide ourselves from the attackers.
+Sometime we don't want them to find our computers using ping so easily.
+That's why sometimes we block the ping messages.
+But please note: they are other ways such as port scanning of identifying active IPs as we discussed in the cyber attack cycle.
+
+
+
 and uh so that's about pin and so here is a pin example i'm using the pin from caddy
 uh actually here i'm a ping let me have a look yes i'm pim
 the windows vm from the candy vm then you can see here i just uh
