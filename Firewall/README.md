@@ -219,39 +219,30 @@ Actually you can use this approach to search for any program installed on Window
 
 <img src="../Imgs/WindowsDefenderFirewall.png" width=640>
 
-you know windows has the
-windows icon right if you have the keyboard when you push that then you can actually tap and search anything any
-application on your windows computer so here you can actually search your windows define the
-firewall if you type it you'll find it okay so you can see here right and uh on
-the left right you have the manual here called the turn windows defender firewall on or off so if you turn it off basically
-your computer is not product at all okay now we also have other ones and settings i'm going to show you later now here
-for our windows of virtual machine that we actually disabled
-the firewall because you know we want to kind of uh to show you uh the danger right and so we disabled that you can
-see we have private network disabled and we also have the public network profile disabled i know i don't have domain
-because i don't use this computer uh in in the university okay
-and uh okay so when you disable your windows firewall
-your computer is reachable by anybody any computer
-from the internet now of course if your computer is behind the you know
-your wi-fi router that's a different story because the wi-fi router has a firewall over there protecting you
-so i'm going to show you a few examples so i'm not sure if you guys know ping of
-course you guys know ping i'm talking to the high school students now and uh
-so when you uh setting up your computers sometimes you have a bunch of computers
-right you want to actually do some fun things for example you want to play with your friends or game and so in those
-cases now you may find oh my goodness i cannot actually seems um
-connected to my friend's computer and his community doesn't respond and so
-normally in those scenarios the first thing people will do is that people will use
-a software program called the pin so pn is a command which actually is available on linux
-windows and most of the platforms and the pin is used to test if an app
-address is active so basically if the computer with not active address is
-online or not okay so here is a simple description of the pin process so the
-ping program it actually uses a one kind of internet protocol called
-icmp so it sends out a request matches it's called echo means you i want you to
-send them my uh request back okay so ping sends the echo request message to
-an ip so if the ip is active right and then the computer restart the ip will
-send back something called the echo reply and so basically hello are you over there and
-then the ip right the receiver and we will respond yes i'm here that's basically
-that's what happens um uh with me okay and if the ip is not active then every message
-will be displayed by your team program telling you i cannot reachable cannot
+On the left of the Windows Defender Firewall interface, you can manually turn the firewall on or off.
+If you turn it off, your computer has no protection at all.
+There are many other settings.
+For our Windows virtual machine, we actually disabled the firewall.
+Both private profile and public profile are disabled. I don't have the domain profile for the VM because i don't use this VM in the university network.
+
+#### Allow and Block ping
+When you set up your computers and play games with friends, you have a bunch of computers.
+But you got some networking problem and one computer does not work.
+You want to test if the network is set up right or now.
+In such a scenarion, people often use a program called ping to test if that computer in trouble is in the network or not.
+*ping* is available on Linux, Windows and other operating systems.
+ping is used to test if an IP address is active. If the computer does not have an active IP address, we say it is offline.
+Otherwise, it is online.
+
+Here is a simple description of the ping process .
+ping uses an Internet protocol called ICMP.
+It sends out *echo request* message (just a message with particular format) to an IP.
+This is analogous to the shout "Are you there?"
+If the ip is active, the computer with the ip sends the *echo reply* message. 
+This is analogous to the shout back "Yes, I'm here."
+If the ip is not active, error messages are displayed by ping.
+
+team program telling you i cannot reachable cannot
 reach the uh the ip something like that so here we have a question here shall we
 block the pin messages okay and uh you know ping is a very useful
 kind of application why should we actually sometimes block the pin messages of course i'm gonna stop here
