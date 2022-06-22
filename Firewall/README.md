@@ -127,132 +127,99 @@ It can be used to configure firewall rules as complex as complex as you
 want. 
 
 ## Firewall rules
+### Identifying Networking Components and Dependencies
 
-okay so now we understand the firewalls and you know to make firewalls work
-you handle different rules and then to make the decision when you see attribute
-traffic when the firewalls see that why uh i mean the network traffic right
-and uh so we already mentioned so firewalls will help to protect computers
-from unsolicited network traffic for example you know i mean
-attackers always stay on the internet they try to compromise our computers we don't want their traffic
-right and uh so what are the final rules five rules of course
-uh kind of uh rules or kind of configurations
-and now you use such kind of configurations to specify what to allow and what to deny
-okay and uh so that's the basic idea of the fiber rules
-okay the first step in fiber root creation is uh so of course we are dealing with the
-networks and we try to protect us from better guys on the internet
-i know so how can the bad guys reach us they reach us because
-we use network applications those network applications send the
-messages out and receive a message from the internet so when the bad guys try to reach you
-they will actually try to manipulate your
-network applications because they may pretend to send messages to your
-applications right and um so for example if your applications have problems then
-maybe they may utilize that and we actually learned this when we discussed the
-software security right so that's why you can see the first step in firewall rule creation is we need to find out
-which applications are actually doing networking stuff okay
-and uh so how do we actually do that so here are a few things that we can do first you know
-we can identify the network of facing applications what are applications messengers
-and emails and those are basically uh applications we call them applications
-and the second thing is about something called services networking fees services and
-i know most of you guys may not know what our services but think about that right
-and uh so your computers uh have a lot of applications and how can your computer actually uh doing
-authentication doing other things those because there are many actually
-applications which are called the services running in the background
-okay for example in windows you can share files with
-other computers why can't you do that because you know there's a
-background application oh we should call that as service actually
-doing that for you that's why you can actually share files
-across different computers even across networks okay so those are called the
-services and we also have actually
-network confusing drivers for example when you install a computer i mean sorry
-when you install a printer right network printer you haven't installed a driver and the driver will help you actually
-send your documents your beautiful pictures to the
-printer which actually is a maybe connected to your computer through wi-fi right and that you can see here
-the printer will clean it to actually your your uh device right your computer and
-uh so why the computer can contact uh the driver that is because you know i
-mean sorry why your computer can contact the printer that's because you have
-drivers over there in your computer drivers are also software and
-so they will actually help you contact the printer which
-uses wi-fi connecting to your computer okay so we have to actually identify all
-those uh application services drivers otherwise you know if you dig some of them i mean
-if they have a vulnerabilities and if you don't protect them then you are in trouble i mean the attackers may
-actually attack the application services or drivers right
-so next step is uh you know you find out all the applications services drivers you have
-to find out the dependencies you know crease creating
-firewall rules is a very complex procedure one is complex
-you know today an application they use many other kind
-of services software and if you actually don't identify the dependencies
-carefully when you block one application then it may affect a lot of application the
-other application may not work because you actually block the other application now your
-students maybe like us right your consumers your customers will complain why it didn't work i actually everything
-should work right so you have to be very careful with the five rules deciding okay what
-applications you want to block what service you want to block what actually drivers you want to block
-or want to protect or define the rules and what other dependencies okay
-and so basically you have all the assets right like a computer services software
-whatever services and you made in your mind okay you want to actually protect them
-and uh so now you will start to actually write your rules of course the firewall has
-the mechanism already you actually define the rules specify which ip you want to block which
-whatever whatever other things you want to do okay and uh so
-you can see here we see you want to define a group of rules you may have a few kind of
-rules for different scenario so you can see we've mentioned here your core scenario
-what is the scenario for example you have your laptop you bring your laptop
-right actually to school right do you do that i mean you bring your laptop to starbucks or to dunkins do you do that
-you also use your laptop at home you can see it right and when you're at the home you are protected by your wi-fi
-router when you're under school you may be protected by your school's uh i mean networking
-defense mechanisms but at the donkeys then you are not protected by anybody
-right and because of their you know networking is very simple
-most of the time they don't invest anything in defense
-okay so you can see here so at different locations you know
-you are protected differently so you want to actually set up
-your rules for different scenarios for your
-computer for example at home you may just feel relaxed like you don't actually
-free them and so you you don't use any fibo i'll show you files sometimes it's very
-not convenient okay and so so that's something right so you you
-want to actually define your rules for your core deployment scenarios maybe a
-few scenarios maybe one scenario depend on how you use your computer okay and so
-now let's let's look at uh what you want to actually focus so here
-we see you want to focus on inbound rules so what is the inbox inbound means the
-traffic the network of messages coming into your computer
-you know because when you actually try to contact other
-servers right it's called outbound messages you will send the message is contacting
-servers right it's called outbound i mean so we want to focus inbound rules
-because you know most of times the attacker wants to attack you right so they want to contact you directly that's
-why so we want to pay attention to the inbound rules so that we can block
-the attacker attacking you directly okay and upon
-rules here you know are also very important but the first you need to actually pay attention in
-boundaries okay so once you define your rules you know
-think about that if your computer has a lot of networking
-components then your rules may be comple very complex you have a lot of rules
-they may actually have conflicts that's why you have to test and make sure everything actually is smooth right you
-you do not accidentally block up any other
-applications you want right so that's something you want to pay attention okay
-good so and understand we have been talking about the serial lot so let's look at
-a particular example uh the windows firewalls so the windows firewalls basically
-follows everything we just talked about and the windows firewall offers three
-firewall profiles that means scenarios called the private public domain privacy
-means when you are at home okay so when you're in the home you may use different rules
-right so basically i mean when you choose the rules uh for private right then
-you can enable it when you enter home so maybe at one time you just enable one uh
-profile okay the public means you are at dunkin donut means you are at a at the
-school okay for different scenarios you have different rules because you feel you are developed you are protected at a
-different level and also you want your own freedom right and the biggest firewall sometimes blocks things very
-kind of uh weirdly and you don't want another kind of trouble so here you can see we already mentioned
-that what is the private profile right and uh so normally it's used for the private or
-home networks public profile is a normally used for coffee shops
-airports and other locations and so default profile is a public profile
-because normally you define the strongest
-viable rules for public profile because your computer is in a public network
-anybody can attack you that's why normally your public profile
-has the strongest viral rules okay and what we also have domain profile when
-you are in school you know and you must know when you actually use a domain profile right and uh
-basically you will be actually logged into your computer through
-the university authentication procedures so you know it's a very different kind of program
-so the the best apprentice of a profiles and uh so here is a you only enable the
-firewall rule group uh on the profiles that uh
-actually match your scenarios right and uh so because you know those
-viable rules can be very different right and so you want to just enable the one that
-actually really protect you in particular kind of scenario okay
-so we haven't talked about the firewall right let's look at a few uh let's look at the windows firewall so the windows firewall
-is called windows defender firewall so you can actually search right you know windows has the
+To make firewalls work, we need firewall rules which make the decision of blocking and allowing network traffic.
+What are firewall rules?
+They are configurations to specify what to allow and what to deny.
+The first step in firewall rule creation is to identify which components on your computer are network-facing.
+A network-facing component sends/receives network traffic (using <a href="https://beej.us/guide/bgnet/">network sockets</a>).
+
+We need to identify network facing applications such as messengers
+and emails. Those applications often have interfaces so that users can interact with them doing things like sending messages and emails.
+
+The second kind of network facing components are called services.
+For example, you can install the <a href="https://httpd.apache.org/">Apache web server</a> on your computer,
+which then becomes a web server.
+However, you will not be able to see a graphical interface of the Apache web server, which is running in the background.
+
+The third type of network facing components are network confusing drivers.
+For example when you install a network printer, you need to install the network printer driver,
+which sends your documents to the printer, e.g., through WiFi.
+
+Next step of creating firewall rules is find out the dependencies between networking facing applications, services and drivers.
+Creating firewall rules is a very complex procedure.
+One network facing component may use other network facing applications, services and driver to work.
+If you actually don't identify the dependencies carefully when you block one component,
+it may affect other components. 
+
+### Rule Authoring
+Once you are clear about network facing applications, services, derivers and their dependencies,
+you will start to write your rules.
+Of course the firewall program has the mechanism, allowing you to define the rules, e.g., specifying IPs to block.
+You may want to define rules for different scenarios.
+At least you shall define rules for your core scenario.
+What is a scenario? A scanario is where you use your computer.
+For example you have your laptop,
+and may use it at home, school or Dunkin'.
+At home, you are protected by your WiFi router. You may not need to define many firewall rules on the laptop.
+At school you may be protected by your school's defense mechanisms. So maybe again you do not need to define many firewall rules on the laptop.
+But at Dunkin', your laptop is open to attacks since there may be no much security mechnism implemented over there,
+Your laptop could be under attack by other customers of Dunkin'.
+
+In different locations you are protected differently. So you want to actually set up
+different rules for different scenarios for your computer.
+Sometimes, too much security brings inconvenience. That is why we need different firewall rules for different scenarios.
+For example at home you may just feel relaxed given the protection by the WiFi router.
+You are also not afraid your family members may attack your computer.
+Therefore, maybe you can related firewall rules too, allowing all the computers at home to share and communicate with each other freely.
+
+We may also want to focus on inbound rules.
+So what does inbound mean?
+Inbound traffic is messages and packets coming into your computer.
+Outbound traffic is messages and packets going out of your computer.
+Apparently inbound traffic may contain messages and packets sent by attackers. That is why we shall focus on inbound traffic.
+
+Firewall rules can very complex.
+A firewall on a computer needs to protect a lot of networking components like applications, services and drivers.
+A firewall on a campus is set to protect the entire network and computers on campus.
+Given the complexity, if you have a lot of rules, those rules can be wrong or have conflicts, preventing them from working properly.
+That's why you have to test and make sure everything works and
+you do not accidentally block up any services or applications.
+
+## Windows Firewalls
+Now Let's look at
+a particular Firewall example, the Windows firewall.
+The Windows firewall is part of the Windows operating system.
+It follows everything we just talked above.
+
+### Windows Firewall Profiles
+The Windows firewall offers three firewall profiles, private, public, and domain for different scenarios.
+The private profile means when you are at home. The set of firewall rules for the private profile protects your Windows when you are at home.
+You can enable the private profile when you are at home.
+The public profile means you are at a public place like Dunkin'.
+The domain profile means you are at a school or companies which employs the concept of domain to authenticate people using the school/company resources.
+For different scenarios you have different rules because you are overall protected at a different level.
+The default profile is a public profile because normally you define the strongest
+firewall rules for the public profile.
+If your computer is in a public network, anybody can attack you.
+That's why normally your public profile has the strongest firewall rules.
+
+The best practice of profiles is a you only enable the firewall rule group on the profiles that suit your scenarios.
+You know those firewall rules can be very different.
+So you want to just enable the one that actually really protects you in the particular kind of scenario.
+
+### Windows Defender Firewall
+
+The Windows firewall is called *Windows Defender Firewall* as the picture below shows.
+How can you open the firewall application and configure it?
+You can actually search for it.
+You can click the Windows Start button and then type *Windows Defender Firewall* to find it.
+Actually you can use this approach to search for any program installed on Windows.
+
+<img src="../Imgs/WindowsDefenderFirewall.png" width=512>
+
+you know windows has the
 windows icon right if you have the keyboard when you push that then you can actually tap and search anything any
 application on your windows computer so here you can actually search your windows define the
 firewall if you type it you'll find it okay so you can see here right and uh on
