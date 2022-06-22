@@ -267,6 +267,7 @@ Here is how we enable ping reply
 5. Right-click each such rule and choose *Enable Rule*
 
 Now ping reply is enabled.
+
 <img src="../Imgs/ping_enabled.png" width=640>
 
 and uh so that's about pin and so here is a pin example i'm using the pin from caddy
