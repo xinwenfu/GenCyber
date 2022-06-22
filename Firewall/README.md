@@ -295,21 +295,15 @@ A detailed tutorial can be found at <a href="https://help.liquidweb.com/s/articl
 11. Name the rule and click Finish
 
 ## Hands-on labs
-see again you you start another window right the windows defender firewall with other one
-security and you click on the emojis then you click on the new rules right then you do you just blow it and uh so
-so basically here i think i need to add a few words that's here maybe and uh so basically you know you have to
-uh you will add a few eyepiece and uh here so you can see here
-and uh for which remote ip address does this will apply and uh let me here have a look yeah
-click next after adding the eyepiece right so basically at the step seven you
-will add ip addresses you want to block and just follow the instructions here
-that you will actually finish uh the blocking okay you will block the
-ip so finally let's you guys will do the i mean do the
-hands-on right so the first hands-on is uh uh you enable firewall
-on windows and because by default our windows vm firewall is disabled
-on our windows of virtual machine so when you actually enable windows firewall please try if you can ping
-windows vm from cali vm okay the second thing you will do is uh
-okay then you actually allow people see if you can actually enable the ping rule so the third
-hands-on is uh you want to actually uh add an mp address for example the candid
-vm ip address see if you can block another ip so these are all the hands-ons
-okay oh my goodness let me see let me stop the
-recording okay usually you wanted to start it yes
+
+### Hands-on 1 Enable Windows firewall
+- Enable Windows Firewall
+- Can you ping Windows VM from Kali VM now?
+
+### Hands-on 2 Configure firewall to allow ping
+- Configure Windows Defender Firewall with Advanced Security to allow ping
+- Can you ping Windows VM from Kali VM now?
+
+### Hands-on 3 Configure firewall to block IP
+- Configure Windows Defender Firewall to block the IP of Kali VM
+- Can you ping Windows VM from Kali VM now?
