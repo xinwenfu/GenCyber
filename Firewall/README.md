@@ -6,7 +6,7 @@ As a concrete exampleof firewall, we are going to introduce the Windows firewall
 We will talk about how to define rules to block up an IP address and block and allow ping, which is a network applciation. 
 At last we are going to introduce the hands-on labs for this lecture.
 
-## Overview
+## Overview of Defense in Depth
 Let's first look at this big picture about how cyber defense works.
 You can see in this picture on the left we have the
 Internet. The internet is the wild west. There are attackers and hackers.
@@ -31,34 +31,39 @@ The DMZ means the demilitarized zone. It is one subnet. What is in this subnet>
 Often within the DMZ subnet, we have the web, email and other servers.
 What is the common property of those servers?
 Those servers can be reached from the Internet directly.
-For example, an attacker can send a web request to a web server and gets a web page.
+For example, an attacker can send a web request to a web server and get a web page.
 You can imagine because they can be reached from the Internet directly, the attackers may attack those computers directly.
 That's why we put them together in one subnet and use the external firewall to protect them.
 That's the purpose of external firewall.
 
-The purpose of the internal firewall is protect other parts of the campus nerworks and computers.
-We want protect our assetts and don't want the attackers to reach most of our computers directly.
-That's why we have with the Internal firewall.
-Most of the computers behind the internal firewall cannot be reached by the bad guys directly.
+The purpose of the internal firewall is protect other parts of the campus nerwork and computers.
+We want to protect our assetts and don't want the attackers to reach most of our computers directly.
+Most of the computers behind the internal firewall cannot be reached by the bad guys directly although these computers can still use the Internet.
+The firewalls make it happen.
 
-You see another defense component called IDS, which refers to intrusion detection system.
+There is another defense component called IDS, which refers to intrusion detection system.
 The purpose of the IDS is collect network packets and messages, denoted network
 traffic. The IDS analyzes the network traffic for the abnormalities.
-okay so that's called intrusion detection
-so what is the benefit of this kind of uh defines in depth this
-kind of a layered defines the benefit is you can see here right so even let's see
-the external firewall is not strong enough and even now i see here the dmz i
-mean all the web servers are the email servers they are bridged they are compromised so
-we have another firewall called the internet fiber which will actually block
-the attackers from using the compromise computers to attack our other computers
-so you can see right it's very important to have this kind of structure to have
-two firewalls and the dmd is between the two firewalls okay so we are talking
-about the fireworks a lot so what are firewalls so firewalls are hardware devices or software
-applications which used to protect our system okay so its purpose is to inspect
-and the filter and want the traffic so here again that's a bad guy here like i
-forgot to play it and uh so let's look at at different fibers so we have a better
-understanding what firewalls are doing so we actually
-classify uh them into three categories based on
+That's called intrusion detection.
+
+What is the benefit of the strategy of defense in depth?
+Let's assume the external firewall is not strong enough.
+The web server and the email server have vulnerabilities and they are compromised.
+However, we still have the internal firewall blocking
+the attackers from using the compromised servers to attack our other computers in the LAN.
+So you can see it's very important to have this kind of defense architecyure, DMZ between two firewalls and LAN behind the internal firewall.
+
+## Types of Firewalls
+What are firewalls?
+Firewalls are hardware devices or software
+applications which are used to protect our system.
+Tts purpose is to inspect and the filter netwrok traffic.
+
+### Categorizing Firewalls based on Firewall Mechanisms 
+
+Let's look at at different firewalls so we have a better
+understanding of what firewalls are doing.
+We can classify them into three categories based on
 you know how firewall works internally and uh so the first type of firewall is
 called the packet filters you know on the internet when you send the messages
 your messages are put into something called a package basically a packet is packed off of messages and
