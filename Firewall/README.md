@@ -254,7 +254,20 @@ Sometime we don't want them to find our computers using ping so easily.
 That's why sometimes we block the ping messages.
 But please note: they are other ways such as port scanning of identifying active IPs as we discussed in the cyber attack cycle.
 
+If Windows Defender Firewall is disabled, all rules are disabled and ping works.
+Assume Windows Defender Firewall is enabled. ping reply is disabled by detault settings as shown below.
 
+<img src="../Imgs/ping_disabled.png" width=640>
+
+Here is how we enable ping reply
+1. Search for Windows Defender Firewall, and click to open it
+2. Click Advanced Settings on the left
+3. From left pane of the resulting window, click Inbound Rules
+4. In the right pane, find the rules titled File and Printer Sharing (Echo Request - ICMPv4-In)
+5. Right-click each such rule and choose *Enable Rule*
+
+Now ping reply is enabled.
+<img src="../Imgs/ping_enabled.png" width=640>
 
 and uh so that's about pin and so here is a pin example i'm using the pin from caddy
 uh actually here i'm a ping let me have a look yes i'm pim
