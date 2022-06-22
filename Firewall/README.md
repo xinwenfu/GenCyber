@@ -259,7 +259,8 @@ Assume Windows Defender Firewall is enabled. ping reply is disabled by detault s
 
 <img src="../Imgs/ping_disabled.png" width=640>
 
-Here is how we enable ping reply
+Here is how we enable ping reply.
+A detailed tutorial can be found at <a href="https://www.faqforge.com/windows/windows-10/how-to-allow-ping-trough-the-firewall-in-windows-10/">here</a>.
 1. Search for Windows Defender Firewall, and click to open it
 2. Click Advanced Settings on the left
 3. From left pane of the resulting window, click Inbound Rules
@@ -270,49 +271,29 @@ Now ping reply is enabled.
 
 <img src="../Imgs/ping_enabled.png" width=640>
 
-and uh so that's about pin and so here is a pin example i'm using the pin from caddy
-uh actually here i'm a ping let me have a look yes i'm pim
-the windows vm from the candy vm then you can see here i just uh
-uh i should actually put the show the pin message here i need to change this one okay and uh so
-basically you just do team uh the ip then it will show you this uh message
-here okay and uh so that's a about uh ping how you use a ping here okay
-and uh so yeah so that's the key example and you can see here you have to specify the ip
-mp of the pin for the pin
-so why did this pin actually i
-disabled the firewall so when you enable the firewall by default windows disables the
-ping icon reply so when you pin windows you cannot ping actually and uh
-so here of course sometimes we want to use pin right because pin is useful in
-some scenarios and so this is how you actually uh enable pin even with your firewall
-enabled so in this case we enable the firewall we just want to allow ping we want to keep other default options uh
-default rules okay and so here you can see all the steps here first we assume
-the windows define the firewall is enabled right now we go for the windows uh search button over there the search
-box over there and a search for windows defender firewall then you click and open it right and then down here i just
-showed you the the menu item called the one settings on the left right and you just click there over there and you it
-pop up actually window and uh so and then you go ahead and you you
-actually you can see here and uh you need to do something to enable
-this rule here so let me show you here okay and uh so this is a basically uh the one
-settings so when you actually click the advanced settings and uh you actually it's disabled that
-this enabled and you change this and uh so here when you actually click
-advanced settings you will pop up the window windows different the firewall which advanced
-security so you click inbound rules then you search for this one uh file and a
-printer sharing i call request okay so basically you
-just you can see here by default when we enable windows firewall
-you know it's no right so basically windows will not respond to the pin
-message okay and uh so of course you just right click and you just enable it so when you
-enabled you can see here right and uh then you can paint okay
-and uh so here right you also can see i enable this for the private profile but you can
-also enable it for the domain profile and and uh there's a lot of private profile
-actually i'm gonna try with that but anyway you can just uh enable the pin
-for your scenario okay so that's about how you enable pin rule here you can see there are many
-other rules actually i don't know them and i didn't try to understand all of them
-okay and uh so now let's see no let's see you don't
-like your kind of uh another troublemaker in your dom and you
-want to actually block his ip okay how do you do that you don't want to actually him to blood to contact you or
-maybe you think he's a bad guy or whatever and so you want to block another guy's ip or you want a black or
-the hikers ip you know you know there are better actors on the internet right
-you can block them let me tell you our you must know at the how
-many eyepiece blacklist blockade okay and we know some
-of the bad actors on the internet so we block them and so so this is how you do it you can
+#### Block IPs
+
+Let's see an example. In your dorm. there is a troublemaker, which always tries to mess up other people's computers.
+You want to block his IP and get rid of the annoyance. 
+Let's assume you know the guy's IP and want to block it.
+
+Here are steps to do it.
+A detailed tutorial can be found at <a href="https://help.liquidweb.com/s/article/Blocking-IP-Addresses-Using-Windows-Firewall">here</a>.
+1. Start Windows Defender Firewall with Advanced Security
+2. Click on Inbound Rules
+3. Click on New Rule
+4. Select Custom and then click Next
+5. Select All programs and click Next
+6. Use default settings (Protocol type: Any) and click Next
+7. For Which remote IP addresses does this rule apply to, click These IP addresses and then Add
+
+<img src="../Imgs/blockIP_step7.png" width=640>
+
+8. Click Next after adding the IPs to block
+9. Choose Block the connection and click Next
+10. Check Domain, Private, and Public
+11. Name the rule and click Finish
+
 see again you you start another window right the windows defender firewall with other one
 security and you click on the emojis then you click on the new rules right then you do you just blow it and uh so
 so basically here i think i need to add a few words that's here maybe and uh so basically you know you have to
