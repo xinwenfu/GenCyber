@@ -103,34 +103,31 @@ After the inspection, the firewalls decide what to do, for example dropping (dis
 
 ### Categorizing Firewalls based on Users 
 
-so of course there are other ways of categorizing firewalls so let's look at
-you know the categories of firewalls be some who are the users of the firewalls so
-again we have three kind of uh you know type of firewalls we have enterprise
-class firewalls we have consumer classifiers we have low url and so what is the
-the enterprise class firewall those firewalls are normally very
-expensive and they are integrated with the company routers switches many other kind
-of other ones the network devices and so they
-basically work as a whole and uh performing
-filtering inspection you can see here even intrusion detection so
-those firewalls are normally advanced and expensive they do a lot of
-things then we have the consumer clouds classifiable then i know you know
-your home i mean most of people have wi-fi in their home
-and you use the wi-fi routers right and the wi-fi router actually
-is integrated with the fiber most of them and i'm not sure if you guys actually ever
-tried to log into your wi-fi router to config your wi-fi router
-if you ever did that then you knew you know actually you can actually change
-your router in a set of bible rules for example you don't want messages from professor food and if you know his ip
-address you can block a provider for from reaching you okay you can actually configure that at your wi-fi router so
-but you know those are not very advanced uh firewalls and often they are very simple
-doing basic things for example they cannot do introduction they do basically routing right those are used for the
-home not for enterprises so finally we have the lawyer owned like
-a we right and we are researchers we are students we don't have money sometimes we just want to test our our ideas you
-know so that's why we have this kind of open source software applications as uh
-firewalls and uh edx has the firewall called the ip tables and i know you guys are another
-family with ip tables and uh so but anyway you can use a data
-software to configure five rules as complex as complex as you
-want and they are kind of designed for doing those kind of things okay so those
-are the uh firewalls based on who use the firewalls
+There are other ways of categorizing firewalls.
+We now categories firewalls based on who are the users of the firewalls.
+Again we have three types of firewalls, enterprise class firewalls, consumer class firewalls and roll-your firewalls.
+
+The enterprise class firewall are normally very expensive and advanced.
+They are often integrated with company routers, switches or many other kinds
+of network devices.
+Such firewalls may perform inspection, filtering and even intrusion detection.
+
+The consumer class firewalls can be integrated in  your home WiFi routers.
+Did you actually ever tryto log into your WiFi router to configure it?
+If you ever did that, then you know actually you can actually change
+your router and may be able to set up firewall rules to block network traffic.
+For example if you don't want messages from an IP address, you can configure the WiFi router block it.
+Consumer class firewalls are often cheap and do basic things.
+For example, they are not designed to process high speed and large volume network traffic.
+
+Roll-your-own firewalls are commercial or open-source software firewall applications.
+They are often used by researchers and people seeking low-cost optons for firewalls.
+Linux has a firewall application called *iptables*. 
+It can be used to configure firewall rules as complex as complex as you
+want. 
+
+## Firewall rules
+
 okay so now we understand the firewalls and you know to make firewalls work
 you handle different rules and then to make the decision when you see attribute
 traffic when the firewalls see that why uh i mean the network traffic right
