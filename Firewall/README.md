@@ -294,6 +294,7 @@ A detailed tutorial can be found at <a href="https://help.liquidweb.com/s/articl
 10. Check Domain, Private, and Public
 11. Name the rule and click Finish
 
+## Hands-on labs
 see again you you start another window right the windows defender firewall with other one
 security and you click on the emojis then you click on the new rules right then you do you just blow it and uh so
 so basically here i think i need to add a few words that's here maybe and uh so basically you know you have to
