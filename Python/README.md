@@ -565,7 +565,7 @@ Let's see how we use functions in ex.py. Basically we need to import ex.py first
 
 ## Exceptions
 
-Exceptions are errors udring execution. 
+Exceptions are errors during execution. 
 ```
 >>> while True:
 ...     try:
