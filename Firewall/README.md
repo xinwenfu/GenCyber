@@ -86,7 +86,7 @@ A packet filter can do it based on the packet header information.
 #### Session-Layer Proxies 
 
 The second type of firewall is related with a concept called session layer.
-What is a session? When you browse a webpage, it is a session.
+What is a session? When you browse a webpage, it is a session of accessing that webpage.
 In a web browsing session, the network protocol such as the TCP protcol makes sure the web content is sent to the browser in order and reliably.
 Session-layer proxies check a session follows the specific protocol.
 Sometimes a bad guy may try to manipualte the session and do something bad. One such attack is the <a href="https://owasp.org/www-community/attacks/Session_hijacking_attack">session hijacking attack</a>. 
