@@ -19,7 +19,7 @@ So normally a school or company has this kind of setup to protect their network.
 <img src="../Imgs/DefenseInDepth.png" width=512>
 
 To understand the defense in depth, we have to first look at a few terms.
-The first term is the internet. We know internet contains networks of computers.
+The first term is the Internet. We know internet contains networks of computers.
 The Internet is a network of networks.
 A school like UMass Lowell has a big networkof computers.
 For such a large network, we are going to divide it into smaller network segments, called subnets.
@@ -28,7 +28,7 @@ The reason is that UMass Lowell has many departments.
 We can put different departments into different subnets so that it is easier to manage them, sometimes for the sake of security.
 Another benefit is with diffrent departments in different subnets, messages generated with one department will stay in that department, not going through the networking devices of other departments. This will reduce network traffic congestion.
 
-The DMZ means the demilitarized zone. It is one subnet. What is in this subnet>
+The **DMZ** means the demilitarized zone. It is one subnet. What is in this subnet>
 Often within the DMZ subnet, we have the web, email and other servers.
 What is the common property of those servers?
 Those servers can be reached from the Internet directly.
@@ -42,7 +42,7 @@ We want to protect our assetts and don't want the attackers to reach most of our
 Most of the computers behind the internal firewall cannot be reached by the bad guys directly although these computers can still use the Internet.
 The firewalls make it happen.
 
-There is another defense component called IDS, which refers to intrusion detection system.
+There is another defense component called **IDS**, which refers to intrusion detection system.
 The purpose of the IDS is collect network packets and messages, denoted network
 traffic. The IDS analyzes the network traffic for the abnormalities.
 That's called intrusion detection.
