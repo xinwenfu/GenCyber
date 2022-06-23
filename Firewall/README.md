@@ -4,7 +4,7 @@ We first look at the concept of *defense in depth* and why do we need the firewa
 Once we understand the firewalls, we will introduce firewall rules, which are used to block and allow certain network traffic.
 Network traffic refers to network packets or messages.
 As a concrete example of firewall, we are going to introduce the Windows firewall called Windows Defenser Firewall.
-We will talk about how to define rules to block IP addresses and block and allow *ping*, which is a network applciation. 
+We will talk about how to define rules to block IP addresses and block and allow *ping*, which is a network applciation testing if a computer with an IP is online or offline. 
 At last we are going to introduce the hands-on labs for this lecture.
 
 ## Overview of Defense in Depth
