@@ -188,7 +188,7 @@ Given the complexity, if you have a lot of rules, those rules can be wrong or ha
 That's why you have to test and make sure everything works and
 you do not accidentally block up any services or applications.
 
-## Windows Firewalls
+## Windows Firewall
 Now Let's look at
 a particular Firewall example, the Windows firewall.
 The Windows firewall is part of the Windows operating system.
