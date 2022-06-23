@@ -94,8 +94,8 @@ Sometimes a bad guy may try to manipualte the session and do something bad. One 
 #### Application Proxies
 The application proxies are another kind of firewalls.
 Here are example network applications, FTP (File Transfer Protocol), SMTP (Simple Mail Transfer Protocol) and SSH (Secure Shell Protocol).
-They check if your application data is normal or not.
-If the attacker actually changes something,
+Application proxies check if your application data is normal or not.
+If the attacker actually changes application data,
 an application proxy checks if the application protocol is followed and may find such abnormalities. 
 
 So we have introdcued three type of firewalls based on how the firewalls actually inspect
