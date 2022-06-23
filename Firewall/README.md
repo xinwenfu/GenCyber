@@ -28,7 +28,7 @@ The reason is that UMass Lowell has many departments.
 We can put different departments into different subnets so that it is easier to manage them, sometimes for the sake of security.
 Another benefit is with diffrent departments in different subnets, messages generated with one department will stay in that department, not going through the networking devices of other departments. This will reduce network traffic congestion.
 
-The **DMZ** means the **demilitarized zone**. It is one subnet. What is in this subnet>
+The **DMZ** means the **demilitarized zone**. It is a subnet. What is in this subnet?
 Often within the DMZ subnet, we have the web, email and other servers.
 What is the common property of those servers?
 Those servers can be reached from the Internet directly.
