@@ -229,7 +229,7 @@ Both private profile and public profile are disabled. I don't have the domain pr
 ### Allow and Block ping
 When you set up your computers and play games with friends, you have a bunch of computers.
 But you got some networking problem and one computer does not work.
-You want to test if the network is set up right or now.
+You want to test if the network is set up right or not.
 In such a scenarion, people often use a program called ping to test if that computer in trouble is in the network or not.
 *ping* is available on Linux, Windows and other operating systems.
 ping is used to test if an IP address is active. If the computer does not have an active IP address, we say it is offline.
