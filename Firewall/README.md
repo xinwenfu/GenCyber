@@ -3,7 +3,7 @@ We are going to introduce the firewalls.
 We first look at the concept of *defense in depth* and why do we need the firewalls.
 Once we understand the firewalls, we will introduce firewall rules, which are used to block and allow certain network traffic.
 Network traffic refers to network packets or messages.
-As a concrete exampleof firewall, we are going to introduce the Windows firewall called Windows Defenser Firewall.
+As a concrete example of firewall, we are going to introduce the Windows firewall called Windows Defenser Firewall.
 We will talk about how to define rules to block IP addresses and block and allow *ping*, which is a network applciation. 
 At last we are going to introduce the hands-on labs for this lecture.
 
