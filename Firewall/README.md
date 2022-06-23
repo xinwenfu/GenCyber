@@ -226,7 +226,7 @@ There are many other settings.
 For our Windows virtual machine, we actually disabled the firewall.
 Both private profile and public profile are disabled. I don't have the domain profile for the VM because i don't use this VM in the university network.
 
-#### Allow and Block ping
+### Allow and Block ping
 When you set up your computers and play games with friends, you have a bunch of computers.
 But you got some networking problem and one computer does not work.
 You want to test if the network is set up right or now.
@@ -272,7 +272,7 @@ Now ping reply is enabled.
 
 <img src="../Imgs/ping_enabled.png" width=640>
 
-#### Block IPs
+### Block IPs
 
 Let's see an example. In your dorm. there is a troublemaker, which always tries to mess up other people's computers.
 You want to block his IP and get rid of the annoyance. 
