@@ -45,7 +45,7 @@ The firewalls make it happen.
 There is another defense component called **IDS**, which refers to **intrusion detection system**.
 The purpose of the IDS is collect network packets and messages, denoted network
 traffic, and analyzes the network traffic for the abnormalities.
-That's called intrusion detection.
+This process is called intrusion detection.
 
 What is the benefit of the strategy of defense in depth?
 Let's assume the external firewall is not strong enough.
