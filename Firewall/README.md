@@ -241,10 +241,10 @@ ping 192.168.1.19
 
 Here is a simple description of the ping process .
 ping uses an Internet protocol called ICMP.
-It sends out *echo request* message (just a message with particular format) to an IP.
-This is analogous to the shout "Are you there?"
+It sends out *echo request* messages (just a message with particular format) to an IP.
+This is analogous to one person shouting "Are you there?"
 If the IP is active, the computer with the ip sends the *echo reply* message. 
-This is analogous to the shout back "Yes, I'm here."
+This is analogous to the other person shouting back "Yes, I'm here."
 If the IP is not active, error messages are displayed by ping.
 
 We have a question here. Shall we block the pin messages fromsent by other computers to our computer?
