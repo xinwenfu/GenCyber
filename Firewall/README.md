@@ -1,46 +1,49 @@
 # Introduction to Firewalls
-We are going to introduce the firewalls.
-We first look at the concept of *defense in depth* and why do we need the firewalls.
-Once we understand the firewalls, we will introduce firewall rules, which are used to block and allow certain network traffic.
+We are going to introduce the firewall.
+We first look at the concept of *defense in depth* and why we need the firewalls.
+Once we understand the usage of the firewall, we will introduce firewall rules, which are used to block and allow certain network traffic.
 Network traffic refers to network packets or messages.
-As a concrete example of firewall, we are going to introduce the Windows firewall called Windows Defenser Firewall.
-We will talk about how to define rules to block IP addresses and block and allow *ping*, which is a network applciation testing if a computer with an IP is online or offline. 
-At last we are going to introduce the hands-on labs for this lecture.
+As a concrete example firewall, we are going to introduce the Windows firewall called Windows Defenser Firewall.
+We will talk about how to block and allow *ping*, which is a network applciation testing if a computer with an IP is online or offline.
+We will also show how to define firewall rules to block IP addresses on Windows. 
+At last we are going to introduce the hands-on labs so that you can get some practice of using the firewall.
 
 ## Overview of Defense in Depth
-Let's first look at this big picture about how cyber defense works.
-You can see in this picture on the left we have the
-Internet. The internet is the wild west. There are attackers and hackers.
-There are all kinds of weird things going on on the internet.
-You can see we have also the external firewall, something called the dmz, internal firewall and LAN.
-Those things often belong to one entity, for example a school or a company.
-So normally a school or company has this kind of setup to protect their network.
+Let's first look at the big picture about how cyber defense works.
+You can see in this picture below on the left we have the Internet.
+The internet is the wild west. There are attackers and hackers.
+There are all kinds of weird things going on on the Internet.
+In the picture, you can see we have the external firewall, something called DMZ, internal firewall and LAN.
+A school or a company often have all those things.
 
 <img src="../Imgs/DefenseInDepth.png" width=512>
 
 To understand the defense in depth, we have to first look at a few terms.
-The first term is the Internet. We know internet contains networks of computers.
+The first term is the Internet. We know the Internet contains networks of computers.
 The Internet is a network of networks.
-A school like UMass Lowell has a big networkof computers.
-For such a large network, we are going to divide it into smaller network segments, called subnets.
+A school like UMass Lowell has a big network of computers.
+For such a large network, we often divide it into smaller network segments, called subnets.
 Why do we need subnets?
 The reason is that UMass Lowell has many departments.
-We can put different departments into different subnets so that it is easier to manage them, sometimes for the sake of security.
-Another benefit is with diffrent departments in different subnets, messages generated with one department will stay in that department, not going through the networking devices of other departments. This will reduce network traffic congestion.
+We can put different departments into different subnets so that it is easier to manage all the computers,
+networking devices like routers and switches and their security.
+Another benefit is with diffrent departments in different subnets, messages generated within one department will stay in that department,
+not going through the networking devices of other departments. This will reduce network traffic congestion and improve speed.
 
-The **DMZ** means the **demilitarized zone**. It is a subnet. What is in this subnet?
-Often within the DMZ subnet, we have the web, email and other servers.
+The **DMZ** is the **demilitarized zone**. It is a subnet. What is in this subnet?
+We often have the web, email and other servers within the DMZ subnet.
 What is the common property of those servers?
 Those servers can be reached from the Internet directly.
-For example, an attacker can send a web request to a web server and get a web page.
+For example, users as well as attackers can send a web request to the web server and get the web page.
 You can imagine because they can be reached from the Internet directly, the attackers may attack those computers directly.
 That's why we put them together in one subnet and use the external firewall to protect them.
 That's the purpose of external firewall.
 
 The purpose of the internal firewall is protect other parts of the campus nerwork and computers.
 We want to protect our assetts and don't want the attackers to reach most of our computers directly.
-Most of the computers behind the internal firewall cannot be reached by the bad guys directly although these computers can still use the Internet.
-The firewalls make it happen.
+Most of the computers behind the internal firewall cannot be reached by the bad guys directly
+although these computers can still use the Internet.
+The firewalls make such practice feasible.
 
 There is another defense component called **IDS**, which refers to **intrusion detection system**.
 The purpose of the IDS is collect network packets and messages, denoted network
