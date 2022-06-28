@@ -2,29 +2,25 @@
 
 We are going to introduce the intrusion detection system. 
 We first look at the big picture of cyber defense. Firewalls are often not enough. That is why we need intrusion detection..
+Oonce we understand the idea of intuition detection, we'll talk about where we are going to deploy intrusion
+detection systems.
+Then we will talk about intrusion prevention.
+Intrusion prevention is actually partitially implemented by firewalls.
+But we can add the intrusion prevention functionality to an intrusion detection system (IDS), shutting down detected attacks.
+As an example of intrusion detection, we are going to introduce a protocol analyzer called Wiresahrk.
+Wireshark is designed for not intrusion detection, but capturing network traffic and showing packet details.
+But you can use Wireshark to demonstrate the principle of intrusion detection.
+At last we are going to introduce the hands-on labs.
 
-okay so any questions no questions i think i'm all set
-okay yeah so let's go over the slides quickly i'm going to speak quickly but i found if i speak quickly
-i often pronounce something wrong but it's okay and uh so
-this is a part of our third day uh you know plan right and uh so we are going to
-talk about the intrusion detection system in the morning and uh
-we will talk about uh the firewall as we actually can see here this is the
-big picture of uh this uh lecture right we first talked about intrusion detection why we need it
-so when we talk about the firewall you know if i always not enough then we'll talk about why we need intrusion detection
-so once we understand the idea of intuition detection and we'll talk about where we are going to deploy intrusion
-detection systems we may deploy the intrusion detection system at a host
-at a computer we can also deploy it at you know a network edge or just within
-the networks and we can also deploy this antenna like a you know at the campus route right and
-so this is the idea of positioning intrusion detection systems
-then we will talk about the intrusion preparation the premium version basically is about uh using firewalls to
-block everything and i will talk about some reward examples and
-as a example of intrusion detection we are going to use a
-this protocol analyzer called the word shock workshop is not a real
-intrusion detection software but you can use earthshack to perform intrusion
-detection so then we are going to introduce the hands-on okay and so this is a big picture of a
-cyberspace when we try to defend our campus network right so you can see just
-the internet on the left the rest of all the components belong to
-our entity for example our um slow and uh so we discussed you know we need a the
+## What is intrusion detection
+
+Let's have a look at the defense in depth picture. 
+The internet is on the left and the rest of all the components belong to a company or campus like UML.
+We discussed the external firewall is used to protect servers like email and webh servers in the DMZ.
+The internal firewall blocks direct access to computers in the LAN, e.g., other computers of UML.
+In this way, even if servers in DMZ are compromised, it will still be not easy to hack into other computers of UML.
+
+you know we need a the
 external fiber we need the internal firewall to protect actually this dmz right but
 really it's the exterior firewall which defines the dmz and so we host
 like web server email server other servers within dmd so that even you know
