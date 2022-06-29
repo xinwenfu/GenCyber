@@ -39,7 +39,7 @@ activities against computers and networks.
 An intrusion detection system can be software or hardware, which performs intrusion detection.
 
 An example IDS is <a href="https://www.snort.org/documents">Snort</a>, a popular open source IDS. It has a few components.
-The packet acquisition compoment captures packets.
+The packet acquisition compoment captures packets from protected computers.
 The packet decoder compoment determines packet protocols and the content location.
 A pre-processor is a plugin to extend functionalities of Snort.
 The detection engine matches extracted packet information against rulesets for detection of potential attacks.
