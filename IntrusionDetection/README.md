@@ -22,32 +22,23 @@ In this way, even if servers in DMZ are compromised, it will still be not easy t
 
 <img src="../Imgs/DefenseInDepth.png" width=512>
 
-you know we need a the
-external fiber we need the internal firewall to protect actually this dmz right but
-really it's the exterior firewall which defines the dmz and so we host
-like web server email server other servers within dmd so that even you know
-the servers within the dmd are compromised you know they cannot actually i mean the battery guys cannot
-get into our campus computers directly right that's why we
-have the internet firewall blocking direct access to
-other campus computers then as we already learned you know
-firewalls cannot defeat other attacks right
-because sometimes there are unknown attacks firewalls are normally used to
-block known attacks so that's why we need the intrusion detection system
-so one approach the intrusion detection system uses is to
-check if the network traffic is normal or not you can
-see here the intrusion detection system collects network traffic from every computer
-maybe not every computer but from many computers on campus and see if
-it's normal for example let's take example suddenly you see a huge amount of
-traffic compared to yesterday now you may think oh man what's happening here right maybe it's a
-denial service attack somebody's uh sending a huge amount of attack or traffic garbage traffic try to
-actually congest our network right so that's one way
-of doing intrusion detection and uh so
-so we already actually learned what is intrusion detection but here's a formal definition so
-intrusion detection is a process of identifying and responding to malicious
-activity targeted at a computing and networking resources
-right and so this is called intrusion detection and intrusion detection system
-can be software can be hardware but anyway if it's hardware is still like a software inside of the hardware right
-and they perform the intrusion detection okay and uh so this is a normally
+However, firewalls cannot defeat all attacks.
+There are unknown attacks.
+Firewalls are normally used to block known attacks.
+That's why we need the intrusion detection system (IDS).
+One way of intrusion detection system uses is to
+check if the network traffic is normal or not.
+The intrusion detection system collects network traffic from computers of interest.
+It check if the network traffic is normal.
+For example, because of a DDoS attack, suddenly there is a huge spike of traffic coming into the campus.
+The IDS can detect such abnormality and send alerts.
+
+What is intrusion detection?
+Intrusion detection is a process of identifying and responding to malicious
+activities against computers and networks.
+An intrusion detection system can be software or hardware, which performs intrusion detection.
+
+okay and uh so this is a normally
 uh how an intrusion detection system is uh
 uh programmed always works okay this shows the components of intrusion
 detection system so here down over there is a targeted computer this may be a lot of computers
