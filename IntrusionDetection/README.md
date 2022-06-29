@@ -20,13 +20,6 @@ We discussed the external firewall is used to protect servers like email and web
 The internal firewall blocks direct access to computers in the LAN, e.g., other computers of UML.
 In this way, even if servers in DMZ are compromised, it will still be not easy to hack into other computers of UML.
 
-An example IDS is <a href="https://www.snort.org/documents">Snort</a>, a popular open source IDS. It has a few components.
-The packet acquisition compoment captures packets.
-The packet decoder compoment determines packet protocols and the content location.
-A pre-processor is a plugin to extend functionalities of Snort.
-The detection engine matches extracted packet information against rulesets for detection of potential attacks.
-The alerts/logging component reports potential attacks to the admin and saves related data into a database.
-
 <img src="../Imgs/DefenseInDepth.png" width=512>
 
 However, firewalls cannot defeat all attacks.
@@ -44,6 +37,13 @@ What is intrusion detection?
 Intrusion detection is a process of identifying and responding to malicious
 activities against computers and networks.
 An intrusion detection system can be software or hardware, which performs intrusion detection.
+
+An example IDS is <a href="https://www.snort.org/documents">Snort</a>, a popular open source IDS. It has a few components.
+The packet acquisition compoment captures packets.
+The packet decoder compoment determines packet protocols and the content location.
+A pre-processor is a plugin to extend functionalities of Snort.
+The detection engine matches extracted packet information against rulesets for detection of potential attacks.
+The alerts/logging component reports potential attacks to the admin and saves related data into a database.
 
 <img src="../Imgs/Snort.png" width=512>
 
