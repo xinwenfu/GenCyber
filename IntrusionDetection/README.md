@@ -38,6 +38,8 @@ Intrusion detection is a process of identifying and responding to malicious
 activities against computers and networks.
 An intrusion detection system can be software or hardware, which performs intrusion detection.
 
+<img src="../Imgs/Snort.png" width=512>
+
 okay and uh so this is a normally
 uh how an intrusion detection system is uh
 uh programmed always works okay this shows the components of intrusion
