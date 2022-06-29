@@ -86,7 +86,7 @@ A packet filter checks the packet header which contains the IPs, ports, and othe
 
 Let's see we want to block traffic from known bad actors on the Internet.
 There are known bad actors and we actually know their IP addresses and want to block them.
-A packet filter can do it based on packet header information.
+A packet filter can do it based on packet header information including IP addresses, port numbers and protocols.
 
 #### Session-Layer Proxies 
 
