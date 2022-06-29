@@ -20,7 +20,7 @@ We discussed the external firewall is used to protect servers like email and web
 The internal firewall blocks direct access to computers in the LAN, e.g., other computers of UML.
 In this way, even if servers in DMZ are compromised, it will still be not easy to hack into other computers of UML.
 
-<img src="../Imgs/DefenseInDepth.png" width=640>
+<img src="../Imgs/DefenseInDepth.png" width=512>
 
 you know we need a the
 external fiber we need the internal firewall to protect actually this dmz right but
