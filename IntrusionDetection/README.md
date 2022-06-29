@@ -24,8 +24,9 @@ In this way, even if servers in DMZ are compromised, it will still be not easy t
 
 However, firewalls cannot defeat all attacks.
 There are unknown attacks.
-Firewalls are normally used to block known attacks.
-That's why we need the intrusion detection system (IDS).
+Firewalls performs blocking and filtering based on IPs, port numbers and protocols.
+They are not normally used to detect attacks, particularly unknown attacks.
+An IDS does intrusion detection.
 One way of intrusion detection system uses is to
 check if the network traffic is normal or not.
 The intrusion detection system collects network traffic from computers of interest.
@@ -47,36 +48,13 @@ The alerts/logging component reports potential attacks to the admin and saves re
 
 <img src="../Imgs/Snort.png" width=512>
 
-okay and uh so this is a normally
-uh how an intrusion detection system is uh
-uh programmed always works okay this shows the components of intrusion
-detection system so here down over there is a targeted computer this may be a lot of computers
-and we are going to collect network packets from
-this red uh you know protected computers we want to see if this computer is performing
-normally or not so once you actually uh capture all the traffic then you can see here we have
-something called thing called the sensor here this is just kind of like a software here and uh
-analyzing the collect the network of packets and see if there's anything wrong right for
-example if there are no attacks and if that's too much traffic something like that and you can see here basically this
-uh decision making mechanism refers to databases right configuration and here
-you can see ids knowledge something for example no attacks and uh
-so basically this sensor here checks uh the traffic
-and uh referring to known knowledge to find
-if there are attacks or not so if there are attacks
-some intrusion detection system may actually
-try to respond for example one response is we just actually turn
-off our network right so that's one kind of uh action here we just block
-everything and then we need to actually check what's wrong with those protected computers right so this
-is normally how you know an nds works and there are components
-okay so now let's look at where we put the intrusion detection systems
-so first let's look at actually something called host-based intrusion detections but
-before we do that so let's look at the internet right we already did this before we already introduced what is the
-internet that you can see here right in the middle here the block does over are
-like a routers and you know then we have so those routers
-are responsible you know relating your messages from end to end right from your to your friend
-from your mom to your dad something like that and you can see also you know there are many other routers
-which are managed by the like a comcast and uh resident and those
-companies so those routers they work together and they actually
-forward our messages to the destination in very uh efficient way
+## Host, Network & Perimeter Detection
+
+Let's look at where we put the intrusion detection systems.
+Before we do that, let's look at the Internet.
+Routers are responsible for relaying your messages from end to end, e.g., from you to your friend.
+There are many routers. Core routers are managed by Internet Service Providers (ISPs) like Verizon and Comcast. Enterprises and schools like UML have edge routers connecting the campus network to the Internet.
+All routers work together, find the best route and forward our messages to the destination.
 right then in the middle it's a the you know kind of a transportation
 network now at the end now we have our local networks here that you can see
 here we have different customer networks one example is a the um slow uh network
