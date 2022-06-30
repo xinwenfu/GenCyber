@@ -53,16 +53,17 @@ The alerts/logging component reports potential attacks to the admin and saves re
 Let's look at where we put the intrusion detection systems.
 Before we do that, let's look at the Internet.
 Routers are responsible for relaying your messages from end to end, e.g., from you to your friend.
-There are many routers. Core routers are managed by Internet Service Providers (ISPs) like Verizon and Comcast. Enterprises and schools like UML have edge routers connecting the campus network to the Internet.
+There are many routers. Core routers form the Internet backdone and managed by Internet Service Providers (ISPs) like Verizon and Comcast.
+The networks of enterprises and schools like UML are customer networks.
+They use routers, called edge routers, to connect the campus network to the Internet.
 All routers work together, find the best route and forward our messages to the destination.
-right then in the middle it's a the you know kind of a transportation
-network now at the end now we have our local networks here that you can see
-here we have different customer networks one example is a the um slow uh network
-so within you must know you know we have so many computers so basically maybe
-we actually use the department as a unit so each development has their own
-network so we call that as a local error network but it's really kind of a relative concept here and so that's how
-actually internet is uh structured so let's first look at what is the
-host based intrusion detection system so a whole space intrusion vegetation
+A big enterprise or campus network may be divided into smaller networks, called local area networks (LANs)
+LANs are managed by individual units of the enterprise or campus, such as a department.
+Each development may have their own network.
+
+<img src="../Imgs/HIDS.png" width=512>
+
+Host based intrusion detection system so a whole space intrusion vegetation
 system basically will stay on a single computer
 and sometimes it could be a software but most of the time we use the software programs as intuition detection systems
 for example i'm not sure if you heard of snort snort is a software package
