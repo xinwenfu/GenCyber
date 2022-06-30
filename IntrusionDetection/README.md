@@ -106,7 +106,7 @@ However, three problems are apparent.
 Evolution of the technology, and merging of firewall and IDS and IPS functionalitare will help solve these problems.
 One thing we need to understand is there is no absolute security. With firewalls, IPS and IDS, computers can still be compromised since defense measures cannot always detect the attacks. 
 
-#$ Real-World Examples
+## Real-World Examples
 
 ### SQL Slammer worm
 We now see a real-world attack, <a href="https://www.giac.org/paper/gsec/3091/ms-sql-slammer-sapphire-worm/105136">SQL slammer computer worm</a>.
