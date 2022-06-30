@@ -650,3 +650,7 @@ Use IDLE to run /home/kali/GenCyber/PythonExampleCode/basics-gc.py on Kali VM
 
 ### Hands-on 3
 Try Pygame examples
+
+- <a href="https://github.com/mayad21/AirHockey">Air Hockey</a>
+- <a href="https://github.com/justinmarwad/Pong">Pong</a>
+- <a href="https://github.com/DaintyJet/TA-GenCyber-UML-2022/tree/main/Games">Matt</a>
