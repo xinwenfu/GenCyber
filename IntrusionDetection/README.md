@@ -9,7 +9,7 @@ Then we will talk about intrusion prevention.
 As an example of intrusion detection, we are going to introduce a protocol analyzer called Wiresahrk.
 Wireshark is not particularly designed for intrusion detection, but capturing network traffic and showing packet details.
 But we can use Wireshark to demonstrate the principle of searching packet contents for intrusion detection.
-At last we are going to introduce the hands-on labs.
+At last we are going to introduce hands-on labs.
 
 ## What is intrusion detection
 
