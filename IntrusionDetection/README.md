@@ -88,143 +88,70 @@ It can use data mining techiques to analyze the traffic.
 The third type of intrusion detection system is called a perimeter based intrusion detection system.
 It is often put beside a customer network's edge routers.
 The edge routers handles all traffic into the customer network from the Internet and out of the customer network to the Internet.
-The edge routers will form our first line of defense.
+The PIDS forms our first line of defense.
 
 <img src="../Imgs/PIDS.png" width=512>
 
-right so basically that's why we need this kind of a perimeter-based intrusion detection
-system and this kind of system will analyze you can you can see network packets
-passing through the gateway the router right and anything you know on the router and uh the logs processes systems on the
-on the router or gateway okay and uh
-recent advances in intrusion prevention uh in terms of uh perimeter-based intrusion
-detection scene so here the key idea here is you know because of the router sees
-the attack the doctor is the first to see the attacks right and uh so the router
-should be able to block the attacks once it happens of course we have to think about how to do
-that but we call that as a zero ladies and gentlemen if there's any attack the
-router will block it uh you know right and uh at the earliest time and but the zero leading the blocking is
-not easy okay and uh and uh so because you know think about that right and there are so much traffic
-going through the router and can you actually inspect all the network packages one by one and
-that is impossible so it's very challenging to do this okay so here is a uh the perimeter-based
-intrusion design system on the internet it's just at the edge of our campus network that's normally where
-we put the pids okay okay so we have talked about uh you know
-intuition detection another important concept is intrusion prevention
-and uh so what is the intrusion permission you know intuitive prevention means that we want to actually prevent the attack right and
-so that's why we call this intrusion prevention and so one challenge
-for intrusion detection is how can we perform the real-time intrusion
-detection and for today's
-internet it creates huge amount of network
-traffic at a tremendous speed and uh really it's a very challenge
-to actually detect attacks among so much traffic in real time
-you know either you use software right you know software is very slow sometimes you know
-and the software most of the time cannot do real-time intrusion detection that's why you know many people
-now turn to hardware for intrusion detection so we
-use a hardware to implement the intrusion detection aggregates so that
-we can actually perform real-time intrusion detection but it's still a very good big challenge
-think about the speed and the amount of traffic right and uh
-so that's a big problem okay
-so you know
-so basically uh we know we want to do intrusion
-detection and we also want to do intrusion preparation
-but uh how can you do intrusion detection and intrusion prevention
-effectively so i just showed you guys uh the
-minus plot and the multiplier payload
-if you already analyzed such mirror then you know it's features
-that you can actually try to detect such kind of features in a network package see if it is a metasploit
-payload or not right for known attacks it's a
-easier to block it right but in reality
-there is so much traffic over there even for example you create the features for
-an attack how can you guarantee such features
-are not existing in other kind of a normal traffic
-right and maybe a lot of application will create a similar traffic your features
-will not actually be effective okay so that could be a problem
-and a lot of challenges to intrusion probation is let's see you know you know
-there are so many possibilities you may block the wrong traffic
-right that's called the false positives it's not a real attack but you think it is but you think fine i just don't want
-anybody to protect me i'm going to block everything that is suspicious even it's not a real attack
-okay however that's good for your home if you want to do that but
-can an sp do that no if an sp
-blocks so much traffic you'll be fierce because you know let me tell you
-most of the intrusion detection systems how huge number of possibilities you'll
-be theories and if they deploy that because you know
-you will be blocked a lot okay so that's the problem another one is
-latency right for intrusion detection prevention you know there's so much traffic how much time
-does it take to analyze the traffic and fund the attack so that's a lot of problem here right and but anyways
-people have been thinking about this you know how do we do intrusion prevention and
-detection together efficiently it's an ongoing challenge but uh we are advancing although we still have a lot
-of challenges so again i want why we did to understand
-detection interim prevention here so basically you can see here right you use firewalls now you can do permission
-because you know some more tags you can prevent it for sure and also you can do detection here you
-can see oh my my goodness today the traffic from another computer from non-ip is huge i don't like that i
-think it's bad i think most time it is like a maybe detailed service attack traffic so
-i'm going to block it so in this way because if you find the huge amount of
-traffic from another computer it's not normal you can detect okay that's maybe an attack you can block it right however
-you know if it's a zeod attack means it's new attack then
-the attacker will compromise your computer so this will happen and uh you know that's
-why we need to still study intrusion prevention and detection and
-see if you can find the attacks and but this is the reality
-in the world okay so we have discussed intrusion detection
-and interim permission let's look at some real-world examples so let's look at
-a worm called sql sum worm so what is a worm a worm is one kind of software this
-software can discover vulnerable computers on the internet then
-this warm and diesel malware can send itself to those compromised computers
-and the model will work again on those compromised computers and again
-the malware on those computers will try to find other vulnerable computers on the internet and
-in fact the other computers but you can see here using this approach the worms
-can propagate itself to many many computers right from other one coming to another computer from another event to
-more computers so that's why we call this as a worm because this mirror can
-propagate itself autonomously okay and the sql stem world was the fastest
-internet war ever right in history so this is what happened
-on july 24 2002 microsoft announced okay we found a problem
-now you can see here at that point everybody was not so kind of a sensitive to attacks
-and in 2002 the vulnerability was announced
-then in 2003 this sequel snap worm was
-unleashed and then at this point
-okay somebody found oh there's a sql stand worm there's some mirror running on the
-internet but at that point you know it already affected
-ninety percent of available hosts within 10 minutes okay and you can see how fast this can be
-right because you know as we mentioned that the worm can propagate itself and so what is the worm the worm is a
-mirror so basically the worm will send out the mirror payload the code
-and in a single udp packet so the whole mirror can be put into
-a packet and the whole payload right the whole mirror is only
-376 bytes so
-this payload right this packet is sent to a server that server actually runs
-at a port 1434 okay so basically
-if you didn't upgrade your server the sql server
-then if your server runs at the port
-1434 this maywear will compromise your computer as we did
-in our labs then you can imagine once you know
-this uh mayweather right this worm compromise your computer what will happen right the
-whole thing is compromised okay and uh so that's what happened now how can this shows actually how fast it
-affects everything here you can see right and uh before like that and after the
-warming you can see so many computers were compromised okay and uh
-so how can you stop uh this worm how can you stop this attack of course you need to first patch your
-server so that you know there is no such programming uh error in your super animal because
-there's no such error i mean when the mirror tries to attack
-that port it will not work now you can also use fireball firewall
-to block the traffic targeting port 1434 right
-and uh so that's what you do you can also use vpn anybody has to use vpn to access
-the server right and in this way you know basically you have a firewall blocking everything you have to use vpn
-to access this port number and the network will not work okay and uh so because you know this protein
-silicone is a vinyl introducing uh i mean why not protocol you know so basically you we can actually do the
-intuitive detention permission but at that point nobody cared about the cyber security that's why you know
-there was a huge impact when the major was released on the internet okay
-and uh here we see zero releasing active ids and dps is the only way of
-blocking this form theoretically means okay once you fund the attack and you know it's attack okay and once you see
-the packet you know it's an attack you know that requires some knowledge
-the active means you block the worm basically it means you drop the
-package uh send by this malware right and uh so basically that's
-how you do it but it's ready to challenge if it's a new attack oh it's a new way where you don't know right you
-don't know all the knowledge right and how can you do that that's a big challenge
-so i want to talk about wireshark so word shock is a software program and uh
-the word shock can actually capture network packets into your computer and going out of your
-computer and uh to show all the packets uh of the network
-traffic okay and uh so so let's look at the interface here and
-uh so this is the interface when you click the workshop right you can find it on windows vm and this is the interface
-you will see and then you will see different network cards and uh so
-this workshop can stop all network traffic
-uh going out of this ethernet
-card or coming into this ethernet card okay and
-so when you click it basically workshop will begin to capture all the
+We may deploy a perimeter based intrusion prevention (PIPS) at edge routers. 
+A PIPS can actively block known malicious attacks and perform eero-latency blocking. 
+Zero latency blocking is not easy because there is so much traffic
+going through the router.
+Can you actually inspect all the network packets one by one?
+Sometimes that is impossible. So it's very challenging to perform zero latency blocking.
+
+## Emergence of Intrusion Prevention
+Intuition detection is apprently not enough since it only detects attacks.
+We also want to actually prevent the attack.
+However, three problems are apparent. 
+1. False Positives (false alarm). False alarms are a great challenge to IDS. Given the variety of network traffic, an IDS always generates false alarms, trating normal traffic as attacks. If all traffic generating flase alarms is blocked, the customers for sure will not be happy since their use of Internet will be disrupted.
+2. Denial Of Service – Blocking spoofed hosts. Will you be happy if your computer is blocked even if it is compremised? ISP will have to handle too many phone calls from angry customers.
+3. Latency – Delays in blocking limit effectiveness. It takes time to find the attack and block it. At the time of blocking, maybe it is already too late. 
+Evolution of the technology, and merging of firewall and IDS and IPS functionalitare will help solve these problems.
+
+One thing we need to understand is there is no absolute security. With firewalls, IPS and IDS, computers can still be compromised because all the defense measures cannot detect all the attacks. 
+
+# Real-World Examples
+
+### SQL Slammer worm
+We now see a real-world attack, <a href="https://www.giac.org/paper/gsec/3091/ms-sql-slammer-sapphire-worm/105136">SQL slammer worm</a>.
+On July 24th 2002, Microsoft announced a vulnerability in their SQL server.
+On January 25th 2003, the SQL Slammer worm was unleashed.
+At 05:29:36GMT, the the SQL Slammer worm was detected for the first time.
+It infected more than 90 percent of vulnerable hosts within 10 minutes.
+
+The worm has 376 byte viral payload in a single UDP packet.
+It infects machines with a single packet over UDP/1434.
+UDP is a broadcast protocol. So it is possible to infect multiple hosts with 1 packet.
+
+What is a computer worm? It is a malware program.
+A worm can send itself to a vulnerable server and compromise it.
+Once the worm compromises the server, the worm code runs again, trying to find other vulnerable computers on the Internet.
+Therefore, the worm can propagate itself to many computers, from one computer to another computer.
+The number of infected computers grows exponentially.
+That's why we call this as a worm because this type of malware program can propagate itself autonomously.
+
+### How to stop SQL Slammer?
+The vulenrable SQL server shall be patched. In 2002, patching was not so smart. Today, pacthing is made automatic.
+
+Firewall can be used to block SQL worm packets to UDP/1434. We may use a VPN for access to sensitive services, not exposing servers to the internet.
+
+We may use intrusion detection and prevention techniques. UDP/1434 is a well known protocol. It was a well known vulnerability and known 6 months before exploit. People just did not care!
+IDP signatures can detect and block exploits of this vulnerability.
+The size of the packet is anomalous behavior.
+Zero-Latency Active IDS/IDP is the only way of blocking this worm.
+
+## Wireshark
+let's talk about wireshark.
+It is a software program.
+It can capture network packets coming into and going out of your computer and show all the packets.\
+The picture below is the Wireshark interface.
+There are different network cards.
+For example, we choose to monitor the *Ethernet* card. All packets into and out of this card will be captures.
+
+<img src="../Imgs/Wireshark-Ethernet.png" width=640>
+
+Double click on the network interface, e.g., *Ethernet*. The capturing starts.
+The picture below shows the interface of the capturing window.
 network packages that you can see here this is a all the commands right command menus and
 here is a display filter because there's so much traffic here and you don't want to see all the
 packets sometimes then you can actually set up a filter for example in this case we see mp.source
@@ -250,6 +177,9 @@ in this panel here so this will actually help you understand the protocols so wh
 actually learn internet of particles and this software will help you a lot telling you
 what each field means and what is the the name okay this
 help this is a very useful software okay
+
+<img src="../Imgs/Wireshark-Panels.png" width=640>
+
 so so so this is basically what is going on here and and then we have hands-on lab right so for the hands-on lab
 uh what i want to what we want to do here is you know we are going to deploy uh
 we are going to deploy the knock attack against the windows vm and
