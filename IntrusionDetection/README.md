@@ -8,7 +8,7 @@ We will first define the IDS, and discuss where we are going to deploy it.
 Then we will talk about intrusion prevention.
 As an example of intrusion detection, we are going to introduce a protocol analyzer called Wiresahrk.
 Wireshark is not particularly designed for intrusion detection, but capturing network traffic and showing packet details.
-But we can use Wireshark to demonstrate the principle of searching packet contents for intrusion detection.
+But we can use Wireshark to demonstrate the principle of searching packet contents for intrusion.
 At last we are going to introduce hands-on labs.
 
 ## What is intrusion detection
