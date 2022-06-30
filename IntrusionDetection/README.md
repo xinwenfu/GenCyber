@@ -1,8 +1,10 @@
 # Intrusion Detection and Prevention
 
 We are going to introduce the intrusion detection system (IDS) and intrusion prevention system (IPS). 
-We first look at the big picture of cyber defense. Firewalls are often not enough. That is why we need intrusion detection..
-Oonce we understand the idea of intuition detection, we'll talk about where we are going to deploy intrusion
+We first look at the big picture of cyber defense.
+Firewalls block and filter network traffic based on IPs, port numbers and protocol information and are often not enough for cyber defense.
+That is why we need intrusion detection and prevention.
+Once we understand the idea of intuition detection, we'll talk about where we are going to deploy intrusion
 detection systems.
 Then we will talk about intrusion prevention.
 Intrusion prevention is actually partitially implemented by firewalls.
