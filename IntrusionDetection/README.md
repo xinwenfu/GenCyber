@@ -63,70 +63,35 @@ Each development may have their own network.
 
 <img src="../Imgs/HIDS.png" width=512>
 
-Host based intrusion detection system so a whole space intrusion vegetation
-system basically will stay on a single computer
-and sometimes it could be a software but most of the time we use the software programs as intuition detection systems
-for example i'm not sure if you heard of snort snort is a software package
-which can be used for intrusion detection okay so you can install snort on your computer and the snort will
-collect your network traffic and the snort will analyze your package by entering your
-computer and leaving your computer and and the snort can also actually check
-the log files on your computer and uh snort can also actually for example
-check the processes and assistance running on your computer okay and uh
-so this is what hosts the intrusion detection system will do most of the time but you can see
-here and sometimes you know as uh the science advances right we actually
-refine host the basic intrusion detection system and uh so that they can do more we can protect
-better our computers so here one example is called the protocol involvement what does this mean it means
-when you run your browsing right we are you are using the http
-protocol to browse a website and so the protocol enforcement means we
-want to make sure the particle is properly followed not actually
-changed by the attack okay so where is uh the host based uh
-intuition detection system is on your local computer here so you can see here on each local computer right
-and uh so we have the host-based intrusion detection okay system
-then the next type of intrusion detection system is the network-based intrusion detection
-that you can see here right so we call this network interesting detection basically it means you know
-this system will collect traffic from all
-the computers on the network so basically whatever goes through the cable right
-and these network-based intrusion detection system will dump it and it will analyze
-the network package okay so thought i i said something wrong it doesn't i mean
-an ids doesn't actually collect you know things from your host but it
-will just intercept all network packets passing along the
-network cable okay and uh so you can see here and uh
-send it to unlocked by host so you can see here the host may send actually the ids their logo files of course if hosts
-do that that's okay and uh and also here you can see processes and the system running on the network host
-people you want to actually do that okay and uh so this is about uh the whole the
-network with the intrusion detection system and uh
-so you can see here uh so the reason the advances in intrusion
-detection for the network-based intrusion return system is you know
-at the beginning intrusion detention system is designed for
-owning detection but as time goes we find sometimes we
-have to respond to the attack that's why you can see here
-and uh for recent advances of a network-based intrusion detection system
-we may have active rules means that we're going to do something not just passively
-analyzing the network package we're going to actively shut down
-the trouble making connections okay
-so where is the network based intrusion detection system on the
-internet okay so basically you can see
-the solder is a the intrusion detection system okay the network basic intrusion
-detection system it will just collect the traffic from
-the cable okay and so you can see here you know
-the network intrusion detection system i mean the network-based intrusion detection systems is kind of a
-more than the host of this intriguing detail system as we saw here right and
-uh so basically the meta-worker-based intriguing design
-system will collect traffic maybe logs from anywhere
-within this uh local area networks okay and uh so it's more than
-host based intrusion detection system okay
-now let's look at the third type of intrusion detection system called a perimeter based intrusion detection
-system and so the perimeter-based intrusion detection
-system you can see normally it's located on a rod so you know
-our campus has something called the edge rotor which stays on the edge of our network
-which means all your network packets will go through the router because the router is responsible
-for forwarding your packets to the destination right you must have done how so many edge routers maybe i think maybe
-two or three and routers which are responsible for that purpose
-okay and you can see that's very important and uh we need to protect those edge routers
-right and then because you know those edge rotors can see all incoming
-traffic from internet maybe those traffic are from the bad guys
-so if we put an intrusion detection system at the end
-router that will form our first line of defense
+### Host based intrusion detection system (HIDS)
+A host based intrusion detection system stays on a single computer.
+A HIDS is often a software poragm and protects a single computer. For example, Snort can be used as a HIDS protecting one computer.
+Snort collects network traffic coming into a computer and going out of the computer and analyzes it for intrusion detection.
+A HIDS may also collect and analyze audit and log files, processes and application running on the host.
+
+We may also deploy a host based intrusion prevention system (HIPS) on a host.
+A HIPS may perform protocol enforcement (allowing only allowed services running on the host), stack enforcement (dis-allowing code running in a particular memory region for data storage, called stack), and file checksum monitoring to prevent files from being changed.
+
+### Network-based intrusion detection (HIDS)
+The next type of intrusion detection system is the network-based intrusion detection system.
+A HIDS can be a standalone server, collecting network traffic from computers in the network and analyzing it for intrusion.
+Snort can also be a HIDS if we feed network traffic from computers in a network and on the network cable into Snort for analysis.
+
+<img src="../Imgs/NIDS.png" width=512>
+
+We may also deploy a network based intrusion prevention system (NIPS) within a network.
+A NIPS can use *active* rules to shutdown connections, not just *passively* detecting attacks. 
+It can be integrated into firewalls to disable attackers.
+It can use data mining techiques to analyze the traffic.
+
+### Perimeter based intrusion detection system (PIDS)
+The third type of intrusion detection system is called a perimeter based intrusion detection system.
+It is often put beside a customer network's edge routers.
+The edge routers handles all traffic into the customer network from the Internet and out of the customer network to the Internet.
+The edge routers will form our first line of defense.
+
+<img src="../Imgs/PIDS.png" width=512>
+
 right so basically that's why we need this kind of a perimeter-based intrusion detection
 system and this kind of system will analyze you can you can see network packets
 passing through the gateway the router right and anything you know on the router and uh the logs processes systems on the
