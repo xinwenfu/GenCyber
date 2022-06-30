@@ -649,7 +649,7 @@ Use IDLE to run /home/kali/GenCyber/PythonExampleCode/basics-gc.py on Kali VM
 - What is value of area when the program stops at line 32 during debugging?
 
 ### Hands-on 3
-Try Pygame examples
+Try Pygame examples. Read the code and try to change it so that it is easier to win.
 
 - <a href="https://github.com/mayad21/AirHockey">Air Hockey</a>
 - <a href="https://github.com/justinmarwad/Pong">Pong</a>
