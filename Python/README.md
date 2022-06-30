@@ -649,6 +649,10 @@ Use IDLE to run /home/kali/GenCyber/PythonExampleCode/basics-gc.py on Kali VM
 - What is value of area when the program stops at line 32 during debugging?
 
 ### Hands-on 3
+- Run the chat server on Windows VM C:\Tools\vchat\Server\vchat.exe 
+- Change IP address in the Python code /home/kali/GenCyber/vchat/Client/client.py on Kali VM so that there is no need to enter the IP address to use the chat server
+
+### Hands-on 3
 Try Pygame examples. Read the code and try to change it so that it is easier to win.
 
 - <a href="https://github.com/mayad21/AirHockey">Air Hockey</a>
