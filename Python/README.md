@@ -639,3 +639,14 @@ The *from* operator imports items from a module.
 ```
 from modulename import itemname
 ```
+
+## Hands-on 
+### Hands-on 1 IDLE Running Code
+Use IDLE to run /home/kali/GenCyber/PythonExampleCode/basics-gc.py on Kali VM
+
+### Hands-on 2
+- Set a breakpoint at line 32 of basics-gc.py
+- What is value of area when the program stops at line 32 during debugging?
+
+### Hands-on 3
+Try Pygame examples
