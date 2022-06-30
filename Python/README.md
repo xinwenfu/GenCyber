@@ -651,6 +651,7 @@ Use IDLE to run /home/kali/GenCyber/PythonExampleCode/basics-gc.py on Kali VM
 ### Hands-on 3
 - Run the chat server on Windows VM C:\Tools\vchat\Server\vchat.exe 
 - Change IP address in the Python code /home/kali/GenCyber/vchat/Client/client.py on Kali VM so that there is no need to enter the IP address to use the chat server
+  - To get the IP  address of Windows VM, enter *ipconfig* within a Windows console
 
 ### Hands-on 4
 Try Pygame game examples. Read the code and try to change it so that it is easier to win.
