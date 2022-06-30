@@ -2,16 +2,13 @@
 
 We are going to introduce the intrusion detection system (IDS) and intrusion prevention system (IPS). 
 We first look at the big picture of cyber defense.
-Firewalls block and filter network traffic based on IPs, port numbers and protocol information and are often not enough for cyber defense.
-That is why we need intrusion detection and prevention.
-Once we understand the idea of intuition detection, we'll talk about where we are going to deploy intrusion
-detection systems.
+Firewalls block and filter network traffic based on IPs, port numbers and protocol information in packet headers, and are often not enough for cyber defense.
+That is why we need intrusion detection, which seaches packet contents for signs of intrusion, and intrusion prevention, which acts on detected attacks by intrusion detection.
+We will first define the IDS, and discuss where we are going to deploy it.
 Then we will talk about intrusion prevention.
-Intrusion prevention is actually partitially implemented by firewalls.
-But we can add the intrusion prevention functionality to an intrusion detection system (IDS), shutting down detected attacks.
 As an example of intrusion detection, we are going to introduce a protocol analyzer called Wiresahrk.
-Wireshark is designed for not intrusion detection, but capturing network traffic and showing packet details.
-But you can use Wireshark to demonstrate the principle of intrusion detection.
+Wireshark is not particularly designed for intrusion detection, but capturing network traffic and showing packet details.
+But we can use Wireshark to demonstrate the principle of searching packet contents for intrusion detection.
 At last we are going to introduce the hands-on labs.
 
 ## What is intrusion detection
