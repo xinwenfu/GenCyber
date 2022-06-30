@@ -151,39 +151,30 @@ For example, we choose to monitor the *Ethernet* card. All packets into and out 
 <img src="../Imgs/Wireshark-Ethernet.png" width=640>
 
 Double click on the network interface, e.g., *Ethernet*. The capturing starts.
-The picture below shows the interface of the capturing window.
-network packages that you can see here this is a all the commands right command menus and
-here is a display filter because there's so much traffic here and you don't want to see all the
-packets sometimes then you can actually set up a filter for example in this case we see mp.source
-this means okay and uh within the packet right the source ip is a 10
-delta 0.2.16 and here the destination ip is the
-10.0.2 the 13 here so you only want to see
-okay a packet which has such a kind of a source mp and that system ipa or
-the other way okay so that this is what this display filter means you just want
-to show the traffic right with such kind of a packet of headers you don't want to
-see other traffic and then in this panel here we show the details of a
-selected packet header so when you click a package in this panel here and it will
-show you actually here the headers of those
-packets that's a single package and you can see here there's a lot of headers here so you
-have to actually come to college to learn everything here okay but if you actually
-click the packet it'll also show you the banner content so what is the
-real data within the packet of course right the headers
-here are part of the banner content but as you know
-you know most of the data here have minions some of the data here refer to the
-headers each header has their own meanings each
-maybe data here is a field within the headers so
-what word shark does best is it will show you what each data means
-in this panel here so this will actually help you understand the protocols so when you
-actually learn internet of particles and this software will help you a lot telling you
-what each field means and what is the the name okay this
-help this is a very useful software okay
+The picture below shows the interface of the capturing window, command menus, display filter. listing of
+captured packets, details of selected packet header, and binary packet content.
 
 <img src="../Imgs/Wireshark-Panels.png" width=640>
 
-so so so this is basically what is going on here and and then we have hands-on lab right so for the hands-on lab
-uh what i want to what we want to do here is you know we are going to deploy uh
-we are going to deploy the knock attack against the windows vm and
-i want you guys to use workshop to capture the attack traffic and uh so the question
-for you is that can you actually find the attacker package send from kelly ram to windows vm so that's basically what
-we're going to do with the intrusion detection here i think that's all let me actually stop
-recording
+The display filter is useful because there's so much traffic sometimes.
+You don't want to see all the packets sometimes.
+You can actually set up a filter to show what you want to see.
+In the filer expression, ip.source refers to the source ip (10.0.2.16).
+The destination ip is the 10.0.2.13.
+
+The details of a selected packet header are shown in a panel.
+When you click a packet, Wireshark will show you the headers of the packet.
+You can see here there's a lot of headers.
+A header can have many fields. For example, the IP header has the source and destination IP addresses.
+That is one power of Wireshark.
+It shows your the names of those fields to help you understand the protocols a bit easier.
+When you learn the Internet, Wireshark will help you a lot telling you
+what each field means and what is the the name.
+
+The binary content of the entire packet is shown in the bottom panel, including all the headers.
+
+## Hands-on
+Deploy knock attack against Windows VM. 
+Use Wireshark to capture the attack traffic.
+Can you find the attack packets sent from Kali VM to Windows VM?
+
