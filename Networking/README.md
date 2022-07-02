@@ -10,7 +10,7 @@ ls # show files in current workng folder
 ```
 pwd # show the name of current working folder 
 ```
-5. <a href="https://man7.org/linux/man-pages/man1/cd.1p.html">cd</>: change the working folder to another folder
+5. <a href="https://man7.org/linux/man-pages/man1/cd.1p.html">cd</a>: change the working folder to another folder
 ```
 cd .. # go to the parent folder
 cd GenCyber # go to the GenCyber sub-folder of current working folder
