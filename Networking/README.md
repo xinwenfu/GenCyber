@@ -7,17 +7,20 @@ Refer to <a href="https://linuxconfig.org/linux-commands-cheat-sheet">Linux comm
 ls # show files in current workng folder
 ```
 where # indicates a comment and does not need to be entered
-3. <a href="https://man7.org/linux/man-pages/man1/pwd.1.html">pwd</a>: print full path name of current working folder
+2. <a href="https://man7.org/linux/man-pages/man1/pwd.1.html">pwd</a>: print full path name of current working folder
 ```
 pwd # show the name of current working folder 
 ```
-5. <a href="https://man7.org/linux/man-pages/man1/cd.1p.html">cd</a>: change the working folder to another folder
+3. <a href="https://man7.org/linux/man-pages/man1/cd.1p.html">cd</a>: change the working folder to another folder
 ```
-cd .. # go to the parent folder
-cd GenCyber # go to the GenCyber sub-folder of current working folder
+cd .. # go to parent folder of current working folder
+cd GenCyber # go to the GenCyber folder, which is a sub-folder of current working folder
 cd /home/kali # go to folder /home/kali, which is a full path name
 ```
-6. <a href="https://man7.org/linux/man-pages/man1/mkdir.1.html">mkdir</a>: create folders
+4. <a href="https://man7.org/linux/man-pages/man1/mkdir.1.html">mkdir</a>: create folders
+```
+mkdir 
+```
 7. <a href="https://man7.org/linux/man-pages/man1/rm.1.html">rm</a>: remove files
 8. <a href="https://linux.die.net/man/1/mv">mv</a>: move files or folders
 9. <a href="https://man7.org/linux/man-pages/man1/cp.1.html">cp</a>: copy files or folders
