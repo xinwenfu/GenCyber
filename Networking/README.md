@@ -1,6 +1,7 @@
 ## Hands-on
 
 ### Hands-on 1: Common Linux command line terminal commands
+Many Linux applications may not have graphical user interfaces. You may have to run them within a terminal.
 Refer to <a href="https://linuxconfig.org/linux-commands-cheat-sheet">Linux commands cheat sheet</a>. Try the following Linux command line terminal commands and understand what they do. *Terminal Emulator* is Kali Linux's terminal program. 
 - Click the dragon icon at the top left cornor of Kali Linux desktop to show applications
 
@@ -56,7 +57,9 @@ ping 192.168.1.19 # ping ip address of 192.168.1.19
 ```
 
 ### Hands-on 2: Common Windows console commands
-Press the Windows *Start* icon and search cmd. Click *Command Prompt* to start Windows console. Refer to <a href="https://www.thomas-krenn.com/en/wiki/Cmd_commands_under_Windows">Cmd commands under Windows</a>. No comment is allowed to follow commands immediatly within Windows console.
+Most operations of Windows console commands can be completed with *File Explorer* of Windows. However, knowing Windows console (cmd) commands are still useful in some cases. For examples, commands applications are written for Windows console. Running console applications within a console may be more convenient even if you can still run them with File Explorer.
+Press the Windows *Start* icon and search cmd. Click *Command Prompt* to start Windows console. 
+Refer to <a href="https://www.thomas-krenn.com/en/wiki/Cmd_commands_under_Windows">Cmd commands under Windows</a>. No comment is allowed to follow commands immediatly within Windows console.
 <img src="../Imgs/Windows-Terminal.png" width=640>
 1. dir: list folder content
 ```
@@ -88,3 +91,13 @@ type victim.c
 ```
 Show the content of victim.c
 
+### Hands-on 3: Run chat server and client from terminal
+1. Please run the chat server (located in the folder of C:\Tools\vchat\Server) on Windows VM from Windows console 
+2. Please run the chat client (located in the folder of /home/kali/GenCyber/vchat/Client) on Kali VM from terminal
+3. Chat with another student
+
+### Hands-on 4: Use Wireshark to check packet contents
+1. Read the short <a href="https://github.com/xinwenfu/GenCyber/tree/main/IntrusionDetection#wireshark">introduction to Wireshark</a>.
+2. Use Wireshark to check packet content.
+
+<img src="../Imgs/IP.gif" width=512>
