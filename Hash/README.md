@@ -52,7 +52,7 @@ john --show mypasswd
 - Cracked passwords are stored in $JOHN/john.pot (~/.john/john.pot in kali) in a specific format.
 - Delete john.pot in order to crack again
 ```
-rm ~/.john/john.pot)
+rm ~/.john/john.pot
 ```
 
 - Test security of your own password
