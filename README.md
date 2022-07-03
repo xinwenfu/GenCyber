@@ -4,7 +4,7 @@ Here are the lectures and hands-on labs for the GenCyber camp at UMass Lowell. T
 1. <a href="https://github.com/xinwenfu/GenCyber/tree/main/Python">Lecture 1</a> Python programming
 2. <a href="https://github.com/xinwenfu/GenCyber/tree/main/SoftwareSecurity">Lecture 2</a> Pentration testing and software security	
 3. <a href="https://github.com/xinwenfu/GenCyber/tree/main/Networking">Lecture 3</a> Introduction to networking
-4. <a href="https://github.com/xinwenfu/GenCyber/tree/main/NetworkAttacks">Lecture 3</a> Network attacks
+4. <a href="https://github.com/xinwenfu/GenCyber/tree/main/NetworkAttacks">Lecture 4</a> Network attacks 
 5. <a href="https://github.com/xinwenfu/GenCyber/tree/main/Firewall">Lecture 5</a> Firewall		
 6. <a href="https://github.com/xinwenfu/GenCyber/tree/main/IntrusionDetection">Lecture 6</a> Wireshark and Intrusion Detection System (IDS)
 7. <a href="https://github.com/xinwenfu/GenCyber/tree/main/SymmetricKeyCrypto">Lecture 7</a> Symmetric key crypto																				
