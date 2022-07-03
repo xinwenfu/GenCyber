@@ -55,4 +55,3 @@ openssl aes-256-cbc -d -a -in secrets.txt.enc -out secrets.txt.new -iter 1000 -k
 
 ## References
 - <a href="https://cryptii.com/pipes/caesar-cipher">Caesar cipher tools</a>
-1. 
