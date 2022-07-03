@@ -14,7 +14,8 @@ Bw kzcap bpm zmjmttqwv wvkm ivl nwz itt, bpm MUXQZM qa kwvabzckbqvo i aqvqabmz v
 
 #### Tools to use for decryption
 - <a href="https://www.dcode.fr/frequency-analysis">Frequency analysis</a>
-- <a href="https://www.usna.edu/Users/cs/wcbrown/courses/si110AY13S/resources/ceasar-shift/shiftTable.html">Ceasar Shift Table</a>
+- <a href="https://www.usna.edu/Users/cs/wcbrown/courses/si110AY13S/resources/ceasar-shift/shiftTable.html">Ceasar shift table</a>
+- <a href="https://cryptii.com/pipes/caesar-cipher">Caesar cipher tools</a>
 
 What is the plaintext message?
 
@@ -55,4 +56,3 @@ openssl aes-256-cbc -d -a -in secrets.txt.enc -out secrets.txt.new -iter 1000 -k
 - The other person receives encrypted messages and decrypts
 
 ## References
-- <a href="https://cryptii.com/pipes/caesar-cipher">Caesar cipher tools</a>
