@@ -50,7 +50,26 @@ ifconfig # show information of network interfaces; what is ip address of your Ka
 ```
 less encrypt.txt # show content of encrypt.txt; press q to quit
 ```
+10. <a href="https://linux.die.net/man/8/ping">ping</a>:	ping IP addresses and see if they are active
+```
+ping 192.168.1.19 # ping ip address of 192.168.1.19
+```
 
 ### Hands-on 2: Common Windows console commands
-
+Press the Windows *Start* icon and search cmd. Click *Command Prompt* to start Windows console. Refer to <a href="https://www.thomas-krenn.com/en/wiki/Cmd_commands_under_Windows">Cmd commands under Windows</a>. No comment is allowed to follow commands immediatly within Windows console.
 <img src="../Imgs/Windows-Terminal.png" width=640>
+1. dir: list folder content
+```
+dir 
+```
+Show content of current working folder.
+2. cd:	change directory
+```
+cd c:\Tools 
+```
+Change working folder to c:\Tools.
+3. ipconfig: show network interface settings 
+```
+ipconfig 
+```
+Show all network interface settings.
