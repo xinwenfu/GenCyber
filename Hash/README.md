@@ -33,4 +33,31 @@ echo -n "message" | openssl sha1 -hmac "key"
 ```
 echo -n "received-message" | openssl sha1 -hmac "key"
 ```
-Compare newly computed hmac with the received hmac
+- Compare newly computed hmac with the received hmac
+
+## Hands-on 3: Password Cracking
+John the ripper---password cracking tool. Refer to <a href="https://www.openwall.com/john/doc/EXAMPLES.shtml">Example use</a>
+
+Run the following command, where mypasswd is the password hash file in the required format, to crack password hashes and obtain original password.
+```
+john mypasswd
+```
+This command will try the *single crack* mode first, then use a wordlist (i.e. a dictionary of password; default password list at /usr/share/john/password.lst), and finally go for "incremental" mode
+Please refer to MODES for more information on these modes.
+
+If you ran the command before and got some passwords cracked, use the following command to show cracked passwords
+```
+john --show mypasswd
+```
+- Cracked passwords are stored in $JOHN/john.pot (~/.john/john.pot in kali) in a specific format.
+- Delete john.pot in order to crack again
+```
+rm ~/.john/john.pot)
+```
+
+- Test your own password
+Create your password hash
+```
+openssl passwd -1 -salt RnYtvEVV abc123
+```
+Replace a hash in mypasswd with the output above
