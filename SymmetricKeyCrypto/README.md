@@ -1,4 +1,5 @@
-## Hands-on 1: Encryption with AES
+## Hands-on
+### Hands-on 1: Encryption with AES
 Encrypt a message like "OpenSSL"
 ```
 echo "OpenSSL" | openssl enc -iter 1000 -aes-256-cbc -a -k hello
@@ -9,3 +10,11 @@ echo "OpenSSL" | openssl enc -iter 1000 -aes-256-cbc -a -k hello
 Without -k hello, the command will ask for a password, which will be translated into a key 
 - *-iter 1000* is related to creating a strong key from the password 
 - *-a*: means BASE64 output
+
+### Hands-on 2: Decryption with AES
+```
+echo "U2FsdGVkX1+lVCnMEVpKXisqA1IlycMvDFkv72ILasg=" | openssl enc -aes-256-cbc -iter 1000 -a -d -k hello
+```
+- *-d*: means decryption
+- *-a*: means BASE64 encoded input
+- *-k hello*: hello was used to generate the key
