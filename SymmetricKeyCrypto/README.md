@@ -2,7 +2,8 @@
 
 ### Hands-on 1: Decipher Caesor cipher encrypted text
 
-#### The text is encypted with Caesar Cipher of a particular shift. Ciphertext is shown below.
+#### Ciphertext
+The text is encypted with Caesar Cipher of a particular shift. Ciphertext is shown below.
 ```
 Qb qa i xmzqwl wn kqdqt eiza qv bpm oitifg. I jzidm ittqivkm wn cvlmzozwcvl nzmmlwu nqopbmza pia kpittmvoml bpm bgzivvg ivl wxxzmaaqwv wn bpm iemawum OITIKBQK MUXQZM.
 
