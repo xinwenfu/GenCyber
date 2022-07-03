@@ -6,7 +6,7 @@ echo "OpenSSL" | openssl enc -iter 1000 -aes-256-cbc -a -k hello
 ```
 - *echo "OpenSSL"*: display a message, in this case, "OpenSSL"
 - *|*:  with the pipe character ‘|’, the output of one command (*echo "OpenSSL"* in this case) acts as input to another command (*openssl ...* in this case)
-- *<a href="https://wiki.openssl.org/index.php/Command_Line_Utilities">openssl</a> <a href="https://wiki.openssl.org/index.php/Enc">enc</a>*: *Enc* is used for block and stream ciphers using password based keys or explicitly provided keys. Can used for Base64 encoding or decoding.
+- *<a href="https://wiki.openssl.org/index.php/Command_Line_Utilities">openssl</a> <a href="https://wiki.openssl.org/index.php/Enc">enc</a>*: *Enc* is used for block and stream ciphers using password based keys or explicitly provided keys. Can be used for Base64 encoding or decoding.
 - *-k hello*: The key will be generated from hello 
 Without -k hello, the command will ask for a password, which will be translated into a key 
 - *-iter 1000* is related to creating a strong key from the password 
