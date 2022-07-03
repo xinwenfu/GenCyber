@@ -55,8 +55,8 @@ john --show mypasswd
 rm ~/.john/john.pot)
 ```
 
-- Test your own password
-Create your password hash
+- Test security of your own password
+Create your password hash by replacing abc123 with your own password
 ```
 openssl passwd -1 -salt RnYtvEVV abc123
 ```
