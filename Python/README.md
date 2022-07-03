@@ -9,7 +9,7 @@ What is a programming language? Why do we need it? A computer has accessaries su
 
 <img src="../Imgs/LanguageLevel.png" width=400>
 
-The hardware and CPU can only accept binary commands and data in zeros and ones. Therefore, the very low level programming language is machine language. Apparently machine language is too hard for everybody because it is hard to remember commands in zeros and ones. 
+The hardware and CPU of a computer can only accept binary commands and data in zeros and ones. Therefore, the very low level programming language is machine language. Apparently machine language is too hard for everybody because it is hard to remember commands in zeros and ones. 
 
 That's why people invented assembly language, which is much simpler than machinen language. In assembly language, meaningful names called mnemonics are given to commands so that they are easy to remember. Since the hardware and CPU can only understand machine lanauage, a program in assembly language has to be translated into machine language by software called *assembler* before they are actually run. 
 However, assembly language is still super hard for general people since you need to understand a lot of hardware details to really use it. But if our goal of programming is to process data and do computation, why should we understand hardware? Really not necessary sometimes.
