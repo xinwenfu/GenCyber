@@ -1,9 +1,9 @@
 ## Hands-on
 
-### Hands-on 1: Decipher Caesar cipher encrypted text
+### Hands-on 1: Decipher Caesor cipher encrypted text
 
 #### Ciphertext
-The text is encypted with Caesar Cipher of a particular shift. Ciphertext is shown below.
+The plaintext is English paragraphs, encypted with Caesar Cipher of a particular shift. Ciphertext is shown below.
 ```
 Qb qa i xmzqwl wn kqdqt eiza qv bpm oitifg. I jzidm ittqivkm wn cvlmzozwcvl nzmmlwu nqopbmza pia kpittmvoml bpm bgzivvg ivl wxxzmaaqwv wn bpm iemawum OITIKBQK MUXQZM.
 
@@ -13,10 +13,9 @@ Bw kzcap bpm zmjmttqwv wvkm ivl nwz itt, bpm MUXQZM qa kwvabzckbqvo i aqvqabmz v
 ```
 
 #### Tools to use for decryption
-- <a href="https://www.dcode.fr/frequency-analysis">Frequency analysis</a>
-- <a href="https://cryptii.com/pipes/caesar-cipher">Caesar cipher tools</a>
+- <a href="https://www.dcode.fr/frequency-analysis">frequency-analysis</a>
 
-What is the plaintext?
+What is the plaintext message?
 
 ### Hands-on 2: Encryption with AES
 Encrypt a message like "OpenSSL"
@@ -55,4 +54,5 @@ openssl aes-256-cbc -d -a -in secrets.txt.enc -out secrets.txt.new -iter 1000 -k
 - The other person receives encrypted messages and decrypts
 
 ## References
+- <a href="https://cryptii.com/pipes/caesar-cipher">Caesar cipher tools</a>
 1. 
