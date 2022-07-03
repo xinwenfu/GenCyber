@@ -19,9 +19,22 @@ cd /home/kali # go to folder /home/kali, which is a full path name
 ```
 4. <a href="https://man7.org/linux/man-pages/man1/mkdir.1.html">mkdir</a>: create folders
 ```
-mkdir 
+mkdir mine # create a folder called mine in the current working folder
 ```
-7. <a href="https://man7.org/linux/man-pages/man1/rm.1.html">rm</a>: remove files
-8. <a href="https://linux.die.net/man/1/mv">mv</a>: move files or folders
-9. <a href="https://man7.org/linux/man-pages/man1/cp.1.html">cp</a>: copy files or folders
-10. <a href="https://man7.org/linux/man-pages/man8/ifconfig.8.html">ifconfig</a>: configure or show info of a network interface
+5. <a href="https://man7.org/linux/man-pages/man1/rm.1.html">rm</a>: remove files
+```
+rm test # remove a file called test
+rm -r mine # remove a folder called mine and all its subfolders in the current working folder
+```
+6. <a href="https://linux.die.net/man/1/mv">mv</a>: move files or folders
+```
+mv test1 tset2 # move test1 to test2; no test1 any more
+```
+7. <a href="https://man7.org/linux/man-pages/man1/cp.1.html">cp</a>: copy files or folders
+```
+cp test2 test3 # copy test2 to test3; test2 still exists
+```
+8. <a href="https://man7.org/linux/man-pages/man8/ifconfig.8.html">ifconfig</a>: configure or show info of a network interface
+```
+ifconfig # show information of network interfaces
+```
