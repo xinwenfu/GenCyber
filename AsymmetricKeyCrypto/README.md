@@ -24,12 +24,39 @@ openssl rsa -in privkey.pem -outform PEM -pubout -out pubkey.pem
 ```
 echo "Welcome to LinuxCareer.com" > encrypt.txt
 ```
-- *<a href="https://www.guru99.com/linux-redirection.html"> > </a>*: 
-- Use OpenSSL and RSA to encrypt a message
-The message can be saved in a file
-- Use OpenSSL and RSA to decrypt the ciphertext
+- *<a href="https://www.guru99.com/linux-redirection.html"> > </a>*: Redirect the output, in this case to a file, encrypt.txt
+
+4. Encryption
+```
+openssl rsautl -encrypt -inkey pubkey.pem -pubin -in encrypt.txt -out encrypt.dat
+```
+- *<a href="https://linux.die.net/man/1/rsautl">rsautl</a>*: sign, verify, encrypt and decrypt data using the RSA algorithm
+- *-encrypt*: encrypt the input data using an RSA public key
+- *-inkey file*: input key file
+- *-pubin*: input file is an RSA public key
+- *-in filename*: input filename to read
+- *-out filename*: output filename to write to
+
+5. Encode the binary ciphertext with base64
+Encoding with base64 is not necessary, but needed for sending the ciphertext through our chat server
+```
+openssl enc -base64 -in encrypt.dat -out encrypt.dat.base64
+```
+- encrypt.dat is binary 
+- encrypt.dat.base64 is printable
+
+6. Decryption with RSA
+- Decode encrypt.dat.base64 and get the binary ciphertext 
+```
+openssl enc -base64 -d -in encrypt.dat.base64 -out encrypt.dat
+```
+- Decryption
+```
+openssl rsautl -decrypt -inkey privkey.pem -in encrypt.dat -out new_encrypt.txt
+```
 
 ### Hands-on 2: RSA Encrypted Message through Chat Server
 - Use OpenSSL and RSA to encrypt a message
+  - The message can be saved in a file first
 - Send the message via the chat server
 - Use OpenSSL and RSA to decrypt the ciphertext
