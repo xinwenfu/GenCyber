@@ -63,11 +63,13 @@ Press the Windows *Start* icon and search cmd. Click *Command Prompt* to start W
 dir 
 ```
 Show content of current working folder.
+
 2. cd:	change directory
 ```
 cd c:\Tools 
 ```
 Change working folder to c:\Tools.
+
 3. ipconfig: show network interface settings 
 ```
 ipconfig 
