@@ -6,7 +6,7 @@
 4. <a href="https://github.com/xinwenfu/GenCyber/tree/main/NetworkAttacks">Lecture 3</a> Network attacks
 5. <a href="https://github.com/xinwenfu/GenCyber/tree/main/Firewall">Lecture 5</a> Firewall		
 6. <a href="https://github.com/xinwenfu/GenCyber/tree/main/IntrusionDetection">Lecture 6</a> Wireshark and Intrusion Detection System (IDS)
-7. <a href="">Lecture 7</a> Symmetric key crypto																				
+7. <a href="https://github.com/xinwenfu/GenCyber/tree/main/SymmetricKeyCrypto">Lecture 7</a> Symmetric key crypto																				
 8. <a href="">Lecture 8</a> Asymmetric key crypto																			
 9. <a href="">Lecture 9</a> Checksum and hash																				
 10. <a href="">Lecture 10</a>	Digital signature																		
