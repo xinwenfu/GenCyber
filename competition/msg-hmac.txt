@@ -1,1 +1,0 @@
-HMAC-SHA256(msg.txt)= 3bcfeb56b746d338fadcacfc3373ee99444fb208854ea7a1030eb499938496ab
