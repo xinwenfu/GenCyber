@@ -75,3 +75,16 @@ Change working folder to c:\Tools.
 ipconfig 
 ```
 Show all network interface settings.
+
+4. ping: ping IP addresses and see if they are active
+```
+ping 192.168.1.22 
+```
+ping ip address of 192.168.1.22
+
+5. type:	show content of text files
+```
+type victim.c
+```
+Show the content of victim.c
+
