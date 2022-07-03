@@ -1,6 +1,6 @@
 ## Hands-on
 
-### Hands-on 1: Decipher Caesor cipher encrypted text
+### Hands-on 1: Decipher Caesar cipher encrypted text
 
 #### Ciphertext
 The text is encypted with Caesar Cipher of a particular shift. Ciphertext is shown below.
@@ -13,7 +13,7 @@ Bw kzcap bpm zmjmttqwv wvkm ivl nwz itt, bpm MUXQZM qa kwvabzckbqvo i aqvqabmz v
 ```
 
 #### Tools to use for decryption
-- <a href="https://www.dcode.fr/frequency-analysis">frequency-analysis</a>
+- <a href="https://www.dcode.fr/frequency-analysis">Frequency analysis</a>
 - <a href="https://cryptii.com/pipes/caesar-cipher">Caesar cipher tools</a>
 
 What is the plaintext?
