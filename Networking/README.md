@@ -44,5 +44,13 @@ cp test2 test3 # copy test2 to test3; test2 still exists
 ```
 8. <a href="https://man7.org/linux/man-pages/man8/ifconfig.8.html">ifconfig</a>: configure or show info of a network interface
 ```
-ifconfig # show information of network interfaces
+ifconfig # show information of network interfaces; what is ip address of your Kali VM?
 ```
+9. <a href="https://man7.org/linux/man-pages/man1/less.1.html">less</a>: Show content of a file
+```
+less encrypt.txt # show content of encrypt.txt; press q to quit
+```
+
+### Hands-on 2: Common Windows console commands
+
+<img src="../Imgs/Windows-Terminal.png" width=640>
