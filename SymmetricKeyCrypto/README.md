@@ -1,4 +1,4 @@
-Hands-on 1: Encryption with AES
+## Hands-on 1: Encryption with AES
 Encrypt a message like "OpenSSL"
 ```
 echo "OpenSSL" | openssl enc -iter 1000 -aes-256-cbc -a -k hello
