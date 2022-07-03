@@ -60,7 +60,9 @@ ping 192.168.1.19 # ping ip address of 192.168.1.19
 Most operations of Windows console commands can be completed with *File Explorer* of Windows. However, knowing Windows console (cmd) commands are still useful in some cases. For examples, commands applications are written for Windows console. Running console applications within a console may be more convenient even if you can still run them with File Explorer.
 Press the Windows *Start* icon and search cmd. Click *Command Prompt* to start Windows console. 
 Refer to <a href="https://www.thomas-krenn.com/en/wiki/Cmd_commands_under_Windows">Cmd commands under Windows</a>. No comment is allowed to follow commands immediatly within Windows console.
+
 <img src="../Imgs/Windows-Terminal.png" width=640>
+
 1. dir: list folder content
 ```
 dir 
