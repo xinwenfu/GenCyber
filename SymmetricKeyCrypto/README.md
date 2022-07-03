@@ -13,7 +13,7 @@ Bw kzcap bpm zmjmttqwv wvkm ivl nwz itt, bpm MUXQZM qa kwvabzckbqvo i aqvqabmz v
 ```
 
 #### Tools to use for decryption
-- <a href="https://www.dcode.fr/frequency-analysis">frequency-analysis</a>
+- <a href="https://www.dcode.fr/frequency-analysis">Frequency analysis</a>
 
 What is the plaintext message?
 
