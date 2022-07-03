@@ -25,8 +25,7 @@ Replace *received-message* with the actual message that was sent over
 ```
 echo -n "message" | openssl sha1 -hmac "key"
 ```
-  - sha1: use hash algorithm sha1 
-  - "key": choose whatever key
+*sha1* refers to the sha1 hash algorithm; "key" is the chosen key.
 - Send the message and hmac to the chat server in the format of message>>>hmac or your chosen format 
 
 #### Another student with the key as Receiver
