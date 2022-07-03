@@ -1,7 +1,7 @@
 ## Hands-on
 
 ### Hands-on 1: Common Linux command line terminal commands
-Refer to <a href="https://linuxconfig.org/linux-commands-cheat-sheet">Linux commands cheat sheet</a>. Try the following Linux command line terminal commands and understand what they do. *Terminal Enumator* is Kali Linux's terminal program. 
+Refer to <a href="https://linuxconfig.org/linux-commands-cheat-sheet">Linux commands cheat sheet</a>. Try the following Linux command line terminal commands and understand what they do. *Terminal Emulator* is Kali Linux's terminal program. 
 1. <a href="https://man7.org/linux/man-pages/man1/touch.1.html">touch</a>: change file timestamps or create a new file
 ```
 touch test1 # create an empty file called test1
