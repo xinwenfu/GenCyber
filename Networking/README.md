@@ -100,6 +100,6 @@ Show the content of victim.c
 
 ### Hands-on 4: Use Wireshark to check packet contents
 1. Read the short <a href="https://github.com/xinwenfu/GenCyber/tree/main/IntrusionDetection#wireshark">introduction to Wireshark</a>.
-2. Use Wireshark to check packet content.
+2. Use Wireshark to check packet content. Can you find source IP address and destination IP address shown in the figrue below in Wireshark?
 
 <img src="../Imgs/IP.gif" width=512>
