@@ -60,4 +60,4 @@ Create your password hash by replacing abc123 with your own password
 ```
 openssl passwd -1 -salt RnYtvEVV abc123
 ```
-Replace a hash in mypasswd with the output above
+*-1* specifies password hash formt. Replace a hash in mypasswd with the output above and run john the ripper again.
