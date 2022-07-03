@@ -1,6 +1,6 @@
 # GenCyber Camp at UMass Lowell
 
-Here are the lectures and hands-on labs for the GenCyber progrgam. The hands-on labs are at the end of a lecture. Some lectures are missing although all hands-on labs are over there.
+Here are the lectures and hands-on labs for the GenCyber camp at UMass Lowell. The hands-on labs are at the end of a lecture. Some lectures are missing although all hands-on labs are over there.
 1. <a href="https://github.com/xinwenfu/GenCyber/tree/main/Python">Lecture 1</a> Python programming
 2. <a href="https://github.com/xinwenfu/GenCyber/tree/main/SoftwareSecurity">Lecture 2</a> Pentration testing and software security	
 3. <a href="https://github.com/xinwenfu/GenCyber/tree/main/Networking">Lecture 3</a> Introduction to networking
