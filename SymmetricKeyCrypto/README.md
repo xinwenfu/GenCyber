@@ -3,7 +3,7 @@
 ### Hands-on 1: Decipher Caesor cipher encrypted text
 
 #### Ciphertext
-The plaintext is English paragraphs, encypted with Caesar Cipher of a particular shift. Ciphertext is shown below.
+The plaintext is English paragraphs, encrypted with Caesar Cipher of a particular shift. Ciphertext is shown below.
 ```
 Qb qa i xmzqwl wn kqdqt eiza qv bpm oitifg. I jzidm ittqivkm wn cvlmzozwcvl nzmmlwu nqopbmza pia kpittmvoml bpm bgzivvg ivl wxxzmaaqwv wn bpm iemawum OITIKBQK MUXQZM.
 
