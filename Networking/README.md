@@ -2,7 +2,7 @@
 
 ### Hands-on 1: Common Linux command line terminal commands
 Refer to <a href="https://linuxconfig.org/linux-commands-cheat-sheet">Linux commands cheat sheet</a>. Try the following Linux command line terminal commands and understand what they do. *Terminal Emulator* is Kali Linux's terminal program. 
-- Click the dragon icon on Kali Linux desktop to show applications
+- Click the dragon icon at the top left cornor of Kali Linux desktop to show applications
 
 <img src="../Imgs/Kali-Terminal.png" width=640>
 
