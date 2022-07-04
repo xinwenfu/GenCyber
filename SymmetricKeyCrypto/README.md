@@ -149,7 +149,7 @@ DES processes a block of 64 bits (8 bytes) messsage each time.
 The block first goes throughh an initial permutation and then 16 identical rounds of function application, each using different 48 bits of key generated from a master key of 56 bits. The function application involves substitution and permutation.
 After final permutation, the ciphertext is produced.
 
-<img src="../Imgs/DES.jpg" width=128>
+<img src="../Imgs/DES.jpg" width=256>
 
 ds
 so ds is also called a block ciphers
