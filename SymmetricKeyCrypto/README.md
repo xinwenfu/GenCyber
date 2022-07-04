@@ -134,24 +134,11 @@ In Columnar cipher, the keyword is the encryption and decryption key.
 
 <img src="../Imgs/SecretKeyCrypto.png" width=512>
 
-
-so in sql key crypto
-the encryption key is the same as
-decryption key
-of course
-what is a modern
-secret key crypto
-the basic technique is
-we are going to use substitutions
-and permutations
-interleaved
-and
-so we are going to perform multiple
-applications of interleaved
-substitutions and the permutations
-okay so this is a
-the picture to show this process so
-the plain text message is on the left it
+The basic technique of secret key crypto is
+We are going to perform multiple applications of interleaved
+substitutions and the permutations to scamble the plaintext.
+The picture below shows this process.
+The plain text message is on the left it
 will go through substitution permutation
 supposition permutation a lot of rounds
 finally it will produce a separate text
