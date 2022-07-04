@@ -111,7 +111,7 @@ Since the last row misses three letters, we put "x y z" there as padding.
 The key is "4 3 1 2 5 6 7". 
 When we produce the ciphertext, we read the third column of the plaintext first, the fourth colum second, and so on to obtain the ciphertext.
 
-<img src="../Imgs/ColumnarTransposition.png" width=480>
+<img src="../Imgs/ColumnarTransposition.png" width=320>
 
 #### Columnar Transposition Cipher with Keyword
 Apparently, a key of "4 3 1 2 5 6 7" is hard to remember.
