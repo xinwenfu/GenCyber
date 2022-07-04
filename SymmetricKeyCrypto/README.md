@@ -134,26 +134,22 @@ In Columnar cipher, the keyword is the encryption and decryption key.
 
 <img src="../Imgs/SecretKeyCrypto.png" width=512>
 
-The basic technique of secret key crypto is
-We are going to perform multiple applications of interleaved
+The basic technique of secret key crypto is to perform multiple applications of interleaved
 substitutions and the permutations to scamble the plaintext.
 The picture below shows this process.
-The plain text message is on the left it
-will go through substitution permutation
-supposition permutation a lot of rounds
-finally it will produce a separate text
-then the substitution implementation
-in each round
-will be controlled by the key so without
-knowing the key
-you don't know how exactly the
-substitution and the permutation
-is performed
-right so basically it will be very hard
-for you to guess the plain text
-based on the cipher text
-so here is one
-example of a symmetric key crypto
+The plain text message is on the left will go through substitution and permutation a lot of rounds.
+How to perform substitution or permutation in each round is controlled by the key.
+Finally it will produces the ciphertext.
+If you don't know the key, you don't how exactly the
+substitution and permutation is performed.
+It will be very hard for you to reverse the encryption process and guess the plaintext based on the ciphertext.
+
+Here is one example symmetric key crypto algorithm DES, which is a block cipher.
+DES processes a block of 64 bits (8 bytes) messsage each time.
+The block first goes throughh an initial permutation and then 16 identical rounds of function application, each using different 48 bits of key generated from a master key of 56 bits. The function application involves substitution and permutation.
+After final permutation, the ciphertext is produced.
+![image](https://user-images.githubusercontent.com/69218457/177220767-c6431965-535b-48b1-9e4e-1dc236e6b90a.png)
+
 ds
 so ds is also called a block ciphers
 so basically
