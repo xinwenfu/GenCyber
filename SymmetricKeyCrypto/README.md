@@ -47,6 +47,9 @@ Encrypt a file
 ```
 openssl aes-256-cbc -a -salt -in secrets.txt -out secrets.txt.enc -iter 1000 -k hello
 ```
+- *aes-256-cbc*. Use aes-256-cbc algorithm
+- *-salt*. Use salt in strong key derivation
+
 Decrypt the encrypted file
 ```
 openssl aes-256-cbc -d -a -in secrets.txt.enc -out secrets.txt.new -iter 1000 -k hello
