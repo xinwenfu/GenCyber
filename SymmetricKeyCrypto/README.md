@@ -35,60 +35,35 @@ to decrypt the ciphertext and obtain the original plaintext.
 
 <img src="../Imgs/Encryption.png" width=512>
 
-so this is a big picture
-how we actually use encryption
-decryption
-of course when we do encryption the
-anime will try to
-actually defeat the encryption and
-obtain
-the original message
-this process is called crypt analysis
-this is a definition of a crypto
-analysis so we assume
-the encryption and decryption errors are
-known
-then the goal of the attacker is to get
-the keys
-so there are many different ways of
-crypt analysis we are going to see
-one example later
-now let's look at some trivial codes to
-have a
-some understanding of cryptography
-particularly encryption and decryption
-so the first
-encryption approach is called
-molar alphabetical sample
-with a molar of a better server
-we map one letter
-in
-the plain text
-to another letter
-in the cipher text
-so here we are talking about
-the ancient letters
-so you can imagine right
-and
-we map letters
-in
-plain text to letters
-as a separate text
-of course the mapping must be one-to-one
-otherwise we cannot reverse
-the mapping procedure
-okay
-and
-so this is the kind of mole of a better
-server and you can imagine how many
-different mappings do we have for 26
-league letters
-and we have 26 factories
-one
-molar alpha beta server is called a
-scissor sampler
-so in cedar cipher
-you can see here
+It can be imaged when we do encryption, the enemy or bad guys will try to actually defeat the encryption and obtain the original message.
+This process is called cryptanalysis.
+In cryptoanalysis, we assume the encryption and decryption errors are known. 
+then the goal of the attacker is to get the keys.
+There are many different ways of cryptanalysis.
+We are going to see one example later.
+
+## Some Trivial Codes
+Now let's look at some trivial codes to
+have a good understanding of cryptography, particularly encryption and decryption.
+
+### Mono-alphabetic Cipher
+
+So the first encryption approach is called mono alphabetical cipher.
+With a mono alphabetical cipher, we map one letter in the plaintext to another letter as the ciphertext ketter.
+Here we are talking about English letters.
+The mapping must be one-to-one for a mono alphabetical cipher.
+Otherwise we cannot reverse the mapping procedure and obtain the original plaintext.
+The mapping process here is also called substitution.
+If we map a sequence of 26 English letters to another sequence of 26 English letters, how may different ways of mappings can we have?
+26!
+
+### Caesar Cipher
+One mono alphabetical substitution cipher is is called Caesar cipher.
+In Caesar cipher, we eeplace each letter in the plaintext with one letter *K* positions down the alphabet.
+![image](https://user-images.githubusercontent.com/69218457/177189579-196912d2-bc1d-4758-af2c-044a9a13acfc.png)
+
+
+ou can see here
 we use a
 you know one letter in the
 outer ring
