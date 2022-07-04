@@ -101,9 +101,9 @@ Of course you can see the mono alphabetical cipher is not that secure.
 That's why people invented the poly alphabetical cipher.
 In a poly-alphabetic cipher, one letter in the plaintext may be mapped to different letters in the ciphertext.
 
-#### Columnar Transposition
-and uh so
-let's look at one example here so we
+#### Columnar Transposition Cipher
+Columnar transposition cipher is based on permutation.
+Let's look at one example here so we
 have a plain text message attack
 postponed until
 2 a.m x y z here called padding because
@@ -158,6 +158,9 @@ so in this way you can see
 you know
 the original message is scrambled
 allot
+
+<img src="../Imgs/ColumnarTransposition.png" width=512>
+
 so here is a
 another example of a calendar
 transportation
