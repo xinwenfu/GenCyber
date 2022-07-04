@@ -1,75 +1,40 @@
 # Introduction to symmetrical key crypto
 To be editted
 
-here is a the outline of this lecture
-we will first introduce
-what is cryptography
-next we are going to introduce some
-retrieval codes
-now we are going to introduce a modern
-secret key cryptography
-at the last we are going to introduce
-hands-on labs
-original meaning of cryptography is
-secret writing however secret writing is
-an art
-so here i guess you guys played with
-invisible ink and if you put
-the writing
-in invisible ink and
-ultraviolet light now you can see it
-but really the security of
-secret writing
-is not so good
-cryptography becomes a science because
-of the mathematics for example number
-theory algebra
-let's see one example
-encryption
-when we encrypt data we process data
-into an intelligible form
-however
-this encrypted data is reversible means
-we can decrypt the data and
-obtain the original data
-without any data loss
-so this is a the
-basic idea for cryptography
-here is a big picture
-for encryption and decryption one
-critical
-cryptographic
-application
-so here you can see on the left we have
-bob on the left
-we have the bob on the right we have
-alice
-so bob has a message which we call
-as plain text
-bob
-will use an encrypted account
-and
-an encryption key to encrypt this plain
-text
-and
-the output is called ciphertext
-so the ciphertext is the encrypted data
-so these separate text can go through
-the internet
-and even somebody intercepts cipher text
-we should
-be able to
-think our data is secure the attacker
-cannot actually recover the original
-data
-so now the separate text arrives at the
-receiver
-receiver here edits
-will use
-the corresponding decryption algorithm
-and the corresponding decryption key
-to decrypt the cipher text and obtain
-the original plain text
+We will first introduce what is cryptography.
+Next we are going to introduce some trvial codes.
+Then we will introduce modern secret key cryptography.
+At last we are going to introduce hands-on labs.
+
+## Introduction to Cryptography
+
+Original meaning of cryptography is secret writing.
+However secret writing is an art, not really science in terms of security.
+You may have played with invisible ink.
+If you put the writing in invisible ink under ultraviolet light, you can see it.
+But really the security of secret writing is not so good.
+If you know people wrote it in invisible ink, you can use ultraviolet light too to read it.
+
+Cryptography becomes a science because of the mathematics, for example, number theory and algebra.
+Let's see one cryptography example, encryption.
+When we encrypt data, we process data into an intelligible form.
+However, this encrypted data is reversible.
+That is, we can decrypt the data and obtain the original data without any data loss.
+
+Here is a big picture of encryption and decryption, one critical cryptographic application.
+On the left we have Bob. On the right we have Alice.
+Bob has a message which we call as plaintext to send.
+He will use an encryption algorithm and an encryption key to encrypt this plaintext.
+The output is called ciphertext, which is the encrypted plaintext.
+The ciphertext can go through the Internet.
+Even if somebody intercepts the ciphertext, we should be confident that our data is secure the attacker
+cannot actually recover the plaintext from ciphertext.
+Now the ciphertext arrives at the receiver, Alice.
+The receiver will use the corresponding decryption algorithm and the corresponding decryption key
+to decrypt the ciphertext and obtain the original plaintext.
+
+<img src="../Imgs/Encryption.png" width=512>
+
 so this is a big picture
 how we actually use encryption
 decryption
