@@ -65,7 +65,7 @@ If we rotate the inner ring, we get one mapping.
 There are 26 possible mappings.
 The shift of the inner ring is the key. In the picture below, the shift and key is 3.
 
-<img src="../Imgs/CaesarCipherMedallion.png" width=320>
+<img src="../Imgs/CaesarCipherMedallion.png" width=256>
 
 Let's look at one example of Caesar cipher.
 In this example we have a key of 3.
@@ -86,7 +86,7 @@ As you know Enlish letters have diffrent frequencies of apprearing in text.
 The picture below shows the frequency of English letters.
 If a message is long, letters in the message will have such frequencies.
 
-<img src="../Imgs/LetterFrequency.png" width=320>
+<img src="../Imgs/LetterFrequency.png" width=480>
 
 How do we use the letter frequencies for cryptanalysis against Caesar Cipher?
 If we know a message is encrypted with Caesar cipher, but do not know the key,
