@@ -58,33 +58,16 @@ If we map a sequence of 26 English letters to another sequence of 26 English let
 26!
 
 ### Caesar Cipher
-One mono alphabetical substitution cipher is is called Caesar cipher.
-In Caesar cipher, we eeplace each letter in the plaintext with one letter *K* positions down the alphabet.
-![image](https://user-images.githubusercontent.com/69218457/177189579-196912d2-bc1d-4758-af2c-044a9a13acfc.png)
+One mono alphabetical substitution cipher is called Caesar cipher.
+In Caesar cipher, we replace each letter in the plaintext with a letter *K* positions down the alphabet.
+As shown in the figure below, we map the letters on the inner ring to letters on the outer ring.
+If we rotate the inner ring, we get one mapping.
+There are 26 possible mappings.
+The shift of the inner ring is the key.
 
+<img src="../Imgs/CaesarCipherMedallion.png" width=320>
 
-ou can see here
-we use a
-you know one letter in the
-outer ring
-we map one letter in the outer ring
-to another letter in
-the inner ring
-so
-we call this as a substitution separator
-because we substitute
-one letter in a plain
-text
-with a lot of letter in a separate text
-and
-so you can see here if we rotate
-the inner
-ring here then we will get a different
-mappings totally
-there are 26 possibilities
-then we call this a
-shift here that in here
-is the key right so let's look at the
+so let's look at the
 one system sample example
 so in this case
 we
