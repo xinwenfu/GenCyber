@@ -75,7 +75,7 @@ We replace *a* with *d*. *b* with *e*, etc.
 We use this key of 3 to encrypt a message *hello*.
 What is the output?
 
-<img src="../Imgs/CaesarCipherExample.png" width=320>
+<img src="../Imgs/CaesarCipherExample.png" width=480>
 
 #### Cryptanalysis against Caesar Cipher
 
