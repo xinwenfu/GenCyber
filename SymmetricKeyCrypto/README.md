@@ -122,6 +122,8 @@ e's order is 3, b's order 2, r's order is 4, and so on.
 What is the ciphertext if we use "zebras" to encrypt this message "we are discovered flee at once".
 Pay attention to the padding.
 
+<a href="../Imgs/ColumnarTransposition-Keyword.png" width=320>
+
 the ciphertext
 okay so we have introduced
 the model alphabet server that is the
