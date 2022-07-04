@@ -60,3 +60,11 @@ openssl rsautl -decrypt -inkey privkey.pem -in encrypt.dat -out new_encrypt.txt
   - The message can be saved in a file first
 - Send the message via the chat server
 - Use OpenSSL and RSA to decrypt the ciphertext
+
+### Hands-on 3: RSA
+Consider RSA with p = 5 and q = 11.
+- What are n and z?
+- Let e be 3. Why is this an acceptable choice for e?
+- Find d such that de = 1 (mod z). 
+- Encrypt the message m = 8 using the key (n, e). Let c denote the corresponding ciphertext.
+- Decrypt the ciphertext. 
