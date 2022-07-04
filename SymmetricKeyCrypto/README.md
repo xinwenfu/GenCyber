@@ -148,7 +148,8 @@ Here is one example symmetric key crypto algorithm DES, which is a block cipher.
 DES processes a block of 64 bits (8 bytes) messsage each time.
 The block first goes throughh an initial permutation and then 16 identical rounds of function application, each using different 48 bits of key generated from a master key of 56 bits. The function application involves substitution and permutation.
 After final permutation, the ciphertext is produced.
-![image](https://user-images.githubusercontent.com/69218457/177220767-c6431965-535b-48b1-9e4e-1dc236e6b90a.png)
+
+<img src="../Imgs/DES.jpg" width=128>
 
 ds
 so ds is also called a block ciphers
