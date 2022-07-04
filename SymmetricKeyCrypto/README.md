@@ -57,91 +57,51 @@ The mapping process here is also called substitution.
 If we map a sequence of 26 English letters to another sequence of 26 English letters, how may different ways of mappings can we have?
 26!
 
-### Caesar Cipher
+#### Caesar Cipher
 One mono alphabetical substitution cipher is called Caesar cipher.
 In Caesar cipher, we replace each letter in the plaintext with a letter *K* positions down the alphabet.
-As shown in the figure below, we map the letters on the inner ring to letters on the outer ring.
+As shown in the picture below, we map the letters on the inner ring to letters on the outer ring.
 If we rotate the inner ring, we get one mapping.
 There are 26 possible mappings.
-The shift of the inner ring is the key.
+The shift of the inner ring is the key. In the picture below, the shift and key is 3.
 
 <img src="../Imgs/CaesarCipherMedallion.png" width=320>
 
-so let's look at the
-one system sample example
-so in this case
-we
-have a key
-of three it means
-we replace each letter with the one
-three letters later
-so you can see here
-we replace a with d
-b with e
-we use
-this key
-of 3
-to
-encrypt a message
-hello what is the output and the output
-will be
-t h o o
-because you can see here
-so h will be mapped to key here
-okay
-so that's how
-we
-do see the sample with a key of three
-now let's look at how can we defeat
-cedar cipher actually
-it's pretty easy and uh so let's look at
-this a crypt analysis approach which is
-called
-frequency analysis as you know
-ink letters have frequencies so here
-this picture shows the frequency of
-inclinators if your message is very long
-and roughly that we got these kind of
-frequencies of different letters
-and so
-in this case
-so basically we assume we know
-you know
-somebody is using the c the separator
-with a key we don't know the key
-okay
-however you know
-if we get the ciphertext message now we
-can count the frequency
-of
-all the letters in a separate text
-then as we know
-we can count the frequencies that we can
-identify
-which letter in a cipher text has
-the most frequency then another letter
-must be
-e here so once you know actually that
-letter was mapped from e
-then you can actually use
-the property of scissor server to obtain
-the whole map
-okay
-so that's
-the cryptic analysis against the scissor
-server
-so of course you can see the
-mono african assembler is not very kind
-of
-secure that's why people invented the
-polar upper beta centers
-so in polar our webinar servers a letter
-may be encrypted into different letters
-from time to time so let's look at one
-example this one is called a
-clam
-glamor transportation
-okay
+Let's look at one example of Caesar cipher.
+In this example we have a key of 3.
+It means we replace each letter with the one
+three letters later.
+We replace *a* with *d*. *b* with *e*, etc. 
+We use this key of 3 to encrypt a message *hello*.
+What is the output?
+
+<img src="../Imgs/CaesarCipherExample.png" width=320>
+
+#### Cryptanalysis against Caesar Cipher
+
+Now let's look at how can we defeat Caesar cipher.
+Let's look at
+this a crypt analysis approach which is called frequency analysis.
+As you know Enlish letters have diffrent frequencies of apprearing in text.
+The picture below shows the frequency of English letters.
+If a message is long, letters in the message will have such frequencies.
+
+<img src="../Imgs/LetterFrequency.png" width=320>
+
+How do we use the letter frequencies for cryptanalysis against Caesar Cipher?
+If we know a message is encrypted with Caesar cipher, but do not know the key,
+we get the ciphertext message and can count the frequency of all the letters in the ciphertext.
+We can identify which letter in the ciphertext has the highest frequency.
+Then it is highly possible that this ciphertext letter corresponds to the plaintext letter *e*.
+Now you align the plaintext letter *e* over this ciphertext letter. In this way, you get the key and the rest of the mapping.
+
+### Poly-alphabetic Ciphers
+
+Of course you can see the mono alphabetical cipher is not that secure.
+That's why people invented the poly alphabetical cipher.
+In a poly-alphabetic cipher, one letter in the plaintext may be mapped to different letters in the ciphertext.
+
+#### Columnar Transposition
 and uh so
 let's look at one example here so we
 have a plain text message attack
