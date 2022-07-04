@@ -103,97 +103,25 @@ In a poly-alphabetic cipher, one letter in the plaintext may be mapped to differ
 
 #### Columnar Transposition Cipher
 Columnar transposition cipher is based on permutation.
-Let's look at one example here so we
-have a plain text message attack
-postponed until
-2 a.m x y z here called padding because
-in this
-calendar transposition
-we are going to align
-you know
-all the letters
-in
-rows so each o here is the seven letters
-and then you can see here the last row
-doesn't have
-seven letters that's why we put x y z
-over there as a padding
-okay so our key is a four three one two
-five one six
-what does this mean
-this means you know
-okay
-here
-you know
-the
-first
-row
-the first column in original message
-will be
-actually
-read
-the first time
-okay
-and
-so here three means
-the
-second column here
-will be red in a third time
-so in this way that we know
-if we use a calendar transportation
-then
-the output will be like this
-okay
-so basically
-the third column here
-will be read first
-as the separate text
-so t t and a
-then here
-the fourth column
-will be read second
-as the seventh text
-so it's aptm
-so in this way you can see
-you know
-the original message is scrambled
-allot
+Let's look at one example in the picture below. 
+We have a plaintext message "attack postponed until 2 a.m".
+For the columnar transposition cipher, we write the message in rows of fixed length, e.g., 7 in this example.
+Then we read column by column in a scrambled order as the ciphertext.
+Since the last row misses three letters, we put "x y z" there as padding.
+The key is "4 3 1 2 5 6 7". 
+When we produce the ciphertext, we read the third column of the plaintext first, the fourth colum second, and so on to obtain the ciphertext.
 
-<img src="../Imgs/ColumnarTransposition.png" width=512>
+<img src="../Imgs/ColumnarTransposition.png" width=480>
 
-so here is a
-another example of a calendar
-transportation
-so in this case
-we have a keyword
-z-e-b-r-a-s
-zebras
-okay so here basically the permutation
-is defined by the alphabetical order of
-the letters within the keyword
-so you can see the zebras z
-the order is six within
-the keyword their brush
-and so basically z is corresponding to 6
-e correspond to 3
-b correspond to 2 r comma 4 equal to 1 s
-1 0 5
-and what is the output if we use a
-zebras to
-encrypt this message we are
-discovered
-4d
-at once
-okay
-qkgeu actually is a
-the padding letters
-and then what is the output the output
-will be you know you can see here we are
-going to
-read
-the fifth column first right e v and e
-so by doing this then you can
-obtain
+#### Columnar Transposition Cipher with Keyword
+Apparently, a key of "4 3 1 2 5 6 7" is hard to remember.
+This example of a columnar transposition uses a keyword, z-e-b-r-a-s.
+The permutation is defined by the alphabetical order of the letters within the keyword.
+In "z-e-b-r-a-s", z'order is 6 within the keyword.
+e's order is 3, b's order 2, r's order is 4, and so on.
+What is the ciphertext if we use "zebras" to encrypt this message "we are discovered flee at once".
+Pay attention to the padding.
+
 the ciphertext
 okay so we have introduced
 the model alphabet server that is the
