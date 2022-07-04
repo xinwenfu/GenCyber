@@ -132,7 +132,7 @@ We have seen that.
 In Caesar cipher, the encryption key and drcryption key are the same.
 In Columnar cipher, the keyword is the encryption and decryption key.
 
-<img src="../Imgs/SecretKeyCrypto.png" width=512
+<img src="../Imgs/SecretKeyCrypto.png" width=512>
 
 
 so in sql key crypto
