@@ -124,31 +124,17 @@ Pay attention to the padding.
 
 <img src="../Imgs/ColumnarTransposition-Keyword.png" width=160>
 
-the ciphertext
-okay so we have introduced
-the model alphabet server that is the
-substitution server we also introduce
-the transportation
-ways of
-encrypting data
-so now let's look at
-the modern secret key crypto
-so in modern sequential
-when we use
-an encryption algorithm to encrypt
-the message
-the encryption
-key is same as decryption key
-we haven't seen that
-right so you can see you can see the
-cipher once we know that the key is
-shift
-and then basically you can use that
-key for encryption and decryption in
-calendar
-transposition server and if we know the
-keyword then we can use the keyword for
-encryption and decryption okay
+## Secret Key Cryptography
+Now let's look at the modern secret key crypto.
+With secret key crypto, when we use an encryption algorithm to encrypt a message
+the encryption key is same as decryption key. 
+We have seen that.
+In Caesar cipher, the encryption key and drcryption key are the same.
+In Columnar cipher, the keyword is the encryption and decryption key.
+
+<img src="../Imgs/SecretKeyCrypto.png" width=512
+
+
 so in sql key crypto
 the encryption key is the same as
 decryption key
