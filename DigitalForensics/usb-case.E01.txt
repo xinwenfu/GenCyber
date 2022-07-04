@@ -1,0 +1,39 @@
+﻿Created By AccessData® FTK® Imager 4.5.0.3 
+
+Case Information: 
+Acquired using: ADI4.5.0.3
+Case Number: 01
+Evidence Number: 01
+Unique description: Cyber Range data
+Examiner: Claire Lee
+Notes: Xinwen Fu
+
+--------------------------------------------------------------
+
+Information for C:\Users\Xinwen_Fu\Downloads\usb-case:
+
+Physical Evidentiary Item (Source) Information:
+[Device Info]
+ Source Type: Logical
+[Drive Geometry]
+ Bytes per Sector: 512
+ Sector Count: 16,384
+[Physical Drive Information]
+ Removable drive: True
+ Source data size: 8 MB
+ Sector count:    16384
+[Computed Hashes]
+ MD5 checksum:    05597aa8ad3dd404783c0538e71846b2
+ SHA1 checksum:   9d7bdba345f248ff4830ddb991c6f342d4826910
+
+Image Information:
+ Acquisition started:   Wed Jun 29 10:15:29 2022
+ Acquisition finished:  Wed Jun 29 10:15:29 2022
+ Segment list:
+  C:\Users\Xinwen_Fu\Downloads\usb-case.E01
+
+Image Verification Results:
+ Verification started:  Wed Jun 29 10:15:29 2022
+ Verification finished: Wed Jun 29 10:15:29 2022
+ MD5 checksum:    05597aa8ad3dd404783c0538e71846b2 : verified
+ SHA1 checksum:   9d7bdba345f248ff4830ddb991c6f342d4826910 : verified
