@@ -1,5 +1,4 @@
 # Introduction to symmetrical key crypto
-To be editted
 
 We will first introduce what is cryptography.
 Next we are going to introduce some trvial codes.
