@@ -21,35 +21,36 @@ But the encrypted data shall be reversible.
 That is, we can decrypt the data and obtain the original data without any data loss.
 
 Below is a big picture of encryption and decryption, which is one critical cryptographic application.
-On the left we have Bob. On the right we have Alice.
-Bob has a message, denoted as plaintext, to send.
+Cryptography is not limited to encryption and decryption.
+Hash algorithms are another cryptography application we will discuss in other posts.
+We now focus on encryption and decryption.
+In the picture below, on the left we have Bob. On the right we have Alice.
+Bob has a message, denoted as plaintext, to send to Alice.
 He will use an encryption algorithm and an encryption key to encrypt this plaintext.
 The output is called ciphertext, which is the encrypted plaintext.
 The ciphertext can go through the Internet.
-Even if somebody intercepts the ciphertext, we should be confident that our data is secure the attacker
-cannot actually recover the plaintext from ciphertext.
-Now the ciphertext arrives at the receiver, Alice.
-The receiver will use the corresponding decryption algorithm and the corresponding decryption key
+Even if somebody intercepts the ciphertext, we should be confident that our data is secure
+and the attacker cannot actually recover the plaintext from the ciphertext.
+Let's say the ciphertext arrives at the receiver, Alice.
+Alice will use the corresponding decryption algorithm and the corresponding decryption key
 to decrypt the ciphertext and obtain the original plaintext.
 
 <img src="../Imgs/Encryption.png" width=512>
 
-It can be imaged when we do encryption, the enemy or bad guys will try to actually defeat the encryption and obtain the original message.
+It can be imagined when we do encryption, the bad guys will try to actually defeat the encryption and obtain the original message.
 This process is called cryptanalysis.
-In cryptoanalysis, we assume the encryption and decryption errors are known. 
-then the goal of the attacker is to get the keys.
+In cryptoanalysis, we assume the encryption and decryption algorithms are known. 
+The goal of the attacker is to get the keys, which can be used to decrypt any encrypted messages.
 There are many different ways of cryptanalysis.
 We are going to see one example later.
 
 ## Some Trivial Codes
-Now let's look at some trivial codes to
-have a good understanding of cryptography, particularly encryption and decryption.
+Now let's look at some trivial codes to have a good understanding of encryption and decryption.
 
 ### Mono-alphabetic Cipher
 
-So the first encryption approach is called mono alphabetical cipher.
+The first encryption approach is called mono alphabetical cipher.
 With a mono alphabetical cipher, we map one letter in the plaintext to another letter as the ciphertext ketter.
-Here we are talking about English letters.
 The mapping must be one-to-one for a mono alphabetical cipher.
 Otherwise we cannot reverse the mapping procedure and obtain the original plaintext.
 The mapping process here is also called substitution.
@@ -57,19 +58,18 @@ If we map a sequence of 26 English letters to another sequence of 26 English let
 26!
 
 #### Caesar Cipher
-One mono alphabetical substitution cipher is called Caesar cipher.
+One mono alphabetical substitution cipher is Caesar cipher.
 In Caesar cipher, we replace each letter in the plaintext with a letter *K* positions down the alphabet.
 As shown in the picture below, we map the letters on the inner ring to letters on the outer ring.
-If we rotate the inner ring, we get one mapping.
+If we rotate the inner ring, we get different mappings.
 There are 26 possible mappings.
-The shift of the inner ring is the key. In the picture below, the shift and key is 3.
+The shift of the inner ring is the key. In the picture below, the shift, i.e., key, is 3.
 
 <img src="../Imgs/CaesarCipherMedallion.png" width=256>
 
 Let's look at one example of Caesar cipher.
 In this example we have a key of 3.
-It means we replace each letter with the one
-three letters later.
+It means we replace each letter with the one three letters down the alphabet.
 We replace *a* with *d*. *b* with *e*, etc. 
 We use this key of 3 to encrypt a message *hello*.
 What is the output?
@@ -79,20 +79,20 @@ What is the output?
 #### Cryptanalysis against Caesar Cipher
 
 Now let's look at how can we defeat Caesar cipher.
-Let's look at
-this a crypt analysis approach which is called frequency analysis.
-As you know Enlish letters have diffrent frequencies of apprearing in text.
+We will use a cryptanalysis approach called frequency analysis.
+As you know, Enlish letters have diffrent frequencies in text.
 The picture below shows the frequency of English letters.
-If a message is long, letters in the message will have such frequencies.
+If a message is long, the frequencies of letters in the message will be similar to frequencies in the picture below.
 
 <img src="../Imgs/LetterFrequency.png" width=480>
 
 How do we use the letter frequencies for cryptanalysis against Caesar Cipher?
 If we know a message is encrypted with Caesar cipher, but do not know the key,
-we get the ciphertext message and can count the frequency of all the letters in the ciphertext.
-We can identify which letter in the ciphertext has the highest frequency.
+We can count the frequency of all the letters in the ciphertext.
+We can then identify the letter in the ciphertext with the highest frequency.
 Then it is highly possible that this ciphertext letter corresponds to the plaintext letter *e*.
 Now you align the plaintext letter *e* over this ciphertext letter. In this way, you get the key and the rest of the mapping.
+For example, in the Caesar cipher example, if you find h has the highest frequency in the ciphertext, the key (i.e. shift) is 3.
 
 ### Poly-alphabetic Ciphers
 
