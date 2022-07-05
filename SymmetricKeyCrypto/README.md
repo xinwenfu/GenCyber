@@ -1,28 +1,28 @@
 # Introduction to symmetrical key crypto
 
 We will first introduce what is cryptography.
-Next we are going to introduce some trvial codes.
-Then we will introduce modern secret key cryptography.
+Next introduce some trivial codes such as Caesar cipher and frequency analysis against Caesar cipher.
+Then we will introduce the modern secret key cryptography.
 At last we are going to introduce hands-on labs.
 
 ## Introduction to Cryptography
 
-Original meaning of cryptography is secret writing.
-However secret writing is an art, not really science in terms of security.
+The original meaning of cryptography is secret writing.
+However, secret writing is an art, not really science in terms of security.
 You may have played with invisible ink.
-If you put the writing in invisible ink under ultraviolet light, you can see it.
-But really the security of secret writing is not so good.
-If you know people wrote it in invisible ink, you can use ultraviolet light too to read it.
+If you put the writing in invisible ink under ultraviolet light, you can see it. Otherwise, the writing is intelligible.
+But really, the security of secret writing is not so good.
+If you know people wrote a message in invisible ink, you can use ultraviolet light too to read it.
 
 Cryptography becomes a science because of the mathematics, for example, number theory and algebra.
 Let's see one cryptography example, encryption.
-When we encrypt data, we process data into an intelligible form.
-However, this encrypted data is reversible.
+When we encrypt data, we process the data into an intelligible form.
+But the encrypted data shall be reversible.
 That is, we can decrypt the data and obtain the original data without any data loss.
 
-Here is a big picture of encryption and decryption, one critical cryptographic application.
+Below is a big picture of encryption and decryption, which is one critical cryptographic application.
 On the left we have Bob. On the right we have Alice.
-Bob has a message which we call as plaintext to send.
+Bob has a message, denoted as plaintext, to send.
 He will use an encryption algorithm and an encryption key to encrypt this plaintext.
 The output is called ciphertext, which is the encrypted plaintext.
 The ciphertext can go through the Internet.
