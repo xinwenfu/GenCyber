@@ -125,9 +125,9 @@ Pay attention to the padding.
 
 ## Secret Key Cryptography
 Now let's look at the modern secret key crypto.
-With secret key crypto, when we use an encryption algorithm to encrypt a message
-the encryption key is same as decryption key. 
-We have seen that.
+With secret key crypto, when we use an encryption algorithm to encrypt a message.
+The encryption key is the same as the decryption key. 
+We have seen this in trivial codes.
 In Caesar cipher, the encryption key and drcryption key are the same.
 In Columnar cipher, the keyword is the encryption and decryption key.
 
