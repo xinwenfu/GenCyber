@@ -148,20 +148,23 @@ It will be very hard for you to reverse the encryption process and guess the pla
 ### DES
 Here is one example symmetric key crypto algorithm, DES, which is a block cipher.
 DES processes a block of 64 bits (8 bytes) messsage each time.
-The block first goes throughh an initial permutation and then 16 identical rounds of function application (*f()*), each using different 48 bits of key generated from a master key of 56 bits. The function application involves substitution and permutation.
+The block first goes throughh an initial permutation and then 16 rounds of function application (*f()*), each using different 48 bits of key generated from a master key of 56 bits. The function application involves substitution and permutation.
 After final permutation, the ciphertext is produced.
-So you can imagine right after 16 rounds, the plaintext is really scrambled a lot.
+So you can imagine after 16 rounds, the plaintext is really scrambled a lot.
 
 <img src="../Imgs/DES.jpg" width=256>
 
 
 ### AES
-The problem of DES is it its key size, only 56 bits.
+The problem of DES is its small key size, only 56 bits.
 How mamy possible 56-bit keys? 2<sup>56</sup>.
 Given today's computer power, that is not a lot.
 That's why people invented the advanced encryption standard (AES).
 This is the current standard for secret key crypto encryption.
 The key size of AES can be 128 192 or 256. It is pretty secure. 
+Let's say an attacker tries keys one by one and sees which one produces meaningful output from the cipher text.
+When the key size is 128, the attacker may have to try 2<sup>128</sup> different keys.
+That is too much even for today's computers.
 
 Here i have a question,
 AES can be used as block cipher, encrypting 128 bits of data one time.
