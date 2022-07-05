@@ -114,9 +114,9 @@ When we produce the ciphertext, we read the third column of the plaintext first,
 
 #### Columnar Transposition Cipher with Keyword
 Apparently, a key of "4 3 1 2 5 6 7" is hard to remember.
-This example of a columnar transposition uses a keyword, z-e-b-r-a-s.
+This example of columnar transposition uses a keyword, "zebras".
 The permutation is defined by the alphabetical order of the letters within the keyword.
-In "z-e-b-r-a-s", z'order is 6 within the keyword.
+In "zebras", z'order is 6 within the keyword.
 e's order is 3, b's order 2, r's order is 4, and so on.
 What is the ciphertext if we use "zebras" to encrypt this message "we are discovered flee at once".
 Pay attention to the padding.
@@ -125,26 +125,26 @@ Pay attention to the padding.
 
 ## Secret Key Cryptography
 Now let's look at the modern secret key crypto.
-With secret key crypto, when we use an encryption algorithm to encrypt a message.
-The encryption key is the same as the decryption key. 
+With secret key crypto, when we use an encryption algorithm to encrypt a message,
+the encryption key is the same as the decryption key. 
 We have seen this in trivial codes.
 In Caesar cipher, the encryption key and drcryption key are the same.
-In Columnar cipher, the keyword is the encryption and decryption key.
+In Columnar transposition cipher, the keyword is the encryption and decryption key.
 
 <img src="../Imgs/SecretKeyCrypto.png" width=512>
 
 The basic technique of secret key crypto is to perform multiple applications of interleaved
 substitutions and the permutations to scamble the plaintext.
 The picture below shows this process.
-The plain text message is on the left will go through substitution and permutation a lot of rounds.
+The plaintext on the left will go through substitution and permutation a lot of rounds.
 How to perform substitution or permutation in each round is controlled by the key.
-Finally it will produces the ciphertext.
+Finally the process produces the ciphertext.
 If you don't know the key, you don't how exactly the
-substitution and permutation is performed.
+substitutions and permutations are performed.
 It will be very hard for you to reverse the encryption process and guess the plaintext based on the ciphertext.
 
 ### DES
-Here is one example symmetric key crypto algorithm DES, which is a block cipher.
+Here is one example symmetric key crypto algorithm, DES, which is a block cipher.
 DES processes a block of 64 bits (8 bytes) messsage each time.
 The block first goes throughh an initial permutation and then 16 identical rounds of function application, each using different 48 bits of key generated from a master key of 56 bits. The function application involves substitution and permutation.
 After final permutation, the ciphertext is produced.
@@ -276,3 +276,4 @@ openssl aes-256-cbc -d -a -in secrets.txt.enc -out secrets.txt.new -iter 1000 -k
 - The other person receives encrypted messages and decrypts
 
 ## References
+ 
