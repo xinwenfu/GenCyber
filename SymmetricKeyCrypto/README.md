@@ -96,7 +96,7 @@ For example, in the Caesar cipher example, if you find h has the highest frequen
 
 ### Poly-alphabetic Ciphers
 
-Of course you can see the mono alphabetical cipher is not that secure.
+You can see the mono alphabetical cipher is not that secure.
 That's why people invented the poly alphabetical cipher.
 In a poly-alphabetic cipher, one letter in the plaintext may be mapped to different letters in the ciphertext.
 
