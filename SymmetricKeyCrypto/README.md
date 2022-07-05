@@ -162,20 +162,19 @@ Given today's computer power, that is not a lot.
 That's why people invented the advanced encryption standard (AES).
 This is the current standard for secret key crypto encryption.
 The key size of AES can be 128 192 or 256. It is pretty secure. 
-Let's say an attacker tries keys one by one and sees which one produces meaningful output from the cipher text.
+Let's say an attacker tries keys one by one and sees which one produces meaningful output from the ciphertext.
 When the key size is 128, the attacker may have to try 2<sup>128</sup> different keys.
 That is too much even for today's computers.
 
-Here i have a question,
+Here I have a question,
 AES can be used as block cipher, encrypting 128 bits of data one time.
 How can you encrypt a message longer than 128 bits?
-basically if a message is more than like
 
 ### Applications of secret key crypto
-One critical application is secret data transformation.
+One critical application of secret key cryptographic is secret data transmission.
 When you send a message to your friend,
 you can first share a secret key with your friend.
-You can use the key to encrypt messages. Your friend can use the key to decrypt messages.
+You can use the key to encrypt messages. Your friend can use the same key to decrypt encrypted messages.
 
 Another application is secure data storage.
 You can encrypt the data stored on a hard disk with a secret key.
