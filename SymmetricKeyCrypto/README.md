@@ -144,43 +144,21 @@ If you don't know the key, you don't how exactly the
 substitution and permutation is performed.
 It will be very hard for you to reverse the encryption process and guess the plaintext based on the ciphertext.
 
+### DES
 Here is one example symmetric key crypto algorithm DES, which is a block cipher.
 DES processes a block of 64 bits (8 bytes) messsage each time.
 The block first goes throughh an initial permutation and then 16 identical rounds of function application, each using different 48 bits of key generated from a master key of 56 bits. The function application involves substitution and permutation.
 After final permutation, the ciphertext is produced.
+So you can imagine right after 16 rounds, the plaintext is really scrambled a lot.
 
 <img src="../Imgs/DES.jpg" width=256>
 
-ds
-so ds is also called a block ciphers
-so basically
-each time ds can encrypt
-eight bytes of a message okay so it's
-like eight captures
-and uh so you can see
-in this case right
-and uh
-the
-ds
-uses a key and then
-ds also has a 16 rounds
-and then for each round we are going to
-derive a sub key from the master key and
-this muscle key will control
-how exhausted
-substitution and the permutations
-are done
-to the original data
-so you can imagine right after so many
-rounds 16 rounds
-then
-the input is really scrambled a lot
-so
-the problem of ds
-is it it's key size is only like a
-seven letters that's not very long
-in terms of today's
-computer power that's why people later
+
+### AES
+The problem of DES is it its key size, only 56 bits.
+How mamy possible 56-bit keys? 2<sup>56</sup>.
+Given today's computer power, that is not a lot.
+hat's why people later
 invented
 the advanced equipment standard this is
 a the current
