@@ -143,6 +143,8 @@ If you don't know the key, you don't how exactly the
 substitutions and permutations are performed.
 It will be very hard for you to reverse the encryption process and guess the plaintext based on the ciphertext.
 
+<img src="../Imgs/SecretKeyCrypto-Technique.png" width=512>
+
 ### DES
 Here is one example symmetric key crypto algorithm, DES, which is a block cipher.
 DES processes a block of 64 bits (8 bytes) messsage each time.
