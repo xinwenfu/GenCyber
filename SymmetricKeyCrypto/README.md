@@ -185,8 +185,8 @@ Here is a naive message integrity code.
 If we use this approach to send a message and the
 message is changed by somebody, you will
 be able to find it.
-Here is how we do it.
-When you send a message, you will the message and the encryted message with a shared secret key with the receiver.
+Here is how we do it. We assume the sender and receiver share a secret key.
+When you send a message, you will send both the message and the encryted message.
 The encrypted message serves as the message interity code.
 When the receiver receives the message, to check if the message is changed, the receiver can decrypt the message integrity code
 and compare the decrypted message with the message.
