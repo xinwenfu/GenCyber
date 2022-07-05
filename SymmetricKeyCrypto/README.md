@@ -148,7 +148,7 @@ It will be very hard for you to reverse the encryption process and guess the pla
 ### DES
 Here is one example symmetric key crypto algorithm, DES, which is a block cipher.
 DES processes a block of 64 bits (8 bytes) messsage each time.
-The block first goes throughh an initial permutation and then 16 identical rounds of function application, each using different 48 bits of key generated from a master key of 56 bits. The function application involves substitution and permutation.
+The block first goes throughh an initial permutation and then 16 identical rounds of function application (*f()*), each using different 48 bits of key generated from a master key of 56 bits. The function application involves substitution and permutation.
 After final permutation, the ciphertext is produced.
 So you can imagine right after 16 rounds, the plaintext is really scrambled a lot.
 
