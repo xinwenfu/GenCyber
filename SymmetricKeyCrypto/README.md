@@ -173,53 +173,29 @@ When you send a message to your friend,
 you can first share a secret key with your friend.
 You can use the key to encrypt messages. Your friend can use the key to decrypt messages.
 
-
 Another application is secure data storage.
 You can encrypt the data stored on a hard disk with a secret key.
-Nobody but you can decrypt the data witht the secret key.
-right but you have to remember
-the key
-and that you cannot actually put the key
-on a hard disk you have to remember it
-and put it somewhere
-securely
-and then another application is called
-integrity check so here i'm showing
-a very naive
-message integrated code it means
-if we use this approach and if the
-message is changed by somebody that will
-be able to find it
-so here is how i'm going to actually do
-this kind of integrity so check you know
-and so first when you send a message i'm
-going to first send a message
-then
-i'm going to append the message with the
-include message
-so when i send to you right
-then you'll be able to actually find if
-the message is changed or not how can
-you do that
-can anybody tell me away
-of course and it's very easy right when
-you receive the message because you have
-the key then you can actually
-decrypt this incorrect message right and
-then compare
-the ticket message with the
-message
-and then if they are equal it means the
-message is not changed
-and uh
-this
-secret key crypto can also be used for
-authentication what is authentication it
-means we want to know
-we are talking to
-the right person so here we have edis we
-have bob let's assume they share a
-secret key first
+Nobody but you can decrypt the data with the secret key.
+
+Another application is called integrity check.
+Here is a naive message integrity code.
+If we use this approach to send a message and the
+message is changed by somebody, you will
+be able to find it.
+Here is how we do it.
+When you send a message, you will the message and the encryted message with a shared secret key with the receiver.
+The encrypted message serves as the message interity code.
+When the receiver receives the message, to check if the message is changed, the receiver can decrypt the message integrity code
+and compare the decrypted message with the message.
+if they are the same, the message is not changed.
+Otherwise, the message is changed.
+Of coruse, this message integrity code is not efficient since we use the entire encrypted message as the message integrity code.
+When we discuss hash algirithms, we will see the real message integrity code.
+
+The secret key crypto can also be used for authentication.
+What is authentication?
+The purpose of authentication is ensure we communicate with the right person.
+In the figure below, we assume Bob and Alice share a secret key K<sub>A,B</sub>. 
 so
 one
 wants to
@@ -241,6 +217,9 @@ shared a secret key and
 so that's the reason
 of course bob can use the same approach
 to authenticate ns
+
+<img src="../Imgs/SecretKeyCrypto-ChallengeResponse.png" width=480>
+
 okay so now let's introduce our hands-on
 exercise
 okay so first i want to introduce open
