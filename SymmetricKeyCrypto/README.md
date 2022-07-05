@@ -158,54 +158,26 @@ So you can imagine right after 16 rounds, the plaintext is really scrambled a lo
 The problem of DES is it its key size, only 56 bits.
 How mamy possible 56-bit keys? 2<sup>56</sup>.
 Given today's computer power, that is not a lot.
-hat's why people later
-invented
-the advanced equipment standard this is
-a the current
-standard for
-secret key crypto encryption okay and
-then here
-the key size of es can be 128 192 or 256
-and you know the ks is very secure
-and
-so basically if you choose a long es key
-and use es to include message you can
-assume your message is very secure
-so here i have a question how you
-encrypt a long message so as we said you
-know
-in ds right in es2 and each time
-we only process
-a block and in ds
-each block is a
-8 letters of 64 bits
-and in es
-each block is a 128 bits okay
-and so
+That's why people invented the advanced encryption standard (AES).
+This is the current standard for secret key crypto encryption.
+The key size of AES can be 128 192 or 256. It is pretty secure. 
+
+Here i have a question,
+AES can be used as block cipher, encrypting 128 bits of data one time.
+How can you encrypt a message longer than 128 bits?
 basically if a message is more than like
-a one million
-characters how do you encrypt a long
-message so that's my question
-let's look at the applications of a
-secret key crypto
-and
-of course one critical
-application is a
-secret data transformation so
-when you send a message to your friend
-youtube can first
-share a secret key and you can use the
-key
-to encrypted message in the decrypt
-message without the key doubling out
-will be able to decrypt your encrypted
-message
-of course if
-you want actually securely to
-store a file on your hard disk you can
-use the es
-to encrypt
-the data right but you have to remember
+
+### Applications of secret key crypto
+One critical application is secret data transformation.
+When you send a message to your friend,
+you can first share a secret key with your friend.
+You can use the key to encrypt messages. Your friend can use the key to decrypt messages.
+
+
+Another application is secure data storage.
+You can encrypt the data stored on a hard disk with a secret key.
+Nobody but you can decrypt the data witht the secret key.
+right but you have to remember
 the key
 and that you cannot actually put the key
 on a hard disk you have to remember it
