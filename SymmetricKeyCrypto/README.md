@@ -195,220 +195,25 @@ When we discuss hash algirithms, we will see the real message integrity code.
 The secret key crypto can also be used for authentication.
 What is authentication?
 The purpose of authentication is ensure we communicate with the right person.
-In the figure below, we assume Bob and Alice share a secret key K<sub>A,B</sub>. 
-so
-one
-wants to
-check if she's talking with bob she can
-pick up a random number whatever that
-member is is random nobody
-can guess what you are using and so you
-send the number to bob and bubba can use
-the shared key between
-and is the bob to include message
-then bumper will send
-the encrypt message back the one and it
-receives this incorrect message and it
-can decrypt it
-then if the secret message is same as
-rna it must be bob because only bob has
-not
-shared a secret key and
-so that's the reason
-of course bob can use the same approach
-to authenticate ns
+In the figure below, we assume Bob and Alice share a secret key *K<sub>A,B</sub>*. 
+Alice wants to check if she's talking with Bob.
+She picks up a random number and sends the random number to Bob.
+Bob uses the shared key *K<sub>A,B</sub>* to encrypt the random number and sends the enrypted random number back to Alice.
+Alice decrypts the ciphertext sent from Bob with *K<sub>A,B</sub>*.
+If the decryption produces the original random number she sent,
+Alice can be sure she is talking with Bob since only Bob can encrypt the random number right with the shared secret key.
+Bob can use the same approach to authenticate Alice.
 
 <img src="../Imgs/SecretKeyCrypto-ChallengeResponse.png" width=480>
 
-okay so now let's introduce our hands-on
-exercise
-okay so first i want to introduce open
-ssl
-so
-this
-open ssl actually is a crypto library
-but
-this leverage comes with a
-command line 2
-with the same name
-but it's just all lower letters open ssl
-and this command line two uses
-all the cryptographic graphic functions
-of
-the open ssls crypto library so you can
-see here this command line too can be
-used for encryption decryption can be
-used for message digest basically
-message integrity code and many other
-things so we will see more
-as we
-talk more about
-our topics in this gen server program
-so here is our hands-on one
-decipher scissor sever encrypted text
-so in this case you know
-the plain text i'm going to provide you
-a message the plain text is an english
-paragraph
-encrypt we succeeded several of a
-particular shift with a particular key
-here
-and i don't tell you the key so but you
-have to use a frequency analysis and i'm
-also giving you another tool which can
-produce the scissor
-sephora shifter table and then you can
-use another tool
-for see the sampler to actually
-decrypt
-the separate text
-okay
-and so i'm going to give you that
-so the hands-on two here
-is an encryption with a aes so here this
-is wrong
-okay
-and
-so
-this is a command you can actually use
-anchor open ssl apko is a
-linux command so we usually perform this
-hands-on
-within candidates okay our candy vm and
-so you can see here we do ankle open sl
-this message
-and then
-here
-this bar here
-is uh
-called actually redirection
-okay so basically the input the output
-of the first command this angle command
-will be the input
-of the second
-command open ssl
-and so you can see here we are using
-openssl the encryption
-function
-and
-here
-our key will be generated from
-a passcode called hello
-and then
-we are going to generate a key
-with 100 1000
-round of
-operation and uh so to make you know
-the
-general key very random okay
-and also we are going to use a
-an encryption algorithm called es 256
-means here to this is a key lens cpc is
-a special
-uh
-way of aes
-okay and here
-the e is a b64 output
-it means you know if you don't have this
-dash aim the output will be boundary
-numbers with a dash a
-the output will be printable itself so
-basically
-the binary output the binary server text
-is encoded
-in base64 one kind of encoding approach
-so that the output is printable
-okay
-so then once you get
-the
-separate text then you can use open ssl
-to decrypt
-the output
-right the ciphertext so this is how you
-do it again you can see we use echo
-and here
-the message
-echoed by
-anchor here is a
-separate text
-so
-you know so basically the output of the
-echo command will be input off of this
-open ssl command
-so
-within the open ssl enc command
-dash d means decryption so again we have
-to provide a hello
-and
-we had to provide the iteration
-times
-right so that we can create
-the correct
-key from hello
-and uh so dash a means you know the
-input message is encoded with bits 64.
-so in this way you know we can use
-openssl enc command
-to decrypt
-the ciphertext
-and then so here it's a
-handout
-three encryption
-and the decryption
-of a file with es so you basically
-once you understand the previous command
-you can understand this very well
-and we are using
-the es
-algorithm
-to actually
-encrypt
-a file okay so the input of the file
-i mean the input file is sequencer.tkc
-the other project is a
-secrets.txt enc of course you can give
-any name
-to
-the output file
-okay
-and then
-so once uh
-you
-got to
-your encrypted file
-then you can do the decryption
-and uh
-so here is how you do the decryption i
-think
-you can understand that the command
-easily
-our hands-on form is a
-we want to send the server text
-through our chat server so one student
-encrypts the messages and send out the
-server text
-via the chat server that's why you can
-see why we want a b64 encoding
-otherwise you know
-our channel server cannot take a battery
-input right and you can send you cannot
-send the banner messages
-and uh with base64
-you know the separate text will be in
-the big k4 format which is printable
-okay and uh so once you
-encrypt the message and send on the
-separate text the other person
-can receive
-the cipher text and then perform the
-decryption so you need to actually
-select
-the
-message that was sent over
-and then you right click and copy it and
-then you can use the previous approaches
-for decryption
-
+### OpenSSL
+OpenSSL is a crypto library that implements various cryptographic functionalities. 
+*openssl* is a command line tool under Linux.
+*openssl* uses various cryptography functions of OpenSSL's crypto library and can be used for
+- Encryption and Decryption with Ciphers
+- Calculation of Message Digests
+= Creation and management of private keys, public keys and parameters
+- Many oore…
 
 ## Hands-on
 
