@@ -7,7 +7,7 @@ Here are the lectures and hands-on labs for the GenCyber camp at UMass Lowell. T
 4. <a href="https://github.com/xinwenfu/GenCyber/tree/main/NetworkAttacks">Lecture 4</a> Network attacks 
 5. <a href="https://github.com/xinwenfu/GenCyber/tree/main/Firewall">Lecture 5</a> Firewall		
 6. <a href="https://github.com/xinwenfu/GenCyber/tree/main/IntrusionDetection">Lecture 6</a> Wireshark and Intrusion Detection System (IDS)
-7. <a href="https://github.com/xinwenfu/GenCyber/tree/main/SymmetricKeyCrypto">Lecture 7</a> Symmetric key crypto																				
-8. <a href="https://github.com/xinwenfu/GenCyber/tree/main/AsymmetricKeyCrypto">Lecture 8</a> Asymmetric key crypto																			
+7. <a href="https://github.com/xinwenfu/GenCyber/tree/main/SymmetricKeyCrypto">Lecture 7</a> Symmetric cryptography																			
+8. <a href="https://github.com/xinwenfu/GenCyber/tree/main/AsymmetricKeyCrypto">Lecture 8</a> Asymmetric cryptography																		
 9. <a href="https://github.com/xinwenfu/GenCyber/tree/main/Hash">Lecture 9</a> Checksum and hash																				
 10. <a href="https://github.com/xinwenfu/GenCyber/tree/main/DigitalSignature">Lecture 10</a>	Digital signature																		
