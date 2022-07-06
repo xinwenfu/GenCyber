@@ -1,4 +1,4 @@
-# Introduction to symmetrical key crypto
+# Introduction to symmetric key crypto
 
 We will first introduce what is cryptography.
 Next introduce some trivial codes such as Caesar cipher and frequency analysis against Caesar cipher.
