@@ -61,7 +61,8 @@ Most operations of Windows console commands can be completed with *File Explorer
 
 Press the Windows *Start* icon and search cmd.
 Click *Command Prompt* to start Windows console. 
-Refer to <a href="https://www.thomas-krenn.com/en/wiki/Cmd_commands_under_Windows">Cmd commands under Windows</a>. No comment is allowed to follow commands immediatly within Windows console.
+Refer to <a href="https://www.thomas-krenn.com/en/wiki/Cmd_commands_under_Windows">Cmd commands under Windows</a>.
+No comment is allowed to follow commands immediately within Windows console.
 
 <img src="../Imgs/Windows-Terminal.png" width=640>
 
