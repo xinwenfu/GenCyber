@@ -186,7 +186,7 @@ If we use this approach to send a message and the
 message is changed by somebody, you will
 be able to find it.
 Here is how we do it. We assume the sender and receiver share a secret key *K*.
-When you send a message, you will send both *Message* and the encryted message *K(Message)*.
+When you send a message, you will send both *Message* and the encryted message *K(Message)*, which means the secret key *K* is used to encrypt *Message*.
 The encrypted message serves as the message interity code.
 When the receiver receives the message, to check if the message is changed, the receiver can decrypt the message integrity code
 and compare the decrypted message with *Message*.
