@@ -1,8 +1,8 @@
-# Introduction to symmetric key crypto
+# Introduction to symmetric cryptography
 
 We will first introduce what is cryptography.
 Next introduce some trivial codes such as Caesar cipher and frequency analysis against Caesar cipher.
-Then we will introduce the modern secret key cryptography.
+Then we will introduce the modern secret key cryptography, called symmetric cryptography too.
 At last we are going to introduce hands-on labs.
 
 ## Introduction to Cryptography
