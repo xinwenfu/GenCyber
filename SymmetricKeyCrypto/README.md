@@ -189,10 +189,10 @@ Here is how we do it. We assume the sender and receiver share a secret key *K*.
 When you send a message, you will send both *Message* and the encryted message *K(Message)*.
 The encrypted message serves as the message interity code.
 When the receiver receives the message, to check if the message is changed, the receiver can decrypt the message integrity code
-and compare the decrypted message with the message.
+and compare the decrypted message with *Message*.
 if they are the same, the message is not changed.
 Otherwise, the message is changed.
-Of coruse, this message integrity code is not efficient since we use the entire encrypted message as the message integrity code.
+Of course, this message integrity code is not efficient at all since we use the entire encrypted message as the message integrity code.
 When we discuss hash algirithms, we will see the real message integrity code.
 
 ```
@@ -205,11 +205,11 @@ What is authentication?
 The purpose of authentication is ensure we communicate with the right person.
 In the figure below, we assume Bob and Alice share a secret key *K<sub>A,B</sub>*. 
 Alice wants to check if she's talking with Bob.
-She picks up a random number and sends the random number to Bob.
+She picks up a random number as a challenge and sends the random number to Bob.
 Bob uses the shared key *K<sub>A,B</sub>* to encrypt the random number and sends the enrypted random number back to Alice.
 Alice decrypts the ciphertext sent from Bob with *K<sub>A,B</sub>*.
 If the decryption produces the original random number she sent,
-Alice can be sure she is talking with Bob since only Bob can encrypt the random number right with the shared secret key.
+Bob passes the challenge, his response is correct, and Alice can be sure she is talking with Bob since only Bob can encrypt the random number right with the shared secret key.
 Bob can use the same approach to authenticate Alice.
 
 <img src="../Imgs/SecretKeyCrypto-ChallengeResponse.png" width=480>
@@ -245,7 +245,7 @@ Bw kzcap bpm zmjmttqwv wvkm ivl nwz itt, bpm MUXQZM qa kwvabzckbqvo i aqvqabmz v
 What is the plaintext message?
 
 ### Hands-on 2: Encryption with AES
-Encrypt a message like "OpenSSL"
+Encrypt a message like "OpenSSL" on Kali VM.
 ```
 echo "OpenSSL" | openssl enc -iter 1000 -aes-256-cbc -a -k hello
 ```
@@ -259,7 +259,7 @@ echo "OpenSSL" | openssl enc -iter 1000 -aes-256-cbc -a -k hello
 - *-a*: means BASE64 output
 
 ### Hands-on 3: Decryption with AES
-Decrypt the encrypted message
+Decrypt the encrypted message on Kali VN
 ```
 echo "U2FsdGVkX1+lVCnMEVpKXisqA1IlycMvDFkv72ILasg=" | openssl enc -aes-256-cbc -iter 1000 -a -d -k hello
 ```
@@ -281,8 +281,9 @@ openssl aes-256-cbc -d -a -in secrets.txt.enc -out secrets.txt.new -iter 1000 -k
 ```
 
 ### Hands-on 4: Send Encrypted Message via Chat Server
-- One person encrypts messages and sends
-- The other person receives encrypted messages and decrypts
+- Start the chat server on Windows VM
+- One person encrypts messages and sends over the chat client on Kali VM
+- The other person receives encrypted messages and decrypt s on Kali VM
 
 ## References
  
