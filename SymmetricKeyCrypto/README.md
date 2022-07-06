@@ -185,8 +185,8 @@ Here is a naive message integrity code.
 If we use this approach to send a message and the
 message is changed by somebody, you will
 be able to find it.
-Here is how we do it. We assume the sender and receiver share a secret key.
-When you send a message, you will send both the message and the encryted message.
+Here is how we do it. We assume the sender and receiver share a secret key *K*.
+When you send a message, you will send both *Message* and the encryted message *K(Message)*.
 The encrypted message serves as the message interity code.
 When the receiver receives the message, to check if the message is changed, the receiver can decrypt the message integrity code
 and compare the decrypted message with the message.
@@ -194,6 +194,11 @@ if they are the same, the message is not changed.
 Otherwise, the message is changed.
 Of coruse, this message integrity code is not efficient since we use the entire encrypted message as the message integrity code.
 When we discuss hash algirithms, we will see the real message integrity code.
+
+```
+Message | K(Message)
+```
+where | means concatenation.
 
 The secret key crypto can also be used for authentication.
 What is authentication?
