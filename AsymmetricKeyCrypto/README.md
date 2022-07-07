@@ -1,47 +1,27 @@
-# Introduction to asymmetric key cryptography
+# Introduction to asymmetric cryptography
 
-here is a the outline of
-this lecture
-we are first going to discuss different
-type of
-cryptography next we introduce
-the public key crypto
-one example of a
-public key crypto is a rsa so we are
-going to discuss
-a little bit more about
-rsa open ssl implements a lot of
-cryptographic functions so we are going
-to discuss open ssl which will be used
-for our hands-on exercises
-here let's look at a different type of
-cryptography
-we have discussed the secret key
-cryptography
-as we know
-in secret key
-cryptography the sender and the receiver
-they share the same key
-so based on the number of keys
-we can actually
-categorize
-cryptography into three tabs so one is
-uh the hash functions
-when we use hash functions there's no
-key over there
-the second one is a the secret key
-crypto there's only one key shared by
-the sender and the receiver
-then the third type is a public key
-crypto in public key crypto
-each person
-or each entity has two keys
-public key and private key so we will
-look at
-public key crypto in detail
-so let's uh review what we have learned
-about the secret key crypto so in this
-example here we have bob on the left and
+TO BE EDITTED
+
+We are first going to discuss different type of cryptography.
+Next we introduce the public key crypto.
+One example of public key crypto is RSA. So we are
+going to discuss a little bit more about RSA and see how it works.
+OpenSSL implements a lot of cryptographic functions.
+We are going to discuss openssl, a command line tool that uses OpenSSL to implement a lot of cryptographic functions, for our hands-on exercises.
+
+## Different types of cryptography
+
+We have discussed the secret key cryptography, i.e., symmetric crypto.
+Based on the number of keys we can actually categorize cryptography into three types.
+One is the hash functions, which will be introduced in another tutorial.
+When we use hash functions, there's no key over there.
+The second type of cryptography is a the secret key crypto, in which there's only one key shared by
+the sender and the receiver.
+The third type is a public key crypto.
+In public key crypto, each person or each entity has two keys, (public key, private key).
+
+Before we introduce public key crypto, let's review what we have learned about the secret key crypto.
+In this picture below, here we have bob on the left and
 is on the right
 so bob
 is sending out a message which is called
