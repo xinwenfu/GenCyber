@@ -33,16 +33,11 @@ This is a basically how we use a secret key crypto algorithm to encrypt a messag
 
 <img src="../Imgs/SecretKeyCrypto.png" width=512>
 
-Secret key crypto is also called symmetrical crypto (because of the same key for encryption and decryption by Alice and Bob) or conventional
-crypto because that was conventionally
-used by people
-so now let's look at the public crypto
-will
-we are going to discuss the hash
-aggregates later
-and in another lecture
+Secret key crypto is also called symmetrical crypto (because of the same key for encryption and decryption by sender and receiver) or conventional crypto (because that was conventionally used by people).
 
-so this is the big picture of a public
+## Public Key Cryptography
+
+This is the big picture of a public
 key crypto so in public key crypto then
 we have again bob on the left and that
 is on the right so let's look at this
@@ -106,7 +101,11 @@ any as a public key
 to encrypt the plain text
 okay
 and so this is a basically how
-public key crypto encryption works so we
+public key crypto encryption works 
+
+<img src="../Imgs/AsymmetricCrypto.png" width=512>
+
+so we
 are going to look at an example later
 and
 you know
