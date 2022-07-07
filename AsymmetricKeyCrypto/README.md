@@ -57,6 +57,9 @@ will
 we are going to discuss the hash
 aggregates later
 and in another lecture
+
+<img src="../Imgs/Imgs/SecretKeyCrypto.png" width=640>
+
 so this is the big picture of a public
 key crypto so in public key crypto then
 we have again bob on the left and that
