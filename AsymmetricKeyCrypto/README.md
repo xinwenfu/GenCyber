@@ -58,7 +58,7 @@ we are going to discuss the hash
 aggregates later
 and in another lecture
 
-<img src="../Imgs/SecretKeyCrypto.png" width=640>
+<img src="../Imgs/SecretKeyCrypto.png" width=512>
 
 so this is the big picture of a public
 key crypto so in public key crypto then
