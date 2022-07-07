@@ -21,35 +21,19 @@ The third type is a public key crypto.
 In public key crypto, each person or each entity has two keys, (public key, private key).
 
 Before we introduce public key crypto, let's review what we have learned about the secret key crypto.
-In this picture below, here we have bob on the left and
-is on the right
-so bob
-is sending out a message which is called
-plain text
-so bob is going to use
-an encryption algorithm for example es
-and a key
-to encrypt the plain text and
-this procedure will produce the cipher
-text
-so the cipher text will go through the
-internet and
-finally the ciphertext arrives at
-the receiver's site
-the receiver edits
-uses
-a decryption equilibrium and the same
-key as a
-the key used by bob
-to decrypt the separate text and obtain
-the plain text
-so this is a basically how we use a
-secret key crypto
-to encrypt a message
-okay
-and uh so as we know
-secret key crypto is also called
-symmetrical crypto or conventional
+In the picture below, we have Bob on the left and Alice on the right.
+Bob is sending out a message, which is called plaintext, to Alice.
+Bob is going to use an encryption algorithm, for example AES, and a secret key
+to encrypt the plaintext.
+This procedure produces theciphertext.
+The ciphertext goes through the Internet and finally arrives at the receiver, Alice.
+Alice uses a decryption algorithm and the same
+key as the key used by Bob to decrypt the ciphertext and obtain the original plaintext.
+This is a basically how we use a secret key crypto algorithm to encrypt a message
+
+<img src="../Imgs/SecretKeyCrypto.png" width=512>
+
+Secret key crypto is also called symmetrical crypto (because of the same key for encryption and decryption by Alice and Bob) or conventional
 crypto because that was conventionally
 used by people
 so now let's look at the public crypto
@@ -57,8 +41,6 @@ will
 we are going to discuss the hash
 aggregates later
 and in another lecture
-
-<img src="../Imgs/SecretKeyCrypto.png" width=512>
 
 so this is the big picture of a public
 key crypto so in public key crypto then
