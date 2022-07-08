@@ -128,41 +128,64 @@ K<sup>-1</sup>(K(M))=M.
 Here K<sup>-1</sup> means that K is used to the encrypted message K(M).
 
 
+### Two Properties of Public Key Crypto
+
+#### d(e(M))=M
+
+A message M can be encrypted with one’s public key e, i.e., e(M).
+Only the one’s private key can be used to decrypt e(M), that is, d(e(M))=M.
+We have been using this property for encryption and decret for secret message transmission.
+
+#### e(d(M))=M
+One can encrypt a message by its private key d, i.e., d(M).
+Only the one’s public key can be used to decrypt d(M), that is, e(d(M))=M.
+
+Here is a question for you.
+With the second property, can we use this property for secret data transmission?
+For example, Alice encrypts a message M with her private key and gets d<sub>A</sub>(M).
+She sends the ciphertext to Bob, who can use Alice's public key to decrypt the ciphertext e<sub>A</sub>(d<sub>A</sub>(M))=M. Technically this is fine. Is this secure? If a bad guy over the Internet intercepts the ciphertext during its transmission, can the bad guys decrypt the ciphertext?
+
+### Naive digital signature
+
+The second property of public key crypto is actually the foundation of a critical application, digital signature.
+Let's see a naive digital siganture scheme.
+In this example Bob wants to publish an announcement M.
+He wants to sign the message and let everybody know he makes that announcement.
+Everybody can verify he makes that announcement.
+
+How can we produce such a digital signature?
+This is how it works.
+Bob has the public and the private key pair (e<sub>B</sub>, d<sub>B</sub>).
+e<sub>B</sub> is his public key and d<sub>B</sub> is his private key.
+Signing the annnoucement M means Bob is going to use his private key to encrypt M.
+That is, the digital siganture is d<sub>B</sub>(M).
+When bob publishes the annoucement, 
+he publishes both M and the digital signature d<sub>B</sub>(M), M | d<sub>B</sub>(M), where | means concatenation.
+
+How can you verify the annoucement is from Bob?
+Let's assume you have Bob's public key.
+This is how we do it.
+and so basically anybody can use
+bob's public key
+to decrypt
+this encrypted contract by bob's private
+key
+if the decrypted contract is the same as
+the published contract it is from bob
+because only bob's
+public key can decrypt this encrypted
+contract right
+right so then we are sure it is from bob
+so this is a deny you digital signature
+why is it now you because you can see
+here we encrypt the whole tr contract
+as a bob's
+digital signature so that's not very
+efficient it's too long okay
+and so that's basically what we are
+doing here
 
 
-actually
-public crypto has two problems we
-already saw one so
-we already saw when you have a message
-here you can use
-somebody's public key to encrypt the
-message and the data somebody can use a
-it's a private key to decrypt this step
-for the case except for text and the
-receiver
-i mean recover the original message
-okay
-and
-so actually there's a lot of property
-and uh so you can also use the
-i mean somebody's private key
-to
-include the message and that that
-somebody can use it it's
-a key to decrypt
-this encrypted message by
-somebody's private key you can still
-recover the
-original message
-here i have a question for you
-so the second problem here can we use
-this property
-to
-secretly send a message across the
-internet
-okay very good so we already understand
-the basic idea of a public key crypto so
-let's look at uh
 one example of a particular crypto and
 see how it works so rsa
 so rsa
@@ -377,74 +400,9 @@ i mean the guy can still use a
 everybody can use his public key to
 decrypt this include message to recover
 the original app okay
-and uh so let's look at
-a nail digital signature
-strategy here so in this case bob
-actually wants
-to publish an announcement or contract
-here
-singing okay i want to give professor
-foo 1 million dollars of course i'm
-joking and but anyway and he wants
-everybody to know
-i mean
-he's doing it
-but how can everybody
-verify
-it's really him who wants to do it
-okay
-so this is how it works
-so bob has a
-the public and the proud key pair right
-eb is a public key db is
-the private key
-so what
-he will do is he will sign the contract
-what is this a signing procedure
-actually the signing means
-he is going to use his private key here
-to encrypt this contract
-so now when bob
-delivers
-the contract
-alongside this contract i publish this
-contract
-he will actually publish two parts
-the first part is the contract itself
-the second part is
-this digital signature which is the
-encrypted contract by bob's publicly can
-anybody tell me
-so
-how can actually bob
-i mean how can you for example let's
-assume you have a bubbles public key
-how can you actually prove
-this contract
-is
-released by
-bob
-okay
-so this is how we do it
-and so basically anybody can use
-bob's public key
-to decrypt
-this encrypted contract by bob's private
-key
-if the decrypted contract is the same as
-the published contract it is from bob
-because only bob's
-public key can decrypt this encrypted
-contract right
-right so then we are sure it is from bob
-so this is a deny you digital signature
-why is it now you because you can see
-here we encrypt the whole tr contract
-as a bob's
-digital signature so that's not very
-efficient it's too long okay
-and so that's basically what we are
-doing here
+
+
+
 very good so now let's look at to
 open ssl so what is open ssl so open ssl
 actually is a
