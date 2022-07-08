@@ -94,95 +94,43 @@ Because only you have the private key, only you can actually decrypt the encrypt
 That's the idea of secure storage with public key crypto.
 
 ## Key exchange
-so as we mentioned you know
-most of the time if you have a lot of
-data to transmit across the internet
-we actually do not use public crypto
-because it's too slow you don't want to
-wait for your message to arrive
-after a long delay
-right so
-that's
-why
-you know
-when we send
-messages
-if we need interaction with our receiver
-most of the time we are going to use
-secret key crypto
-however in secret key crypto when we do
-encryption decryption
-we need
-actually share the key between the
-standard and the receiver
-but on the internet you know
-it's not so easy to share a key with
-somebody right
-and uh
-so how do we address
-this issue how do we actually share a
-secret key
-in secret key crypto
-across the internet this problem is
-called key exchange
-actually it can be solved by the public
-crypto easily so let's look at this
-example here so here again we have edis
-we have bob
-right and
-so let's see here the key here is i mean
-this electric key here is a the secret
-key in secret key crypto
-and while alice wants to
-share this key with bob
-edis can just use bob's public key to
-encrypt this key
-and send it over to bob when bubble
-receive it and bubba can use
-his private key to decrypt this
-encrypted key
-then bubble
-can recover
-the
-secret key
-so once this secret key is a
-shared
-between anything above
-and the editor bubble can use
-this
-key to encrypt the message so here i'm
-giving you
-an example here and alice has a message
-m here so here
-and it uses
-the shared key here to encrypt this
-message
-and
-send it over so when bubble receive it
-bubble can use
-the same key to decrypt
-the cipher text so here key
-to the power of a minus one means that
-bob uses the same key
-to decrypt
-the message
-okay
-so this is the idea of key exchange so
-now you can see
-so we use
-the publicly crypto to share the key and
-we can use the key
-to encrypt the message
-with a secret key crypto and uh so
-actually secret key crypto is pretty
-fast it's a at least a
-fit for
-interaction between
-sender and receiver so you can send the
-messages
-and you can talk with your friends
-with encryption
-so actually
+If we have a lot of data to transmit across the Internet,
+we actually do not use public crypto because it's too slow.
+You don't want to wait for your message to arrive after a long delay, right?
+That's why when we need real-time interaction with our receiver,
+we are going to use secret key crypto to encrypt messages.
+
+However in secret key crypto when we do encryption and decryption
+we need to share the secret key between the sender and the receiver.
+But on the Internet, how can we share a key with somebody far away?
+Calling somebody is really awkward, not convenient.
+How do we actually share a secret key across the Internet?
+This problem is called key exchange.
+
+The problem of key exchange can be solved by the public crypto easily.
+Let's look at this example here.
+We have Alice on the left and Bob on the right.
+Alice wants to send a secret key *K* for secret key crypto to Bob.
+Alice can just use Bob's public key e<sub>B</sub> to
+encrypt this secret key *K* and send e<sub>B</sub>(K) over to Bob.
+When Bob receive its, he can use his private key d<sub>B</sub> to decrypt this encrypted secret key and  recover the secret key, that is,
+
+d<sub>B</sub>(e<sub>B</sub>(K))=K.
+
+Once this secret key *K* is shared between Alice and Bob, they can use this secret K to encrypt messages.
+Here is an example.
+Alice has a message M. She uses K to encrypt M with the AES algorithm.
+K(M) is sent to Bob.
+When Bob receives it, he can use the shared key K to decrypt the ciphertext, that is
+
+K<sup>-1</sup>(K(M))=M.
+
+Here K<sup>-1</sup> means that K is used to the encrypted message K(M).
+
+
+
+
+actually
 public crypto has two problems we
 already saw one so
 we already saw when you have a message
