@@ -105,7 +105,7 @@ Calling somebody is really awkward, not convenient.
 How do we actually share a secret key across the Internet?
 This problem is called key exchange.
 
-<img src="../Imgs/KeyExchange.png" width=480>
+<img src="../Imgs/KeyExchange.png" width=320>
 
 The problem of key exchange can be solved by the public crypto easily.
 Let's look at this example here.
