@@ -50,17 +50,22 @@ Like Bob, Alice has her own public and private key pair (e<sub>A</sub>, d<sub>A<
 Bob is going to send a message *M*, which is the plaintext, to Alice.
 Pay attention to how the encryption is done.
 Bob needs an encryption algorithm.
-But in this case Bob is going to use Alice's public key for the encryption.
+But in this case Bob is going to use Alice's public key e<sub>A</sub> for the encryption.
 Alice's public key is supposed to be known by anyone.
 That is why it is called *public* key.
 Bob uses an encryption algorithm and Alice's public key to encrypt the message.
-The encryption produces the ciphertext, i.e., e<sub>A</sub>(M).
+The encryption produces the ciphertext, i.e., 
+
+e<sub>A</sub>(M), 
+
+which means e<sub>A</sub> is used to encrypt the message *M*.
 The ciphertext goes through the Internet and arrives at the receiver Alice.
-Alice then uses a decryption algorithm and her private key, which is different
-from her public key, to decrypt the ciphertext.
-The decryption produces the original plaintext, that is d<sub>A</sub>(e<sub>A</sub>(M))=M. 
+Alice then uses a decryption algorithm and her private key d<sub>A</sub>, which is different
+from her public key, to decrypt the ciphertext, that is, 
 
+d<sub>A</sub>(e<sub>A</sub>(M))=M.
 
+The decryption produces the original plaintext. 
 
 You can see here in public key crypto, 
 the encryption and the decryption use different keys.
