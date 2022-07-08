@@ -178,58 +178,28 @@ When we discuss hash functions, we will see the real world digital siganture.
 
 ## RSA
 
-one example of a particular crypto and
-see how it works so rsa
-so rsa
-is a one type of a
-public key crypto very popular one
-let's look at how we use rsa to encrypt
-and decrypt message
-so when we talk about the message
-you know
-all the messages all the
-docs all the data
-are sealed on computer
-in final numbers
-so whatever the message is just
-a sequence of bits
-okay
-and of course
-you can treat
-the bs
-as messages but
-really they are also
-final numbers so encrypting a message is
-equivalent to encrypting a number
-so here is an
-example let's see m is one zero one zero
-zero one we don't care about what it is
-means in terms of messages but anyway so
-this is a
-equal to a decimal number 145
-okay so when we say
-we want encrypt m
-we actually
-encrypt the corresponding number and
-this is a about rsa
-okay so here
-let's first look at
-how do we
-create
-public key and the private key for a
-person okay because in public key crypto
-we said
-everybody
-must have a a pair of a public and
-private key and so this is all just
-calculations so step one we choose two
-large prime numbers so what is prime
-number a prime number
-has only two factors one and itself
-okay
-then
-step two you compute n
-and n is equal to p times q that's easy
+One example of public key crypto is RSA, which is a very popular one.
+Let's look at how we use RSA to encrypt and decrypt message.
+When we talk about the message, you know
+all the messages, docs and data are stored on computers in binary numbers.
+A message is just a sequence of bits.
+For example, American Standard Code for Information Interchange (ASCII) encodes 128 English letters and other particular characters into seven-bit integers. 
+So encrypting a message is equivalent to encrypting a number.
+So here is an example. Let's say *m* is 10100001.
+We don't care about what the binary number represents in terms of messages.
+But this binary number is equal to the decimal number 161.
+So when we say we want encrypt *m*, we actually encrypt the corresponding number.
+
+### RSA: Creating public/private key pair
+
+Ket's first look at how we create a public key and the private key for a person.
+Recall in public key crypto, everybody must have a a pair of public and private keys.
+
+**Step one**: we choose two large prime numbers.
+So what is a prime number?
+A prime number has only two factors, one and itself.
+
+**Step two**: You compute n=p &times; q. that's easy
 z is equal to p minus 1 times q minus 1.
 that's not hard either
 now we choose e
