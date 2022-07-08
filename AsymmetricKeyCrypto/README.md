@@ -86,6 +86,8 @@ Bob is going to use his private key d<sub>B</sub>( to decrypt this ciphertext an
 
 <p align="center"> d<sub>B</sub>(e<sub>B</sub>(M))=M. </p>
 
+<img src="../Imgs/PublicKeyDataTransmission.png" width=480>
+
 You can also use public key crypto for secure storage, storing encrypted data such as files on a hard disk.
 You can use your public key to encrypt files other data and then put the encrypted data on your hard disk.
 Because only you have the private key, only you can actually decrypt the encrypted data.
