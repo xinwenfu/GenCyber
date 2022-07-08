@@ -165,25 +165,16 @@ he publishes both M and the digital signature d<sub>B</sub>(M), M | d<sub>B</sub
 How can you verify the annoucement is from Bob?
 Let's assume you have Bob's public key.
 This is how we do it.
-and so basically anybody can use
-bob's public key
-to decrypt
-this encrypted contract by bob's private
-key
-if the decrypted contract is the same as
-the published contract it is from bob
-because only bob's
-public key can decrypt this encrypted
-contract right
-right so then we are sure it is from bob
-so this is a deny you digital signature
-why is it now you because you can see
-here we encrypt the whole tr contract
-as a bob's
-digital signature so that's not very
-efficient it's too long okay
-and so that's basically what we are
-doing here
+Basically anybody can use Bob's public key
+to decrypt the digital signature, that is the encrypted annoucement M.
+if the decrypted M is the same as the published M, the annoucement M is from Bob
+because only Bob's public key can decrypt this encrypted M right.
+Then we are sure it is from Bob.
+
+This is a naive digital signature because you can see
+here the whole annoucement is encrypted with Bob's private key as the digital signature.
+That's not very efficient since the digital siganture too long.
+When we discuss hash functions, we will see the real world digital siganture.
 
 
 one example of a particular crypto and
