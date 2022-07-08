@@ -37,106 +37,45 @@ Secret key crypto is also called symmetrical crypto (because of the same key for
 
 ## Public Key Cryptography
 
-This is the big picture of a public
-key crypto so in public key crypto then
-we have again bob on the left and that
-is on the right so let's look at this
-example
-so in this example
-actually in any scenario of a public key
-crypto so each person
-is going to have two keys
-so here you can see in a parenthesis
-i put two
-symbols here eb and db so eb is the
-public key of bob db is his private key
-same
-as bob here nsa has a two keys
-so
-ea is a
-analysis
-public key and d a is a
-and this is a private key
-okay
-so in this case again
-bob
-is going to send a message
-that is the plain text to
-alice so pay attention to the difference
-so again
-okay bob needs an encryption algorithm
-but in this case you can see here
-what happens is that bob is going to use
-it and this is a public key
-which is public and known by anyone
-okay
-and uh so bob is going to use an
-encryption agreement and analysis
-public key to encrypt the message
-so
-the encryption produces the separate
-text
-so again the cipher text goes through
-the internet and arouse enter address
-so in this case
-alice
-again
-uses a
-decryption algorithm
-and her private key which is different
-from
-her public key to decrypt
-the cipher text
-and
-the decryption will produce the plain
-text
-so you can see here
-in public crypto
-the encryption and the decryption use
-different keys and then also pay
-attention
-how baba
-uses
-any as a public key
-to encrypt the plain text
-okay
-and so this is a basically how
-public key crypto encryption works 
+### Encryption and Decryption
+The picture below shows how encryption and decryption are done in public key crypto.
+We have again Bob on the left and Alice  is on the right.
+In any scenario of public key crypto, each person or entity has two keys.
+Here Bob has the public and private key pair (e<sub>B</sub>, d<sub>B</sub>),
+where e<sub>B</sub> is Bob's public key and d<sub>B</sub> is his private key.
+Like Bob, Alice has her own public and private key pair (e<sub>A</sub>, d<sub>A</sub>), which is different from (e<sub>B</sub>, d<sub>B</sub>).
 
 <img src="../Imgs/AsymmetricCrypto.png" width=512>
 
-so we
-are going to look at an example later
-and
-you know
-most of the public key crypto aggregates
-involve a lot of mathematical
-you know calculations
-and as we have learned in secretly key
-crypto when we do secret key crypto
-encryption most of time we use a
-permutation
-and
-also
-you know substitutions
-to perform the encryption that doesn't
-involve a lot of mathematical
-calculation but
-as we just said
-publicly crypto often involves a lot of
-mathematical agreements
-and the mathematical calculations
-and the mathematical calculations
-are much slower compared
-with
-permutations and substitutions
-because
-alice and bob use different keys for
-decryption encryption
-and
-that's why
-here property crypto is also called
+Bob is going to send a message, which is the plaintext, to Alice.
+Pay attention to how the encryption is done.
+Bob needs an encryption algorithm.
+But in this case Bob is going to use Alice's public key for the encryption.
+Alice's public key is supposed to be known by anyone.
+That is why it is called *public* key.
+Bob uses an encryption algorithm and Alice's public key to encrypt the message.
+The encryption produces the ciphertext.
+The ciphertext goes through the Internet and arrives at the receiver Alice.
+Alice then uses a decryption algorithm and her private key, which is different
+from her public key, to decrypt the ciphertext.
+The decryption produces the original plaintext.
+
+You can see here in public key crypto, 
+the encryption and the decryption use different keys.
+That's why public key is also called
 asymmetrical crypto
+
+Pay attention to the fact that Bob uses Alice's public key (not Bob's keys)
+to encrypt the plaintext.
+
+The public key crypto often involve a lot of mathematical calculations, which are time consuming for computers.
+As we have learned, encrypton in secret key crypto uses substitutions and permutations, which can be done fast by computers. 
+Secret key crypto performs the encryption that doesn't
+involve a lot of mathematical calculation.
+But public key crypto often involves a lot of
+mathematical mathematics, and is often much slower than secret key crypto.
+
+### Application: Data transmission and secure storate
 so let's look at the one application of
 the public crypto
 so of course again we can use a public
