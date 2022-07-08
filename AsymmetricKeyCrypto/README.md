@@ -1,7 +1,5 @@
 # Introduction to asymmetric cryptography
 
-TO BE EDITTED
-
 We are first going to discuss different type of cryptography.
 Next we introduce the public key crypto.
 One example of public key crypto is RSA. So we are
@@ -60,7 +58,7 @@ The ciphertext goes through the Internet and arrives at the receiver Alice.
 Alice then uses a decryption algorithm and her private key d<sub>A</sub>, which is different
 from her public key, to decrypt the ciphertext and produce the original plaintext, that is, 
 
-d<sub>A</sub>(e<sub>A</sub>(M))=M.
+<p align="center"> d<sub>A</sub>(e<sub>A</sub>(M))=M. </p>
 
 You can see here in public key crypto, 
 the encryption and the decryption use different keys.
