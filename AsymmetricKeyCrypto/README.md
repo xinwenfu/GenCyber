@@ -44,7 +44,7 @@ In any scenario of public key crypto, each person or entity has two keys.
 Here Bob has the public and private key pair (e<sub>B</sub>, d<sub>B</sub>),
 where e<sub>B</sub> is Bob's public key and d<sub>B</sub> is his private key.
 Like Bob, Alice has her own public and private key pair (e<sub>A</sub>, d<sub>A</sub>), which is different from (e<sub>B</sub>, d<sub>B</sub>).
-The public key shall be released to the public and known to people who want to know it. 
+The public key shall be released to the public and known by people who want to know it. Actually how to realiably publish public keys is another problem although we will not discuss it in this tutorial.
 The private key shall be keep secret to the person/entity who owns it.
 
 <img src="../Imgs/AsymmetricCrypto.png" width=512>
@@ -52,105 +52,106 @@ The private key shall be keep secret to the person/entity who owns it.
 Let's say Bob is going to send Alice a message *M*, which is the plaintext.
 Pay attention to how the encryption is done.
 Bob needs an encryption algorithm and a key.
-But in this case Bob is going to use Alice's public key e<sub>A</sub> for the encryption.
+In this case, Bob is going to use Alice's public key e<sub>A</sub> for the encryption.
 Alice's public key is supposed to be known by the public.
 That is why it is called *public* key.
-Bob uses an encryption algorithm and Alice's public key to encrypt the message.
+Bob uses an encryption algorithm such as RSA introduced later and Alice's public key to encrypt the message.
 The encryption produces the ciphertext, i.e., e<sub>A</sub>(M), 
 which means e<sub>A</sub> is used to encrypt the message *M*.
 The ciphertext goes through the Internet and arrives at the receiver, Alice.
-Alice then uses a decryption algorithm and her private key d<sub>A</sub>, which is different
+Alice then uses a decryption algorithm such as RSA and her private key d<sub>A</sub>, which is different
 from her public key, to decrypt the ciphertext and produce the original plaintext.
 That is, 
 
 <p align="center"> d<sub>A</sub>(e<sub>A</sub>(M))=M. </p>
 
-You can see here in public key crypto, 
-the encryption and the decryption use different keys.
+You can see in public key crypto, 
+the encryption and the decryption use *different* keys.
 That's why public key crypto is also called asymmetrical crypto.
-Also pay attention to the fact that Bob uses Alice's public key (not Bob's keys)
-to encrypt the plaintext.
+Also pay attention to the fact that Bob uses Alice's public key (not Bob's keys) to encrypt the plaintext.
 
 The public key crypto often involves a lot of mathematical calculations,
 which are time consuming for computers.
 As we have learned, encrypton in secret key crypto uses substitutions and permutations,
 which can be done fast by computers. 
-Secret key crypto performs the encryption that doesn't
-involve a lot of mathematical calculation.
+Secret key crypto performs encryption that doesn't involve a lot of mathematical calculation.
 But public key crypto often involves a lot of
-mathematical mathematics, and is often much slower than secret key crypto.
+mathematical mathematics, thus is often much slower than secret key crypto.
 
 ### Applications: Data transmission and secure storate
 Let's look at one application of public key crypto.
-We can use public key crypto for data transformation as the example above shows.
+We can use public key crypto for data transmission as the example above shows.
 Let's look at another example here.
 In this example Alice has a message *M* to send to Bob.
-Alice is going to use Bob's public key e<sub>B</sub> to encrypt this message *M*.
+She is going to use Bob's public key e<sub>B</sub> to encrypt this message *M*.
 The ciphertext e<sub>B</sub>(M) is sent to Bob.
-Bob is going to use his private key d<sub>B</sub>( to decrypt this ciphertext and recover the original message, that is,
+Bob then uses his private key d<sub>B</sub> to decrypt this ciphertext and recover the original message.
+That is,
 
 <p align="center"> d<sub>B</sub>(e<sub>B</sub>(M))=M. </p>
 
 <img src="../Imgs/PublicKeyDataTransmission.png" width=480>
 
 You can also use public key crypto for secure storage, storing encrypted data such as files on a hard disk.
-You can use your public key to encrypt files other data and then put the encrypted data on your hard disk.
+You can use your public key to encrypt files or other data and put the encrypted data on your hard disk.
 Because only you have the private key, only you can actually decrypt the encrypted data.
 That's the idea of secure storage with public key crypto.
 
 ## Key exchange
 If we have a lot of data to transmit across the Internet,
-we actually do not use public crypto because it's too slow.
-You don't want to wait for your message to arrive after a long delay, right?
-That's why when we need real-time interaction with our receiver,
+we actually do not use public key crypto for encryption and decryption because it's too slow.
+You don't want to wait for your messages to arrive after a long delay, right?
+That's why when we need real-time interaction with each other,
 we are going to use secret key crypto to encrypt messages.
 
 However in secret key crypto when we do encryption and decryption
-we need to share the secret key between the sender and the receiver.
+we need to share a secret key between the sender and the receiver.
 But on the Internet, how can we share a key with somebody far away?
-Calling somebody is really awkward, not convenient.
+Calling somebody is really awkward, not convenient either.
 How do we actually share a secret key across the Internet?
-This problem is called key exchange.
+This problem is called *key exchange*.
 
 <img src="../Imgs/KeyExchange.png" width=480>
 
-The problem of key exchange can be solved by the public crypto easily.
+The problem of key exchange can be solved by public key crypto.
 Let's look at this example here.
 We have Alice on the left and Bob on the right.
-Alice wants to send a secret key *K* for secret key crypto to Bob.
+Alice wants to send a secret key *K* (for secret key crypto) to Bob.
 Alice can just use Bob's public key e<sub>B</sub> to
 encrypt this secret key *K* and send e<sub>B</sub>(K) over to Bob.
-When Bob receive its, he can use his private key d<sub>B</sub> to decrypt this encrypted secret key and  recover the secret key, that is,
+When Bob receives it, he can use his private key d<sub>B</sub> to decrypt this encrypted secret key and  recover the secret key. That is,
 
 <p align="center"> d<sub>B</sub>(e<sub>B</sub>(K))=K. </p>
 
 Once this secret key *K* is shared between Alice and Bob, they can use this secret K to encrypt messages.
 Here is an example.
-Alice has a message M. She uses K to encrypt M with the AES algorithm.
-K(M) is sent to Bob.
+Alice has a message M.
+She uses K to encrypt M with the AES algorithm.
+The ciphertext K(M) is sent to Bob.
 When Bob receives it, he can use the shared key K to decrypt the ciphertext, that is
 
 <p align="center"> K<sup>-1</sup>(K(M))=M. </p>
 
-Here K<sup>-1</sup> means that K is used to the encrypted message K(M).
+Here K<sup>-1</sup> means that K is used to decrypt the encrypted message K(M).
 
 
 ### Two Properties of Public Key Crypto
+Here are two important properties of public key crypto, not limited to RSA.
 
 #### d(e(M))=M
 
 A message M can be encrypted with one’s public key e, i.e., e(M).
 Only the one’s private key can be used to decrypt e(M), that is, d(e(M))=M.
-We have been using this property for encryption and decret for secret message transmission.
+We have been using this property for encryption and decryption for secret message transmission.
 
 #### e(d(M))=M
 One can encrypt a message by its private key d, i.e., d(M).
 Only the one’s public key can be used to decrypt d(M), that is, e(d(M))=M.
 
 Here is a question for you.
-With the second property, can we use this property for secret data transmission?
+Can we use the second property for secret data transmission?
 For example, Alice encrypts a message M with her private key and gets d<sub>A</sub>(M).
-She sends the ciphertext to Bob, who can use Alice's public key to decrypt the ciphertext e<sub>A</sub>(d<sub>A</sub>(M))=M. Technically this is fine. Is this secure? If a bad guy over the Internet intercepts the ciphertext during its transmission, can the bad guys decrypt the ciphertext?
+She sends the ciphertext to Bob, who can use Alice's public key to decrypt the ciphertext e<sub>A</sub>(d<sub>A</sub>(M))=M. Technically this is fine. Is this secure? If a bad guy over the Internet intercepts the ciphertext during its transmission, can the bad guy decrypt the ciphertext?
 
 ### Naive digital signature
 
@@ -162,9 +163,9 @@ Everybody can verify he makes that announcement.
 
 How can we produce such a digital signature?
 This is how it works.
-Bob has the public and the private key pair (e<sub>B</sub>, d<sub>B</sub>).
+Bob has his public and the private key pair (e<sub>B</sub>, d<sub>B</sub>).
 e<sub>B</sub> is his public key and d<sub>B</sub> is his private key.
-Signing the annnoucement M means Bob is going to use his private key to encrypt M.
+Signing the annnoucement M means Bob is going to use his *private key* to encrypt M.
 That is, the digital siganture is d<sub>B</sub>(M).
 When bob publishes the annoucement, 
 he publishes both M and the digital signature d<sub>B</sub>(M), M | d<sub>B</sub>(M), where | means concatenation.
@@ -178,46 +179,46 @@ Basically anybody can use Bob's public key
 to decrypt the digital signature, that is the encrypted annoucement M.
 if the decrypted M is the same as the published M, the annoucement M is from Bob
 because only Bob's public key can decrypt this encrypted M right.
-Then we are sure it is from Bob.
+Then we are sure the annoucement is from Bob.
 
 This is a naive digital signature because you can see
 here the whole annoucement is encrypted with Bob's private key as the digital signature.
-That's not very efficient since the digital siganture too long.
+That's not very efficient since this digital siganture is too long.
 When we discuss hash functions, we will see the real world digital siganture.
 
 ## RSA
 
 One example of public key crypto is RSA, which is a very popular one.
-Let's look at how we use RSA to encrypt and decrypt message.
-When we talk about the message, you know
-all the messages, docs and data are stored on computers in binary numbers.
+Let's look at how we use RSA to encrypt and decrypt messages.
+When we talk about messages, you know
+all the messages, docs and data are stored as sequences of binary numbers on computers.
 A message is just a sequence of bits.
 For example, American Standard Code for Information Interchange (ASCII) encodes 128 English letters and other particular characters into seven-bit integers. 
 So encrypting a message is equivalent to encrypting a number.
 So here is an example. Let's say *m* is 10100001.
-We don't care about what the binary number represents in terms of messages.
+We don't care about what the binary number means in terms of messages.
 But this binary number is equal to the decimal number 161.
-So when we say we want encrypt *m*, we actually encrypt the corresponding number.
+So when we say we want encrypt *m*, we actually encrypt the corresponding number 161.
 
 ### RSA: Creating public/private key pair
 
-Ket's first look at how we create a public key and the private key for a person.
+Let's first look at how we create a public key and the private key.
 Recall in public key crypto, everybody must have a a pair of public and private keys.
 
-**Step one**: we choose two large prime numbers.
+**Step 1**: You choose two large prime numbers.
 So what is a prime number?
-A prime number has only two factors, one and itself.
+A prime number has only two factors, one and itself. 
 
-**Step two**: You compute n=p &times; q,
+**Step 2**: You compute n=p &times; q,
 and z = (p - 1) &times; (q - 1).
 
-**Step three**. Now we choose e.
-e shouldn't have common factors with z.
+**Step 3**. Now you choose e.
+e shouldn't have common factors with z. Really we do not consider 1 as a common factor.
 We also say e and z are relative prime.
 
-** Step four**. Finally we choose d.
-d should be chosen this way so that  e &times; d mod z = 1.
-That is when we perform e &times; d divided by z, the remainder is one.
+** Step four**. Finally you choose d.
+d should be chosen this way so that e &times; d mod z = 1.
+That is, when we perform e &times; d divided by z, the remainder is one.
 
 We are done with creating the public and private key pair.
 The public key is (n, e) and the private key is (n, d).
@@ -238,14 +239,15 @@ You just do c<sup>d</sup> mod n, which produces the original message m! A majic!
 
 <p align="center"> c<sup>d</sup> mod n = m. </p>
 
-You can refer to a lot of references on why this works. But this is just show it howrks.
+You can refer to a lot of college textbooks on why this works and proof.
+Anyway this is just show it works.
 The process is just as simple as that.
 But you can see here RSA involves exponential calculation.
 That's slow in computers.
 That's why we said public key crypto is often slow compared with secret key crypto.
 
-This is a one example of performing RSA encryption and decryption with small numbers.
-p=5 and q=7. So p and q are actually prime numbers.
+Here is one example of performing RSA encryption and decryption with small numbers.
+p=5 and q=7. p and q are prime numbers.
 Therefore, n = p &times; q = 35; z = (p-1) &times; (q-1) = 24.
 We choose e = 5, which is relatively prime to z=24.
 d = 29 by solving ed mod z =1.
@@ -259,7 +261,7 @@ Now we do the decryption,
 
 c<sup>d</sup> mod n=17<sup>29</sup> mod 35 = 12.
 
-A calculator program on computers can do this if the calculator has the *mod* functionality.
+A calculator software program on computers can do this if the calculator has the *mod* functionality.
 
 ## OpenSSL
 OpenSSL is a crypto library that implements various cryptographic functionalities. openssl is a command line tool under Linux. openssl uses various cryptography functions of OpenSSL's crypto library and can be used for
