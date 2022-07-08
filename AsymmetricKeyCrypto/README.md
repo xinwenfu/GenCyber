@@ -199,170 +199,58 @@ Recall in public key crypto, everybody must have a a pair of public and private 
 So what is a prime number?
 A prime number has only two factors, one and itself.
 
-**Step two**: You compute n=p &times; q. that's easy
-z is equal to p minus 1 times q minus 1.
-that's not hard either
-now we choose e
-e shouldn't have
-common factors with z
-right
-and so basically
-e and z they have only one common
-factor
-which is one so sometimes we also call
-this
-e and z are relative prime okay
-and then
-finally
-we choose d
-so here the d should be chosen
-this way
-so
-e times d
-mod divided right by z
-and
-you know the remainder is one
-okay so this is what we mean by e d
-model z equal to one so this is just the
-modular calculation means
-e d times
-e times d
-divided by z
-and the remainder
-is one
-remember everything here is like
-integers
-so we are done with creating the public
-private key pair and the public key is n
-e
-and the private key is nd so you can see
-here in rsa
-for each key we have two numbers
-and uh but anyway you can see here e and
-the d
-are the critical ones right and the n is
-no
-as a p times q okay
-good so now we know
-let's see
-n and the e and and the d which are our
-which are our public and private key
-pair
-so good
-and now let's look at the encryption and
-decryption so we already have an e as
-public key and d as private key
-so let's see how we
-encrypt a message n
-is actually quite straightforward so
-basically
-when we encrypt a message m
-we just do the calculation
-m to the power of e mod n this will
-create the ciphertext c which is also a
-number
-so good well done with the encryption so
-number two i mean step two here
-and then to decrypt the received
-c here right a number
-you just do this you just do
-c to the power of d mild m
-okay
-and then you will recover
-the original m y
-so when you go to college you will learn
-why so this can be proved but
-the process is just as simple as that
-but you can see here
-we involve
-the exponential calculation right and so
-that's very slow
-in computers that's why we said
-you know public key crypto is often slow
-compared with a
-secret key crypto
-okay so you can see here we said the
-magic happens you know and so that's the
-decryption process okay
-and uh
-good
-so this is a one earth example
-in this case we use a very small
-numbers so you can see p and q
-are 5 and 7 respectively and they are
-actually prime numbers so then we can
-get n equal to 35 z equal to 24 and so
-we choose e to equal to five you can see
-here
-e and z
-right here 24 they are relative prime
-they have only one common factor one
-so then we choose d as 29
-so if you actually
-do the calculation file times 29
-mod
-z here it should be 1.
-okay
-and uh so so basically
-the remainder
-okay e times d
-divided by z
-okay and the remainder is one
-so good so now we got
-an e
-and a n d
-okay
-and so we want to actually encrypt
-this message okay and the zero zero
-zero
-zero one one zero zero okay so this is a
-equal to what decimal number twice and
-then we do
-the encryption so
-m
-by 12 to the power of
-5 right and so this is a the result
-now if you do the decryption
-right
-here you know because uh
-we have to do m
-to the power of e
-mod
-n
-so c here is a 17
-okay and the separate text
-so
-unit decryption
-we do the calculation
-c to the power of
-d mod n
-if you don't believe it you can do the
-calculation using
-your
-computer calculator and you will find
-the result will be
-actually
-trial
-so this is a the earth's example
-okay
-and uh good i forgot to talk about this
-and uh so very good and uh
-so actually
-one critical
-public key crypto
-application is a digital signature
-which uses a the second property
-of a public key crypto so that is so
-when you use
-some when somebody uses them
-it's a private key to encrypt
-the message m here
-you can still use it
-i mean the guy can still use a
-everybody can use his public key to
-decrypt this include message to recover
-the original app okay
+**Step two**: You compute n=p &times; q,
+and z = (p - 1) &times; (q - 1).
 
+**Step three**. Now we choose e.
+e shouldn't have common factors with z.
+We also say e and z are relative prime.
+
+** Step four**. Finally we choose d.
+d should be chosen this way so that  e &times; d mod z = 1.
+That is when we perform e &times; d divided by z, the remainder is one.
+
+We are done with creating the public and private key pair.
+The public key is (n, e) and the private key is (n, d).
+So you can see here in RSA, for each key we have two numbers. 
+
+### RSA: encryption, decryption
+
+Now let's look at RSA encryption and decryption.
+When we encrypt a message m, we just do the calculation m<sup>e</sup> mod n, which produces the ciphertext c.
+That is,
+
+c=m<sup>e</sup> mod n.
+
+We are done done with the encryption!
+
+Let's see how to decrypt the ciphertext c, which is treated as a number.
+You just do c<sup>d</sup> mod n, which produces the original message m! A majic!
+
+c<sup>d</sup> mod n = m.
+
+You can refer to a lot of references on why this works. But this is just show it howrks.
+The process is just as simple as that.
+But you can see here RSA involves exponential calculation.
+That's slow in computers.
+That's why we said public key crypto is often slow compared with secret key crypto.
+
+This is a one example of performing RSA encryption and decryption with small numbers.
+p=5 and q=7. So p and q are actually prime numbers.
+Therefore, n = p &times; q = 35; z = (p-1) &times; (q-1) = 24.
+We choose e = 5, which is relatively prime to z=24.
+d = 29 by solving ed mod z =1.
+
+Now we want to encrypt this message 00001000, which is the decimal number 12.
+We do the encryption:
+
+m<sup>e</sup> mod n=12<sup>5</sup> mod 35=17.
+
+Now we do the decryption, 
+
+c<sup>d</sup> mod n=17<sup>29</sup> mod 35 = 12.
+
+A calculator program on computers can do this if the calculator has the *mod* functionality.
 
 
 very good so now let's look at to
