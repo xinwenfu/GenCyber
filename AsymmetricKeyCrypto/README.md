@@ -54,18 +54,13 @@ But in this case Bob is going to use Alice's public key e<sub>A</sub> for the en
 Alice's public key is supposed to be known by anyone.
 That is why it is called *public* key.
 Bob uses an encryption algorithm and Alice's public key to encrypt the message.
-The encryption produces the ciphertext, i.e., 
-
-e<sub>A</sub>(M), 
-
+The encryption produces the ciphertext, i.e., e<sub>A</sub>(M), 
 which means e<sub>A</sub> is used to encrypt the message *M*.
 The ciphertext goes through the Internet and arrives at the receiver Alice.
 Alice then uses a decryption algorithm and her private key d<sub>A</sub>, which is different
-from her public key, to decrypt the ciphertext, that is, 
+from her public key, to decrypt the ciphertext and produce the original plaintext, that is, 
 
 d<sub>A</sub>(e<sub>A</sub>(M))=M.
-
-The decryption produces the original plaintext. 
 
 You can see here in public key crypto, 
 the encryption and the decryption use different keys.
@@ -83,48 +78,22 @@ But public key crypto often involves a lot of
 mathematical mathematics, and is often much slower than secret key crypto.
 
 ### Applications: Data transmission and secure storate
-so let's look at the one application of the public key crypto.
-so of course again we can use a public
-key crypto
-for
-data transformation
-and so in this case let's look at an
-example here right and then you can see
-here i'm using a different example let's
-look at this example again
-so in this example here alice has a
-message to send
-to
-bob
-and many alice is going to use
-bob's public key eb here to encrypt this
-message
-so and this will send this message over
-and when bob receives this server text
-bob is going to use
-his private key to decrypt this separate
-text
-and the bubble will recover the original
-message
-so this is how
-property crypto is used for data
-transmission and we already saw the
-example
-in last slide
-and of course here
-you can also use a
-public crypto for
-secure storage so you can use
-your public key
-to
-actually encrypt files other data
-and then put
-the encrypted data on your hard disk
-then because you
-and only you have the private key
-so only you can actually decrypt the
-encrypted data so that's the idea of a
-secure storage
+Let's look at the one application of the public key crypto.
+We can use public key crypto for data transformation as the example above shows.
+Let's look at another example here.
+In this example Alice has a message *M* to send to Bob.
+Alice is going to use Bob's public key e<sub>B</sub> to encrypt this message *M*.
+The ciphertext e<sub>B</sub>(M) is sent to Bob.
+Bob is going to use his private key d<sub>B</sub>( to decrypt this ciphertext and recover the original message, that is,
+
+d<sub>B</sub>(e<sub>B</sub>(M))=M.
+
+You can also use public key crypto for secure storage, storing encrypted data such as files on a hard disk.
+You can use your public key to encrypt files other data and then put the encrypted data on your hard disk.
+Because only you have the private key, only you can actually decrypt the encrypted data.
+That's the idea of secure storage with public key crypto.
+
+## Key exchange
 so as we mentioned you know
 most of the time if you have a lot of
 data to transmit across the internet
