@@ -86,7 +86,7 @@ Alice is going to use Bob's public key e<sub>B</sub> to encrypt this message *M*
 The ciphertext e<sub>B</sub>(M) is sent to Bob.
 Bob is going to use his private key d<sub>B</sub>( to decrypt this ciphertext and recover the original message, that is,
 
-d<sub>B</sub>(e<sub>B</sub>(M))=M.
+<p align="center"> d<sub>B</sub>(e<sub>B</sub>(M))=M. </p>
 
 You can also use public key crypto for secure storage, storing encrypted data such as files on a hard disk.
 You can use your public key to encrypt files other data and then put the encrypted data on your hard disk.
@@ -115,7 +115,7 @@ Alice can just use Bob's public key e<sub>B</sub> to
 encrypt this secret key *K* and send e<sub>B</sub>(K) over to Bob.
 When Bob receive its, he can use his private key d<sub>B</sub> to decrypt this encrypted secret key and  recover the secret key, that is,
 
-d<sub>B</sub>(e<sub>B</sub>(K))=K.
+<p align="center"> d<sub>B</sub>(e<sub>B</sub>(K))=K. </p>
 
 Once this secret key *K* is shared between Alice and Bob, they can use this secret K to encrypt messages.
 Here is an example.
@@ -123,7 +123,7 @@ Alice has a message M. She uses K to encrypt M with the AES algorithm.
 K(M) is sent to Bob.
 When Bob receives it, he can use the shared key K to decrypt the ciphertext, that is
 
-K<sup>-1</sup>(K(M))=M.
+<p align="center"> K<sup>-1</sup>(K(M))=M. </p>
 
 Here K<sup>-1</sup> means that K is used to the encrypted message K(M).
 
@@ -220,14 +220,14 @@ Now let's look at RSA encryption and decryption.
 When we encrypt a message m, we just do the calculation m<sup>e</sup> mod n, which produces the ciphertext c.
 That is,
 
-c=m<sup>e</sup> mod n.
+<p align="center"> c=m<sup>e</sup> mod n. </p>
 
 We are done done with the encryption!
 
 Let's see how to decrypt the ciphertext c, which is treated as a number.
 You just do c<sup>d</sup> mod n, which produces the original message m! A majic!
 
-c<sup>d</sup> mod n = m.
+<p align="center"> c<sup>d</sup> mod n = m. </p>
 
 You can refer to a lot of references on why this works. But this is just show it howrks.
 The process is just as simple as that.
