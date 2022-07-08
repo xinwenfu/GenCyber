@@ -105,6 +105,8 @@ Calling somebody is really awkward, not convenient.
 How do we actually share a secret key across the Internet?
 This problem is called key exchange.
 
+<img src="../Imgs/KeyExchange.png" width=512>
+
 The problem of key exchange can be solved by the public crypto easily.
 Let's look at this example here.
 We have Alice on the left and Bob on the right.
