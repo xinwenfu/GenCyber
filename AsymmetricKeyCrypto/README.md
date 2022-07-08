@@ -162,7 +162,7 @@ That is, the digital siganture is d<sub>B</sub>(M).
 When bob publishes the annoucement, 
 he publishes both M and the digital signature d<sub>B</sub>(M), M | d<sub>B</sub>(M), where | means concatenation.
 
-How can you verify the annoucement is from Bob?
+How can you verify the signed annoucement is from Bob?
 Let's assume you have Bob's public key.
 This is how we do it.
 Basically anybody can use Bob's public key
@@ -176,6 +176,7 @@ here the whole annoucement is encrypted with Bob's private key as the digital si
 That's not very efficient since the digital siganture too long.
 When we discuss hash functions, we will see the real world digital siganture.
 
+## RSA
 
 one example of a particular crypto and
 see how it works so rsa
