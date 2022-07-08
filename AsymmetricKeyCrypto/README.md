@@ -252,44 +252,11 @@ c<sup>d</sup> mod n=17<sup>29</sup> mod 35 = 12.
 
 A calculator program on computers can do this if the calculator has the *mod* functionality.
 
-
-very good so now let's look at to
-open ssl so what is open ssl so open ssl
-actually is a
-a crypto library and it's open source
-crypto library
-and it implements all kinds of
-you know
-cryptographic
-functions
-including
-public crypto sql crypto and also hash
-functions so you can use
-open ssl for everything and open sso
-also comes with
-one command application called the open
-ssl or in lower case then
-you can use this actually to do a lot of
-things okay
-and uh so you can see here we can use uh
-this open ssl to generate public and
-private key pair
-okay and then we can use a
-open ssl for encryption with rsa
-and
-we can also use a
-open ssl for decryption and uh
-right and uh so this is open ssl
-so finally you know
-uh here
-our hands-on
-and so the first hands down
-i think we don't need to talk about this
-okay
-we'll talk about this in in the lecture
-but we don't talk about this now
-
-
+## OpenSSL
+OpenSSL is a crypto library that implements various cryptographic functionalities. openssl is a command line tool under Linux. openssl uses various cryptography functions of OpenSSL's crypto library and can be used for
+- Encryption and Decryption with Ciphers
+- Calculation of Message Digests = Creation and management of private keys, public keys and parameters
+- Many oore…
 
 ## Hands-on
 
