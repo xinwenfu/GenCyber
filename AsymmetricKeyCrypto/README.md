@@ -47,18 +47,20 @@ Like Bob, Alice has her own public and private key pair (e<sub>A</sub>, d<sub>A<
 
 <img src="../Imgs/AsymmetricCrypto.png" width=512>
 
-Bob is going to send a message, which is the plaintext, to Alice.
+Bob is going to send a message *M*, which is the plaintext, to Alice.
 Pay attention to how the encryption is done.
 Bob needs an encryption algorithm.
 But in this case Bob is going to use Alice's public key for the encryption.
 Alice's public key is supposed to be known by anyone.
 That is why it is called *public* key.
 Bob uses an encryption algorithm and Alice's public key to encrypt the message.
-The encryption produces the ciphertext.
+The encryption produces the ciphertext, i.e., e<sub>A</sub>(M).
 The ciphertext goes through the Internet and arrives at the receiver Alice.
 Alice then uses a decryption algorithm and her private key, which is different
 from her public key, to decrypt the ciphertext.
-The decryption produces the original plaintext.
+The decryption produces the original plaintext, that is d<sub>A</sub>(e<sub>A</sub>(M))=M. 
+
+
 
 You can see here in public key crypto, 
 the encryption and the decryption use different keys.
@@ -75,9 +77,8 @@ involve a lot of mathematical calculation.
 But public key crypto often involves a lot of
 mathematical mathematics, and is often much slower than secret key crypto.
 
-### Application: Data transmission and secure storate
-so let's look at the one application of
-the public crypto
+### Applications: Data transmission and secure storate
+so let's look at the one application of the public key crypto.
 so of course again we can use a public
 key crypto
 for
