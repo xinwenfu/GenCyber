@@ -160,6 +160,8 @@ That is, the digital siganture is d<sub>B</sub>(M).
 When bob publishes the annoucement, 
 he publishes both M and the digital signature d<sub>B</sub>(M), M | d<sub>B</sub>(M), where | means concatenation.
 
+<img src="../Imgs/NaiveSignature.png" width=512>
+
 How can you verify the signed annoucement is from Bob?
 Let's assume you have Bob's public key.
 This is how we do it.
