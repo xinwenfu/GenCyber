@@ -252,7 +252,7 @@ Therefore, n = p &times; q = 35; z = (p-1) &times; (q-1) = 24.
 We choose e = 5, which is relatively prime to z=24.
 d = 29 by solving ed mod z =1.
 
-Now we want to encrypt this message 00001000, which is the decimal number 12.
+Now we want to encrypt this message *00001000*, which is the decimal number 12.
 We do the encryption:
 
 m<sup>e</sup> mod n=12<sup>5</sup> mod 35=17.
