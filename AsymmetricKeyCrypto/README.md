@@ -76,7 +76,7 @@ As we have learned, encrypton in secret key crypto uses substitutions and permut
 which can be done fast by computers. 
 Secret key crypto performs encryption that doesn't involve a lot of mathematical calculation.
 But public key crypto often involves a lot of
-mathematical mathematics, thus is often much slower than secret key crypto.
+mathematics, thus is often much slower than secret key crypto.
 
 ### Applications: Data transmission and secure storate
 Let's look at one application of public key crypto.
