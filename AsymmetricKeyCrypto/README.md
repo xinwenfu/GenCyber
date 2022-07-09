@@ -257,7 +257,7 @@ We do the encryption as follows:
 
 m<sup>e</sup> mod n=12<sup>5</sup> mod 35=17.
 
-Now we do the decryption, 
+17 is the ciphertext. Now we do the decryption, 
 
 c<sup>d</sup> mod n=17<sup>29</sup> mod 35 = 12.
 
