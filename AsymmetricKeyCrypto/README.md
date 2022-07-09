@@ -221,7 +221,8 @@ That is, when we perform e &times; d divided by z, the remainder is one.
 
 We are done with creating the public and private key pair.
 The public key is (n, e) and the private key is (n, d).
-So you can see here in RSA, for each key we have two numbers. 
+So you can see here in RSA, for each key we have two numbers.
+Because of the roles of e and d above, I use e to refer to public key and d for private key for a public and private key pair (e, d).
 
 ### RSA: encryption, decryption
 
