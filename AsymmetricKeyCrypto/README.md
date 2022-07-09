@@ -215,7 +215,7 @@ and z = (p - 1) &times; (q - 1).
 e shouldn't have common factors with z. Really we do not consider 1 as a common factor.
 We also say e and z are relative prime.
 
-** Step four**. Finally you choose d.
+**Step 4**. Finally you choose d.
 d should be chosen this way so that e &times; d mod z = 1.
 That is, when we perform e &times; d divided by z, the remainder is one.
 
