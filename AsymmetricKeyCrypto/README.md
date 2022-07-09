@@ -79,8 +79,7 @@ But public key crypto often involves a lot of
 mathematics, thus is often much slower than secret key crypto.
 
 ### Applications: Data transmission and secure storate
-Let's look at one application of public key crypto.
-We can use public key crypto for data transmission as the example above shows.
+One application of public key crypto is secret data transmission as the example above shows.
 Let's look at another example here.
 In this example Alice has a message *M* to send to Bob.
 She is going to use Bob's public key e<sub>B</sub> to encrypt this message *M*.
