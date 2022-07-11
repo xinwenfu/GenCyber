@@ -613,7 +613,12 @@ Use IDLE to run /home/kali/GenCyber/PythonExampleCode/basics-gc.py on Kali VM
   - To get the IP  address of Windows VM, enter *ipconfig* within a Windows console
 
 ### Hands-on 4 Pygame
+
 Try Pygame game examples. Read the code and try to change it so that it is easier to win.
+
+For example, run /home/kali/GenCyber/PythonExampleCode/Space-Invaders-Pygame/main.py on Kali VM
+
+Other examples
 
 - <a href="https://github.com/mayad21/AirHockey">Air Hockey</a>
 - <a href="https://github.com/justinmarwad/Pong">Pong</a>
