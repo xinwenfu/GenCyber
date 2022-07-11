@@ -622,10 +622,10 @@ Other examples
 
 - <a href="https://github.com/mayad21/AirHockey">Air Hockey</a>
   - To downlaod the repository to Kali VM, find the link to the repository
-  - Within the terminal of Kali VM, enter the command
+  - Within the terminal of Kali VM, enter the command below
+  - Get into the newly created folder and run the Python program
 ```
 git clone https://github.com/mayad21/AirHockey.git
 ```
-  - Get into the newly created folder and run the Python program
 - <a href="https://github.com/justinmarwad/Pong">Pong</a>
 - <a href="https://github.com/DaintyJet/TA-GenCyber-UML-2022/tree/main/Games">Matt</a>
