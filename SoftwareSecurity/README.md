@@ -230,6 +230,8 @@ Got it?
 1. The attacker hacks into the target and opens a Meterpreter shell.
 
 2. Use the meterpreter command *keyscan_start*, *keyscan_dump*, and *keyscan_stop* to dump keystrokes.
+   - Not automatic. Needs to run keyscan_dump again after keys are typed 
+
 
 
 ### Hands-on 5: Deploying persistent backdoor
