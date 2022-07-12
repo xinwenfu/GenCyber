@@ -171,10 +171,12 @@ This is the worst way of helping customers in penetration testing.
 
 ### Using metasploit
 
-Actuyally, we can use Metasploit to do the eexactly same thing.
+Actually, we can use Metasploit to do the exactly same thing.
 Basically, you tell your customers the sequene of Metasploit commands 
 
-Let’s assume somebody created the attack module for Metasploit
+Let’s assume somebody created the attack module for Metasploit, i.e., exploit/windows/vulnserver/knock.
+The attack module is written in Ruby and the code is very similar to the Python code above.
+Below is the sequence of Metasploit commands to perform the attack, i.e., penetration testing.
 
 1. msf6 > use exploit/windows/vulnserver/knock
 2. [\*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
@@ -192,317 +194,45 @@ Let’s assume somebody created the attack module for Metasploit
 14. RPORT => 9999
 15. msf6 exploit(windows/vulnserver/knock) > exploit -j
 
+Here is the explanation to the commands
+At line 1, we specify the use of the knock exploit.
+Line 2 is the response when we enter the command at line 1.
+At line 3, we set the remote host that's the target with the IP address 192.168.19.
+Line 4 is the response from Metasploit.
+At line 5, we set the target. An explot may have a few targets since the victim program may have a few issues.
+Within the Ruby code of the exploit module, we can use different options for different targets.
+We just one target zero.
+At lines 7 and 9, we set the local host IP and port, which will be by Measploit to perform the attack from the local machine.
+At line 11, we set the payload of the exploit.
+At line 13, we set the port of the target service on the remote host.
+Finally at line 15, we run the exploit.
 
+Really here we get a lot of commands, which could be confusing.
+Non-experienced pen testers will be overwhelmed.
 
-so this is the second approach
-so when you use an armor task actually
-you are using all the commands here i'm
-amateur
-hash is using not just portable i'm
-sorry meta armor charge is using
-metasploit the tool to perform the
-attack but it provides you the gui
-interface
-we means graphical user interface they
-provide you with a gui so that you don't
-see
-all the commands
-so you just click it will automatically
-enter the commands and perform the
-attack
-right so
-see
-that's brilliant all right and you can
-see a lot here
-right so
-as you can maybe let me do this
-let me actually do this
-so it's easy to read
-so at the last one here i have some
-comments that's my comment so let's
-assume somebody creates the attack
-module
-for many flaws so first you know
-somebody has to create the knock module
-and actually i created that module
-myself and uh our tas
-created two other modules for you to use
-tomorrow and uh so i couldn't knock
-about you so you had to understand how
-to create it right and but
-that's not program it's very similar to
-this one okay so it's very similar to
-this one this is in python
-but uh metaspot using a lot of
-language called ruby so i use the ruby
-to program
-the nok module which is very similar to
-the python ruby and python are very
-similar
-okay but anyway so that's the first
-thing you tell
-when it's called i'm going to use that
-module
-for attack so then you can see here that
-at line three basically the manuscript
-will tell you okay good and you have to
-maybe do some configuration but i don't
-care i'm going to just you give you the
-default pillow
-okay so that means that it's going to
-actually
-use that payload that's the attack
-network
-so then at the line 4 here i set remote
-host that's my target
-okay
-then
-level 5 that's basically the response
-from when it's fraud when i enter status
-host
-another 192.168.19
-methods plot actually will tell me yeah
-okay everything's set
-down here then at the line six set of
-targets the one
-module one the text module we're gonna
-knock can attack a few targets of course
-you have to program
-that in your mod
-but in this case i'm using proxy zero
-that's the one you are using today okay
-and uh so that we put the calculator as
-zero and then this involves a few
-options and uh
-for the program okay
-so underline eight you set the localhost
-and the 910 you set a low uh local port
-so basically we are going to collect
-into the remote
-but you need actually another something
-called a network socket
-as a local
-so that the two computers can work
-together your local computer and the
-cartridge so now at the line
-two io
-so now i'm setting payload right i'm i'm
-not i don't want to use that to reverse
-t maybe i'm using the binary this is a
-lot of canopa attacker payload
-okay
-and line 14 i said i'm going to attack
-the port
-[Music]
-number at
-uh remote post right
-remote host is a
-192.168.1.19 headline
-so right and so that's the target port
-number finally at the 9 16
-okay i'm going to do explosive which i'm
-going to attack in the background so we
-can do other things
-so this second approach
-so think about this if today
-i teach this do you think you can finish
-your tasks today
-i think here everybody will be confused
-right because my goal here
-actually is not
-uh to really teach you
-how to use method cloud
-my goal here is to like to understand
-the concepts in qualification testing
-and a secure i want you to understand
-the vulnerability
-is the bubble overflow
-right and the payload basically you can
-send any mirror so that the mirror will
-run on the target so that's my goal here
-so but if i teach you this
-i have to explain everything in detail
-right i don't think anybody here i mean
-i i know many people here can finish
-this but
-you know it's very confusing he done it
-actually
-but you might go wherever okay so that's
-the second approach
-so the third approach basically is this
-so it's an armitage so you can see here
-although armor touch is not very well
-programmed because you know sometimes
-you have to try like 10 times so that it
-works but at least now you understand
-by when you do attack
-you know
-first the target must have a
-vulnerability
-second and you can stand up a pillow you
-can choose a payload right so that the
-pendulum can work for example you tried
-an interpreter right and in the
-interpreter you can actually run a lot
-of other commands and you can see it
-right so because of the vulnerability
-now you can actually run many commands
-within the
-compromised computer right
-and uh so basically i think i achieved
-this goal today and also
-you can think about
-that so when you do confusion testing
-your goal is to find out
-what vulnerabilities exist as a targeted
-computer
-you are not trying to teach your
-customer how to improve them right so
-why should they learn programs
-programming their goal is to find out
-what advantage so why why they don't
-need to actually understand the program
-so basically you can see here this
-interface is much simpler
-much easier to actually to learn i don't
-see any trouble today even i started
-actually you guys will have trouble to
-understand that
-you know this panel here but apparently
-you know most of people
-think this is very intuitive you just
-actually expanded the tree you find the
-model you want and then you just deploy
-it
-i don't see actually any trouble here
-right so that's about this
-three approaches
-you know
-uh for planetarium testing now you can
-see
-the user experience design
-for these three approaches
-is very different and approaching what
-which one do you prefer
-so tell me of course i know you wanted
-the third one right and uh so if you
-want to learn the second one and the
-first one you have to go to college okay
-so that's a lot of storage i think even
-in vocational school you may another
-teacher actually knows soccer
-programming right
-but if you want to learn actually how to
-program a tool then you have to go to
-college and even in college we don't
-teach social programming you know we
-just tell you go ahead and read it
-that's uh the tutorial you're ready to
-program it we don't teach software
-programming we just tell you the
-principle of networking we even don't
-teach it
-okay
-and uh so in college it's very different
-you know and but you know when you
-design a product your target customers
-are not
-you know
-people who want to learn programming
+### Method 3. Using Armitage
+
+The third approach is use the penetration testing tool Armitage.
+You provide all the modules and your customers just use Armitage and launch the attacks.
+A few clicks are needed to perform the penetration testing.
+The only issue of Armitage is not stable and well coded.
+Sometimes, we know the vulnerability is over there on the target.
+But we have to try quite a few times to succeed.
+It does not show really useful error messages when it does not work well.
+A vulnerability is exploited, Armitage shows post-exploitation options.
+
+Learning Armitage is much simpler than learning Metasploit.
+The goal of a pen tester is to find vulnerabilities on computers.
+There is no point to ask them to learn programming and program a tool.
+Learning Metasploit is much harder because of its black and white console interface.
+The graphical user interface (GUI) of Armitage makes all things simpler.
+It is a good design for good user experience although I wish it is more stable.
+
+## Summary
+When you design a product, you have to think about the customers, who are humans.
 they just want to finish their goal and
-achieve their tasks right so you have to
-think about how to make everything
-simpler for them so that they can just
-achieve their goal quickly efficiently
-and effectively okay
-and so here is some references about uh
-the interaction design foundation here
-and so you can you can read the
-references and look at
-many things about the user design
-experience
-you know user design
-user experience design is a very
-hard topic
-so
-think about that
-iphone achieved every dominating the
-market because of their design right so
-why not other people say the same thing
-because you know
-understanding people is hard
-sometimes you know you have to interview
-people
-so that you can understand how people
-think but even when you try to
-interview people
-do you think people always tell you the
-truth
-no right you have to consider what if
-you i mean what people actually
-like right
-so because some people they don't want
-to tell you their feeling they just give
-you some answer so you know user
-experience design is very hard dealing
-with people it has a lot of serious
-itself and also it's a we have an expert
-i think next year we are going to
-call
-data expert in and so i think that she
-can actually know about the user
-external design but myself actually
-designed a keyboard
-so i designed a randomized keyboard for
-security so every time
-when you actually
-try to enter your password
-the keyboard
-layout all the letters or the symbols
-are running placed
-so
-my running keyboard never succeeded
-know the reason because
-people have to spend a lot of time so i
-mean where is my where's my password on
-the keyboard
-go ahead
-okay
-and we actually
-uh
-[Music]
-okay
-so when you actually of course when you
-go to college
-and most of us are like engineers right
-if you go to like a computer science
-engineering school
-and um you know
-15 years engineers they really don't
-understand
-what is called beautiful what is called
-not
-so you have a car you actually have to
-collaborate with the
-uh people who do the user experience
-design for that but uh computer science
-has a research
-field called a user historic design and
-i know there are many people working in
-another field okay so that's another
-story here so
-many people
-doing that they know philosophy we know
-actually with psychology
-they have a lot of psychology background
-because you had to study people okay
-so i guess that's actually
-all for today and uh
-i think we are just unscheduled that's
-amazing
-and uh so tomorrow uh
-this is our schedule here right let me
-have a look
-let me first
-you
+You have to help customers achieve their goals effienciently with good experience.
+You have to think about how to make everything simpler for them.
 
+## References
+1. <a href="https:// www.interaction-design.org/">Interaction Design Foundation (IxDF) Website</a>
