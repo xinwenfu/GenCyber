@@ -231,6 +231,9 @@ When you design a product, you have to think about the customers, who are humans
 they just want to finish their goal and
 You have to help customers achieve their goals effienciently with good experience.
 You have to think about how to make everything simpler for them.
+UX design is hard since we are talking about humans.
+Psychology knowledge and data analysis techniques are often needed to understand what customers need.
+For example, you may perform surveys and interviews and process the collected data to see what people like.
 
 ## References
 1. <a href="https:// www.interaction-design.org/">Interaction Design Foundation (IxDF) Website</a>
