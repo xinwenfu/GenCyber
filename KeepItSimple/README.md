@@ -62,31 +62,7 @@ what is the authentication method for unlocking the smartphone screen?
 Passcode, face ID or touch ID?
 Face ID and touch ID are getting popular since they are pretty secure to some context, very convinient, and easy to use, compared with passcode.
 
-all
-right what do you use now tell me
-i'm sorry please
-please already yes what else
-a touch any so most people are using
-touch chatty and the president they
-don't use passcode anymore is that right
-because president and touch heavy
-are simple to use
-right and they are pretty secure and
-they'll com compare the pass code and
-then maybe i'm not sure which one's the
-most secure but you know until for sure
-touch id and uh quiz id is uh simpler
-right and uh so
-you can see here right so these are the
-requirements of cyber security and i
-think of most of the software
-for service security is still too
-complicated so we are still learning how
-to do that but that's a great challenge
-you know
-if you try to use
-some of the
-software security tools it's very
+If you try to use software security tools, they are it's very
 complicated
 okay so now let's look at
 how do we actually design our kind of
