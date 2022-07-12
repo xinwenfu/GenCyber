@@ -111,4 +111,4 @@ The picture below shows the structure of the Internet packet IP header.
 
 The picture below show the IP header in Wireshark. Pay attention to the highlighted part.
 
-<img src="../Imgs/Wireshark-IP.png" width=640>
+<img src="../Imgs/Wireshark-IP.png" width=720>
