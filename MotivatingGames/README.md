@@ -9,8 +9,11 @@ The same vulnerability can be exploited for denial of service (DoS) attack. In t
 Play the DoS game
 
 1. The instructor or volunteer starts a vulnerable chat server C:\Tools\vchat\Server\vchat.exe
-   - Tell people your Windows VM's IP
-2. Run /home/kali/GenCyber/vchat/Client/client.py to chat with each other
-3. Use armitage to scan Windows VM and find attacks
-4. Click the found Windows VM (IP)
-5. Deploy auxillary/dos/vchat/DoS
+   - Announce the IP of Windows VM running *vchat*
+2. Everybody runs /home/kali/GenCyber/vchat/Client/client.py to chat with each other
+   - Wait for everybody to send at least one message
+   - Do not proceed further without the instructor's permission
+4. Now anybody can deploy the DoS attack
+   - use armitage to scan Windows VM and find attacks
+   - Click the found Windows VM (IP)
+   - Deploy auxillary/dos/vchat/DoS
