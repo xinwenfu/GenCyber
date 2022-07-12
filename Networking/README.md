@@ -102,7 +102,7 @@ Show the content of victim.c
 3. Chat with another student
 
 ### Hands-on 4: Use Wireshark to check packet contents
-1. Read the short <a href="https://github.com/xinwenfu/GenCyber/tree/main/IntrusionDetection#wireshark">introduction to Wireshark</a>.
+1. Read the short <a href="https://github.com/xinwenfu/GenCyber/tree/main/IntrusionDetection#wireshark">introduction to Wireshark</a>. Search for "Wireshark" in the page if you cannot find it.
 2. Use Wireshark to check packet content. Can you find source IP address and destination IP address shown in the IP header figure below in Wireshark?
 
 The picture below shows the structure of the Internet packet IP header.
