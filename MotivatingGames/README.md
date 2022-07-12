@@ -9,7 +9,7 @@ The same vulnerability can be exploited for a denial of service (DoS) attack. In
 
 <img src="../Imgs/BufferOverflow-junk.png" width=480>
 
-### Play the DoS game
+### DoS game
 
 1. The instructor or volunteer starts a vulnerable chat server C:\Tools\vchat\Server\vchat.exe
    - Announce the IP of Windows VM running *vchat*
