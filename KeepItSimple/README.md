@@ -1,4 +1,5 @@
-okay
+# Keep it Simple
+
 everybody i think uh we are going to uh
 run our last uh
 program
