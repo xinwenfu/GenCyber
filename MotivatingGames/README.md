@@ -11,7 +11,7 @@ The same vulnerability can be exploited for a denial of service (DoS) attack. In
 
 ### DoS game
 
-1. The instructor or volunteer starts a vulnerable chat server C:\Tools\vchat\Server\vchat.exe
+1. The instructor or a volunteer starts a vulnerable chat server C:\Tools\vchat\Server\vchat.exe on a Windows VM
    - Announce the IP of Windows VM running *vchat*
 2. Everybody runs /home/kali/GenCyber/vchat/Client/client.py to chat with each other
    - Wait for everybody to send at least one message
