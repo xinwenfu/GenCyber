@@ -7,7 +7,7 @@ Because of the vulnerability exploited by knock, an attacker can also crush the 
 - Click the found Windows VM (IP)
 - Deploy auxillary/dos/vchat/DoS
 - Does the chat server stopps running?
-- 
+
 ### Hands-on 2: DDoS attack 
 Our chat server allows 100 users at the same time. In this hands-on, students use auxillary/dos/vchat/DDoS to create many connections to the chat server. Once the limit is reached, no more users can use the chat server
 
