@@ -29,90 +29,40 @@ You can do your work with the product easily.
 That's very important.
 
 ### Simplicity
-One
-design philosophy in user design
-user experience design is called
-simplicity
-so
-think about that
-so when you have
-some software program
-right
-if it's very hard to use
-are you going to use it if nobody
-actually pushes you to do that you will
-not going to use that
-hard program
-so
-that's why you know simplicity is one
-critical design philosophy so you can
-see here so basically when you design
-your product or your program whatever if
-you want people to use it so you know
-they shouldn't go
-a very complicated procedure to do that
-right so they should just actually get
-their
-goals quickly and we can do that
-efficiently and also they enjoy the
-experiments right so i was thinking you
-know what i can came out
-professor leo was using iphone for
-streaming and for browsing i was
-thinking oh my goodness it was so
-small and how can he actually watch a
-video on the iphone
-every day and but now i'm doing that
-every day
-so you can see
-i mean everything's simple to use and
-everything is very efficient everything
-is handy and uh so that's why you know
-people now are watching movies even on
-folks
-so because
-iphone is very simple to use you find
-the powder functions easily
-so you can see here simplicity
-is so important
-so
-so here
-one question here is
-if
-let's see we are talking about
-penetration testing
-and then
-you actually try to uh let's see you are
-the programmer right you are the vendor
-you want to give
-your customers
-a kind of question too
-and then what are you going to do
-if you make your penetration testing
-tool very complicated what will
-happen of course you will lose the
-market because nobody wants to use their
-tool so i'll give you a few examples
-here okay so here are the requirements
-so when you actually
-do cyber security and you know
-most of the cyber security hardware
-software
-are very hard to use i think we still
-need to do a lot of things to improve
-the design
-you know one
-critical advance in
-authentication so when you use iphone
-right when you use android phones
-so
-you want to use the phone you want
-something secure
-tell me
-what is the most uh
-authentication approach when you try to
-unlock your screen what do you use now
-before you have to tap the passcode all
+
+One design philosophy in user experience design is called simplicity.
+Some software programs are very complicated and hard to use.
+Are you going to use it if nobody actually pushes you to use it?
+That's why simplicity is one critical design philosophy.
+
+When you design your product or your app,
+if you want people to use it, people shouldn't go through
+a very complicated procedure to use it.
+They shall be able to use your product and achieve their goals easily and quickly.
+They shall enjoy the experience.
+
+People now use smartphones for everything, e.g., video streaming and browsing.
+Although the screen is small, it is convenient in many cases.
+The design of smartphones makes these things much easier than before.
+That is why people now are watching movies even on smartphones.
+
+### UXD in CyberSecurity
+Let's look at one example, penetration testing.
+Assume you are a vendor and wants to sell a penetration testing tool.
+How do you design your tool?
+If you make your penetration testing tool very complicated, what will happen?
+Of course you will lose the market because nobody wants to use the tool.
+
+Here are the requirements for UXD in cyber security.
+Many cyber security hardware and software programs are very hard to use.
+I think we still need to do a lot of things to improve the design of the equipment and tools.
+One critical advance in cyber security of recent years is user authentication.
+When you use iPhone amd Android phones, 
+what is the authentication method for unlocking the smartphone screen?
+Passcode, face ID or touch ID?
+Face ID and touch ID are getting popular since they are pretty secure to some context, very convinient, and easy to use, compared with passcode.
+
+all
 right what do you use now tell me
 i'm sorry please
 please already yes what else
