@@ -12,8 +12,8 @@ Play the DoS game
    - Announce the IP of Windows VM running *vchat*
 2. Everybody runs /home/kali/GenCyber/vchat/Client/client.py to chat with each other
    - Wait for everybody to send at least one message
-   - Do not proceed further without the instructor's permission
+3. Do not proceed further without the instructor's permission
 4. Now anybody can deploy the DoS attack
-   - use armitage to scan Windows VM and find attacks
+   - Use armitage to scan the target Windows VM and find attacks
    - Click the found Windows VM (IP)
    - Deploy auxillary/dos/vchat/DoS
