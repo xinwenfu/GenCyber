@@ -210,7 +210,7 @@ Non-experienced pen testers will be overwhelmed.
 
 ### Method 3. Using Armitage
 
-The third approach is use the penetration testing tool Armitage.
+The third approach is use the penetration testing tool, Armitage, which has a nice graphical user interface (GUI) as shown below.
 You provide all the modules and your customers just use Armitage and launch the attacks.
 A few clicks are needed to perform the penetration testing.
 The only issue of Armitage is not stable and well coded.
@@ -218,6 +218,8 @@ Sometimes, we know the vulnerability is over there on the target.
 But we have to try quite a few times to succeed.
 It does not show really useful error messages when it does not work well.
 A vulnerability is exploited, Armitage shows post-exploitation options.
+
+<img src="../Imgs/Armitage-GUI.png" width=640>
 
 Learning Armitage is much simpler than learning Metasploit.
 The goal of a pen tester is to find vulnerabilities on computers.
