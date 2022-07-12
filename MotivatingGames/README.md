@@ -1,4 +1,6 @@
-## Motivating game - Denial of service (DoS)
+# Motivating Games 
+
+## Denial of service (DoS)
 
 ### Overview
 In our lecture on <a href="https://github.com/xinwenfu/GenCyber/tree/main/SoftwareSecurity">Penetration Testing and Software Security</a>, we have exploited the vulnerable chat server (vchat) and deployed the buffer overflow attack against vchat. We were able to hack into the Windows VM through vchat.
