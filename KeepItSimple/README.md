@@ -1,85 +1,35 @@
 # Keep it Simple
 
-everybody i think uh we are going to uh
-run our last uh
-program
-today
-and uh so this is a special
-topic and actually i also did a lot of
-things on like a user experience those
-kind of things
-and uh so let's focus here i'm going to
-tell you
-a lot of things about what's happening
-today okay because you feel it's very
-easy right you just click click although
-you know the open source armor charge
-sometimes it's so stupid you have to run
-a few times but it's still very easy
-because you just do clicks but let me
-show you
-the story behind everything okay
-so basically you know
-this first topic is about the keep it is
-simple
-user experience design in cyber security
-and uh so here is uh the outline of this
-special topic you can see we are going
-to first talk about what is a ux design
-the ux means user experiments
-and then we will talk about it you know
-how we design our connection testing
-tools and uh so why it matters okay
-so first let's look at what is the
-actually
-the
-ux design the user experience is very
-important
-and uh so
-so think about that
-so
-before the iphone
-there was so many other phones
-one iphone came out
-and i dominated the market
-why
-the reason go ahead
-very good
-so
-basically you know
-the
-design of iphone is just so good
-and uh you know i before actually i
-came out i was thinking why nobody
-actually put a mp3 video streaming email
-internet all together of course i
-couldn't do that because i didn't have
-expertise
-and there was them but the one iphone
-came out right
-so before iphone there were a few other
-products called pda
-but their
-interface was so ugly and nobody wanted
-to use it and the user experience was
-really bad so when you use it when you
-try to find some functionalities it's so
-hard to find and then you have to go
-through the lensing procedure to do
-something and the iphone changed
-everything so when you use iphone you
-find that your functionality you find
-what you want so easily and uh so that's
-called the user experience design
-and then so user internet design is
-critical
-so that
-you know the user will have a very
-meaningful and irrelevant experience you
-can do what you want and you you want to
-do what you want
-so that's very important
-so one
+We are going to first talk about what is UX design.
+UX means user experience. 
+Then we will talk about how we design our penetration testing tools and.
+
+## UX Design Overview
+
+### UX Design
+UX design, the user experience desig, is very important.
+Think about this.
+Before iPhone, there were so many other phones.
+However, when iPhone came out, it dominated the market
+Why?
+It is because iPhone put mp3 player, video streaming, email, and
+Internet all together nicely.
+Before iPhone there were a few other products like personal digital assistant (PDA).
+However, their interface was not so nice and hard to use all the funtionalities.
+The user experience on those products was not such good.
+It was often hard to find some functionalities.
+You have to go through a lenthy procedure to do something.
+iPhone was a game chager.
+When you use iPhone, you find a functionality easily.
+That's called the user experience design.
+
+So user interface and experience design is critical.
+The user shall have a meaningful and relevant experience.
+You can do your work with the product easily.
+That's very important.
+
+### Simplicity
+One
 design philosophy in user design
 user experience design is called
 simplicity
