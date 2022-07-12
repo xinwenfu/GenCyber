@@ -105,7 +105,7 @@ Show the content of victim.c
 1. Read the short <a href="https://github.com/xinwenfu/GenCyber/tree/main/IntrusionDetection#wireshark">introduction to Wireshark</a>.
 2. Use Wireshark to check packet content. Can you find source IP address and destination IP address shown in the IP header figure below in Wireshark?
 
-The picture below shows the structure of the Internet packet IP header
+The picture below shows the structure of the Internet packet IP header.
 
 <img src="../Imgs/IP.gif" width=512>
 
