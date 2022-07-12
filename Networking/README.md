@@ -109,6 +109,6 @@ The picture below shows the structure of the Internet packet IP header.
 
 <img src="../Imgs/IP.gif" width=512>
 
-The picture below show the IP header in Wireshark. Pay attention to the highlighted part.
+The picture below show the IP header and other packet contents in Wireshark. Pay attention to the highlighted part.
 
 <img src="../Imgs/Wireshark-IP.png" width=720>
