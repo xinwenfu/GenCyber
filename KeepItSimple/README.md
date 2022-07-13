@@ -1,7 +1,7 @@
 # Keep it Simple
 
 We are going to first talk about what is UX design.
-UX means user experience. 
+UX refers to user experience. 
 Then we will talk about how we design our penetration testing tools and.
 
 ## UX Design Overview
