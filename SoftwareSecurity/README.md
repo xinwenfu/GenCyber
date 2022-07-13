@@ -337,7 +337,7 @@ python reverse-shell.py
 If everything is right, you shall see the Windows console in the terminal running the *nc* command.
   
   
-Notes:
+**Notes**:
   
 *msfvenom* command options
 ```
