@@ -40,7 +40,7 @@ execute -f C:\\Workshop\\MalwareSamples\\Backdoors\\SimpleBindBackdoor\\nice3.ex
 3. Start a terminal on your Kali VM and run the following command to log into the backdoor running on the instructor's Window VM. 
 ```
 nc 192.168.0.87 8080
-``
+```
 
 Here is an example of a succesful login
 ```
