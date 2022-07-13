@@ -51,7 +51,7 @@ Microsoft Windows [Version 10.0.19044.1826]
 C:\Tools\vchat\Server>
 ```
 
-Run a *dir& command and what do you see?
+Run a *dir* command and what do you see?
 
 4. Tell the instructor once you can get into the backdoor. 
 5. Other students can try to log into the backdoor similarly and notify the instructor if they can do it
