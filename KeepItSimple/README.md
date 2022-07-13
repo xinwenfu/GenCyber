@@ -219,7 +219,7 @@ But we have to try quite a few times to succeed.
 It does not show really useful error messages when it does not work well.
 A vulnerability is exploited, Armitage shows post-exploitation options.
 
-<img src="../Imgs/Armitage-GUI.png" width=720>
+<img src="../Imgs/Armitage-GUI.png" width=800>
 
 Learning Armitage is much simpler than learning Metasploit.
 The goal of a pen tester is to find vulnerabilities on computers.
