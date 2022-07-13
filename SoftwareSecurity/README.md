@@ -261,7 +261,7 @@ Microsoft Windows [Version 10.0.19044.1706]
 C:\Windows\system32>
 ```
 
-### Buffer overflow attack via Python code
+### Hands-on 6: Buffer overflow attack via Python code
 
 The Python code is /home/kali/GenCyber/vchat/Attack/reverse-shell.py on Kali VM.
 This attacks ubtilizes the buffer overflow vulnerability of the vulnerable chat server and sends a *reverse tcp shell* (one kind of malware code) payload, which connects back to the attacker and spawns a shell (terminal) at the attacker.
