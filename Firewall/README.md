@@ -313,11 +313,14 @@ Read <a href="https://github.com/xinwenfu/GenCyber/blob/main/Firewall/README.md#
 
 ### Hands-on 2 Configure firewall to allow ping
 
-Read <a href="https://github.com/xinwenfu/GenCyber/blob/main/Firewall/README.md#allow-and-block-ping">Allow and Block Ping</a>
+Read <a href="https://github.com/xinwenfu/GenCyber/blob/main/Firewall/README.md#allow-and-block-ping">Allow and Block ping</a>
 
 - Configure Windows Defender Firewall with Advanced Security to allow ping
 - Can you ping Windows VM from Kali VM now?
 
 ### Hands-on 3 Configure firewall to block IP
+
+Read <a href="https://github.com/xinwenfu/GenCyber/blob/main/Firewall/README.md#block-ips">Block IPs</a>
+
 - Configure Windows Defender Firewall to block the IP of Kali VM
 - Can you ping Windows VM from Kali VM now?
