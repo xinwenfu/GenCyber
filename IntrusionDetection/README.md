@@ -172,6 +172,9 @@ what each field means and what is the name.
 The binary content of the entire packet is shown in the bottom panel, including all the headers in binary.
 
 ## Hands-on
+
+Read <a href="https://github.com/xinwenfu/GenCyber/tree/main/IntrusionDetection#wireshark">Wireshark</a>
+
 ### Hands-on 1 Capturing Packets
 Capture packets between Windows VM and Kali VM.
 
