@@ -306,7 +306,7 @@ Find answers from the section of Windows Firewall.
 
 ### Hands-on 1 Enable Windows firewall
 
-Read <a href="https://github.com/xinwenfu/GenCyber/blob/main/Firewall/README.md#windows-defender-firewall">Windows Defender Firewall</a>
+Read [Windows Defender Firewall](#windows-defender-firewall)
 
 - Enable Windows Firewall
 - Can you ping Windows VM from Kali VM now?
