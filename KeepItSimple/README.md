@@ -7,37 +7,37 @@ Then we will talk about how we design our penetration testing tool and why we li
 ## UX Design Overview
 
 ### UX Design
-UX design, the user experience desig, is very important.
+UX design, the user experience design, is very important.
 Think about this.
 Before iPhone, there were so many other phones.
-However, when iPhone came out, it dominated the market
+However, when iPhone came out, it dominated the market.
 Why?
 It is because iPhone put mp3 player, video streaming, email, and
-Internet all together nicely.
-Before iPhone there were a few other products like personal digital assistant (PDA).
-However, their interface was not so nice and hard to use all the funtionalities.
+Internet all together *nicely*.
+Before iPhone there were a few other products like personal digital assistant (PDA), which tried to do something like that.
+However, their interface was not so nice.
 The user experience on those products was not such good.
 It was often hard to find some functionalities.
 You have to go through a lenthy procedure to do something.
 iPhone was a game chager.
 When you use iPhone, you find a functionality easily.
-That's called the user experience design.
+iPhone's user experience design is just good.
 
-So user interface and experience design is critical.
-The user shall have a meaningful and relevant experience.
-You can do your work with the product easily.
-That's very important.
+So user experience design is critical for a product's success.
+The user shall have a meaningful and relevant experience with a design.
+You can do your work with the product easily and efficiently.
 
 ### Simplicity
 
-One design philosophy in user experience design is called simplicity.
+One philosophy in user experience design is simplicity.
 Some software programs are very complicated and hard to use.
-Are you going to use it if nobody actually pushes you to use it?
-That's why simplicity is one critical design philosophy.
+Are you going to use such a software program if nobody really pushes you to use it?
+No oif course.
+That's why simplicity is an important design philosophy.
 
 When you design your product or your app,
 if you want people to use it, people shouldn't go through
-a very complicated procedure to use it.
+a very complicated procedure to use a feature.
 They shall be able to use your product and achieve their goals easily and quickly.
 They shall enjoy the experience.
 
