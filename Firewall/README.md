@@ -302,6 +302,8 @@ A detailed tutorial can be found at <a href="https://help.liquidweb.com/s/articl
 
 ## Hands-on labs
 
+Find answers from the section of Windows Firewall.
+
 ### Hands-on 1 Enable Windows firewall
 - Enable Windows Firewall
 - Can you ping Windows VM from Kali VM now?
