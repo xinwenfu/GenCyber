@@ -312,6 +312,9 @@ Read <a href="https://github.com/xinwenfu/GenCyber/blob/main/Firewall/README.md#
 - Can you ping Windows VM from Kali VM now?
 
 ### Hands-on 2 Configure firewall to allow ping
+
+Read <a href="https://github.com/xinwenfu/GenCyber/blob/main/Firewall/README.md#allow-and-block-ping">Allow and Block Ping</a>
+
 - Configure Windows Defender Firewall with Advanced Security to allow ping
 - Can you ping Windows VM from Kali VM now?
 
