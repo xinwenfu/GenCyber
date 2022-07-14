@@ -280,7 +280,7 @@ Decrypt the encrypted file
 openssl aes-256-cbc -d -a -in secrets.txt.enc -out secrets.txt.new -iter 1000 -k hello
 ```
 
-### Hands-on 4: Send Encrypted Message via Chat Server
+### Hands-on 5: Send Encrypted Message via Chat Server
 - Start the chat server on Windows VM
 - One person encrypts messages and sends over the chat client on Kali VM
 - The other person receives encrypted messages and decrypt s on Kali VM
