@@ -60,7 +60,7 @@ Run a *dir* command within the Windows console. What do you see?
 ### Overview
 In Caesar Cipher, as shown in the Caesar Cipher Medallion shown below, we map a letter in a message, called plaintext letter, to another letter for encryption, called ciphtertext letter. In this way, we can use Caesar Cipher to encrypt messages.
 
-<img src="../Imgs/CaesarCipherMedallion.png" width=564> 
+<img src="../Imgs/CaesarCipherMedallion.png" width=480> 
 
 ### Messaging with Caesar cipher Medallion
 - The instructor starts the chat server on his Windows VM
