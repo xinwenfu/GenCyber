@@ -336,5 +336,5 @@ openssl rsautl -decrypt -inkey privkey.pem -in encrypt.dat -out new_encrypt.txt
 Consider RSA with *p* = 5 and *q* = 11.
 - What are *n* and *z*?
 - Let *e* be 3. Find *d* such that *de* = *1* (mod *z*). 
-- Encrypt the message *m* = 8 using the key (*n*, *e*). Let *c* denote the corresponding ciphertext.
+- Encrypt the message *m* = 8 using the key (*n*, *e*). Let *c* denote the corresponding ciphertext. What is *c*?
 - Decrypt the ciphertext. 
