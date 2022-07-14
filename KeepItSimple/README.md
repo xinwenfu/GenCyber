@@ -190,14 +190,14 @@ Below is the sequence of Metasploit commands to perform the attack, i.e., penetr
 15. msf6 exploit(windows/vulnserver/knock) > exploit -j
 
 Here is the explanation to the commands
-- At line 1, we specify the use of the knock exploit.
-Line 2 is the response when we enter the command at line 1.
+- At line 1, we specify the use of the *knock* exploit.
+- Line 2 is the response when we enter the command at line 1.
 - At line 3, we set the remote host that's the target with the IP address 192.168.19.
 - Line 4 is the response from Metasploit.
-- At line 5, we set the target. An explot may have a few targets since the victim program may have a few issues.
+- At line 5, we set the target. An explot may have a few targets since the victim program may have a few bugs.
 Within the Ruby code of the exploit module, we can use different options for different targets.
-We just one target zero.
-- At lines 7 and 9, we set the local host IP and port, which will be by Measploit to perform the attack from the local machine.
+We just have one target---zero.
+- At lines 7 and 9, we set the local host IP and port, which will be used by Measploit to perform the attack from the local machine.
 - At line 11, we set the payload of the exploit.
 - At line 13, we set the port of the target service on the remote host.
 - Finally at line 15, we run the exploit.
@@ -207,30 +207,32 @@ Non-experienced pen testers will be overwhelmed.
 
 ### Method 3. Using Armitage
 
-The third approach is use the penetration testing tool, Armitage, which has a nice graphical user interface (GUI) as shown below.
-You provide all the modules and your customers just use Armitage and launch the attacks.
+The third approach is to use a penetration testing tool, Armitage, which has a nice graphical user interface (GUI) as shown below.
+You provide all the exploit modules and your customers just use Armitage and launch the attacks.
 A few clicks are needed to perform the penetration testing.
-The only issue of Armitage is not stable and well coded.
-Sometimes, we know the vulnerability is over there on the target.
-But we have to try quite a few times to succeed.
-It does not show really useful error messages when it does not work well.
-A vulnerability is exploited, Armitage shows post-exploitation options.
+Once a vulnerability is exploited, Armitage also shows post-exploitation options.
 
 <img src="../Imgs/Armitage-GUI.png" width=800>
 
+The only issue of Armitage is it is not that stable and well coded.
+Sometimes, we know the vulnerability is over there on the target.
+But we have to try quite an attack a few times within Armitage to succeed.
+It does not show really useful error messages either when it does not work well.
+
 Learning Armitage is much simpler than learning Metasploit.
 The goal of a pen tester is to find vulnerabilities on computers.
-There is no point to ask them to learn programming and program a tool.
+There is no point to ask them to learn programming or program such a tool.
 Learning Metasploit is much harder because of its black and white console interface.
 The graphical user interface (GUI) of Armitage makes all things simpler.
 It is a good design for good user experience although I wish it is more stable.
 
 ## Summary
 When you design a product, you have to think about the customers, who are humans.
-they just want to finish their goal and
+They just want to achieve their goal quickly and comfortably.
 You have to help customers achieve their goals effienciently with good experience.
-You have to think about how to make everything simpler for them.
-UX design is hard since we are talking about humans.
+You have to think about how to make things simpler for them.
+
+UX design is actually hard since we are talking about humans.
 Psychology knowledge and data analysis techniques are often needed to understand what customers need.
 For example, you may perform surveys and interviews and process the collected data to see what people like.
 
