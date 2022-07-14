@@ -281,9 +281,13 @@ openssl aes-256-cbc -d -a -in secrets.txt.enc -out secrets.txt.new -iter 1000 -k
 ```
 
 ### Hands-on 5: Send Encrypted Message via Chat Server
+**Notes**: To copy the message from the chat client, use moouse to select/highlight the message and right click on it. Choose "Copy" to copy it. Now you can paste the copied message to somewhere.
+
 - Start the chat server on Windows VM
 - One person encrypts messages and sends over the chat client on Kali VM
 - The other person receives encrypted messages and decrypt s on Kali VM
+
+
 
 ## References
  
