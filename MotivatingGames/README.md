@@ -55,3 +55,15 @@ Run a *dir* command within the Windows console. What do you see?
 
 4. Tell the instructor once you can get into the backdoor. 
 5. Other students can try to log into the backdoor similarly and notify the instructor if they can do it
+
+## Messaging with Caesar cipher
+### Overview
+In Caesar Cipher, as shown in the Caesar Cipher Medallion shown below, we map a letter in a message, called plaintext letter, to another letter for encryption, called ciphtertext letter. In this way, we can use Caesar Cipher to encrypt messages.
+
+<img src="../Imgs/CaesarCipherMedallion.png" width=564> 
+
+### Messaging with Caesar cipher Medallion
+- The instructor starts the chat server on his Windows VM
+- Evebody starts the chat client on their Kali VM
+- The instructor sends a secret message
+- Everybody decrypts the secret message
