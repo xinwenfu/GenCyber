@@ -1,6 +1,6 @@
 # Motivating Games 
 
-## Denial of service (DoS)
+## 1. Denial of service (DoS)
 
 ### Overview
 In our lecture on <a href="https://github.com/xinwenfu/GenCyber/tree/main/SoftwareSecurity">Penetration Testing and Software Security</a>, we have exploited the vulnerable chat server (vchat) and deployed the buffer overflow attack against vchat. We were able to hack into the Windows VM through vchat.
@@ -21,7 +21,7 @@ The same vulnerability can be exploited for a denial of service (DoS) attack. In
    - Click the found Windows VM (IP)
    - Deploy auxillary/dos/vchat/DoS
 
-## Planting backdoor
+## 2. Planting backdoor
 
 ### Overview
 
@@ -56,7 +56,7 @@ Run a *dir* command within the Windows console. What do you see?
 4. Tell the instructor once you can get into the backdoor. 
 5. Other students can try to log into the backdoor similarly and notify the instructor if they can do it
 
-## Messaging with Caesar cipher
+## 3. Messaging with Caesar cipher
 ### Overview
 In Caesar Cipher, as shown in the Caesar Cipher Medallion shown below, we map a letter in a message, called plaintext letter, to another letter for encryption, called ciphtertext letter. In this way, we can use Caesar Cipher to encrypt messages.
 
@@ -67,3 +67,22 @@ In Caesar Cipher, as shown in the Caesar Cipher Medallion shown below, we map a 
 - Evebody starts the chat client on their Kali VM
 - The instructor sends a secret message
 - Everybody decrypts the secret message
+
+## 4. Man in the middle attack	
+### Overview
+In this game, we will show with the message integrity code, your messages are not safe. For example, a man in the middle of you and your receiver can change the message and you cannot tell if the message is changed.
+
+### MITM game
+1. The instructor starts the vulnerable chat server on his Windows VM.
+2. Students start the chat client on their Kali VMs.
+3. The instructor starts the MITM attack, in which the chat server will insert junks into each published message.
+   - Use telnet to connect to the chat server
+```
+telnet 10.0.2.7 9999
+```
+
+   - Enable MITM within telnet 
+```
+MITM 1
+```
+Now all messages will be appended with " hahaha...".
