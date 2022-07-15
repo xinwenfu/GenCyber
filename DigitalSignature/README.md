@@ -22,22 +22,23 @@ openssl rsa -in privkey.pem -outform PEM -pubout -out pubkey.pem
 - Publish your pubkey.pem, e.g. via our chat server
 - Never share privkey.pem
 
-### Hands-on 3: Sign a file at Your Computer
-- Sign a file called changelog or messages saved in a file
+### Hands-on 3: One student as Sender: Sign a file
+- Put a message in a file and sign the file. Note: replace *your-file* in the command below with your chosen file.
 ```
-openssl dgst -sha256 -sign privkey.pem -out sign.sha256 changelog
+openssl dgst -sha256 -sign privkey.pem -out sign.sha256 your-file
 ```
+
 The output sign.sha256 is binary
 
 - Encode the binary signature with base64
 ```
 openssl enc -base64 -in sign.sha256 -out sign.sha256.base64
 ```
-Not really needed. It is needed here since we can send the base64 encoded message to our chat server
+Not really needed. It is needed here since we can send the base64 encoded message over our chat server
 
-- Send both message and base64 encoded signature to our chat server
+- Send both message and base64 encoded signature over our chat server
 
-### Hands-on 4: Verify the Signature
+### Hands-on 4: Another Student as Receiver: Verify the Signature
 - Save received signature into a file, e.g., called sign.sha256.base64
 
 - Decode sign.sha256.base64 and get the binary signature
@@ -49,3 +50,9 @@ openssl enc -base64 -d -in sign.sha256.base64 -out sign.sha256
 ```
 openssl dgst -sha256 -verify pubkey.pem -signature sign.sha256 changelog
 ```
+
+Hands-on 5: Discussion: Message under MITM
+- Assume  the message is changed by MITM.
+That is, hahaha… is added to the received message
+- Repeat the same procedure above
+- Will the verification ne ok this time?
