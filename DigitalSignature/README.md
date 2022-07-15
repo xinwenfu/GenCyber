@@ -52,6 +52,7 @@ openssl dgst -sha256 -verify pubkey.pem -signature sign.sha256 changelog
 ```
 
 ### Hands-on 5: Discussion: Message under MITM
+No need to do it although you can do it.
 - Assume  the message is changed by MITM.
 That is, hahaha… is added to the received message
 - Repeat the same procedure above
