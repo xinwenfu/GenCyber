@@ -1,5 +1,5 @@
 ## Hands-on
-Although the hands-on lab can be done by one person, we highly recommend one student signs the message, and another student verifies the signature.
+Although the hands-on lab can be done by one person, we highly recommend one student as Sender signs the message, and another student as Recevier verifies the signature.
 
 ### Hands-on 1: Windows 10 Certificate Store
 - Please click on the Windows *Start* icon. In *Type here to search*, type and search *certmgr.msc*, which is the Windows 10 certificate store
