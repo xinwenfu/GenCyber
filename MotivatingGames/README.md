@@ -76,11 +76,7 @@ In this game, we will show with the message integrity code, your messages are no
 1. The instructor starts the vulnerable chat server on his Windows VM.
 2. Students start the chat client on their Kali VMs.
 3. The instructor starts the MITM attack, in which the chat server will insert junks into each published message.
-   - Use telnet to connect to the chat server
-```
-telnet 10.0.2.7 9999
-```
-
+   - Use telnet to connect to the chat server: telnet chat-server-ip 9999
    - Enable MITM within telnet 
 ```
 MITM 1
