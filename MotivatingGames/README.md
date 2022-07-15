@@ -70,7 +70,7 @@ In Caesar Cipher, as shown in the Caesar Cipher Medallion shown below, we map a 
 
 ## 4. Man in the middle attack	
 ### Overview
-In this game, we will show with the message integrity code, your messages are not safe. For example, a man in the middle of you and your receiver can change the message and you cannot tell if the message is changed.
+In this game, we will show your messages are not safe without a message integrity code. For example, a man in the middle of you and your receiver can change the message and you cannot tell if the message is changed.
 
 ### MITM game
 1. The instructor starts the vulnerable chat server on his Windows VM.
