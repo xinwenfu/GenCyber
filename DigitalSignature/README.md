@@ -6,7 +6,9 @@ Although the hands-on lab can be done by one person, we highly recommend one stu
 - All people check content of a certificate from Trusted Root Certificate Authorities
 - Discussion: why are these certificates needed?
 
-### Hands-on 2: Generate Public and Private Key Pair
+### Hands-on 2: Sender: Generate Public and Private Key Pair
+From now on, two students are needed, one as Sender and the other as Receiver.
+
 - If done before, no need 
 - Generate public and private key pair
 ```
