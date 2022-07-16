@@ -1,3 +1,306 @@
+# Digital Siganture
+
+To to editted!
+
+
+We actually have discussed the digital signature but uh we talked about the iu
+one and uh now we are going to talk about uh see what is the real digital signature you are using every day when
+you use actually uh https you are using digital signature
+all the time although you don't know it so here is uh the outline of this
+lecture we first talked about what is the real digital signature and we will discuss what is a certificate so this is
+a very important concept and uh most people actually you know if they never took classes
+they are pretty much very confused about what certificates and we'll talk about the
+hands-on and you can just do as much as you can for the hands-on because we don't have much time left
+so what is the purpose of a conventional signature and i think
+you know we are implementing the conventional signature in a weird way
+do you think the bank or anybody they really ever check the signature
+so when you sign are you sure are you signing the thing
+all the time at least i know my signature is really bad
+and then one time i went to macau and uh i remember they asked me to
+sign something and the first time i went there i put my stitch over there the same time i went there again they
+said okay please give me your signature then i sign you said this is not you you can see here it's not another way of
+curly so guess what is done please just try your best make sure this time your
+signature is the same as the last one so i did it again so finally they give up okay go
+so you can see here i'm not sure you know what's the point of a signature i guess i'm just telling you okay fine you
+signed it we know it is you really i'm not sure if we are checking
+the conventional signature right and so that's the issue here and
+there so as we mentioned before right and we want
+digital signature and we want to tell people okay this is about me everybody can
+verify it is from me but we need a scientific way of verifying
+the signature so that's what we are talking about we also discussed
+these two properties right remember we said when you send a message to somebody
+uh when you want from the message something i'm involved here so you use the geyser for example
+[Music]
+and today we are talking about the digital signature we are using this property
+right so you actually can input a message with
+your private key and everybody can use your public key to decrypt it so
+this is the project we are going to use for digital signage okay
+and here is the nail digital signature we talked about before and so in this case okay
+let's see i have a contact with the bob bubba says okay professor fool you are
+tired we give you money something like that and you can see i like the money right
+because i have been talking about all the camp and i'm cheating and uh and uh so anyway and uh so bob is going
+to sign a contract and uh so what's happening here is uh
+what is the signature in this case so you can see now when bob publishes the message right the
+message has two parts the first part is the contract the second part is
+the encrypted contract by bob's private key does anybody still remember
+if you receive this message how do you verify
+this contract is from bob anybody still remembers how do you do that
+actually the answer is over there is that right so how do you verify that
+go ahead if it's the same as the original tell me the whole stuff
+what is the first step you got to do what do you do
+you use power publicly to decrypt what
+equip this part right you decrypt and input the content then
+compared to the published one right and if they are the same
+it must be fun because only bob's property key can decrypt
+the input account right so if a particular one is the same
+as the published one it must be from bob because only bob's public can do that right
+and uh so this is not your digital signature but let's look at the what is the
+problem here what is the problem of this digital signature go ahead
+it's too long for example when you actually sign a letter which is like a one
+million characters long are you going to copy everything over there no right you
+understand your name and so same thing like i said so the overhead
+of a doing signature this way is too much your whole message
+the size double right because when you do the encryption the size is at least the same as
+the original message so that's the problem it's too long the signature is just too long it's not
+very convenient it's much bad for example if it's a two gigabytes of file and you either at least two
+gigabytes of signature over there that's not very efficient right so that's not bad that's really bad and uh how do we
+address this issue i give you one minute to talk with your growth
+with that we can use what as the identity of a message
+to think about that you have one minute to talk with the group
+so let me show you the answer then somebody tell me what is going on here
+okay the answer is on the slide somebody will work here to tell me
+some groups
+so in this case followers give us a camera webinars and kevin wants verified okay so anybody any
+group volunteers any group volunteers how do we generate
+the digital signature which
+[Music]
+right okay so which part is
+right one is uh the page those signatures this is the real
+thing c term you are using every day okay so now you know
+carol receives this metric and this digital signature
+how does she verify the [Music]
+signature is from bob how can she do that
+go ahead uh let me give you a lot of portable chance we choose a little bit too much
+we need to find something else and uh okay go ahead
+very good okay so basically cara has public property everybody needs to
+focus publicly so camera will give this digital signature right and uh
+she will get her basically oh so same step okay
+so she will equip this feature and then she should get a
+good version of the message hash and also she will actually catch
+the message right that comes with the difference in her
+and then she will compare the decrypted version of
+the message hash and with the newly contributed message
+say if they are equal if they are equal it is fun because what because only
+files publicly continue this correctly
+right and uh this is the idea of a real-world digital signature
+any question here clear right very very clear right
+okay and uh so now
+you can see here when we talk about public keys we always assume
+okay you have some of this property but this is just
+an assumption how do you know you get somebody's public key when we do the chat i remember somebody logged in with
+as me right stephen food and they understand a lot of messages right somebody can pretend to be me
+and i'll give them some kind of signature i know how can we
+do that how can we actually publish the public key crisis
+right so that's one problem and anybody can pretend even the dog can pretend to be a human right
+who knows and uh so we have to think about a way to
+reliably deliver it publicly so that people know it is from
+you so this is the question right we need somebody's public key for
+verified signature for example and how can you simply give somebody's property right so
+in this case right when cara wants to give bob
+the public key but everything is on the internet the question is
+okay is this her problem right so
+for example if you guys use using the chat server we have so many smarter people sending
+and the cloud is sending messages on behalf of me on behalf of your
+friends so how can you tell that's a problem right and there's really no way to tell
+this is about something called the certificate it's actually the concept
+if you have your pay notation the concept is not really hard it's very simple
+so here let's look at how you can get a certificate for for yourself
+so we have carrot here right and then you basically carrot will get the certificate for
+her identity and her poverty how do we do that
+what kerry will do is apparel can generate her public and private key pair you
+you guys said that before you can use rc the open ssl to generator to general key
+right so you generally then you go to [Music]
+certainly authority they have a building order and for example there's an older
+company called the very start of a new new name of the company but anyway you are still using very soft so there are
+companies so you need to quickly go over there present your
+identity your other emails many other things information and
+your public so you present all the information identity particular
+identity and your public key to the ca
+ca is going through the verification they physically check your residence and doing other things they make sure okay
+this camera is not actually pretended camera right and uh
+it's not a clown on the internet so they physically check everything after everything is verified
+they are going to give you a certificate what does that mean so what is a certificate
+a certificate is actually signed information
+what is the information so basically in a certificate
+the message like the identity public key resident information and
+other things so we should use those information to you can define
+china and also tell us publicly the whole thing here becomes the message
+and then the ce has its own property and private key pairs
+right this connection user is a property to
+sign [Music] all the information here including identity
+and publicly this will create the signature for all the information
+carrier supplements to the ck so basically all the information here
+and the thing together is called the certificate which is a file on a
+computer you can use okay that's called a certificate okay so
+okay and then what is the point of a specification
+let's see okay how do you verify a certificate let's see you know
+paris uh you know let's do that okay so
+let's see here we care what is going to
+uh travel only gets a little bit from the authority right
+and then so carol is going to stand up
+carol wants to use this certificate to communicate with
+the computer and this computer actually won't verify
+if this is clear or not okay and uh so this is our problem the assumption is
+maybe something you don't know every computer you are using
+in windows mac they all shoot with uh
+the least of a series publication so basically for example if
+you got your certificate from very sign okay then when you science publicly is
+actually on your computer when windows deliver that windows to you right when you buy
+the computer from any vendor the cvs public keys
+are already open it's also in the format of a certificate but really
+you just assume you already have any series publicly
+saved on your computer okay so now
+let's see you know travis identity for example
+right and so then camera actually suddenly
+this one submitted to this computer the computer knows i'm going to check
+this camera at a gmail.com certificate if it is a third certificate now i know
+yes this is the per publication right so in this way we know
+yes we get the right presence publicly because the carrier
+a carrier doctor clara bill.com is the identity of account right because
+everybody has a unique gmail account is that right
+so now my question here is okay let's see this camera
+how can the computer here verify
+this certificate
+verify means everything is right
+so quick number id camera about the camera at rather than just other achievement.com
+by this topic right and then the signature is like the x so the signature is a
+it's an improved version of what the youtube version of cache of everything
+it's the same as a what we have discussed here
+it's same as this one okay because you have the computer has
+sales public key right stored on the computer
+so now the question is the question is
+how can you verify the information here is correct
+i'll give you one minute talking with your group
+ah
+[Music] want to give a try i thought you guys were discussing
+it same as this one this is exact same
+okay right and so it's here so basically i said
+to this part right this information this message is a crazy information right
+and well that's a kind of so
+any any uh uh anyone any group wants to do a try
+go ahead equip with the save the key which is
+stored on the computer right then you got this equipped version of a
+patch of iv other information in a publication then
+the information in the certificate right hash this chart because this part
+is a basically id other information and uh
+easy right and then so this is the id right let me make this clear
+let's make it they are the same other info
+oh sorry and also the ec right
+now i make it easier nowhere
+up here
+okay so now it's better all right so this is the id
+other info easy right signature so can you see it again
+uh so you you you use the says public key click this one you got
+there then then you hash
+id so you have this one this one this one together right
+yeah okay now you compare the newly computed patch with decreased version of the hash
+if that's equal basically it means this certificate is generated by the certificate authority
+every information in this file in this certificate is correct and
+because here the id is idscaro gmail.com and you know you try to get a travel
+entertainment.com property key everything here is right
+that means easy is carrier at gmail.com
+is that right correct right okay any question here
+any question here good okay and uh so this is called a certificate and uh
+if you still have kind of a dot that's okay because when i learned this thing myself i
+remember i spent like two years learning this you guys are learning this like in
+two days right and uh good and also let's look at a few terms and we are
+almost done here and so basically you know each certificate has an owner the
+owner is called a subject when we talk about the certificate so a subject may
+have a company that's the id okay other kind of information and uh so
+that's uh some terms when we talk about the solution is when you actually read the articles you finally talk about the
+subject subject is the owner of the certificate a subject can have many different properties such as a common
+name which is the id and maybe residence phone number right other information
+okay maybe also the address of the owner and uh yeah
+so you may think okay you tell me and uh you tell me
+a computer actually stores all these public keys where are they
+so you can use uh this command right push the windows uh icon right search and enter
+this one it will show you actually all the certificates which is which are
+saved in a database so if you click here then you will find there's a publication so you click here
+for example here it's called what so the salty primary route this one is
+the actual uh authority okay and you can see many others there are so many different
+things right and if you click the one right you can
+see here some specific information here and uh
+[Music]
+[Music] basically the public key
+but the media friendly trust the public key of this city is correct okay
+and uh because we just assume okay here the information here is all right
+because it comes from the vendor okay
+so here is the details and you can see here signature somewhere down here is actually the
+you can see here right and uh there are missing virgin serial numbers feature algorithm java are they finished
+algorithm issued by this guy from the different stage
+[Music]
+so if you click here i remember this one you click here you will see actually the password
+okay but something here you can see here
+other information here that's the id and although we don't use uh
+the email but anyway so that's the description of a subject
+and also as i said every computer has that certificate store
+and you just trust them right because it ships from the vendor and uh for example
+i didn't follow
+certificate store okay good any questions so far
+clear okay and uh so the hands-on here is uh you can do it as much as you can
+and uh so you can contact the certificate store of windows
+with the hands-on one so i give you all the detailed instructions over there right
+and you can also generate a public private keeper you already did it okay and uh
+remember here when you use the basic command ssl it generates
+the key pair and this file contains both public key and privacy
+you use this approach to speak the publicly out right and that's what we said before
+and now let's see you understand
+so here is the file i'm using this file called chip clone but really you can use any file here but make sure okay
+when you use this command right the file is in a statement folder where you have the command okay you can
+use a like a text editor to create a file and uh and put a message over there
+any name okay so here what we do here is that we are using openness
+the digital signature and uh user change because we attached
+to the message right and uh 256 and we are going to use this privacy
+[Music]
+and this is the file you want to actually create the signature so i know many people are still not so
+familiar with the command line and me right but then it's time for
+that for this one we are doing the decoding
+because we are going to send this feature actually to [Music]
+the china server right and that's why we do the basic before
+then you can verify it you can verify so in this case okay
+and uh basically this is the decoding right and but really we don't need it if we're just
+playing everything yourself if you don't stand there things over chat server you don't need the
+encoding and decoding guitar so let's look at the signature part so in this case you can see again
+we are verifying the signature one is option parameter
+and uh so the public key is image file and the
+signature is in this file this is the original part so you are
+checking if this signature is for this fact
+or if if you know it is called this signature
+is the signature of this file and you are checking if the file is changed or not or it's
+suspended by the guy who actually signs the file
+right and but this is your part you you name it okay and uh
+some trans parameters are fixed
+this isn't your own file of your
+so this is the game right read it so once one person sent out
+actually the message whatever and uh and you can follow the steps
+the hand down you can discuss right if for example the file is changed
+then when you try to verify the signature you can see here
+right you'll need to actually provide the change in the file and also
+the original signature there will be no match right
+and uh i guess uh basically this is uh
+the end of our lecture and any questions
+any questions good good okay so we have 30 minutes 25 minutes and then you can just do as
+many as much as you can okay and then we'll start uh the the last game of this
+program i'll get the teeth out okay
+ask them this is your last chance talking with them
+[Music] okay please go out help them this last
+last 25 minutes
+using my github repository okay and uh lecture 10
+so over there there is detailed description of the hands-on
+so i'm going to be busy with your problems
+you
+
+
 ## Hands-on
 Although the hands-on lab can be done by one person, we highly recommend one student as Sender signs the message, and another student as Recevier verifies the signature.
 
