@@ -64,43 +64,22 @@ How can Bob be sure the public key that is sent over to him is really Carol's pu
 
 <img src="../Imgs/PublicKeyDelivery.png" width=480>
 
-We can use a digital certificate to solve the problem. it's actually the concept
+We can use a digital certificate to solve the problem.
+
+### Generating a certificate by CA
+
 How can Carol get a certificate for herslef?
 - Carol generates her key pair (e<sub>C</sub>, d<sub>C</sub>)
 - She goes to a Certificate Authority (CA) face-to-face. A CA can be a trusted company has a public and private key pair (e<sub>CA</sub>, d<sub>CA</sub>)
-- CA verifies her information, denoted as m, which includes name, identity, address and others, and obtains her public key e<sub>C</sub>.
+- CA verifies her information, denoted as m, which includes name, identity, and others, and obtains her public key e<sub>C</sub>.
 - CA issues Carol a certificate, which contains two parts, m and signature over m.
-  - m contains Carol’s name, identity, address and others as stated above, and her public key e<sub>C</sub>
+  - m contains Carol’s name, identity, and others as stated above, and her public key e<sub>C</sub>
   - the signature is d<sub>CA</sub>(H(m))
 
+<img src="../Imgs/CarolCertificate.png" width=256>
 
-so we have carrot here right and then you basically carrot will get the certificate for
-her identity and her poverty how do we do that
-what kerry will do is apparel can generate her public and private key pair you
-you guys said that before you can use rc the open ssl to generator to general key
-right so you generally then you go to [Music]
-certainly authority they have a building order and for example there's an older
-company called the very start of a new new name of the company but anyway you are still using very soft so there are
-companies so you need to quickly go over there present your
-identity your other emails many other things information and
-your public so you present all the information identity particular
-identity and your public key to the ca
-ca is going through the verification they physically check your residence and doing other things they make sure okay
-this camera is not actually pretended camera right and uh
-it's not a clown on the internet so they physically check everything after everything is verified
-they are going to give you a certificate what does that mean so what is a certificate
-a certificate is actually signed information
-what is the information so basically in a certificate
-the message like the identity public key resident information and
-other things so we should use those information to you can define
-china and also tell us publicly the whole thing here becomes the message
-and then the ce has its own property and private key pairs
-right this connection user is a property to
-sign [Music] all the information here including identity
-and publicly this will create the signature for all the information
-carrier supplements to the ck so basically all the information here
-and the thing together is called the certificate which is a file on a
-computer you can use okay that's called a certificate okay so
+### Verifying a certificate
+
 okay and then what is the point of a specification
 let's see okay how do you verify a certificate let's see you know
 paris uh you know let's do that okay so
