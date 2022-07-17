@@ -110,7 +110,7 @@ Click an entry which corresponds to one CA to see the information of the CA's ce
 
 <img src="../Imgs/SubjectCertificate.png" width=400>
 
-Click the tab of *Details* within the CA's information Window and see detailed info.
+Click the tab of *Details* within the CA's information Window and see detailed info. For example, click *Public key* to see the actual public key.
 
 <img src="../Imgs/SubjectCertificateDetails.png" width=512>
 
