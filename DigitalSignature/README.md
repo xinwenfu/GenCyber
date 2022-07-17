@@ -53,23 +53,18 @@ the digital signature right.
 
 ## Introduction to certificate
 
-you can see here when we talk about public keys we always assume
-okay you have some of this property but this is just
-an assumption how do you know you get somebody's public key when we do the chat i remember somebody logged in with
-as me right stephen food and they understand a lot of messages right somebody can pretend to be me
-and i'll give them some kind of signature i know how can we
-do that how can we actually publish the public key crisis
-right so that's one problem and anybody can pretend even the dog can pretend to be a human right
-who knows and uh so we have to think about a way to
-reliably deliver it publicly so that people know it is from
-you so this is the question right we need somebody's public key for
-verified signature for example and how can you simply give somebody's property right so
-in this case right when cara wants to give bob
-the public key but everything is on the internet the question is
-okay is this her problem right so
-for example if you guys use using the chat server we have so many smarter people sending
-and the cloud is sending messages on behalf of me on behalf of your
-friends so how can you tell that's a problem right and there's really no way to tell
+We always assume we know somebody's public key so far.
+But how do you know you get somebody's public key right?
+Anybody can pretend to be sombody else on the Internet.
+Se have to think about a way to reliably deliver our public keys.
+
+So this is the question: We need somebody's public key for verifying her signature and need her public key.
+In the picture below, Carol wants to give Bob the public key over the Internet.
+How can Bob be sure the public key that is sent over to him is really Carol's public key?
+
+<img src="../Imgs/PublicKeyDelivery.png" width=480>
+
+
 this is about something called the certificate it's actually the concept
 if you have your pay notation the concept is not really hard it's very simple
 so here let's look at how you can get a certificate for for yourself
