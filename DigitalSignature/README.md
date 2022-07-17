@@ -48,7 +48,7 @@ She first hashes the published contract H(m), and then decrypts the digital sign
 <img src="../Imgs/DigitalSigantureVerification.png" width=512>
 Now she compares the decrypted version of
 the contract hash with her newly computed message hash.
-If they are equal, it is Bob who signs the contract because what because Bob's public key can decrypt
+If they are equal, it is Bob who signs the contract because Bob's public key can decrypt
 the digital signature right. 
 
 ## Introduction to certificate
