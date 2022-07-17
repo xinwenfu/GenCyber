@@ -1,7 +1,7 @@
 # Digital Siganture
 
-We are going to first talk about what is the real digital signature you are using every day when
-you use browse websites, many of which use the https protocol.
+We are going to first talk about what is the real digital signature you are actually using every day when
+you browse websites. If you see a link starting with *https*, you are using digital signature.
 We will then discuss what is a certificate.
 At last we'll talk about the hands-on.
 
@@ -11,6 +11,8 @@ Let's first look at a conventional signature.
 I think you know we are implementing the conventional signature in a weird way.
 Do we really actually check the signature?
 If we do, we just use eyes to look at the signature and see if it is right. That is not really scientific.
+
+<img src="../Imgs/ContractWithSignature.png" width=128>
 
 The digital siganture can be verified in a scientific way using the properties of public key crypto below.
 
