@@ -40,7 +40,7 @@ Let's now look at the real-world digital signature, which uses hash.
 Bob first hashes the contract H(m), and then encrypts the hash with his private key d<sub>B</sub>(H(m)), which is the digital signature.
 So now Bob publishes m, d<sub>B</sub>(H(m)).
 
-<img src="../Imgs/DigitalSignature.png" width=512>
+<img src="../Imgs/DigitalSiganture.png" width=512>
 
 so she will equip this feature and then she should get a
 good version of the message hash and also she will actually catch
