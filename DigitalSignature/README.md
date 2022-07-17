@@ -108,7 +108,7 @@ We can find certificates of CAs in an operating system's certificate store. With
 
 <img src="../Imgs/certmgr.png" width=720>
 
-Click an entry which corresponds to one CA.
+Click an entry which corresponds to one CA to see the information of the CA's certificate.
 
 <img src="../Imgs/SubjectCertificate.png" width=400>
 
