@@ -14,67 +14,34 @@ I think you know we are implementing the conventional signature in a weird way.
 Do we really actually check the signature?
 If we do, we just use eyes to look at the signature and see if it is right. That is not really scientific.
 
-The digital siganture can be verified in a scientific way using the properties of public key crypto.
+The digital siganture can be verified in a scientific way using the properties of public key crypto below.
+
 e<sub>B</sub>(d<sub>B</sub>(m))  = m = d<sub>B</sub>(e<sub>B</sub>(m)) 
 
+The right part of the formular: When you send a message m to Bob with the public and private key pair (e<sub>B</sub>, d<sub>B</sub>), use his public key to encrypt the message e<sub>B</sub>(m). Bob can use his private key to decrypt the message d<sub>B</sub>(e<sub>B</sub>(m)) = m. 
 
-these two properties right remember we said when you send a message to somebody
-uh when you want from the message something i'm involved here so you use the geyser for example
-[Music]
-and today we are talking about the digital signature we are using this property
-right so you actually can input a message with
-your private key and everybody can use your public key to decrypt it so
-this is the project we are going to use for digital signage okay
-and here is the nail digital signature we talked about before and so in this case okay
-let's see i have a contact with the bob bubba says okay professor fool you are
-tired we give you money something like that and you can see i like the money right
-because i have been talking about all the camp and i'm cheating and uh and uh so anyway and uh so bob is going
-to sign a contract and uh so what's happening here is uh
-what is the signature in this case so you can see now when bob publishes the message right the
-message has two parts the first part is the contract the second part is
-the encrypted contract by bob's private key does anybody still remember
-if you receive this message how do you verify
-this contract is from bob anybody still remembers how do you do that
-actually the answer is over there is that right so how do you verify that
-go ahead if it's the same as the original tell me the whole stuff
-what is the first step you got to do what do you do
-you use power publicly to decrypt what
-equip this part right you decrypt and input the content then
-compared to the published one right and if they are the same
-it must be fun because only bob's property key can decrypt
-the input account right so if a particular one is the same
-as the published one it must be from bob because only bob's public can do that right
-and uh so this is not your digital signature but let's look at the what is the
-problem here what is the problem of this digital signature go ahead
-it's too long for example when you actually sign a letter which is like a one
-million characters long are you going to copy everything over there no right you
-understand your name and so same thing like i said so the overhead
-of a doing signature this way is too much your whole message
-the size double right because when you do the encryption the size is at least the same as
-the original message so that's the problem it's too long the signature is just too long it's not
-very convenient it's much bad for example if it's a two gigabytes of file and you either at least two
-gigabytes of signature over there that's not very efficient right so that's not bad that's really bad and uh how do we
-address this issue i give you one minute to talk with your growth
-with that we can use what as the identity of a message
-to think about that you have one minute to talk with the group
-so let me show you the answer then somebody tell me what is going on here
-okay the answer is on the slide somebody will work here to tell me
-some groups
-so in this case followers give us a camera webinars and kevin wants verified okay so anybody any
-group volunteers any group volunteers how do we generate
-the digital signature which
-[Music]
-right okay so which part is
-right one is uh the page those signatures this is the real
-thing c term you are using every day okay so now you know
-carol receives this metric and this digital signature
-how does she verify the [Music]
-signature is from bob how can she do that
-go ahead uh let me give you a lot of portable chance we choose a little bit too much
-we need to find something else and uh okay go ahead
-very good okay so basically cara has public property everybody needs to
-focus publicly so camera will give this digital signature right and uh
-she will get her basically oh so same step okay
+The left part of the formular is used by digital signature. Bob can encrypt a message m with his private key d<sub>B</sub>(m). So the signing 
+Everybody can use Bob's public key to decrypt such encrypted message e<sub>B</sub>(d<sub>B</sub>(m))  = m.
+
+In the naive digital signature, we use signing a contract as the example.
+Bob publishes the contract this way in two parts.
+The first part is the contract m, 
+and the second part is the encrypted contract by Bob's private key d<sub>B</sub>(m), which is the naive digital siganture.
+Everybody knows Bob's public key.
+To verify the digital signature, you decrypt the naive digital siganture with Bob's public key,
+e<sub>B</sub>(d<sub>B</sub>(m))  = m. If the decrypted m is the same as the published m, 
+it must be Bob who signs the contract because only Bob's public key can decrypt the naive digital signature right.
+
+What is the problem of this naive digital signature?
+It's too long. An encrypted contract by Bob's private key is at least as long as the contract itself.
+The naive digital signature has too much overhead.
+
+Let's now look at the real-world digital signature, which uses hash.
+Bob first hashes the contract H(m), and then encrypts the hash with his private key d<sub>B</sub>(H(m)), which is the digital signature.
+So now Bob publishes m, d<sub>B</sub>(H(m)).
+
+<img src="../Imgs/DigitalSignature.png" width=512>
+
 so she will equip this feature and then she should get a
 good version of the message hash and also she will actually catch
 the message right that comes with the difference in her
