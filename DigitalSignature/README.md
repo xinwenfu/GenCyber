@@ -108,9 +108,9 @@ We can find certificates of CAs in an operating system's certificate store.
 
 <img src="../Imgs/certmgr.png" width=6400>
 
-<img src="../Imgs/SubjectCertificate.png" width=320>
+<img src="../Imgs/SubjectCertificate.png" width=400>
 
-<img src="../Imgs/SubjectCertificateDetails.png" width=480>
+<img src="../Imgs/SubjectCertificateDetails.png" width=512>
 
 ## Hands-on
 Although the hands-on lab can be done by one person, we highly recommend one student as Sender signs the message, and another student as Recevier verifies the signature.
