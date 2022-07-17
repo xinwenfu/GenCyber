@@ -7,7 +7,7 @@ you use browse websites, many of which use the https protocol.
 We will then discuss what is a certificate.
 At last we'll talk about the hands-on.
 
-## Introduction to digital signature
+## Introduction to real-world digital signature
 
 Let's first look at a conventional signature.
 I think you know we are implementing the conventional signature in a weird way.
@@ -42,16 +42,17 @@ So now Bob publishes m, d<sub>B</sub>(H(m)).
 
 <img src="../Imgs/DigitalSiganture.png" width=512>
 
-so she will equip this feature and then she should get a
-good version of the message hash and also she will actually catch
-the message right that comes with the difference in her
-and then she will compare the decrypted version of
-the message hash and with the newly contributed message
-say if they are equal if they are equal it is fun because what because only
-files publicly continue this correctly
-right and uh this is the idea of a real-world digital signature
-any question here clear right very very clear right
-okay and uh so now
+How can somebody verify the digital signature? Carol in the figure below can verify it this way.
+She first hashes the published contract H(m), and then decrypts the digital signature e<sub>B</sub>(d<sub>B</sub>(H(m)))=h(m). 
+
+<img src="../Imgs/DigitalSigantureVerification.png" width=512>
+Now she compares the decrypted version of
+the contract hash with her newly computed message hash.
+If they are equal, it is Bob who signs the contract because what because Bob's public key can decrypt
+the digital signature right. 
+
+## Introduction to certificate
+
 you can see here when we talk about public keys we always assume
 okay you have some of this property but this is just
 an assumption how do you know you get somebody's public key when we do the chat i remember somebody logged in with
