@@ -8,35 +8,33 @@ At last we'll talk about the hands-on.
 ## Introduction to real-world digital signature
 
 Let's first look at a conventional signature.
-I think you know we are implementing the conventional signature in a weird way.
+I think you know we are implementing the conventional hand written signature in a weird way.
 Do we really actually check the signature?
 If we do, we just use eyes to look at the signature and see if it is right. That is not really scientific.
 
 <img src="../Imgs/ContractWithSignature.png" width=160>
 
 The digital siganture can be verified in a scientific way using the properties of public key crypto below.
+We first review the right part of the formular, which is for encryption and secret communication. When you send a message *m* to Bob, who owns the public and private key pair (e<sub>B</sub>, d<sub>B</sub>), use his public key to encrypt the message e<sub>B</sub>(m). Bob can use his private key to decrypt the ciphertext to recover the original message d<sub>B</sub>(e<sub>B</sub>(m)) = m. 
 
 e<sub>B</sub>(d<sub>B</sub>(m))  = m = d<sub>B</sub>(e<sub>B</sub>(m)) 
 
-The right part of the formular: When you send a message m to Bob with the public and private key pair (e<sub>B</sub>, d<sub>B</sub>), use his public key to encrypt the message e<sub>B</sub>(m). Bob can use his private key to decrypt the message d<sub>B</sub>(e<sub>B</sub>(m)) = m. 
-
-The left part of the formular is used by digital signature. Bob can encrypt a message m with his private key d<sub>B</sub>(m). So the signing 
+The left part of the formular is used by digital signature. Bob can encrypt a message *m* with his private key d<sub>B</sub>(m). 
 Everybody can use Bob's public key to decrypt such encrypted message e<sub>B</sub>(d<sub>B</sub>(m))  = m.
-
 In the naive digital signature, we use signing a contract as the example.
 Bob publishes the contract this way in two parts.
-The first part is the contract m, 
+The first part is the contract *m*, 
 and the second part is the encrypted contract by Bob's private key d<sub>B</sub>(m), which is the naive digital siganture.
 Everybody knows Bob's public key.
 To verify the digital signature, you decrypt the naive digital siganture with Bob's public key,
-e<sub>B</sub>(d<sub>B</sub>(m))  = m. If the decrypted m is the same as the published m, 
+e<sub>B</sub>(d<sub>B</sub>(m))  = m. If the decrypted version of m is the same as the published m, 
 it must be Bob who signs the contract because only Bob's public key can decrypt the naive digital signature right.
 
 What is the problem of this naive digital signature?
 It's too long. An encrypted contract by Bob's private key is at least as long as the contract itself.
-The naive digital signature has too much overhead.
+The naive digital signature has too much overhead. This is like you don't want to hand sign a contract by hand writing the entire contract again.
 
-Let's now look at the real-world digital signature, which uses hash.
+Let's now look at the real-world digital signature, which utilizes hash.
 Bob first hashes the contract H(m), and then encrypts the hash with his private key d<sub>B</sub>(H(m)), which is the digital signature.
 So now Bob publishes m, d<sub>B</sub>(H(m)).
 
@@ -44,21 +42,21 @@ So now Bob publishes m, d<sub>B</sub>(H(m)).
 
 How can somebody verify the digital signature? Carol in the figure below can verify it this way.
 She first hashes the published contract H(m), and then decrypts the digital signature e<sub>B</sub>(d<sub>B</sub>(H(m)))=h(m). 
+Now she compares the decrypted version of
+the contract hash with her newly computed contract hash.
+If they are equal, it is Bob who signs the contract because only Bob's public key can decrypt
+the digital signature right. 
 
 <img src="../Imgs/DigitalSigantureVerification.png" width=512>
-Now she compares the decrypted version of
-the contract hash with her newly computed message hash.
-If they are equal, it is Bob who signs the contract because Bob's public key can decrypt
-the digital signature right. 
 
 ## Introduction to certificate
 
 We always assume we know somebody's public key so far.
 But how do you know you get somebody's public key right?
 Anybody can pretend to be sombody else on the Internet.
-Se have to think about a way to reliably deliver our public keys.
+So we have to think about a way to reliably deliver our public keys.
 
-So this is the question: We need somebody's public key for verifying her signature and need her public key.
+This is the problem to solve: We need somebody's public key for verifying her signature.
 In the picture below, Carol wants to give Bob the public key over the Internet.
 How can Bob be sure the public key that is sent over to him is really Carol's public key?
 
@@ -69,12 +67,12 @@ We can use a digital certificate to solve the problem.
 ### Generating a certificate by CA
 
 How can Carol get a certificate for herslef?
-- Carol generates her key pair (e<sub>C</sub>, d<sub>C</sub>)
-- She goes to a Certificate Authority (CA) face-to-face. A CA can be a trusted company has a public and private key pair (e<sub>CA</sub>, d<sub>CA</sub>)
-- CA verifies her information, denoted as m, which includes name, identity, and others, and obtains her public key e<sub>C</sub>.
+- Carol generates her public and private key pair (e<sub>C</sub>, d<sub>C</sub>)
+- She goes to a Certificate Authority (CA) face-to-face. A CA can be a trusted company, which has a public and private key pair (e<sub>CA</sub>, d<sub>CA</sub>)
+- CA verifies her information, denoted as *m*, which includes her name, identity, and others, and obtains her public key e<sub>C</sub> too.
 - CA issues Carol a certificate, which contains two parts, m and signature over m.
   - m contains Carol’s name, identity, and others as stated above, and her public key e<sub>C</sub>
-  - the signature is d<sub>CA</sub>(H(m))
+  - The signature is d<sub>CA</sub>(H(m))
 
 <img src="../Imgs/CarolCertificate.png" width=200>
 
@@ -87,21 +85,21 @@ Let's see the example in the picture below.
 Carol wants to use this certificate to communicate with the computer.
 The computer wants to verify her certificate so as to obtain her public key, which can be used later, for example, for key exchange.
 Every computer is actually shipped with public keys of CAs within its Operating System like Windows, MacOS, and Linux.
-That is, in this case, the computer has the public key (e<sub>CA</sub>) of Carol's certificate.
-The CA's pubic key is actually saved in the format of a certificate issused by the CA itself.
-How can the computer here verify this certificate d<sub>CA</sub>(H(m))?
-We actually have discussed the verification.
-The computer use the CA's to decrypt the digital siganture and get the decrypted version of the hash of Carol's informaton contained in the certificate.
-The computer also hashes Carol's informaton contained in the certificate directly.
-If the newly computed information hash is the same as the decrypted version, the certificate belongs to the ID contained in the certificate, which is Carol in this case.
+In this case, the computer has the public key (e<sub>CA</sub>) of Carol's certificate.
+The CA's public key is actually stored in the format of a certificate issused by the CA itself.
+How can the computer verify this certificate d<sub>CA</sub>(H(m))?
+We actually have discussed the verification proess when we discuss the verification of digital signature in general above.
+The computer uses the CA's public key to decrypt the digital siganture and get the decrypted version of the hash of Carol's informaton.
+The computer also directly hashes Carol's informaton contained in the certificate.
+If the newly computed hash is the same as the decrypted version, the certificate belongs to the ID contained in the certificate, which is Carol in this case. Then we know Carol has the public key contained in the certificate
 
 <img src="../Imgs/CertificateVerification.png" width=480>
 
 Let's look at a few terms for certificates.
 The owner of a certificate is called a subject.
-CommonName is the identity of the owner.
-A subject’s CommonName can be an explicit name, e.g. cs.uml.edu and email or a name with a wildcard character, e.g. \*.uml.edu.
-A certicate contains related information of the subject.
+CommonName in a certificate is the identity of the owner.
+A subject’s CommonName can be an explicit name, e.g. cs.uml.edu and email, or a name with a wildcard character, e.g. \*.uml.edu.
+A certicate contains related information including the public key of the subject.
 
 ### Windows 10 Certificate Store
 We can find certificates of CAs in an operating system's certificate store. Within Windows, press the Windows logo icon, and type to search for certmgr.msc to run it.
@@ -112,7 +110,7 @@ Click an entry which corresponds to one CA to see the information of the CA's ce
 
 <img src="../Imgs/SubjectCertificate.png" width=400>
 
-Click the tab of Details within the CA's information Window and see detailed info.
+Click the tab of *Details* within the CA's information Window and see detailed info.
 
 <img src="../Imgs/SubjectCertificateDetails.png" width=512>
 
