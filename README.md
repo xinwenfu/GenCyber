@@ -3,7 +3,7 @@
 ## Lab environment
 We use VMs for all the labs. All VMs are tested for VirtualBox.
 
-- <a href="https://www.cs.uml.edu/~xinwenfu/VMs/Kali-CR-25G.ova">Customized Kali VM</a>
+- <a href="https://www.cs.uml.edu/~xinwenfu/VMs/Kali-CR-25G.ova">Customized Kali VM</a>, which incldues Armitage and our metrasploit modules
 - <a href="https://www.cs.uml.edu/~xinwenfu/VMs/Metasploitable-CR.ova">Metasploitable 2</a>
 - Windows VM cannot be shared. But really only the vulnerable chat server <a href="https://github.com/xinwenfu/vchat">vchat</a> is needed.
   - Turn off Windows Defenser Firewall
