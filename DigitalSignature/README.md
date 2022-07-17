@@ -64,10 +64,16 @@ How can Bob be sure the public key that is sent over to him is really Carol's pu
 
 <img src="../Imgs/PublicKeyDelivery.png" width=480>
 
+We can use a digital certificate to solve the problem. it's actually the concept
+How can Carol get a certificate for herslef?
+- Carol generates her key pair (e<sub>C</sub>, d<sub>C</sub>)
+- She goes to a Certificate Authority (CA) face-to-face. A CA can be a trusted company.
+- CA verifies her information, denoted as m, which includes name, identity, address and others, and obtains her public key e<sub>C</sub>.
+- CA issues Carol a certificate, which contains two parts, m and signature over m.
+  - m contains Carol’s name, identity, address and others as stated above, and her public key e<sub>C</sub>
+  - the signature is d<sub>CA</sub>(H(m))
 
-this is about something called the certificate it's actually the concept
-if you have your pay notation the concept is not really hard it's very simple
-so here let's look at how you can get a certificate for for yourself
+
 so we have carrot here right and then you basically carrot will get the certificate for
 her identity and her poverty how do we do that
 what kerry will do is apparel can generate her public and private key pair you
