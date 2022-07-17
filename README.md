@@ -7,7 +7,7 @@ We use VMs for all the labs. All VMs are tested for VirtualBox.
 - <a href="https://www.cs.uml.edu/~xinwenfu/VMs/Metasploitable-CR.ova">Metasploitable 2</a>
 - Windows VM cannot be shared. But really only the vulnerable chat server <a href="https://github.com/xinwenfu/vchat">vchat</a> is needed.
   - Turn off Windows Defenser Firewall
-  - Turn off the virus <a href="https://support.microsoft.com/en-us/windows/turn-off-defender-antivirus-protection-in-windows-security-99e6004f-c54c-8509-773c-a4d776b77960">real time protection</a>. The real-time protection is automatically turned on frequently by Windows, for example at a restart or after some time.
+  - Turn off the virus <a href="https://support.microsoft.com/en-us/windows/turn-off-defender-antivirus-protection-in-windows-security-99e6004f-c54c-8509-773c-a4d776b77960">real time protection</a>. The real-time protection is automatically turned on frequently by Windows, for example at a restart or after some time it was turned on.
 
 ## Lectures and hands-on 
 Here are the lectures and hands-on labs for the GenCyber camp at UMass Lowell. The hands-on labs are at the end of a lecture. Some lectures are missing although all hands-on labs are over there.
