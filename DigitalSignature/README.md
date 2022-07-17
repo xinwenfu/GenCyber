@@ -76,7 +76,7 @@ How can Carol get a certificate for herslef?
   - m contains Carol’s name, identity, and others as stated above, and her public key e<sub>C</sub>
   - the signature is d<sub>CA</sub>(H(m))
 
-<img src="../Imgs/CarolCertificate.png" width=256>
+<img src="../Imgs/CarolCertificate.png" width=200>
 
 ### Verifying a certificate
 
