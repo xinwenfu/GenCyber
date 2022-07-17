@@ -67,7 +67,7 @@ How can Bob be sure the public key that is sent over to him is really Carol's pu
 We can use a digital certificate to solve the problem. it's actually the concept
 How can Carol get a certificate for herslef?
 - Carol generates her key pair (e<sub>C</sub>, d<sub>C</sub>)
-- She goes to a Certificate Authority (CA) face-to-face. A CA can be a trusted company.
+- She goes to a Certificate Authority (CA) face-to-face. A CA can be a trusted company has a public and private key pair (e<sub>CA</sub>, d<sub>CA</sub>)
 - CA verifies her information, denoted as m, which includes name, identity, address and others, and obtains her public key e<sub>C</sub>.
 - CA issues Carol a certificate, which contains two parts, m and signature over m.
   - m contains Carol’s name, identity, address and others as stated above, and her public key e<sub>C</sub>
