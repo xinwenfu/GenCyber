@@ -2,32 +2,22 @@
 
 To to editted!
 
+We are going to first talk about what is the real digital signature you are using every day when
+you use browse websites, many of which use the https protocol.
+We will then discuss what is a certificate.
+At last we'll talk about the hands-on.
 
-We actually have discussed the digital signature but uh we talked about the iu
-one and uh now we are going to talk about uh see what is the real digital signature you are using every day when
-you use actually uh https you are using digital signature
-all the time although you don't know it so here is uh the outline of this
-lecture we first talked about what is the real digital signature and we will discuss what is a certificate so this is
-a very important concept and uh most people actually you know if they never took classes
-they are pretty much very confused about what certificates and we'll talk about the
-hands-on and you can just do as much as you can for the hands-on because we don't have much time left
-so what is the purpose of a conventional signature and i think
-you know we are implementing the conventional signature in a weird way
-do you think the bank or anybody they really ever check the signature
-so when you sign are you sure are you signing the thing
-all the time at least i know my signature is really bad
-and then one time i went to macau and uh i remember they asked me to
-sign something and the first time i went there i put my stitch over there the same time i went there again they
-said okay please give me your signature then i sign you said this is not you you can see here it's not another way of
-curly so guess what is done please just try your best make sure this time your
-signature is the same as the last one so i did it again so finally they give up okay go
-so you can see here i'm not sure you know what's the point of a signature i guess i'm just telling you okay fine you
-signed it we know it is you really i'm not sure if we are checking
-the conventional signature right and so that's the issue here and
-there so as we mentioned before right and we want
-digital signature and we want to tell people okay this is about me everybody can
-verify it is from me but we need a scientific way of verifying
-the signature so that's what we are talking about we also discussed
+## Introduction to digital signature
+
+Let's first look at a conventional signature.
+I think you know we are implementing the conventional signature in a weird way.
+Do we really actually check the signature?
+If we do, we just use eyes to look at the signature and see if it is right. That is not really scientific.
+
+The digital siganture can be verified in a scientific way using the properties of public key crypto.
+e<sub>B</sub>(d<sub>B</sub>(m))  = m = d<sub>B</sub>(e<sub>B</sub>(m)) 
+
+
 these two properties right remember we said when you send a message to somebody
 uh when you want from the message something i'm involved here so you use the geyser for example
 [Music]
