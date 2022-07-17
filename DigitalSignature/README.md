@@ -104,11 +104,15 @@ A subject’s CommonName can be an explicit name, e.g. cs.uml.edu and email or a
 A certicate contains related information of the subject.
 
 ### Windows 10 Certificate Store
-We can find certificates of CAs in an operating system's certificate store.
+We can find certificates of CAs in an operating system's certificate store. Within Windows, press the Windows logo icon, and type to search for certmgr.msc to run it.
 
 <img src="../Imgs/certmgr.png" width=720>
 
+Click an entry which corresponds to one CA.
+
 <img src="../Imgs/SubjectCertificate.png" width=400>
+
+Click the tab of Details within the CA's information Window and see detailed info.
 
 <img src="../Imgs/SubjectCertificateDetails.png" width=512>
 
