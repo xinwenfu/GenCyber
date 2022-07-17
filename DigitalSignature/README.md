@@ -106,7 +106,7 @@ A certicate contains related information of the subject.
 ### Windows 10 Certificate Store
 We can find certificates of CAs in an operating system's certificate store.
 
-<img src="../Imgs/certmgr.png" width=640>
+<img src="../Imgs/certmgr.png" width=720>
 
 <img src="../Imgs/SubjectCertificate.png" width=400>
 
