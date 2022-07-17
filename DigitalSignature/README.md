@@ -1,7 +1,5 @@
 # Digital Siganture
 
-To to editted!
-
 We are going to first talk about what is the real digital signature you are using every day when
 you use browse websites, many of which use the https protocol.
 We will then discuss what is a certificate.
