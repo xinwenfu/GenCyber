@@ -12,7 +12,7 @@ I think you know we are implementing the conventional signature in a weird way.
 Do we really actually check the signature?
 If we do, we just use eyes to look at the signature and see if it is right. That is not really scientific.
 
-<img src="../Imgs/ContractWithSignature.png" width=128>
+<img src="../Imgs/ContractWithSignature.png" width=160>
 
 The digital siganture can be verified in a scientific way using the properties of public key crypto below.
 
