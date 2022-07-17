@@ -1,4 +1,4 @@
-# Digital Siganture
+# Digital Signature
 
 We are going to first talk about what is the real digital signature you are actually using every day when
 you browse websites. If you see a link starting with *https*, you are using digital signature.
