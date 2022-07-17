@@ -62,7 +62,7 @@ So this is the question: We need somebody's public key for verifying her signatu
 In the picture below, Carol wants to give Bob the public key over the Internet.
 How can Bob be sure the public key that is sent over to him is really Carol's public key?
 
-<img src="../Imgs/PublicKeyDelivery.png" width=320>
+<img src="../Imgs/PublicKeyDelivery.png" width=480>
 
 
 this is about something called the certificate it's actually the concept
