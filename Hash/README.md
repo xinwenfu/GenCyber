@@ -1,3 +1,623 @@
+# Hash and Checksum
+
+TO BE EDITTED
+
+the my microphone otherwise it doesn't record okay and then but you guys are close to me so
+i don't need a actually shot so today for this uh lecture we are going to talk
+about uh the checksum and the quick graphical hash function
+so we actually emphasize crypt cryptographic hash function because you know those things are
+mathematically based and so they can we can prove it's pretty
+good so here is a the outline of this lecture and we are going to first look at what
+is a checksum now what is hash algorithm then next we are going to talk about the
+hash applications and we are going to have hands-on for today so the hands-on
+is very important because um some of the problems will appear in your
+final game right the competition so let's look at uh the
+idea of uh the idea of a hash algorithm is pretty
+simple so look at the picture above right
+and uh so the idea here is so given
+the message whatever the length of the message one device country lines who cares
+as long as you can imagine however when this message goes through
+this hash function okay then the output is always of fixed
+length so for example there is a
+hash algorithm called md5 and uh the autofocus is always a 128 bits
+so now i want to ask you a question if a message is 128 b
+is how many bytes i'm going to check if anybody pays attention
+each means one binary number
+how many beats in one bite
+because i never told you right so one fight is eight feet
+okay and there's why you write a banner number for example one zero zero zero and uh one zero zero zero that's the
+four final numbers that's called a one site for example when we look at the
+inch letters so if we use the ascii encoding and uh
+one letter here is represented by one byte eight b
+okay and uh so if one bite is eight bit
+the mp5 hash is a 128 bit
+that's how many bytes
+16 right so you can imagine whatever the length of the message
+then the mp5 hash function always produces
+16 bytes so basically multiple messages can be mapped to
+maybe one [Music] patch okay so that's something you have to understand
+now you can see here so if this is a whatever length of the message and again
+this is the only thing back and you can imagine you know basically we kind of
+hash right and uh the message and the final message hash is really really
+eligible so this is like a the cash brown here so from hashground can you still see the
+original particle you cannot and so that's the idea for the hatch
+so the hash is also called the message that is one-way transformation why it's called a
+one-way transformation because uh if you go this way right you can produce
+message hash for a message but from messaging hash you cannot produce the original message so it's one way
+okay one more function same thing here so that's the concept of a hash
+so we already mentioned right and uh the
+message hash is always a fixed mass depends on different hash accuracy so if it's md5
+right it's a single bias if the sha one is a 20 bytes but you can imagine right
+i mean you know those messenger patches are short
+so here let me tell you why important hash
+function application so later when you go to college if you
+take the cyber security courses and you will find out often people use
+file patch so if you hash a file then you get file hash
+but if you hash a message you get a message hash people use the hash
+to uniquely identify the file of the message
+but apparently the term uniquely is wrong so why it's wrong
+because we said multiple messages multiple files could produce the same
+patch right and uh however people still doing that people still actually use that
+you know the file hash to uniquely imply a file we are using the file hash as an
+identical file so what that's the question so basically we need to answer
+this question what is the change at files have the same hash
+right on your disk so your disk has has a very fast right
+and uh how do you compute the probability or the chance that the
+two files produce the same hash assume you are using md5 or xiaomi
+and what is the chance so this problem is very similar to the first problem anybody thought of the
+birthday problem the perfect problem is like this so this is a personal problem i mean i
+guess uh many of you guys are seniors right and uh i know my daughter cannot solve this
+problem okay she's only seven so that's because of the problem the problem is what is the
+chance that in the center for enemy running children people
+at least one pair of them will have the first day same birthday
+so let's just assume right you know here we go
+365 days then for example let's see we have 10 people here or 12 people whatever
+and there is a chance that two people here will have the same
+birthday so anybody actually solved this problem before
+no anybody actually did the probability class before
+no okay and uh so if you did it can you tell us
+how do you solve this problem how do you calculate the chance that two people
+have the same birthday so here is a actually how you perform the computation
+so i'm going to give you two minutes otherwise i think it can be boring right i'll give you two minutes this comes
+with your groove and think about how do you do
+the calculation okay two minutes discussion is your goal okay
+[Music]
+[Music]
+uh
+[Music]
+anybody wants to volunteer to explain what is going on here
+actually i was looking at uh wikipedia for this problem i found that the wikipedia formula is one
+this year but i didn't bother to tell them i tried
+to edit wikipedia it's a limited procedure i don't want to do it anymore and uh but uh their formula was one and
+i'm not sure you play right now but last year one was running uh the camp their
+formula was wrong so so so first let's look at this right i want
+someone volunteer to tell us what's going on here so
+let's see anybody want volunteers let me ask you a question so let's see we have
+one person right we want to put her into the snot because she we don't know
+what is uh her birthday so we just assume and her birthday can be
+spending day right for this 365 days
+so if she occupies this position she can occupy any position so how many
+different uh slots she can be putting in
+can she be putting harmony she can we can put her
+into any slot here how many possibilities three hundred
+sixty five is that right so surrounding 365 we put her
+into one of the 365 slappers right so basically
+she has so many possibilities right and
+per birthday and then but now let's see we put her here
+then anybody else cannot have this position anymore because our
+problem is we want to calculate all people have different birthdays
+right so she already occupies this position now we are going to
+put another person into these
+remaining slots how many remaining slots we have
+once this person takes the position once she fixed the position how many
+slots do we have left things speak loudly
+354 so we just do this so basically we inherit all
+n people so basically the number of combinations of
+putting 10 people into a 365 class can be with no people in a city club can
+be calculated in this way right okay so that's
+the number of combinations we put n people
+into 355 slots and with no two people in a sim slot
+and let's look at this and uh so so this problem is how many companies
+are putting in people in to block plus we don't care actually if uh
+we can occupy the same slot or not we just try to calculate the total number of combinations putting
+n people into bio slots can anybody explain
+why it can be calculated this way
+so why is this way so this so now basically two people
+or multiple people can't take the same slot
+you want to give a try um because like 55 days so like every person
+um
+okay so this is a to the power of n not 365 times n okay
+anybody wants in even here once you'll try and y go ahead um
+possibilities for each person [Music]
+it's going to be 365 times itself by however many people there are
+okay yeah so the competition can be checked this way right so when she comes
+we don't know her birthday so she may be in one of the 365 slots so there are for her
+there's so many possibilities but he comes same thing right
+this guy they actually have one of the
+365 days as a his birthday so he also has a
+uh six um three times the kind of 65 possibilities so because we have n
+people so the total number of combinations of putting people into a single-hand using website is that 255
+times 305 and at times 10 times right
+okay so now we know these
+two solutions the next question is let me first ask you a simple one
+in a box we have a red ball we have a black ball
+so you cannot look after the box right not like those crackers
+already trying to crash my server don't do the tricks right so let's assume you cannot actually
+peer into the box so you have actually we have one
+red ball we have one black ball so you put your hand into
+the box what is the chance you pick up a red ball
+what is the chance your chance is hot right
+and it's 15 so every time there's 50 and you pick up a variable of what
+blackboard all right so basically now we got to calculate the
+this probability so what is the chance that 10 people all
+have different verses so it can be character that the way we just talked about
+chanting the ball so and uh so here
+the top is a you know if the number of combinations
+that all people have different first dates
+right then the body here is a total number of combinations of some
+people some people worship okay and uh so this is obviously the
+probability that people all have different perspectives it's like you calculated the chance of getting
+the ball from the box i understand this is still beyond your
+knowledge because you have to take a probability to do the calculation
+this will be taken in a sophomore year of college okay
+so don't be departed okay so now we know okay this is the chance
+all people have different birthdays then what is the chance
+that at least two people out of their own people have the same birthday
+uh they don't have uh what if two people have yes what is the chance that at
+least two people on top of them people have seen birthdays so this is the chance all the people they don't have
+they don't have actually and they all have different birthdays
+so the calculation is one minus p okay so this is how you do the calculation and uh
+based on the knowledge so if we have actually 30 people
+i remember so the chance of having two people which is the same
+birthday is like a more than 50 so basically i think here we should have
+at least two people have the same birthday but i'm not going to ask you that
+question okay but this is how you actually do the calculation and uh so this is a figure
+uh it's from actually wikipedia i remember the founder here was wrong because the
+guy actually put this part between his formula he didn't do
+the deduction here so i remember the wikipedia was wrong okay and there's this in the chat right you
+can see here if it's a there's a 40 people here the chance is about
+19 i think we have about 40 people here so 90 percent of the chance two people here have the same worship
+okay so that's basically the idea here so now we understand how you can
+calculate actually the chance that the two people have the
+same birthday and we will come back to answer our question
+right and uh so basically the question
+of two files have the same hash is the same as the two people have the same version
+so so for mv file cache the message
+length right the hash length is a 128 bits
+how many possible md5 hashes can we have
+how do we do the calculation
+the answer is on the slide can somebody tell me
+so right so it's like this right and uh so this is a message right and uh
+hopefully we have like a 1.8 slot here so
+one square here means a one bit it can be zero or one this one can be zero or one zero or one
+zero one so this is the format of the md file
+hash and we have 128 slots each soft has two possibilities zero or
+one so my question is how many possible
+md5 hashes can we have go ahead
+120 yes okay good so this is like a number of
+days in a year is that right okay so the question now is
+how many files like how many people write on your disk
+this is the code you don't know right i give you this number this is how many files
+are my basic video of my windows computer it's a list
+and uh however look at this number right and look at this number this is much
+much much much smaller than this one so basically you know if we do the
+calculation here right you need to replace 365
+with what with a 2 power 2
+2 to the power for 128 and then here n is one
+we are calculating the chance that the two files have the same message attached
+what is n here
+go ahead the number of files right and uh so if you do the calculation
+you'll find out given the number of possible
+md5 hashes the chance that so many files how the same hash is
+really really small that's why right although we know two messages can be
+compounded the same cache but because md5 hash algorithm is a designer
+so well and uh the chance that the two files have the same md5 hash is really small and you
+can ignore it and uh that's why you can still use the message hash of file hash to uniquely
+identify a file right is that not nice right
+so this is a basically the idea of a hash and uh can anybody tell me
+can you actually use the hash algorithm to improve a message
+for example this is your message this is your hash function you want you could expect it use the hash function does
+this work
+[Music]
+that's right you cannot equip because of this short message
+i mean unlimited number of messages can be mattered towards that
+one single hash right and uh and so because you don't know what what is that people's message so
+you cannot cash algorithms are not encrypted efforts even college students they don't know
+this and i remember i did the exam during my class i told them again again
+hash is not encryption but half of them still give me the wrong answer
+maybe the problem is i didn't tell them this birthday problem
+good right and uh so however you know
+we listen right and uh when we produce message hash
+we basically assume so whatever the message when you use message hash
+the output right the message hash is a random and printable
+that requires delicate design of the algorithm to have
+that kind of property so basically this is a desirable process
+when you design your hash function first it's easy to compute and most of the hash aggregates do not
+involve any mass calculation so you don't do you only do the permutation
+and the substitution that's all okay and you also do some kind of position something like that one week probably
+right given the cash right and uh but nothing else so given the
+message cash you cannot find that so that's another problem
+okay and uh so here is something called collision free the idea is
+because our goal here is we can use the messenger cache of file hash to
+uniquely understand the file so your hash algorithm must be designed so
+that it's not possible right you can find two messages
+that will produce the same hatch this is
+where the difficulty is when you try to design your hash
+aggregate not everybody can do it right i cannot do it and uh for sure
+here is a group discussion let's see i don't care about
+the performance i only care about her
+we meet the requirement by hash function
+if we basically change the advantage
+to a fixed length traumatic if you just do that this is the only
+thing i want you to implement can you design your actually
+hash algorithm the bad one okay and uh
+so of course we need to answer this question first the second question is can you design a good hashtag but uh i
+just need this answer because i know you cannot do this one
+because that requires a lot of mathematical proof and even i don't have it i think here we have a few genius
+here you got our genius here and you can maybe do it i cannot do that you know and actually there's a times later and
+he found the mg5 is not the same and she could find
+the conflicts easily then basically she became very famous
+and learned a lot of minor problems and so that was a big deal when she found
+that you know mg file hash is not a feature at all okay
+but uh the question is stopping design your own category within performance but we just meet the requirements
+okay so whatever the length of automatic your hash algorithm will produce a fixed lens
+message okay to discuss with your group
+for like uh three minutes because i'm asking a very stupid question
+you can always do this because we don't care about the performance
+i'm going to ask each group okay i'm going to force each group to discuss okay
+each group must give you your own
+what's
+up is
+[Music]
+[Music]
+okay let's start from this side so what if you are naive
+okay whatever the message right you produce a sig device if you don't have so many bites in your method you just
+append to zero something like that right so what is your cash
+algorithm
+whatever the message right you just uh
+can you guys see here okay i give you one solution here can you look at this tell me what i'm trying
+to say here this is a very stupid approach
+producing the message hash and gas
+let's go try nothing easy
+[Music] so
+attached
+okay i think we got more time to think how about you guys
+no idea no this is just hint okay this is
+uh i want to give daughter for one million dollars i want to give daughter for one cent
+so i cannot give you more hints otherwise i i'm telling you the answer okay
+so the the question is whatever the message you produce seeking
+chapters okay um
+but you do actually meet my requirement right that's great so
+is it easy see that's right although it's not very good at least uh he gets a 100 points
+i'm telling i'm asking very soon and then
+[Music]
+the question is so i want to design a message hash algorithm
+so the requirement is whatever the message you produce 16 characters as the
+messenger patch how can you do that or what is your outcome
+right here
+how about you guys
+[Music]
+how about you guys
+oh you don't get the handle over there why do i write a 16 over there
+i write two messages i got two messages over there
+after the 16 over there my question is that you produce a mexican patch of resistance
+characters so what i'm trying to tell you over there
+about you guys i'm still figuring you're sleeping now
+okay so how about this approach whatever the message length you just use the first
+seeking bias as the message hash how about that it means my requirement is that right
+so you can see right you can also see i'm going to pick up the first letter serializer whatever as the message hash
+that's okay too right so anybody can design a hash accord
+right so the problem is go ahead
+it's not here at all okay come here
+okay okay because i really cannot hear you and uh so this is a one approach right
+so whatever the message you use thinking first thinking advice or six inch
+character message hash or you pick up a running 16 letters as the message has
+that's okay however is this approach of is this cash
+algorithm good does it meet the requirements appear
+tell me which property does my cash algorithm violate
+so when we prompted that's one way that's for sure right because whatever the message i'm using the first 16
+characters as the hash and collision
+means two messages will produce the same message hash so which property
+does my approach violate
+which property does my approach values
+that's right okay so it's not creation phrase these two messages
+produce the same message hash although they are different right so that's the problem now you can
+see here right so basically designing hash aggregates is very difficult
+and you have to meet all the profits here so it's not e and uh and also you can see it also
+values the first property given hm but not f is equal to fund f
+the given cash you cannot find the original message but here if we use this approach at least
+you can tell the first 16 letters of a message
+right so that's not good too okay and here actually not
+us who makes the error
+before hash people use something called internet kickstand
+for integrity we are still using this today whenever you send out internet
+package i mean the last few bits of the package within somewhere over there and uh
+we have the checksum so which checks down so let's look at the message here
+the message is i owe you 100.99
+million dollars thanks i don't know so so if
+we actually map the curtains here
+to final numbers to ask a code right supposing i i use i mean sorry 49 is used to refer
+to r for i not talking about clone 9 okay this is
+actually highest no but anyway call f refers to o
+so basically like this and uh so there are checksum algorithm it's very
+similar to a hash aggregate we just added all the columns together
+you can see in this way we can however whatever the message
+our checksum is always four bytes by four characters right
+because we use two numbers here to represent one chapter so this is good
+right this means the requirement of the hash axis right and is the the lens however
+is this approach good so you just add them together this is a
+hexadecimal and then you just just assume this is the second number whatever and uh you add
+them together if this happens you produce one you have this column you improve this you add this
+column you produce this so if we look at
+the right side here this tells you this approach is not good it's very easy
+to produce tradition why
+go ahead in the same column
+that's right right you can see right for the sim column here you just actually switch the
+[Music] internet checksum is not very good it's not cryptographically
+hash function we are not graphical algorithms okay and uh
+if when we talk about the cryptographic hash function we talk
+about those problems okay good so far so good okay
+and uh so now let's look at the applications of uh hash
+algorithms the first one is a possibility
+when you actually use your computers right
+you can actually enter your password then you can log into your computer as
+you do on our pc here anybody knows how
+passwords are saved on a computer because the computer must
+see your password so that when you enter your password the computer will actually check your
+password and uh see if the password is saved somewhere it's the same as uh the one that a
+computer stores is that right so that computer can assign you
+anybody knows how passwords are saved on
+a computer you have to speak loudly
+okay yeah shadow is right anybody here mouse
+knows the question is how does a computer
+store your password so for example when you use our computer
+right when you tap student one as username
+server security as a password the computer will allow you studying but if you have the wrong password the
+computer doesn't allow you to get in that means the computer must
+have stored your password in some format on the computer so that it can use the
+stored password to check you right and uh so my question is
+how does a computer store your password
+in plain text or you know what actually i'll tell you the answer
+see that's a good answer but i heard of encryption over there
+that's another idea okay
+so this is the procedure let's see here right carol here she wants to log into the
+computer okay and uh what she will do is she will provide her username camera she will
+provide her password okay the computer will receive
+her lovely information username customer
+actually has a database and this database could be implemented as a file
+but this basically you store the data in about the same idea so
+the computer actually stores people's password in this format
+first username and there's something called a swap it's just some extra security but it really
+doesn't matter to our understanding then for example
+in all time these use the sd file cache language which refers to md file cache
+to hash the concatenated camera password and
+the song okay so basically this is the format
+of a password in a computer why do we do that the reason is you can
+see here when a software provider a server like our
+china server has a vulnerabilities hackers can get into the server they may
+steal your database of a password if you do not actually
+catch them they will see your password immediately that's too dangerous
+right and uh however if you actually
+store your password as password and caches then they cannot see they have to find a
+way to find the password that's not easy and uh so that's why we see
+password not in slim text but in the format of a tax
+but did not increase because the hash is not increasing okay
+and uh so the country is not good in this case because you have to save the encryption
+key on the face so if the attacker knows the encryption key right you search around on your face doesn't find that
+you're you're inputting key then when you put the password
+right and anybody heard of a password cracking is actually possible to crash
+quite a hashtag anybody heard of a password hash tracking or possible cracking
+do you know what is the principle um
+yes i know that's the goal what is the mechanic then tracking password oh so basically
+the assumption is like you guys you type into my type of server then you can actually do
+anything you want it alright and then you can get a database and you gotta think this above password hashes
+but uh when you can't have password hashes like this how can you find
+the corresponding password here the thought here is a clear it's plain text
+okay only this part is a possible hash
+um running the hash function
+passwords accessories very good the principle is simple
+so when you actually click your password many people use like adc one two three one two three four
+five or six thousand and using your birthday use your parents birthday you
+will use your friend's birthday and uh and also when people create a password normally they use eight characters or
+with something okay so basically here's
+how hackers procrastinate the password package
+because there's a rule generating the password
+based on the rule the number of a password is limited is that right
+like for example if for your ipad
+you can use six digits right and uh each data can be zero to nine tell me
+how many possible pass codes can you have on ipad
+so actually six figures right one two three four five
+six this can be a zero to nine zero to nine zero to nine
+zero to nine zero so tell me this is a
+your ipad passcode how many possible possibles can you have
+based on this password creation rule
+60 so this is 10 right 10 possibilities 10 possibilities 10 possibilities 10
+positive similarities 10 possibilities what's the number of combinations
+uh you are actually right one minute so it's basically
+10 to the power of 6. so let's see the attacker gets your
+password hash stored on your ipad tell me a way
+the attacker can use to crack to sign your password original password
+go ahead well like find the hashes
+you can try you can cache all the passcodes right
+and see which one is equal to the same with the password hash then you'll find the passcode
+that's called a brute force attack but normally attackers don't do that and
+uh on the black market on internet
+you can buy something called a wine on password database
+so the database sales popular passwords with different potentials
+for example if you look at the password that is sold on the internet
+you will find out there are many onenote passwords like a abc123
+one to nine and uh for example also password as a password and people often
+use those passwords as their password because they are lazy you cannot remember good password right and uh
+so most of the passwords are cracking too they first try
+the you know popular password saved upon that at least first if they cannot
+expand oh none of uh the popular password is used as the password
+we will just try to enumerate all possible all possible passwords with some popular rule and see
+which one actually produces uh the same hash
+on the disk so that's called the password crash any question here good
+okay today one time gone is a crack a password hash
+but uh my password hash corresponding to a known
+password it takes maybe like one millisecond to get it
+because the computer does not very fast right i mean you give it a go then it does the calculation very fast
+so that's called the password of cracking okay and uh
+so now let's look at the massive integrity code so then here here let's look at this right
+and uh so but we have a camera here we have a bubble here
+and we want to use a hash as the message integrity code so basically when clara sent out
+message she sent the message she also has the message get a message
+okay so now he's under these two parts message and message cash to bob
+so when probably save it bubble can actually compute the hash of the received message
+and compare the newly consumed message hash with the transmitted domestic cash if they
+are equal the message is not changed right is that good
+good you don't look good right okay let's see let's see now we have an attacker here
+so let's see this is the guy in the middle he can actually
+intercept message and then he can change the message then send the teach the message and
+message that to one okay so my question is if we have such a
+powerful anime in the middle
+thus message hash still work as message integrity
+code why not so they can change the message and
+change the hacks right and they understand that the change dramatic and the achievements
+hash to bob one bobber it bubble actually just has this
+new message and compared with the contributor messaging they are the same
+is that right they are the same so you can see here message hash itself
+cannot be used for message authentication or message integrity checking
+that's why we need something called a cheater cache okay so i give you two minutes to discuss
+with your group and tell me instead of sending
+the message hash now kara and bob they share a key
+and uh so they know the safety right so carol will send out a message this way the message
+and uh the cache of a message and the key here
+so will this defeat the powerful attacker that's my question you can discuss with
+your group for two minutes
+[Music]
+the eve doesn't know the key okay the u doesn't know the key
+oh
+the key basically just run the number okay the key basically is not known to the
+attacker
+oh
+sorry
+answer can why
+can this approach work the key
+okay very good so the idea is like this right so now
+if oh here i should be bigger
+so basically this key is known to add carrot to bob and uh so
+we stand out the message like this carousel and empty so while
+he receives this magic yes i mean he can produce another message
+but he has to calculate this message hashtag the new political
+reason you have to actually hash both messages and the key but in this case he
+doesn't know the key she cannot produce the correct hatch
+so bob will find out right when bubble receive it bubble will catch
+this transmitter magic with the t
+computer is different from this one because if you don't know the key you cannot
+produce the cheat hash correctly is that right
+makes sense okay
+it's not this is the fault this is a not a encryption description
+the purpose here is uh makes the integrity so that when you receive a message you can
+find out if the message is changed or not so that's the purpose
+yes that's a hybrid beauty magic integrity code
+you can do that but that's a heavy guilty one okay because that one uses a public
+equipment you have to do match but this one is using like a
+hash algorithm it's very fast okay and that's why digital signature normally is used for
+signature purpose it's really not for this one okay it's because it's for a really kind of different purpose
+you are using this every day when you use the https to browse a website and uh all your messages
+how this makes the interior code so that the receiver i mean the receiving computer of the single app knows okay
+the message is uh generally not changed all your messages have that one okay if
+you are doing this every day although you don't know okay and uh so
+that's the idea any question here good okay okay we are pretty much done with the
+hash i just wanted to use there's a someone you know what is basically before encoding telling you it's really
+nothing okay so as we know right and uh when we talk about the
+computer all the message is in this kind of a binary format
+right okay and uh so here you know we use the asking code the particular
+kind of sequence of binary members to represent the characters but
+many of the data right other members not the students of uh ask people
+characters they are not printable but because they are not english letters they are not printable
+letters okay however sometimes we won't
+send the data in a printable format we used
+our shadow server our trader server can only send out printable letters
+so the question here is how we convert any banner number
+of final data into printable letters
+base 64 in kodi is one approach so what happens is uh
+the basic d4 does this it doesn't care about what your data means here
+right your data is very long right or something like this so
+basically always do that it will take six letters
+another six letters here it will actually look at the six letter
+six numbers right six numbers final numbers and you can convert this into a
+decimal number tell me if it is a six bits here
+how many possibilities do we have here if it's six bits how many possible
+six beats can we have um
+64 right true to power for six right and the b64 is so simple it has a list
+of offers 64 printable captures
+right so for example if this is a like a 10 it will find this okay 1 2 3 4 5 6
+this number okay so this 64 accurate just go through your
+binary data and it will convert every six bits
+to one of those 64
+chapters not simple so in this way you know and
+now your banner data is printable because we are using printable letters
+to represent the banner data of course you can do the reverse match right you can map
+your 164 input data back to the binary using the
+reverse match and then there's another thing called the
+base 16 it just actually converts every small bit
+to 16 printable letters from 0 to 9 from 3
+to f so that's 16. so the purpose is uh to convert the
+final data into printable characters so that's about the basic for basic theme
+good now it's hands-on time and uh hands-on one is we do md5 hash
+right and uh you can see here it's very easy you just use the icon as a command
+okay and then remember here you don't have that the entire return so you map this
+message to empty file style this is called the version right and uh so
+then you will produce md5 of the magic and i recommend that you guys actually
+use the chat server to do this the one person actually sends out a message and a
+message attached in this format or format you choose whatever so you should tell which part is managing which part
+except the corresponding message hash right and the receiver will receive it
+the receiver can use the same command here to actually cache
+the received message to uh amd file patch right
+and uh
+if they are the same means that the message is not changed but as we said it is not secure and
+that's why we are going to use each mac this mac is one way of peel hash the idea is exact
+same as kid hash it is one type of computer hash and in this case you first have to share
+a key a stream whatever with uh your receiver okay and then to send the
+receiver the first share key whatever then you use this command again
+to anchor your message at this time this is a lot of traffic
+in addition to mp5 right now here we go we are going to do each map
+and this message to generate the metric hash so you'll do the same thing
+as we did for md file cache using the chat server good right simple
+and password cracking here and uh the possible cracking here you know very simple this is how you private password
+and uh so on your calligram okay with our particular file the file must
+be in a particular form the hash must be format otherwise how can this software
+john reaper know which one which part is a possible hash right so that's why
+we said again uh format um protocols
+you know in computers they are computers so you have to set up a protocol so that
+applications programs can understand each other that's why we talk about the format
+protocols so much otherwise how can two programs talk to talk with each other right so
+that's why we need a protocol and a format so once you have the password file here
+you can just use this command john to crack the password
+you'll be amazed this is how fast it can do in no time if you are using adc one two
+three password and then one two three four six seven nine if we are using those one new password
+it just give you the answer actually in no time okay
+because this is a computer right and it can it can does the tedious enumeration very fast
+and uh but anyway here there's another one is a you know after you actually use
+a general recurve tracking the password file and actually everything's safe okay the
+results are safe if you want to see your previous results you can use a job that shows my password
+so this is the corresponding password file it will show you the previous uh results okay if you want to redo it
+okay and you have to delete the same information so this is how you do it you
+actually are on this spot can anybody tell me what the what
+this means this is this produce symbol here what does this mean
+anybody knows what that is currently single mean
+because that's the user you use to log into chat right that's why it's called home
+folder okay the user's locking user home folder and uh that's dashboard server
+and uh actually uh this file is a student and this
+folder don't jump here so what do you thought this means here
+anybody knows what does dot mean here
+stop is a perfect way to name a folder or file so if you have the dot
+in front of your folder or your file is hidden if you
+just use ls you cannot see it so this is one way to actually
+hide some content you don't want the people to see or you just don't want to mess up
+some important data you can you can you can just hide it so that people will not accidentally delete it right change it
+and so it's in a hidden folder and uh the file name is john.
+okay so also you can test your own password this is a an actual uh
+challenge right and you can read it so everything's here
+oh i have everything here
+so it's in our where here right and uh oh we are almost done
+oh my goodness so look at here here i have more
+information and then you can follow it but make sure you understand the concepts right and uh yeah and time for
+snack i know you are tired
+
 ## Hands-on
 
 ### Hands-on 1: MD5 Hash
