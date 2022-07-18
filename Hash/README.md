@@ -172,7 +172,7 @@ Is this a good approach?
 
 <img src="../Imgs/MAC.png" width=460>
 
-Let's see now we have an attacker ]in the middle, who can intercept the message.
+Let's see now we have an attacker Eve in the middle, who can intercept the message.
 He can then change the message and send the new message and
 new message hash to Bob. 
 Bob hashes this new message and compares the newly computed message hash with the trasmitted one.
