@@ -58,7 +58,7 @@ P=365 &times; 364 &times; … &times; (365−n+1) / 365<sup>n</sup>
 Now we can answer
 What is the chance that at least two people out of n people have the same birthday? It can be calculated as follows
 
-1-P = 1 - P=365 &times; 364 &times; … &times; (365−n+1) / 365<sup>n</sup> 
+1-P = 365 &times; 364 &times; … &times; (365−n+1) / 365<sup>n</sup> 
 
 
 probability that people all have different perspectives it's like you calculated the chance of getting
