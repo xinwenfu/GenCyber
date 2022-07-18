@@ -48,71 +48,13 @@ We first answer this question: How many combinations of putting n people into 36
 We first pick up a person: she could be put into any of the 365 days. Given her birthday is fixed, the second person can be put into 365-1=364 days. We can deal with other people similarly. Therefore, the number of combinations is 365 &times; 364 &times; … &times; (365-n+1).
 
 We now answer the second question: How many combinations of putting n people into 365 slots? In this case, we do not care about if two people may have the same birthday. Every person can be put into one of 365 days. Therefore, the number of combinations of putting n people into 365 slots is
-365<sup>n</sup>. Why?
+365<sup>n</sup>.
 
+Now we can answer 
+What is the chance that n people all have different birthdays? It can be calcualted as follows
 
-what is uh her birthday so we just assume and her birthday can be
-spending day right for this 365 days
-so if she occupies this position she can occupy any position so how many
-different uh slots she can be putting in
-can she be putting harmony she can we can put her
-into any slot here how many possibilities three hundred
-sixty five is that right so surrounding 365 we put her
-into one of the 365 slappers right so basically
-she has so many possibilities right and
-per birthday and then but now let's see we put her here
-then anybody else cannot have this position anymore because our
-problem is we want to calculate all people have different birthdays
-right so she already occupies this position now we are going to
-put another person into these
-remaining slots how many remaining slots we have
-once this person takes the position once she fixed the position how many
-slots do we have left things speak loudly
-354 so we just do this so basically we inherit all
-n people so basically the number of combinations of
-putting 10 people into a 365 class can be with no people in a city club can
-be calculated in this way right okay so that's
-the number of combinations we put n people
-into 355 slots and with no two people in a sim slot
-and let's look at this and uh so so this problem is how many companies
-are putting in people in to block plus we don't care actually if uh
-we can occupy the same slot or not we just try to calculate the total number of combinations putting
-n people into bio slots can anybody explain
-why it can be calculated this way
-so why is this way so this so now basically two people
-or multiple people can't take the same slot
-you want to give a try um because like 55 days so like every person
-um
-okay so this is a to the power of n not 365 times n okay
-anybody wants in even here once you'll try and y go ahead um
-possibilities for each person [Music]
-it's going to be 365 times itself by however many people there are
-okay yeah so the competition can be checked this way right so when she comes
-we don't know her birthday so she may be in one of the 365 slots so there are for her
-there's so many possibilities but he comes same thing right
-this guy they actually have one of the
-365 days as a his birthday so he also has a
-uh six um three times the kind of 65 possibilities so because we have n
-people so the total number of combinations of putting people into a single-hand using website is that 255
-times 305 and at times 10 times right
-okay so now we know these
-two solutions the next question is let me first ask you a simple one
-in a box we have a red ball we have a black ball
-so you cannot look after the box right not like those crackers
-already trying to crash my server don't do the tricks right so let's assume you cannot actually
-peer into the box so you have actually we have one
-red ball we have one black ball so you put your hand into
-the box what is the chance you pick up a red ball
-what is the chance your chance is hot right
-and it's 15 so every time there's 50 and you pick up a variable of what
-blackboard all right so basically now we got to calculate the
-this probability so what is the chance that 10 people all
-have different verses so it can be character that the way we just talked about
-chanting the ball so and uh so here
-the top is a you know if the number of combinations
-that all people have different first dates
-right then the body here is a total number of combinations of some
-people some people worship okay and uh so this is obviously the
+P=365 &times; 364 &times; … &times; (365−n+1) / 365<sup>n</sup> 
+
 probability that people all have different perspectives it's like you calculated the chance of getting
 the ball from the box i understand this is still beyond your
 knowledge because you have to take a probability to do the calculation
