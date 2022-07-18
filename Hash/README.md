@@ -94,13 +94,14 @@ Internet checksum has some properties of hash function:
 But given message with given checksum value, it is easy to find another message with same checksum value.
 The critical step of calculating the Internet checksum is add each 16 bit value (2 characters/bytes) in hexdecial together.
 We can see this step allows collision. For example
-The message "I O U 1" corresponds to the hexdecimals "49 4F 55 31"
+The message "I O U 1" corresponds to the hexdecimals "49 4F 55 31". When we computer the checksum, we get the following
 ```
   I O              49 4F
   U 1              55 31
 + -----  ==     + ------
                    AE 80
-````
+```
+However, if we switch the first fow and second row, we will still get the same checksum. Collision happens easily.
 
 ```
   U 1              55 31
