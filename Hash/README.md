@@ -170,7 +170,7 @@ and compare the newly consumed message hash with the transmitted hash.
 If they are equal the message, is not changed, right?
 Is this a good approach? 
 
-<img src="../Imgs/MAC.ong" width=460>
+<img src="../Imgs/MAC.png" width=460>
 
 Let's see now we have an attacker ]in the middle, who can intercept the message.
 He can then change the message and send the new message and
