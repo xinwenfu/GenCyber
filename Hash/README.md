@@ -41,7 +41,7 @@ Then the problem that two files have the same hash is similar to the birthday pr
 The birthday problem is: What is the probability that in a set of n randomly chosen people, at least one pair of them will have the same birthday?
 Assume a year has 365 days.
 
-<img src="../Imgs/BirthdayProblem.png" width=480>
+<img src="../Imgs/BirthdayProblem.png" width=420>
 
 anybody wants to volunteer to explain what is going on here
 actually i was looking at uh wikipedia for this problem i found that the wikipedia formula is one
