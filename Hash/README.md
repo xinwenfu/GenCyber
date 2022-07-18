@@ -164,164 +164,56 @@ A complex and good password may require months of time cracking.
 This is why we want to use good passwords.
 
 ### Message integrity code
-so then here here let's look at this right
-and uh so but we have a camera here we have a bubble here
-and we want to use a hash as the message integrity code so basically when clara sent out
-message she sent the message she also has the message get a message
-okay so now he's under these two parts message and message cash to bob
-so when probably save it bubble can actually compute the hash of the received message
-and compare the newly consumed message hash with the transmitted domestic cash if they
-are equal the message is not changed right is that good
-good you don't look good right okay let's see let's see now we have an attacker here
-so let's see this is the guy in the middle he can actually
-intercept message and then he can change the message then send the teach the message and
-message that to one okay so my question is if we have such a
-powerful anime in the middle
-thus message hash still work as message integrity
-code why not so they can change the message and
-change the hacks right and they understand that the change dramatic and the achievements
-hash to bob one bobber it bubble actually just has this
-new message and compared with the contributor messaging they are the same
-is that right they are the same so you can see here message hash itself
-cannot be used for message authentication or message integrity checking
-that's why we need something called a cheater cache okay so i give you two minutes to discuss
-with your group and tell me instead of sending
-the message hash now kara and bob they share a key
-and uh so they know the safety right so carol will send out a message this way the message
-and uh the cache of a message and the key here
-so will this defeat the powerful attacker that's my question you can discuss with
-your group for two minutes
-[Music]
-the eve doesn't know the key okay the u doesn't know the key
-oh
-the key basically just run the number okay the key basically is not known to the
-attacker
-oh
-sorry
-answer can why
-can this approach work the key
-okay very good so the idea is like this right so now
-if oh here i should be bigger
-so basically this key is known to add carrot to bob and uh so
-we stand out the message like this carousel and empty so while
-he receives this magic yes i mean he can produce another message
-but he has to calculate this message hashtag the new political
-reason you have to actually hash both messages and the key but in this case he
-doesn't know the key she cannot produce the correct hatch
-so bob will find out right when bubble receive it bubble will catch
-this transmitter magic with the t
-computer is different from this one because if you don't know the key you cannot
-produce the cheat hash correctly is that right
-makes sense okay
-it's not this is the fault this is a not a encryption description
-the purpose here is uh makes the integrity so that when you receive a message you can
-find out if the message is changed or not so that's the purpose
-yes that's a hybrid beauty magic integrity code
-you can do that but that's a heavy guilty one okay because that one uses a public
-equipment you have to do match but this one is using like a
-hash algorithm it's very fast okay and that's why digital signature normally is used for
-signature purpose it's really not for this one okay it's because it's for a really kind of different purpose
-you are using this every day when you use the https to browse a website and uh all your messages
-how this makes the interior code so that the receiver i mean the receiving computer of the single app knows okay
-the message is uh generally not changed all your messages have that one okay if
-you are doing this every day although you don't know okay and uh so
-that's the idea any question here good okay okay we are pretty much done with the
-hash i just wanted to use there's a someone you know what is basically before encoding telling you it's really
-nothing okay so as we know right and uh when we talk about the
-computer all the message is in this kind of a binary format
-right okay and uh so here you know we use the asking code the particular
-kind of sequence of binary members to represent the characters but
-many of the data right other members not the students of uh ask people
-characters they are not printable but because they are not english letters they are not printable
-letters okay however sometimes we won't
-send the data in a printable format we used
-our shadow server our trader server can only send out printable letters
-so the question here is how we convert any banner number
-of final data into printable letters
-base 64 in kodi is one approach so what happens is uh
-the basic d4 does this it doesn't care about what your data means here
-right your data is very long right or something like this so
-basically always do that it will take six letters
-another six letters here it will actually look at the six letter
-six numbers right six numbers final numbers and you can convert this into a
-decimal number tell me if it is a six bits here
-how many possibilities do we have here if it's six bits how many possible
-six beats can we have um
-64 right true to power for six right and the b64 is so simple it has a list
-of offers 64 printable captures
-right so for example if this is a like a 10 it will find this okay 1 2 3 4 5 6
-this number okay so this 64 accurate just go through your
-binary data and it will convert every six bits
-to one of those 64
-chapters not simple so in this way you know and
-now your banner data is printable because we are using printable letters
-to represent the banner data of course you can do the reverse match right you can map
-your 164 input data back to the binary using the
-reverse match and then there's another thing called the
-base 16 it just actually converts every small bit
-to 16 printable letters from 0 to 9 from 3
-to f so that's 16. so the purpose is uh to convert the
-final data into printable characters so that's about the basic for basic theme
-good now it's hands-on time and uh hands-on one is we do md5 hash
-right and uh you can see here it's very easy you just use the icon as a command
-okay and then remember here you don't have that the entire return so you map this
-message to empty file style this is called the version right and uh so
-then you will produce md5 of the magic and i recommend that you guys actually
-use the chat server to do this the one person actually sends out a message and a
-message attached in this format or format you choose whatever so you should tell which part is managing which part
-except the corresponding message hash right and the receiver will receive it
-the receiver can use the same command here to actually cache
-the received message to uh amd file patch right
-and uh
-if they are the same means that the message is not changed but as we said it is not secure and
-that's why we are going to use each mac this mac is one way of peel hash the idea is exact
-same as kid hash it is one type of computer hash and in this case you first have to share
-a key a stream whatever with uh your receiver okay and then to send the
-receiver the first share key whatever then you use this command again
-to anchor your message at this time this is a lot of traffic
-in addition to mp5 right now here we go we are going to do each map
-and this message to generate the metric hash so you'll do the same thing
-as we did for md file cache using the chat server good right simple
-and password cracking here and uh the possible cracking here you know very simple this is how you private password
-and uh so on your calligram okay with our particular file the file must
-be in a particular form the hash must be format otherwise how can this software
-john reaper know which one which part is a possible hash right so that's why
-we said again uh format um protocols
-you know in computers they are computers so you have to set up a protocol so that
-applications programs can understand each other that's why we talk about the format
-protocols so much otherwise how can two programs talk to talk with each other right so
-that's why we need a protocol and a format so once you have the password file here
-you can just use this command john to crack the password
-you'll be amazed this is how fast it can do in no time if you are using adc one two
-three password and then one two three four six seven nine if we are using those one new password
-it just give you the answer actually in no time okay
-because this is a computer right and it can it can does the tedious enumeration very fast
-and uh but anyway here there's another one is a you know after you actually use
-a general recurve tracking the password file and actually everything's safe okay the
-results are safe if you want to see your previous results you can use a job that shows my password
-so this is the corresponding password file it will show you the previous uh results okay if you want to redo it
-okay and you have to delete the same information so this is how you do it you
-actually are on this spot can anybody tell me what the what
-this means this is this produce symbol here what does this mean
-anybody knows what that is currently single mean
-because that's the user you use to log into chat right that's why it's called home
-folder okay the user's locking user home folder and uh that's dashboard server
-and uh actually uh this file is a student and this
-folder don't jump here so what do you thought this means here
-anybody knows what does dot mean here
-stop is a perfect way to name a folder or file so if you have the dot
-in front of your folder or your file is hidden if you
-just use ls you cannot see it so this is one way to actually
-hide some content you don't want the people to see or you just don't want to mess up
-some important data you can you can you can just hide it so that people will not accidentally delete it right change it
-and so it's in a hidden folder and uh the file name is john.
-okay so also you can test your own password this is a an actual uh
-challenge right and you can read it so everything's here
-oh i have everything here
-so it's in our where here right and uh oh we are almost done
-oh my goodness so look at here here i have more
-information and then you can follow it but make sure you understand the concepts right and uh yeah and time for
-snack i know you are tired
+We want to use hash in the message integrity code given the small size of the hash.
+In the figure below when Carol sends out a message to Bob,
+she sends out two things, (message, message hash H(M)).
+When Bob receives it, he can compute the hash of the received message
+and compare the newly consumed message hash with the transmitted hash.
+If they are equal the message, is not changed, right?
+Is this a good approach? 
+
+<img src="../Imgs/MAC.ong" width=460>
+
+Let's see now we have an attacker ]in the middle, who can intercept the message.
+He can then change the message and send the new message and
+new message hash to Bob. 
+Bob hashes this new message and compares the newly computed message hash with the trasmitted one.
+Of course, they are equal.
+Bob has no way to tell the message is changed.
+
+This is why we need keyed hash. Carol and Bob first agree on a secret key k.
+Carol computes keyed hash H(M|k), which is the message authentication code (MAC), and send it with M to Bob, (M, H(M|k)).
+Since Bob has the key, he can grab the transmitted message M and use the shared key k to compute 
+H(M|k), which shall be the same as the transmitted MAC. Since the attacker does not have the shared key k, the attacker will not be able to fabricate the MAC.
+
+### Base64 Encoding
+
+Sometimes, we want to convert binary data into printable letters.
+For example, after encode encrypted data with the BASE64 encoding method, we can send the encoded data over over chat server.
+So the question here is how we convert any binary data into printable letters?
+Base64 encoding is one approach.
+Base64 converts every 6 bits (64 possibilities) of a message into one character (8 bits) in a 64-character alphabet.
+- Example 64-character alphabet: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+- = may be used to indicate padding if the binary data is not integer number of 6 bits.
+
+Here is a public key encoded with BASE64
+
+```
+-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwiC7M2YPYEI2R47Ozlu4
+olZ2XtCGtt+i2UHUtjig2gKTRwxsjct3ZYRKawuYGGGaBQAcrqlZV3AJAwit9f+F
++zEWrGGyEEFypWdpOb3arNB0XJLxNsRNwSv09idSJ3o/rRfZMV0DR/dJcDznYnvt
+/JSzckSktuwocspYa5QVEgMd6/SrW4ZyzK3OqoBW9ktzjTDP13uol/Lnv4Ts+hPE
+lzkG9y+XZ3oa0vqd2oFjWU/13tif/1TrAqUE/Ph/4rHl0EwRCenrH1lceL9PnywF
+L+GN2Iz1P1oG8n0d18BGn7XkejGPxjrarqpzEToKlLXAxp+i8iXypTSSRsYsj0Vo
+PwIDAQAB
+-----END PUBLIC KEY-----
+```
+
+### Base16 Encoding
+Base16 encoding is another way of encoding binary data into printable characters.
+It converts every 4 bits (16 possibilities) of binary data into one character in a 16-character alphabet of
+0 to 9, and "A"–"F" (or "a"–"f").
 
 ## Hands-on
 
