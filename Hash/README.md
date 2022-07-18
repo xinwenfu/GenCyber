@@ -2,39 +2,23 @@
 
 TO BE EDITTED
 
-the my microphone otherwise it doesn't record okay and then but you guys are close to me so
-i don't need a actually shot so today for this uh lecture we are going to talk
-about uh the checksum and the quick graphical hash function
-so we actually emphasize crypt cryptographic hash function because you know those things are
-mathematically based and so they can we can prove it's pretty
-good so here is a the outline of this lecture and we are going to first look at what
-is a checksum now what is hash algorithm then next we are going to talk about the
-hash applications and we are going to have hands-on for today so the hands-on
-is very important because um some of the problems will appear in your
-final game right the competition so let's look at uh the
-idea of uh the idea of a hash algorithm is pretty
-simple so look at the picture above right
-and uh so the idea here is so given
-the message whatever the length of the message one device country lines who cares
-as long as you can imagine however when this message goes through
-this hash function okay then the output is always of fixed
-length so for example there is a
-hash algorithm called md5 and uh the autofocus is always a 128 bits
-so now i want to ask you a question if a message is 128 b
-is how many bytes i'm going to check if anybody pays attention
-each means one binary number
-how many beats in one bite
-because i never told you right so one fight is eight feet
-okay and there's why you write a banner number for example one zero zero zero and uh one zero zero zero that's the
-four final numbers that's called a one site for example when we look at the
-inch letters so if we use the ascii encoding and uh
-one letter here is represented by one byte eight b
-okay and uh so if one bite is eight bit
-the mp5 hash is a 128 bit
-that's how many bytes
-16 right so you can imagine whatever the length of the message
-then the mp5 hash function always produces
-16 bytes so basically multiple messages can be mapped to
+We are going to first look at what is a checksum and what is hash algorithm.
+Next we are going to talk about the hash function applications.
+At last we are going to discuss hands-on.
+
+## Checksum and Hash Algorithm
+
+Let's look at the idea.
+The goal of a hash algorithm is pretty simple.
+Given a message of whatever the length,
+when this message goes through the hash function, the output is always of fixed length.
+For example there is a hash algorithm called md5.
+Its output is always a 128 bits, which are 16 bytes.
+Since there are unlimited number of messages in the world and the output of a hash function is of fixed length,
+multiple messages can be mapped to one possible hash.
+
+<img src="../Imgs/HashAlgorithm.png" width=320>
+
 maybe one [Music] patch okay so that's something you have to understand
 now you can see here so if this is a whatever length of the message and again
 this is the only thing back and you can imagine you know basically we kind of
