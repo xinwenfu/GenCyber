@@ -17,7 +17,7 @@ Its output is always a 128 bits, which are 16 bytes.
 Since there are unlimited number of messages in the world and the output of a hash function is of fixed length,
 multiple messages can be mapped to one possible hash.
 
-<img src="../Imgs/HashAlgorithm.png" width=480>
+<img src="../Imgs/HashAlgorithm.png" width=400>
 
 maybe one [Music] patch okay so that's something you have to understand
 now you can see here so if this is a whatever length of the message and again
