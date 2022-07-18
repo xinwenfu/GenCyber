@@ -55,6 +55,12 @@ What is the chance that n people all have different birthdays? It can be calcual
 
 P=365 &times; 364 &times; … &times; (365−n+1) / 365<sup>n</sup> 
 
+Now we can answer
+What is the chance that at least two people out of n people have the same birthday? It can be calculated as follows
+
+1-P = 1 - P=365 &times; 364 &times; … &times; (365−n+1) / 365<sup>n</sup> 
+
+
 probability that people all have different perspectives it's like you calculated the chance of getting
 the ball from the box i understand this is still beyond your
 knowledge because you have to take a probability to do the calculation
