@@ -1,7 +1,5 @@
 # Hash and Checksum
 
-TO BE EDITTED
-
 We are going to first look at what is a checksum and what is hash algorithm.
 Next we are going to talk about the hash function applications.
 At last we are going to discuss hands-on.
