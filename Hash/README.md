@@ -19,6 +19,12 @@ multiple messages can be mapped to one possible hash.
 
 <img src="../Imgs/HashAlgorithm.png" width=360>
 
+The hash algorithm has a few other names
+- Message digest. Apparently after the hash algorithm, the message is condensed into message hash. It is like potatoes are made into hash browns. Hash browns do not look like potatoes at all.
+- One-way transformation. 
+One-way function
+![image](https://user-images.githubusercontent.com/69218457/179441935-63b062cb-933e-478d-8e08-22373a0866e2.png)
+
 maybe one [Music] patch okay so that's something you have to understand
 now you can see here so if this is a whatever length of the message and again
 this is the only thing back and you can imagine you know basically we kind of
