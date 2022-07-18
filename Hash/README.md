@@ -4,7 +4,7 @@ We are going to first look at what is a checksum and what is hash algorithm.
 Next we are going to talk about the hash function applications.
 At last we are going to discuss hands-on.
 
-## Checksum and Hash Algorithm
+## Hash Algorithm
 
 Let's look at the idea.
 The goal of a hash algorithm is pretty simple.
