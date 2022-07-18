@@ -43,15 +43,13 @@ Assume a year has 365 days.
 
 <img src="../Imgs/BirthdayProblem.png" width=420>
 
-anybody wants to volunteer to explain what is going on here
-actually i was looking at uh wikipedia for this problem i found that the wikipedia formula is one
-this year but i didn't bother to tell them i tried
-to edit wikipedia it's a limited procedure i don't want to do it anymore and uh but uh their formula was one and
-i'm not sure you play right now but last year one was running uh the camp their
-formula was wrong so so so first let's look at this right i want
-someone volunteer to tell us what's going on here so
-let's see anybody want volunteers let me ask you a question so let's see we have
-one person right we want to put her into the snot because she we don't know
+Now let's calculate the probability that all n people have different birthdays. 
+We first answer this question: How many combinations of putting n people into 365 days/slots with no two people in the same day/slot?
+We first pick up a person: she could be put into any of the 365 days. Given her birthday is fixed, the second person can be put into 365-1=364 days. We can deal with other people similarly. Therefore, the number of combinations is 365 &times; 364 &times; … &times; (365-n+1).
+How many combinations of putting n people into 365 slots?
+365n. Why?
+
+
 what is uh her birthday so we just assume and her birthday can be
 spending day right for this 365 days
 so if she occupies this position she can occupy any position so how many
