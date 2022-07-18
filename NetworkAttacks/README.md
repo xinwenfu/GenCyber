@@ -1,3 +1,12 @@
+# Availability
+
+We will first introduce denial of service (DoS) attack and then distributed DoS (DDoS) attack.
+
+## DoS
+In a DoS attack, servers or network resouces are made unavailable to legitimate users. There are many types of DoS attacks. All the goals are to crash the servers or congest the networks so that the servers or networks are not available any more.
+
+We will look at a few example. In our hands-on lab, we exploit the buffer overflow vulnerability of our vulnerable chat server. A large message with junk content is sent to the chat server. The server program copies the message to its buffer. The allocated buffer is too small and the code does not check if the message could overflow the buffer. The code just copies the entire junk message into the buffer and buffer overflow occurs then. The junk message overflows the buffer and overwrites things above the buffer. For example, 
+
 ## Hands-on
 
 ### Hands-on 1: DoS attack 
