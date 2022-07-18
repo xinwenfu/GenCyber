@@ -50,12 +50,12 @@ We first pick up a person: she could be put into any of the 365 days. Given her 
 We now answer the second question: How many combinations of putting n people into 365 slots? In this case, we do not care about if two people may have the same birthday. Every person can be put into one of 365 days. Therefore, the number of combinations of putting n people into 365 slots is
 365<sup>n</sup>.
 
-Now we can answer 
+Now we can answer:
 What is the chance that n people all have different birthdays? It can be calcualted as follows
 
 P=365 &times; 364 &times; … &times; (365−n+1) / 365<sup>n</sup> 
 
-Now we can answer
+Now we can answer:
 What is the chance that at least two people out of n people have the same birthday? It can be calculated as follows
 
 1-P = 365 &times; 364 &times; … &times; (365−n+1) / 365<sup>n</sup> 
