@@ -60,185 +60,40 @@ What is the chance that at least two people out of n people have the same birthd
 
 1-P = 365 &times; 364 &times; … &times; (365−n+1) / 365<sup>n</sup> 
 
-<img src="../Imgs/BirthdayProblemProbability.png" width=320>
+The figure belows shows The computed probability of at least two people sharing a birthday versus the number of people.
 
-probability that people all have different perspectives it's like you calculated the chance of getting
-the ball from the box i understand this is still beyond your
-knowledge because you have to take a probability to do the calculation
-this will be taken in a sophomore year of college okay
-so don't be departed okay so now we know okay this is the chance
-all people have different birthdays then what is the chance
-that at least two people out of their own people have the same birthday
-uh they don't have uh what if two people have yes what is the chance that at
-least two people on top of them people have seen birthdays so this is the chance all the people they don't have
-they don't have actually and they all have different birthdays
-so the calculation is one minus p okay so this is how you do the calculation and uh
-based on the knowledge so if we have actually 30 people
-i remember so the chance of having two people which is the same
-birthday is like a more than 50 so basically i think here we should have
-at least two people have the same birthday but i'm not going to ask you that
-question okay but this is how you actually do the calculation and uh so this is a figure
-uh it's from actually wikipedia i remember the founder here was wrong because the
-guy actually put this part between his formula he didn't do
-the deduction here so i remember the wikipedia was wrong okay and there's this in the chat right you
-can see here if it's a there's a 40 people here the chance is about
-19 i think we have about 40 people here so 90 percent of the chance two people here have the same worship
-okay so that's basically the idea here so now we understand how you can
-calculate actually the chance that the two people have the
-same birthday and we will come back to answer our question
-right and uh so basically the question
-of two files have the same hash is the same as the two people have the same version
-so so for mv file cache the message
-length right the hash length is a 128 bits
-how many possible md5 hashes can we have
-how do we do the calculation
-the answer is on the slide can somebody tell me
-so right so it's like this right and uh so this is a message right and uh
-hopefully we have like a 1.8 slot here so
-one square here means a one bit it can be zero or one this one can be zero or one zero or one
-zero one so this is the format of the md file
-hash and we have 128 slots each soft has two possibilities zero or
-one so my question is how many possible
-md5 hashes can we have go ahead
-120 yes okay good so this is like a number of
-days in a year is that right okay so the question now is
-how many files like how many people write on your disk
-this is the code you don't know right i give you this number this is how many files
-are my basic video of my windows computer it's a list
-and uh however look at this number right and look at this number this is much
-much much much smaller than this one so basically you know if we do the
-calculation here right you need to replace 365
-with what with a 2 power 2
-2 to the power for 128 and then here n is one
-we are calculating the chance that the two files have the same message attached
-what is n here
-go ahead the number of files right and uh so if you do the calculation
-you'll find out given the number of possible
-md5 hashes the chance that so many files how the same hash is
-really really small that's why right although we know two messages can be
-compounded the same cache but because md5 hash algorithm is a designer
-so well and uh the chance that the two files have the same md5 hash is really small and you
-can ignore it and uh that's why you can still use the message hash of file hash to uniquely
-identify a file right is that not nice right
-so this is a basically the idea of a hash and uh can anybody tell me
-can you actually use the hash algorithm to improve a message
-for example this is your message this is your hash function you want you could expect it use the hash function does
-this work
-[Music]
-that's right you cannot equip because of this short message
-i mean unlimited number of messages can be mattered towards that
-one single hash right and uh and so because you don't know what what is that people's message so
-you cannot cash algorithms are not encrypted efforts even college students they don't know
-this and i remember i did the exam during my class i told them again again
-hash is not encryption but half of them still give me the wrong answer
-maybe the problem is i didn't tell them this birthday problem
-good right and uh so however you know
-we listen right and uh when we produce message hash
-we basically assume so whatever the message when you use message hash
-the output right the message hash is a random and printable
-that requires delicate design of the algorithm to have
-that kind of property so basically this is a desirable process
-when you design your hash function first it's easy to compute and most of the hash aggregates do not
-involve any mass calculation so you don't do you only do the permutation
-and the substitution that's all okay and you also do some kind of position something like that one week probably
-right given the cash right and uh but nothing else so given the
-message cash you cannot find that so that's another problem
-okay and uh so here is something called collision free the idea is
-because our goal here is we can use the messenger cache of file hash to
-uniquely understand the file so your hash algorithm must be designed so
-that it's not possible right you can find two messages
-that will produce the same hatch this is
-where the difficulty is when you try to design your hash
-aggregate not everybody can do it right i cannot do it and uh for sure
-here is a group discussion let's see i don't care about
-the performance i only care about her
-we meet the requirement by hash function
-if we basically change the advantage
-to a fixed length traumatic if you just do that this is the only
-thing i want you to implement can you design your actually
-hash algorithm the bad one okay and uh
-so of course we need to answer this question first the second question is can you design a good hashtag but uh i
-just need this answer because i know you cannot do this one
-because that requires a lot of mathematical proof and even i don't have it i think here we have a few genius
-here you got our genius here and you can maybe do it i cannot do that you know and actually there's a times later and
-he found the mg5 is not the same and she could find
-the conflicts easily then basically she became very famous
-and learned a lot of minor problems and so that was a big deal when she found
-that you know mg file hash is not a feature at all okay
-but uh the question is stopping design your own category within performance but we just meet the requirements
-okay so whatever the length of automatic your hash algorithm will produce a fixed lens
-message okay to discuss with your group
-for like uh three minutes because i'm asking a very stupid question
-you can always do this because we don't care about the performance
-i'm going to ask each group okay i'm going to force each group to discuss okay
-each group must give you your own
-what's
-up is
-[Music]
-[Music]
-okay let's start from this side so what if you are naive
-okay whatever the message right you produce a sig device if you don't have so many bites in your method you just
-append to zero something like that right so what is your cash
-algorithm
-whatever the message right you just uh
-can you guys see here okay i give you one solution here can you look at this tell me what i'm trying
-to say here this is a very stupid approach
-producing the message hash and gas
-let's go try nothing easy
-[Music] so
-attached
-okay i think we got more time to think how about you guys
-no idea no this is just hint okay this is
-uh i want to give daughter for one million dollars i want to give daughter for one cent
-so i cannot give you more hints otherwise i i'm telling you the answer okay
-so the the question is whatever the message you produce seeking
-chapters okay um
-but you do actually meet my requirement right that's great so
-is it easy see that's right although it's not very good at least uh he gets a 100 points
-i'm telling i'm asking very soon and then
-[Music]
-the question is so i want to design a message hash algorithm
-so the requirement is whatever the message you produce 16 characters as the
-messenger patch how can you do that or what is your outcome
-right here
-how about you guys
-[Music]
-how about you guys
-oh you don't get the handle over there why do i write a 16 over there
-i write two messages i got two messages over there
-after the 16 over there my question is that you produce a mexican patch of resistance
-characters so what i'm trying to tell you over there
-about you guys i'm still figuring you're sleeping now
-okay so how about this approach whatever the message length you just use the first
-seeking bias as the message hash how about that it means my requirement is that right
-so you can see right you can also see i'm going to pick up the first letter serializer whatever as the message hash
-that's okay too right so anybody can design a hash accord
-right so the problem is go ahead
-it's not here at all okay come here
-okay okay because i really cannot hear you and uh so this is a one approach right
-so whatever the message you use thinking first thinking advice or six inch
-character message hash or you pick up a running 16 letters as the message has
-that's okay however is this approach of is this cash
-algorithm good does it meet the requirements appear
-tell me which property does my cash algorithm violate
-so when we prompted that's one way that's for sure right because whatever the message i'm using the first 16
-characters as the hash and collision
-means two messages will produce the same message hash so which property
-does my approach violate
-which property does my approach values
-that's right okay so it's not creation phrase these two messages
-produce the same message hash although they are different right so that's the problem now you can
-see here right so basically designing hash aggregates is very difficult
-and you have to meet all the profits here so it's not e and uh and also you can see it also
-values the first property given hm but not f is equal to fund f
-the given cash you cannot find the original message but here if we use this approach at least
-you can tell the first 16 letters of a message
-right so that's not good too okay and here actually not
-us who makes the error
-before hash people use something called internet kickstand
-for integrity we are still using this today whenever you send out internet
-package i mean the last few bits of the package within somewhere over there and uh
-we have the checksum so which checks down so let's look at the message here
+<img src="../Imgs/BirthdayProblemProbability.png" width=360>
+
+Now let's look at the probability that two files on a hard disk having the same probability. 
+MD5 hash algorithm has 2<sup>128</sup> possible hash values. That is about 3.4 &times 10<sup>38</sup>.
+My hard disk has 152,094 files.
+What is the probability that at least two of 152,094 files have the same hash value out of 3.4 &times 10<sup>38</sup> possible hash values? Apparently it is extremely small. That is why the file hash can be used as the identify of the file.
+
+Here are desirable properties of hash functions
+- Performance: It shall be easy to compute message hash H(m)
+- One-way property: Given message hash H(m), it’s difficult to find the original message m
+
+For the one way property, there are two different levels of difficulity in terms of finding m given H(m)
+- Weak collision free: Given H(m), it’s difficult to find a message m' such that H(m') = H(m).
+- Strong collision free: It's computationally infeasible to find two messages m1 and m2 such that H(m1) = H(m2)
+
+## Discussion
+
+- Can you design a hash algorithm?
+
+- Can you design a good hash algorithm?
+
+
+## Internet checksum
+
+Before hash, people used something called Internet checksum for integrity.
+We are still using this today whenever you send out Internet packets for various reasons.
+Internet checksum has some properties of hash function:
+- produces fixed length digest of message
+- is many-to-one
+But given message with given checksum value, it is easy to find another message with same checksum value.
+
+However, we have the checksum so which checks down so let's look at the message here
 the message is i owe you 100.99
 million dollars thanks i don't know so so if
 we actually map the curtains here
