@@ -46,8 +46,9 @@ Assume a year has 365 days.
 Now let's calculate the probability that all n people have different birthdays. 
 We first answer this question: How many combinations of putting n people into 365 days/slots with no two people in the same day/slot?
 We first pick up a person: she could be put into any of the 365 days. Given her birthday is fixed, the second person can be put into 365-1=364 days. We can deal with other people similarly. Therefore, the number of combinations is 365 &times; 364 &times; … &times; (365-n+1).
-How many combinations of putting n people into 365 slots?
-365n. Why?
+
+We now answer the second question: How many combinations of putting n people into 365 slots? In this case, we do not care about if two people may have the same birthday. Every person can be put into one of 365 days. Therefore, the number of combinations of putting n people into 365 slots is
+365<sup>n</sup>. Why?
 
 
 what is uh her birthday so we just assume and her birthday can be
