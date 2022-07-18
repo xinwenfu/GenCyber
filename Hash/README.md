@@ -83,7 +83,6 @@ For the one way property, there are two different levels of difficulity in terms
 
 - Can you design a good hash algorithm?
 
-
 ## Internet checksum
 
 Before hash, people used something called Internet checksum for integrity.
@@ -91,7 +90,24 @@ We are still using this today whenever you send out Internet packets for various
 Internet checksum has some properties of hash function:
 - produces fixed length digest of message
 - is many-to-one
+
 But given message with given checksum value, it is easy to find another message with same checksum value.
+The critical step of calculating the Internet checksum is add each 16 bit value (2 characters/bytes) in hexdecial together.
+We can see this step allows collision. For example
+The message "I O U 1" corresponds to the hexdecimals "49 4F 55 31"
+```
+  I O              49 4F
+  U 1              55 31
++ -----  ==     + ------
+                   AE 80
+````
+
+```
+  U 1              55 31
+  I O              49 4F
++ -----  ==     + ------
+                   AE 80
+````
 
 However, we have the checksum so which checks down so let's look at the message here
 the message is i owe you 100.99
