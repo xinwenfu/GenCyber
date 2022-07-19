@@ -3,16 +3,25 @@
 We will first introduce denial of service (DoS) attack and then distributed DoS (DDoS) attack.
 
 ## DoS
-In a DoS attack, servers or network resouces are made unavailable to legitimate users. There are many types of DoS attacks. All the goals are to crash the servers or congest the networks so that the servers or networks are not available any more. We will look at a few example DoS attacks. 
+In a DoS attack, servers or network resources are made unavailable to legitimate clients/users. There are many types of DoS attacks. All the goals of those attacks are to crash the servers or congest the networks so that the servers or networks are not available any more. We will look at a few example DoS attacks. 
 
 ### DoS against our vulnerable chat server
 
 In our lecture on <a href="https://github.com/xinwenfu/GenCyber/tree/main/SoftwareSecurity">Penetration Testing and Software Security</a>, we have exploited the vulnerable chat server (vchat) and deployed the buffer overflow attack against vchat. We were able to hack into the Windows VM through vchat.
 
 The same vulnerability can be exploited for a denial of service (DoS) attack. 
-A large message with junk content is sent to the chat server. The server program copies the message to its buffer. The allocated buffer is too small and the code does not check if the message could overflow the buffer. The code just copies the entire junk message into the buffer and buffer overflow occurs then. The junk message overflows the buffer and overwrites things above the buffer. For example, a function return address may be overwritten with junk. Therefore, when the function returns, it returns to wronng memory place, which may not have even code, and the chat server crashes.
+A large message with junk content is sent to the chat server. The server program copies the message to its buffer within a function. The allocated buffer size is fixed and the code does not check if the message could overflow the buffer. The code just copies the entire junk message into the buffer and buffer overflow occurs then. The junk message overflows the buffer and overwrites things above the buffer. For example, a function return address may be overwritten with junk. Therefore, when the function returns, it returns to a wronng memory place, where there may not be even code, and the chat server crashes.
 
 <img src="../Imgs/BufferOverflow-junk.png" width=480>
+
+Below is the C language function of teh chat server in trouble.  *Function3*(.) copies the message into *Buffer2S* using the problematic function strcpy(.), which does not check the boundary of the buffer.
+```
+void Function3(char* Input) {
+	char Buffer2S[2000];
+	strcpy(Buffer2S, Input);
+}
+```
+
 
 ### SYN flooding attack
 There is a well known attack called SYN flooding attack against any server that runs the TCP protocol, which is one type of Internet protocol. For example, when you browse a web server, you use TCP, which ensures all data will be correctly delivered. An attacker can send a large number of TCP SYN packets to a server. A SYN packet asks the server to open a connection. The server has to allocate resources to maintain such a connection. If there are too many connection requests, the resources will be used up and the server cannot accept any more connection requests, which may be legitimate requests not from the attackers.
@@ -20,8 +29,9 @@ There is a well known attack called SYN flooding attack against any server that 
 ## DDoS
 In a distributed DoS, multiple attackers, maybe many of them, coordinate to deploy the attack against a single target. For example, a lot of attackers may deploy the SYN flooding attack against one server and halt the serivce provided by the server. An attacker may also use botnets for DDoS. A botnet is a network of compromised computers. An attacker can install the DDoS attack software on the compromised computers, which can be synchronized through the botnet software to deploy the DDoS attack.
 
-In our hands-on, the vulnerable chat server can handle 100 clients. If a lot of attackers create dubious connections to the server, the server cannot serve any new clients. Actually, if one attacker creates more than 100 connections to the chat server, the chat server cannot serve more clients either. The later attack becomes a DoS attack, not a DDoS attack.
+In our hands-on, the vulnerable chat server can handle 100 clients. If a lot of attackers create connections to the server, the server cannot serve any new clients. This is the principle of the DDoS attack; a lot of attackers coordiante to exhaust the resources at the target.
 
+Actually, if one attacker creates more than 100 connections to the chat server, the chat server cannot serve more clients either. The later attack becomes a DoS attack, not a DDoS attack.
 
 ## Hands-on
 
