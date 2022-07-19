@@ -5,7 +5,11 @@ We will first introduce denial of service (DoS) attack and then distributed DoS 
 ## DoS
 In a DoS attack, servers or network resouces are made unavailable to legitimate users. There are many types of DoS attacks. All the goals are to crash the servers or congest the networks so that the servers or networks are not available any more.
 
-We will look at a few example. In our hands-on lab, we exploit the buffer overflow vulnerability of our vulnerable chat server. A large message with junk content is sent to the chat server. The server program copies the message to its buffer. The allocated buffer is too small and the code does not check if the message could overflow the buffer. The code just copies the entire junk message into the buffer and buffer overflow occurs then. The junk message overflows the buffer and overwrites things above the buffer. For example, 
+We will look at a few example. In our hands-on lab, we exploit the buffer overflow vulnerability of our vulnerable chat server. A large message with junk content is sent to the chat server. The server program copies the message to its buffer. The allocated buffer is too small and the code does not check if the message could overflow the buffer. The code just copies the entire junk message into the buffer and buffer overflow occurs then. The junk message overflows the buffer and overwrites things above the buffer. For example, a function return address may be overwritten with junk. Therefore, when the function returns, it returns to wronng memory place, which may not have even code, and the chat server crashes.
+
+There is a well known attack called SYN flooding attack against any server that runs the TCP protocol, which is one type of Internet protocol. For example, when you browse a web server, you use TCP, which ensures all data will be correctly delivered. An attacker can send a large number of TCP SYN packets to a server. A SYN packet asks the server to open a connection. The server has to allocate resources to maintain such a connection. If there are too many connection requests, the resources will be used up and the server cannot accept any more connection requests, which may be legitimate requests not from the attackers.
+
+## DDoS
 
 ## Hands-on
 
