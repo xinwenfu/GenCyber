@@ -7,7 +7,10 @@ In a DoS attack, servers or network resouces are made unavailable to legitimate 
 
 ### DoS against our vulnerable chat server
 
-In our hands-on lab, we exploit the buffer overflow vulnerability of our vulnerable chat server. A large message with junk content is sent to the chat server. The server program copies the message to its buffer. The allocated buffer is too small and the code does not check if the message could overflow the buffer. The code just copies the entire junk message into the buffer and buffer overflow occurs then. The junk message overflows the buffer and overwrites things above the buffer. For example, a function return address may be overwritten with junk. Therefore, when the function returns, it returns to wronng memory place, which may not have even code, and the chat server crashes.
+In our lecture on <a href="https://github.com/xinwenfu/GenCyber/tree/main/SoftwareSecurity">Penetration Testing and Software Security</a>, we have exploited the vulnerable chat server (vchat) and deployed the buffer overflow attack against vchat. We were able to hack into the Windows VM through vchat.
+
+The same vulnerability can be exploited for a denial of service (DoS) attack. 
+A large message with junk content is sent to the chat server. The server program copies the message to its buffer. The allocated buffer is too small and the code does not check if the message could overflow the buffer. The code just copies the entire junk message into the buffer and buffer overflow occurs then. The junk message overflows the buffer and overwrites things above the buffer. For example, a function return address may be overwritten with junk. Therefore, when the function returns, it returns to wronng memory place, which may not have even code, and the chat server crashes.
 
 <img src="../Imgs/BufferOverflow-junk.png" width=480>
 
