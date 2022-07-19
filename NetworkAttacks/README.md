@@ -10,6 +10,10 @@ We will look at a few example. In our hands-on lab, we exploit the buffer overfl
 There is a well known attack called SYN flooding attack against any server that runs the TCP protocol, which is one type of Internet protocol. For example, when you browse a web server, you use TCP, which ensures all data will be correctly delivered. An attacker can send a large number of TCP SYN packets to a server. A SYN packet asks the server to open a connection. The server has to allocate resources to maintain such a connection. If there are too many connection requests, the resources will be used up and the server cannot accept any more connection requests, which may be legitimate requests not from the attackers.
 
 ## DDoS
+In a distributed DoS, multiple attackers, maybe many of them, coordinate to deploy the attack against a single target. For example, a lot of attackers may deploy the SYN flooding attack against one server and halt the serivce provided by the server.
+
+In our hands-on, the server can handle 100 clients. If a lot of attackers create dubious connections to the server, the server cannot serve any new clients.
+
 
 ## Hands-on
 
