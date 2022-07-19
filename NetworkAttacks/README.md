@@ -1,6 +1,6 @@
 # Availability
 
-Availability means when we need some resources, they should be available if we are authorized to use them.
+Availability means when we need particular resources, they should be available if we are authorized to use them.
 We will first introduce denial of service (DoS) attack and then distributed DoS (DDoS) attack, which may deny the availability of resources.
 
 ## DoS
