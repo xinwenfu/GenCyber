@@ -1,7 +1,7 @@
 # Availability
 
 Availability means when we need particular resources, they should be available if we are authorized to use them.
-We will first introduce denial of service (DoS) attack and then distributed DoS (DDoS) attack, which may deny the availability of resources.
+We will first introduce the denial of service (DoS) attack and then distributed DoS (DDoS) attack, which may deny the availability of resources.
 
 ## DoS
 In a DoS attack, servers or network resources are made unavailable to legitimate clients/users. There are many types of DoS attacks. All the goals of those attacks are to crash the servers or congest the networks so that the servers or networks are not available any more. We will look at a few example DoS attacks. 
