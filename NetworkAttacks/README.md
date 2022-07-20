@@ -15,7 +15,7 @@ A large message with junk content is sent to the chat server. The server program
 
 <img src="../Imgs/BufferOverflow-junk.png" width=480>
 
-Below is the C language function of the chat server in trouble.  *Function3*(.) copies the message into *Buffer2S* using the problematic function strcpy(.), which does not check the boundary of the buffer.
+Below is the C language function of the chat server in trouble.  *Function3*(.) copies the message into *Buffer2S* using the problematic function strcpy(.), which does not check the boundary of the buffer during copying.
 ```
 void Function3(char* Input) {
 	char Buffer2S[2000];
