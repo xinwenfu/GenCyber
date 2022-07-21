@@ -15,7 +15,7 @@ We designd the curriculum targeting high school students with no much programmin
 ## Lab environment
 We use VMs for all the labs. All VMs are tested for VirtualBox.
 
-- <a href="https://www.cs.uml.edu/~xinwenfu/VMs/Kali-CR-25G.ova">Customized Kali VM</a>, which incldues Armitage and our Metasploit modules against the vulnerable chat server
+- <a href="https://www.cs.uml.edu/~xinwenfu/VMs/Kali-CR-25G.ova">Customized Kali VM</a>, which incldues customized Armitage and our Metasploit modules against the vulnerable chat server
   - Username: kali
   - Password: kali
   - Sudo password: kali
