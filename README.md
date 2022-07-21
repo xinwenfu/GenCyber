@@ -1,6 +1,6 @@
 # Introduction to Cyber Attacks and Cyber Security 
 
-In this repository, we will introduce a wide range of topics, including Python programming, penetration testing and software security, networking, network attacks, firewall, Wireshark and intrusion detection system (IDS), symmetric cryptography, asymmetric cryptography, checksum and hash, and digital signature. Those topics cover 6 cybersecurity concepts including
+We will introduce a wide range of topics, including Python programming, penetration testing and software security, networking, network attacks, firewall, Wireshark and intrusion detection system (IDS), symmetric cryptography, asymmetric cryptography, checksum and hash, and digital signature. Those topics cover 6 cybersecurity concepts including
 - *Think like an adversary*
 - *Availability*
 - *Defense in depth*
