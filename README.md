@@ -8,7 +8,7 @@ In this repository, we will introduce a wide range of topics, including Python p
 - *Integrity*
 - *Keep it Simple*
 
-The content targets people who want to understand advanced cyber attacks and cybersecurity at the operation level. The content is not that theoretic although we try to explain why and how things work in layman's terms. The labs use latest Linux and Windows so that the danger of cyber attacks can be seen and the need of cyber defense is understood.
+The content targets people who want to understand advanced cyber attacks and cybersecurity at the operation level. The content is not theoretic although we try to explain why and how things work in layman's terms. The labs use latest Linux and Windows so that the danger of cyber attacks can be seen and the need of cyber defense is understood.
 
 We designd the curriculum targeting high school students attending the NSA sponsored GenCyber cybersecurity summer camp with no much programming and cybersecurity background, but guess it will benefit anyone who really wants to understand real-world attacks and defense.
 
