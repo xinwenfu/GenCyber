@@ -46,4 +46,4 @@ Here are the lectures and hands-on labs at UMass Lowell. The hands-on labs are a
 3. Do not mess up the host and play with only VMs
 4. Meet at the door of the Fox Dining Hall at 1pm going back to Cyber Range
 
-<img src="Imgs/logo-gencyber.png" width=256>
+<img src="Imgs/logo-gencyber.png" width=160>
