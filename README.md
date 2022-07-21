@@ -2,9 +2,9 @@
 
 In this repository, we will introduce a wide range of topics, including Python programming, penetration testing and software security, networking, network attacks, firewall, Wireshark and intrusion detection system (IDS), symmetric cryptography, asymmetric cryptography, checksum and hash, and digital signature. Those topics cover 6 cybersecurity concepts including, *Think like an adversary*, *Availability*, *Defense in depth*, *Confidentiality*, *Integrity* and *Keep it Simple*. 
 
-The content targets people who want to understand advanced cyber attacks and cybersecurity at the operation level. The content is not that theoretic although we try to explain why and how things work in layman's terms. 
+The content targets people who want to understand advanced cyber attacks and cybersecurity at the operation level. The content is not that theoretic although we try to explain why and how things work in layman's terms. The labs use latest Linux and Windows so that the danger of cyber attacks can be seen and the need of cyber defense is understood.
 
-The labs use latest Linux and Windows so that the danger of cyber attacks can be seen and the need of cyber defense is understood.
+We designd the curriculum targeting high school students with no much programming and cybersecurity background, but guess it will benefit anyone who really wants to see real-world attacks and defense.
 
 ## Lab environment
 We use VMs for all the labs. All VMs are tested for VirtualBox.
