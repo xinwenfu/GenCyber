@@ -45,3 +45,5 @@ Here are the lectures and hands-on labs at UMass Lowell. The hands-on labs are a
 2. Turn off the virus <a href="https://support.microsoft.com/en-us/windows/turn-off-defender-antivirus-protection-in-windows-security-99e6004f-c54c-8509-773c-a4d776b77960">real time protection</a>
 3. Do not mess up the host and play with only VMs
 4. Meet at the door of the Fox Dining Hall at 1pm going back to Cyber Range
+
+<img src="../Imgs/logo-gencyber.png" width=480>
