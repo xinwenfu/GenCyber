@@ -6,7 +6,7 @@ We will introduce a wide range of topics, including Python programming, penetrat
 - *Defense in depth*. Layers of defense are often used to protect an entity's assets.
 - *Confidentiality*. This is encryption that keeps our message srecret.
 - *Integrity*. We need a way to find if our data is changed without permission or not.
-- *Keep it Simple*. A cybersecurity product shall be easy to use and efficiently fullfill the user's goals.
+- *Keep it Simple*. A cybersecurity product shall be easy to use and efficiently fullfill a user's goals.
 
 The content targets people who want to understand advanced cyber attacks and cybersecurity at the operation level. The content is not theoretic although we try to explain why and how things work in layman's terms. The labs use latest Linux and Windows so that the danger of cyber attacks can be seen and the need of cyber defense is understood.
 
