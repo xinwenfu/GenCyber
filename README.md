@@ -1,12 +1,12 @@
 # Introduction to Cyber Attacks and Cyber Security 
 
 We will introduce a wide range of topics, including Python programming, penetration testing and software security, networking, network attacks, firewall, Wireshark and intrusion detection system (IDS), symmetric cryptography, asymmetric cryptography, checksum and hash, and digital signature. Those topics cover 6 cybersecurity concepts including
-- *Think like an adversary*
-- *Availability*
-- *Defense in depth*
-- *Confidentiality*
-- *Integrity*
-- *Keep it Simple*
+- *Think like an adversary*. We have to understand attacks so as to find and defend against them.
+- *Availability*. We need strategies to ensure resources are available at the time of need.
+- *Defense in depth*. Layers of defense are often used to protect an entity's assets.
+- *Confidentiality*. This is encryption that keeps our message srecret.
+- *Integrity*. We need a way to find if our data is changed by someone or not.
+- *Keep it Simple*. A cybersecurity product shall be easy to use and fullfill people's goals.
 
 The content targets people who want to understand advanced cyber attacks and cybersecurity at the operation level. The content is not theoretic although we try to explain why and how things work in layman's terms. The labs use latest Linux and Windows so that the danger of cyber attacks can be seen and the need of cyber defense is understood.
 
