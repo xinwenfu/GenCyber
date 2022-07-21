@@ -6,7 +6,7 @@ In this repository, we will introduce a wide range of topics, including Python p
 - *Defense in depth*
 - *Confidentiality*
 - *Integrity*
-- *Keep it Simple*. 
+- *Keep it Simple*
 
 The content targets people who want to understand advanced cyber attacks and cybersecurity at the operation level. The content is not that theoretic although we try to explain why and how things work in layman's terms. The labs use latest Linux and Windows so that the danger of cyber attacks can be seen and the need of cyber defense is understood.
 
