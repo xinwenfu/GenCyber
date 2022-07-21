@@ -3,7 +3,7 @@
 We will introduce a wide range of topics, including Python programming, penetration testing and software security, networking, network attacks, firewall, Wireshark and intrusion detection system (IDS), symmetric cryptography, asymmetric cryptography, checksum and hash, and digital signature. Those topics cover 6 cybersecurity concepts including
 - *Think like an adversary*. We have to understand attacks so as to find and defend against them.
 - *Availability*. We need strategies to ensure resources are available at the time of need.
-- *Defense in depth*. Layers of defense are often used to protect an entity's assets.
+- *Defense in depth*. Layers of defense are often used to protect an entity's assets such as networks and computers.
 - *Confidentiality*. This is encryption that keeps our message srecret.
 - *Integrity*. We need a way to find if our data is changed without permission or not.
 - *Keep it Simple*. A cybersecurity product shall be easy to use and efficiently fullfill a user's goals.
