@@ -87,7 +87,7 @@ integrates Python into itself. It runs the Python interpreter automatically when
 
 <img src="../Imgs/IDLEShell.png"  width=640>
 
-We want to use IDLE to open a Python file. With the IDLE shell window, click the memu *File* then *Open*. Within the file dialog window, navigate to the program file, click the file to and then *Open*. 
+We want to use IDLE to open a Python file. With the IDLE shell window, click the memu *File* then *Open*. Within the file dialog window, navigate to the program file, click the file and then *Open*. 
 Once you open the file, it's in another window, i.e., the editor window. 
 
 <img src="../Imgs/IDLEEditor.png" width=640>
