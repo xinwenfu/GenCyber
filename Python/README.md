@@ -70,7 +70,7 @@ python basics.py
 People invented different ways to run Python programs so that you can choose the one you like. We talk about three ways
 - Using software called *IDLE* (integrated developer environment)
 - Using *python* the interpreter at the command line
-- Running the Python program directly at the command line so you don't need to enter the *python* command in the second approach
+- Running the Python program directly at the command line so you don't need to enter the *python* command in the second approach every time
  
 ###  Running Python Program with IDLE
 When we write a Python program, the first thing we have to do is to write the code, put the code in a file and save it in a folder on a computer. IDLE is a software program, which provides all the tools we need. It has a text editor so that we can enter code into a file.
