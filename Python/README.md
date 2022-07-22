@@ -103,7 +103,7 @@ Now we explain *basics.py* above. I give a lot of comments to the code.
 Normally the hash sign *#* starts a comment.
 The first line with *#* is very special and is called the shibang line.
 When we try to run this program, we are going to need the Python interpreter. But where is the Python interpreter? 
-The shebang line specifies its location, i.e., */usr/bin/python*. 
+The shebang line specifies its location, i.e., */usr/bin/python*. This is particularly useful when we [#running-python-program-directly-at-command-line](run a python program directly at command-line).
 
 ##### x = 34 - 23
 This is called assignment statement. We assign the expression of 34 minus 23 to x, which is an integer.
