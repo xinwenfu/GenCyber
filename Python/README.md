@@ -200,7 +200,7 @@ Then the following command can be used to run basics.py.
 ```
 python basics.py
 ```
-We can actually various <a href="https://www.pcwdld.com/linux-commands-cheat-sheet">Linux commands</a> within a terminal. 
+We can actually run various <a href="https://www.pcwdld.com/linux-commands-cheat-sheet">Linux commands</a> including *cd* within a terminal. 
 
 ###  Running Python Program Directly at Command Line
 The third way is to run the Python script directly at the command line.
