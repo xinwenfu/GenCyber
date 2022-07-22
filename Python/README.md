@@ -16,7 +16,7 @@ However, assembly language is still super hard for general people since you need
 
 That's why people invented high level programming languages like C, C++, C#, Java and Python. High level programming laanguages are more like natural languages we speak so that they are more intuitive. High lelvel programming languages often hide hardware details so that we can focus on the tasks. C and C++ still involve some details like pointers, which refer to memory locations where data are saved. This is why C and C++ are harder to learn. Languages like Python and Java remove all such concepts like pointers. Although languages like Python and Java cannot be used to write programs controlling hardware directly, they are easy to learn and can deal with a lot of things like data processing. One statement/instruction in a high level programming langauge is often equivalent to many statements/instructions in a low level programming language. Because they are easy to learn, people learn them and develop a lot of code libraries, which contain code that can do various tasks. For example, you can use the code to draw a circle at a particular location on the display. 
 
-Before execution, programs in high level programming languages have to be translated into machine language so that the computer can understand.
+Before execution, programs in high level programming languages have to be translated into machine language so that the computer can understand. Such translation is done by software. For example, in Python, the command/software *python* does this translation.
 
 ### Python
 A python program is Python code in a file with the file extension .py, for example, *basics.py* below. Sometimes we also call python program as a script. 
