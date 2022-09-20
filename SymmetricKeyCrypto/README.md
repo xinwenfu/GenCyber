@@ -223,9 +223,9 @@ OpenSSL is a crypto library that implements various cryptographic functionalitie
 = Creation and management of private keys, public keys and parameters
 - Many oore…
 
-## Hands-on
+## Hands-on Labs
 
-### Hands-on 1: Decipher Caesor cipher encrypted text
+### Hands-on 1: Decipher Caesar cipher encrypted text
 
 #### Ciphertext
 The plaintext is English paragraphs, encrypted with Caesar Cipher of a particular shift. Ciphertext is shown below.
