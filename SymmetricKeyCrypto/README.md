@@ -259,7 +259,7 @@ echo "OpenSSL" | openssl enc -iter 1000 -aes-256-cbc -a -k hello
 - *-a*: means BASE64 output
 
 ### Hands-on 3: Decryption with AES
-Decrypt the encrypted message on Kali VN
+Decrypt the encrypted message on Kali VM
 ```
 echo "U2FsdGVkX1+lVCnMEVpKXisqA1IlycMvDFkv72ILasg=" | openssl enc -aes-256-cbc -iter 1000 -a -d -k hello
 ```
