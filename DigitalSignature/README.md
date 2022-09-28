@@ -166,7 +166,7 @@ openssl enc -base64 -d -in sign.sha256.base64 -out sign.sha256
 
 - Verify the signature with the public key
 ```
-openssl dgst -sha256 -verify pubkey.pem -signature sign.sha256 changelog
+openssl dgst -sha256 -verify pubkey.pem -signature sign.sha256 your-file
 ```
 
 ### Hands-on 5: Discussion: Message under MITM
