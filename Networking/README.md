@@ -16,6 +16,7 @@ touch test1 # create an empty file called test1
 ls # show files in current workng folder
 ```
 where # indicates a comment and does not need to be entered
+
 2. <a href="https://man7.org/linux/man-pages/man1/pwd.1.html">pwd</a>: print full path name of current working folder
 ```
 pwd # show the name of current working folder 
