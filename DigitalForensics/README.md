@@ -20,5 +20,11 @@ In the *Select data source type*, we choose *Disk Image or VM FIle* since we wil
 In the *Select data source* dialog window, *Browse* to choose the disk image file
 ![image](https://user-images.githubusercontent.com/69218457/193134049-613f0918-39ca-4487-8276-9806e244ebe9.png)
 
+In the *Configure Injest* dislog window, click *Next* to run injest modules to retrieve default data from the image. Click *Next*.
+![image](https://user-images.githubusercontent.com/69218457/193134775-8211834d-c10d-4c2f-bd3c-17ebdc57c287.png)
+
+The next dialog window is *Add Data Source*. We do not have more data soures and thus just click *Finish*. After a while of analysis, Autopsy shows the analytical results.
+![image](https://user-images.githubusercontent.com/69218457/193135569-98254e87-ea64-4a60-9020-c60e4b46f8fb.png)
+
 
 ## Hands-on
