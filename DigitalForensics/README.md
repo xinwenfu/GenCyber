@@ -35,9 +35,8 @@ Bitcoin was used as the currency.
 
 
 ## Disk imaging
-To defeat cyber crimes and prosecute bad guys, we often need disk Imaging
-and so let's look at what is a disk
-Imaging
+To defeat cyber crimes and prosecute bad guys, we often need disk imaging.
+What is a disk imaging?
 first let's look at what is a bit stream
 copy the business Street comma is a bit
 by bit copy of the original storage
