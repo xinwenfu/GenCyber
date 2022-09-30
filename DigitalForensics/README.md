@@ -61,39 +61,24 @@ the spindle rotates the platters and the read-write head moves along the radius 
 
 ![https://i.stack.imgur.com/y5wtm.jpg](https://user-images.githubusercontent.com/69218457/193344618-955ef94a-22f0-41b7-84ff-5104b27d783c.png)
 
+There are a few concepts about the hard disk, including track, sector, cylinder and head.
+The hard disk formatted as concentric circles on the platter surfaces known as tracks.
+A platter has two surfaces. A read-write head is used to access each surface. 
+A sector is a curved section of a track and can contain 512 bits of data.
+Corresponding tracks on all plantar surfaces of a hard disk form a cylinder.
+A sector has a coordinate of (cylinder, head, sector).
 
-so here there are a few Concepts here
-and it's called a sector track and a
-cylinder so you can see here and we
-actually
-how tracks
-um each platter
-corresponding tracks on all plantar
-surfaces of a hard disk from a cylinder
-okay then on a floppy disk which is old
-I'm not sure if you see one before
-the pair of tracks that lie over and
-then is each other are called a cylinder
-okay so the data actually are written to
-the cylinder
-and they're written on the tracks and
-each track is divided into sectors and
-each sector can contain file 12 bytes
-okay and so here is how we actually
-organize data
-um a hard disk
-you may think why
-a magnetic hard drive
-can store data so what are the bits
-um magnetic hard drive
-for a magnetic hard drive
-we use a group of
-magnetized metal greens to store a bit
-so 10 is indicated by the alignment of a
-magnetization
-okay so for example if the group of
-magnetized metal grains is aligned to
-the right when we call that as one if
+Why can a magnetic hard drive store data?
+What is a bit on the hard disk?
+For a magnetic hard drive, we use a group of magnetized metal greens to store a bit.
+1 or 0 is indicated by the alignment of magnetization.
+For example if the group of magnetized metal grains is aligned to the right, we call that allignment as 1.
+Otherwise, it is a 0.
+
+![image](https://user-images.githubusercontent.com/69218457/193349270-6a068f88-7190-43a2-920b-879a99149431.png)
+
+
+if
 the group of magnetize the metal grains
 is aligned to the left and we call that
 as zero so when you actually use a read
