@@ -59,7 +59,7 @@ A magnetic hard disk has a lot of platters, on which data is stored.
 All the platters are concentric around the spindle.
 the spindle rotates the platters and the read-write head moves along the radius of the platters so as to access all the data.
 
-![https://i.stack.imgur.com/y5wtm.jpg](https://user-images.githubusercontent.com/69218457/193344618-955ef94a-22f0-41b7-84ff-5104b27d783c.png | width=200)
+![https://i.stack.imgur.com/y5wtm.jpg](https://user-images.githubusercontent.com/69218457/193344618-955ef94a-22f0-41b7-84ff-5104b27d783c.png | width=100)
 
 There are a few concepts about the hard disk, including track, sector, cylinder and head.
 The hard disk formatted as concentric circles on the platter surfaces known as tracks.
