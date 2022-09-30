@@ -27,20 +27,15 @@ This is a case of stolen property offense. In 2010, A Dutch national Joey Vogela
 In this case the bad guy used the the hiking technology, got into a computer server and stole a few Hollywood movies.
 
 ### Case Study 2 - illegal business
-so here is a case two secret load
-Ross created a website called sick Road
-in approximately January 2011 and the
-operator This Global dark Market space
-so basically this is a black market on
-the internet
-it is so the illegal goods and the
-services including controlled substances
-hiking software and services
-and the Videocon was used as the
-currency of a single Road
-and uh so to defeat
-the Cyber crimes and the prosecute
-the bad guys we often need disk Imaging
+This is a case of illegal online business.
+Ross William Ulbricht created a website called Silk Road in approximately January 2011.
+It was a black market on the internet, selling illegal goods and the
+services including controlled substances, hiking software and services.
+Bitcoin was used as the currency.
+
+
+## Disk imaging
+To defeat cyber crimes and prosecute bad guys, we often need disk Imaging
 and so let's look at what is a disk
 Imaging
 first let's look at what is a bit stream
