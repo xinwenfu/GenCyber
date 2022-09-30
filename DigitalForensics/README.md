@@ -33,46 +33,22 @@ It was a black market on the internet, selling illegal goods and the
 services including controlled substances, hiking software and services.
 Bitcoin was used as the currency.
 
-
 ## Disk imaging
 To defeat cyber crimes and prosecute bad guys, we often need disk imaging.
 What is a disk imaging?
-first let's look at what is a bit stream
-copy the business Street comma is a bit
-by bit copy of the original storage
-media and so here we want an exact copy
-of the original disk then the result of
-a bit stream copy will create a file
-called beta stream image
-and this image is exactly an image of a
-all data on the disk and that's why we
-call this file as an image or image file
-so when we actually clear the evidence
-we want to be very careful about in
-damaging evidence so for example when a
-suspect computer is on
-how can you perform Imaging what kind of
-factors should you consider
-should you first actually turn the
-computer off
-and here there are a lot of trade-offs
-here
-so the first trade-off is that if you
-turn the
-computer off the good thing is that you
-know the better guys cannot remotely
-operate their computer and
-erase all the evidences
-and uh so that's the benefit but the
-downside is
-then you lose all the content in the
-computer memory the computer memory may
-have a lot of evidences so you can see
-there are three doubts when you
-look at
-gather evidence from a disk
-from a computer
-okay and uh so you know when you get
+A bit stream copy of the original storage media is an exact copy of the original disk.
+The result of a bit stream copy is often a file called bit stream image, which contains all data on the disk.
+That's why we call this file as an image or image file.
+
+When we collect evidence, we want to be very careful, not damaging evidence.
+For example when a suspect computer is on, how can you perform imaging?
+What factors should we consider?
+Should we turn the computer off?
+There are a lot of trade-offs here.
+If we turn the computer off, the good thing is that the bad guys cannot remotely operate their computer any more and erase evidences.
+That's the benefit. The downside is we lose all the content in the computer memory, which may have a lot of data and thus evidences.
+
+## Recovering deleted files
 a computer
 disk image sometimes we want to actually
 recover
