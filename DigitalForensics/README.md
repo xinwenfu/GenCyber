@@ -74,30 +74,15 @@ For a magnetic hard drive, we use a group of magnetized metal greens to store a 
 1 or 0 is indicated by the alignment of magnetization.
 For example if the group of magnetized metal grains is aligned to the right, we call that allignment as 1.
 Otherwise, it is a 0.
+Changing data on a hard drive is basically changing the alignments of groups of magnetized metal grains.
+Recall a sequene of 0s and 1s is a binary number, which can be converted into a decimal number.
 
 ![image](https://user-images.githubusercontent.com/69218457/193349270-6a068f88-7190-43a2-920b-879a99149431.png)
 
+### File Allocation Table (FAT)
 
-if
-the group of magnetize the metal grains
-is aligned to the left and we call that
-as zero so when you actually use a read
-write head
-to change the values on a hard drive you
-are basically changing the alignment of
-the group of magnetized metal grains
-so now we understand
-how a hard drive can store data right
-and then we store one zeros on the hard
-drive and of course that's called a
-vendor number you can convert the band
-number into decimal numbers as you want
-so how do we actually store a file and
-uh
-so basically as we mentioned
-we are going to store files
-on the tracks of a disk so here we show
-data
+Now we discuss how a file system is used to organize files on a hard disk.
+The figure belows show an example of the file system, file allocation table (FAT).
 table here and the one column here
 corresponding to 1
 track
@@ -151,6 +136,10 @@ allocation table so we said
 the fact is a list of entries that map
 to each cluster on the partition
 and each entry reports one of the file
+
+![image](https://user-images.githubusercontent.com/69218457/193351059-a6541b44-d489-47bd-861f-ca9808973374.png)
+
+
 scenes the address of the next cluster
 in a chain a special end of a file UF
 character that indicates the end of a
