@@ -49,44 +49,19 @@ If we turn the computer off, the good thing is that the bad guys cannot remotely
 That's the benefit. The downside is we lose all the content in the computer memory, which may have a lot of data and thus evidences.
 
 ## Recovering deleted files
-a computer
-disk image sometimes we want to actually
-recover
-[Music]
-delete the files and because
-from the digital files
-we may get evidences and the sunset May
-already delete those evidence from files
-okay so let's look at how we recover the
-files why we can do that
-before we do that let's look at
-the hard drive this is a classic example
-of a magnetic hard drive so today we
-have like a storage media
-like a solid state drive
-but you know recurrent digital files
-is similar for magnetic hard drive and
-some the steel drives so let's just use
-this example and see how we actually
-recover
-files
-so in this example you can see
-in this case
-we have a lot of
-platters this is a the story video we
-are going to write data on
-then here all the platters are
-concentric
-around this spindle and you can look at
-the picture and see the read red head
-and the read red head will move along
-the radius and access all the data and
-the spindle actually will rotate
-the
-platters and then the reader had
-and the red hat move along the radius in
-this way we can actually access
-any data on the disk
+A suspect may delete evidences from a disk.
+We may be able to recover such deleted files.
+Let's look at why and how we recover deleted files.
+We will use a conventional magnetic hard drive as the example. Today we have other types of hard disks such as solid state drives. The principle of recovering deleted files is the same since it is only related with the operating system and file system.
+
+### Magnetic hard disk
+A magnetic hard disk has a lot of platters, on which data is stored.
+All the platters are concentric around the spindle.
+the spindle rotates the platters and the read-write head moves along the radius of the platters so as to access all the data.
+
+![image](https://user-images.githubusercontent.com/69218457/193344618-955ef94a-22f0-41b7-84ff-5104b27d783c.png)
+
+
 so here there are a few Concepts here
 and it's called a sector track and a
 cylinder so you can see here and we
