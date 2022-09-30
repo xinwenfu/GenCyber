@@ -89,11 +89,11 @@ In this example, the first sector of the hard disk contains the master boot reco
 which master boot code and master partition table.
 The master boot code is the first piece of code on the hard disk that the computer will run.
 The master partition table tells where we install an operating system such as DoS and Windows.
-DOS is an early operating system (OS) from Microsoft and IBM. In this example, the OS is installed starting from the second track.
+DOS is an early operating system (OS) from Microsoft and IBM. 
 
 ![image](https://user-images.githubusercontent.com/69218457/193351059-a6541b44-d489-47bd-861f-ca9808973374.png)
 
-
+In this example, the OS is installed on the disk partition starting from the second track.
 contains the
 first piece of code that the computer
 will run from your hard disk
