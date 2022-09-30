@@ -24,7 +24,7 @@ In the *Configure Injest* dislog window, click *Next* to run injest modules to r
 ![image](https://user-images.githubusercontent.com/69218457/193134775-8211834d-c10d-4c2f-bd3c-17ebdc57c287.png)
 
 The next dialog window is *Add Data Source*. We do not have more data soures and thus just click *Finish*. After a while of analysis, Autopsy shows the analytical results.
-![image](https://user-images.githubusercontent.com/69218457/193135852-7b42a031-96a3-4e66-9779-e27a07a8fc8c.png)
+![image](https://user-images.githubusercontent.com/69218457/193172925-bc202e89-c22a-45bc-8a13-63ef59001c38.png)
 
 ## Hands-on
 ### Hands-on 2 FTK Imager
