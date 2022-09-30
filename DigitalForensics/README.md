@@ -94,16 +94,8 @@ DOS is an early operating system (OS) from Microsoft and IBM.
 ![image](https://user-images.githubusercontent.com/69218457/193351059-a6541b44-d489-47bd-861f-ca9808973374.png)
 
 In this example, the OS is installed on the disk partition starting from the second track.
-contains the
-first piece of code that the computer
-will run from your hard disk
-then the rest of
-the disk here
-will contain your files okay and so here
-you can see we have some vbr that's
-called the volume booted record and this
-maybe like your state disk on your
-computer and this is just one example
+The first sector of the partition contains the Volume Boot Record (VBR), which can identify the files needed by the OS.
+
 and the partitions of a disk can be very
 complicated okay and let's just use this
 one to show how we write a file on disk
