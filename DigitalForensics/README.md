@@ -27,3 +27,9 @@ The next dialog window is *Add Data Source*. We do not have more data soures and
 ![image](https://user-images.githubusercontent.com/69218457/193135852-7b42a031-96a3-4e66-9779-e27a07a8fc8c.png)
 
 ## Hands-on
+
+### Hands-on 1
+Please load usb-case.E01 into Autopsy.
+* Can Autospy recover deleted files? Why?
+
+* What deleted files can you recover with Autopsy?
