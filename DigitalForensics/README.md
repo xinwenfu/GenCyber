@@ -27,9 +27,14 @@ The next dialog window is *Add Data Source*. We do not have more data soures and
 ![image](https://user-images.githubusercontent.com/69218457/193135852-7b42a031-96a3-4e66-9779-e27a07a8fc8c.png)
 
 ## Hands-on
+### Hands-on 2 FTK Imager
+AccessData FTK Imager can be used to mount a disk image and show files with the image. Start FTK Imager. Use File -> Image Mouting -> Add Image to mouse the image usb-case.E01. One the image mouted, a logical drive is created for the image. Open File Explorer of Windows.
+* What can you observe from the logical drive corresponding to the image?
 
-### Hands-on 1
+### Hands-on 2 Autopsy
 Please load usb-case.E01 into Autopsy.
+* Can you see files found in the logical drive in Hands-on 1 within Autopsy?
+
 * Can Autospy recover deleted files? Why?
 
 * What deleted files can you recover with Autopsy?
