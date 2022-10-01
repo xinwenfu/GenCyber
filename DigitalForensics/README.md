@@ -129,63 +129,24 @@ Finally after we create the directory entry and update the FATs, we are going to
 <img src="https://user-images.githubusercontent.com/69218457/193430136-49dc9db2-2551-49b5-8cb4-605b5fa5a5e9.png" width=512>
 
 ## Deleting a file 
-okay so we have understood
-what happens when we write a file to a
-disk now let's look at how we did it a
-file on the disk what happens when we
-did the file on the disk
-okay
-and uh so here is what happens
-so the first thing that happens after
-you
-delete a file as
-the file
-directory entry will be updated
-so this is a the example of the thoughts
-and early version of a
-operating system and you can see so in
-this case the first character of the
-direct entry is changed to third time
-okay and that indicates basically this
-file is deleted
-and also the corresponding entries
-within the file allocation tables are
-zeroed okay okay so once
-the file allocation table entries become
-zero
-it indicates
-those clusters
-are used and they can be reused again
-however
-you can see here basically we are not
-going to remove the data on the hard
-disk
-why because think about this
-if you did the file we have to zero out
-all the files all the contents
-if your file is big
-this will take a long time this is not
-very convenient so therefore we just
-actually
-update
-the file
-directory entry
-and also the file addiction tables to
-indicate
-the Clusters used by the old file
-uh
-available now so in this way the
-performance of the computer will be
-improved
-however
-you can see here because the data area
-of the file is not changed this gives us
-a chance that
-this file can be recovered so this is
-the reason why you can recover a file
+Now let's look at what happens when we delete the file on the disk.
+The first thing that happens after you delete a file is  the file directory entry will be updated.
+In this case the first character of file name in the direct entry is changed to &sigma;, which indicates this file is deleted.
+The corresponding entries within the FATs are zeroed out.
+This indicates those clusters are free and they can be reused.
+However, data area is not changed.
+The actual file data on the hard disk is not changed.
+Why? What happens if we actually overwrite the file data, e.g., with zeroes or random numbers?
+If the file is big, such a deletion operation will take a long time.
+This is not very efficient.
+This is why we just actually update the file directory entry and also FATs to indicate the clusters used by the old file are free when we delete a file.
+In this way the performance of the computer will be improved. 
 
-<img src="https://user-images.githubusercontent.com/69218457/193430294-e85c53b8-2670-443d-9893-11d290e41e41.png" width=512>
+<img src="https://user-images.githubusercontent.com/69218457/193430325-0797de78-a30f-4863-aef9-50f702108017.png" width=512>
 
+However. you can see because the data area of the file is not changed, this gives us a chance that this file can be recovered.
+This is the reason why you recover a file.
+Question: can you always recover a deleted file?
 
 ## Autopsy—open source digital forensics platform
 Autopsy is an open source digital forensics software that implements varieties of forensic technologies. We will show how it can be used for loading a disk image and performing forensics. 
