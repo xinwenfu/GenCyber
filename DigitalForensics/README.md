@@ -117,46 +117,18 @@ name, extension, attributes (archive, directory, hidden, read-only, system and v
 FILE is the region where actual files are stored on the partition. It can be observed the directory table and FAT together tell where file data is stored. The directory table indicates the first cluster occupied by the file. The corresponding cluster entry in the FAT tells the next cluster and so on. The last cluster has a special end of file (EOF) character that indicates the end of a chain of clusters occupied by the file.
 
 ## Writing a file 
-so let's look at the
-what happens when we write a file
-when we write a file the first thing
-that will be changed is the direct entry
-the direct entry for this file will be
-created within
-the root generated region here okay so
-you can see here right and in this
-example we created the file that's the
-file name and it will also indicate
-where the file starts so in this case
-the start cluster is 2 and it also shows
-the file size
-and then
-the file and location tables are updated
-you may wonder why do we need two file
-allocation tables
-we need another
-file and location table for the purpose
-of redundancy and so that's why we need
-another file allocation table
-so you can see
-when we write the file after we create
-the direct entry
-in the root Direction region then we are
-going to update the file allocation
-tables and so basically uh
-we are going to record which
-clusters are used for this file within
-the file allocation tables
-finally
-after we update
-the directory and also file allocation
-tables we are going to write the data
-onto the disk and to the Clusters
-indicated by the file allocation tables
+Let's look at the what happens when we write a file.
+The first thing that will be changed is the direct entry.
+The directory entry for this file will be created within the root directory table.
+The figure below shows the directory entry, which includes file name, start cluster (i.e., the first cluster on disk allocated to the file) and file size.
+The start cluster is 2. Next we are going to update the FATs.
+One cluster is enough to store the file of 1024 bytes.
+One entry in the FAT is used and the entry has a label of E, indicating the end of the file. 
+Finally after we create the directory entry and update the FATs, we are going to write the file data onto the disk.
 
 <img src="https://user-images.githubusercontent.com/69218457/193430136-49dc9db2-2551-49b5-8cb4-605b5fa5a5e9.png" width=512>
 
-
+## Deleting a file 
 okay so we have understood
 what happens when we write a file to a
 disk now let's look at how we did it a
@@ -211,6 +183,9 @@ of the file is not changed this gives us
 a chance that
 this file can be recovered so this is
 the reason why you can recover a file
+
+<img src="https://user-images.githubusercontent.com/69218457/193430294-e85c53b8-2670-443d-9893-11d290e41e41.png" width=512>
+
 
 ## Autopsy—open source digital forensics platform
 Autopsy is an open source digital forensics software that implements varieties of forensic technologies. We will show how it can be used for loading a disk image and performing forensics. 
