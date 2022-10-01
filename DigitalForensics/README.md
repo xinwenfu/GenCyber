@@ -1,5 +1,3 @@
-Under construction
-
 # Digital Forensics
 
 We are going to talk about digital forensics. We first introduce what is digital forensics. Then we are going to talk about one critical technique used in
