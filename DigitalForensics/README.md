@@ -107,48 +107,16 @@ It can be observed that there are a few regions after the VBR, including FAT1, F
 * a special character to mark a bad cluster 
 * a special character to mark a reserved cluster 
 * a zero to note that that cluster is unused 
+We have two FATs here and the second FAT is a backup in case that the first one is corrupt.
+
+Root C is the Root Directory Table.
+It represents the directory C:\. 
+Each file or directory stored within the directory is represented by a 32 byte entry in the table. Each entry records 
+name, extension, attributes (archive, directory, hidden, read-only, system and volume), the date and time of creation, the address of the first cluster of the file/directory's data and finally the size of the file/directory.
+
+FILE is the region where actual files are stored on the partition. It can be observed the directory table and FAT together tell where file data is stored. The directory table indicates the first cluster occupied by the file. The corresponding cluster entry in the FAT tells the next cluster and so on.
 
 
-
-and within the file allocation table
-it contains entries indicating if
-part of the disks
-is a used and uh so the minimum
-foreign
-cluster so basically the file allocation
-table indicates if
-a cluster is used and uh what is the
-next cluster
-file
-occupies okay
-and then the root C here is just one
-example for the root directory so in
-this region of the hard disk it contains
-the entries
-Alpha
-file information so for example when you
-create one file on the disk then we
-create one entry within this root
-directory and
-one entry indicates the file name and
-there also contains a
-start cluster of your file on the disk
-okay finally we have the file region
-this is where the data is stored
-so we already discussed the file
-allocation table so we said
-the fact is a list of entries that map
-to each cluster on the partition
-and each entry reports one of the file
-
-scenes the address of the next cluster
-in a chain a special end of a file UF
-character that indicates the end of a
-chain
-a special character to Mark a better
-cluster a special character to Mark a
-reserved cluster a zero to note that
-that cluster is unused
 so let's look at the
 what happens when we write a file
 when we write a file the first thing
