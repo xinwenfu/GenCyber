@@ -116,7 +116,7 @@ name, extension, attributes (archive, directory, hidden, read-only, system and v
 
 FILE is the region where actual files are stored on the partition. It can be observed the directory table and FAT together tell where file data is stored. The directory table indicates the first cluster occupied by the file. The corresponding cluster entry in the FAT tells the next cluster and so on. The last cluster has a special end of file (EOF) character that indicates the end of a chain of clusters occupied by the file.
 
-
+## Writing a file 
 so let's look at the
 what happens when we write a file
 when we write a file the first thing
@@ -153,6 +153,10 @@ the directory and also file allocation
 tables we are going to write the data
 onto the disk and to the Clusters
 indicated by the file allocation tables
+
+<img src="https://user-images.githubusercontent.com/69218457/193430136-49dc9db2-2551-49b5-8cb4-605b5fa5a5e9.png" width=512>
+
+
 okay so we have understood
 what happens when we write a file to a
 disk now let's look at how we did it a
