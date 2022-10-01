@@ -81,7 +81,7 @@ Otherwise, it is a 0.
 Changing data on a hard drive is basically changing the alignments of groups of magnetized metal grains.
 Recall a sequene of 0s and 1s is a binary number, which can be converted into a decimal number.
 
-[img src="https://user-images.githubusercontent.com/69218457/193349270-6a068f88-7190-43a2-920b-879a99149431.png" width=200]
+<img src="https://user-images.githubusercontent.com/69218457/193349270-6a068f88-7190-43a2-920b-879a99149431.png" width=200>
 
 ### File Allocation Table (FAT)
 
