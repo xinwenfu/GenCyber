@@ -67,6 +67,10 @@ A platter has two surfaces. A read-write head is used to access each surface.
 A sector is a curved section of a track and can contain 512 bits of data.
 Corresponding tracks on all plantar surfaces of a hard disk form a cylinder.
 A sector has a coordinate of (cylinder, head, sector).
+A cluster is one or more 1 or more contiguous sectors.
+An operating system allocates clusters of disk space to a file.
+Cluster is the minimum unit used by an OS to allocate disk space to files.
+
 
 Why can a magnetic hard drive store data?
 What is a bit on the hard disk?
@@ -94,16 +98,18 @@ DOS is an early operating system (OS) from Microsoft and IBM.
 ![image](https://user-images.githubusercontent.com/69218457/193351059-a6541b44-d489-47bd-861f-ca9808973374.png)
 
 In this example, the OS is installed on the disk partition starting from the second track.
-The first sector of the partition contains the Volume Boot Record (VBR), which can identify the files needed by the OS.
+The first sector of the partition contains the Volume Boot Record (VBR), which is used to identify the files needed by the OS and load the OS.
+The partitions of a disk can be more complex. Let's just use this example to show how we write and delete a file on a disk.
 
-and the partitions of a disk can be very
-complicated okay and let's just use this
-one to show how we write a file on disk
-and how we did the file on disk so here
-we see a few regions we see Factor one
-Fighter 2 root c and a file here so
-Factor one Fighter 2 are called file and
-location tables
+It can be observed that there are a few regions after the VBR, including FAT1, FAT2, Root C and FILE. FAT referes to file location table. The FAT contains a list of entries that map to each cluster (not sector) on the partition. Each entry records one of five things:
+* the address of the next cluster in a chain 
+* a special end of file (EOF) character that indicates the end of a chain 
+* a special character to mark a bad cluster 
+* a special character to mark a reserved cluster 
+* a zero to note that that cluster is unused 
+
+
+
 and within the file allocation table
 it contains entries indicating if
 part of the disks
