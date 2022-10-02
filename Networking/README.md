@@ -2,18 +2,13 @@ Under construction
 
 ## Networking
 
-in this lecture we are going to talk
-about networking and the distributed
-denial of service
-here is a the outline of this lecture we
-are going to first look at different
-views of networks then we are going to
-look at the network data encapsulation
-how your messages are put into Network
-package
-then at the last we are going to look at
-the net of service and the distributed
-dinner of service attacks
+We are going to first look at different
+views of networks. Then we are going to
+look at the network data encapsulation, that is, how your messages are put into network packets.
+At last we are going to look at the denial of service and the distributed
+denial of service attacks.
+
+
 so what is the internet the internet is
 a network of Networks
 when we use internet
