@@ -1,7 +1,7 @@
 # Digital Forensics
 
 We first introduce what is digital forensics and a couple of cyber crime cases. Then we are going to talk about one critical technique used in
-digital forensics&mdash;disk imaging. At last we'll talk about why we can recover deleted files.
+digital forensics&mdash;disk imaging. At last we'll talk about why we can recover deleted files and the use of the open source software Autopsy on Windows to recover deleted files.
 
 ## Introduction
 Digital forensics includes computer forensics and network forensics. 
