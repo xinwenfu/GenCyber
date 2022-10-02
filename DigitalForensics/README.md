@@ -5,70 +5,61 @@ digital forensics&mdash;disk imaging. At last we'll talk about why we can recove
 
 ## Introduction
 Digital forensics includes computer forensics and network forensics. 
-In computer forensics we focus on getting evidence from Individual computer systems.
-In network forensics we focus on evidence connection, analysis and suspect identification in a networked environment.
+In computer forensics, we focus on getting evidence from individual computer systems.
+In network forensics, we focus on evidence connection, analysis and suspect identification in a networked environment.
 Network forensics can be complicated since the Internet is complex. 
-Why do we want to digital forensics? It is because the number of cyber crimes has been increasing all the time and the Internet is now a battle field of a cyber war and cyber crimes. Digital forensics education meets the urgent need of cyberspace operation professionals.
+Why do we want digital forensics? It is because the number of cyber crimes has been increasing all the time and the Internet is now a battle field of a cyber war and cyber crimes. Digital forensics education meets the urgent need of cyberspace operation professionals.
 
-Here is FBI's list of cyber crime categories. There are many varieties, including 
+Here is FBI's list of cyber crime categories, including 
 advance fee fraud, auction fraud, blackmail/extortion, charity fraud, consumer complaint, counterfeiting/forgery,
-credit/debit card fraud, computer damage, drug/narcotic offenses, business/employment fraud, fbi scams, gambling offenses, id theft,
-illegal business, intimidation, investment fraud, miscellaneous fraud, non-delivery of merchandise, overpayment fraud, pornography/obscene material,
-prostitution, relationship fraud, rental fraud, spam, stolen property offenses, and terrorist threat.
+credit/debit card fraud, computer damage, drug/narcotic offenses, business/employment fraud, FBI scams, gambling offenses, ID theft,
+illegal business, intimidation, investment fraud, miscellaneous fraud, non-delivery of merchandise, overpayment fraud, pornography/obscene material, prostitution, relationship fraud, rental fraud, spam, stolen property offenses, and terrorist threat.
 
 ## Cyber crime cases
-Let's look at a few cases of cyber crimes.
-### Case Study 1 - Stolen property offenses
+Let's look at a couple of cyber crime cases.
+### Case Study 1 - A case of Stolen property offense
 
 This is a case of stolen property offense. In 2010, A Dutch national Joey Vogelaar hacked into a company involved in the production release and stole digital versions of three Hollywood movies:  *How Do You Know* by Sony Pictures Entertainment,
-*Rango* by the Paramount production  and *Megamind* by Dreamworks.
-In this case the bad guy used the the hiking technology, got into a computer server and stole a few Hollywood movies.
+*Rango* by the Paramount production and *Megamind* by Dreamworks.
+In this case the suspect used the computer hiking technologies, got into a computer server and stole a few Hollywood movies.
 
-### Case Study 2 - illegal business
+### Case Study 2 - A case of illegal business
+
 This is a case of illegal online business.
-Ross William Ulbricht created a website called Silk Road in approximately January 2011.
-It was a black market on the internet, selling illegal goods and the
+Ross William Ulbricht created a website called *Silk Road* over Tor, which provides anonymity service, in approximately January 2011.
+It was a black market on the Internet, selling illegal goods and
 services including controlled substances, hiking software and services.
 Bitcoin was used as the currency.
+In this case, the suspect abused the anonymity service offered by Tor and opened an online black market.
 
 ## Disk imaging
-To defeat cyber crimes and prosecute bad guys, we often need disk imaging.
+To defeat cyber crimes and prosecute cyber criminals, we often need disk imaging.
 What is a disk imaging?
-A bit stream copy of the original storage media is an exact copy of the original disk.
+In disk imaging, we perform a bit stream copy of the original storage media, creating an exact copy of the original disk.
 The result of a bit stream copy is often a file called bit stream image, which contains all data on the disk.
 That's why we call this file as an image or image file.
 
 When we collect evidence, we want to be very careful, not damaging evidence.
-For example when a suspect computer is on, how can you perform imaging?
+For example when a suspect computer is on, how can we perform disk imaging?
 What factors should we consider?
 Should we turn the computer off?
 There are a lot of trade-offs here.
 If we turn the computer off, the good thing is that the bad guys cannot remotely operate their computer any more and erase evidences.
-That's the benefit. The downside is we lose all the content in the computer memory, which may have a lot of data and thus evidences.
+The downside is we lose all the contents in the computer memory, which may have a lot of data and thus evidences.
 
 ## Recovering deleted files
-A suspect may delete evidences from a disk.
-We may be able to recover such deleted files.
-Let's look at why and how we recover deleted files.
-We will use a conventional magnetic hard drive as the example. Today we have other types of hard disks such as solid state drives. The principle of recovering deleted files is the same since it is only related with the operating system and file system.
+
+A suspect may delete files that contain evidences from a disk.
+We want to recover such deleted files.
+Let's look at why and how we may recover deleted files.
+We will use a conventional magnetic hard drive as the example. Today we have other types of hard disks such as solid state drives. The principle of recovering deleted files is the same since the principle is only related with the operating system and file system. But for fun, we will talk about how the magnetic disk works too.
 
 ### Magnetic hard disk
-A magnetic hard disk has a lot of platters, on which data is stored.
-All the platters are concentric around the spindle.
-the spindle rotates the platters and the read-write head moves along the radius of the platters so as to access all the data.
+A magnetic hard disk has a number of platters, on which data is stored.
+All the platters are concentric around the spindle as shown in the image below.
+the spindle rotates the platters and the read-write head moves along the radius of a platter so as to access the data.
 
 ![https://i.stack.imgur.com/y5wtm.jpg](https://user-images.githubusercontent.com/69218457/193344618-955ef94a-22f0-41b7-84ff-5104b27d783c.png)
-
-There are a few concepts about the hard disk, including track, sector, cylinder and head.
-The hard disk formatted as concentric circles on the platter surfaces known as tracks.
-A platter has two surfaces. A read-write head is used to access each surface. 
-A sector is a curved section of a track and can contain 512 bits of data.
-Corresponding tracks on all plantar surfaces of a hard disk form a cylinder.
-A sector has a coordinate of (cylinder, head, sector).
-A cluster is one or more 1 or more contiguous sectors.
-An operating system allocates clusters of disk space to a file.
-Cluster is the minimum unit used by an OS to allocate disk space to files.
-
 
 Why can a magnetic hard drive store data?
 What is a bit on the hard disk?
@@ -80,6 +71,17 @@ Changing data on a hard drive is basically changing the alignments of groups of 
 Recall a sequene of 0s and 1s is a binary number, which can be converted into a decimal number.
 
 <img src="https://user-images.githubusercontent.com/69218457/193349270-6a068f88-7190-43a2-920b-879a99149431.png" width=320>
+
+
+There are a few concepts about the hard disk, including track, sector, cylinder and head.
+The hard disk formatted as concentric circles on the platter surfaces known as tracks.
+A platter has two surfaces. A read-write head is used to access each surface. 
+A sector is a curved section of a track and can contain 512 bits of data.
+Corresponding tracks on all plantar surfaces of a hard disk form a cylinder.
+A sector has a coordinate of (cylinder, head, sector).
+A cluster is one or more 1 or more contiguous sectors.
+An operating system allocates clusters of disk space to a file.
+Cluster is the minimum unit used by an OS to allocate disk space to files.
 
 ### File Allocation Table (FAT)
 
