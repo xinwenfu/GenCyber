@@ -83,7 +83,7 @@ A cluster is one or more 1 or more contiguous sectors.
 An operating system allocates clusters of disk space to a file.
 Cluster is the minimum unit used by an OS to allocate disk space to files.
 
-![image](https://user-images.githubusercontent.com/69218457/193436132-9fe45a0e-1e86-4d2e-8261-6b5d2a0d329d.png)
+<img src="https://user-images.githubusercontent.com/69218457/193436132-9fe45a0e-1e86-4d2e-8261-6b5d2a0d329d.png" width=320>
 
 
 ### File Allocation Table (FAT)
