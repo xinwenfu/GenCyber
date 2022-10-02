@@ -65,23 +65,22 @@ Why can a magnetic hard drive store data?
 What is a bit on the hard disk?
 For a magnetic hard drive, we use a group of magnetized metal greens to store a bit.
 1 or 0 is indicated by the alignment of magnetization.
-For example if the group of magnetized metal grains is aligned to the right, we call that allignment as 1.
+For example, if the group of magnetized metal grains is aligned to the right, we call that allignment as 1.
 Otherwise, it is a 0.
 Changing data on a hard drive is basically changing the alignments of groups of magnetized metal grains.
 Recall a sequene of 0s and 1s is a binary number, which can be converted into a decimal number.
 
 <img src="https://user-images.githubusercontent.com/69218457/193349270-6a068f88-7190-43a2-920b-879a99149431.png" width=320>
 
-
 There are a few concepts about the hard disk, including track, sector, cylinder and head.
-The hard disk formatted as concentric circles on the platter surfaces known as tracks.
-A platter has two surfaces. A read-write head is used to access each surface. 
-A sector is a curved section of a track and can contain 512 bits of data.
-Corresponding tracks on all plantar surfaces of a hard disk form a cylinder.
-A sector has a coordinate of (cylinder, head, sector).
-A cluster is one or more 1 or more contiguous sectors.
-An operating system allocates clusters of disk space to a file.
-Cluster is the minimum unit used by an OS to allocate disk space to files.
+The hard disk is formatted as concentric circles, called tracks, on the platter surfaces.
+Each platter has two surfaces. A read-write head is used to access a surface. 
+A sector is a curved section of a track and contains 512 bits of data.
+Corresponding tracks on all platter surfaces of a hard disk form a cylinder.
+Therefore, a sector has a coordinate of (cylinder, head, sector).
+A cluster is one or more contiguous sectors.
+Cluster is the minimum unit used by an operating system (OS) to allocate disk space to files.
+An OS allocates clusters of disk space to a file.
 
 <img src="https://user-images.githubusercontent.com/69218457/193436132-9fe45a0e-1e86-4d2e-8261-6b5d2a0d329d.png" width=320>
 
@@ -89,22 +88,22 @@ Cluster is the minimum unit used by an OS to allocate disk space to files.
 ### File Allocation Table (FAT)
 
 Now we discuss how a file system is used to organize files on a hard disk.
-The figure below shows an example of the file system, file allocation table (FAT).
+The figure below shows an example file system, file allocation table (FAT), used by operating systems such as DoS and Windows.
+DOS is an early OS from Microsoft and IBM.
 The grid surface represents the hard disk surface. A grid represents a sector.
 A column of grids corresponds to a track.
 In this example, the first sector of the hard disk contains the master boot record (MBR),
-which master boot code and master partition table.
+which contains master boot code and master partition table.
 The master boot code is the first piece of code on the hard disk that the computer will run.
-The master partition table tells where we install an operating system such as DoS and Windows.
-DOS is an early operating system (OS) from Microsoft and IBM. 
+The master partition table tells how the disk is partitioned and on which partition an operating system is installed.
 
 <img src="https://user-images.githubusercontent.com/69218457/193351059-a6541b44-d489-47bd-861f-ca9808973374.png" width=512>
 
 In this example, the OS is installed on the disk partition starting from the second track.
-The first sector of the partition contains the Volume Boot Record (VBR), which is used to identify the files needed by the OS and load the OS.
-The partitions of a disk can be more complex. Let's just use this example to show how we write and delete a file on a disk.
+The first sector of this partition contains the Volume Boot Record (VBR), which is used to identify the files needed by the OS. The volume boot code in the VBR loads the OS to run.
+The partitions of a disk can be complex. Let's just use this simple example to show how we write and delete a file on a disk.
 
-It can be observed that there are a few regions after the VBR, including FAT1, FAT2, Root C and FILE. FAT referes to file location table. The FAT contains a list of entries that map to each cluster (not sector) on the partition. Each entry records one of five things:
+It can be observed that there are a few regions after the VBR, including FAT1, FAT2, Root C and FILE. FAT referes to file location table. The FAT contains a list of entries that map to each cluster on the partition. Each entry records one of five things:
 * the address of the next cluster in a chain 
 * a special end of file (EOF) character that indicates the end of a chain 
 * a special character to mark a bad cluster 
@@ -114,26 +113,26 @@ We have two FATs here and the second FAT is a backup in case that the first one 
 
 Root C is the Root Directory Table.
 It represents the directory C:\. 
-Each file or directory stored within the directory is represented by a 32 byte entry in the table. Each entry records 
+Each file or directory stored within the directory C:\ is represented by an entry in the table. Each entry records 
 name, extension, attributes (archive, directory, hidden, read-only, system and volume), the date and time of creation, the address of the first cluster of the file/directory's data and finally the size of the file/directory.
 
-FILE is the region where actual files are stored on the partition. It can be observed the directory table and FAT together tell where file data is stored. The directory table indicates the first cluster occupied by the file. The corresponding cluster entry in the FAT tells the next cluster and so on. The last cluster has a special end of file (EOF) character that indicates the end of a chain of clusters occupied by the file.
+FILE is the region where actual files are stored on the partition. The directory table and FAT together tell where file data is stored. The directory table indicates the first cluster occupied by a file. The corresponding cluster entry in the FAT tells the next cluster of the file and so on. The last cluster has a special end of file (EOF) character that indicates the end of a chain of clusters occupied by the file.
 
 ### Writing a file 
-Let's look at the what happens when we write a file.
-The first thing that will be changed is the direct entry.
-The directory entry for this file will be created within the root directory table.
+Let's look at what happens when we write a file onto a disk.
+The first thing that will be changed is the direct table.
+A directory entry for this file will be created within the root directory table in our example.
 The figure below shows the directory entry, which includes file name, start cluster (i.e., the first cluster on disk allocated to the file) and file size.
-The start cluster is 2. Next we are going to update the FATs.
-One cluster is enough to store the file of 1024 bytes.
-One entry in the FAT is used and the entry has a label of E, indicating the end of the file. 
-Finally after we create the directory entry and update the FATs, we are going to write the file data onto the disk.
+The start cluster is 2. Next, we are going to update the FATs.
+One cluster is enough to store the file of 1024 bytes. Recall a cluster may contain multiple sectors.
+Therefore, one entry in the FAT is used and the entry has a label of E, indicating the end of the file. 
+Finally after we create the directory entry and update the FATs, we write the file data onto the disk.
 
 <img src="https://user-images.githubusercontent.com/69218457/193430136-49dc9db2-2551-49b5-8cb4-605b5fa5a5e9.png" width=512>
 
 ### Deleting a file 
 Now let's look at what happens when we delete the file on the disk.
-The first thing that happens after you delete a file is  the file directory entry will be updated.
+The first thing that happens after we delete a file is the file directory entry will be updated.
 In this case the first character of file name in the direct entry is changed to &sigma;, which indicates this file is deleted.
 The corresponding entries within the FATs are zeroed out.
 This indicates those clusters are free and they can be reused.
@@ -142,13 +141,14 @@ The actual file data on the hard disk is not changed.
 Why? What happens if we actually overwrite the file data, e.g., with zeroes or random numbers?
 If the file is big, such a deletion operation will take a long time.
 This is not very efficient.
-This is why we just actually update the file directory entry and also FATs to indicate the clusters used by the old file are free when we delete a file.
-In this way the performance of the computer will be improved. 
+This is why we just actually update the file directory entry and FATs to indicate the clusters used by the old file are free when we delete a file.
+In this way the performance of the computer is improved. 
 
 <img src="https://user-images.githubusercontent.com/69218457/193430325-0797de78-a30f-4863-aef9-50f702108017.png" width=512>
 
-However. you can see because the data area of the file is not changed, this gives us a chance that this file can be recovered.
+However, you can see because the data area of the file is not changed, this gives us a chance to recover this file.
 This is the reason why you recover a file.
+
 Question: can you always recover a deleted file?
 
 ## Autopsy—open source digital forensics platform
