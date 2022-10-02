@@ -1,6 +1,6 @@
 # Digital Forensics
 
-We are going to talk about digital forensics. We first introduce what is digital forensics. Then we are going to talk about one critical technique used in
+We first introduce what is digital forensics. Then we are going to talk about one critical technique used in
 digital forensics---disk imaging. At last we'll talk about why we can recover deleted files.
 
 ## Introduction
