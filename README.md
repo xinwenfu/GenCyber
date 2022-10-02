@@ -1,4 +1,4 @@
-# Introduction to Cyber Attacks and Security 
+# Cybersecurity Basics and Hands-on 
 
 We will introduce a wide range of topics, including Python programming, penetration testing and software security, networking, network attacks, firewall, Wireshark and intrusion detection system (IDS), symmetric cryptography, asymmetric cryptography, checksum and hash, and digital signature. Those topics cover 6 cybersecurity concepts including
 - *Think like an adversary*. We have to understand attacks so as to find and defend against them.
