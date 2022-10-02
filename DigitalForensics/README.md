@@ -114,7 +114,7 @@ name, extension, attributes (archive, directory, hidden, read-only, system and v
 
 FILE is the region where actual files are stored on the partition. It can be observed the directory table and FAT together tell where file data is stored. The directory table indicates the first cluster occupied by the file. The corresponding cluster entry in the FAT tells the next cluster and so on. The last cluster has a special end of file (EOF) character that indicates the end of a chain of clusters occupied by the file.
 
-## Writing a file 
+### Writing a file 
 Let's look at the what happens when we write a file.
 The first thing that will be changed is the direct entry.
 The directory entry for this file will be created within the root directory table.
@@ -126,7 +126,7 @@ Finally after we create the directory entry and update the FATs, we are going to
 
 <img src="https://user-images.githubusercontent.com/69218457/193430136-49dc9db2-2551-49b5-8cb4-605b5fa5a5e9.png" width=512>
 
-## Deleting a file 
+### Deleting a file 
 Now let's look at what happens when we delete the file on the disk.
 The first thing that happens after you delete a file is  the file directory entry will be updated.
 In this case the first character of file name in the direct entry is changed to &sigma;, which indicates this file is deleted.
