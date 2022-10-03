@@ -48,51 +48,32 @@ The first part of the message is the request line, containing:
 * A method (HTTP command) such as *GET*, which requests data such a web page
 * A document address such as /, which indicates the root folder
 * An HTTP version number such as HTTP/1.1
-The second part of the message is the optional information. For example, *host* indicates the server to which the request is being sent.
+The second part of the message is the optional information. For example, *host* indicates the server to which the request is being sent. The can be observed the HTTP request message has a well defined format. Therefore, the server will be able to understand the the request.
+Networks have many protocols so that computers can talk with each other.
 
+The TCP/IP protocol suite is the protocol architecture of the Internet.
+It has four layers: Application, Transport, Network, and Data Link Layer.
+Protocols on each layer do particular things.
+Details of implementation of lower layers are hidden from upper layers.
 
-For example you may want to put a particular information
-at a some
-offset of your message
-and uh so for example and the message
-may contain command and may contain the
-parameter for that commands and in that
-way right if you put a commands and
-parameters at a fixed locations then
-the
-receiver will know where to find the
-command and the where to find
-the parameters
-so that's how we design the particle
-for networks we have many particles
-and uh
-those particles will have computers to
-talk with each other
-based on the particles we actually have
-different views of a networking
-we mentioned about the web browsing when
-you try to access a web server you need
-to know the IP address and the port
-number
-right and uh that's basically the view
-of the application so
-when you actually
-do the web browsing right you just need
-to know the IP address support number
-and you you may ask hey I never actually
-used a port number
-the reason you never specified the port
-number for web browsing is
-if you don't specify the port numbers
-you use the default port numbers for
-example for unsecure version of a the
-web server the port number is 80. for
-the secure version of a web browsing the
-port number is 443 so when you don't
-specify
-the port numbers and your software will
-assume you are using the default port
-numbers
+## Different views of networks
+
+### Application View of Networking
+
+Based on the protocols we actually have
+different views of a network. 
+We discussed web browsing. When we try to access a web server we need to know the IP address (corresponding to url) and the port
+number. That's basically the view of the application.
+
+You may question: I never used an IP address, only web url/link like http://www.cs.uml.edu/~xinwenfu/index.html. Actually the web url/link corresponds to the IP address.
+Before your web browser sends out the web request, it contacts another Internet server, DNS server, asking the IP address of the web url (called domain name too).
+
+You may alo question: I never used a port number during web browing like http://www.cs.uml.edu/~xinwenfu/index.html. The reason you never specified the port number for web browsing is
+if you don't specify the port number, the web browser assumes you use the default port number.
+For example, for unsecure version of web browsing using http like http://www.cs.uml.edu/~xinwenfu/index.html, the default port number is 80. For the secure version of web browsing like https://www.cs.uml.edu/~xinwenfu/index.html, the default port number is 443.
+When you don't specify the port number, your software will assume you are using the default port number.
+
+### Transport View of Networking
 okay
 so that's the view of the application
 right and the internet actually uses a
