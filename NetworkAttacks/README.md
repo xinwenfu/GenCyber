@@ -65,7 +65,7 @@ sometimes the large amount of data may overflow the buffer and overwrite other p
 Such overflow may disrupt normal execution of the computer, which may crash.
 This is a DoS attack caused by the buffer overflow vulnerability of a computer program.
 
-### DoS against our vulnerable chat server
+#### DoS against our vulnerable chat server
 
 In our lecture on <a href="https://github.com/xinwenfu/GenCyber/tree/main/SoftwareSecurity">Penetration Testing and Software Security</a>, we have exploited the vulnerable chat server (vchat) and deployed the buffer overflow attack against vchat. We were able to hack into the Windows VM through vchat.
 
