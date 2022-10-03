@@ -1,6 +1,6 @@
 Under construction
 
-## Networking
+# Networking
 
 We are going to first look at different
 views of networks. Then we are going to
@@ -8,61 +8,50 @@ look at the network data encapsulation, that is, how your messages are put into 
 At last we are going to look at the denial of service and the distributed
 denial of service attacks.
 
+## What is the Internet?
 
-so what is the internet the internet is
-a network of Networks
-when we use internet
-there's one question here how can you
-communicate with a remote computer for
-example if you want access a web server
-running on a remote computer how can you
-access that how do you know where the
-web server is
-basically you have to know the IP
-address of the web server okay and then
-so here is an example of the IP address
-so basically
-when you want to send the data to the
-remote server or remote computer
-your
-computer and the software
-actually adds
-headers to it's a data to the message
-the headers are actual information added
-to your original message for example the
-IP header contains the destination IP
-address which indicates where this
-message is addressed to
-however on one IP address we may run
-multiple servers remember servers are
-software programs web server
-uses the web server program
-and the email server
-uses email server program
-if we run multiple servers on one IP
-when you want to talk with a
-particular server
-how can you differentiate different
-servers on one IP
-here we use important numbers so
-basically
-the top of Ip and the port uniquely I
-didn't find a server
-so the question here is a
-now
-you can send a message to a server you
-can send any data to a server how can
-data server understand your data
-this is a where
-the network protocols play their roles
-to talk with a server you must have a
-common language
-but common language is the protocol
-which defines the rules of the
-communication the procedures and the
-format of a
-your data so for example you may want to
-put a particular information
+### IP address and port number
+The internet is a network of networks.
+When we use the Internet, how can you communicate with a remote computer?
+For example, if you want to access a web server running on a remote computer,
+how do you know where the web server is?
+You have to know the IP address of the web server.
+When you want to send the data to the remote server or remote computer,
+your computer and software actually adds extra data called headers to your message.
+For example, the IP header contains the destination IP address, which indicates where this
+message is addressed to.
+
+However on one IP address, there may be multiple servers.
+Recall servers are software programs.
+A web server uses a web server program.
+An email server uses an email server program.
+If we run multiple servers on one IP, when you want to talk with a particular server,
+how can you differentiate different servers on one IP?
+We use port numbers.
+The tuple (IP, port) uniquely identified a server on a computer.
+
+### Network Protocols
+
+We can send a message to a server.
+How can the server understand our message?
+This is a where the network protocols play their roles.
+To talk with a server, our computer and the server must have a common language.
+The common language is is the protocol, which defines the rules of the communication, the procedures and the
+format of the data.
+
+For example, here is an example HTTP request message sent by a web browser to a web server (www.aol.com).
+```
+GET / HTTP/1.1
+host: www.aol.com
+```
+The first part of the message is the request line, containing:
+* A method (HTTP command) such as *GET*, which requests data such a web page
+* A document address such as /, which indicates the root folder
+* An HTTP version number such as HTTP/1.1
+The second part of the message is the optional information. For example, *host* indicates the server to which the request is being sent.
+
+
+For example you may want to put a particular information
 at a some
 offset of your message
 and uh so for example and the message
