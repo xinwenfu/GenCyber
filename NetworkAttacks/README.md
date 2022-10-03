@@ -1,45 +1,5 @@
 Once we understand the network, it's not hard to understand various attacks including DoS and DDoS.
 
-a closer concept is called the denial of
-service attack
-a closed concept is called the
-distributed Dynamic service attack so
-what is a distributed in our service
-attack
-and uh so in distributed Dynamic service
-attack many computers Attack One victim
-and for example
-right let's see you have a server you're
-running the server on your computer and
-your server will process the user
-request
-however what if
-a lot of computers send you a lot of
-requests then your computer will be busy
-with processing those like a garbage
-requests and there has no time to
-respond to
-request right and so that's basically
-the distributed denial service attack so
-you can see here a typical DDOS attack
-proceeds as follows
-the better guys compromise as many
-networked computers as possible
-then they install special software
-in the compromised computers then at a
-particular time
-issue an attack command to every
-compromise computer we call data
-computers as zombie computers sometimes
-to launch a device attack on the same
-Target and at the same time so that's
-why we call this as a distributed dos
-attack because the device attack is
-launched from many computers at the same
-time
-
-
-
 # Availability
 
 Availability means when we need particular resources, they should be available if we are authorized to use them.
@@ -87,7 +47,35 @@ void Function3(char* Input) {
 There is a well known attack called SYN flooding attack against any server that runs the TCP protocol, which is one type of Internet protocol. For example, when you browse a web server, you use TCP, which ensures all data will be correctly delivered. An attacker can send a large number of TCP SYN packets to a server. A SYN packet asks the server to open a connection. The server has to allocate resources to maintain such a connection. If there are too many connection requests, the resources will be used up and the server cannot accept any more connection requests, which may be legitimate requests not from the attackers.
 
 ## DDoS
-In a distributed DoS, multiple attackers, maybe many of them, coordinate to deploy the attack against a single target. For example, a lot of attackers may deploy the SYN flooding attack against one server and halt the serivce provided by the server. An attacker may also use botnets for DDoS. A botnet is a network of compromised computers. An attacker can install the DDoS attack software on the compromised computers, which can be synchronized through the botnet software to deploy the DDoS attack.
+
+What is a distributed denial of service (DDoS) attack?
+In a DDoS, multiple attackers, maybe many of them, coordinate to deploy the attack against a single target. 
+For example, assume we have a server, which process the user
+request. What if a lot of computers send our server a lot of requests?
+Then our server will be busy
+with processing those like a garbage
+requests and there has no time to
+respond to
+request right and so that's basically
+the distributed denial service attack so
+you can see here a typical DDOS attack
+proceeds as follows
+the better guys compromise as many
+networked computers as possible
+then they install special software
+in the compromised computers then at a
+particular time
+issue an attack command to every
+compromise computer we call data
+computers as zombie computers sometimes
+to launch a device attack on the same
+Target and at the same time so that's
+why we call this as a distributed dos
+attack because the device attack is
+launched from many computers at the same
+time
+
+For example, a lot of attackers may deploy the SYN flooding attack against one server and halt the serivce provided by the server. An attacker may also use botnets for DDoS. A botnet is a network of compromised computers. An attacker can install the DDoS attack software on the compromised computers, which can be synchronized through the botnet software to deploy the DDoS attack.
 
 In our hands-on, the vulnerable chat server can handle 100 clients. If a lot of attackers create connections to the server, the server cannot serve any new clients. This is the principle of the DDoS attack; a lot of attackers coordiante to exhaust the resources at the target.
 
