@@ -1,5 +1,3 @@
-Once we understand the network, it's not hard to understand various attacks including DoS and DDoS.
-
 # Availability
 
 Availability means when we need particular resources, they should be available if we are authorized to use them.
@@ -50,32 +48,17 @@ There is a well known attack called SYN flooding attack against any server that 
 
 What is a distributed denial of service (DDoS) attack?
 In a DDoS, multiple attackers, maybe many of them, coordinate to deploy the attack against a single target. 
-For example, assume we have a server, which process the user
-request. What if a lot of computers send our server a lot of requests?
-Then our server will be busy
-with processing those like a garbage
-requests and there has no time to
-respond to
-request right and so that's basically
-the distributed denial service attack so
-you can see here a typical DDOS attack
-proceeds as follows
-the better guys compromise as many
-networked computers as possible
-then they install special software
-in the compromised computers then at a
-particular time
-issue an attack command to every
-compromise computer we call data
-computers as zombie computers sometimes
-to launch a device attack on the same
-Target and at the same time so that's
-why we call this as a distributed dos
-attack because the device attack is
-launched from many computers at the same
-time
+For example, assume we have a server, which processes user requests. What if a lot of attacking computers send our server a lot of requests?
+Then our server will be busy with processing those junk requests and have no time to respond to legitimate requests.
 
-For example, a lot of attackers may deploy the SYN flooding attack against one server and halt the serivce provided by the server. An attacker may also use botnets for DDoS. A botnet is a network of compromised computers. An attacker can install the DDoS attack software on the compromised computers, which can be synchronized through the botnet software to deploy the DDoS attack.
+In a DDoS attack, the bad guys may compromise as many computers as possible.
+They install special software on the compromised computers.
+At a particular time, they issue an attack command to every compromised computer.
+We call compromised computers as zombie computers sometimes, which are used to launch the attack on the same
+target and at the same time.
+That's why we call this as a distributed DoS attack because the attack is launched from many computers at the same time.
+
+For example, a lot of zombie computers may deploy the SYN flooding attack against one server and halt the serivce provided by the server. An attacker may also rent botnets for DDoS. A botnet is a network of compromised computers.
 
 In our hands-on, the vulnerable chat server can handle 100 clients. If a lot of attackers create connections to the server, the server cannot serve any new clients. This is the principle of the DDoS attack; a lot of attackers coordiante to exhaust the resources at the target.
 
