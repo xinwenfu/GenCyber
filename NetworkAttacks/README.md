@@ -1,10 +1,69 @@
+Once we understand the network, it's not hard to understand various attacks including DoS and DDoS.
+
+a closer concept is called the denial of
+service attack
+a closed concept is called the
+distributed Dynamic service attack so
+what is a distributed in our service
+attack
+and uh so in distributed Dynamic service
+attack many computers Attack One victim
+and for example
+right let's see you have a server you're
+running the server on your computer and
+your server will process the user
+request
+however what if
+a lot of computers send you a lot of
+requests then your computer will be busy
+with processing those like a garbage
+requests and there has no time to
+respond to
+request right and so that's basically
+the distributed denial service attack so
+you can see here a typical DDOS attack
+proceeds as follows
+the better guys compromise as many
+networked computers as possible
+then they install special software
+in the compromised computers then at a
+particular time
+issue an attack command to every
+compromise computer we call data
+computers as zombie computers sometimes
+to launch a device attack on the same
+Target and at the same time so that's
+why we call this as a distributed dos
+attack because the device attack is
+launched from many computers at the same
+time
+
+
+
 # Availability
 
 Availability means when we need particular resources, they should be available if we are authorized to use them.
 We will first introduce the denial of service (DoS) attack and then distributed DoS (DDoS) attack, which may deny the availability of resources.
 
 ## DoS
-In a DoS attack, servers or network resources are made unavailable to legitimate clients/users. There are many types of DoS attacks. All the goals of those attacks are to crash the servers or congest the networks so that the servers or networks are not available any more. We will look at a few example DoS attacks. 
+
+What is a DoS? 
+There are various servers such as web servers and email servers on the Internet?
+So if a service is attacked and taken down, it is called Denial of Service.
+There are many ways of performing
+DoS attacks. Here are a few examples.
+
+### Ping of death
+This is an old attack happening to various operating systems (OSs) including Linux, Windows and Mac.
+If an attacker crafts a large ping packet, the OS couldn't process the large ping packet right and would crash.
+
+### DoS by buffer overflow
+When a message is sent to a computer program (locally or over the Internet), the program often uses a buffer to hold the data temporarily.
+A buffer is a piece of computer memory.
+If an attacker sends a large amount of data and the allocated buffer cannot hold it,
+sometimes the large amount of data may overflow the buffer and overwrite other parts of the computer memory.
+Such overflow may disrupt normal execution of the computer, which may crash.
+This is a DoS attack caused by the buffer overflow vulnerability of a computer program.
 
 ### DoS against our vulnerable chat server
 
