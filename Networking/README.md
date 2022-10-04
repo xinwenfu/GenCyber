@@ -10,20 +10,21 @@ The internet is a network of networks.
 When we use the Internet, how can you communicate with a remote computer?
 For example, if you want to browse a web server running on a remote computer,
 how do you know where the web server is?
-Please note here *server* is a very confusing term.
-Sometimes, we use *server* to refer to a software program such as the Apache HTTP Server, which is a web server program.
-Sometimes, we use *server* to refere to a computer that runs a particular server software program.
-But most of the time, it shall be clear from the context and sometimes it does not matter.
 To access a web server, you have to know the IP address of the web server.
 
 However on one IP address, there may be multiple servers.
 Recall servers are software programs.
 A web server uses a web server program.
 An email server uses an email server program.
-If we run multiple servers on one IP, when you want to talk with a particular server,
+If we run multiple servers on one IP, when you want to communicate with a particular server,
 how can you differentiate different servers on one IP?
 We use port numbers.
 The tuple (IP, port) uniquely identified a server on a computer.
+
+Please note here *server* is a very confusing term.
+Sometimes, we use *server* to refer to a software program such as the Apache HTTP Server, which is a web server program.
+Sometimes, we use *server* to refere to a computer that runs a particular server software program.
+But most of the time, it shall be clear from the context and sometimes it does not matter.
 
 ### Network Protocols
 
@@ -31,7 +32,7 @@ We can send a message to a server.
 How can the server understand our message?
 This is a where the network protocols play their roles.
 To talk with a server, our computer and the server must have a common language.
-The common language is is the protocol, which defines the rules of the communication, the procedures and the
+The common language is the protocol, which defines the rules, the procedures of the communication and the
 format of the data.
 
 For example, here is an example HTTP request message sent by a web browser to a web server (www.aol.com).
@@ -42,12 +43,14 @@ host: www.aol.com
 The first part of the message is the request line, containing:
 * A method (HTTP command) such as *GET*, which requests data such a web page
 * A document address such as /, which indicates the root folder
-* An HTTP version number such as HTTP/1.1
-The second part of the message is the optional information. For example, *host* indicates the server to which the request is being sent. The can be observed the HTTP request message has a well defined format. Therefore, the server will be able to understand the the request.
-Networks have many protocols so that computers can talk with each other.
+* A HTTP version number such as HTTP/1.1
+The second part of the message is the optional information.
+In this example, *host* indicates the server to which the request is being sent.
+It can be observed the HTTP request message has a well defined format. Therefore, the server will be able to understand the the request and sends back the requested web page, which also follows a well defined format.
+Networks have many protocols for a variety of purposes.
 
 The TCP/IP protocol suite is the protocol architecture of the Internet.
-It has four layers: Application, Transport, Network, and Data Link Layer.
+It has four layers: Application, Transport, Network, and Data Link Layer as shown in the figure below.
 Protocols on each layer do particular things.
 Details of implementation of lower layers are hidden from upper layers.
 
@@ -58,18 +61,16 @@ Details of implementation of lower layers are hidden from upper layers.
 
 ### Application View of Networking
 
-Based on the protocols we actually have
-different views of a network. 
-We discussed web browsing. When we try to access a web server we need to know the IP address (corresponding to url) and the port
+Based on the protocols, we actually have different views of a network. 
+We discussed web browsing. When we try to access a web server, we need to know the IP address (corresponding to url) and the port
 number. That's basically the view of the application.
 
 You may question: I never used an IP address, only web url/link like http://www.cs.uml.edu/~xinwenfu/index.html. Actually the web url/link corresponds to the IP address.
-Before your web browser sends out the web request, it contacts another Internet server, DNS server, asking the IP address of the web url (called domain name too).
+Before your web browser sends out a web request, it contacts another Internet server, DNS server, asking the IP address of the web url (called domain name too).
 
-You may alo question: I never used a port number during web browing like http://www.cs.uml.edu/~xinwenfu/index.html. The reason you never specified the port number for web browsing is
-if you don't specify the port number, the web browser assumes you use the default port number.
-For example, for unsecure version of web browsing using http like http://www.cs.uml.edu/~xinwenfu/index.html, the default port number is 80. For the secure version of web browsing like https://www.cs.uml.edu/~xinwenfu/index.html, the default port number is 443.
-When you don't specify the port number, your software will assume you are using the default port number.
+You may alo question: I never used a port number during web browing. The reason you never specified the port number for web browsing is
+if you don't specify the port number, the web browser assumes you use the default port number for that service.
+For example, for unsecure version of web browsing using *http* like http://www.cs.uml.edu/~xinwenfu/index.html, the default port number is 80. For the secure version of web browsing like https://www.cs.uml.edu/~xinwenfu/index.html, the default port number is 443.
 
 <img src="https://user-images.githubusercontent.com/69218457/193731583-cad31124-0546-48a7-887d-5c321466ee9d.png" width=480>
 
