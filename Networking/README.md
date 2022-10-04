@@ -56,7 +56,7 @@ It has four layers: Application, Transport, Network, and Data Link Layer.
 Protocols on each layer do particular things.
 Details of implementation of lower layers are hidden from upper layers.
 
-![image](https://user-images.githubusercontent.com/69218457/193728165-261300f6-0291-4647-a144-f39430dc3563.png)
+<img src="https://user-images.githubusercontent.com/69218457/193728165-261300f6-0291-4647-a144-f39430dc3563.png" width=128>
 
 
 ## Different views of networks
