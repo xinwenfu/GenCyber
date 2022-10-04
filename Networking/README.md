@@ -56,6 +56,9 @@ It has four layers: Application, Transport, Network, and Data Link Layer.
 Protocols on each layer do particular things.
 Details of implementation of lower layers are hidden from upper layers.
 
+![image](https://user-images.githubusercontent.com/69218457/193728165-261300f6-0291-4647-a144-f39430dc3563.png)
+
+
 ## Different views of networks
 
 ### Application View of Networking
@@ -74,7 +77,10 @@ For example, for unsecure version of web browsing using http like http://www.cs.
 When you don't specify the port number, your software will assume you are using the default port number.
 
 ### Transport View of Networking
-okay
+A web browser at a sender computer can send a reqeust to a web server. The request may transmit across a lot of cables and network work equipment like routers. The data may corrupt somehow during the transmission. For example, a router gets very busy and may drop the data. So we got a problem. How can the sender computer know the data got dropped? What shall the sender computer do if the data got dropped?
+
+
+
 so that's the view of the application
 right and the internet actually uses a
 protocol Suite called the TCP
