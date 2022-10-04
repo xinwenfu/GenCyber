@@ -176,7 +176,7 @@ You can click the plus sign to see the internals of one entry of data.
 The bottom panel shows the binary version of the same data you are looking at.
 Recall on computers and the Internet, all data is actually in the binary format.
 
-<img src="https://user-images.githubusercontent.com/69218457/193864571-9678a653-3d63-4afa-8540-7ad1c74086aa.png" width=480>
+<img src="https://user-images.githubusercontent.com/69218457/193864571-9678a653-3d63-4afa-8540-7ad1c74086aa.png" width=640>
 
 
 ## Hands-on
