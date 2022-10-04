@@ -76,80 +76,21 @@ if you don't specify the port number, the web browser assumes you use the defaul
 For example, for unsecure version of web browsing using http like http://www.cs.uml.edu/~xinwenfu/index.html, the default port number is 80. For the secure version of web browsing like https://www.cs.uml.edu/~xinwenfu/index.html, the default port number is 443.
 When you don't specify the port number, your software will assume you are using the default port number.
 
+![image](https://user-images.githubusercontent.com/69218457/193731583-cad31124-0546-48a7-887d-5c321466ee9d.png)
+
+
 ### Transport View of Networking
-A web browser at a sender computer can send a reqeust to a web server. The request may transmit across a lot of cables and network work equipment like routers. The data may corrupt somehow during the transmission. For example, a router gets very busy and may drop the data. So we got a problem. How can the sender computer know the data got dropped? What shall the sender computer do if the data got dropped?
+On the Internet, data may get lost during transmission. A web browser at a sender computer can send a reqeust to a web server. The request may transmit across a lot of cables and network work equipment like routers. There are a lot of routers, which are responsible for relayings user data to the destination. The data may corrupt somehow during the transmission. For example, a router gets very busy and may drop the data. So we got a problem. How can the sender computer know the data got dropped? What shall the sender computer do if the data got dropped?
 
+A sender such as the web browser relies on the transport layer, particularly the TCP protocol of the transport layer, to deliver the data reliably to the receiver such as the web server. 
+The TCP protocol adds a TCP header to the data from the application. The TCP header contains a sequene number for the data.
+When the receiver's transport layer receives the data, it shall acknowledge the arrival of the data by sending the sender an acknowledgement.
+If the sender's transport layer does not receive the acknowledgment after some time, the sender's transport layer decides the data is lost. Actually the original data is buffered at the transport layer of the sender. If the data is lost, the sender's transport layer retransmits the data until the sender's transport layer receives the acknowlegement.
 
+From the perspective of the transport layer, data is exchanged between two computers. The transport layer does not differentiate the applications and data. It assumes the data may get lost, buffers the data and retranmits the data if the data got lost.
 
-so that's the view of the application
-right and the internet actually uses a
-protocol Suite called the TCP
-and the TP PMP
-Suite has folders the application layer
-and that's actually what you see every
-day when you use browsing messaging and
-then that's the application then
-and the application layer we have the
-transport layer then we have the network
-layer and the link layer so
-protocols on each layer do particular
-things
-and the details of implementation of a
-lower layers are hidden from up layers
-that means if you change
-your low alert
-actually The Operators will not occur if
-actually your provider
-the fixed interface for the operator to
-use the lower layers
-so let's look at a
-different wheels and then let's first
-look at the application view of a
-networking
-so this is a the web browsing example we
-discussed before right and for the
-client this may be your web browser and
-then we have the web server on the right
-we start IP and the port number
-when a client doesn't specify the port
-number then
-we use a default port number so you can
-see here so basically the HTTP client
-actually uses the lower layer TCP
-to talk with the remote web server and
-the remote web server entry is the HTTP
-server which relies on the TCP server
-and so basically what happens is that
-the TC I mean the HTTP client sends its
-a message to the TCP layer and a TCP
-layer will use a lower layers and the
-forwarded the message to the TCP
-layer enter the web server then the TC
-builder at the web server will forward
-that data up to the HTTP server
-so what is the purpose of the TCP layer
-and uh so the purpose of the TCP there
-that's the transporter layer
-the idea is a you know
-on the internet
-when we transform the data if there's
-lighting and other events your data may
-be lost
-while your data is lost how can you
-recover the lost data right how can you
-guarantee the message will be delivered
-reliably to the remote
-that's what TCP layer does okay that's
-where what that transporter does and uh
-for example
-in the case of a TTP
-if
-you know your standard data and uh
-actually you will expand there will be
-some acknowledgment
-from the receiver
-if you do not receive the acknowledgment
-then the transport layer actually
+### Network View of Internet
+
 buffers
 the message and it will retransmit
 the message if it doesn't receive
