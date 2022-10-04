@@ -76,7 +76,7 @@ if you don't specify the port number, the web browser assumes you use the defaul
 For example, for unsecure version of web browsing using http like http://www.cs.uml.edu/~xinwenfu/index.html, the default port number is 80. For the secure version of web browsing like https://www.cs.uml.edu/~xinwenfu/index.html, the default port number is 443.
 When you don't specify the port number, your software will assume you are using the default port number.
 
-![image](https://user-images.githubusercontent.com/69218457/193731583-cad31124-0546-48a7-887d-5c321466ee9d.png)
+<img src="https://user-images.githubusercontent.com/69218457/193731583-cad31124-0546-48a7-887d-5c321466ee9d.png" width=480>
 
 
 ### Transport View of Networking
