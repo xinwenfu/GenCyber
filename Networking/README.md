@@ -83,107 +83,52 @@ When you don't specify the port number, your software will assume you are using 
 On the Internet, data may get lost during transmission. A web browser at a sender computer can send a reqeust to a web server. The request may transmit across a lot of cables and network work equipment like routers. There are a lot of routers, which are responsible for relayings user data to the destination. The data may corrupt somehow during the transmission. For example, a router gets very busy and may drop the data. So we got a problem. How can the sender computer know the data got dropped? What shall the sender computer do if the data got dropped?
 
 A sender such as the web browser relies on the transport layer, particularly the TCP protocol of the transport layer, to deliver the data reliably to the receiver such as the web server. 
-The TCP protocol adds a TCP header to the data from the application. The TCP header contains a sequene number for the data.
-When the receiver's transport layer receives the data, it shall acknowledge the arrival of the data by sending the sender an acknowledgement.
-If the sender's transport layer does not receive the acknowledgment after some time, the sender's transport layer decides the data is lost. Actually the original data is buffered at the transport layer of the sender. If the data is lost, the sender's transport layer retransmits the data until the sender's transport layer receives the acknowlegement.
+The TCP protocol adds a TCP header to the application data and form the TCP segment that contains the TCP header and application data.
+The TCP header contains a sequene number for the data.
+When the receiver's transport layer receives the TCP segment, it shall acknowledge the arrival of the TCP segment by sending the sender an acknowledgement.
+If the sender's transport layer does not receive the acknowledgment after some time, the sender's transport layer decides the TCP segment is lost. The original TCP segment is buffered at the transport layer of the sender. If the TCP segment is lost, the sender's transport layer retransmits the TCP segment until the sender's transport layer receives the acknowlegement.
 
-From the perspective of the transport layer, data is exchanged between two computers. The transport layer does not differentiate the applications and data. It assumes the data may get lost, buffers the data and retranmits the data if the data got lost.
+From the perspective of the transport layer, TCP segments are exchanged between two computers. The transport layer does not differentiate the applications data. It assumes the TCP segment may get lost, and thus buffers the data and retranmits the data if needed.
 
 ### Network View of Internet
 
-We now know the TCP protocol at the transport layer can ensure the data will be delivered to the destination reliably. 
-However, 
-let's look at the let the work layer
-so what is the purpose of a network
-layer and so we can see from this
-picture here
-so in a network layer we have some
-important
-network devices called routers
-so the routers
-basically collect different networks
-together and so different networks how
-a bunch of computers right so basically
-routers will collect all the computers
-and other networks together
-but we have so many routers and they are
-all collected to each other
-so we have a question when a client
-sends
-the data to a remote IP address
-which route should we actually go
-through
-should your data first go to Europe and
-come back to us of course you know if
-you use does not
-a very
-efficient path
-so basically the routers
-use protocols
-to find out
-the best
-route
-which is a sequence of routers
-for your message to reach the
-destination IP address
-so that's basically the network view of
-the internet so
-basically
-the routers
-we will look at all the computers in
-terms of ips and the vendor the best
-route
-from one and to the other end
-okay so now we understand the
-application layer transporter layer and
-the network layer
-let's look at
-the
-data declare what is data declare I
-guess you heard of Internet so on
-one region
-for example within one department or
-within your home
-you may actually collect
-different
-computers all together right so in this
-case you can see I have the client I
-have another computer
+We now know the TCP protocol at the transport layer can ensure the TCP segment will be delivered to the destination reliably. 
+However, the sender and receiver may be far away from each other. There are a lot of routers, thus a lot of routes, between the sender and the receiver.
+When the network layer of the sender receives the TCP segment from the transport layer, it adds a network header to the TCP segment and form the packet, which contains the network header and TCP segment.
+The network header contains the source IP address (sender's IP) and destination IP address (receiver's IP). The sender computer is with default gateway (i.e., router). Therefore, the packet will be delivered across the local network to the sender's default router, which works with other routers to find the shortest path to the receiver.
+So the routers connect different networks of computers together.
+
+The network view of the Internet is routers form paths between pairs of computers.
+Routers run routing protocols and find the best route between pairs of computers.
+Routers forwards a packet based on the destination IP address of the packet to other routers.
 
 <img src="https://user-images.githubusercontent.com/69218457/193841722-2e72bd4b-9dd4-48d2-bdf2-dd0526c071d9.png" width=480>
 
+### Data Link Layer View of Internet
 
-the letter to the ethernet so that's
-actually some kind of physical words
-collecting the client collecting the
-another computer and routers together
-so we've got a question here the
-question is
-while we use the computers to send
-messages
-who should stand first who should send a
-second
-the challenge here is if other computers
-talk at the same time
-those message will be sent to the wire
-then basically they will override each
-other
-we have a collision
-nobody's data will be delivered
-and all the data will be
-corrupt
-so basically
-enter the date link layer one important
-thing
-that will be done is to determine
-who
-should send now who should ascendant
-next
-okay and uh
-so that's about the data link layer so
-in this way you know our data can be
-reliably delivered
-to
+We now know the network protocols find the best through a bunches of routers to deliver network packets.
+However, we still have the task of delivering the data from a computer to its default router.
+Computers and their router can form a local network and exchange data bewteen them.
+We look at a popular technology, Ethernet, that can connect local computers including the router together.
+A home network is an example of local area network.
+
+Ethernet can use shared medium like Ethernet cables connecting all computers together.
+We've got a problem.
+Since it is a shared medium, at any time one computer can send data to the shared media to the receiver.
+Otherwise, if multiple computers send data at the same time, those data override each other and all will get corrupt. This is called collision.
+So which computer should send first and which should send second?
+One critical functionality of the data linker is to addres the collision problem.
+Ethernet uses the carrier-sense multiple access with collision detection (CSMA/CD) scheme to solve the collision problem.
+
+For Ethernet, when the data linker layer of the sender receives the network packet,
+it adds the Ethernet header to the packet and form an Ethernet frame.
+The Ethernet header contains the Ethernet address of next hop (e.g., router) as the destination Ethernet address.
+In this way, when the router receives the Ethernet frame, it knows it is the receiver.
+It then finds the destination IP address from the network header and perform the routing.
+
+<img src="https://user-images.githubusercontent.com/69218457/193858685-4e973637-861c-4d44-8c5d-0be39bf54cfa.png" width=480>
+
+
 the router to another computer
 so here
 is a big picture of layers in example
