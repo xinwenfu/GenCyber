@@ -152,7 +152,7 @@ One purpose of the Ethernet is to ensure every local computer has the chance to 
 
 The picture below is a partial list of protocols on each layer.
 
-![image](https://user-images.githubusercontent.com/69218457/193863427-a83df29e-b67c-4be9-8c36-311893924c5e.png)
+<img src="https://user-images.githubusercontent.com/69218457/193863427-a83df29e-b67c-4be9-8c36-311893924c5e.png" width=480>
 
 
 so there are many many protocols and
