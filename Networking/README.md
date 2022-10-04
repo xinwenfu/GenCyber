@@ -91,7 +91,7 @@ From the perspective of the transport layer, data is exchanged between two compu
 
 ### Network View of Internet
 
-buffers
+We now know the TCP protocol at the transport layer can ensure the data will be delivered to the destination reliably. 
 the message and it will retransmit
 the message if it doesn't receive
 the acknowledgment in a particular
