@@ -126,71 +126,35 @@ The Ethernet header contains the Ethernet address of next hop (e.g., router) as 
 In this way, when the router receives the Ethernet frame, it knows it is the receiver.
 It then finds the destination IP address from the network header and perform the routing.
 
+### Putting Everything Together
+
+Below is a big picture of different views and layers of protocols.
+For two computers communicating with each other, it appears the corresponding layers on the computers talk with each other.
+When you use HTTP for web browsing, you do not really need to care about how the TCP is implemented although you need to use TCP APIs (which are the interface between HTTP and TCP) to ask the TCP to deliver the HTTP messages.
+The implementation of TCP is independent from HTTP, which is the protocl between the web client (browser) and web server.
+
+We said one purpose of the TCP of the transporter layer is to deliver data reliably .
+You may have different ideas to implement that reliable delivery.
+You can implement, try them and see which one works better.
+But if the APIs for the application are not changed, the application will still work.
+The TCP layers at the sender and receiver work together to ensure the data is correctly delivered.
+You also don't need to care about how the data will be routed to the destination.
+
+The network layer, i.e., the IP layer receives the data from the transport layer through a programming interface, which shall be well defined.
+Then you may implement different routing protocols at the network layer. 
+So it appears the network layers of routers work together to find the best routes.
+The network layer also does not need to care how its data will be sent to the local media, e.g., Ethernet cables.
+
+One purpose of the Ethernet is to ensure every local computer has the chance to send their data and there will be no collision.
+
+
 <img src="https://user-images.githubusercontent.com/69218457/193858685-4e973637-861c-4d44-8c5d-0be39bf54cfa.png" width=480>
 
+The picture below is a partial list of protocols on each layer.
 
-the router to another computer
-so here
-is a big picture of layers in example
-when you actually
-design your
-particles you only care about the
-protocols stay on the same layer so for
-example
-when you actually trying to use HTTP you
-really need to care about the TCP IP
-internet you only need to know
-how you can use TCP but normally we call
-that as a programming interface the
-programming interface is determined
-although the implementation of TCP is
-hidden from
-http
-okay so you can just reliably use a the
-program interface and
-design your own application protocol and
-then
-you will communicate it with your
-friends and the destination happily and
-then for example we mentioned the
-purpose of the transporter layer one
-purpose is to deliver data reliably you
-may have different ideas to implement
-that idea right and but really you know
-uh you can Implement you can try them
-and see which one works but that will
-not affect the up layer protocol
-and also you can see here
-when you did that your way of
-re-transformation to ensure the data
-will be delivered you don't need to care
-about how the data will be routed to the
-destination that's basically
-the function of the network layer here
-the IP layer right and so you just there
-to know the program interface
-of
-the IP layer and
-the typical error just in the standard
-data to the IP layer then an IP layer
-will use any kind of a relative protocol
-to deliver your data efficiently to the
-destination
-so again here you can see here in the
-appear don't need to care about the
-implementation of the ethernet and as we
-mentioned the purpose of the ethernet
-the one purpose is a to
-ensure locally
-and every computer
-has the chance to standard their data
-and that data will not have creation and
-everything will be standard
-effectively right and we do I mean the
-IP there really doesn't need to care
-about the
-the implementation of the Eastern
-Ethernet or the data link layer okay
+![image](https://user-images.githubusercontent.com/69218457/193863427-a83df29e-b67c-4be9-8c36-311893924c5e.png)
+
+
 so there are many many protocols and
 here are some examples and you can see
 here right on the application layers
