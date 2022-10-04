@@ -46,31 +46,29 @@ The first part of the message is the request line, containing:
 * A HTTP version number such as HTTP/1.1
 The second part of the message is the optional information.
 In this example, *host* indicates the server to which the request is being sent.
-It can be observed the HTTP request message has a well defined format. Therefore, the server will be able to understand the the request and sends back the requested web page, which also follows a well defined format.
-Networks have many protocols for a variety of purposes.
+It can be observed the HTTP request message has a well defined format. Therefore, the server will be able to understand the the request and send back the requested web page. The response from the web server also follows a well defined format.
 
 The TCP/IP protocol suite is the protocol architecture of the Internet.
 It has four layers: Application, Transport, Network, and Data Link Layer as shown in the figure below.
-Protocols on each layer do particular things.
+Protocols on each layer do particular things and will be explained later.
 Details of implementation of lower layers are hidden from upper layers.
 
 <img src="https://user-images.githubusercontent.com/69218457/193728165-261300f6-0291-4647-a144-f39430dc3563.png" width=128>
-
 
 ## Different views of networks
 
 ### Application View of Networking
 
 Based on the protocols, we actually have different views of a network. 
-We discussed web browsing. When we try to access a web server, we need to know the IP address (corresponding to url) and the port
-number. That's basically the view of the application.
+We discussed web browsing, which is implemented on the application layer. When we try to access a web server, we need to know the IP address (corresponding to url) and the port
+number. That's basically the view of the web browsing application. Other applicatons have a similar view.
 
 You may question: I never used an IP address, only web url/link like http://www.cs.uml.edu/~xinwenfu/index.html. Actually the web url/link corresponds to the IP address.
 Before your web browser sends out a web request, it contacts another Internet server, DNS server, asking the IP address of the web url (called domain name too).
 
 You may alo question: I never used a port number during web browing. The reason you never specified the port number for web browsing is
 if you don't specify the port number, the web browser assumes you use the default port number for that service.
-For example, for unsecure version of web browsing using *http* like http://www.cs.uml.edu/~xinwenfu/index.html, the default port number is 80. For the secure version of web browsing like https://www.cs.uml.edu/~xinwenfu/index.html, the default port number is 443.
+For example, for the unsecure version of web browsing using *http* like http://www.cs.uml.edu/~xinwenfu/index.html, the default port number is 80. For the secure version of web browsing like https://www.cs.uml.edu/~xinwenfu/index.html, the default port number is 443.
 
 <img src="https://user-images.githubusercontent.com/69218457/193731583-cad31124-0546-48a7-887d-5c321466ee9d.png" width=480>
 
