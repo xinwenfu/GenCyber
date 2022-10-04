@@ -1,25 +1,20 @@
-Under construction
-
 # Networking
 
-We are going to first look at different
-views of networks. Then we are going to
-look at the network data encapsulation, that is, how your messages are put into network packets.
-At last we are going to look at the denial of service and the distributed
-denial of service attacks.
+We are going to look at what is the Internet  and different views of networks. Then we are going to
+check the network data encapsulation, that is, how your messages are put into network packets.
 
 ## What is the Internet?
 
 ### IP address and port number
 The internet is a network of networks.
 When we use the Internet, how can you communicate with a remote computer?
-For example, if you want to access a web server running on a remote computer,
+For example, if you want to browse a web server running on a remote computer,
 how do you know where the web server is?
-You have to know the IP address of the web server.
-When you want to send the data to the remote server or remote computer,
-your computer and software actually adds extra data called headers to your message.
-For example, the IP header contains the destination IP address, which indicates where this
-message is addressed to.
+Please note here *server* is a very confusing term.
+Sometimes, we use *server* to refer to a software program such as the Apache HTTP Server, which is a web server program.
+Sometimes, we use *server* to refere to a computer that runs a particular server software program.
+But most of the time, it shall be clear from the context and sometimes it does not matter.
+To access a web server, you have to know the IP address of the web server.
 
 However on one IP address, there may be multiple servers.
 Recall servers are software programs.
