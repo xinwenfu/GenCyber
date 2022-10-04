@@ -74,36 +74,37 @@ For example, for the unsecure version of web browsing using *http* like http://w
 
 
 ### Transport View of Networking
-On the Internet, data may get lost during transmission. A web browser at a sender computer can send a reqeust to a web server. The request may transmit across a lot of cables and network work equipment like routers. There are a lot of routers, which are responsible for relayings user data to the destination. The data may corrupt somehow during the transmission. For example, a router gets very busy and may drop the data. So we got a problem. How can the sender computer know the data got dropped? What shall the sender computer do if the data got dropped?
 
-A sender such as the web browser relies on the transport layer, particularly the TCP protocol of the transport layer, to deliver the data reliably to the receiver such as the web server. 
+On the Internet, data may get lost during transmission. A web browser at a sender computer can send a reqeust to a web server. The request may transmit across a lot of cables, maybe air if wireless is used, and network work equipment like routers. On the Internet, there are a lot of routers, which are responsible for relayings user data to the destination. The data may corrupt during the transmission. For example, a router may get very busy and drop the data. So we got a problem. How can the sender computer know the data got dropped? What shall the sender computer do if the data got dropped?
+
+A sender such as the web browser relies on the transport layer, particularly the TCP protocol of the transport layer, to deliver the data reliably to the receiver. 
 The TCP protocol adds a TCP header to the application data and form the TCP segment that contains the TCP header and application data.
 The TCP header contains a sequene number for the data.
 When the receiver's transport layer receives the TCP segment, it shall acknowledge the arrival of the TCP segment by sending the sender an acknowledgement.
-If the sender's transport layer does not receive the acknowledgment after some time, the sender's transport layer decides the TCP segment is lost. The original TCP segment is buffered at the transport layer of the sender. If the TCP segment is lost, the sender's transport layer retransmits the TCP segment until the sender's transport layer receives the acknowlegement.
+If the sender's transport layer does not receive the acknowledgment after some time, the sender's transport layer decides the TCP segment is lost. The original TCP segment isactually buffered at the transport layer of the sender. If the TCP segment is lost, the sender's transport layer retransmits the TCP segment until it receives the acknowlegement.
 
-From the perspective of the transport layer, TCP segments are exchanged between two computers. The transport layer does not differentiate the applications data. It assumes the TCP segment may get lost, and thus buffers the data and retranmits the data if needed.
+From the perspective of the transport layer, TCP segments are exchanged between two IP addresses. The transport layer does not differentiate the applications data. It assumes the TCP segment may get lost, and thus buffers the data and retranmits the data if needed.
 
 ### Network View of Internet
 
-We now know the TCP protocol at the transport layer can ensure the TCP segment will be delivered to the destination reliably. 
+We now know the TCP protocol at the transport layer can ensure TCP segments are delivered to the destination correctly. 
 However, the sender and receiver may be far away from each other. There are a lot of routers, thus a lot of routes, between the sender and the receiver.
-When the network layer of the sender receives the TCP segment from the transport layer, it adds a network header to the TCP segment and form the packet, which contains the network header and TCP segment.
-The network header contains the source IP address (sender's IP) and destination IP address (receiver's IP). The sender computer is with default gateway (i.e., router). Therefore, the packet will be delivered across the local network to the sender's default router, which works with other routers to find the shortest path to the receiver.
+When the network layer of the sender receives the TCP segment from the transport layer, it adds a network header, called IP header too, to the TCP segment and form the packet, which contains the network header and TCP segment.
+The network header contains the source IP address (sender's IP) and destination IP address (receiver's IP). The sender computer is configuired with a default gateway (i.e., router). Therefore, the packet will be delivered across the local network to the sender's default router, which works with other routers to find the best path (e.g., shorted path) to the receiver.
 So the routers connect different networks of computers together.
 
-The network view of the Internet is routers form paths between pairs of computers.
-Routers run routing protocols and find the best route between pairs of computers.
-Routers forwards a packet based on the destination IP address of the packet to other routers.
+The network view of the Internet is routers form routes between computers.
+Routers run routing protocols and find the best routes between computers.
+Routers forwards a packet based on the destination IP address of the packet to other routers until it reaches the receiver.
 
 <img src="https://user-images.githubusercontent.com/69218457/193841722-2e72bd4b-9dd4-48d2-bdf2-dd0526c071d9.png" width=480>
 
 ### Data Link Layer View of Internet
 
-We now know the network protocols find the best through a bunches of routers to deliver network packets.
+We now know the network protocols find the best route through routers to deliver network packets to the destination.
 However, we still have the task of delivering the data from a computer to its default router.
-Computers and their router can form a local network and exchange data bewteen them.
-We look at a popular technology, Ethernet, that can connect local computers including the router together.
+Local computers such as those in a home and their router can form a local network and exchange data bewteen them.
+We will look at a popular technology, Ethernet, that can connect local computers including the router together.
 A home network is an example of local area network.
 
 Ethernet can use shared medium like Ethernet cables connecting all computers together.
@@ -117,40 +118,41 @@ Ethernet uses the carrier-sense multiple access with collision detection (CSMA/C
 For Ethernet, when the data linker layer of the sender receives the network packet,
 it adds the Ethernet header to the packet and form an Ethernet frame.
 The Ethernet header contains the Ethernet address of next hop (e.g., router) as the destination Ethernet address.
-In this way, when the router receives the Ethernet frame, it knows it is the receiver.
-It then finds the destination IP address from the network header and perform the routing.
+In this way, when the router receives the Ethernet frame, it knows it is the receiver for that frame.
+It then finds the destination IP address from the network header within the Ethernet frame and performs the routing.
+
+The data link layer's view of the Internet is there are computers competing to send data out to the transmission media. One critical function of the data link layer is to coordiante and make sure every computer has a chance to send its data and there is no collision.
 
 ### Putting Everything Together
 
-Below is a big picture of different views and layers of protocols.
+Below is a big picture of different views and layers of protocols using the example of web browing.
 For two computers communicating with each other, it appears the corresponding layers on the computers talk with each other.
-When you use HTTP for web browsing, you do not really need to care about how the TCP is implemented although you need to use TCP APIs (which are the interface between HTTP and TCP) to ask the TCP to deliver the HTTP messages.
+When you use HTTP for web browsing, you do not really need to care about how the TCP is implemented although you need to program the web browisng application with TCP APIs (which are the interface between HTTP and TCP) so as to ask the TCP to deliver the HTTP messages.
 The implementation of TCP is independent from HTTP, which is the protocl between the web client (browser) and web server.
 
 We said one purpose of the TCP of the transporter layer is to deliver data reliably .
 You may have different ideas to implement that reliable delivery.
 You can implement, try them and see which one works better.
-But if the APIs for the application are not changed, the application will still work.
+But if the TCP APIs for the application are not changed, the application will still work.
 The TCP layers at the sender and receiver work together to ensure the data is correctly delivered.
 You also don't need to care about how the data will be routed to the destination.
 
 The network layer, i.e., the IP layer receives the data from the transport layer through a programming interface, which shall be well defined.
 Then you may implement different routing protocols at the network layer. 
-So it appears the network layers of routers work together to find the best routes.
+So it appears the network layers of different routers work together to find the best routes.
 The network layer also does not need to care how its data will be sent to the local media, e.g., Ethernet cables.
 
-One purpose of the Ethernet is to ensure every local computer has the chance to send their data and there will be no collision.
-
+Ethernet ensures every local computer has the chance to send their data and there will be no collision.
 
 <img src="https://user-images.githubusercontent.com/69218457/193858685-4e973637-861c-4d44-8c5d-0be39bf54cfa.png" width=480>
 
-The picture below is a partial list of protocols on each layer.
+The picture below is a partial list of protocols on each layer of the TCP/IP protocol suite.
 
 <img src="https://user-images.githubusercontent.com/69218457/193863427-a83df29e-b67c-4be9-8c36-311893924c5e.png" width=480>
 
 ## Network data encapsulation
 
-You can see we have different layers in the TCP network suite. We also discussed each layer adds a header to implement its functionalities.
+You can see we have different layers in the TCP/IP protocol suite. We also discussed each layer adds a header to implement its functionalities.
 On the application layer, the application defines its own protocol and data format.
 One the transport layer, for the TCP, the TCP protcol adds the TCP header to the application data and forms the TCP segment.
 On the network layer, the IP header is added to the TCP segment and we have the IP packet.
@@ -168,11 +170,11 @@ network card on your computer.
 The figure below is one example.
 I captured some Ethernet frames at my computer with Wireshark.
 You can see the top panel of Wireshark shows the metadata of the Ethernet frames.
-If you click one entry, it shows you the details of the Ethernet frame in the middle panel.
-You see the different headers and data.
-Click the plus sign to see the internals of one entry of data.
-The bottom panel shows the binary version of the same data.
-Recall all data is actiually in the binary format.
+If you click one entry, the middle panel shows you the details of the Ethernet frame.
+You see different headers and data.
+You can click the plus sign to see the internals of one entry of data.
+The bottom panel shows the binary version of the same data you are looking at.
+Recall on computers and the Internet, all data is actually in the binary format.
 
 <img src="https://user-images.githubusercontent.com/69218457/193864571-9678a653-3d63-4afa-8540-7ad1c74086aa.png" width=480>
 
