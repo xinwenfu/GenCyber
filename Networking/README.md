@@ -154,139 +154,34 @@ The picture below is a partial list of protocols on each layer.
 
 <img src="https://user-images.githubusercontent.com/69218457/193863427-a83df29e-b67c-4be9-8c36-311893924c5e.png" width=480>
 
+## Network data encapsulation
 
-so there are many many protocols and
-here are some examples and you can see
-here right on the application layers
-then we have many protocols pin HTTP
-telnet FTP DNS SNMP
-and other transport layers we have TCP
-UDP and other network layer that we have
-icmp idmp DHCP
-and the rip pm ospf on the data link
-layer that we have arp we have ethernet
-and finally you can see at the bottom of
-all the layers
-is the network interface that is
-basically the mystery fifth layer
-physical layer
-okay so you can see we have different
-layers
-on the TCP Network Suite
-and actually you know for
-each layer when your data passes through
-each layer
-the header will be added to your
-actually
-data so for example let's see
-the example for http
-and your adtp may be about a
-downloading
-like a message right so when you use
-HTTP you do web browsing and you will be
-actually download
-the HTML file from the remote web server
-then your web server will actually show
-the HTML file to you then you see
-basically the web page and so the HTML
-file corresponds to the web page you'll
-see so the HTM file is the user data
-so
-however you cannot just extend the user
-data
-to the remote and you have to
-add the hdb header to the user data to
-indicate and what is that the data you
-understand is audio image file lens and
-so the hdb header actually
-will contain such information
-so then now
-your data enter the application of HTTP
-is ready and it will be sent to the TCP
-layer okay and as we mentioned the TCP
-layer here
-will ensure actually
-your data will be reliably delivered so
-the TCP header for example will contain
-a sequence number which is used to
-identify your data and in this way right
-and uh
-when the receiver receives the data they
-can acknowledge okay I receive the data
-with a secret number like that
-and so basically you know the tsp header
-will contain such information like a
-sequence number to implement its own
-functionality okay and then we call
-actually the TCP layer data as a TCP
-segment
-so now the TCP segment is ready
-all right
-we send this TV segment to the IP layer
-the appear
-of class will add the destination IP in
-the source IP to the TCP segment and
-because you know for routers to find the
-best route the routers need to know the
-destination IP so that's why we're going
-to put the decision IP into the IP
-header okay
-good and then so we call the IPL data as
-a IP datagram or IP packet and this IP
-packet will be extended to the ethernet
-and the ethernet will add
-the ethernet header to the IP datagram
-and then the incident header contains
-information needed for
-ensure the data can be delivered to the
-local device reliably
-so here is a
-actually the
-ethernet frame okay so you can see here
-and we have the incident header it
-contains the destination address and the
-source address which refers to the MAC
-address is okay and so the Mac addresses
-are the addresses for devices
-within the local network and uh so the
-incident there requires those addresses
-to ensure the data will be delivered to
-the right device
-now we have the IP layer which contains
-the source IP address destination API
-address
-so we have the TCP header which actually
-contains the X6 number as we mentioned
-and we also have it's another trailer
-here and default reliable delivery of
-your data
-foreign program
-for protocol analysis you can use word
-shock to capture networker packets
-to your
-network card on your computer so here is
-one example I captured some packets you
-can see here at the top panel here we
-have all the metadata of the package if
-you click
-one entry here then it will show you the
-details of the
-internal frame which contains the IP
-packet then you can see here there's
-some kind of Arrow here you click Arrow
-it will expand to show you more details
-okay and then at the bottom
-panel here we have
-the banner data
-for all the information about okay so
-they are the same thing so basically
-here you want to pay attention the
-barrel numbers are the same thing as we
-show in other panels but really you know
-the other information so because of the
-protocols
-now we can explain the banner data
-appropriately
+You can see we have different layers in the TCP network suite. We also discussed each layer adds a header to implement its functionalities.
+On the application layer, the application defines its own protocol and data format.
+One the transport layer, for the TCP, the TCP protcol adds the TCP header to the application data and forms the TCP segment.
+On the network layer, the IP header is added to the TCP segment and we have the IP packet.
+On the data link layer, for Ethernet, the Ethernet header is added to the IP packet and we have the Ehternet frame.
+
+<img src="https://user-images.githubusercontent.com/69218457/193864416-6c676fd0-81f8-4317-801f-79b64c237c06.png" width=480>
+
+The picture below shows the data fields of an IP packet.
+
+<img src="https://user-images.githubusercontent.com/69218457/193864536-5305ee50-5884-4b6c-b780-a4221abf9908.png" width=480>
+
+Wireshark is a very important tool to analyze network data and understand the protocol.
+It is a protocol analysis tool you can use to capture Ethernet frames to and from your
+network card on your computer.
+The figure below is one example.
+I captured some Ethernet frames at my computer with Wireshark.
+You can see the top panel of Wireshark shows the metadata of the Ethernet frames.
+If you click one entry, it shows you the details of the Ethernet frame in the middle panel.
+You see the different headers and data.
+Click the plus sign to see the internals of one entry of data.
+The bottom panel shows the binary version of the same data.
+Recall all data is actiually in the binary format.
+
+<img src="https://user-images.githubusercontent.com/69218457/193864571-9678a653-3d63-4afa-8540-7ad1c74086aa.png" width=480>
+
 
 ## Hands-on
 
