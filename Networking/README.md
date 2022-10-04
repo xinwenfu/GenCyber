@@ -92,12 +92,7 @@ From the perspective of the transport layer, data is exchanged between two compu
 ### Network View of Internet
 
 We now know the TCP protocol at the transport layer can ensure the data will be delivered to the destination reliably. 
-the message and it will retransmit
-the message if it doesn't receive
-the acknowledgment in a particular
-period of time
-so that's the view of a application
-layer and the transporter layer now
+However, 
 let's look at the let the work layer
 so what is the purpose of a network
 layer and so we can see from this
@@ -154,6 +149,10 @@ different
 computers all together right so in this
 case you can see I have the client I
 have another computer
+
+<img src="https://user-images.githubusercontent.com/69218457/193841722-2e72bd4b-9dd4-48d2-bdf2-dd0526c071d9.png" width=480>
+
+
 the letter to the ethernet so that's
 actually some kind of physical words
 collecting the client collecting the
