@@ -13,7 +13,7 @@ The content targets people who want to understand advanced cyber attacks and cyb
 We designed the curriculum targeting high school students attending the NSA sponsored GenCyber cybersecurity summer camp with no much programming and cybersecurity background at the University of Massachusetts Lowell, but guess it will benefit anyone who really wants to understand real-world attacks and defense.
 
 ## Lab environment
-Refer to [lab environment](lab-environment)
+Refer to <a href="https://github.com/xinwenfu/GenCyber/tree/main/LabEnvironment">lab environment</a>
 
 ## Lectures and hands-on 
 Here are the lectures and hands-on labs. The hands-on labs are at the end of a lecture. Some lectures are missing although all hands-on labs are over there.
