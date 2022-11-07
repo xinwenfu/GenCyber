@@ -185,7 +185,7 @@ The next dialog window is *Add Data Source*. We do not have more data soures and
 
 <img src="https://user-images.githubusercontent.com/69218457/193172925-bc202e89-c22a-45bc-8a13-63ef59001c38.png" width=720>
 
-For a large image file, the analysis may take some time. Please wait for the analysis to finish. It is indicated on the status bar, which shall show 100% at the bottom.
+For a large image file, the analysis may take some time. Please wait for the analysis to finish. It is indicated on the status bar at the bottom, which shall show 100%.
 
 ![image](https://user-images.githubusercontent.com/69218457/200358165-39ad61a7-8093-45fd-847c-88582fb68f8c.png)
 
