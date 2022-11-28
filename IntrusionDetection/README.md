@@ -140,6 +140,7 @@ The size of the packet is anomalous behavior.
 Zero-Latency Active IDS/IDP is the only way of blocking this worm from propagating so fast.
 
 ## Wireshark
+### Capturing packets
 Wireshark is a very useful software program.
 It can capture network packets coming into and going out of your computer and show all the packets.
 The picture below is the Wireshark interface.
@@ -170,6 +171,12 @@ When you learn the Internet, Wireshark will help you a lot telling you
 what each field means and what is the name.
 
 The binary content of the entire packet is shown in the bottom panel, including all the headers in binary.
+
+### Searching packet contents
+
+To find a string within packets, click on Edit > Find Packet. 
+* Select **Packet list**, Packet details or Packet bytes
+Under "Find By:" select "string" and enter your search string in the text entry box. You'll probably want to leave "Case sensitive" unchecked. Under "Search in", the default is "Packet list" but that will only find a string that appears in the Info column of the Packet List pane, which is the one-line-per-packet summary view. There is a lot more information in most packets than what appears in the packet list Info column, so try "Packet details" and "Packet bytes".
 
 ## Hands-on
 
