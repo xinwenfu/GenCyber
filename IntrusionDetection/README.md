@@ -180,7 +180,7 @@ To find something such as a string within packets, click on *Edit* > *Find Packe
 * Check *Case sensitive* if needed
 * Select *Display filter*, *Hex value*, *String* or *Regular expression*. The *Display filter* allows to find pakcets matching the display filter entered in the text entry field. 
 
-The screenshot below show the search of string "KNOCK" in packet bytes.
+The screenshot below shows the search of string "KNOCK" in packet bytes.
 
 ![image](https://user-images.githubusercontent.com/69218457/204338870-015bca22-526c-46c1-b066-5901ba8c1ed7.png)
 
