@@ -182,7 +182,7 @@ To find something such as a string within packets, click on *Edit* > *Find Packe
 
 The screenshot below shows the search of string "KNOCK" in packet bytes.
 
-![image](https://user-images.githubusercontent.com/69218457/204338870-015bca22-526c-46c1-b066-5901ba8c1ed7.png)
+![image](https://user-images.githubusercontent.com/69218457/204364154-a21bd34e-f529-4680-b91e-16438dabf13a.png)
 
 
 
