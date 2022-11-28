@@ -175,8 +175,11 @@ The binary content of the entire packet is shown in the bottom panel, including 
 ### Searching packet contents
 
 To find a string within packets, click on Edit > Find Packet. 
-* Select **Packet list**, Packet details or Packet bytes
-Under "Find By:" select "string" and enter your search string in the text entry box. You'll probably want to leave "Case sensitive" unchecked. Under "Search in", the default is "Packet list" but that will only find a string that appears in the Info column of the Packet List pane, which is the one-line-per-packet summary view. There is a lot more information in most packets than what appears in the packet list Info column, so try "Packet details" and "Packet bytes".
+* Select *Packet list*, *Packet details* or *Packet bytes*, that is, where to search
+* Select the type of data (encoding format) *Narrow & Wide*, *Narrow (UTF-8/ASCII)* or *Wide (UTF-16)* for the string search
+* Check *Case sensitive* if needed
+* Select *Display filter*, *Hex value*, *String* or *Regular expression*. The *Display filter* allows to find pakcets matching the display filter entered in the text entry field. 
+
 
 ## Hands-on
 
