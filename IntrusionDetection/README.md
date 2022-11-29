@@ -286,3 +286,8 @@ To find the IP of the Kali VM, use the command *ifconfig* within a terminal.
 ### Hands-on 2 Identifying Attack
 
 Deploy the knock attack with Armitage from the Kali VM against Windows VM. Use Wireshark on Windows VM to capture the attack traffic. Can you find the attack packets sent from the Kali VM to Windows VM? Highlight the attack packet/packets in a screenshot.
+
+## References
+
+* Richard Sharpe, Ed Warnicke, Ulf Lamping, Wireshark User’s Guide, Version 3.7.0, https://www.wireshark.org/docs/wsug_html_chunked/index.html, last accessed on Nov. 23, 2021.
+* DisplayFilters (from Wireshark Wiki), https://gitlab.com/wireshark/wireshark/-/wikis/DisplayFilters, last accessed on Nov. 23, 2021
