@@ -277,13 +277,12 @@ The screenshot below shows the search of string "KNOCK" with the options of *pac
 Read [Wireshark](#wireshark)
 
 ### Hands-on 1 Capturing Packets
+
 Capture packets between Windows VM and Kali VM.
 
 To find the IP of the Windows VM, use the command *ipconfig* within a command console.
 To find the IP of the Kali VM, use the command *ifconfig* within a terminal.
 
 ### Hands-on 2 Identifying Attack
-Deploy the *knock* attack against Windows VM. 
-Use Wireshark to capture the attack traffic.
-Can you find the attack packets sent from Kali VM to Windows VM?
 
+Deploy the knock attack with Armitage from the Kali VM against Windows VM. Use Wireshark on Windows VM to capture the attack traffic. Can you find the attack packets sent from the Kali VM to Windows VM? Highlight the attack packet/packets in a screenshot.
