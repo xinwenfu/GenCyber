@@ -179,6 +179,7 @@ The code below gives the Ruby code of the knock attack we wrote for Metasploit a
     outbound = "KNOCK /.:/" + "A"*2002 + [target['jmpesp']].pack('V') + "C"*32 + shellcode 
 ```
 The variable outbound contains the malicious string. It can be observed that the malicious string contains the string "KNOCK /.:/" + "A"*2002, which is "KNOCK /.:/" followed by 2002 As. This string can be used as a signature to detect the knock attack.
+
 ```
 ##
 # The # symbol starts a comment
