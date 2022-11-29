@@ -258,6 +258,8 @@ class MetasploitModule < Msf::Exploit::Remote	# This is a remote exploit module 
 end
 ```
 
+We now show how to use Wireshark to search the signature string and detect the knock attack. As a demo, on Windows we start Wireshark to capture the traffic between the attacking Kali VM and Windows VM where vchat runs. Once the traffic is dumped, we can search contents of captured packets for the signature string.
+
 To find something such as a string within packets, click on *Edit* > *Find Packet*. 
 * Select *Packet list*, *Packet details* or *Packet bytes*, that is, where to search
 * Select the type of data (encoding format) *Narrow & Wide*, *Narrow (UTF-8/ASCII)* or *Wide (UTF-16)* for the string search
