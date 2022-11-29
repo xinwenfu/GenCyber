@@ -172,7 +172,14 @@ what each field means and what is the name.
 
 The binary content of the entire packet is shown in the bottom panel, including all the headers in binary.
 
-### Searching packet contents
+### Searching packet contents for intrusion detection
+
+The code below gives the Ruby code of the knock attack we wrote for Metasploit against our vulnerable chat server vchat. The statement in bold in Listing 7 1 defines the malicious string that is sent to vchat and is also listed as follows. 
+```
+    outbound = "KNOCK /.:/" + "A"*2002 + [target['jmpesp']].pack('V') + "C"*32 + shellcode 
+```
+The variable outbound contains the malicious string. It can be observed that the malicious string contains the string "KNOCK /.:/" + "A"*2002, which is "KNOCK /.:/" followed by 2002 As. This string can be used as a signature to detect the knock attack.
+
 
 To find something such as a string within packets, click on *Edit* > *Find Packet*. 
 * Select *Packet list*, *Packet details* or *Packet bytes*, that is, where to search
