@@ -266,7 +266,7 @@ To find something such as a string within packets, click on *Edit* > *Find Packe
 * Check *Case sensitive* if needed
 * Select *Display filter*, *Hex value*, *String* or *Regular expression*. The *Display filter* allows to find pakcets matching the display filter entered in the text entry field. 
 
-The screenshot below shows the search of string "KNOCK" in packet bytes.
+The screenshot below shows the search of string "KNOCK" with the options of *packet bytes*, *Narrow & Wide*, *Case sensitive*, and *String*.
 
 ![image](https://user-images.githubusercontent.com/69218457/204364154-a21bd34e-f529-4680-b91e-16438dabf13a.png)
 
