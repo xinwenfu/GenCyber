@@ -45,60 +45,61 @@ The host computer (i.e., the physical computer) runs the [operating system](http
 
 <img src="../imgs/KubuntuKali.PNG">
 
-## Collecting Information about Metasploitable
+Question: 
+- How can you find the IP address of Kali? Start a *Terminal Emulator* and type the command *ifconfig* and then enter.
+- What is the IP address of the Kali VM?
 
-6. Log into the Metasploitable Linux with the following credentials. In real world, we can use a variety of tools such as *nmap* to find the IP address of Metasploitable. For simplicity, we will just log into Metasploitable and use a command to find its IP address.
-   - Username: msfadmin
-   - Password: msfadmin
-   - Note: Click Metasploitable on the taskbar if you cannot find it
+## Collecting Information about Windows VM
 
-<img src="../imgs/KubuntuMetasploitable.PNG">
+6. Log into the Windows VM. Click C:\Tools\vchat\Server\vchat.exe and run the chat server
+7. Disable Windows Real-time protection against virus & threat:
+   - Enter *Exploit* in *Type here to search* at the left bottom of the Windows desktop. 
+   - Click *Exploit protection* system settings in found items. 
+   - In the *Windows Security* window, click *Virus & threat protection* -> *Virus & threat protection settings* -> *Manage settings*
+   - In the window of *Virus & threat protection settings*, turn off *Real-time protection* 
+   - If the windows of *User account control* pops up, click *Yes*
 
-7. Within the Metasploitable console, enter the command *ifconfig* and then press the *Enter* key to find the IP address of Metasploitable
-
-<img src="../imgs/KubuntuMetasploitable-ifconfig.PNG">
-
-8. Within the Kali GUI (Graphical User Interface), click *Applications*, then *08 - Exploitation Tools*, and then *Armitage* to start the software *Armitage*. We are going to use Armitage to find what networking services/applications are running on Metasploitable.
+7. Within the Kali GUI (Graphical User Interface), click *Applications*, then *08 - Exploitation Tools*, and then *Armitage* to start the software *Armitage*. We are going to use Armitage to find what networking services/applications are running on Metasploitable.
 
 <img src="../imgs/KubuntuKali-StartArmitage.PNG">
 
-9. A few dialog windows show up one by one
+8. A few dialog windows show up one by one
    - In the dialog window *Authentication is needed ...*, enter the password *kali*
    - In the dialog window "Connect...", click the "Connect" button
    - In the dialog window "Start Metasploit?", click the "Yes" button
    - Wait for the "Progress..." to disappear and Armitage window to show up
 
+9. If there are previous results showing computer icons, click *Host* -> *Clear Database* for cleanup.
+
 10. Within the Armitage window, click *Hosts* and then *MSF Scans...*
 
 <img src="../imgs/KubuntuKali-ArmitageWindow.PNG">
 
-11. In the dialog window *Input*, enter the IP address of the "Metasploitable" Linux and click the *Ok* button
-
-<img src="../imgs/KubuntuKali-ArmitageInput.PNG">
+11. In the dialog window *Input*, enter 10.0.2.0/24 and click the *Ok* button. 10.0.2.0/24 represents the IPv4 addresses from 10.0.2.0 to 10.0.2.255. That is, Armitage will check all those IP addresses and see which one is active.
 
 Armitage shows the found computer icon (with the IP address of Metasploitable) and what network applications/services (programs that can accept messages from the Internet/network) are running.
 
 <img src="../imgs/KubuntuKali-ArmitageFoundServices.PNG">
 
+Question: Which found IP belongs to the Windows VM?
+- Click a found IP, perform *Hosts* -> *Nmap Scan* -> *Quick Scan (OS detect)*
+
 ## Exploitation
 
-Metasploitable has a vulnerability called *UnrealIRCD 3.2.8.1 Backdoor*. We will exploit it so as to log into Metasploitable.
+vchat.exe on Windows VM has a vulnerability. We will exploit it so as to log into the Windows VM.
 
-12. Click *Attacks* and then *Find Attacks*. Wait for the dialog window *Progress...* to disappear. A dialog Window *Message* shows up then. Click *Ok*.
+12. Click the Windows VM icon within Armitage. Click *Attacks* -> *Find Attacks*. Wait for the dialog window *Progress...* to disappear. A dialog Window *Message* shows up then. Click *Ok*.
 
 <img src="../imgs/KubuntuKali-ArmitageFindAttacks.PNG">
 
-13. Right click the found computer icon, Click *Attack* -> *irc* -> *unreal_ircd_3281_backdoor*
+13. Right click the found computer icon, Click *Attack* -> *vchat* -> *knock*
 
-<img src="../imgs/KubuntuKali-ArmitageIRC.PNG">
-
-14. In the dialog window *UnrealIRCD 3.2.8.1 Backdoor Command Execution*, check the checkbox *Use a reverse connection* and then click the *Launch* button
-
-<img src="../imgs/KubuntuKali-Armitage-IRCConfig.PNG">
+14. In the dialog window *vulnserver Buffer Overflow-KNOCK command*, click *launch*
 
 If things go well, a lighting icon shows on the found computer icon and it means the found computer is compromsied.
 
-<img src="../imgs/KubuntuKali-Armitage-IRCResult.PNG">
+![image](https://user-images.githubusercontent.com/69218457/224381166-1cd3c481-3dc3-4085-9630-d4c993d29d32.png)
+
 
 ## Post Exploitation
 
