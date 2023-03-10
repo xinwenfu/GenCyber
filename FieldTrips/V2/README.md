@@ -106,7 +106,7 @@ If things go well, a lighting icon shows on the found computer icon and it means
 
 The Windows VM is now compromised. We can log into Windows VM and do a lot of things. We will just look at some files.
 
-17. Right click the found computer icon, then click *Meterpreter xxx* &rarr; *Interact* &rarr; *Meterpreter Shell*. A Meterpreter shell shows up at the bottom of Armitage
+17. Right click the found computer icon, then click *Meterpreter xxx* &rarr; *Interact* &rarr; *Meterpreter Shell*, where *xxx* refers to a session number, e.g., 1. A Meterpreter shell shows up at the bottom of Armitage.
 
 18. Within Meterpreter shell console, type the following command. 
     - *ls*: show the files in the current folder
