@@ -58,7 +58,7 @@ The host computer (i.e., the physical computer) runs the [operating system](http
 8. Disable Windows *Real-time protection* against virus & threat:
    - Enter *Exploit* in *Type here to search* at the bottom left of the Windows desktop. 
    - Click *Exploit protection* system settings in found items. 
-   - In the *Windows Security* window, click *Virus & threat protection* -> *Virus & threat protection settings* -> *Manage settings*
+   - In the *Windows Security* window, click *Virus & threat protection* &rarr; *Virus & threat protection settings* &rarr; *Manage settings*
    - In the window of *Virus & threat protection settings*, turn off *Real-time protection* 
    - If the windows of *User account control* pops up, click *Yes*
 
