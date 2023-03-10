@@ -45,7 +45,7 @@ The host computer (i.e., the physical computer) runs the [operating system](http
 
 <img src="../imgs/KubuntuKali.PNG" width="640">
 
-Question: 
+**Question**: 
 - How can you find the IP address of Kali? 
   - Answer: Start a *Terminal Emulator* and type the command *ifconfig* and then enter.
 - What is the IP address of the Kali VM?
@@ -83,7 +83,7 @@ Armitage shows the found computer icon (with the IP address of Metasploitable) a
 
 <img src="https://user-images.githubusercontent.com/69218457/224392646-1f02980e-1aa3-4729-aa9a-05ae3fbe76aa.png" width="640">
 
-Question: Which found IP belongs to the Windows VM?
+**Question**: Which found IP belongs to the Windows VM?
 - Click a found IP, perform *Hosts* -> *Nmap Scan* -> *Quick Scan (OS detect)* to find the OS running at an IP.
 
 ## Exploitation
@@ -112,4 +112,4 @@ The Windows VM is now compromised. We can log into Windows VM and do a lot of th
     - *ls*: show the files in the current folder
     - *cat LICENSE.TXT*. Show the content of LICENSE.TXT.
 
-According to LICENSE.TXT, who has the copyright (of vulnserver)?
+**Question**: According to LICENSE.TXT, who has the copyright (of vulnserver)?
