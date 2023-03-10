@@ -26,7 +26,7 @@ The host computer (i.e., the physical computer) runs the [operating system](http
 
 2. Click *Application Launcher*.
 
-<img src="imgs/KubuntuScreen.PNG">
+<img src="../imgs/KubuntuScreen.PNG">
 
 3. Click *Search...*, type "Virtual" and Click "VirtualBox" in the search results to launch *Oracle VM VirtualBox Manager*.
 
