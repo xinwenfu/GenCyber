@@ -72,7 +72,7 @@ The host computer (i.e., the physical computer) runs the [operating system](http
    - In the dialog window "Start Metasploit?", click the "Yes" button
    - Wait for the "Progress..." to disappear and Armitage window to show up
 
-11. If there are previous results showing computer icons within Armitage, click *Host* -> *Clear Database* for cleanup.
+11. If there are previous results showing computer icons within Armitage, click *Host* &rarr; *Clear Database* for cleanup.
 
 12. Within the Armitage window, click *Hosts* and then *MSF Scans...*
 
@@ -84,15 +84,15 @@ Armitage shows the found computer icon (with the IP address of Metasploitable) a
 <img src="https://user-images.githubusercontent.com/69218457/224392646-1f02980e-1aa3-4729-aa9a-05ae3fbe76aa.png" width="640">
 
 **Question**: Which found IP belongs to the Windows VM?
-- Click a found IP, perform *Hosts* -> *Nmap Scan* -> *Quick Scan (OS detect)* to find the OS running at an IP.
+- Click a found IP, perform *Hosts* &rarr; *Nmap Scan* &rarr; *Quick Scan (OS detect)* to find the OS running at an IP.
 
 ## Exploitation
 
 vchat.exe on Windows VM has a vulnerability. We will exploit it so as to log into the Windows VM.
 
-14. Click the Windows VM icon within Armitage. Click *Attacks* -> *Find Attacks*. Wait for the dialog window *Progress...* to disappear. A dialog Window *Message* shows up then. Click *Ok*.
+14. Click the Windows VM icon within Armitage. Click *Attacks* &rarr; *Find Attacks*. Wait for the dialog window *Progress...* to disappear. A dialog Window *Message* shows up then. Click *Ok*.
 
-15. Right click the found computer icon, Click *Attack* -> *vchat* -> *knock*
+15. Right click the found computer icon, Click *Attack* &rarr; *vchat* &rarr; *knock*
 
 16. In the dialog window *vulnserver Buffer Overflow-KNOCK command*, click *launch*
 
@@ -106,7 +106,7 @@ If things go well, a lighting icon shows on the found computer icon and it means
 
 The Windows VM is now compromised. We can log into Windows VM and do a lot of things. We will just look at some files.
 
-17. Right click the found computer icon, then click *Meterpreter xxx* -> *Interact* -> *Meterpreter Shell*. A Meterpreter shell shows up at the bottom of Armitage
+17. Right click the found computer icon, then click *Meterpreter xxx* &rarr; *Interact* &rarr; *Meterpreter Shell*. A Meterpreter shell shows up at the bottom of Armitage
 
 18. Within Meterpreter shell console, type the following command. 
     - *ls*: show the files in the current folder
