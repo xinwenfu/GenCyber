@@ -98,7 +98,8 @@ vchat.exe on Windows VM has a vulnerability. We will exploit it so as to log int
 
 If things go well, a lighting icon shows on the found computer icon and it means the found computer is compromsied.
 
-<img src="[../imgs/KubuntuKali-ArmitageFindAttacks.PNG](https://user-images.githubusercontent.com/69218457/224381166-1cd3c481-3dc3-4085-9630-d4c993d29d32.png)"  width="640">
+<img src="https://user-images.githubusercontent.com/69218457/224389016-da1c6992-5190-4b67-9e0b-42944cb17ef7.png" width="640">
+
 
 ## Post Exploitation
 
