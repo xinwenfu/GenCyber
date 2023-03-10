@@ -55,7 +55,7 @@ The host computer (i.e., the physical computer) runs the [operating system](http
 6. Log into the Windows VM with provided password and then run the chat server
    - Click C:\Tools\vchat\Server\vchat.exe and run the chat server
 
-8. Disable Windows Real-time protection against virus & threat:
+8. Disable Windows *Real-time protection* against virus & threat:
    - Enter *Exploit* in *Type here to search* at the left bottom of the Windows desktop. 
    - Click *Exploit protection* system settings in found items. 
    - In the *Windows Security* window, click *Virus & threat protection* -> *Virus & threat protection settings* -> *Manage settings*
