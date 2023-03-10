@@ -90,11 +90,11 @@ Armitage shows the found computer icon (with the IP address of Metasploitable) a
 
 vchat.exe on Windows VM has a vulnerability. We will exploit it so as to log into the Windows VM.
 
-12. Click the Windows VM icon within Armitage. Click *Attacks* -> *Find Attacks*. Wait for the dialog window *Progress...* to disappear. A dialog Window *Message* shows up then. Click *Ok*.
+14. Click the Windows VM icon within Armitage. Click *Attacks* -> *Find Attacks*. Wait for the dialog window *Progress...* to disappear. A dialog Window *Message* shows up then. Click *Ok*.
 
-13. Right click the found computer icon, Click *Attack* -> *vchat* -> *knock*
+15. Right click the found computer icon, Click *Attack* -> *vchat* -> *knock*
 
-14. In the dialog window *vulnserver Buffer Overflow-KNOCK command*, click *launch*
+16. In the dialog window *vulnserver Buffer Overflow-KNOCK command*, click *launch*
 
 If things go well, a lighting icon shows on the found computer icon and it means the found computer is compromsied.
 
@@ -106,9 +106,9 @@ If things go well, a lighting icon shows on the found computer icon and it means
 
 The Windows VM is now compromised. We can log into Windows VM and do a lot of things. We will just look at some files.
 
-15. Right click the found computer icon, then click *Meterpreter xxx* -> *Interact* -> *Meterpreter Shell*. A Meterpreter shell shows up at the bottom of Armitage
+17. Right click the found computer icon, then click *Meterpreter xxx* -> *Interact* -> *Meterpreter Shell*. A Meterpreter shell shows up at the bottom of Armitage
 
-16. Within Meterpreter shell console, type the following command. 
+18. Within Meterpreter shell console, type the following command. 
     - *ls*: show the files in the current folder
     - *cat LICENSE.TXT*. Show the content of LICENSE.TXT.
 
