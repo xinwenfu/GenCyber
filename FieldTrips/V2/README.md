@@ -52,7 +52,7 @@ The host computer (i.e., the physical computer) runs the [operating system](http
 
 ## Collecting Information about Windows VM
 
-6. Log into the Windows VM with provided password
+6. Log into the Windows VM with provided password and then run the chat server
    - Click C:\Tools\vchat\Server\vchat.exe and run the chat server
 
 8. Disable Windows Real-time protection against virus & threat:
