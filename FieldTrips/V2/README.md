@@ -62,7 +62,7 @@ The host computer (i.e., the physical computer) runs the [operating system](http
    - In the window of *Virus & threat protection settings*, turn off *Real-time protection* 
    - If the window of *User account control* pops up, click *Yes*
 
-9. Within the Kali GUI (Graphical User Interface), click *Applications*, then *08 - Exploitation Tools*, and then *Armitage* to start the software *Armitage*. We are going to use Armitage to find what networking services/applications are running on Metasploitable.
+9. Within the Kali GUI (Graphical User Interface), click *Applications* &rarr; *08 - Exploitation Tools* &rarr; *Armitage* to start the software *Armitage*. We are going to use Armitage to find what networking services/applications are running on Metasploitable.
 
 <img src="../imgs/KubuntuKali-StartArmitage.PNG" width="640">
 
