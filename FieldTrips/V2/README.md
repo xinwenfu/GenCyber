@@ -74,7 +74,7 @@ The host computer (i.e., the physical computer) runs the [operating system](http
 
 11. If there are previous results showing computer icons within Armitage, click *Hosts* &rarr; *Clear Database* for cleanup.
 
-12. Within the Armitage window, click *Hosts* and then *MSF Scans...*
+12. Within the Armitage window, click *Hosts* &rarr; *MSF Scans...*
 
 13. In the dialog window titled *Input*, enter 10.0.2.0/24 and click the *Ok* button
     - 10.0.2.0/24 represents the IPv4 addresses from 10.0.2.0 to 10.0.2.255. That is, Armitage will check all those IP addresses and see which one is active.
