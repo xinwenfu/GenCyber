@@ -60,7 +60,7 @@ The host computer (i.e., the physical computer) runs the [operating system](http
    - Click *Exploit protection* system settings in found items. 
    - In the *Windows Security* window, click *Virus & threat protection* &rarr; *Virus & threat protection settings* &rarr; *Manage settings*
    - In the window of *Virus & threat protection settings*, turn off *Real-time protection* 
-   - If the windows of *User account control* pops up, click *Yes*
+   - If the window of *User account control* pops up, click *Yes*
 
 9. Within the Kali GUI (Graphical User Interface), click *Applications*, then *08 - Exploitation Tools*, and then *Armitage* to start the software *Armitage*. We are going to use Armitage to find what networking services/applications are running on Metasploitable.
 
