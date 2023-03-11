@@ -72,7 +72,7 @@ The host computer (i.e., the physical computer) runs the [operating system](http
    - In the dialog window "Start Metasploit?", click the "Yes" button
    - Wait for the "Progress..." to disappear and Armitage window to show up
 
-11. If there are previous results showing computer icons within Armitage, click *Host* &rarr; *Clear Database* for cleanup.
+11. If there are previous results showing computer icons within Armitage, click *Hosts* &rarr; *Clear Database* for cleanup.
 
 12. Within the Armitage window, click *Hosts* and then *MSF Scans...*
 
