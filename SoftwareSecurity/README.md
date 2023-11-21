@@ -213,8 +213,8 @@ Please see a more complete list of Meterpreter commands <a href="https://www.off
 Please check this <a href="../FieldTrips">tutorial</a>.
 
 ### Hands-on 2: Hacking into Windows VM
-- Click and start chat server C:\Tools\vchat\Server\vchat.exe
-- Use armitage to scan Windows VM and find attacks
+- Click and start chat server C:\Tools\vchat\Server\vchat.exe on Windows VM.
+- Use armitage in Kali VM to scan Windows VM and find attacks
 - Click the found Windows VM (IP)
 - Deploy exploit/windows/vchat/knock
   - If armitage cannot find knock attack, just select it from the left panel of modules
