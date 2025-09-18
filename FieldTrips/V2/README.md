@@ -94,11 +94,11 @@ cd /home/kali/GenCyber/vchat/Client
 ./client.py
 ```
 
-In the client's dialog window, enter *Your Name* and Server *IP* and then click *Continue*
+In the client's dialog window, enter *Your Name* and Server *IP* and then click *Continue*.
 
 <img width="320" alt="image" src="https://github.com/user-attachments/assets/92980465-e419-4983-882b-b1f49d701f6b" />
 
-Start a another terminal and run *client.py* to test if the two clients to chat with each other
+Start a another terminal and run *client.py* to test if the two clients to chat with each other.
 
 <img width="640"  alt="image" src="https://github.com/user-attachments/assets/13171715-5159-4184-9161-e691f78b7f77" />
 
