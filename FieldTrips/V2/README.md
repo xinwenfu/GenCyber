@@ -86,6 +86,23 @@ Armitage shows the found computer icon (with the IP address of Metasploitable) a
 **Question**: Which found IP belongs to the Windows VM?
 - Click a found IP, perform *Hosts* &rarr; *Nmap Scan* &rarr; *Quick Scan (OS detect)* to find the OS running at an IP.
 
+
+## Chatting via vchat
+Assume vchat is running. On Kali, there is a chat client called *client.py* in */home/kali/GenCyber/vchat/Client*. Start a terminal and run *client.py* 
+```
+cd /home/kali/GenCyber/vchat/Client
+./client.py
+```
+
+In the client's dialog window, enter *Your Name* and Server *IP* and then click *Continue*
+<img width="406" height="330" alt="image" src="https://github.com/user-attachments/assets/92980465-e419-4983-882b-b1f49d701f6b" />
+
+Start a another terminal and run *client.py* to test if the two clients to chat with each other
+
+<img width="800"  alt="image" src="https://github.com/user-attachments/assets/13171715-5159-4184-9161-e691f78b7f77" />
+<img width="800"  alt="image" src="https://github.com/user-attachments/assets/c0b9dc9b-95eb-4dee-8458-1cb31796d5ea" />
+
+
 ## Exploitation
 
 vchat.exe on Windows VM has a vulnerability. We will exploit it so as to log into the Windows VM.
