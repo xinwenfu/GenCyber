@@ -136,7 +136,11 @@ The Windows VM is now compromised. We can log into Windows VM and do a lot of th
 ```
 lcd ./home/kali
 ```
+<img width="640" alt="image" src="https://github.com/user-attachments/assets/c388bde4-ce82-4a16-a879-08258f0109e1" />
+
+
 20. Type the following command to take a screenshot of the target (Windows) desktop 
 ```
 screenshot
 ```
+<img width="640" alt="image" src="https://github.com/user-attachments/assets/3b9e04a3-cb33-4cd1-9952-86ea85d8fba1" />
