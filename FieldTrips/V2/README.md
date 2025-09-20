@@ -122,7 +122,7 @@ If things go well, a lighting icon shows on the found computer icon and it means
 
 The Windows VM is now compromised. We can log into Windows VM and do a lot of things. We will just look at some files.
 
-### List files on the target
+### List files on the target (Windows)
 17. Right click the found computer icon, then click *Meterpreter xxx* &rarr; *Interact* &rarr; *Meterpreter Shell*, where *xxx* refers to a session number, e.g., 1. A Meterpreter shell shows up at the bottom of Armitage.
 
 18. Within Meterpreter shell console, type the following commands. 
@@ -131,7 +131,7 @@ The Windows VM is now compromised. We can log into Windows VM and do a lot of th
 
 **Question**: According to LICENSE.TXT, who has the copyright (of vulnserver)?
 
-### Take a screenshot of the target desktop
+### Take a screenshot of the target (Windows) desktop
 19. Within Meterpreter shell console, type the following command to change meterprester's local working directory. We started armitage with no root priviledge. Changing the working folder allows us to create files correctly.
 ```
 lcd ./home/kali
