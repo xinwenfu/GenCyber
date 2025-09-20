@@ -53,7 +53,7 @@ The host computer (i.e., the physical computer) runs the [operating system](http
 ## Collecting Information about Windows VM
 
 6. Log into the Windows VM with provided password and then run the chat server
-   - Click C:\Tools\vchat\Server\vchat.exe and run the chat server
+   - Click C:\Tools\vchat\vchat.exe and run the chat server
 
 8. Disable Windows *Real-time protection* against virus & threat:
    - Enter *Exploit* in *Type here to search* at the bottom left of the Windows desktop. 
@@ -76,7 +76,7 @@ The host computer (i.e., the physical computer) runs the [operating system](http
 
 12. Within the Armitage window, click *Hosts* &rarr; *MSF Scans...*
 
-13. In the dialog window titled *Input*, enter 10.0.2.0/24 and click the *Ok* button
+13. In the dialog window titled *Input*, enter 10.0.2.0/24 or the target IP and click the *Ok* button
     - 10.0.2.0/24 represents the IPv4 addresses from 10.0.2.0 to 10.0.2.255. That is, Armitage will check all those IP addresses and see which one is active.
 
 Armitage shows the found computer icon (with the IP address of Metasploitable) and what network applications/services (programs that can accept messages from the Internet/network) are running.
@@ -108,9 +108,9 @@ vchat.exe on Windows VM has a vulnerability. We will exploit it so as to log int
 
 14. Click the Windows VM icon within Armitage. Click *Attacks* &rarr; *Find Attacks*. Wait for the dialog window *Progress...* to disappear. A dialog Window *Message* shows up then. Click *Ok*.
 
-15. Right click the found computer icon, Click *Attack* &rarr; *vchat* &rarr; *knock*
+15. Right click the found computer icon, Click *Attack* &rarr; *vchat* &rarr; *TRUN*
 
-16. In the dialog window *vulnserver Buffer Overflow-KNOCK command*, click *launch*
+16. In the dialog *attack* window, click *launch*
 
 If things go well, a lighting icon shows on the found computer icon and it means the found computer is compromsied.
 
@@ -122,6 +122,7 @@ If things go well, a lighting icon shows on the found computer icon and it means
 
 The Windows VM is now compromised. We can log into Windows VM and do a lot of things. We will just look at some files.
 
+### List files on the target
 17. Right click the found computer icon, then click *Meterpreter xxx* &rarr; *Interact* &rarr; *Meterpreter Shell*, where *xxx* refers to a session number, e.g., 1. A Meterpreter shell shows up at the bottom of Armitage.
 
 18. Within Meterpreter shell console, type the following commands. 
@@ -129,3 +130,13 @@ The Windows VM is now compromised. We can log into Windows VM and do a lot of th
     - *cat LICENSE.TXT*. Show the content of LICENSE.TXT.
 
 **Question**: According to LICENSE.TXT, who has the copyright (of vulnserver)?
+
+### Take a screenshot of the target desktop
+19. Within Meterpreter shell console, type the following command to change meterprester's local working directory. We started armitage with no root priviledge. Changing the working folder allows us to create files correctly.
+```
+lcd ./home/kali
+```
+20. Type the following command to take a screenshot of the target (Windows) desktop 
+```
+screenshot
+```
