@@ -18,6 +18,7 @@ In this lab, students will use a tool called *Armitage* to perform the three pha
 - We use two virtual machines (VMs), *Kali* (Kali Linux) and *Windows 10*, managed by *Oracle VM VirtualBox Manager*. Virutal machines work like real computers, but they are not physical computers and run on a real physical computer. For example, in our setup, a computer running the Kubuntu Linux actually hosts and runs Kali and Windows VMs.
 - Kali will be the attacking computer and Windows will be the target.
 - Armitage is launched from Kali and exploits a vulnerability in a chat server called vchat.exe.
+- If needed, watch [video demo](https://youtu.be/eRkYky-CnoU) on setting Up NAT, NAT Network, Bridged Adaptor, Host-Only Adaptor and Internal Network in VirtualBox.
 
 ## Setting Up the Lab: Start Kali and Windows VMs on Host Computer
 The host computer (i.e., the physical computer) runs the [operating system](https://en.wikipedia.org/wiki/Operating_system) called [Kubuntu](https://en.wikipedia.org/wiki/Kubuntu). Kali runs [Kali Linux](https://en.wikipedia.org/wiki/Kali_Linux), a version of Debian Linux.
