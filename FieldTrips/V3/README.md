@@ -141,3 +141,8 @@ lcd /home/kali
 screenshot
 ```
 <img width="640" alt="image" src="Imgs/WindowsVMScreenshot.png" />
+
+## References
+[1]	[Meterpreter Basics](https://www.offsec.com/metasploit-unleashed/meterpreter-basics/), accessed on 9/19/25
+[2]	[Manage Meterpreter and Shell Sessions](https://docs.rapid7.com/metasploit/manage-meterpreter-and-shell-sessions/), accessed on 9/19/25
+
