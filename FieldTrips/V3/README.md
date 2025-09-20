@@ -131,7 +131,7 @@ The Windows VM is now compromised. We can log into Windows VM and do a lot of th
 ### Take a screenshot of the target (Windows) desktop
 19. Within Meterpreter shell console, type the following command to change meterprester's local working directory. We started armitage with no root priviledge. Changing the working folder allows us to create files correctly.
 ```
-lcd ./home/kali
+lcd /home/kali
 ```
 <img width="640" alt="image" src="Imgs/Meterpreter-lcd.png" />
 
