@@ -110,6 +110,8 @@ vchat.exe on Windows VM has a vulnerability. We will exploit it so as to log int
 
 15. Right click the found computer icon, Click *Attack* &rarr; *vchat* &rarr; *TRUN*
 
+**Note**: if "vchat" cannot be found on the *Attack* menu, refer to [TRUN Metasploit Module](github.com/xinwenfu/VChat_TRUN/blob/main/Metasploit/README.md). Exit armitage, add the TRUN attack module into Armitage/Metasploit and restart Armitage.
+
 16. In the dialog *attack* window, click *launch*
 
 If things go well, a lighting icon shows on the found computer icon and it means the found computer is compromsied.
