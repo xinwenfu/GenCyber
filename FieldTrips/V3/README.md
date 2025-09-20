@@ -12,9 +12,9 @@ Below is a video demo showing how to use a Kali VM to attack a Windows VM, which
 [![Armitage](https://img.youtube.com/vi/TJX__HPo9jQ/0.jpg)](https://youtu.be/TJX__HPo9jQ)
 
 
-# Field Trip
+# Lab Goal
 
-In this field trip, students will use a tool called *Armitage* to perform the three phases of penetration testing. Our lab is set up as follows. 
+In this lab, students will use a tool called *Armitage* to perform the three phases of penetration testing. Our lab is set up as follows. 
 - We use two virtual machines (VMs), *Kali* (Kali Linux) and *Windows 10*, managed by *Oracle VM VirtualBox Manager*. Virutal machines work like real computers, but they are not physical computers and run on a real physical computer. For example, in our setup, a computer running the Kubuntu Linux actually hosts and runs Kali and Windows VMs.
 - Kali will be the attacking computer and Windows will be the target.
 - Armitage is launched from Kali and exploits a vulnerability in a chat server called vchat.exe.
@@ -49,6 +49,9 @@ The host computer (i.e., the physical computer) runs the [operating system](http
 - How can you find the IP address of Kali? 
   - Answer: Start a *Terminal Emulator* and type the command *ifconfig* and then enter.
 - What is the IP address of the Kali VM?
+
+## Add TRUN Metasploit Module into Armitage/Metasploit
+Refer to [TRUN Metasploit Module](https://github.com/xinwenfu/VChat_TRUN/tree/main/Metasploit).
 
 ## Collecting Information about Windows VM
 
