@@ -133,7 +133,7 @@ The Windows VM is now compromised. We can log into Windows VM and do a lot of th
 ```
 lcd ./home/kali
 ```
-<img width="640" alt="image" src="" />
+<img width="640" alt="image" src="Imgs/Meterpreter-lcd.png" />
 
 
 20. Type the following command to take a screenshot of the target (Windows) desktop 
