@@ -20,7 +20,7 @@ In this lab, students will use a tool called *Armitage* to perform the three pha
 - Armitage is launched from Kali and exploits a vulnerability in a chat server called vchat.exe.
 - **Note**: If needed, watch [video demo](https://youtu.be/eRkYky-CnoU) on setting Up NAT, NAT Network, Bridged Adaptor, Host-Only Adaptor and Internal Network in VirtualBox.
 
-## Setting Up the Lab: Start Kali and Windows VMs on Host Computer
+# Setting Up the Lab: Start Kali and Windows VMs on Host Computer
 The host computer (i.e., the physical computer) runs the [operating system](https://en.wikipedia.org/wiki/Operating_system) called [Kubuntu](https://en.wikipedia.org/wiki/Kubuntu). Kali runs [Kali Linux](https://en.wikipedia.org/wiki/Kali_Linux), a version of Debian Linux.
 
 1. Log into a Cyber Range PC with the **provided username and password**.
@@ -51,10 +51,10 @@ The host computer (i.e., the physical computer) runs the [operating system](http
   - Answer: Start a *Terminal Emulator* and type the command *ifconfig* and then enter.
 - What is the IP address of the Kali VM?
 
-## Add TRUN Metasploit Module into Armitage/Metasploit
+# Add TRUN Metasploit Module into Armitage/Metasploit
 Refer to [TRUN Metasploit Module](https://github.com/xinwenfu/VChat_TRUN/tree/main/Metasploit).
 
-## Collecting Information about Windows VM
+# Collecting Information about Windows VM
 
 6. Log into the Windows VM with provided password and then run the chat server
    - Click C:\Tools\vchat\vchat.exe and run the chat server
@@ -106,7 +106,7 @@ Start a another terminal and run *client.py* to test if the two clients to chat 
 <img width="640"  alt="image" src="https://github.com/user-attachments/assets/c0b9dc9b-95eb-4dee-8458-1cb31796d5ea" />
 
 
-## Exploitation
+# Exploitation
 
 vchat.exe on Windows VM has a vulnerability. We will exploit it so as to log into the Windows VM.
 
@@ -124,11 +124,11 @@ If things go well, a lighting icon shows on the found computer icon and it means
 
 **Note**: If the attack does not work, just try *launch* a number of times (e.g., 10 times), it will work.
 
-## Post Exploitation
+# Post Exploitation
 
 The Windows VM is now compromised. We can log into Windows VM and do a lot of things. We will just look at some files.
 
-### Take a screenshot of the target (Windows) desktop
+## Take a screenshot of the target (Windows) desktop
 17. Within Meterpreter shell console, type the following command to change meterprester's local working directory. We started armitage with no root priviledge. Changing the working folder allows us to create files correctly.
 ```
 lcd /home/kali
@@ -142,7 +142,7 @@ screenshot
 ```
 <img width="640" alt="image" src="Imgs/WindowsVMScreenshot.png" />
 
-## References
+# References
 [1]	[Meterpreter Basics](https://www.offsec.com/metasploit-unleashed/meterpreter-basics/), accessed on 9/19/25
 
 [2]	[Manage Meterpreter and Shell Sessions](https://docs.rapid7.com/metasploit/manage-meterpreter-and-shell-sessions/), accessed on 9/19/25
