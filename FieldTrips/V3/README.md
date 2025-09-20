@@ -136,7 +136,7 @@ lcd ./home/kali
 <img width="640" alt="image" src="Imgs/Meterpreter-lcd.png" />
 
 
-20. Type the following command to take a screenshot of the target (Windows) desktop 
+20. Type the following command to take a screenshot of the target (Windows) desktop. **Note**: this may take a long time for the screenshot to show up at Kali. Wait after typing the command ...
 ```
 screenshot
 ```
