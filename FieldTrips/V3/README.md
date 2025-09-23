@@ -66,10 +66,12 @@ The host computer (i.e., the physical computer) runs the [operating system](http
 **Question**: 
 - How can you find the IP address of Kali? 
   - Answer: Start a *Terminal Emulator* and type the command *ifconfig* and then enter.
-- What is the IP address of the Kali VM?
+- What is the IP address of the Kali VM?https://github.com/xinwenfu/VChat_TRUN/blob/main/Metasploit/clean-a.sh
 
 # Add TRUN Metasploit Module into Armitage/Metasploit
 Refer to [TRUN Metasploit Module](https://github.com/xinwenfu/VChat_TRUN/tree/main/Metasploit).
+
+Note: Armitage runs correctly the first time it is launched, but fails to start on subsequent attempts. To fix this, create the shell script [clean-a.sh](https://github.com/xinwenfu/VChat_TRUN/blob/main/Metasploit/clean-a.sh) in Kali and run it before launching Armitage.
 
 # Collecting Information about Windows VM
 
