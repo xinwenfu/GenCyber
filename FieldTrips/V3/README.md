@@ -164,7 +164,7 @@ Actually Armitage's Meterpreter has menu for actions such as *Screenshot*.
 <img width="640" alt="image" src="Imgs/Armitage-Meterpreter-Menu.png" />
 
 ## Persistence
-
+Please refer to [backdoor malware samples](https://github.com/xinwenfu/Malware-Analysis/tree/main/MalwareSamples/Backdoors).
 ### Move malware into startup folder
 The user startup folder does not need the Admin priviledge. Refer to [Deploying persistent backdoor](https://github.com/xinwenfu/GenCyber/tree/main/SoftwareSecurity#hands-on-5-deploying-persistent-backdoor). Note: the lab environment of deploying persistent backdoor is different from ours here.
 
