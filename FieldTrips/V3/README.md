@@ -148,7 +148,7 @@ Windows UAC (User Account Control) is a security feature in Microsoft Windows th
 * If you’re logged in as a standard user, it will ask for an administrator password.
 * If you’re logged in as an administrator, it will ask you to confirm the action.
 
-By default in modern Windows (Vista and later), every program you start runs with standard user privileges — even if you are logged in as an administrator.
+By default in modern Windows (Vista and later), every program you start runs with standard user privileges, even if you are logged in as an administrator.
 This reduces the risk of malware or accidental changes damaging the system, since even if malicious software runs, it cannot silently make high-level changes without triggering a UAC prompt.
 
 For example, even if you’re logged in as an administrator in Windows, programs (including CMD) do not automatically start with full administrative rights.
@@ -160,7 +160,7 @@ For example, even if you’re logged in as an administrator in Windows, programs
 In our case, when you click *vchat.exe*, it runs with standard user privileges. If you right-click vchat.exe and “Run as administrator”, it runs with full administrative rights. In the later case, when vhcat is compromised, the attacker has full administrative rights. In the former case, when vhcat is compromised, the attacker has only standard user privileges.
 
 ### Move malware into startup folder
-The user startup folder does not need the Admin priviledge.
+The user startup folder does not need the Admin priviledge. Refer to [Deploying persistent backdoor](https://github.com/xinwenfu/GenCyber/tree/main/SoftwareSecurity#hands-on-5-deploying-persistent-backdoor)
 
 ### Add malware to Run key of Registry
 To add malware to the Run key of Windows Registry, the user must have the Admin priviledge. 
