@@ -20,6 +20,23 @@ In this lab, students will use a tool called *Armitage* to perform the three pha
 - Armitage is launched from Kali and exploits a vulnerability in a chat server called vchat.exe.
 - **Note**: If needed, watch [video demo](https://youtu.be/eRkYky-CnoU) on setting Up NAT, NAT Network, Bridged Adaptor, Host-Only Adaptor and Internal Network in VirtualBox.
 
+# Windows UAC
+Windows UAC (User Account Control) is a security feature in Microsoft Windows that helps prevent unauthorized changes to the operating system. It limits application software to standard user privileges until an administrator authorizes an increase in privilege (called elevation). When a program tries to make system-level changes—like installing software, modifying system files, or changing Windows settings—UAC pops up a dialog asking for permission.
+* If you’re logged in as a standard user, it will ask for an administrator password.
+* If you’re logged in as an administrator, it will ask you to confirm the action.
+
+By default in modern Windows (Vista and later), every program you start runs with standard user privileges, even if you are logged in as an administrator.
+This reduces the risk of malware or accidental changes damaging the system, since even if malicious software runs, it cannot silently make high-level changes without triggering a UAC prompt.
+
+For example, even if you’re logged in as an administrator in Windows, programs (including CMD) do not automatically start with full administrative rights.
+* When you open CMD normally (just by clicking it), it runs with standard user privileges. This means it cannot modify protected system files, registry hives, or system services.
+* To get full administrator rights, you must explicitly start CMD with elevation:
+  * Right-click Command Prompt → “Run as administrator”, or
+  * Launch it from a shortcut that’s configured to always run elevated.
+
+In our case, when you click *vchat.exe*, it runs with standard user privileges. If you right-click vchat.exe and “Run as administrator”, it runs with full administrative rights. In the later case, when vhcat is compromised, the attacker has full administrative rights. In the former case, when vhcat is compromised, the attacker has only standard user privileges.
+
+
 # Setting Up the Lab: Start Kali and Windows VMs on Host Computer
 The host computer (i.e., the physical computer) runs the [operating system](https://en.wikipedia.org/wiki/Operating_system) called [Kubuntu](https://en.wikipedia.org/wiki/Kubuntu). Kali runs [Kali Linux](https://en.wikipedia.org/wiki/Kali_Linux), a version of Debian Linux.
 
@@ -143,21 +160,6 @@ screenshot
 <img width="640" alt="image" src="Imgs/WindowsVMScreenshot.png" />
 
 ## Persistence
-### Windows UAC
-Windows UAC (User Account Control) is a security feature in Microsoft Windows that helps prevent unauthorized changes to the operating system. It limits application software to standard user privileges until an administrator authorizes an increase in privilege (called elevation). When a program tries to make system-level changes—like installing software, modifying system files, or changing Windows settings—UAC pops up a dialog asking for permission.
-* If you’re logged in as a standard user, it will ask for an administrator password.
-* If you’re logged in as an administrator, it will ask you to confirm the action.
-
-By default in modern Windows (Vista and later), every program you start runs with standard user privileges, even if you are logged in as an administrator.
-This reduces the risk of malware or accidental changes damaging the system, since even if malicious software runs, it cannot silently make high-level changes without triggering a UAC prompt.
-
-For example, even if you’re logged in as an administrator in Windows, programs (including CMD) do not automatically start with full administrative rights.
-* When you open CMD normally (just by clicking it), it runs with standard user privileges. This means it cannot modify protected system files, registry hives, or system services.
-* To get full administrator rights, you must explicitly start CMD with elevation:
-  * Right-click Command Prompt → “Run as administrator”, or
-  * Launch it from a shortcut that’s configured to always run elevated.
-
-In our case, when you click *vchat.exe*, it runs with standard user privileges. If you right-click vchat.exe and “Run as administrator”, it runs with full administrative rights. In the later case, when vhcat is compromised, the attacker has full administrative rights. In the former case, when vhcat is compromised, the attacker has only standard user privileges.
 
 ### Move malware into startup folder
 The user startup folder does not need the Admin priviledge. Refer to [Deploying persistent backdoor](https://github.com/xinwenfu/GenCyber/tree/main/SoftwareSecurity#hands-on-5-deploying-persistent-backdoor). Note: the lab environment of deploying persistent backdoor is different from ours here.
