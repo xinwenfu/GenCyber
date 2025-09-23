@@ -160,7 +160,7 @@ screenshot
 <img width="640" alt="image" src="Imgs/WindowsVMScreenshot.png" />
 
 
-Actually Armitage's meterpreter has menu for actions such as screenshot.
+Actually Armitage's meterpreter has menu for actions such as *Screenshot*.
 <img width="640" alt="image" src="Imgs/Armitage-Meterpreter-Menu.png" />
 
 ## Persistence
