@@ -160,7 +160,7 @@ For example, even if you’re logged in as an administrator in Windows, programs
 In our case, when you click *vchat.exe*, it runs with standard user privileges. If you right-click vchat.exe and “Run as administrator”, it runs with full administrative rights. In the later case, when vhcat is compromised, the attacker has full administrative rights. In the former case, when vhcat is compromised, the attacker has only standard user privileges.
 
 ### Move malware into startup folder
-The user startup folder does not need the Admin priviledge. Refer to [Deploying persistent backdoor](https://github.com/xinwenfu/GenCyber/tree/main/SoftwareSecurity#hands-on-5-deploying-persistent-backdoor)
+The user startup folder does not need the Admin priviledge. Refer to [Deploying persistent backdoor](https://github.com/xinwenfu/GenCyber/tree/main/SoftwareSecurity#hands-on-5-deploying-persistent-backdoor). Note: the lab environment of deploying persistent backdoor is different from ours here.
 
 ### Add malware to Run key of Registry
 To add malware to the Run key of Windows Registry, the user must have the Admin priviledge. 
