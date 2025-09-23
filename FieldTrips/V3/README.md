@@ -159,6 +159,10 @@ screenshot
 ```
 <img width="640" alt="image" src="Imgs/WindowsVMScreenshot.png" />
 
+
+Actually Armitage's meterpreter has menu for actions such as screenshot.
+<img width="640" alt="image" src="Imgs/Armitage-Meterpreter-Menu.png" />
+
 ## Persistence
 
 ### Move malware into startup folder
