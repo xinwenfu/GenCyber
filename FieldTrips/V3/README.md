@@ -169,7 +169,7 @@ Please refer to [backdoor malware samples](https://github.com/xinwenfu/Malware-A
 The user startup folder does not need the Admin priviledge. Refer to [Deploying persistent backdoor](https://github.com/xinwenfu/GenCyber/tree/main/SoftwareSecurity#hands-on-5-deploying-persistent-backdoor). Note: the lab environment of deploying persistent backdoor is different from ours here.
 
 ### Add malware to Run key of Registry
-To add malware to the Run key of Windows Registry, the user must have the Admin priviledge. Now when Windows starts, the malware runs too.
+To add malware to the *Run* key of Windows Registry, the user must have the Admin priviledge. Now when Windows starts, the malware runs too.
 ```
 reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\Run" /v bindshell /t REG_SZ /d "C:\Workshop\SimpleBindShell\bindshell.exe" /f
 ```
