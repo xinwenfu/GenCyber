@@ -21,7 +21,7 @@ In this lab, students will use a tool called *Armitage* to perform the three pha
 - **Note**: If needed, watch [video demo](https://youtu.be/eRkYky-CnoU) on setting Up NAT, NAT Network, Bridged Adaptor, Host-Only Adaptor and Internal Network in VirtualBox.
 
 # Windows UAC
-Windows UAC (User Account Control) is a security feature in Microsoft Windows that helps prevent unauthorized changes to the operating system. It limits application software to standard user privileges until an administrator authorizes an increase in privilege (called elevation). When a program tries to make system-level changes—like installing software, modifying system files, or changing Windows settings—UAC pops up a dialog asking for permission.
+Windows UAC (User Account Control) is a security feature in Microsoft Windows that helps prevent unauthorized changes to the operating system. It limits application software to standard user privileges until an administrator authorizes an increase in privilege (called elevation). When a program tries to make system-level changes, like installing software, modifying system files, or changing Windows settings, UAC pops up a dialog asking for permission.
 * If you’re logged in as a standard user, it will ask for an administrator password.
 * If you’re logged in as an administrator, it will ask you to confirm the action.
 
