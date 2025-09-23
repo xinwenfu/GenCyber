@@ -143,6 +143,16 @@ screenshot
 <img width="640" alt="image" src="Imgs/WindowsVMScreenshot.png" />
 
 ## Persistence
+Windows UAC (User Account Control) is a security feature in Microsoft Windows that helps prevent unauthorized changes to the operating system. It limits application software to standard user privileges until an administrator authorizes an increase in privilege (called elevation). When a program tries to make system-level changes—like installing software, modifying system files, or changing Windows settings—UAC pops up a dialog asking for permission.
+* If you’re logged in as a standard user, it will ask for an administrator password.
+* If you’re logged in as an administrator, it will ask you to confirm the action.
+This reduces the risk of malware or accidental changes damaging the system, since even if malicious software runs, it cannot silently make high-level changes without triggering a UAC prompt.
+
+For example, even if you’re logged in as an administrator in Windows, programs (including CMD) do not automatically start with full administrative rights.
+* When you open CMD normally (just by clicking it), it runs with standard user privileges. This means it cannot modify protected system files, registry hives, or system services.
+* To get full administrator rights, you must explicitly start CMD with elevation:
+  * Right-click Command Prompt → “Run as administrator”, or
+  * Launch it from a shortcut that’s configured to always run elevated.
 
 ### Move malware into startup folder
 The user startup folder does not need the Admin priviledge.
