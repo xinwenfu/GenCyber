@@ -157,7 +157,7 @@ For example, even if you’re logged in as an administrator in Windows, programs
   * Right-click Command Prompt → “Run as administrator”, or
   * Launch it from a shortcut that’s configured to always run elevated.
 
-In our case, when you click *vchat.exe*, it runs with standard user privileges. If you right-click vchat.exe and “Run as administrator”, it runs with full administrative rights. In the later case, when vhcat is compromised, the attacker has full administrative rights.. In the former case, when vhcat is compromised, the attacker has only standard user privileges.
+In our case, when you click *vchat.exe*, it runs with standard user privileges. If you right-click vchat.exe and “Run as administrator”, it runs with full administrative rights. In the later case, when vhcat is compromised, the attacker has full administrative rights. In the former case, when vhcat is compromised, the attacker has only standard user privileges.
 
 ### Move malware into startup folder
 The user startup folder does not need the Admin priviledge.
