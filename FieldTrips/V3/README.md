@@ -133,7 +133,7 @@ vchat.exe on Windows VM has a vulnerability. We will exploit it so as to log int
 14. Click the Windows VM icon within Armitage. Click *Attacks* &rarr; *Find Attacks*. Wait for the dialog window *Progress...* to disappear. A dialog Window *Message* shows up then. Click *Ok*.
 
 15. Right click the found computer icon, Click *Attack* &rarr; *vchat* &rarr; *TRUN* 
-    * if "vchat" cannot be found on the *Attack* menu, refer to [TRUN Metasploit Module](https://github.com/xinwenfu/VChat_TRUN/tree/main/Metasploit). Exit armitage, add the TRUN attack module into Armitage/Metasploit and restart Armitage.
+    * if *vchat* cannot be found on the *Attack* menu, refer to [TRUN Metasploit Module](https://github.com/xinwenfu/VChat_TRUN/tree/main/Metasploit). Exit armitage, add the TRUN attack module into Armitage/Metasploit and restart Armitage.
     * If there is no "Attack" menu, check *Armitage* -> *Set Exploit Rank* and make sure it is set as *Poor*.
 
 <img width="630" src="Imgs/Armitage-SetExploitRank.png">
