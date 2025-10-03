@@ -103,7 +103,7 @@ Note: Armitage runs correctly the first time it is launched, but fails to start 
     - 10.0.2.0/24 represents the IPv4 addresses from 10.0.2.0 to 10.0.2.255. That is, Armitage will check all those IP addresses and see which one is active.
     - If the scanning of 10.0.2.0/24 is too slow, just enter the target IP, e.g., Windows VM's IP.
 
-Armitage shows the found computer icon (with the IP address of Metasploitable) and what network applications/services (programs that can accept messages from the Internet/network) are running.
+Armitage shows the icon of the found computer (with the IP address of Metasploitable) and what network applications/services (programs that can accept messages from the Internet/network) are running.
 
 <img src="https://user-images.githubusercontent.com/69218457/224392646-1f02980e-1aa3-4729-aa9a-05ae3fbe76aa.png" width="640">
 
@@ -132,7 +132,7 @@ vchat.exe on Windows VM has a vulnerability. We will exploit it so as to log int
 
 14. Click the Windows VM icon within Armitage. Click *Attacks* &rarr; *Find Attacks*. Wait for the dialog window *Progress...* to disappear. A dialog Window *Message* shows up then. Click *Ok*.
 
-15. Right click the found computer icon, Click *Attack* &rarr; *vchat* &rarr; *TRUN* 
+15. Right click the icon of the found computer, Click *Attack* &rarr; *vchat* &rarr; *TRUN* 
     * if *vchat* cannot be found on the *Attack* menu, refer to [TRUN Metasploit Module](https://github.com/xinwenfu/VChat_TRUN/tree/main/Metasploit). Exit armitage, add the TRUN attack module into Armitage/Metasploit and restart Armitage.
     * If there is no *Attack* menu, check *Armitage* -> *Set Exploit Rank* and make sure it is set as *Poor*.
 
@@ -140,7 +140,7 @@ vchat.exe on Windows VM has a vulnerability. We will exploit it so as to log int
 
 16. In the dialog *attack* window, click *launch*
 
-If things go well, a lighting icon shows on the found computer icon and it means the found computer is compromsied.
+If things go well, a lighting icon shows on the icon of the found computer and it means the found computer is compromsied.
 
 <img src="https://user-images.githubusercontent.com/69218457/224389016-da1c6992-5190-4b67-9e0b-42944cb17ef7.png" width="640">
 
