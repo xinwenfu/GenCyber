@@ -142,7 +142,8 @@ lcd ./home/kali
 <img width="640" alt="image" src="https://github.com/user-attachments/assets/c388bde4-ce82-4a16-a879-08258f0109e1" />
 
 
-20. Type the following command to take a screenshot of the target (Windows) desktop 
+20. Type the following command to take a screenshot of the target (Windows) desktop
+    - If there is no obvious error, wait ...
 ```
 screenshot
 ```
