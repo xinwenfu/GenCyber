@@ -85,6 +85,7 @@ Armitage shows the found computer icon (with the IP address of Metasploitable) a
 
 **Question**: Which found IP belongs to the Windows VM?
 - Click a found IP, perform *Hosts* &rarr; *Nmap Scan* &rarr; *Quick Scan (OS detect)* to find the OS running at an IP.
+  - **Note**: This has to be done. Otherwise, Armitage cannot find appropriate attacks against the Windows VM. 
 
 
 ## Chatting via vchat
