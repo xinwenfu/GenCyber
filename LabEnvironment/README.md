@@ -1,5 +1,7 @@
 # Lab environment
-We use VMs for all the labs. All VMs are tested for VirtualBox.
+We use Virtual Machines (VMs) or all the labs. All VMs are tested for [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+
+## Install VirtualBox 
 
 ## Download VMs
 - <a href="[https://www.cs.uml.edu/~xinwenfu/VMs/Kali-CR-25G.ova](https://www.cs.uml.edu/~xinwenfu/VMs/Kali-40G-2025.ova)">Customized Kali VM</a>, which incldues customized Armitage and our Metasploit modules against the <a href="https://github.com/xinwenfu/vchat">vulnerable chat server</a>
