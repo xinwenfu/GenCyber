@@ -10,7 +10,7 @@ Here are the steps to start (Click the links embedded in the blue and unlined te
 2. Download the .ova ((Open Virtual Appliance) file
    - [Kali](https://www.cs.uml.edu/~xinwenfu/Tools/Kali-40G-2025.ova)
    - Windows: Please ask the instructor
-3. [Import the .ova file](https://youtu.be/us5N0X75v-o) into VirtualBox. Basically double click the .ova file and follow the on-screen instruction.
+3. [Import the .ova file](https://youtu.be/us5N0X75v-o) into VirtualBox. Basically double click the .ova file in Windows File Explorer and follow the on-screen instruction.
 4. If a student feels the VM is slow, please watch How to [Speed up your VMs in VirtualBox](https://www.youtube.com/watch?v=2z7icd0vm0M) For Windows.
 
 Try the following four networking options on these two VMs [3]: 
