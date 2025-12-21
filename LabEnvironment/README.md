@@ -1,5 +1,5 @@
 # Lab environment
-We use Virtual Machines (VMs) or all the labs. All VMs are tested for [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+We use Virtual Machines (VMs) for all the labs. All VMs are tested for [VirtualBox](https://www.virtualbox.org/wiki/Downloads), which is called a hypervisor and can emulate another operating system like Windows and Linux on your host computer like Windows.
 
 ## Install VirtualBox 
 
