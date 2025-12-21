@@ -3,6 +3,23 @@ We use Virtual Machines (VMs) or all the labs. All VMs are tested for [VirtualBo
 
 ## Install VirtualBox 
 
+VirtualBox can be installed on a personal computer like Windows. It is a challenge to install VirtualBox on new Apple computers. Therefore, we use Windows as the example to show how the installation can be done.
+
+Here are the steps to start (Click the links embedded in the blue and unlined text to watch videos):
+1.	Install VirtualBox on [Windows](https://www.youtube.com/watch?v=8mns5yqMfZk).
+2.	Download the .ova ((Open Virtual Appliance) file
+   * [Kali]() 
+4.	Import .ova file into VirtualBox
+5.	If a student feels the VM is slow, please watch How to Speed up your VMs in VirtualBox! For Windows and How to improve Linux performance in a VirtualBox VM.
+
+Try the following four networking options on these two VMs [3]: 
+1.	Network Address Translation (NAT)
+2.	NAT Network
+3.	Bridged Adapter
+4.	Internal Network
+5.	Host-only Adaptor
+
+
 ## Download VMs
 - <a href="[https://www.cs.uml.edu/~xinwenfu/VMs/Kali-CR-25G.ova](https://www.cs.uml.edu/~xinwenfu/VMs/Kali-40G-2025.ova)">Customized Kali VM</a>, which incldues customized Armitage and our Metasploit modules against the <a href="https://github.com/xinwenfu/vchat">vulnerable chat server</a>
   - Username: kali
