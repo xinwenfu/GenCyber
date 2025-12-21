@@ -13,9 +13,9 @@ Here are the steps to start (Click the links embedded in the blue and unlined te
 3. [Import the .ova file](https://youtu.be/us5N0X75v-o) into VirtualBox. Basically double click the .ova file in Windows File Explorer and follow the on-screen instruction.
 4. If a student feels the VM is slow, please watch How to [Speed up your VMs in VirtualBox](https://www.youtube.com/watch?v=2z7icd0vm0M) for Windows.
 
-Try the following four networking options on these two VMs [3]: 
+Try the following [networking options](https://www.virtualbox.org/manual/ch06.html) on these two VMs. The network options may allow you to connect multiple VMs and form a local area network. 
 1.	Network Address Translation (NAT)
-2.	NAT Network
+2.	NAT Network. We use this one by default.
 3.	Bridged Adapter
 4.	Internal Network
 5.	Host-only Adaptor
