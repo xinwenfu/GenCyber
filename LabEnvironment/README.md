@@ -8,8 +8,8 @@ VirtualBox can be installed on a personal computer like Windows. It is a challen
 Here are the steps to start (Click the links embedded in the blue and unlined text to watch videos):
 1. Install VirtualBox on [Windows](https://www.youtube.com/watch?v=8mns5yqMfZk).
 2. Download the .ova ((Open Virtual Appliance) file
-   * [Kali](https://www.cs.uml.edu/~xinwenfu/Tools/Kali-40G-2025.ova)
-   * Windows: Please ask the instructor
+   - [Kali](https://www.cs.uml.edu/~xinwenfu/Tools/Kali-40G-2025.ova)
+   - Windows: Please ask the instructor
 3. [Import the .ova file](https://youtu.be/us5N0X75v-o) into VirtualBox. Basically double click the .ova file and follow the on-screen instruction.
 4. If a student feels the VM is slow, please watch How to [Speed up your VMs in VirtualBox](https://www.youtube.com/watch?v=2z7icd0vm0M) For Windows.
 
