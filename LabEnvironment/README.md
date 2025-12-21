@@ -21,7 +21,7 @@ Try the following four networking options on these two VMs [3]:
 5.	Host-only Adaptor
 
 
-## Download VMs
+## Using VMs
 - <a href="[https://www.cs.uml.edu/~xinwenfu/VMs/Kali-CR-25G.ova](https://www.cs.uml.edu/~xinwenfu/VMs/Kali-40G-2025.ova)">Customized Kali VM</a>, which incldues customized Armitage and our Metasploit modules against the <a href="https://github.com/xinwenfu/vchat">vulnerable chat server</a>
   - Username: kali
   - Password: kali
